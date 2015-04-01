@@ -2,6 +2,7 @@
 #parties
   %h1 Parties 
 
-  - @parties.sort_by { |p| p['name'] }.each do |p|
-    %li <a href="/party/#{ p['id'].gsub(/.*?\/party\//,'') }">#{p['name']}</a>
+  %ul
+    - @parties.sort_by { |p| p['name'] }.each do |p|
+      %li <a href="/party/#{ p['id'].gsub(/.*?\/party\//,'') }">#{p['name']}</a>
 

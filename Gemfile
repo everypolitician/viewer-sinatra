@@ -4,4 +4,5 @@ gem 'sinatra', :github => "sinatra/sinatra"
 gem 'haml'
 gem 'json'
 gem 'thin'
+gem 'nokogiri'
 gem 'redcarpet'

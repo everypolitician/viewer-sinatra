@@ -20,6 +20,10 @@ helpers do
     popit_data['organizations']
   end
 
+  def parties
+    popit_data['organizations'].find_all { |o| o['classification'] == 'party' }
+  end
+
   def party_from_id(id)
     organizations.detect { |r| r['id'] == id } || organizations.detect { |r| r['id'].end_with? "/#{id}" }
   end
@@ -44,7 +48,7 @@ get '/people.html' do
 end
 
 get '/parties.html' do
-  @parties = popit_data['organizations']
+  @parties = parties
   haml :parties
 end
 
