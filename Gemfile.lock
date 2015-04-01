@@ -1,0 +1,36 @@
+GIT
+  remote: git://github.com/sinatra/sinatra.git
+  revision: 29c51d12fdd91ee254e51d4ce099535fcb6ea1a9
+  specs:
+    sinatra (1.4.6)
+      rack (~> 1.4)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    daemons (1.2.2)
+    eventmachine (1.0.7)
+    haml (4.0.6)
+      tilt
+    json (1.8.2)
+    rack (1.6.0)
+    rack-protection (1.5.3)
+      rack
+    redcarpet (3.2.2)
+    thin (1.6.3)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0)
+      rack (~> 1.0)
+    tilt (1.4.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  haml
+  json
+  redcarpet
+  sinatra!
+  thin

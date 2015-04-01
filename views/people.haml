@@ -1,0 +1,7 @@
+
+#people
+  %h1 Members 
+
+  - @people.sort_by { |p| p['name'] }.each do |p|
+    %li= p['name']
+
