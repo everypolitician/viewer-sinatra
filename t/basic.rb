@@ -13,6 +13,8 @@ end
 
 describe "Stance viewer" do
 
+  subject { Nokogiri::HTML(last_response.body) }
+
   describe "when viewing the home page" do
 
     before { get '/' }
@@ -30,7 +32,7 @@ describe "Stance viewer" do
     before { get '/people.html' }
 
     it "should have Alexander Stubb" do
-      last_response.body.must_include 'Stubb Alexander'
+      subject.css('#people ul').inner_html.must_include 'Stubb Alexander'
     end
   end
 
@@ -39,14 +41,13 @@ describe "Stance viewer" do
   describe "when viewing the Party list page" do
 
     before { get '/parties.html' }
-    let(:partylist) { Nokogiri::HTML(last_response.body) }
 
     it "should have Left Alliance" do
-      partylist.css('#parties ul').inner_html.must_include 'Left Alliance'
+      subject.css('#parties ul').inner_html.must_include 'Left Alliance'
     end
 
     it "should not have Eduskunta" do
-      partylist.css('#parties ul').inner_html.wont_include 'Eduskunta'
+      subject.css('#parties ul').inner_html.wont_include 'Eduskunta'
     end
 
   end
