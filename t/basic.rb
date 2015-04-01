@@ -71,7 +71,15 @@ describe "Stance viewer" do
     before { get '/party/kok' }
 
     it "should have have their name" do
-      last_response.body.must_include 'National Coalition Party'
+      subject.css('h1').text.must_equal 'National Coalition Party'
+    end
+
+    it "should have many MPs" do
+      subject.css('#party ul li').count.must_be :>, 20
+    end
+
+    it "should include Stubb" do
+      subject.css('#party ul li').text.must_include 'Stubb Alexander'
     end
 
   end

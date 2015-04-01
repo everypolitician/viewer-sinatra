@@ -2,3 +2,6 @@
 #party
   %h1= @party['name']
 
+  %ul
+    - @memberships.each do |m|
+      %li <a href="/person/#{m['person_id'].gsub(/.*\/person\//,'')}">#{m['person']['name']}</a>

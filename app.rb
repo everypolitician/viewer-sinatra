@@ -24,8 +24,19 @@ helpers do
     popit_data['organizations'].find_all { |o| o['classification'] == 'party' }
   end
 
+  def memberships
+    popit_data['memberships']
+  end
+
   def party_from_id(id)
-    organizations.detect { |r| r['id'] == id } || organizations.detect { |r| r['id'].end_with? "/#{id}" }
+    p = organizations.detect { |r| r['id'] == id } || organizations.detect { |r| r['id'].end_with? "/#{id}" }
+  end
+
+  def party_memberships(id)
+    memberships.find_all { |m| m['on_behalf_of_id'] == id }.map { |m|
+      m['person'] ||= person_from_id(m['person_id'])
+      m
+    }
   end
 
   def person_from_id(id)
@@ -59,6 +70,7 @@ end
 
 get '/party/:id' do |id|
   @party = party_from_id(id) or pass
+  @memberships = party_memberships(@party['id'])
   haml :party
 end
 
