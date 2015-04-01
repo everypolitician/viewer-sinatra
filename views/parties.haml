@@ -3,5 +3,5 @@
   %h1 Parties 
 
   - @parties.sort_by { |p| p['name'] }.each do |p|
-    %li= p['name']
+    %li <a href="/party/#{ p['id'].gsub(/.*?\/party\//,'') }">#{p['name']}</a>
 

@@ -53,6 +53,11 @@ get '/person/:id' do |id|
   haml :person
 end
 
+get '/party/:id' do |id|
+  @party = party_from_id(id) or pass
+  haml :party
+end
+
 
 
 

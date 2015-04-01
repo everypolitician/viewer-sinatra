@@ -46,5 +46,17 @@ describe "Stance viewer" do
 
   #-------------------------------------------------------------------
 
+  describe "when viewing an Party page" do
+
+    before { get '/party/kok' }
+
+    it "should have have their name" do
+      last_response.body.must_include 'National Coalition Party'
+    end
+
+  end
+
+  #-------------------------------------------------------------------
+
 end
 

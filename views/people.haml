@@ -3,5 +3,6 @@
   %h1 Members 
 
   - @people.sort_by { |p| p['name'] }.each do |p|
-    %li= p['name']
+    %li <a href="/person/#{ p['id'].gsub(/.*?\/person\//,'') }">#{p['name']}</a>
+    
 
