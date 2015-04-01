@@ -1,0 +1,8 @@
+
+#terms
+  %h1 Terms
+
+  %ul
+    - @terms.sort_by { |t| t['start_date'] }.reverse.each do |t|
+      %li <a href="/term/#{t['id'].gsub(/.*?term\//,'')}">#{t['name']}</a>
+

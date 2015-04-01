@@ -24,6 +24,15 @@ helpers do
     popit_data['organizations'].find_all { |o| o['classification'] == 'party' }
   end
 
+  def legislature
+    # TODO cope with more than one!
+    popit_data['organizations'].find { |o| o['classification'] == 'legislature' }
+  end
+
+  def terms
+    legislature['terms']
+  end
+
   def memberships
     popit_data['memberships']
   end
@@ -43,6 +52,10 @@ helpers do
     persons.detect { |r| r['id'] == id } || persons.detect { |r| r['id'].end_with? "/#{id}" }
   end
 
+  def term_from_id(id)
+    terms.detect { |t| t['id'] == id } || terms.detect { |t| t['id'].end_with? "/#{id}" }
+  end
+
 end
 
 get '/' do
@@ -53,6 +66,11 @@ get '/about.html' do
   haml :about
 end
 
+get '/terms.html' do
+  @terms = terms
+  haml :terms
+end
+
 get '/people.html' do
   @people = persons
   haml :people
@@ -61,6 +79,11 @@ end
 get '/parties.html' do
   @parties = parties
   haml :parties
+end
+
+get '/term/:id' do |id|
+  @term = term_from_id(id) or pass
+  haml :term
 end
 
 get '/person/:id' do |id|

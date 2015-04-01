@@ -38,6 +38,22 @@ describe "Stance viewer" do
 
   #-------------------------------------------------------------------
 
+  describe "when viewing the Term list page" do
+
+    before { get '/terms.html' }
+
+    it "should have at least 35 terms" do
+      subject.css('#terms ul li').count.must_be :>, 35
+    end
+
+    it "should have the first term last" do
+      subject.css('#terms ul li:last').text.must_include 'Eduskunta 1 (1907)'
+    end
+
+  end
+
+  #-------------------------------------------------------------------
+
   describe "when viewing the Party list page" do
 
     before { get '/parties.html' }
@@ -60,6 +76,18 @@ describe "Stance viewer" do
 
     it "should have have their name" do
       last_response.body.must_include 'Stubb Alexander'
+    end
+
+  end
+
+  #-------------------------------------------------------------------
+
+  describe "when viewing an Term page" do
+
+    before { get '/term/34' }
+
+    it "should have have its name" do
+      subject.css('h1').text.must_equal 'Eduskunta 34 (2003)'
     end
 
   end
