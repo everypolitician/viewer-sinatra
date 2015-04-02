@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'haml'
 require 'json'
-require 'popolo_helper'
+require_relative './lib/popolo_helper'
 
 helpers Popolo::Helper
 
@@ -30,6 +30,7 @@ end
 
 get '/term/:id' do |id|
   @term = term_from_id(id) or pass
+  @memberships = term_memberships(@term)
   haml :term
 end
 

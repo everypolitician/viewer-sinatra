@@ -1,6 +1,8 @@
 module Popolo
   module Helper
 
+    require 'date'
+
     def popit_data
       @_data ||= json_file('popit')
     end
@@ -45,6 +47,17 @@ module Popolo
 
     def party_memberships(id)
       legislative_memberships.find_all { |m| m['on_behalf_of_id'] == id }.map { |m|
+        m['person'] ||= person_from_id(m['person_id'])
+        m
+      }
+    end
+
+    def term_memberships(t)
+      # for now, solely by overlapping dates
+      # TODO: direct memberships
+      legislative_memberships.find_all { |m| 
+        ( m['start_date'] <= (t['end_date'] || Date.today.to_s) and t['start_date'] <= (m['end_date'] || Date.today.to_s) )
+      }.map { |m|
         m['person'] ||= person_from_id(m['person_id'])
         m
       }
