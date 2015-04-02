@@ -41,8 +41,13 @@ helpers do
     p = organizations.detect { |r| r['id'] == id } || organizations.detect { |r| r['id'].end_with? "/#{id}" }
   end
 
+  def legislative_memberships
+    # TODO expand!
+    memberships.find_all { |m| m['organization_id'] == 'legislature' }
+  end
+
   def party_memberships(id)
-    memberships.find_all { |m| m['on_behalf_of_id'] == id }.map { |m|
+    legislative_memberships.find_all { |m| m['on_behalf_of_id'] == id }.map { |m|
       m['person'] ||= person_from_id(m['person_id'])
       m
     }
