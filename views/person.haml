@@ -1,4 +1,6 @@
 
 #person
   %h1= @person['name']
+  - if @person['image']
+    %img{src: @person['image']}
 
