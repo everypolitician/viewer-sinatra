@@ -40,6 +40,14 @@ module Popolo
       p = organizations.detect { |r| r['id'] == id } || organizations.detect { |r| r['id'].end_with? "/#{id}" }
     end
 
+    def person_memberships(p)
+      memberships.find_all { |m| m['person_id'] == p['id'] }.map { |m|
+        m['organization'] ||= party_from_id(m['organization_id'])
+        m['on_behalf_of'] ||= party_from_id(m['on_behalf_of_id'])
+        m
+      }
+    end
+
     def legislative_memberships
       # TODO expand!
       memberships.find_all { |m| m['organization_id'] == 'legislature' }

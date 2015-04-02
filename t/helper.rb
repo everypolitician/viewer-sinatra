@@ -17,9 +17,26 @@ end
 describe "person" do
 
   subject { person_from_id('1031') }
+  let(:mems) { person_memberships(subject) }
 
   it "should get the correct person" do
     subject['name'].must_equal 'Stubb Alexander'
+  end
+
+  it "should have a membership" do
+    mems.count.must_equal 1
+  end
+
+  it "should be in the legislature" do
+    mems.first['organization_id'].must_equal 'legislature'
+  end
+
+  it "should have an expanded Organization" do
+    mems.first['organization']['name'].must_equal 'Eduskunta'
+  end
+
+  it "should have an expanded Party" do
+    mems.first['on_behalf_of']['name'].must_equal 'National Coalition Party'
   end
 
 end
