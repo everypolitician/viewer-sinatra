@@ -70,12 +70,34 @@ describe "Stance viewer" do
 
   #-------------------------------------------------------------------
 
-  describe "when viewing an MP page" do
+  describe "when viewing Person 1031" do
 
     before { get '/person/1031' }
 
     it "should have have their name" do
-      last_response.body.must_include 'Stubb Alexander'
+      subject.css('h1').text.must_equal 'Stubb Alexander'
+    end
+
+    it "should have have their party membership" do
+      subject.css('ul li').inner_html.must_include 'National Coalition Party'
+    end
+
+  end
+
+  #-------------------------------------------------------------------
+
+  describe "when viewing Person 910615" do
+
+    before { get '/person/910615' }
+
+    it "should have have their party membership twice" do
+      lis = subject.css('#person ul li').map { |li| li.text }
+      lis.count.must_equal 2
+      lis.first.must_match 'The Finns Party'
+      lis.first.must_match '2011-04-20'
+      lis.last.must_match 'The Finns Party'
+      lis.last.must_match '1979-03-24'
+      lis.last.must_match '1987-03-20'
     end
 
   end

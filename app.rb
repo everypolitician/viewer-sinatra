@@ -36,6 +36,7 @@ end
 
 get '/person/:id' do |id|
   @person = person_from_id(id) or pass
+  @memberships = person_memberships(@person)
   haml :person
 end
 
