@@ -5,6 +5,11 @@ require_relative './lib/popolo_helper'
 
 helpers Popolo::Helper
 
+before '/:country/*' do |country, _|
+  @pd = Popolo::Data.new(country)
+end
+
+
 get '/' do
   haml :index
 end
@@ -13,39 +18,36 @@ get '/about.html' do
   haml :about
 end
 
-get '/:country/terms.html' do |country|
-  @terms = Popolo::Data.new(country).terms
+get '/:country/terms.html' do 
+  @terms = @pd.terms
   haml :terms
 end
 
-get '/:country/people.html' do |country|
-  @people = Popolo::Data.new(country).persons
+get '/:country/people.html' do 
+  @people = @pd.persons
   haml :people
 end
 
-get '/:country/parties.html' do |country|
-  @parties = Popolo::Data.new(country).parties
+get '/:country/parties.html' do 
+  @parties = @pd.parties
   haml :parties
 end
 
 get '/:country/term/:id' do |country, id|
-  pd = Popolo::Data.new(country)
-  @term = pd.term_from_id(id) or pass
-  @memberships = pd.term_memberships(@term)
+  @term = @pd.term_from_id(id) or pass
+  @memberships = @pd.term_memberships(@term)
   haml :term
 end
 
 get '/:country/person/:id' do |country, id|
-  pd = Popolo::Data.new(country)
-  @person = pd.person_from_id(id) or pass
-  @memberships = pd.person_memberships(@person)
+  @person = @pd.person_from_id(id) or pass
+  @memberships = @pd.person_memberships(@person)
   haml :person
 end
 
 get '/:country/party/:id' do |country, id|
-  pd = Popolo::Data.new(country)
-  @party = pd.party_from_id(id) or pass
-  @memberships = pd.party_memberships(@party['id'])
+  @party = @pd.party_from_id(id) or pass
+  @memberships = @pd.party_memberships(@party['id'])
   haml :party
 end
 
