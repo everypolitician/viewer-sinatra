@@ -1,5 +1,7 @@
 module Popolo
 
+  require 'date'
+
   class Data
 
     def initialize(file)
@@ -33,6 +35,11 @@ module Popolo
 
     def terms
       legislature['terms']
+    end
+
+    def legislative_memberships
+      # TODO expand!
+      memberships.find_all { |m| m['organization_id'] == 'legislature' }
     end
 
 
@@ -78,45 +85,6 @@ module Popolo
 
   module Helper
 
-    require 'date'
-
-    def popit_data(file='eduskunta')
-      @_data ||= {}
-      @_data[file] ||= Popolo::Data.new(file).json
-    end
-
-    def persons
-      popit_data['persons']
-    end
-
-    def organizations
-      popit_data['organizations']
-    end
-
-    def parties
-      popit_data['organizations'].find_all { |o| o['classification'] == 'party' }
-    end
-
-    def legislature
-      # TODO cope with more than one!
-      popit_data['organizations'].find { |o| o['classification'] == 'legislature' }
-    end
-
-    def terms
-      legislature['terms']
-    end
-
-    def memberships
-      popit_data['memberships']
-    end
-
-    def legislative_memberships
-      # TODO expand!
-      memberships.find_all { |m| m['organization_id'] == 'legislature' }
-    end
-
   end
 end
 
-      
-        
