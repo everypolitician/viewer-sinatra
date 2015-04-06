@@ -1,14 +1,24 @@
 module Popolo
+
+  class Data
+
+    def initialize(file)
+      @_file = file
+    end
+
+    def json
+      @_data ||= JSON.parse(File.read("data/#{@_file}.json"))
+    end
+
+  end
+
   module Helper
 
     require 'date'
 
-    def popit_data
-      @_data ||= json_file('eduskunta')
-    end
-
-    def json_file(file)
-      JSON.parse(File.read("data/#{file}.json"))
+    def popit_data(file='eduskunta')
+      @_data ||= {}
+      @_data[file] ||= Popolo::Data.new(file).json
     end
 
     def persons
