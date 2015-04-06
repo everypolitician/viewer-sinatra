@@ -11,7 +11,7 @@ def app
   Sinatra::Application
 end
 
-describe "Stance viewer" do
+describe "Viewer" do
 
   subject { Nokogiri::HTML(last_response.body) }
 
@@ -21,6 +21,16 @@ describe "Stance viewer" do
 
     it "should have show some text" do
       last_response.body.must_include 'PopIt Viewer'
+    end
+
+  end
+
+  describe "when viewing a country home page" do
+
+    before { get '/finland/' }
+
+    it "should have know its country" do
+      last_response.body.must_include 'Finland'
     end
 
   end
