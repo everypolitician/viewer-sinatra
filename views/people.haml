@@ -4,6 +4,6 @@
 
   %ul
     - @people.sort_by { |p| p['name'] }.each do |p|
-      %li <a href="/person/#{ p['id'].gsub(/.*?\/person\//,'') }">#{p['name']}</a>
+      %li <a href="#{ person_url(p) }">#{p['name']}</a>  
     
 

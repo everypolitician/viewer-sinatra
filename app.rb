@@ -5,47 +5,62 @@ require_relative './lib/popolo_helper'
 
 helpers Popolo::Helper
 
+mapping = { 
+  # filename  => [ primary, aliases (all lower case) ]
+  'eduskunta' => [ 'finland', 'fi', 'eduskunta' ],
+  'wales'     => [ 'wales', 'gb-wls', 'wls' ],
+}
+
+before '/:country/*' do |country, _|
+  found = mapping.find { |fn, codes| codes.include? country.downcase } or 
+    halt 404
+  @country = found.last.first
+  @popolo = Popolo::Data.new(found.first)
+end
+
+
 get '/' do
-  haml :index
+  haml :front_index
 end
 
 get '/about.html' do
   haml :about
 end
 
-get '/terms.html' do
-  @terms = Popolo::Data.new('eduskunta').terms
+get '/:country/' do 
+  haml :index
+end
+
+get '/:country/terms.html' do 
+  @terms = @popolo.terms
   haml :terms
 end
 
-get '/people.html' do
-  @people = Popolo::Data.new('eduskunta').persons
+get '/:country/people.html' do 
+  @people = @popolo.persons
   haml :people
 end
 
-get '/parties.html' do
-  @parties = Popolo::Data.new('eduskunta').parties
+get '/:country/parties.html' do 
+  @parties = @popolo.parties
   haml :parties
 end
 
-get '/term/:id' do |id|
-  pd = Popolo::Data.new('eduskunta')
-  @term = pd.term_from_id(id) or pass
-  @memberships = pd.term_memberships(@term)
+get '/:country/term/:id' do |country, id|
+  @term = @popolo.term_from_id(id) or pass
+  @memberships = @popolo.term_memberships(@term)
   haml :term
 end
 
-get '/person/:id' do |id|
-  pd = Popolo::Data.new('eduskunta')
-  @person = pd.person_from_id(id) or pass
-  @memberships = pd.person_memberships(@person)
+get '/:country/person/:id' do |country, id|
+  @person = @popolo.person_from_id(id) or pass
+  @memberships = @popolo.person_memberships(@person)
   haml :person
 end
 
-get '/party/:id' do |id|
-  pd = Popolo::Data.new('eduskunta')
-  @party = pd.party_from_id(id) or pass
-  @memberships = pd.party_memberships(@party['id'])
+get '/:country/party/:id' do |country, id|
+  @party = @popolo.party_from_id(id) or pass
+  @memberships = @popolo.party_memberships(@party['id'])
   haml :party
 end
 

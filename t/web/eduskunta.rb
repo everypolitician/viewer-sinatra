@@ -15,21 +15,11 @@ describe "Stance viewer" do
 
   subject { Nokogiri::HTML(last_response.body) }
 
-  describe "when viewing the home page" do
-
-    before { get '/' }
-
-    it "should have show some text" do
-      last_response.body.must_include 'PopIt Viewer'
-    end
-
-  end
-
   #-------------------------------------------------------------------
 
   describe "when viewing the MP list page" do
 
-    before { get '/people.html' }
+    before { get '/eduskunta/people.html' }
 
     it "should have Alexander Stubb" do
       subject.css('#people ul').inner_html.must_include 'Stubb Alexander'
@@ -40,7 +30,7 @@ describe "Stance viewer" do
 
   describe "when viewing the Term list page" do
 
-    before { get '/terms.html' }
+    before { get '/finland/terms.html' }
 
     it "should have at least 35 terms" do
       subject.css('#terms ul li').count.must_be :>, 35
@@ -56,7 +46,7 @@ describe "Stance viewer" do
 
   describe "when viewing the Party list page" do
 
-    before { get '/parties.html' }
+    before { get '/Finland/parties.html' }
 
     it "should have Left Alliance" do
       subject.css('#parties ul').inner_html.must_include 'Left Alliance'
@@ -72,7 +62,7 @@ describe "Stance viewer" do
 
   describe "when viewing Person 1031" do
 
-    before { get '/person/1031' }
+    before { get '/fi/person/1031' }
 
     it "should have have their name" do
       subject.css('h1').text.must_equal 'Stubb Alexander'
@@ -88,7 +78,7 @@ describe "Stance viewer" do
 
   describe "when viewing Person 910615" do
 
-    before { get '/person/910615' }
+    before { get '/FINLAND/person/910615' }
 
     it "should have have their party membership twice" do
       lis = subject.css('#person ul li').map { |li| li.text }
@@ -106,7 +96,7 @@ describe "Stance viewer" do
 
   describe "when viewing an Term page" do
 
-    before { get '/term/27' }
+    before { get '/FI/term/27' }
 
     it "should have have its name" do
       subject.css('h1').text.must_equal 'Eduskunta 27 (1975 II)'
@@ -118,7 +108,7 @@ describe "Stance viewer" do
 
   describe "when viewing an Party page" do
 
-    before { get '/party/kok' }
+    before { get '/EdusKunta/party/kok' }
 
     it "should have have their name" do
       subject.css('h1').text.must_equal 'National Coalition Party'
