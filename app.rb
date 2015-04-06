@@ -5,8 +5,16 @@ require_relative './lib/popolo_helper'
 
 helpers Popolo::Helper
 
+mapping = { 
+  # filename  => [ codes ]
+  'eduskunta' => [ 'fi', 'finland', 'eduskunta' ],
+  'wales'     => [ 'gb-wls', 'wls', 'wales' ],
+}
+
 before '/:country/*' do |country, _|
-  @pd = Popolo::Data.new(country)
+  found = mapping.find { |fn, codes| codes.include? country.downcase } or 
+    halt 404
+  @pd = Popolo::Data.new(found.first)
 end
 
 

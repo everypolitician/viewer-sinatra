@@ -40,7 +40,7 @@ describe "Stance viewer" do
 
   describe "when viewing the Term list page" do
 
-    before { get '/eduskunta/terms.html' }
+    before { get '/finland/terms.html' }
 
     it "should have at least 35 terms" do
       subject.css('#terms ul li').count.must_be :>, 35
@@ -56,7 +56,7 @@ describe "Stance viewer" do
 
   describe "when viewing the Party list page" do
 
-    before { get '/eduskunta/parties.html' }
+    before { get '/Finland/parties.html' }
 
     it "should have Left Alliance" do
       subject.css('#parties ul').inner_html.must_include 'Left Alliance'
@@ -72,7 +72,7 @@ describe "Stance viewer" do
 
   describe "when viewing Person 1031" do
 
-    before { get '/eduskunta/person/1031' }
+    before { get '/fi/person/1031' }
 
     it "should have have their name" do
       subject.css('h1').text.must_equal 'Stubb Alexander'
@@ -88,7 +88,7 @@ describe "Stance viewer" do
 
   describe "when viewing Person 910615" do
 
-    before { get '/eduskunta/person/910615' }
+    before { get '/FINLAND/person/910615' }
 
     it "should have have their party membership twice" do
       lis = subject.css('#person ul li').map { |li| li.text }
@@ -106,7 +106,7 @@ describe "Stance viewer" do
 
   describe "when viewing an Term page" do
 
-    before { get '/eduskunta/term/27' }
+    before { get '/FI/term/27' }
 
     it "should have have its name" do
       subject.css('h1').text.must_equal 'Eduskunta 27 (1975 II)'
@@ -118,7 +118,7 @@ describe "Stance viewer" do
 
   describe "when viewing an Party page" do
 
-    before { get '/eduskunta/party/kok' }
+    before { get '/EdusKunta/party/kok' }
 
     it "should have have their name" do
       subject.css('h1').text.must_equal 'National Coalition Party'
@@ -135,6 +135,16 @@ describe "Stance viewer" do
   end
 
   #-------------------------------------------------------------------
+
+  describe "unknown prefix" do
+
+    before { get '/FIN/party/kok' }
+
+    it "should have no match for FIN" do
+      last_response.status.must_equal 404
+    end
+  end
+
 
 end
 
