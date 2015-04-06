@@ -14,35 +14,38 @@ get '/about.html' do
 end
 
 get '/terms.html' do
-  @terms = terms
+  @terms = Popolo::Data.new('eduskunta').terms
   haml :terms
 end
 
 get '/people.html' do
-  @people = persons
+  @people = Popolo::Data.new('eduskunta').persons
   haml :people
 end
 
 get '/parties.html' do
-  @parties = parties
+  @parties = Popolo::Data.new('eduskunta').parties
   haml :parties
 end
 
 get '/term/:id' do |id|
-  @term = term_from_id(id) or pass
-  @memberships = term_memberships(@term)
+  pd = Popolo::Data.new('eduskunta')
+  @term = pd.term_from_id(id) or pass
+  @memberships = pd.term_memberships(@term)
   haml :term
 end
 
 get '/person/:id' do |id|
-  @person = person_from_id(id) or pass
-  @memberships = person_memberships(@person)
+  pd = Popolo::Data.new('eduskunta')
+  @person = pd.person_from_id(id) or pass
+  @memberships = pd.person_memberships(@person)
   haml :person
 end
 
 get '/party/:id' do |id|
-  @party = party_from_id(id) or pass
-  @memberships = party_memberships(@party['id'])
+  pd = Popolo::Data.new('eduskunta')
+  @party = pd.party_from_id(id) or pass
+  @memberships = pd.party_memberships(@party['id'])
   haml :party
 end
 
