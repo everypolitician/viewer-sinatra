@@ -15,16 +15,6 @@ describe "Stance viewer" do
 
   subject { Nokogiri::HTML(last_response.body) }
 
-  describe "when viewing the home page" do
-
-    before { get '/' }
-
-    it "should have show some text" do
-      last_response.body.must_include 'PopIt Viewer'
-    end
-
-  end
-
   #-------------------------------------------------------------------
 
   describe "when viewing the MP list page" do
@@ -135,16 +125,6 @@ describe "Stance viewer" do
   end
 
   #-------------------------------------------------------------------
-
-  describe "unknown prefix" do
-
-    before { get '/FIN/party/kok' }
-
-    it "should have no match for FIN" do
-      last_response.status.must_equal 404
-    end
-  end
-
 
 end
 
