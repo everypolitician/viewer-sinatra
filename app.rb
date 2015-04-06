@@ -14,7 +14,7 @@ get '/about.html' do
 end
 
 get '/terms.html' do
-  @terms = terms
+  @terms = Popolo::Data.new('eduskunta').terms
   haml :terms
 end
 
@@ -24,7 +24,7 @@ get '/people.html' do
 end
 
 get '/parties.html' do
-  @parties = parties
+  @parties = Popolo::Data.new('eduskunta').parties
   haml :parties
 end
 

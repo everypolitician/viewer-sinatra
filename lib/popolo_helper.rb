@@ -14,6 +14,27 @@ module Popolo
       json['persons']
     end
 
+    def organizations
+      json['organizations']
+    end
+
+    def memberships
+      json['memberships']
+    end
+
+    def legislature
+      # TODO cope with more than one!
+      json['organizations'].find { |o| o['classification'] == 'legislature' }
+    end
+
+    def parties
+      json['organizations'].find_all { |o| o['classification'] == 'party' }
+    end
+
+    def terms
+      legislature['terms']
+    end
+
   end
 
   module Helper
