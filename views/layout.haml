@@ -19,13 +19,18 @@
       <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="page-header">
           <div class="logo pull-left">
-            <a class="navbar-brand" href="/">PopIt Viewer</a>
+            <a class="navbar-brand" href="/">#{ (@country || "PopIt").capitalize } Viewer</a>
           </div>
           <div class="left pull-left">
             <ul class="navbar-nav nav">
-              <li><a href="/terms.html">Terms</a></li>
-              <li><a href="/parties.html">Parties</a></li>
-              <li><a href="/people.html">People</a></li>
+
+- if @country
+  :plain
+              <li><a href="/#{ @country }/terms.html">Terms</a></li>
+              <li><a href="/#{ @country }/parties.html">Parties</a></li>
+              <li><a href="/#{ @country }/people.html">People</a></li>
+
+:plain
             </ul>
           </div>
           <div class="pull-right">
