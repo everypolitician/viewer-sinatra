@@ -4,7 +4,7 @@ module Popolo
     require 'date'
 
     def popit_data
-      @_data ||= json_file('popit')
+      @_data ||= json_file('eduskunta')
     end
 
     def json_file(file)
