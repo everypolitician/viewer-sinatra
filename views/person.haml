@@ -7,6 +7,6 @@
 
     %ul
       - @memberships.sort_by { |m| m['start_date'] }.reverse.each do |m|
-        %li <a href="/party/#{m['on_behalf_of_id'].gsub(/.*\/party\//,'')}">#{m['on_behalf_of']['name']}</a> (#{m['start_date']}–#{m['end_date']})
+        %li <a href="#{ party_url(m['on_behalf_of']) }">#{m['on_behalf_of']['name']}</a> (#{m['start_date']}–#{m['end_date']})
 
 

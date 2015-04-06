@@ -85,6 +85,23 @@ module Popolo
 
   module Helper
 
+    def generate_url(type, obj)
+      raise "#{type} has no 'id': #{obj}" unless obj.has_key? 'id'
+      [ '', @country, type, obj['id'].split('/').last ].join("/")
+    end
+
+    def person_url(p)
+      generate_url('person', p)
+    end
+
+    def party_url(p)
+      generate_url('party', p)
+    end
+
+    def term_url(t)
+      generate_url('term', t)
+    end
+
   end
 end
 

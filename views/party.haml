@@ -4,4 +4,4 @@
 
   %ul
     - @memberships.each do |m|
-      %li <a href="/person/#{m['person_id'].gsub(/.*\/person\//,'')}">#{m['person']['name']}</a>
+      %li <a href="#{ person_url(m['person']) }">#{m['person']['name']}</a>

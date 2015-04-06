@@ -4,5 +4,5 @@
 
   %ul
     - @parties.sort_by { |p| p['name'] }.each do |p|
-      %li <a href="/party/#{ p['id'].gsub(/.*?\/party\//,'') }">#{p['name']}</a>
+      %li <a href="#{ party_url(p) }">#{p['name']}</a>
 
