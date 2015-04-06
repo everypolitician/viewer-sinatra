@@ -10,6 +10,10 @@ module Popolo
       @_data ||= JSON.parse(File.read("data/#{@_file}.json"))
     end
 
+    def persons
+      json['persons']
+    end
+
   end
 
   module Helper

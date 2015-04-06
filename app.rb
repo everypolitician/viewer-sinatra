@@ -19,7 +19,7 @@ get '/terms.html' do
 end
 
 get '/people.html' do
-  @people = persons
+  @people = Popolo::Data.new('eduskunta').persons
   haml :people
 end
 
