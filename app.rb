@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'haml'
 require 'json'
+require 'sass'
 require_relative './lib/popolo_helper'
 
 helpers Popolo::Helper
@@ -65,6 +66,9 @@ get '/:country/party/:id' do |country, id|
   haml :party
 end
 
+get '/styles.css' do
+  scss :styles
+end
 
 
 
