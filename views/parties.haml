@@ -1,8 +1,0 @@
-
-#parties
-  %h1 Parties 
-
-  %ul
-    - @parties.sort_by { |p| p['name'] }.each do |p|
-      %li <a href="#{ party_url(p) }">#{p['name']}</a>
-

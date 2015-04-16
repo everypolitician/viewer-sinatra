@@ -1,0 +1,8 @@
+<div class="container" id="parties">
+    <h1>Parties </h1>
+    <ul>
+      <% @parties.sort_by { |p| p['name'] }.each do |p| %>
+        <li><a href="<%= party_url(p) %>"><%= p['name'] %></a></li>
+      <% end %>
+    </ul>
+</div>

@@ -1,0 +1,17 @@
+<div class="container" id="person">
+    <h1><%= @person['name'] %></h1>
+    <p>
+      <% if @person['image'] %>
+        <img src="<%= @person['image'] %>">
+      <% end %>
+    </p>
+
+    <ul>
+      <% @memberships.sort_by { |m| m['start_date'] }.reverse.each do |m| %>
+        <li>
+            <a href="<%= party_url(m['on_behalf_of']) %>"><%= m['on_behalf_of']['name'] %></a>
+            (<%= m['start_date'] %>–<%= m['end_date'] %>)
+        </li>
+      <% end %>
+    </ul>
+</div>

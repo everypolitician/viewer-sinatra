@@ -1,0 +1,35 @@
+@import 'normalize';
+@import 'variables';
+@import 'mixins';
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: $colour_background;
+    color: $colour_black;
+    font-family: $body_typeface;
+    font-size: 1.125em; //18px
+    height: 100%;
+    line-height: 1.388888889em; //25px
+    min-height: 100%;
+
+    @media (min-width: $medium_screen) {
+        line-height: 1.5em; //27px
+    }
+}
+
+@import 'typography';
+@import 'layouts';
+@import 'components';
+@import 'site-header';
+@import 'site-footer';
