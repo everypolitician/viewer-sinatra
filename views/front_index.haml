@@ -5,3 +5,7 @@
     :markdown
       This is a simple demo site for viewing PopIt data
 
+  %ul
+    - @countries.sort.each do |c|
+      %li <a href="/#{ c }/">#{c.capitalize}</a>
+

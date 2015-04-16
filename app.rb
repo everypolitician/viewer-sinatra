@@ -20,6 +20,7 @@ end
 
 
 get '/' do
+  @countries = mapping.map { |k, v| v.first }
   haml :front_index
 end
 
