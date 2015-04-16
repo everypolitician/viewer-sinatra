@@ -1,3 +1,10 @@
-<div id="home">
-    <h1><%= @country.capitalize %></h1>
+<div class="container" id="home">
+    <div class="hero">
+        <h1>We’re cataloguing every politician in <%= @country.capitalize %>!</h1>
+        <p class="lead">Try browsing by
+            <a href="/<%= @country %>/people.html">name</a>,
+            <a href="/<%= @country %>/parties.html">party</a>,
+            or <a href="/<%= @country %>/terms.html">parliamentary term</a>.
+        </p>
+    </div>
 </div>

@@ -38,6 +38,10 @@
     }
 }
 
+p.lead {
+    font-size: 1.2em;
+}
+
 .button {
     background-color: $colour_green;
     @include vendor-prefix(border-radius, $border_radius);

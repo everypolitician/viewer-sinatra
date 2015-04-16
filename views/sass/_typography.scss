@@ -49,6 +49,12 @@ h4,
     }
 }
 
+// Make H1s in the main body of the page smaller,
+// so they don't compete with the site header.
+.site-content h1 {
+    @extend h2;
+}
+
 p {
     margin: 0 0 1em 0;
 }
