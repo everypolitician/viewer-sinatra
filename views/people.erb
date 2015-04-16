@@ -1,0 +1,9 @@
+<div id="people">
+    <h1>Members</h1>
+
+    <ul>
+      <% @people.sort_by { |p| p['name'] }.each do |p| %>
+        <li><a href="<%= person_url(p) %>"><%= p['name'] %></a>
+      <% end %>
+    </ul>
+</div>

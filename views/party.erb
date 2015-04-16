@@ -1,0 +1,9 @@
+<div id="party">
+    <h1><%= @party['name'] %></h1>
+
+    <ul>
+      <% @memberships.each do |m| %>
+        <li><a href="<%= person_url(m['person']) %>"><%= m['person']['name'] %></a></li>
+      <% end %>
+    </ul>
+</div>

@@ -1,9 +1,0 @@
-
-#term
-  %h1= @term['name']
-  %p #{@term['start_date']} – #{@term['end_date']}
-
-  %ul
-    - @memberships.sort_by { |m| m['person']['name'] }.each do |m|
-      %li <a href="#{ person_url(m['person']) }">#{m['person']['name']}</a> (#{m['start_date']}–#{m['end_date']})
-    

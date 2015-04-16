@@ -1,0 +1,16 @@
+<div id="terms">
+    <h1>Terms</h1>
+
+  <% if @terms %>
+    <ul>
+      <% @terms.sort_by { |t| t['start_date'] }.reverse.each do |t| %>
+        <li><a href="<%= term_url(t) %>"><%= t['name'] %></a></li>
+      <% end %>
+    </ul>
+
+  <% else %>
+    <p>Not using terms</p>
+
+  <% end %>
+
+</div>

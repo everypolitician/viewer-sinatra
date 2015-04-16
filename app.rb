@@ -1,5 +1,4 @@
 require 'sinatra'
-require 'haml'
 require 'json'
 require 'sass'
 require_relative './lib/popolo_helper'
@@ -22,53 +21,50 @@ end
 
 get '/' do
   @countries = mapping.map { |k, v| v.first }
-  haml :front_index
+  erb :front_index
 end
 
 get '/about.html' do
-  haml :about
+  erb :about
 end
 
 get '/:country/' do
-  haml :index
+  erb :index
 end
 
 get '/:country/terms.html' do
   @terms = @popolo.terms
-  haml :terms
+  erb :terms
 end
 
 get '/:country/people.html' do
   @people = @popolo.persons
-  haml :people
+  erb :people
 end
 
 get '/:country/parties.html' do
   @parties = @popolo.parties
-  haml :parties
+  erb :parties
 end
 
 get '/:country/term/:id' do |country, id|
   @term = @popolo.term_from_id(id) or pass
   @memberships = @popolo.term_memberships(@term)
-  haml :term
+  erb :term
 end
 
 get '/:country/person/:id' do |country, id|
   @person = @popolo.person_from_id(id) or pass
   @memberships = @popolo.person_memberships(@person)
-  haml :person
+  erb :person
 end
 
 get '/:country/party/:id' do |country, id|
   @party = @popolo.party_from_id(id) or pass
   @memberships = @popolo.party_memberships(@party['id'])
-  haml :party
+  erb :party
 end
 
 get '/*.css' do |filename|
   scss :"sass/#{filename}"
 end
-
-
-

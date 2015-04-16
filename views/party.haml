@@ -1,7 +1,0 @@
-
-#party
-  %h1= @party['name']
-
-  %ul
-    - @memberships.each do |m|
-      %li <a href="#{ person_url(m['person']) }">#{m['person']['name']}</a>
