@@ -6,14 +6,14 @@ require_relative './lib/popolo_helper'
 
 helpers Popolo::Helper
 
-mapping = { 
+mapping = {
   # filename  => [ primary, aliases (all lower case) ]
   'eduskunta' => [ 'finland', 'fi', 'eduskunta' ],
   'wales'     => [ 'wales', 'gb-wls', 'wls' ],
 }
 
 before '/:country/*' do |country, _|
-  found = mapping.find { |fn, codes| codes.include? country.downcase } or 
+  found = mapping.find { |fn, codes| codes.include? country.downcase } or
     halt 404
   @country = found.last.first
   @popolo = Popolo::Data.new(found.first)
@@ -29,21 +29,21 @@ get '/about.html' do
   haml :about
 end
 
-get '/:country/' do 
+get '/:country/' do
   haml :index
 end
 
-get '/:country/terms.html' do 
+get '/:country/terms.html' do
   @terms = @popolo.terms
   haml :terms
 end
 
-get '/:country/people.html' do 
+get '/:country/people.html' do
   @people = @popolo.persons
   haml :people
 end
 
-get '/:country/parties.html' do 
+get '/:country/parties.html' do
   @parties = @popolo.parties
   haml :parties
 end
