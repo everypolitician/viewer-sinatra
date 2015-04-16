@@ -21,6 +21,8 @@ GEM
     rack (1.6.0)
     rack-protection (1.5.3)
       rack
+    rack-test (0.6.3)
+      rack (>= 1.0)
     redcarpet (3.2.2)
     thin (1.6.3)
       daemons (~> 1.0, >= 1.0.9)
@@ -35,6 +37,7 @@ DEPENDENCIES
   haml
   json
   nokogiri
+  rack-test
   redcarpet
   sinatra!
   thin
