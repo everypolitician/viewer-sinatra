@@ -66,8 +66,8 @@ get '/:country/party/:id' do |country, id|
   haml :party
 end
 
-get '/styles.css' do
-  scss :styles
+get '/*.css' do |filename|
+  scss :"sass/#{filename}"
 end
 
 
