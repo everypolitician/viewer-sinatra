@@ -1,16 +1,31 @@
-<div class="container" id="terms">
-    <h1>Terms</h1>
+<% if @terms %>
 
-  <% if @terms %>
-    <ul>
-      <% @terms.sort_by { |t| t['start_date'] }.reverse.each do |t| %>
-        <li><a href="<%= term_url(t) %>"><%= t['name'] %></a></li>
-      <% end %>
-    </ul>
+    <div class="page-section" id="terms">
+        <div class="container">
+            <h1>Terms</h1>
+            <ul>
+              <% @terms.sort_by { |t| t['start_date'] }.reverse.each do |t| %>
+                <li><a href="<%= term_url(t) %>"><%= t['name'] %></a></li>
+              <% end %>
+            </ul>
+        </div>
+    </div>
 
-  <% else %>
-    <p>Not using terms</p>
+<% else %>
 
-  <% end %>
+    <div class="hero">
+        <div class="container">
+            <h1>Oh no!</h1>
+            <p>There are no terms in this country’s dataset.</p>
+        </div>
+    </div>
 
-</div>
+    <div class="page-section page-section--grey text-center">
+        <div class="container" style="max-width: 26em;">
+            <h3>Is this your data?</h3>
+            <p><strong>You can fix this problem</strong> by making sure your data is represented according to the Popolo standard. Blah blah blah blah, blah blah blah.</p>
+            <a href="#" class="button button--small">Find out more</a>
+        </div>
+    </div>
+
+<% end %>

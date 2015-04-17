@@ -1,9 +1,31 @@
-<div class="container" id="people">
-    <h1>Members</h1>
+<% if @people %>
 
-    <ul>
-      <% @people.sort_by { |p| p['name'] }.each do |p| %>
-        <li><a href="<%= person_url(p) %>"><%= p['name'] %></a>
-      <% end %>
-    </ul>
-</div>
+    <div class="page-section" id="people">
+        <div class="container">
+            <h1>People</h1>
+            <ul>
+              <% @people.sort_by { |p| p['name'] }.each do |p| %>
+                <li><a href="<%= person_url(p) %>"><%= p['name'] %></a>
+              <% end %>
+            </ul>
+        </div>
+    </div>
+
+<% else %>
+
+    <div class="hero">
+        <div class="container">
+            <h1>Oh no!</h1>
+            <p>There are no people in this country’s dataset.</p>
+        </div>
+    </div>
+
+    <div class="page-section page-section--grey text-center">
+        <div class="container" style="max-width: 26em;">
+            <h3>Is this your data?</h3>
+            <p><strong>You can fix this problem</strong> by making sure your data is represented according to the Popolo standard. Blah blah blah blah, blah blah blah.</p>
+            <a href="#" class="button button--small">Find out more</a>
+        </div>
+    </div>
+
+<% end %>
