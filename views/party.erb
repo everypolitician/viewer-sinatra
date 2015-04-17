@@ -1,9 +1,21 @@
-<div class="container" id="party">
-    <h1><%= @party['name'] %></h1>
+<div class="page-section" id="party">
+    <div class="container">
+        <h1><%= @party['name'] %></h1>
 
-    <ul>
-      <% @memberships.each do |m| %>
-        <li><a href="<%= person_url(m['person']) %>"><%= m['person']['name'] %></a></li>
+      <% if @memberships %>
+        <h3>Members</h3>
+        <ul class="avatar-list">
+          <% @memberships.each do |m| %>
+            <li>
+                <a href="<%= person_url(m['person']) %>">
+                    <span class="avatar"><i class="fa fa-user"></i></span>
+                    <span class="label"><%= m['person']['name'] %></span>
+                </a>
+            </li>
+          <% end %>
+        </ul>
+      <% else %>
+        <h3>No members</h3>
       <% end %>
-    </ul>
+    </div>
 </div>

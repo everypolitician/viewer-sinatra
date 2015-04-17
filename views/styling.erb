@@ -16,7 +16,8 @@
                     <li><a href="#vertical-spacing">Vertical spacing</a></li>
                     <li><a href="#hero-sections">Hero sections</a></li>
                     <li><a href="#buttons">Buttons</a></li>
-                    <li><a href="#lists">Unstyled and inline lists</a></li>
+                    <li><a href="#advanced-lists">Lists of things</a></li>
+                    <li><a href="#basic-lists">Unstyled and inline lists</a></li>
                     <li><a href="#alerts">Alerts</a></li>
                 </ul>
             </div>
@@ -133,7 +134,40 @@
 
                 <hr>
 
-                <h1 id="lists">Unstyled and inline lists</h1>
+                <h1 id="advanced-lists">Lists of things</h1>
+
+                <p>The <code>.avatar-list</code> is ideal for displaying lists of people, places, or things:</p>
+
+                <ul class="avatar-list">
+                  <% @names = [ 'Tony Stark', 'Obadiah Stane', 'Pepper Potts', 'Justin Hammer', 'Nick Fury', 'Jim Rhodes' ] %>
+                  <% @names.each do |name| %>
+                    <li>
+                        <a href="#">
+                            <span class="avatar"><i class="fa fa-user"></i></span>
+                            <span class="label"><%= name %></span>
+                        </a>
+                    </li>
+                  <% end %>
+                </ul>
+
+                <pre>
+&lt;ul class="avatar-list"&gt;
+    &lt;li&gt;
+        &lt;a href="#"&gt;
+            &lt;span class="avatar"&gt;&lt;i class="fa fa-user"&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;span class="label"&gt;Tony Stark&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    …
+&lt;/ul&gt;</pre>
+
+                <p><strong>Note:</strong> In modern browsers, the list will break into as many columns as will fit on the screen. Old browsers will get a single column.</p>
+
+                <p>You can change the icon displayed by replacing <code>&lt;i class="fa fa-user"&gt;</code> with one of the icon codes from the <a href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome docs</a>.</p>
+
+                <hr>
+
+                <h1 id="basic-lists">Unstyled and inline lists</h1>
 
                 <p>Add a class of <code>unstyled-list</code> to a list element to remove the bullets and margin.</p>
 

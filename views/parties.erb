@@ -3,9 +3,14 @@
     <div class="page-section" id="parties">
         <div class="container">
             <h1>Parties</h1>
-            <ul>
+            <ul class="avatar-list">
               <% @parties.sort_by { |p| p['name'] }.each do |p| %>
-                <li><a href="<%= party_url(p) %>"><%= p['name'] %></a></li>
+                <li>
+                    <a href="<%= party_url(p) %>">
+                        <span class="avatar"><i class="fa fa-university"></i></span>
+                        <span class="label"><%= p['name'] %></span>
+                    </a>
+                </li>
               <% end %>
             </ul>
         </div>

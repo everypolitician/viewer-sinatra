@@ -248,3 +248,48 @@ p.lead {
     background-color: mix(#fff, $colour_red, 80%);
     border-color: mix(#fff, $colour_red, 40%);
 }
+
+.avatar-list {
+    @extend .unstyled-list;
+    @include vendor-prefix('column-width', 20em);
+    @include vendor-prefix('column-gap', 2em);
+
+    a {
+        display: block;
+        padding: 0.5em 0;
+        color: inherit;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        &:hover,
+        &:focus {
+            .avatar {
+                background: darken($colour_green, 5%);
+            }
+            .label {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .avatar {
+        display: inline-block;
+        text-align: center;
+        width: 2em;
+        height: 2em;
+        margin-right: 0.5em;
+        background: $colour_green;
+        border-radius: 1em;
+
+        .fa {
+            line-height: 2em; // vertically centre in circle
+            color: #fff;
+            text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+        }
+    }
+
+    .label {
+        line-height: 2em;
+    }
+}
