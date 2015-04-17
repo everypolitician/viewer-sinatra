@@ -1,3 +1,10 @@
+@-webkit-keyframes pulse {
+    0% { background-color: $colour_blue; }
+    25% { background-color: $colour_green; }
+    50% { background-color: $colour_blue; }
+    75% { background-color: $colour_purple; }
+}
+
 .container {
     margin: 0 auto;
     max-width: 71.111111111em;
@@ -23,6 +30,10 @@
     }
 }
 
+.text-center {
+    text-align: center;
+}
+
 .unstyled-list {
     list-style: none outside none;
     margin-left: 0;
@@ -44,7 +55,7 @@ p.lead {
 
 .button {
     background-color: $colour_green;
-    @include vendor-prefix(border-radius, $border_radius);
+    border-radius: $border_radius;
     border: 0;
     color: $colour_white;
     display: inline-block;
@@ -102,66 +113,108 @@ p.lead {
     }
 }
 
-.dual-buttons {
-    text-align: center;
-}
-
-.dual-button {
+.button-group {
     display: block;
-    @media (min-width: 27em) {
+    padding: 0;
+
+    & > .button {
+        display: block;
+        border-radius: 0;
+
+        &:first-child {
+            @include border-top-radius($border-radius);
+        }
+
+        &:last-child {
+            @include border-bottom-radius($border-radius);
+        }
+    }
+
+    & > .button + .button {
+        margin-top: -1px; // avoid double borders
+    }
+
+    @media (min-width: $medium-screen) {
         display: inline-block;
+        vertical-align: middle;
+
+        & > .button {
+            display: inline-block;
+            float: left;
+
+            &:first-child {
+                border-radius: 0;
+                @include border-left-radius($border-radius);
+            }
+
+            &:last-child {
+                border-radius: 0;
+                @include border-right-radius($border-radius);
+            }
+        }
+
+        & > .button + .button {
+            margin-top: 0;
+            margin-left: -1px; // avoid double borders
+        }
     }
 }
 
-.dual-button--first {
-    @media (max-width: 27em) {
-        border-bottom: 0 !important;
-        @include vendor-prefix(border-bottom-left-radius, 0);
-        @include vendor-prefix(border-bottom-right-radius, 0);
-    }
-
-    @media (min-width: 27em) {
-        border-right: 0 !important;
-        @include vendor-prefix(border-top-right-radius, 0);
-        @include vendor-prefix(border-bottom-right-radius, 0);
-    }
-}
-
-.dual-button--second {
-    @media (max-width: 27em) {
-        @include vendor-prefix(border-top-left-radius, 0);
-        @include vendor-prefix(border-top-right-radius, 0);
-    }
-
-    @media (min-width: 27em) {
-        @include vendor-prefix(border-top-left-radius, 0);
-        @include vendor-prefix(border-bottom-left-radius, 0);
-    }
-}
-
-
-%page-section {
+.page-section {
     padding: 2em 0;
     @media ( min-width: $medium_screen) {
         padding: 4em 0;
     }
 }
 
-.light-page-section {
-    @extend %page-section;
+.page-section--grey {
     background-color: $colour_off_white;
 }
 
-.dark-page-section {
-    @extend %page-section;
+.page-section--black {
     color: #fff;
     background-color: $colour_black;
+
     a {
         color: #fff;
     }
 }
 
 .hero {
-    @extend %page-section;
+    @extend .page-section;
     text-align: center;
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.hero--jazzy {
+    position: relative;
+    top: -1px; // overlap border-bottom on header
+    background-color: $colour_blue;
+    -webkit-animation: pulse 60s infinite;
+    color: $colour_white;
+
+    .subtitle {
+        opacity: 0.8;
+
+        a {
+            opacity: 1;
+            text-decoration: none;
+        }
+    }
+
+    a {
+        color: $colour_white;
+        opacity: 0.8;
+        text-decoration: underline;
+
+        &:hover,
+        &:active,
+        &:focus {
+            text-decoration: none;
+            opacity: 1;
+        }
+    }
 }

@@ -68,3 +68,7 @@ end
 get '/*.css' do |filename|
   scss :"sass/#{filename}"
 end
+
+get '/styling' do
+  erb :styling
+end

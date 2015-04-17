@@ -1,0 +1,145 @@
+<div class="hero hero--jazzy">
+    <div class="container">
+        <h1>Style guide</h1>
+        <p class="subtitle">for EveryPolitician contributors</p>
+    </div>
+</div>
+
+<div class="page-section">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="column-one-quarter">
+                <ul class="unstyled-list">
+                    <li><a href="#centred-content">Centred content</a></li>
+                    <li><a href="#vertical-spacing">Vertical spacing</a></li>
+                    <li><a href="#vertical-spacing">Hero sections</a></li>
+                    <li><a href="#vertical-spacing">Buttons</a></li>
+                    <li><a href="#lists">Unstyled and inline lists</a></li>
+                </ul>
+            </div>
+
+            <div class="column-three-quarters">
+
+                <h2 id="centred-content">Centred content</h2>
+
+                <p>Use a class of <code>.container</code> to centre a block of content and stop it touching the sides of the window.</p>
+
+                <pre>
+&lt;div class="container"&gt;
+    &lt;p&gt;…&lt;/p&gt;
+&lt;/div&gt;</pre>
+
+                <p>To literally centre the text (eg: for a centred heading), use <code>.text-center</code>:</p>
+
+                <pre>
+&lt;div class="text-center"&gt;
+    &lt;h2&gt;This heading will be centred&lt;/h2&gt;
+&lt;/div&gt;</pre>
+
+                <hr>
+
+                <h2 id="vertical-spacing">Vertical spacing</h2>
+
+                <p>You will usually want to nest your <code>.container</code> blocks inside a <code>.page-content</code> block, to provide vertical spacing between different sections of the page.</p>
+
+                <pre>
+&lt;div class="page-section"&gt;
+    &lt;div class="container"&gt;
+        &lt;p&gt;…&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+                <p>Add a class of <code>page-section--grey</code> or <code>page-section--black</code> to give a page section more emphasis, eg:</p>
+
+                <pre>
+&lt;div class="page-section page-section--grey"&gt;
+    &lt;div class="container"&gt;
+        &lt;p&gt;…&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+                <hr>
+
+                <h2 id="hero-sections">Hero sections</h2>
+
+                <p>Use a <code>.hero</code> block to create a centred, impactful page heading:</p>
+
+                <pre>
+&lt;div class="hero"&gt;
+    &lt;div class="container"&gt;
+        &lt;p&gt;…&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+                <p>Add a class of <code>hero--jazzy</code> to make an eye-catching section (like the one at the top of this page) that shifts background colour on modern web browsers:</p>
+
+                <pre>
+&lt;div class="hero hero--jazzy"&gt;
+    &lt;div class="container"&gt;
+        &lt;p&gt;…&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+                <p><strong>Note:</strong> Hero blocks should not be nested inside <code>page-section</code> blocks. The Hero has its own vertical padding.</p>
+
+                <hr>
+
+                <h1 id="buttons">Buttons</h1>
+
+                <p>Use the <code>.button</code> class to trigger basic styling, then add <code>button--secondary</code>, <code>button--tertiary</code>, or <code>button--quarternary</code> to de-emphasise less important actions.</p>
+
+                <table>
+                  <tr>
+                    <td><code>&lt;a class="button"&gt;Save changes&lt;/a&gt;</code></td>
+                    <td><a class="button" href="#">Save changes</a></td>
+                  </tr>
+                  <tr>
+                    <td><code>&lt;a class="button button--secondary"&gt;Contact this MP&lt;/a&gt;</code></td>
+                    <td><a class="button button--secondary" href="#">Contact this MP</a></td>
+                  </tr>
+                  <tr>
+                    <td><code>&lt;a class="button button--tertiary"&gt;Cancel&lt;/a&gt;</code></td>
+                    <td><a class="button button--tertiary" href="#">Cancel</a></td>
+                  </tr>
+                  <tr>
+                    <td><code>&lt;a class="button button--quarternary"&gt;Show more&lt;/a&gt;</code></td>
+                    <td><a class="button button--quarternary" href="#">Show more</a></td>
+                  </tr>
+                </table>
+
+                <p>You can combine buttons into groups by putting them inside a <code>.button-group</code>:</p>
+
+                <div class="text-center">
+                    <div class="button-group">
+                        <a class="button button--quarternary" href="#">Sort by date</a>
+                        <a class="button button--quarternary" href="#">Sort by name</a>
+                        <a class="button button--quarternary" href="#">Sort by location</a>
+                    </div>
+                </div>
+
+                <pre>
+&lt;div class="text-center"&gt;
+    &lt;div class="button-group"&gt;
+        &lt;a class="button button--quarternary"&gt;Sort by date&lt;/a&gt;
+        &lt;a class="button button--quarternary"&gt;Sort by name&lt;/a&gt;
+        &lt;a class="button button--quarternary"&gt;Sort by location&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+                <p>Buttons will be stacked vertically on narrow screens, and horizontally on larger screens.</p>
+
+                <hr>
+
+                <h1 id="lists">Unstyled and inline lists</h1>
+
+                <p>Add a class of <code>unstyled-list</code> to a list element to remove the bullets and margin.</p>
+
+                <p>Or add a class of <code>inline-list</code> to collapse all the list items onto a single line, so the list reads like a sentence. (Useful for lists of links in places like nav bars and footers.)</p>
+
+            </div>
+        </div>
+
+    </div>
+</div>

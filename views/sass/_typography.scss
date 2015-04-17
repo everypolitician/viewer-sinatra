@@ -64,23 +64,32 @@ pre, code, kbd, samp {
 }
 
 code {
+    padding: 0.1em 0.2em;
+    background-color: $colour_off_white;
     @include vendor-prefix(border-radius, $border_radius);
-    border: 1px solid $colour_borders;
-    padding: 0 0.2em;
+    border: 1px solid darken($colour_off_white, 5%);
+
+    p & {
+        font-size: 0.8em;
+        padding: 0.2em 0.2em 0.1em 0.2em;
+        margin: 0 0.1em;
+        vertical-align: middle;
+    }
 }
 
 pre {
-    background-color: $colour_background;
+    background-color: $colour_off_white;
     @include vendor-prefix(border-radius, $border_radius);
-    border: 1px solid $colour_borders;
+    border: 1px solid darken($colour_off_white, 5%);
     display: block;
     font-size: .9375em;
     line-height: 1.4375em;
     max-width: 100%;
-    overflow-x: scroll;
     padding: 1em;
     white-space: pre-wrap;
+
     code {
+        background: transparent;
         border: none;
         padding: 0;
     }
@@ -89,7 +98,7 @@ pre {
 hr {
     border: none;
     border-top: 1px solid $colour_borders;
-    margin: 0;
+    margin: 2em 0;
 }
 
 audio,
@@ -178,7 +187,7 @@ legend {
 table {
     border-collapse: collapse;
     font-size: 0.875em;
-    margin: 1em 0;
+    margin: 1em 0 1.75em 0;
     max-width: 100%;
     width: 100%;
     p {

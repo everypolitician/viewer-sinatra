@@ -1,5 +1,5 @@
 .site-footer {
-    @extend %page-section;
+    @extend .page-section;
     @include clearfix;
     border-top: 1px solid $colour_borders;
     .container {
