@@ -218,3 +218,28 @@ p.lead {
         }
     }
 }
+
+.alert {
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid $colour_borders;
+    border-radius: $border-radius;
+
+    & > :first-child {
+        margin-top: 0;
+    }
+
+    & > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+.alert--success {
+    background-color: mix(#fff, $colour_green, 80%);
+    border-color: mix(#fff, $colour_green, 40%);
+}
+
+.alert--error {
+    background-color: mix(#fff, $colour_red, 80%);
+    border-color: mix(#fff, $colour_red, 40%);
+}
