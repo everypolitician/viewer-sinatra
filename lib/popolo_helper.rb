@@ -1,6 +1,7 @@
 module Popolo
 
   require 'date'
+  require 'json'
 
   class Data
 
