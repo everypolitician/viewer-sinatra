@@ -19,4 +19,4 @@ The project uses [Sinatra](http://www.sinatrarb.com), an ultra-minimal Ruby MVC 
 
 CSS styles are generated with [Sass](http://sass-lang.com).
 
-We don’t use a pre-built CSS framework like Foundation or Bootstrap, but you can visit [localhost:5000/debug/styling](http://localhost:5000/styling) once you have the project up and running, to see a live preview of the basic styles and components available to you.
+We don’t use a pre-built CSS framework like Foundation or Bootstrap, but you can visit [localhost:5000/styling](http://localhost:5000/styling) once you have the project up and running, to see a live preview of the basic styles and components available to you.
