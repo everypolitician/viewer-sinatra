@@ -82,11 +82,12 @@ pre {
     @include vendor-prefix(border-radius, $border_radius);
     border: 1px solid darken($colour_off_white, 5%);
     display: block;
-    font-size: .9375em;
+    font-size: 0.8em;
     line-height: 1.4375em;
     max-width: 100%;
     padding: 1em;
     white-space: pre-wrap;
+    text-align: left;
 
     code {
         background: transparent;
