@@ -2,6 +2,7 @@ module Popolo
 
   require 'date'
   require 'json'
+  require 'promise'
 
   class Data
 
@@ -22,7 +23,12 @@ module Popolo
     end
 
     def memberships
-      json['memberships']
+      @_mems ||= json['memberships'].map { |m|
+        m['organization'] ||= promise { party_from_id(m['organization_id']) }
+        m['on_behalf_of'] ||= promise { party_from_id(m['on_behalf_of_id']) }
+        m['person']       ||= promise { person_from_id(m['person_id'])      }
+        m
+      }
     end
 
     def legislature
@@ -39,7 +45,6 @@ module Popolo
     end
 
     def legislative_memberships
-      # TODO expand!
       memberships.find_all { |m| m['organization_id'] == 'legislature' }
     end
 
@@ -53,9 +58,6 @@ module Popolo
       # TODO: direct memberships
       legislative_memberships.find_all { |m| 
         ( m['start_date'] <= (t['end_date'] || Date.today.to_s) and t['start_date'] <= (m['end_date'] || Date.today.to_s) )
-      }.map { |m|
-        m['person'] ||= person_from_id(m['person_id'])
-        m
       }
     end
 
@@ -64,11 +66,7 @@ module Popolo
     end
 
     def person_memberships(p)
-      memberships.find_all { |m| m['person_id'] == p['id'] }.map { |m|
-        m['organization'] ||= party_from_id(m['organization_id'])
-        m['on_behalf_of'] ||= party_from_id(m['on_behalf_of_id'])
-        m
-      }
+      memberships.find_all { |m| m['person_id'] == p['id'] }
     end
 
     def party_from_id(id)
@@ -76,17 +74,11 @@ module Popolo
     end
 
     def party_memberships(id)
-      legislative_memberships.find_all { |m| m['on_behalf_of_id'] == id }.map { |m|
-        m['person'] ||= person_from_id(m['person_id'])
-        m
-      }
+      legislative_memberships.find_all { |m| m['on_behalf_of_id'] == id }
     end
 
     def named_area_memberships(name)
-      legislative_memberships.find_all { |m| m.has_key?('area') && m['area']['name'] == name }.map { |m|
-        m['person'] ||= person_from_id(m['person_id'])
-        m
-      }
+      legislative_memberships.find_all { |m| m.has_key?('area') && m['area']['name'] == name }
     end
 
   end
