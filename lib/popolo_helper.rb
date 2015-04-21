@@ -27,6 +27,11 @@ module Popolo
         m['organization'] ||= promise { party_from_id(m['organization_id']) }
         m['on_behalf_of'] ||= promise { party_from_id(m['on_behalf_of_id']) }
         m['person']       ||= promise { person_from_id(m['person_id'])      }
+        if m.has_key?('legislative_period_id')
+          m['legislative_period'] ||= promise { term_from_id(m['legislative_period_id']) }
+          m['start_date'] ||= promise { m['legislative_period']['start_date'] }
+          m['end_date'] ||= promise { m['legislative_period']['end_date'] }
+        end
         m
       }
     end
