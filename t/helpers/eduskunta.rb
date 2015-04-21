@@ -103,8 +103,8 @@ describe "Eduskunta" do
 
     let(:area_mems) { subject.named_area_memberships('Oulun') }
 
-    it "should have had 45 members" do
-      area_mems.count.must_equal 45
+    it "should have had 38 members" do
+      area_mems.map { |m| m['person_id'] }.uniq.count.must_equal 38
     end
 
   end
