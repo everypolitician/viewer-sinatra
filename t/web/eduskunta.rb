@@ -19,7 +19,7 @@ describe "Stance viewer" do
 
   describe "when viewing the MP list page" do
 
-    before { get '/eduskunta/people.html' }
+    before { get '/suomi/people.html' }
 
     it "should have Alexander Stubb" do
       subject.css('#people ul').inner_html.must_include 'Stubb Alexander'
@@ -30,7 +30,7 @@ describe "Stance viewer" do
 
   describe "when viewing the Term list page" do
 
-    before { get '/finland/terms.html' }
+    before { get '/suomi/terms.html' }
 
     it "should have at least 35 terms" do
       subject.css('#terms ul li').count.must_be :>, 35
@@ -46,7 +46,7 @@ describe "Stance viewer" do
 
   describe "when viewing the Party list page" do
 
-    before { get '/Finland/parties.html' }
+    before { get '/suomi/parties.html' }
 
     it "should have Left Alliance" do
       subject.css('#parties ul').inner_html.must_include 'Left Alliance'
@@ -62,7 +62,7 @@ describe "Stance viewer" do
 
   describe "when viewing Person 1031" do
 
-    before { get '/fi/person/1031' }
+    before { get '/suomi/person/1031' }
 
     it "should have have their name" do
       subject.css('h1').text.must_equal 'Stubb Alexander'
@@ -78,9 +78,10 @@ describe "Stance viewer" do
 
   describe "when viewing Person 910615" do
 
-    before { get '/FINLAND/person/910615' }
+    before { get '/suomi/person/910615' }
 
-    it "should have two legislative terms" do
+    # This differs from 'eduskunta' 
+    it "should have three legislative terms" do
       lis = subject.css('#person ul li').map { |li| li.text }
       lis.count.must_equal 2
       lis.first.must_match 'The Finns Party'
@@ -96,7 +97,7 @@ describe "Stance viewer" do
 
   describe "when viewing an Term page" do
 
-    before { get '/FI/term/27' }
+    before { get '/suomi/term/27' }
 
     it "should have have its name" do
       subject.css('h1').text.must_equal 'Eduskunta 27 (1975 II)'
@@ -108,7 +109,7 @@ describe "Stance viewer" do
 
   describe "when viewing an Party page" do
 
-    before { get '/EdusKunta/party/kok' }
+    before { get '/suomi/party/kok' }
 
     it "should have have their name" do
       subject.css('h1').text.must_equal 'National Coalition Party'
