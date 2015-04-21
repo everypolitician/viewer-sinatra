@@ -7,7 +7,7 @@
               <% @parties.sort_by { |p| p['name'] }.each do |p| %>
                 <li>
                     <a href="<%= party_url(p) %>">
-                        <span class="avatar"><i class="fa fa-university"></i></span>
+                        <span class="avatar"><i class="fa fa-users"></i></span>
                         <span class="label"><%= p['name'] %></span>
                     </a>
                 </li>
