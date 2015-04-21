@@ -82,6 +82,13 @@ module Popolo
       }
     end
 
+    def named_area_memberships(name)
+      legislative_memberships.find_all { |m| m.has_key?('area') && m['area']['name'] == name }.map { |m|
+        m['person'] ||= person_from_id(m['person_id'])
+        m
+      }
+    end
+
   end
 
   module Helper
@@ -101,6 +108,12 @@ module Popolo
 
     def term_url(t)
       generate_url('term', t)
+    end
+
+    def area_name_url(t)
+      # Ugh. We should probably change generate_url to take an
+      # (optional) argument for which key to look up by
+      generate_url('area', {'id' => t})
     end
 
   end

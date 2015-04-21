@@ -35,6 +35,10 @@ describe "Eduskunta" do
       mems.first['organization_id'].must_equal 'legislature'
     end
 
+    it "should be in the legislature" do
+      mems.first['area']['name'].must_equal 'Uudenmaan'
+    end
+
     it "should have an expanded Organization" do
       mems.first['organization']['name'].must_equal 'Eduskunta'
     end
@@ -91,6 +95,16 @@ describe "Eduskunta" do
 
     it "should have someone still serving" do
       mems.map { |m| m['person']['name'] }.must_include 'Kanerva Ilkka'
+    end
+
+  end
+
+  describe "area" do
+
+    let(:area_mems) { subject.named_area_memberships('Oulun') }
+
+    it "should have had 45 members" do
+      area_mems.count.must_equal 45
     end
 
   end
