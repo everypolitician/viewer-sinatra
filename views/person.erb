@@ -13,7 +13,7 @@
             <li>
                 <a href="<%= party_url(m['on_behalf_of']) %>"><%= m['on_behalf_of']['name'] %></a> representative
                 <% if m['area'] %>
-                  for <%= m['area']['name'] %>
+                  for <a href="<%= area_name_url(m['area']['name']) %>"><%= m['area']['name'] %></a>
                 <% end %>
                 (<%= m['start_date'] %>–<%= m['end_date'] %>)
             </li>

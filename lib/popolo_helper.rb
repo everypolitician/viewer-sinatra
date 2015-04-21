@@ -110,6 +110,12 @@ module Popolo
       generate_url('term', t)
     end
 
+    def area_name_url(t)
+      # Ugh. We should probably change generate_url to take an
+      # (optional) argument for which key to look up by
+      generate_url('area', {'id' => t})
+    end
+
   end
 end
 
