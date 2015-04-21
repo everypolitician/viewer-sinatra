@@ -7,8 +7,9 @@ helpers Popolo::Helper
 
 mapping = {
   # filename  => [ primary, aliases (all lower case) ]
-  'eduskunta' => [ 'finland', 'fi', 'eduskunta' ],
-  'wales'     => [ 'wales', 'gb-wls', 'wls' ],
+  'eduskunta'     => [ 'finland', 'fi', 'eduskunta' ],
+  'eduskunta-old' => [ 'suomi', 'fi-new' ], 
+  'wales'         => [ 'wales', 'gb-wls', 'wls' ],
 }
 
 before '/:country/*' do |country, _|

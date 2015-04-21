@@ -27,6 +27,11 @@ module Popolo
         m['organization'] ||= promise { party_from_id(m['organization_id']) }
         m['on_behalf_of'] ||= promise { party_from_id(m['on_behalf_of_id']) }
         m['person']       ||= promise { person_from_id(m['person_id'])      }
+        if m.has_key?('legislative_period_id')
+          m['legislative_period'] ||= promise { term_from_id(m['legislative_period_id']) }
+          m['start_date'] ||= promise { m['legislative_period']['start_date'] }
+          m['end_date'] ||= promise { m['legislative_period']['end_date'] }
+        end
         m
       }
     end
@@ -54,11 +59,16 @@ module Popolo
     end
 
     def term_memberships(t)
-      # for now, solely by overlapping dates
-      # TODO: direct memberships
-      legislative_memberships.find_all { |m| 
-        ( m['start_date'] <= (t['end_date'] || Date.today.to_s) and t['start_date'] <= (m['end_date'] || Date.today.to_s) )
-      }
+      mems_with_terms = legislative_memberships.find_all { |m| m.has_key? 'legislative_period_id' }
+
+      if mems_with_terms.count.zero?
+        # for now, solely by overlapping dates
+        return legislative_memberships.find_all { |m| 
+          ( m['start_date'] <= (t['end_date'] || Date.today.to_s) and t['start_date'] <= (m['end_date'] || Date.today.to_s) )
+        }
+      else
+        return mems_with_terms.find_all { |m| m['legislative_period_id'] == t['id'] }
+      end
     end
 
     def person_from_id(id)
