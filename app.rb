@@ -65,6 +65,15 @@ get '/:country/party/:id' do |country, id|
   erb :party
 end
 
+# We'll probably need a 'by-ID' version of this later, but for now most
+# of the data we have only has a bare { name: X } on Memberships
+get '/:country/area/:name' do |country, name|
+  @area = { 'name' => name }
+  @memberships = @popolo.named_area_memberships(name)
+  erb :area
+end
+
+
 get '/*.css' do |filename|
   scss :"sass/#{filename}"
 end

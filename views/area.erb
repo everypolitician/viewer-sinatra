@@ -1,0 +1,16 @@
+<div class="page-section" id="area">
+    <div class="container">
+        <h1><%= @area['name'] %></h1>
+
+      <% if @memberships %>
+        <ul>
+          <% @memberships.sort_by { |m| [m['end_date'] || '9999-99-99', m['start_date'] || '1111-11-11'] }.reverse.each do |m| %>
+            <li>
+                <a href="<%= person_url(m['person']) %>"><%= m['person']['name'] %></a>
+                (<%= m['start_date'] %>–<%= m['end_date'] %>)
+            </li>
+          <% end %>
+        </ul>
+      <% end %>
+    </div>
+</div>

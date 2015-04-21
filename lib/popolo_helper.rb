@@ -83,7 +83,10 @@ module Popolo
     end
 
     def named_area_memberships(name)
-      legislative_memberships.find_all { |m| m.has_key?('area') && m['area']['name'] == name }
+      legislative_memberships.find_all { |m| m.has_key?('area') && m['area']['name'] == name }.map { |m|
+        m['person'] ||= person_from_id(m['person_id'])
+        m
+      }
     end
 
   end
