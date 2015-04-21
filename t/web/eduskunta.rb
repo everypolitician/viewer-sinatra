@@ -80,7 +80,7 @@ describe "Stance viewer" do
 
     before { get '/suomi/person/910615' }
 
-    # This differs from 'eduskunta' 
+    # This differs from 'eduskunta-old' 
     it "should have three legislative terms" do
       lis = subject.css('#person ul li').map { |li| li.text }
       lis.count.must_equal 2

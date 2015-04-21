@@ -11,7 +11,7 @@ include Popolo::Helper
 
 describe "Eduskunta" do
 
-  subject { Popolo::Data.new('suomi') }
+  subject { Popolo::Data.new('eduskunta-old') }
 
   describe "party" do
 
