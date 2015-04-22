@@ -97,10 +97,18 @@ describe "Stance viewer" do
 
   describe "when viewing an Term page" do
 
-    before { get '/FI/term/27' }
+    before { get '/FI/term/28' }
 
     it "should have have its name" do
-      subject.css('h1').text.must_equal 'Eduskunta 27 (1975 II)'
+      subject.css('h1').text.must_equal 'Eduskunta 28 (1979)'
+    end
+
+    it "shouldn't show matching term dates" do
+      subject.css('a[href*="103"]').text.wont_include '1979'
+    end
+
+    it "should show non matching term dates" do
+      subject.css('a[href*="311"]').text.must_include '1979'
     end
 
   end
