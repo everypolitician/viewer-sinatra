@@ -49,6 +49,11 @@ module Popolo
       legislature['terms']
     end
 
+    # This will need to become a lot fancier, but it'll do for now
+    def current_term
+      terms.find { |t| not t.has_key? 'end_date' }
+    end
+
     def legislative_memberships
       memberships.find_all { |m| m['organization_id'] == 'legislature' }
     end
