@@ -4,11 +4,11 @@
         <div class="container">
             <h1>Parties</h1>
             <ul class="grid-list">
-              <% @memberships.group_by { |m| m['on_behalf_of'] }.sort_by { |m, ms| ms.count }.reverse.each do |m, ms| %>
+              <% @memberships.group_by { |m| m['on_behalf_of'] }.sort_by { |p, ms| ms.count }.reverse.each do |p, ms| %>
                 <li>
-                    <a class="avatar-unit" href="<%= party_url(m) %>">
+                    <a class="avatar-unit" href="<%= party_url(p) %>">
                         <span class="avatar"><i class="fa fa-users"></i></span>
-                        <h3><%= m['name'] %></h3>
+                        <h3><%= p['name'] %></h3>
                     </a>
                 </li>
               <% end %>
