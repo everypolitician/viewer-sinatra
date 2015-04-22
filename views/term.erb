@@ -10,7 +10,9 @@
                <a class="avatar-unit" href="<%= person_url(m['person']) %>">
                    <span class="avatar"><i class="fa fa-user"></i></span>
                    <h3><%= m['person']['name'] %></h3>
-                   <p><%= m['start_date'] %>–<%= m['end_date'] %></p>
+                   <% if m['start_date'] != @term['start_date'] or m['end_date'] != @term['end_date'] %>
+                     <p><%= m['start_date'] %>–<%= m['end_date'] %></p>
+                   <% end %>
                </a>
             </li>
           <% end %>
