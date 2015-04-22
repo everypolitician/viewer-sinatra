@@ -77,6 +77,15 @@ describe "Eduskunta" do
 
   end
 
+  describe "current term" do
+    let(:term) { subject.current_term }
+
+    it "should should know the current term" do
+      term['name'].must_equal 'Eduskunta 36 (2011)'
+    end
+  end
+
+
   describe "old term" do
 
     let(:term) { subject.term_from_id('27') }
