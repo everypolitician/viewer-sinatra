@@ -260,7 +260,15 @@ p.lead {
     @extend .unstyled-list;
   
     & > * {
-        @include flex(1 0 20em);
+        @include flex(0 0 100%);
+
+        @media (min-width: $medium_screen) {
+          @include flex(0 0 50%);
+        }
+
+        @media (min-width: $medium_screen * 1.5) {
+          @include flex(0 0 33%);
+        }
     }
 }
 
