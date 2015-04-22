@@ -44,7 +44,8 @@ get '/:country/people.html' do
 end
 
 get '/:country/parties.html' do
-  @parties = @popolo.parties
+  #TODO make this *current* memberships
+  @memberships = @popolo.legislative_memberships
   erb :parties
 end
 
