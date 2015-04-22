@@ -3,12 +3,12 @@
     <div class="page-section" id="terms">
         <div class="container">
             <h1>Terms</h1>
-            <ul class="avatar-list">
+            <ul class="grid-list">
               <% @terms.sort_by { |t| t['start_date'] }.reverse.each do |t| %>
                 <li>
-                    <a href="<%= term_url(t) %>">
+                    <a class="avatar-unit" href="<%= term_url(t) %>">
                         <span class="avatar"><i class="fa fa-university"></i></span>
-                        <span class="label"><%= t['name'] %></span>
+                        <h3><%= t['name'] %></h3>
                     </a>
                 </li>
               <% end %>

@@ -3,11 +3,14 @@
         <h1><%= @area['name'] %></h1>
 
       <% if @memberships %>
-        <ul>
+        <ul class="grid-list">
           <% @memberships.sort_by { |m| [m['end_date'] || '9999-99-99', m['start_date'] || '1111-11-11'] }.reverse.each do |m| %>
             <li>
-                <a href="<%= person_url(m['person']) %>"><%= m['person']['name'] %></a>
-                (<%= m['start_date'] %>–<%= m['end_date'] %>)
+                <a class="avatar-unit" href="<%= person_url(m['person']) %>">
+                    <span class="avatar"><i class="fa fa-user"></i></span>
+                    <h3><%= m['person']['name'] %></h3>
+                    <p><%= m['start_date'] %>–<%= m['end_date'] %></p>
+                </a>
             </li>
           <% end %>
         </ul>

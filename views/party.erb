@@ -4,12 +4,12 @@
 
       <% if @memberships %>
         <h3>Members</h3>
-        <ul class="avatar-list">
+        <ul class="grid-list">
           <% @memberships.each do |m| %>
             <li>
-                <a href="<%= person_url(m['person']) %>">
+                <a class="avatar-unit" href="<%= person_url(m['person']) %>">
                     <span class="avatar"><i class="fa fa-user"></i></span>
-                    <span class="label"><%= m['person']['name'] %></span>
+                    <h3><%= m['person']['name'] %></h3>
                 </a>
             </li>
           <% end %>

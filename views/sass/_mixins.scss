@@ -35,6 +35,35 @@
     border-top-left-radius: $radius;
 }
 
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
+}
+
+@mixin flex-align($alignment) {
+  -webkit-box-align: $alignment;
+  -webkit-align-items: $alignment;
+  -ms-flex-align: $alignment;
+  align-items: $alignment;
+}
+
+@mixin flex-wrap($wrap) {
+  -moz-box-wrap: $wrap;
+  -webkit-box-wrap: $wrap;
+  -ms-flexbox-wrap: $wrap;
+  flex-wrap: $wrap;
+}
 
 .image-replacement {
     overflow: hidden;

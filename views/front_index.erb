@@ -1,10 +1,17 @@
-<div class="container" id="home">
-    <h1>PopIt-Viewer</h1>
-    <p>This is a simple demo site for viewing PopIt data</p>
+<div class="page-section" id="home">
+    <div class="container">
+        <h1>PopIt-Viewer</h1>
+        <p>This is a simple demo site for viewing PopIt data</p>
 
-    <ul>
-      <% @countries.sort.each do |c| %>
-        <li><a href="/<%= c %>/"><%= c.capitalize %></a></li>
-      <% end %>
-    </ul>
+        <ul class="grid-list">
+          <% @countries.sort.each do |c| %>
+            <li>
+                <a class="avatar-unit" href="/<%= c %>/">
+                    <span class="avatar"><i class="fa fa-users"></i></span>
+                    <h3><%= c.capitalize %></h3>
+                </a>
+            </li>
+          <% end %>
+        </ul>
+    </div>
 </div>

@@ -16,7 +16,8 @@
                     <li><a href="#vertical-spacing">Vertical spacing</a></li>
                     <li><a href="#hero-sections">Hero sections</a></li>
                     <li><a href="#buttons">Buttons</a></li>
-                    <li><a href="#advanced-lists">Lists of things</a></li>
+                    <li><a href="#grids">Grids of things</a></li>
+                    <li><a href="#avatar-units">Avatar units</a></li>
                     <li><a href="#basic-lists">Unstyled and inline lists</a></li>
                     <li><a href="#alerts">Alerts</a></li>
                 </ul>
@@ -134,37 +135,58 @@
 
                 <hr>
 
-                <h1 id="advanced-lists">Lists of things</h1>
+                <h1 id="grids">Grids of things</h1>
 
-                <p>The <code>.avatar-list</code> is ideal for displaying lists of people, places, or things:</p>
+                <p>The <code>.grid-list</code> is ideal for displaying lists of people, places, or things (especially when combined with <code>.avatar-unit</code>):</p>
 
-                <ul class="avatar-list">
+                <ul class="grid-list">
                   <% @names = [ 'Tony Stark', 'Obadiah Stane', 'Pepper Potts', 'Justin Hammer', 'Nick Fury', 'Jim Rhodes' ] %>
                   <% @names.each do |name| %>
                     <li>
-                        <a href="#">
+                        <a class="avatar-unit" href="#">
                             <span class="avatar"><i class="fa fa-user"></i></span>
-                            <span class="label"><%= name %></span>
+                            <h3><%= name %></h3>
                         </a>
                     </li>
                   <% end %>
                 </ul>
 
                 <pre>
-&lt;ul class="avatar-list"&gt;
+&lt;ul class="grid-list"&gt;
     &lt;li&gt;
-        &lt;a href="#"&gt;
+        &lt;a class="avatar-unit" href="#"&gt;
             &lt;span class="avatar"&gt;&lt;i class="fa fa-user"&gt;&lt;/i&gt;&lt;/span&gt;
-            &lt;span class="label"&gt;Tony Stark&lt;/span&gt;
+            &lt;h3&gt;Tony Stark&lt;/h3&gt;
         &lt;/a&gt;
     &lt;/li&gt;
     …
 &lt;/ul&gt;</pre>
 
-                <p><strong>Note:</strong> In modern browsers, the list will break into as many columns as will fit on the screen. Old browsers will get a single column.</p>
+                <p><strong>Note:</strong> In modern browsers and Internet Explorer 10+, the list will break into as many columns as will fit on the screen. Older browsers will see a single column. <a href="http://caniuse.com/#search=flex">Show full browser compatibility table.</a></p>
+
+                <hr>
+                
+                <h1 id="avatar-units">Avatar units</h1>
+                  
+                <p>Avatar units provide a simple way of displaying the name of a thing along with an icon representing it and, optionally, some extra information like a date or location:</p>
+                
+                <a class="avatar-unit" href="#">
+                    <span class="avatar"><i class="fa fa-user"></i></span>
+                    <h3>Tony Stark</h3>
+                    <p>CEO, Stark Industries</p>
+                </a>
+                
+                <pre>
+&lt;a class="avatar-unit" href="#"&gt;
+    &lt;span class="avatar"&gt;&lt;i class="fa fa-user"&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;h3&gt;Tony Stark&lt;/h3&gt;
+    &lt;p&gt;CEO, Stark Industries&lt;/p&gt;
+&lt;/a&gt;</pre>
+                
+                <p>Avatar units must contain a <code>&lt;span class="avatar"&gt;</code> element, but all other content is optional. When combined with <code>.grid-list</code>, above, Avatar units of different heights will be vertically aligned along their common centre.</p>
 
                 <p>You can change the icon displayed by replacing <code>&lt;i class="fa fa-user"&gt;</code> with one of the icon codes from the <a href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome docs</a>.</p>
-
+                
                 <hr>
 
                 <h1 id="basic-lists">Unstyled and inline lists</h1>

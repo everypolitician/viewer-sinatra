@@ -3,12 +3,12 @@
     <div class="page-section" id="people">
         <div class="container">
             <h1>People</h1>
-            <ul class="avatar-list">
+            <ul class="grid-list">
               <% @people.sort_by { |p| p['name'] }.each do |p| %>
                 <li>
-                    <a href="<%= person_url(p) %>">
+                    <a class="avatar-unit" href="<%= person_url(p) %>">
                         <span class="avatar"><i class="fa fa-user"></i></span>
-                        <span class="label"><%= p['name'] %></span>
+                        <h3><%= p['name'] %></h3>
                     </a>
                 </li>
               <% end %>
