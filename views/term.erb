@@ -4,14 +4,14 @@
         <p><%= @term['start_date'] %> – <%= @term['end_date'] %></p>
 
       <% if @memberships %>
-        <ul class="avatar-list">
+        <ul class="grid-list">
           <% @memberships.sort_by { |m| m['person']['name'] }.each do |m| %>
             <li>
-               <a href="<%= person_url(m['person']) %>">
-                 <span class="avatar"><i class="fa fa-user"></i></span>
-                 <span class="label"><%= m['person']['name'] %></span>
+               <a class="avatar-unit" href="<%= person_url(m['person']) %>">
+                   <span class="avatar"><i class="fa fa-user"></i></span>
+                   <h3><%= m['person']['name'] %></h3>
+                   <p><%= m['start_date'] %>–<%= m['end_date'] %></p>
                </a>
-               (<%= m['start_date'] %>–<%= m['end_date'] %>)
             </li>
           <% end %>
         </ul>

@@ -253,36 +253,46 @@ p.lead {
     border-color: mix(#fff, $colour_red, 40%);
 }
 
-.avatar-list {
+.grid-list {
+    @include flexbox();
+    @include flex-align(center);
+    @include flex-wrap(wrap);
     @extend .unstyled-list;
-    @include vendor-prefix('column-width', 20em);
-    @include vendor-prefix('column-gap', 2em);
+  
+    & > * {
+        @include flex(0 0 100%);
 
-    a {
-        display: block;
-        padding: 0.5em 0;
-        color: inherit;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-
-        &:hover,
-        &:focus {
-            .avatar {
-                background: darken($colour_green, 5%);
-            }
-            .label {
-                text-decoration: underline;
-            }
+        @media (min-width: $medium_screen) {
+          @include flex(0 0 50%);
         }
+
+        @media (min-width: $medium_screen * 1.5) {
+          @include flex(0 0 33%);
+        }
+    }
+}
+
+.avatar-unit {
+    display: block;
+    color: inherit;
+    position: relative;
+    padding: 0.5em 0.5em 0.5em 3em;
+    margin-bottom: 0.5em;
+
+    & > * {
+        margin: 0;
+        line-height: 1.2em;
     }
 
     .avatar {
-        display: inline-block;
-        text-align: center;
-        width: 2em;
+        display: block;
         height: 2em;
-        margin-right: 0.5em;
+        width: 2em;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -1em;
         background: $colour_green;
         border-radius: 1em;
 
@@ -292,8 +302,16 @@ p.lead {
             text-shadow: 0 1px 0 rgba(0,0,0,0.2);
         }
     }
-
-    .label {
-        line-height: 2em;
+    
+    h3 {
+        font-weight: 500;
+        
+        & + p {
+            margin-bottom: 0.2em;
+        }
+    }
+    
+    p {
+        opacity: 0.5;
     }
 }
