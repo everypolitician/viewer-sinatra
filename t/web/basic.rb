@@ -44,15 +44,5 @@ describe "Viewer" do
     end
   end
 
-  describe "magic sinatra routes" do
-
-    before { get '/__sinatra__/500.png' }
-
-    it "should pass __sinatra__ requests through" do
-      last_response.status.must_equal 200
-    end
-  end
-  
-
 end
 
