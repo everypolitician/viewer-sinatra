@@ -13,6 +13,9 @@ mapping = {
 }
 
 before '/:country/*' do |country, _|
+  # Allow inbuilt sinatra requests through
+  pass if country == '__sinatra__'
+
   found = mapping.find { |fn, codes| codes.include? country.downcase } or
     halt 404
   @country = found.last.first
