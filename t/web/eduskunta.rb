@@ -11,7 +11,7 @@ def app
   Sinatra::Application
 end
 
-describe "Stance viewer" do
+describe "Finland" do
 
   subject { Nokogiri::HTML(last_response.body) }
 
@@ -113,6 +113,11 @@ describe "Stance viewer" do
 
     it "should show late start date for Risto Kuisma" do
       subject.css('a[href*="473"]').text.must_include '2010-07-13'
+    end
+
+    it "should only have one entry for Merikukka Forsius" do
+      # Changed Party mid-term
+      subject.css('a[href*="560"]').count.must_equal 1
     end
 
   end
