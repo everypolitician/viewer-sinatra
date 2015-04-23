@@ -84,6 +84,10 @@ module Popolo
       memberships.find_all { |m| m['person_id'] == p['id'] }
     end
 
+    def person_legislative_memberships(p)
+      legislative_memberships.find_all { |m| m['person_id'] == p['id'] }
+    end
+
     def party_from_id(id)
       p = organizations.detect { |r| r['id'] == id } || organizations.detect { |r| r['id'].end_with? "/#{id}" }
     end
@@ -101,6 +105,7 @@ module Popolo
   module Helper
 
     def generate_url(type, obj)
+      raise "#{type} is Nil" if obj.nil?
       raise "#{type} has no 'id': #{obj}" unless obj.has_key? 'id'
       [ '', @country, type, obj['id'].split('/').last ].join("/")
     end
