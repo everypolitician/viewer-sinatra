@@ -7,9 +7,9 @@
           <% end %>
         </p>
 
-      <% if @memberships %>
+      <% if @legislative_memberships %>
         <ul>
-          <% @memberships.sort_by { |m| m['start_date'] }.reverse.each do |m| %>
+          <% @legislative_memberships.sort_by { |m| m['start_date'] }.reverse.each do |m| %>
             <li>
                 <a href="<%= party_url(m['on_behalf_of']) %>"><%= m['on_behalf_of']['name'] %></a> representative
                 <% if m['area'] %>

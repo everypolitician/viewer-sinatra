@@ -58,7 +58,7 @@ end
 
 get '/:country/person/:id' do |country, id|
   @person = @popolo.person_from_id(id) or pass
-  @memberships = @popolo.person_memberships(@person)
+  @legislative_memberships = @popolo.person_legislative_memberships(@person)
   erb :person
 end
 
