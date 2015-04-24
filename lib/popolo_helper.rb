@@ -29,8 +29,8 @@ module Popolo
         m['person']       ||= promise { person_from_id(m['person_id'])      }
         if m.has_key?('legislative_period_id')
           m['legislative_period'] ||= promise { term_from_id(m['legislative_period_id']) }
-          m['start_date'] ||= promise { m['legislative_period']['start_date'] }
-          m['end_date'] ||= promise { m['legislative_period']['end_date'] }
+          m['start_date'] ||= promise { m['legislative_period']['start_date'] || '' }
+          m['end_date'] ||= promise { m['legislative_period']['end_date'] || '' }
         end
         m
       }

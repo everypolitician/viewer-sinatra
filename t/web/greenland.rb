@@ -33,5 +33,17 @@ describe "Greenland" do
 
   #-------------------------------------------------------------------
 
+  describe "when viewing person " do
+
+    before { get '/greenland/person/56b7da86-b9c7-4fcd-bd04-f980cde7d4c5' }
+
+    it "should have have their name" do
+      subject.css('h1').text.must_equal 'Agathe Fontain'
+    end
+
+  end
+
+  #-------------------------------------------------------------------
+
 end
 
