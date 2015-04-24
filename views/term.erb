@@ -5,13 +5,15 @@
 
       <% if @memberships %>
         <ul class="grid-list">
-          <% @memberships.sort_by { |m| m['person']['name'] }.each do |m| %>
+          <% @memberships.group_by { |m| m['person'] }.sort_by { |p, _| p['name'] }.each do |p, mems| %>
             <li>
-               <a class="avatar-unit" href="<%= person_url(m['person']) %>">
+               <a class="avatar-unit" href="<%= person_url(p) %>">
                    <span class="avatar"><i class="fa fa-user"></i></span>
-                   <h3><%= m['person']['name'] %></h3>
-                   <% if m['start_date'] != @term['start_date'] or m['end_date'] != @term['end_date'] %>
-                     <p><%= m['start_date'] %>–<%= m['end_date'] %></p>
+                   <h3><%= p['name'] %></h3>
+                   <% mems.sort_by { |m| m['start_date'] || @term['start_date'] }.each do |m| %>
+                     <% if m['start_date'] != @term['start_date'] or m['end_date'] != @term['end_date'] %>
+                       <p><%= m['start_date'] %>–<%= m['end_date'] %></p>
+                     <% end %>
                    <% end %>
                </a>
             </li>
