@@ -68,16 +68,7 @@ module Popolo
     end
 
     def term_memberships(t)
-      mems_with_terms = legislative_memberships.find_all { |m| m.has_key? 'legislative_period_id' }
-
-      if mems_with_terms.count.zero?
-        # for now, solely by overlapping dates
-        return legislative_memberships.find_all { |m| 
-          ( m['start_date'] <= (t['end_date'] || Date.today.to_s) and t['start_date'] <= (m['end_date'] || Date.today.to_s) )
-        }
-      else
-        return mems_with_terms.find_all { |m| m['legislative_period_id'] == t['id'] }
-      end
+      mems_with_terms = legislative_memberships.find_all { |m| m['legislative_period_id'] == t['id'] }
     end
 
     def person_from_id(id)
