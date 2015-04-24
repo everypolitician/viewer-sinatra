@@ -100,7 +100,11 @@ describe "Finland" do
     before { get '/FI/term/35' }
 
     it "should have have its name" do
-      subject.css('h1').text.must_equal 'Eduskunta 35 (2007)'
+      subject.css('#term h1').text.must_equal 'Eduskunta 35 (2007)'
+    end
+
+    it "should list the parties" do
+      subject.css('#term h2').text.must_match 'Finnish Centre Party'
     end
 
     it "shouldn't show any dates for Mikko Kuoppa" do
@@ -115,9 +119,9 @@ describe "Finland" do
       subject.css('a[href*="473"]').text.must_include '2010-07-13'
     end
 
-    it "should only have one entry for Merikukka Forsius" do
-      # Changed Party mid-term
-      subject.css('a[href*="560"]').count.must_equal 1
+    it "should only have two entries for Merikukka Forsius" do
+      # Changed Party mid-term, so one entry per party
+      subject.css('a[href*="560"]').count.must_equal 2
     end
 
   end
