@@ -46,7 +46,7 @@ module Popolo
     end
 
     def terms
-      legislature['terms']
+      legislature['legislative_periods'] || legislature['terms'] 
     end
 
     # This will need to become a lot fancier, but it'll do for now
