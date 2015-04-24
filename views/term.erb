@@ -4,23 +4,32 @@
     <p><%= @term['start_date'] %> – <%= @term['end_date'] %></p>
     <% if @memberships %>
       <% @memberships.group_by { |m| m['on_behalf_of'] }.sort_by { |party, ms| ms.count }.reverse.each do |party, mems| %>
-        <h2 class="text-center"><%= party['name'] %></h2>
-        <p class="text-center">(<%= mems.count %> member<% if mems.count > 1 %>s<% end %>)</p>
-        <ul class="grid-list">
-        <% mems.group_by { |m| m['person'] }.sort_by { |p, _| p['name'] }.each do |p, mems| %>
-          <li>
-            <a class="avatar-unit" href="<%= person_url(p) %>">
-              <span class="avatar"><i class="fa fa-user"></i></span>
-              <h3><%= p['name'] %></h3>
-              <% mems.sort_by { |m| m['start_date'] || @term['start_date'] }.each do |m| %>
-                <% if m['start_date'].to_s != @term['start_date'].to_s or m['end_date'].to_s != @term['end_date'].to_s %>
-                <p><%= m['start_date'] %>–<%= m['end_date'] %></p>
-                <% end %>
-              <% end %>
-            </a>
-          </li>
-        <% end %>
-        </ul>
+        <div class="container">
+          <a class="avatar-unit" href="<%= party_url(party) %>">
+            <span class="avatar"><i class="fa fa-users"></i></span>
+            <h2><%= party['name'] %></h2>
+            <p>(<%= mems.count %> member<% if mems.count > 1 %>s<% end %>)</p>
+          </a>
+
+          <div class="container">
+            <ul class="grid-list">
+            <% mems.group_by { |m| m['person'] }.sort_by { |p, _| p['name'] }.each do |p, mems| %>
+              <li>
+                <a class="avatar-unit" href="<%= person_url(p) %>">
+                  <span class="avatar"><i class="fa fa-user"></i></span>
+                  <h3><%= p['name'] %></h3>
+                  <% mems.sort_by { |m| m['start_date'] || @term['start_date'] }.each do |m| %>
+                    <% if m['start_date'].to_s != @term['start_date'].to_s or m['end_date'].to_s != @term['end_date'].to_s %>
+                    <p><%= m['start_date'] %>–<%= m['end_date'] %></p>
+                    <% end %>
+                  <% end %>
+                </a>
+              </li>
+            <% end %>
+            </ul>
+          </div>
+
+      </div>
       <% end %>
     <% end %>
     </div>

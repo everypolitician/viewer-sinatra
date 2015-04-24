@@ -3,16 +3,19 @@
         <h1><%= @party['name'] %></h1>
 
       <% if @memberships %>
-        <h3>Members</h3>
+        <h3>Seats</h3>
         <ul class="grid-list">
-          <% @memberships.each do |m| %>
+
+          <% @memberships.group_by { |m| m['legislative_period'] }.sort_by { |t, _| t['start_date'] }.reverse.each do |t, ms| %>
             <li>
-                <a class="avatar-unit" href="<%= person_url(m['person']) %>">
-                    <span class="avatar"><i class="fa fa-user"></i></span>
-                    <h3><%= m['person']['name'] %></h3>
+                <a class="avatar-unit" href="<%= term_url(t) %>">
+                    <span class="avatar"><i class="fa fa-university"></i></span>
+                    <h3><%= t['name'] %></h3>
+                    <p><%= ms.count %> seat<% if ms.count > 1 %>s<% end %></p>
                 </a>
             </li>
           <% end %>
+
         </ul>
       <% else %>
         <h3>No members</h3>
