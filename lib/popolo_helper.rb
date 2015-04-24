@@ -80,6 +80,10 @@ module Popolo
       persons.detect { |r| r['id'] == id } || persons.detect { |r| r['id'].end_with? "/#{id}" }
     end
 
+    def people_with_name(name)
+      persons.find_all { |p| p['name'] == name } 
+    end
+
     def person_memberships(p)
       memberships.find_all { |m| m['person_id'] == p['id'] }
     end
