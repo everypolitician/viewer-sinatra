@@ -136,12 +136,13 @@ describe "Finland" do
       subject.css('h1').text.must_equal 'National Coalition Party'
     end
 
-    it "should have many MPs" do
-      subject.css('#party ul li').count.must_be :>, 20
+    it "should have many Terms" do
+      subject.css('#party ul li').count.must_be :>=, 12
     end
 
-    it "should include Stubb" do
-      subject.css('#party ul li').text.must_include 'Stubb Alexander'
+    it "going back to Eduskunta 25" do
+      subject.css('#party ul li:last').text.must_include 'Eduskunta 25'
+      subject.css('#party ul li:last').text.must_include '1 seat'
     end
 
   end
