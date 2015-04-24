@@ -38,7 +38,11 @@ describe "Greenland" do
     before { get '/greenland/person/56b7da86-b9c7-4fcd-bd04-f980cde7d4c5' }
 
     it "should have have their name" do
-      subject.css('h1').text.must_equal 'Agathe Fontain'
+      subject.css('#person h1').text.must_equal 'Agathe Fontain'
+    end
+
+    it "should have term links" do
+      subject.css('#person ul li').inner_html.must_include '/term/'
     end
 
   end
