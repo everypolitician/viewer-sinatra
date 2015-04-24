@@ -23,6 +23,7 @@ before '/:country/*' do |country, _|
   @popolo = Popolo::Data.new(found.first)
 end
 
+set :erb, :trim => '-' 
 
 get '/' do
   @countries = mapping.map { |k, v| v.first }
