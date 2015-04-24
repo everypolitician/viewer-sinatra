@@ -123,4 +123,18 @@ describe "Eduskunta" do
 
   end
 
+  describe "person by name" do
+
+    let(:people) { subject.people_with_name('Stubb Alexander') }
+
+    it "should get one person" do
+      people.count.must_equal 1
+    end
+
+    it "should get the correct person" do
+      people.first['name'].must_equal 'Stubb Alexander'
+    end
+
+  end
+
 end

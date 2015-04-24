@@ -33,9 +33,11 @@ describe "Greenland" do
 
   #-------------------------------------------------------------------
 
-  describe "when viewing person " do
+  describe "when viewing person by name" do
 
-    before { get '/greenland/person/56b7da86-b9c7-4fcd-bd04-f980cde7d4c5' }
+    # Using a + here no longer works in Sinatra. See discussion at 
+    # https://github.com/chriso/klein.php/issues/117
+    before { get '/greenland/person/Agathe%20Fontain' }
 
     it "should have have their name" do
       subject.css('#person h1').text.must_equal 'Agathe Fontain'
