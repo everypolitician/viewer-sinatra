@@ -32,12 +32,12 @@ describe "Stance viewer" do
 
     before { get '/suomi/terms.html' }
 
-    it "should have at least 35 terms" do
-      subject.css('#terms ul li').count.must_be :>, 35
+    it "should have at least 12 terms" do
+      subject.css('#terms ul li').count.must_be :>=, 12
     end
 
-    it "should have the first term last" do
-      subject.css('#terms ul li:last').text.must_include 'Eduskunta 1 (1907)'
+    it "should go back to 1970" do
+      subject.css('#terms ul li:last').text.must_include 'Eduskunta 25 (1970)'
     end
 
   end

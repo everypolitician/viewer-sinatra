@@ -39,7 +39,7 @@ get '/:country/' do
 end
 
 get '/:country/terms.html' do
-  @terms = @popolo.terms
+  @terms = @popolo.terms_with_members
   erb :terms
 end
 

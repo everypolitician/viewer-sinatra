@@ -49,6 +49,10 @@ module Popolo
       legislature['legislative_periods'] || legislature['terms'] 
     end
 
+    def terms_with_members
+      terms.reject { |t| term_memberships(t).count.zero? }
+    end
+
     # This will need to become a lot fancier, but it'll do for now
     def current_term
       terms.find { |t| not t.has_key? 'end_date' }
