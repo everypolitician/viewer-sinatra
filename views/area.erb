@@ -1,19 +1,31 @@
 <div class="page-section" id="area">
-    <div class="container">
-        <h1><%= @area['name'] %></h1>
+  <div class="container">
+    <h1><%= @area['name'] %></h1>
 
-      <% if @memberships %>
-        <ul class="grid-list">
-          <% @memberships.sort_by { |m| [m['end_date'] || '9999-99-99', m['start_date'] || '1111-11-11'] }.reverse.each do |m| %>
-            <li>
+    <% if @memberships %>
+      <% @memberships.group_by { |m| m['legislative_period'] }.sort_by { |t, _| t['start_date'] }.reverse.each do |t, ms| %>
+        <a class="avatar-unit" href="<%= term_url(t) %>">
+          <span class="avatar"><i class="fa fa-university"></i></span>
+          <h2><%= t['name'] %></h2>
+        </a>
+
+        <div class="container">
+          <ul class="grid-list">
+            <% ms.each do |m| %>
+              <li>
                 <a class="avatar-unit" href="<%= person_url(m['person']) %>">
-                    <span class="avatar"><i class="fa fa-user"></i></span>
-                    <h3><%= m['person']['name'] %></h3>
+                  <span class="avatar"><i class="fa fa-user"></i></span>
+                  <h3><%= m['person']['name'] %></h3>
+                  <% if m['start_date'].to_s != t['start_date'].to_s or m['end_date'].to_s != t['end_date'].to_s %>
                     <p><%= m['start_date'] %>–<%= m['end_date'] %></p>
+                  <% end %>
                 </a>
-            </li>
-          <% end %>
-        </ul>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+
       <% end %>
-    </div>
+    <% end %>
+  </div>
 </div>
