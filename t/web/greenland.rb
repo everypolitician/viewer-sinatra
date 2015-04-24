@@ -33,6 +33,18 @@ describe "Greenland" do
 
   #-------------------------------------------------------------------
 
+  describe "when viewing missing person" do
+
+    before { get '/greenland/person/nope' }
+
+    it "should 404" do
+      last_response.status.must_equal 404
+    end
+
+  end
+
+  #-------------------------------------------------------------------
+
   describe "when viewing person by name" do
 
     # Using a + here no longer works in Sinatra. See discussion at 
