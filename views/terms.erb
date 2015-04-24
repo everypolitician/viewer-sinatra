@@ -9,6 +9,9 @@
                     <a class="avatar-unit" href="<%= term_url(t) %>">
                         <span class="avatar"><i class="fa fa-university"></i></span>
                         <h3><%= t['name'] %></h3>
+                        <% unless t['start_date'].to_s.empty? and t['end_date'].to_s.empty? %>
+                          <p><%= t['start_date'] %> - <%= t['end_date'] %></p>
+                        <% end %>
                     </a>
                 </li>
               <% end %>

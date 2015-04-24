@@ -11,7 +11,7 @@
                    <span class="avatar"><i class="fa fa-user"></i></span>
                    <h3><%= p['name'] %></h3>
                    <% mems.sort_by { |m| m['start_date'] || @term['start_date'] }.each do |m| %>
-                     <% if m['start_date'] != @term['start_date'] or m['end_date'] != @term['end_date'] %>
+                     <% if m['start_date'].to_s != @term['start_date'].to_s or m['end_date'].to_s != @term['end_date'].to_s %>
                        <p><%= m['start_date'] %>–<%= m['end_date'] %></p>
                      <% end %>
                    <% end %>
