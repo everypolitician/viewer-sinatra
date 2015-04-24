@@ -9,6 +9,7 @@ mapping = {
   # filename  => [ primary, aliases (all lower case) ]
   'eduskunta'     => [ 'finland', 'fi', 'eduskunta' ],
   'eduskunta-old' => [ 'suomi', 'fi-new' ], 
+  'greenland'     => [ 'greenland', 'inatsisartut', 'gl', 'grl' ],
   'wales'         => [ 'wales', 'gb-wls', 'wls' ],
 }
 
