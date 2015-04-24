@@ -61,7 +61,12 @@ get '/:country/term/:id' do |country, id|
 end
 
 get '/:country/person/:id' do |country, id|
-  @person = @popolo.person_from_id(id) or pass
+  @person = @popolo.person_from_id(id) 
+  unless @person
+    people = @popolo.people_with_name(id) or pass
+    #TODO handle having more than one person with the same name
+    @person = people.first
+  end
   @legislative_memberships = @popolo.person_legislative_memberships(@person)
   erb :person
 end
