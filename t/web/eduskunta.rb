@@ -33,7 +33,7 @@ describe "Finland" do
     before { get '/finland/terms.html' }
 
     it "should have at least 12 terms" do
-      subject.css('#terms ul li').count.must_be :>, 12
+      subject.css('#terms ul li').count.must_be :>=, 12
     end
 
     it "should go back to 1970" do
