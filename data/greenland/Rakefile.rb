@@ -8,7 +8,7 @@ file 'popit.json' do
   File.write('popit.json', open(POPIT_URL).read)
 end
 
-task :post_process => 'popit.json' do
+file 'processed.json' => 'popit.json' do
   json = JSON.load(File.read('popit.json'), lambda { |h| 
     if h.class == Hash and h.has_key? 'legislative_periods'
       terms = h['legislative_periods'].sort_by { |p| p['name'] }
@@ -26,12 +26,18 @@ task :post_process => 'popit.json' do
       h.reject! { |k, v| (k == 'url' or k == 'html_url') and v[/popit.mysociety.org/] }
     end
   })
-  File.write('greenland.json', JSON.pretty_generate(json))
+  File.write('processed.json', JSON.pretty_generate(json))
 end
+
+task :clean do
+  FileUtils.rm('processed.json') if File.exist?('processed.json')
+end
+
+task :rebuild => [ :clean, 'processed.json' ]
+
+task :default => 'processed.json'
 
 task :install => :post_process do
-  FileUtils.cp('greenland.json', '../greenland.json')
+  FileUtils.cp('processed.json', '../greenland.json')
 end
-
-task :default => :post_process
 
