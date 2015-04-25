@@ -7,6 +7,7 @@ helpers Popolo::Helper
 
 mapping = {
   # filename  => [ primary, aliases (all lower case) ]
+  'chile'         => [ 'chile', 'cl' ],
   'eduskunta'     => [ 'finland', 'fi', 'eduskunta' ],
   'greenland'     => [ 'greenland', 'inatsisartut', 'gl', 'grl' ],
   'wales'         => [ 'wales', 'gb-wls', 'wls' ],
