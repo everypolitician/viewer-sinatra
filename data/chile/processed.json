@@ -1,8 +1,6 @@
 {
   "organizations": [
     {
-      "html_url": "https://pmocl.popit.mysociety.org/organizations/52fa6c2a67a027d001ba3c0e",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/organizations/52fa6c2a67a027d001ba3c0e",
       "id": "52fa6c2a67a027d001ba3c0e",
       "name": "Independiente",
       "slug": "independientes",
@@ -14,8 +12,6 @@
       ]
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/organizations/52fa6c3767a027d001ba3c0f",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/organizations/52fa6c3767a027d001ba3c0f",
       "id": "52fa6c3767a027d001ba3c0f",
       "name": "Movimiento Amplio Social",
       "slug": "movimiento-amplio-social",
@@ -30,11 +26,9 @@
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Ff6%2FPartido_Comunista_de_Chile.svg%2F500px-Partido_Comunista_de_Chile.svg.png",
       "image": "http://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Partido_Comunista_de_Chile.svg/500px-Partido_Comunista_de_Chile.svg.png",
       "founding_date": "1922-01-02",
-      "html_url": "https://pmocl.popit.mysociety.org/organizations/52fa6c4167a027d001ba3c10",
       "id": "52fa6c4167a027d001ba3c10",
       "name": "Partido Comunista de Chile",
       "slug": "partido-comunista-de-chile",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/organizations/52fa6c4167a027d001ba3c10",
       "images": [
         {
           "proxy_url": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Ff6%2FPartido_Comunista_de_Chile.svg%2F500px-Partido_Comunista_de_Chile.svg.png",
@@ -62,11 +56,9 @@
       ]
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/organizations/52fa6c4c67a027d001ba3c11",
       "id": "52fa6c4c67a027d001ba3c11",
       "name": "Partido Demócrata Cristiano",
       "slug": "partido-democrata-cristiano",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/organizations/52fa6c4c67a027d001ba3c11",
       "other_names": [
         {
           "name": "Partido Democrata Cristiano",
@@ -87,11 +79,9 @@
       ]
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/organizations/52fa6c6a67a027d001ba3c12",
       "id": "52fa6c6a67a027d001ba3c12",
       "name": "Partido Liberal de Chile",
       "slug": "partido-liberal-de-chile",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/organizations/52fa6c6a67a027d001ba3c12",
       "other_names": [
         {
           "name": "Partido Liberal",
@@ -104,8 +94,6 @@
       ]
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/organizations/52fa6c8067a027d001ba3c13",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/organizations/52fa6c8067a027d001ba3c13",
       "id": "52fa6c8067a027d001ba3c13",
       "name": "Partido por la Democracia",
       "slug": "partido-por-la-democracia",
@@ -117,18 +105,14 @@
       ]
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/organizations/52fa6cae67a027d001ba3c14",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/organizations/52fa6cae67a027d001ba3c14",
       "id": "52fa6cae67a027d001ba3c14",
       "name": "Partido Radical Social Demócrata",
       "slug": "partido-radical-social-democrata"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/organizations/52fa6cb967a027d001ba3c15",
       "id": "52fa6cb967a027d001ba3c15",
       "name": "Partido Socialista de Chile",
       "slug": "partido-socialista-de-chile",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/organizations/52fa6cb967a027d001ba3c15",
       "other_names": [
         {
           "name": "PS",
@@ -141,11 +125,9 @@
       ]
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/organizations/52fa6cc567a027d001ba3c16",
       "id": "52fa6cc567a027d001ba3c16",
       "name": "Renovación Nacional",
       "slug": "renovacion-nacional",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/organizations/52fa6cc567a027d001ba3c16",
       "other_names": [
         {
           "name": "Renovacion Nacional",
@@ -158,11 +140,9 @@
       ]
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/organizations/52fa6cdb67a027d001ba3c17",
       "id": "52fa6cdb67a027d001ba3c17",
       "name": "Unión Demócrata Independiente",
       "slug": "union-democrata-independiente",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/organizations/52fa6cdb67a027d001ba3c17",
       "other_names": [
         {
           "name": "UDI Popular",
@@ -179,8 +159,6 @@
       ]
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/organizations/53204dda6669ce99248f244b",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/organizations/53204dda6669ce99248f244b",
       "id": "53204dda6669ce99248f244b",
       "name": "Izquierda Ciudadana de Chile",
       "slug": "izquierda-ciudadana-de-chile",
@@ -206,18 +184,14 @@
   ],
   "memberships": [
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5320854c494b81480cdabfe6",
       "id": "5320854c494b81480cdabfe6",
       "organization_id": "legislature",
       "person_id": "53a99d1d9240c027106412db",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5320854c494b81480cdabfe6",
       "role": "member",
       "on_behalf_of_id": "52fa6c4c67a027d001ba3c11",
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53317bc6186e14f8041250dc",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53317bc6186e14f8041250dc",
       "person_id": "5330365fd0c05d8b737b6b74",
       "organization_id": "legislature",
       "id": "53317bc6186e14f8041250dc",
@@ -226,8 +200,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53317eb1186e14f8041250dd",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53317eb1186e14f8041250dd",
       "person_id": "53303755d0c05d8b737b6d32",
       "organization_id": "legislature",
       "id": "53317eb1186e14f8041250dd",
@@ -236,8 +208,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53317f00186e14f8041250de",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53317f00186e14f8041250de",
       "person_id": "53303756d0c05d8b737b6d36",
       "organization_id": "legislature",
       "id": "53317f00186e14f8041250de",
@@ -246,8 +216,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53317f08186e14f8041250df",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53317f08186e14f8041250df",
       "person_id": "53303694d0c05d8b737b6c59",
       "organization_id": "legislature",
       "id": "53317f08186e14f8041250df",
@@ -256,8 +224,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53317f31186e14f8041250e0",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53317f31186e14f8041250e0",
       "person_id": "53303757d0c05d8b737b6d3b",
       "organization_id": "legislature",
       "id": "53317f31186e14f8041250e0",
@@ -266,8 +232,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53317f83186e14f8041250e1",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53317f83186e14f8041250e1",
       "person_id": "53303758d0c05d8b737b6d3e",
       "organization_id": "legislature",
       "id": "53317f83186e14f8041250e1",
@@ -276,8 +240,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53317fc7186e14f8041250e2",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53317fc7186e14f8041250e2",
       "person_id": "53303695d0c05d8b737b6c5e",
       "organization_id": "legislature",
       "id": "53317fc7186e14f8041250e2",
@@ -286,8 +248,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53317fdd186e14f8041250e3",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53317fdd186e14f8041250e3",
       "person_id": "53303660d0c05d8b737b6b78",
       "organization_id": "legislature",
       "id": "53317fdd186e14f8041250e3",
@@ -296,8 +256,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331800f186e14f8041250e4",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331800f186e14f8041250e4",
       "person_id": "53303696d0c05d8b737b6c63",
       "organization_id": "legislature",
       "id": "5331800f186e14f8041250e4",
@@ -306,8 +264,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318027186e14f8041250e5",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318027186e14f8041250e5",
       "person_id": "53303759d0c05d8b737b6d43",
       "organization_id": "legislature",
       "id": "53318027186e14f8041250e5",
@@ -316,8 +272,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318051186e14f8041250e6",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318051186e14f8041250e6",
       "person_id": "5330367dd0c05d8b737b6bf5",
       "organization_id": "legislature",
       "id": "53318051186e14f8041250e6",
@@ -326,8 +280,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318067186e14f8041250e7",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318067186e14f8041250e7",
       "person_id": "5330375ad0c05d8b737b6d48",
       "organization_id": "legislature",
       "id": "53318067186e14f8041250e7",
@@ -336,8 +288,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331807e186e14f8041250e8",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331807e186e14f8041250e8",
       "person_id": "5330367bd0c05d8b737b6bec",
       "organization_id": "legislature",
       "id": "5331807e186e14f8041250e8",
@@ -346,8 +296,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331808d186e14f8041250e9",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331808d186e14f8041250e9",
       "id": "5331808d186e14f8041250e9",
       "organization_id": "legislature",
       "person_id": "53303662d0c05d8b737b6b7d",
@@ -356,8 +304,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318094186e14f8041250ea",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318094186e14f8041250ea",
       "person_id": "5330375bd0c05d8b737b6d4d",
       "organization_id": "legislature",
       "id": "53318094186e14f8041250ea",
@@ -366,8 +312,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533180ae186e14f8041250eb",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533180ae186e14f8041250eb",
       "person_id": "5330367cd0c05d8b737b6bf0",
       "organization_id": "legislature",
       "id": "533180ae186e14f8041250eb",
@@ -376,8 +320,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533180c9186e14f8041250ec",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533180c9186e14f8041250ec",
       "id": "533180c9186e14f8041250ec",
       "organization_id": "legislature",
       "person_id": "5330375cd0c05d8b737b6d50",
@@ -386,8 +328,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533180ee186e14f8041250ed",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533180ee186e14f8041250ed",
       "person_id": "5330367ed0c05d8b737b6bf9",
       "organization_id": "legislature",
       "id": "533180ee186e14f8041250ed",
@@ -396,8 +336,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318116186e14f8041250ee",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318116186e14f8041250ee",
       "person_id": "5330375dd0c05d8b737b6d54",
       "organization_id": "legislature",
       "id": "53318116186e14f8041250ee",
@@ -406,8 +344,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318117186e14f8041250ef",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318117186e14f8041250ef",
       "person_id": "53303663d0c05d8b737b6b82",
       "organization_id": "legislature",
       "id": "53318117186e14f8041250ef",
@@ -416,8 +352,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318125186e14f8041250f0",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318125186e14f8041250f0",
       "person_id": "5330367fd0c05d8b737b6bfd",
       "organization_id": "legislature",
       "id": "53318125186e14f8041250f0",
@@ -426,8 +360,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331818c186e14f8041250f1",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331818c186e14f8041250f1",
       "person_id": "5330375dd0c05d8b737b6d59",
       "organization_id": "legislature",
       "id": "5331818c186e14f8041250f1",
@@ -436,8 +368,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318191186e14f8041250f2",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318191186e14f8041250f2",
       "person_id": "53303680d0c05d8b737b6c02",
       "organization_id": "legislature",
       "id": "53318191186e14f8041250f2",
@@ -446,8 +376,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533181c2186e14f8041250f3",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533181c2186e14f8041250f3",
       "person_id": "5330375ed0c05d8b737b6d5c",
       "organization_id": "legislature",
       "id": "533181c2186e14f8041250f3",
@@ -456,8 +384,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533181fb186e14f8041250f4",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533181fb186e14f8041250f4",
       "person_id": "53303681d0c05d8b737b6c07",
       "organization_id": "legislature",
       "id": "533181fb186e14f8041250f4",
@@ -466,8 +392,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331820c186e14f8041250f5",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331820c186e14f8041250f5",
       "person_id": "5330375fd0c05d8b737b6d61",
       "organization_id": "legislature",
       "id": "5331820c186e14f8041250f5",
@@ -476,8 +400,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318248186e14f8041250f6",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318248186e14f8041250f6",
       "id": "53318248186e14f8041250f6",
       "organization_id": "legislature",
       "person_id": "53303760d0c05d8b737b6d65",
@@ -486,8 +408,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318278186e14f8041250f7",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318278186e14f8041250f7",
       "person_id": "53303762d0c05d8b737b6d6e",
       "organization_id": "legislature",
       "id": "53318278186e14f8041250f7",
@@ -496,8 +416,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331827b186e14f8041250f8",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331827b186e14f8041250f8",
       "person_id": "53303682d0c05d8b737b6c0b",
       "organization_id": "legislature",
       "id": "5331827b186e14f8041250f8",
@@ -506,8 +424,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318288186e14f8041250f9",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318288186e14f8041250f9",
       "person_id": "53303664d0c05d8b737b6b87",
       "organization_id": "legislature",
       "id": "53318288186e14f8041250f9",
@@ -516,8 +432,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533182a9186e14f8041250fa",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533182a9186e14f8041250fa",
       "person_id": "53303763d0c05d8b737b6d73",
       "organization_id": "legislature",
       "id": "533182a9186e14f8041250fa",
@@ -526,8 +440,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533182d6186e14f8041250fb",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533182d6186e14f8041250fb",
       "person_id": "53303665d0c05d8b737b6b89",
       "organization_id": "legislature",
       "id": "533182d6186e14f8041250fb",
@@ -536,8 +448,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533182d8186e14f8041250fc",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533182d8186e14f8041250fc",
       "person_id": "53303761d0c05d8b737b6d6a",
       "organization_id": "legislature",
       "id": "533182d8186e14f8041250fc",
@@ -546,8 +456,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318306186e14f8041250fd",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318306186e14f8041250fd",
       "person_id": "53303764d0c05d8b737b6d78",
       "organization_id": "legislature",
       "id": "53318306186e14f8041250fd",
@@ -556,8 +464,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331830b186e14f8041250fe",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331830b186e14f8041250fe",
       "person_id": "53303683d0c05d8b737b6c10",
       "organization_id": "legislature",
       "id": "5331830b186e14f8041250fe",
@@ -566,8 +472,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318327186e14f8041250ff",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318327186e14f8041250ff",
       "person_id": "53303765d0c05d8b737b6d7d",
       "organization_id": "legislature",
       "id": "53318327186e14f8041250ff",
@@ -576,8 +480,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318328186e14f804125100",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318328186e14f804125100",
       "person_id": "53303666d0c05d8b737b6b8e",
       "organization_id": "legislature",
       "id": "53318328186e14f804125100",
@@ -586,8 +488,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331834f186e14f804125101",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331834f186e14f804125101",
       "person_id": "53303766d0c05d8b737b6d82",
       "organization_id": "legislature",
       "id": "5331834f186e14f804125101",
@@ -596,8 +496,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331835d186e14f804125102",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331835d186e14f804125102",
       "person_id": "53303684d0c05d8b737b6c15",
       "organization_id": "legislature",
       "id": "5331835d186e14f804125102",
@@ -606,8 +504,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318385186e14f804125103",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318385186e14f804125103",
       "person_id": "53303767d0c05d8b737b6d87",
       "organization_id": "legislature",
       "id": "53318385186e14f804125103",
@@ -616,8 +512,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533183a2186e14f804125104",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533183a2186e14f804125104",
       "person_id": "53303685d0c05d8b737b6c19",
       "organization_id": "legislature",
       "id": "533183a2186e14f804125104",
@@ -626,8 +520,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533183b2186e14f804125105",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533183b2186e14f804125105",
       "person_id": "53303768d0c05d8b737b6d8a",
       "organization_id": "legislature",
       "id": "533183b2186e14f804125105",
@@ -636,8 +528,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533183ce186e14f804125106",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533183ce186e14f804125106",
       "person_id": "53303686d0c05d8b737b6c1e",
       "organization_id": "legislature",
       "id": "533183ce186e14f804125106",
@@ -646,8 +536,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533183e8186e14f804125107",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533183e8186e14f804125107",
       "person_id": "53303769d0c05d8b737b6d8f",
       "organization_id": "legislature",
       "id": "533183e8186e14f804125107",
@@ -656,8 +544,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533183f9186e14f804125108",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533183f9186e14f804125108",
       "person_id": "53303667d0c05d8b737b6b92",
       "organization_id": "legislature",
       "id": "533183f9186e14f804125108",
@@ -666,8 +552,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318404186e14f804125109",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318404186e14f804125109",
       "person_id": "53303687d0c05d8b737b6c21",
       "organization_id": "legislature",
       "id": "53318404186e14f804125109",
@@ -676,8 +560,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318416186e14f80412510a",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318416186e14f80412510a",
       "person_id": "5330376ad0c05d8b737b6d91",
       "organization_id": "legislature",
       "id": "53318416186e14f80412510a",
@@ -686,8 +568,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318436186e14f80412510b",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318436186e14f80412510b",
       "person_id": "53303688d0c05d8b737b6c26",
       "organization_id": "legislature",
       "id": "53318436186e14f80412510b",
@@ -696,8 +576,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331849a186e14f80412510c",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331849a186e14f80412510c",
       "person_id": "53303689d0c05d8b737b6c2b",
       "organization_id": "legislature",
       "id": "5331849a186e14f80412510c",
@@ -706,8 +584,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533184c8186e14f80412510d",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533184c8186e14f80412510d",
       "person_id": "5330376bd0c05d8b737b6d96",
       "organization_id": "legislature",
       "id": "533184c8186e14f80412510d",
@@ -716,8 +592,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533184d3186e14f80412510e",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533184d3186e14f80412510e",
       "person_id": "53303668d0c05d8b737b6b97",
       "organization_id": "legislature",
       "id": "533184d3186e14f80412510e",
@@ -726,8 +600,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533184fa186e14f80412510f",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533184fa186e14f80412510f",
       "person_id": "5330368ad0c05d8b737b6c30",
       "organization_id": "legislature",
       "id": "533184fa186e14f80412510f",
@@ -736,8 +608,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318501186e14f804125110",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318501186e14f804125110",
       "person_id": "5330376cd0c05d8b737b6d9b",
       "organization_id": "legislature",
       "id": "53318501186e14f804125110",
@@ -746,8 +616,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318534186e14f804125111",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318534186e14f804125111",
       "person_id": "5330376dd0c05d8b737b6d9f",
       "organization_id": "legislature",
       "id": "53318534186e14f804125111",
@@ -756,8 +624,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318537186e14f804125112",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318537186e14f804125112",
       "person_id": "5330368bd0c05d8b737b6c33",
       "organization_id": "legislature",
       "id": "53318537186e14f804125112",
@@ -766,8 +632,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331857a186e14f804125113",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331857a186e14f804125113",
       "person_id": "5330376ed0c05d8b737b6da4",
       "organization_id": "legislature",
       "id": "5331857a186e14f804125113",
@@ -776,8 +640,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331859e186e14f804125114",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331859e186e14f804125114",
       "person_id": "53303669d0c05d8b737b6b9c",
       "organization_id": "legislature",
       "id": "5331859e186e14f804125114",
@@ -786,8 +648,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533185a2186e14f804125115",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533185a2186e14f804125115",
       "person_id": "5330376fd0c05d8b737b6da9",
       "organization_id": "legislature",
       "id": "533185a2186e14f804125115",
@@ -796,8 +656,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533185a5186e14f804125116",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533185a5186e14f804125116",
       "person_id": "5330368cd0c05d8b737b6c38",
       "organization_id": "legislature",
       "id": "533185a5186e14f804125116",
@@ -806,8 +664,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533185d4186e14f804125117",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533185d4186e14f804125117",
       "person_id": "53303770d0c05d8b737b6dae",
       "organization_id": "legislature",
       "id": "533185d4186e14f804125117",
@@ -816,8 +672,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533185f2186e14f804125118",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533185f2186e14f804125118",
       "person_id": "5330368dd0c05d8b737b6c3c",
       "organization_id": "legislature",
       "id": "533185f2186e14f804125118",
@@ -826,8 +680,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331862c186e14f804125119",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331862c186e14f804125119",
       "person_id": "53303669d0c05d8b737b6ba1",
       "organization_id": "legislature",
       "id": "5331862c186e14f804125119",
@@ -836,8 +688,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331862e186e14f80412511a",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331862e186e14f80412511a",
       "person_id": "53303771d0c05d8b737b6db1",
       "organization_id": "legislature",
       "id": "5331862e186e14f80412511a",
@@ -846,8 +696,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318658186e14f80412511b",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318658186e14f80412511b",
       "person_id": "5330368ed0c05d8b737b6c3f",
       "organization_id": "legislature",
       "id": "53318658186e14f80412511b",
@@ -856,8 +704,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331867c186e14f80412511c",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331867c186e14f80412511c",
       "person_id": "53303772d0c05d8b737b6db6",
       "organization_id": "legislature",
       "id": "5331867c186e14f80412511c",
@@ -866,8 +712,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318693186e14f80412511d",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318693186e14f80412511d",
       "person_id": "53303748d0c05d8b737b6d07",
       "organization_id": "legislature",
       "id": "53318693186e14f80412511d",
@@ -876,8 +720,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318693186e14f80412511e",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318693186e14f80412511e",
       "person_id": "5330366ad0c05d8b737b6ba6",
       "organization_id": "legislature",
       "id": "53318693186e14f80412511e",
@@ -886,8 +728,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533186ac186e14f80412511f",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533186ac186e14f80412511f",
       "person_id": "53303772d0c05d8b737b6dba",
       "organization_id": "legislature",
       "id": "533186ac186e14f80412511f",
@@ -896,8 +736,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533186d3186e14f804125120",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533186d3186e14f804125120",
       "person_id": "53303773d0c05d8b737b6dbd",
       "organization_id": "legislature",
       "id": "533186d3186e14f804125120",
@@ -906,8 +744,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331870c186e14f804125121",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331870c186e14f804125121",
       "person_id": "5330366bd0c05d8b737b6baa",
       "organization_id": "legislature",
       "id": "5331870c186e14f804125121",
@@ -916,8 +752,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318716186e14f804125122",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318716186e14f804125122",
       "person_id": "53303774d0c05d8b737b6dc2",
       "organization_id": "legislature",
       "id": "53318716186e14f804125122",
@@ -926,8 +760,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331874a186e14f804125123",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331874a186e14f804125123",
       "person_id": "53303777d0c05d8b737b6dce",
       "organization_id": "legislature",
       "id": "5331874a186e14f804125123",
@@ -936,8 +768,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318770186e14f804125124",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318770186e14f804125124",
       "person_id": "53303775d0c05d8b737b6dc7",
       "organization_id": "legislature",
       "id": "53318770186e14f804125124",
@@ -946,8 +776,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533187a3186e14f804125125",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533187a3186e14f804125125",
       "person_id": "53303776d0c05d8b737b6dc9",
       "organization_id": "legislature",
       "id": "533187a3186e14f804125125",
@@ -956,8 +784,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533187b5186e14f804125126",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533187b5186e14f804125126",
       "person_id": "5330366cd0c05d8b737b6baf",
       "organization_id": "legislature",
       "id": "533187b5186e14f804125126",
@@ -966,8 +792,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533187dd186e14f804125127",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533187dd186e14f804125127",
       "person_id": "53303778d0c05d8b737b6dd3",
       "organization_id": "legislature",
       "id": "533187dd186e14f804125127",
@@ -976,8 +800,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331881d186e14f804125128",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331881d186e14f804125128",
       "person_id": "53303779d0c05d8b737b6dd8",
       "organization_id": "legislature",
       "id": "5331881d186e14f804125128",
@@ -986,8 +808,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318845186e14f804125129",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318845186e14f804125129",
       "person_id": "5330366dd0c05d8b737b6bb4",
       "organization_id": "legislature",
       "id": "53318845186e14f804125129",
@@ -996,8 +816,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318866186e14f80412512a",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318866186e14f80412512a",
       "person_id": "5330377ad0c05d8b737b6ddd",
       "organization_id": "legislature",
       "id": "53318866186e14f80412512a",
@@ -1006,8 +824,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318894186e14f80412512b",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318894186e14f80412512b",
       "person_id": "5330377bd0c05d8b737b6de0",
       "organization_id": "legislature",
       "id": "53318894186e14f80412512b",
@@ -1016,8 +832,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533188ca186e14f80412512c",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533188ca186e14f80412512c",
       "person_id": "5330377cd0c05d8b737b6de3",
       "organization_id": "legislature",
       "id": "533188ca186e14f80412512c",
@@ -1026,8 +840,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533188fa186e14f80412512d",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533188fa186e14f80412512d",
       "person_id": "53303670d0c05d8b737b6bb9",
       "organization_id": "legislature",
       "id": "533188fa186e14f80412512d",
@@ -1036,8 +848,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533188fe186e14f80412512e",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533188fe186e14f80412512e",
       "person_id": "5330377dd0c05d8b737b6de8",
       "organization_id": "legislature",
       "id": "533188fe186e14f80412512e",
@@ -1046,8 +856,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318909186e14f80412512f",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318909186e14f80412512f",
       "person_id": "53303697d0c05d8b737b6c68",
       "organization_id": "legislature",
       "id": "53318909186e14f80412512f",
@@ -1056,8 +864,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318948186e14f804125130",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318948186e14f804125130",
       "person_id": "5330377ed0c05d8b737b6ded",
       "organization_id": "legislature",
       "id": "53318948186e14f804125130",
@@ -1066,8 +872,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331896f186e14f804125131",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331896f186e14f804125131",
       "person_id": "53303780d0c05d8b737b6df1",
       "organization_id": "legislature",
       "id": "5331896f186e14f804125131",
@@ -1076,8 +880,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533189a6186e14f804125132",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533189a6186e14f804125132",
       "person_id": "53303782d0c05d8b737b6df3",
       "organization_id": "legislature",
       "id": "533189a6186e14f804125132",
@@ -1086,8 +888,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533189ac186e14f804125133",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533189ac186e14f804125133",
       "person_id": "53303698d0c05d8b737b6c6d",
       "organization_id": "legislature",
       "id": "533189ac186e14f804125133",
@@ -1096,8 +896,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533189cc186e14f804125135",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533189cc186e14f804125135",
       "person_id": "53303670d0c05d8b737b6bbe",
       "organization_id": "legislature",
       "id": "533189cc186e14f804125135",
@@ -1106,8 +904,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533189de186e14f804125136",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533189de186e14f804125136",
       "person_id": "53303783d0c05d8b737b6df7",
       "organization_id": "legislature",
       "id": "533189de186e14f804125136",
@@ -1116,8 +912,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318a18186e14f804125137",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318a18186e14f804125137",
       "person_id": "53303784d0c05d8b737b6dfc",
       "organization_id": "legislature",
       "id": "53318a18186e14f804125137",
@@ -1126,8 +920,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318a4f186e14f804125138",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318a4f186e14f804125138",
       "person_id": "53303699d0c05d8b737b6c71",
       "organization_id": "legislature",
       "id": "53318a4f186e14f804125138",
@@ -1136,8 +928,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318a56186e14f804125139",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318a56186e14f804125139",
       "person_id": "53303786d0c05d8b737b6e00",
       "organization_id": "legislature",
       "id": "53318a56186e14f804125139",
@@ -1146,8 +936,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318a96186e14f80412513a",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318a96186e14f80412513a",
       "person_id": "53303671d0c05d8b737b6bc1",
       "organization_id": "legislature",
       "id": "53318a96186e14f80412513a",
@@ -1156,8 +944,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318a9a186e14f80412513b",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318a9a186e14f80412513b",
       "person_id": "5330378cd0c05d8b737b6e0e",
       "organization_id": "legislature",
       "id": "53318a9a186e14f80412513b",
@@ -1166,8 +952,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318a9f186e14f80412513c",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318a9f186e14f80412513c",
       "person_id": "5330369ad0c05d8b737b6c76",
       "organization_id": "legislature",
       "id": "53318a9f186e14f80412513c",
@@ -1176,8 +960,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318ad1186e14f80412513d",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318ad1186e14f80412513d",
       "person_id": "5330369bd0c05d8b737b6c79",
       "organization_id": "legislature",
       "id": "53318ad1186e14f80412513d",
@@ -1186,8 +968,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318b15186e14f80412513e",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318b15186e14f80412513e",
       "person_id": "5330369cd0c05d8b737b6c7e",
       "organization_id": "legislature",
       "id": "53318b15186e14f80412513e",
@@ -1196,8 +976,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318b1e186e14f80412513f",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318b1e186e14f80412513f",
       "person_id": "53303787d0c05d8b737b6e05",
       "organization_id": "legislature",
       "id": "53318b1e186e14f80412513f",
@@ -1206,8 +984,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318b67186e14f804125140",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318b67186e14f804125140",
       "person_id": "5330369dd0c05d8b737b6c82",
       "organization_id": "legislature",
       "id": "53318b67186e14f804125140",
@@ -1216,8 +992,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318b7d186e14f804125141",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318b7d186e14f804125141",
       "person_id": "53303789d0c05d8b737b6e0a",
       "organization_id": "legislature",
       "id": "53318b7d186e14f804125141",
@@ -1226,8 +1000,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318bb1186e14f804125142",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318bb1186e14f804125142",
       "person_id": "5330369ed0c05d8b737b6c86",
       "organization_id": "legislature",
       "id": "53318bb1186e14f804125142",
@@ -1236,8 +1008,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318bbb186e14f804125143",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318bbb186e14f804125143",
       "person_id": "5330378ed0c05d8b737b6e13",
       "organization_id": "legislature",
       "id": "53318bbb186e14f804125143",
@@ -1246,8 +1016,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318bc1186e14f804125144",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318bc1186e14f804125144",
       "id": "53318bc1186e14f804125144",
       "organization_id": "legislature",
       "person_id": "53303672d0c05d8b737b6bc6",
@@ -1256,8 +1024,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318c11186e14f804125145",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318c11186e14f804125145",
       "person_id": "5330369fd0c05d8b737b6c8b",
       "organization_id": "legislature",
       "id": "53318c11186e14f804125145",
@@ -1266,8 +1032,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318c50186e14f804125146",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318c50186e14f804125146",
       "person_id": "53303673d0c05d8b737b6bca",
       "organization_id": "legislature",
       "id": "53318c50186e14f804125146",
@@ -1276,8 +1040,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318c6d186e14f804125147",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318c6d186e14f804125147",
       "person_id": "533036a0d0c05d8b737b6c90",
       "organization_id": "legislature",
       "id": "53318c6d186e14f804125147",
@@ -1286,8 +1048,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318caf186e14f804125148",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318caf186e14f804125148",
       "person_id": "53303674d0c05d8b737b6bcc",
       "organization_id": "legislature",
       "id": "53318caf186e14f804125148",
@@ -1296,8 +1056,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318cc9186e14f804125149",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318cc9186e14f804125149",
       "person_id": "533036a1d0c05d8b737b6c93",
       "organization_id": "legislature",
       "id": "53318cc9186e14f804125149",
@@ -1306,8 +1064,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318d43186e14f80412514a",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318d43186e14f80412514a",
       "person_id": "533036a2d0c05d8b737b6c95",
       "organization_id": "legislature",
       "id": "53318d43186e14f80412514a",
@@ -1316,8 +1072,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318d54186e14f80412514b",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318d54186e14f80412514b",
       "person_id": "53303675d0c05d8b737b6bd1",
       "organization_id": "legislature",
       "id": "53318d54186e14f80412514b",
@@ -1326,8 +1080,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318d9a186e14f80412514c",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318d9a186e14f80412514c",
       "person_id": "53303726d0c05d8b737b6c9a",
       "organization_id": "legislature",
       "id": "53318d9a186e14f80412514c",
@@ -1336,8 +1088,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318df3186e14f80412514d",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318df3186e14f80412514d",
       "person_id": "53303676d0c05d8b737b6bd6",
       "organization_id": "legislature",
       "id": "53318df3186e14f80412514d",
@@ -1346,8 +1096,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318df4186e14f80412514e",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318df4186e14f80412514e",
       "person_id": "53303727d0c05d8b737b6c9f",
       "organization_id": "legislature",
       "id": "53318df4186e14f80412514e",
@@ -1356,8 +1104,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318e83186e14f80412514f",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318e83186e14f80412514f",
       "person_id": "53303728d0c05d8b737b6ca4",
       "organization_id": "legislature",
       "id": "53318e83186e14f80412514f",
@@ -1366,8 +1112,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318eb6186e14f804125150",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318eb6186e14f804125150",
       "person_id": "53303677d0c05d8b737b6bda",
       "organization_id": "legislature",
       "id": "53318eb6186e14f804125150",
@@ -1376,8 +1120,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318ed0186e14f804125151",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318ed0186e14f804125151",
       "person_id": "5330372bd0c05d8b737b6ca7",
       "organization_id": "legislature",
       "id": "53318ed0186e14f804125151",
@@ -1386,8 +1128,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318f13186e14f804125152",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318f13186e14f804125152",
       "person_id": "53303678d0c05d8b737b6bdd",
       "organization_id": "legislature",
       "id": "53318f13186e14f804125152",
@@ -1396,8 +1136,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318f1b186e14f804125153",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318f1b186e14f804125153",
       "person_id": "5330372cd0c05d8b737b6cac",
       "organization_id": "legislature",
       "id": "53318f1b186e14f804125153",
@@ -1406,8 +1144,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53318f83186e14f804125154",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53318f83186e14f804125154",
       "person_id": "53303679d0c05d8b737b6be2",
       "organization_id": "legislature",
       "id": "53318f83186e14f804125154",
@@ -1416,8 +1152,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331901d186e14f804125155",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331901d186e14f804125155",
       "person_id": "5330372dd0c05d8b737b6cb0",
       "organization_id": "legislature",
       "id": "5331901d186e14f804125155",
@@ -1426,8 +1160,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53319051186e14f804125157",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53319051186e14f804125157",
       "person_id": "5330367ad0c05d8b737b6be7",
       "organization_id": "legislature",
       "id": "53319051186e14f804125157",
@@ -1436,8 +1168,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53319064186e14f804125158",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53319064186e14f804125158",
       "person_id": "5330372ed0c05d8b737b6cb2",
       "organization_id": "legislature",
       "id": "53319064186e14f804125158",
@@ -1446,8 +1176,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53319127186e14f804125159",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53319127186e14f804125159",
       "id": "53319127186e14f804125159",
       "organization_id": "legislature",
       "person_id": "5330368fd0c05d8b737b6c43",
@@ -1456,8 +1184,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331912e186e14f80412515a",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331912e186e14f80412515a",
       "person_id": "5330372fd0c05d8b737b6cb6",
       "organization_id": "legislature",
       "id": "5331912e186e14f80412515a",
@@ -1466,8 +1192,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331918b186e14f80412515b",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331918b186e14f80412515b",
       "person_id": "53303690d0c05d8b737b6c47",
       "organization_id": "legislature",
       "id": "5331918b186e14f80412515b",
@@ -1476,8 +1200,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533191d5186e14f80412515c",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533191d5186e14f80412515c",
       "person_id": "53303730d0c05d8b737b6cbb",
       "organization_id": "legislature",
       "id": "533191d5186e14f80412515c",
@@ -1486,8 +1208,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53319221186e14f80412515d",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53319221186e14f80412515d",
       "person_id": "53303691d0c05d8b737b6c4c",
       "organization_id": "legislature",
       "id": "53319221186e14f80412515d",
@@ -1496,18 +1216,14 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53319239186e14f80412515e",
       "id": "53319239186e14f80412515e",
       "organization_id": "legislature",
       "person_id": "53303731d0c05d8b737b6cc0",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53319239186e14f80412515e",
       "role": "member",
       "on_behalf_of_id": "52fa6c4c67a027d001ba3c11",
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53319285186e14f80412515f",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53319285186e14f80412515f",
       "person_id": "53303692d0c05d8b737b6c51",
       "organization_id": "legislature",
       "id": "53319285186e14f80412515f",
@@ -1516,8 +1232,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533192ad186e14f804125160",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533192ad186e14f804125160",
       "person_id": "53303732d0c05d8b737b6cc5",
       "organization_id": "legislature",
       "id": "533192ad186e14f804125160",
@@ -1526,8 +1240,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533192e3186e14f804125161",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533192e3186e14f804125161",
       "person_id": "53303733d0c05d8b737b6cca",
       "organization_id": "legislature",
       "id": "533192e3186e14f804125161",
@@ -1536,8 +1248,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53319318186e14f804125162",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53319318186e14f804125162",
       "person_id": "53303734d0c05d8b737b6ccd",
       "organization_id": "legislature",
       "id": "53319318186e14f804125162",
@@ -1546,8 +1256,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331933c186e14f804125163",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331933c186e14f804125163",
       "person_id": "53303693d0c05d8b737b6c55",
       "organization_id": "legislature",
       "id": "5331933c186e14f804125163",
@@ -1556,8 +1264,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53319388186e14f804125164",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53319388186e14f804125164",
       "person_id": "53303735d0c05d8b737b6cd1",
       "organization_id": "legislature",
       "id": "53319388186e14f804125164",
@@ -1566,8 +1272,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533193bb186e14f804125165",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533193bb186e14f804125165",
       "person_id": "53303736d0c05d8b737b6cd5",
       "organization_id": "legislature",
       "id": "533193bb186e14f804125165",
@@ -1576,8 +1280,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53319421186e14f804125166",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53319421186e14f804125166",
       "person_id": "53303750d0c05d8b737b6d20",
       "organization_id": "legislature",
       "id": "53319421186e14f804125166",
@@ -1586,8 +1288,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53319426186e14f804125167",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53319426186e14f804125167",
       "person_id": "53303737d0c05d8b737b6cda",
       "organization_id": "legislature",
       "id": "53319426186e14f804125167",
@@ -1596,8 +1296,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53319462186e14f804125168",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53319462186e14f804125168",
       "person_id": "53303750d0c05d8b737b6d24",
       "organization_id": "legislature",
       "id": "53319462186e14f804125168",
@@ -1606,8 +1304,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533194a8186e14f804125169",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533194a8186e14f804125169",
       "person_id": "53303752d0c05d8b737b6d28",
       "organization_id": "legislature",
       "id": "533194a8186e14f804125169",
@@ -1616,8 +1312,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533194ad186e14f80412516a",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533194ad186e14f80412516a",
       "person_id": "53303737d0c05d8b737b6cde",
       "organization_id": "legislature",
       "id": "533194ad186e14f80412516a",
@@ -1626,8 +1320,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533194ee186e14f80412516b",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533194ee186e14f80412516b",
       "person_id": "53303754d0c05d8b737b6d2d",
       "organization_id": "legislature",
       "id": "533194ee186e14f80412516b",
@@ -1636,8 +1328,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53319506186e14f80412516c",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53319506186e14f80412516c",
       "person_id": "53303738d0c05d8b737b6ce1",
       "organization_id": "legislature",
       "id": "53319506186e14f80412516c",
@@ -1646,8 +1336,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533195f8186e14f80412523d",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533195f8186e14f80412523d",
       "person_id": "5330373ad0c05d8b737b6cea",
       "organization_id": "legislature",
       "id": "533195f8186e14f80412523d",
@@ -1656,8 +1344,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53319650186e14f8041252a5",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53319650186e14f8041252a5",
       "person_id": "5330373bd0c05d8b737b6ced",
       "organization_id": "legislature",
       "id": "53319650186e14f8041252a5",
@@ -1666,8 +1352,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53319682186e14f80412530f",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53319682186e14f80412530f",
       "person_id": "5330373cd0c05d8b737b6cf0",
       "organization_id": "legislature",
       "id": "53319682186e14f80412530f",
@@ -1676,8 +1360,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533196ae186e14f804125310",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533196ae186e14f804125310",
       "person_id": "5330373dd0c05d8b737b6cf5",
       "organization_id": "legislature",
       "id": "533196ae186e14f804125310",
@@ -1686,8 +1368,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533196dc186e14f804125311",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533196dc186e14f804125311",
       "person_id": "5330373ed0c05d8b737b6cfa",
       "organization_id": "legislature",
       "id": "533196dc186e14f804125311",
@@ -1696,8 +1376,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53319738186e14f804125312",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53319738186e14f804125312",
       "person_id": "53303746d0c05d8b737b6cff",
       "organization_id": "legislature",
       "id": "53319738186e14f804125312",
@@ -1706,8 +1384,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53319774186e14f8041253e9",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53319774186e14f8041253e9",
       "person_id": "53303747d0c05d8b737b6d04",
       "organization_id": "legislature",
       "id": "53319774186e14f8041253e9",
@@ -1716,8 +1392,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/533197c8186e14f804125453",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/533197c8186e14f804125453",
       "id": "533197c8186e14f804125453",
       "organization_id": "legislature",
       "person_id": "53303749d0c05d8b737b6d0b",
@@ -1726,8 +1400,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53319810186e14f8041254bd",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53319810186e14f8041254bd",
       "person_id": "5330374bd0c05d8b737b6d10",
       "organization_id": "legislature",
       "id": "53319810186e14f8041254bd",
@@ -1736,8 +1408,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331989b186e14f8041254be",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331989b186e14f8041254be",
       "person_id": "5330374ad0c05d8b737b6d0d",
       "organization_id": "legislature",
       "id": "5331989b186e14f8041254be",
@@ -1746,8 +1416,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/5331991f186e14f8041254c1",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/5331991f186e14f8041254c1",
       "person_id": "5330374ed0c05d8b737b6d18",
       "organization_id": "legislature",
       "id": "5331991f186e14f8041254c1",
@@ -1756,8 +1424,6 @@
       "legislative_period_id": "term/current"
     },
     {
-      "html_url": "https://pmocl.popit.mysociety.org/memberships/53319958186e14f8041254c2",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/memberships/53319958186e14f8041254c2",
       "person_id": "5330374fd0c05d8b737b6d1b",
       "organization_id": "legislature",
       "id": "53319958186e14f8041254c2",
@@ -1770,8 +1436,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D1118%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=1118&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330365fd0c05d8b737b6b74",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330365fd0c05d8b737b6b74",
       "birth_date": "1948-09-25",
       "id": "5330365fd0c05d8b737b6b74",
       "name": "Adriana Muñoz D'Albora",
@@ -1846,8 +1510,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D688%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=688&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303660d0c05d8b737b6b78",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303660d0c05d8b737b6b78",
       "birth_date": "1956-11-04",
       "commissions": [
         {
@@ -1930,8 +1592,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg888",
       "image": "http://www.camara.cl/img.aspx?prmid=g888",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303662d0c05d8b737b6b7d",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303662d0c05d8b737b6b7d",
       "birth_date": "1956-10-04",
       "commissions": [
         {
@@ -2011,8 +1671,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg933",
       "image": "http://www.camara.cl/img.aspx?prmid=g933",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303663d0c05d8b737b6b82",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303663d0c05d8b737b6b82",
       "birth_date": "1955-04-19",
       "commissions": [
         {
@@ -2095,8 +1753,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg897",
       "image": "http://www.camara.cl/img.aspx?prmid=g897",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303664d0c05d8b737b6b87",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303664d0c05d8b737b6b87",
       "birth_date": "1965-11-13",
       "commissions": [
         {
@@ -2159,8 +1815,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D1066%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=1066&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303665d0c05d8b737b6b89",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303665d0c05d8b737b6b89",
       "birth_date": "1952-04-19",
       "commissions": [
         {
@@ -2249,8 +1903,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D1111%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=1111&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303666d0c05d8b737b6b8e",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303666d0c05d8b737b6b8e",
       "birth_date": "1953-03-05",
       "id": "53303666d0c05d8b737b6b8e",
       "name": "Alejandro Guillier Álvarez",
@@ -2310,8 +1962,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D915%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=915&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303667d0c05d8b737b6b92",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303667d0c05d8b737b6b92",
       "birth_date": "1958-11-20",
       "commissions": [
         {
@@ -2394,8 +2044,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg952",
       "image": "http://www.camara.cl/img.aspx?prmid=g952",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303668d0c05d8b737b6b97",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303668d0c05d8b737b6b97",
       "birth_date": "1965-07-18",
       "commissions": [
         {
@@ -2469,8 +2117,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D1115%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=1115&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303669d0c05d8b737b6b9c",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303669d0c05d8b737b6b9c",
       "birth_date": "1966-03-07",
       "id": "53303669d0c05d8b737b6b9c",
       "name": "Alfonso De Urresti Longton",
@@ -2548,8 +2194,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg944",
       "image": "http://www.camara.cl/img.aspx?prmid=g944",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303669d0c05d8b737b6ba1",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303669d0c05d8b737b6ba1",
       "birth_date": "1970-03-28",
       "commissions": [
         {
@@ -2623,8 +2267,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D905%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=905&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330366ad0c05d8b737b6ba6",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330366ad0c05d8b737b6ba6",
       "birth_date": "1956-02-07",
       "id": "5330366ad0c05d8b737b6ba6",
       "name": "Andrés Allamand Zavala",
@@ -2690,8 +2332,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D60%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=60&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330366bd0c05d8b737b6baa",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330366bd0c05d8b737b6baa",
       "birth_date": "1936-03-18",
       "commissions": [
         {
@@ -2769,8 +2409,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D58%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=58&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330366cd0c05d8b737b6baf",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330366cd0c05d8b737b6baf",
       "birth_date": "1950-01-03",
       "id": "5330366cd0c05d8b737b6baf",
       "name": "Antonio Horvath Kiss",
@@ -2845,8 +2483,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg955",
       "image": "http://www.camara.cl/img.aspx?prmid=g955",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330366dd0c05d8b737b6bb4",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330366dd0c05d8b737b6bb4",
       "birth_date": "1978-09-25",
       "commissions": [
         {
@@ -2920,8 +2556,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D693%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=693&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303670d0c05d8b737b6bb9",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303670d0c05d8b737b6bb9",
       "birth_date": "1958-07-02",
       "commissions": [
         {
@@ -3010,7 +2644,6 @@
           "permanent": "Gobierno Interior y Regionalización; Pesca, Acuicultura e Intereses Marítimos; Salud"
         }
       ],
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303670d0c05d8b737b6bbe",
       "id": "53303670d0c05d8b737b6bbe",
       "name": "Bernardo Berger Fett",
       "parliamentarian_period": [
@@ -3038,7 +2671,6 @@
       ],
       "slug": "bernardo-berger-fett",
       "title": "Diputado",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303670d0c05d8b737b6bbe",
       "images": [
         {
           "proxy_url": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg971",
@@ -3065,8 +2697,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg1006",
       "image": "http://www.camara.cl/img.aspx?prmid=g1006",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303671d0c05d8b737b6bc1",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303671d0c05d8b737b6bc1",
       "birth_date": "1988-04-28",
       "commissions": [
         {
@@ -3137,8 +2767,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg855",
       "image": "http://www.camara.cl/img.aspx?prmid=g855",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303672d0c05d8b737b6bc6",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303672d0c05d8b737b6bc6",
       "birth_date": "1944-11-14",
       "commissions": [
         {
@@ -3216,8 +2844,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D907%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=907&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303673d0c05d8b737b6bca",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303673d0c05d8b737b6bca",
       "birth_date": "1960-11-04",
       "commissions": [
         {
@@ -3274,8 +2900,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D1119%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=1119&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303674d0c05d8b737b6bcc",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303674d0c05d8b737b6bcc",
       "birth_date": "1946-05-11",
       "id": "53303674d0c05d8b737b6bcc",
       "name": "Carlos Montes Cisternas",
@@ -3358,8 +2982,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D1113%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=1113&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303675d0c05d8b737b6bd1",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303675d0c05d8b737b6bd1",
       "birth_date": "1972-12-20",
       "id": "53303675d0c05d8b737b6bd1",
       "name": "Carolina Goic Boroevic",
@@ -3437,7 +3059,6 @@
           "permanent": "Medio Ambiente y Recursos Naturales; Deportes y Recreación; Gobierno Interior y Regionalización"
         }
       ],
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303676d0c05d8b737b6bd6",
       "id": "53303676d0c05d8b737b6bd6",
       "name": "Celso Morales Muñoz",
       "parliamentarian_period": [
@@ -3469,7 +3090,6 @@
       ],
       "slug": "celso-morales-muñoz",
       "title": "Diputado",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303676d0c05d8b737b6bd6",
       "images": [
         {
           "proxy_url": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fcamara.cl%2Fimg.aspx%3Fprmid%3Dg945",
@@ -3507,7 +3127,6 @@
           "permanent": "Ciencias y Tecnología; Agricultura, Silvicultura y Desarrollo Rural"
         }
       ],
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303677d0c05d8b737b6bda",
       "id": "53303677d0c05d8b737b6bda",
       "name": "Christian Urízar Muñoz",
       "parliamentarian_period": [
@@ -3536,7 +3155,6 @@
       ],
       "slug": "christian-urízar-muñoz",
       "title": "Diputado",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303677d0c05d8b737b6bda",
       "images": [
         {
           "proxy_url": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg1004",
@@ -3563,8 +3181,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg874",
       "image": "http://www.camara.cl/img.aspx?prmid=g874",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303678d0c05d8b737b6bdd",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303678d0c05d8b737b6bdd",
       "birth_date": "1969-11-26",
       "commissions": [
         {
@@ -3641,8 +3257,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg969",
       "image": "http://www.camara.cl/img.aspx?prmid=g969",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303679d0c05d8b737b6be2",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303679d0c05d8b737b6be2",
       "birth_date": "1955-10-22",
       "commissions": [
         {
@@ -3712,8 +3326,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg880",
       "image": "http://www.camara.cl/img.aspx?prmid=g880",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330367ad0c05d8b737b6be7",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330367ad0c05d8b737b6be7",
       "birth_date": "1961-05-05",
       "commissions": [
         {
@@ -3796,7 +3408,6 @@
           "permanent": "Pesca, Acuicultura e Intereses Marítimos;Trabajo y Seguridad Social; Relaciones Exteriores"
         }
       ],
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330367bd0c05d8b737b6bec",
       "id": "5330367bd0c05d8b737b6bec",
       "name": "Cristián Campos Jara",
       "parliamentarian_period": [
@@ -3828,7 +3439,6 @@
       ],
       "slug": "cristián-campos-jara",
       "title": "Diputado",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330367bd0c05d8b737b6bec",
       "images": [
         {
           "proxy_url": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg929",
@@ -3860,8 +3470,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg867",
       "image": "http://www.camara.cl/img.aspx?prmid=g867",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330367cd0c05d8b737b6bf0",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330367cd0c05d8b737b6bf0",
       "birth_date": "1968-05-12",
       "commissions": [
         {
@@ -3938,8 +3546,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg936",
       "image": "http://www.camara.cl/img.aspx?prmid=g936",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330367dd0c05d8b737b6bf5",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330367dd0c05d8b737b6bf5",
       "birth_date": "1962-01-09",
       "commissions": [
         {
@@ -4008,8 +3614,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg980",
       "image": "http://www.camara.cl/img.aspx?prmid=g980",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330367ed0c05d8b737b6bf9",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330367ed0c05d8b737b6bf9",
       "birth_date": "1963-11-02",
       "commissions": [
         {
@@ -4075,8 +3679,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg990",
       "image": "http://www.camara.cl/img.aspx?prmid=g990",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330367fd0c05d8b737b6bfd",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330367fd0c05d8b737b6bfd",
       "birth_date": "1979-02-18",
       "commissions": [
         {
@@ -4146,8 +3748,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg993",
       "image": "http://www.camara.cl/img.aspx?prmid=g993",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303680d0c05d8b737b6c02",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303680d0c05d8b737b6c02",
       "birth_date": "1971-01-07",
       "commissions": [
         {
@@ -4218,8 +3818,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg975",
       "image": "http://www.camara.cl/img.aspx?prmid=g975",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303681d0c05d8b737b6c07",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303681d0c05d8b737b6c07",
       "birth_date": "1987-12-31",
       "commissions": [
         {
@@ -4284,8 +3882,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg951",
       "image": "http://www.camara.cl/img.aspx?prmid=g951",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303682d0c05d8b737b6c0b",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303682d0c05d8b737b6c0b",
       "birth_date": "1962-10-20",
       "commissions": [
         {
@@ -4359,8 +3955,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg883",
       "image": "http://www.camara.cl/img.aspx?prmid=g883",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303683d0c05d8b737b6c10",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303683d0c05d8b737b6c10",
       "birth_date": "1940-07-19",
       "commissions": [
         {
@@ -4436,8 +4030,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg995",
       "image": "http://www.camara.cl/img.aspx?prmid=g995",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303684d0c05d8b737b6c15",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303684d0c05d8b737b6c15",
       "birth_date": "1987-08-01",
       "commissions": [
         {
@@ -4503,8 +4095,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D1067%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=1067&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303685d0c05d8b737b6c19",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303685d0c05d8b737b6c19",
       "birth_date": "1974-11-28",
       "commissions": [
         {
@@ -4591,7 +4181,6 @@
           "permanent": "Hacienda; Superación de la Pobreza, Planificación y Desarrollo Social"
         }
       ],
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303686d0c05d8b737b6c1e",
       "id": "53303686d0c05d8b737b6c1e",
       "name": "Enrique Jaramillo Becker",
       "parliamentarian_period": [
@@ -4632,7 +4221,6 @@
       ],
       "slug": "enrique-jaramillo-becker",
       "title": "Diputado",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303686d0c05d8b737b6c1e",
       "images": [
         {
           "proxy_url": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg854",
@@ -4659,8 +4247,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg959",
       "image": "http://www.camara.cl/img.aspx?prmid=g959",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303687d0c05d8b737b6c21",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303687d0c05d8b737b6c21",
       "birth_date": "1976-09-17",
       "commissions": [
         {
@@ -4733,8 +4319,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg954",
       "image": "http://www.camara.cl/img.aspx?prmid=g954",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303688d0c05d8b737b6c26",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303688d0c05d8b737b6c26",
       "birth_date": "1975-08-15",
       "commissions": [
         {
@@ -4808,8 +4392,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D1011%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=1011&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303689d0c05d8b737b6c2b",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303689d0c05d8b737b6c2b",
       "birth_date": "1945-07-29",
       "commissions": [
         {
@@ -4899,7 +4481,6 @@
           "permanent": "Hacienda; Drechos Humanos y Pueblos Originarios"
         }
       ],
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330368ad0c05d8b737b6c30",
       "id": "5330368ad0c05d8b737b6c30",
       "name": "Felipe De Mussy Hiriart",
       "parliamentarian_period": [
@@ -4928,7 +4509,6 @@
       ],
       "slug": "felipe-de-mussy-hiriart",
       "title": "Diputado",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330368ad0c05d8b737b6c30",
       "images": [
         {
           "proxy_url": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg978",
@@ -4955,8 +4535,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D1114%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=1114&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330368bd0c05d8b737b6c33",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330368bd0c05d8b737b6c33",
       "birth_date": "1972-07-20",
       "id": "5330368bd0c05d8b737b6c33",
       "name": "Felipe Harboe Bascuñán",
@@ -5027,8 +4605,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg988",
       "image": "http://www.camara.cl/img.aspx?prmid=g988",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330368cd0c05d8b737b6c38",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330368cd0c05d8b737b6c38",
       "birth_date": "1977-06-09",
       "commissions": [
         {
@@ -5094,8 +4670,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg177",
       "image": "http://www.camara.cl/img.aspx?prmid=g177",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330368dd0c05d8b737b6c3c",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330368dd0c05d8b737b6c3c",
       "birth_date": "1956-05-11",
       "commissions": [
         {
@@ -5165,8 +4739,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg919",
       "image": "http://www.camara.cl/img.aspx?prmid=g919",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330368ed0c05d8b737b6c3f",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330368ed0c05d8b737b6c3f",
       "birth_date": "1972-09-14",
       "commissions": [
         {
@@ -5238,8 +4810,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg866",
       "image": "http://www.camara.cl/img.aspx?prmid=g866",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330368fd0c05d8b737b6c43",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330368fd0c05d8b737b6c43",
       "birth_date": "1946-07-14",
       "commissions": [
         {
@@ -5314,8 +4884,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg837",
       "image": "http://www.camara.cl/img.aspx?prmid=g837",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303690d0c05d8b737b6c47",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303690d0c05d8b737b6c47",
       "birth_date": "1970-01-24",
       "commissions": [
         {
@@ -5395,8 +4963,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D986%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=986&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303691d0c05d8b737b6c4c",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303691d0c05d8b737b6c4c",
       "birth_date": "1971-05-20",
       "commissions": [
         {
@@ -5475,7 +5041,6 @@
           "permanent": "Economía; Constitución, Legislación y Justicia; Superación de la Pobreza, Planificación y Desarrollo Social"
         }
       ],
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303692d0c05d8b737b6c51",
       "id": "53303692d0c05d8b737b6c51",
       "name": "Fuad Chahín Valenzuela",
       "parliamentarian_period": [
@@ -5507,7 +5072,6 @@
       ],
       "slug": "fuad-chahín-valenzuela",
       "title": "Diputado",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303692d0c05d8b737b6c51",
       "images": [
         {
           "proxy_url": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg934",
@@ -5539,8 +5103,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D1010%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=1010&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303693d0c05d8b737b6c55",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303693d0c05d8b737b6c55",
       "birth_date": "1970-09-30",
       "commissions": [
         {
@@ -5611,8 +5173,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg972",
       "image": "http://www.camara.cl/img.aspx?prmid=g972",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303694d0c05d8b737b6c59",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303694d0c05d8b737b6c59",
       "birth_date": "1986-02-11",
       "commissions": [
         {
@@ -5683,8 +5243,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg898",
       "image": "http://www.camara.cl/img.aspx?prmid=g898",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303695d0c05d8b737b6c5e",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303695d0c05d8b737b6c5e",
       "birth_date": "1976-09-15",
       "commissions": [
         {
@@ -5761,8 +5319,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg948",
       "image": "http://www.camara.cl/img.aspx?prmid=g948",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303696d0c05d8b737b6c63",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303696d0c05d8b737b6c63",
       "birth_date": "1978-05-17",
       "commissions": [
         {
@@ -5835,8 +5391,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg813",
       "image": "http://www.camara.cl/img.aspx?prmid=g813",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303697d0c05d8b737b6c68",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303697d0c05d8b737b6c68",
       "birth_date": "1955-03-13",
       "commissions": [
         {
@@ -5922,7 +5476,6 @@
           "permanent": "Deportes y Recración; Defensa Nacional;Economía"
         }
       ],
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303698d0c05d8b737b6c6d",
       "id": "53303698d0c05d8b737b6c6d",
       "name": "Germán Verdugo Soto",
       "parliamentarian_period": [
@@ -5956,7 +5509,6 @@
       ],
       "slug": "germán-verdugo-soto",
       "title": "Diputado",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303698d0c05d8b737b6c6d",
       "images": [
         {
           "proxy_url": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg915",
@@ -5988,8 +5540,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg987",
       "image": "http://www.camara.cl/img.aspx?prmid=g987",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303699d0c05d8b737b6c71",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303699d0c05d8b737b6c71",
       "birth_date": "1987-02-06",
       "commissions": [
         {
@@ -6060,8 +5610,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg984",
       "image": "http://www.camara.cl/img.aspx?prmid=g984",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330369ad0c05d8b737b6c76",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330369ad0c05d8b737b6c76",
       "birth_date": "1973-06-18",
       "commissions": [
         {
@@ -6122,8 +5670,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D909%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=909&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330369bd0c05d8b737b6c79",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330369bd0c05d8b737b6c79",
       "birth_date": "1961-01-21",
       "commissions": [
         {
@@ -6210,7 +5756,6 @@
           "permanent": "Seguridad Ciudadana; Constitución, Legislación y Justicia"
         }
       ],
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330369cd0c05d8b737b6c7e",
       "id": "5330369cd0c05d8b737b6c7e",
       "name": "Guillermo Ceroni Fuentes",
       "parliamentarian_period": [
@@ -6254,7 +5799,6 @@
       ],
       "slug": "guillermo-ceroni-fuentes",
       "title": "Diputado",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330369cd0c05d8b737b6c7e",
       "images": [
         {
           "proxy_url": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg819",
@@ -6286,8 +5830,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg956",
       "image": "http://www.camara.cl/img.aspx?prmid=g956",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330369dd0c05d8b737b6c82",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330369dd0c05d8b737b6c82",
       "birth_date": "1943-10-23",
       "commissions": [
         {
@@ -6356,8 +5898,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg939",
       "image": "http://www.camara.cl/img.aspx?prmid=g939",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330369ed0c05d8b737b6c86",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330369ed0c05d8b737b6c86",
       "birth_date": "1972-08-02",
       "commissions": [
         {
@@ -6431,8 +5971,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D34%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=34&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330369fd0c05d8b737b6c8b",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330369fd0c05d8b737b6c8b",
       "birth_date": "1947-09-21",
       "commissions": [
         {
@@ -6510,8 +6048,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg937",
       "image": "http://www.camara.cl/img.aspx?prmid=g937",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/533036a0d0c05d8b737b6c90",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/533036a0d0c05d8b737b6c90",
       "birth_date": "1961-10-05",
       "commissions": [
         {
@@ -6574,8 +6110,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg908",
       "image": "http://www.camara.cl/img.aspx?prmid=g908",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/533036a1d0c05d8b737b6c93",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/533036a1d0c05d8b737b6c93",
       "birth_date": "1957-09-16",
       "commissions": [
         {
@@ -6638,8 +6172,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D1013%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=1013&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/533036a2d0c05d8b737b6c95",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/533036a2d0c05d8b737b6c95",
       "birth_date": "1956-01-07",
       "commissions": [
         {
@@ -6716,8 +6248,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D985%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=985&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303726d0c05d8b737b6c9a",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303726d0c05d8b737b6c9a",
       "birth_date": "1945-01-18",
       "commissions": [
         {
@@ -6800,8 +6330,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg967",
       "image": "http://www.camara.cl/img.aspx?prmid=g967",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303727d0c05d8b737b6c9f",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303727d0c05d8b737b6c9f",
       "birth_date": "1980-05-09",
       "commissions": [
         {
@@ -6874,8 +6402,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg982",
       "image": "http://www.camara.cl/img.aspx?prmid=g982",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303728d0c05d8b737b6ca4",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303728d0c05d8b737b6ca4",
       "birth_date": "1955-06-15",
       "commissions": [
         {
@@ -6942,8 +6468,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg983",
       "image": "http://www.camara.cl/img.aspx?prmid=g983",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330372bd0c05d8b737b6ca7",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330372bd0c05d8b737b6ca7",
       "birth_date": "1967-07-24",
       "commissions": [
         {
@@ -7014,8 +6538,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D1117%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=1117&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330372cd0c05d8b737b6cac",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330372cd0c05d8b737b6cac",
       "birth_date": "1956-12-08",
       "id": "5330372cd0c05d8b737b6cac",
       "name": "Iván Moreira Barros",
@@ -7090,8 +6612,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg875",
       "image": "http://www.camara.cl/img.aspx?prmid=g875",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330372dd0c05d8b737b6cb0",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330372dd0c05d8b737b6cb0",
       "birth_date": "1958-09-04",
       "commissions": [
         {
@@ -7154,8 +6674,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D1112%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=1112&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330372ed0c05d8b737b6cb2",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330372ed0c05d8b737b6cb2",
       "birth_date": "1965-02-03",
       "id": "5330372ed0c05d8b737b6cb2",
       "name": "Jacqueline Van Rysselberghe Herrera",
@@ -7222,8 +6740,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg970",
       "image": "http://www.camara.cl/img.aspx?prmid=g970",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330372fd0c05d8b737b6cb6",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330372fd0c05d8b737b6cb6",
       "birth_date": "1980-11-29",
       "commissions": [
         {
@@ -7294,8 +6810,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D692%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=692&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303730d0c05d8b737b6cbb",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303730d0c05d8b737b6cbb",
       "birth_date": "1956-09-16",
       "commissions": [
         {
@@ -7379,8 +6893,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg996",
       "image": "http://www.camara.cl/img.aspx?prmid=g996",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303731d0c05d8b737b6cc0",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303731d0c05d8b737b6cc0",
       "birth_date": "1965-12-03",
       "commissions": [
         {
@@ -7451,8 +6963,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D1008%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=1008&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303732d0c05d8b737b6cc5",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303732d0c05d8b737b6cc5",
       "birth_date": "1967-10-22",
       "commissions": [
         {
@@ -7529,8 +7039,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg850",
       "image": "http://www.camara.cl/img.aspx?prmid=g850",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303733d0c05d8b737b6cca",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303733d0c05d8b737b6cca",
       "birth_date": "1954-08-07",
       "commissions": [
         {
@@ -7606,7 +7114,6 @@
           "permanent": "Salud; Hacienda"
         }
       ],
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303734d0c05d8b737b6ccd",
       "id": "53303734d0c05d8b737b6ccd",
       "name": "Javier Macaya Danús",
       "parliamentarian_period": [
@@ -7638,7 +7145,6 @@
       ],
       "slug": "javier-macaya-danús",
       "title": "Diputado",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303734d0c05d8b737b6ccd",
       "images": [
         {
           "proxy_url": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg942",
@@ -7670,8 +7176,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg968",
       "image": "http://www.camara.cl/img.aspx?prmid=g968",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303735d0c05d8b737b6cd1",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303735d0c05d8b737b6cd1",
       "birth_date": "1974-03-30",
       "commissions": [
         {
@@ -7736,8 +7240,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg846",
       "image": "http://www.camara.cl/img.aspx?prmid=g846",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303736d0c05d8b737b6cd5",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303736d0c05d8b737b6cd5",
       "birth_date": "1977-01-25",
       "commissions": [
         {
@@ -7814,8 +7316,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg989",
       "image": "http://www.camara.cl/img.aspx?prmid=g989",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303737d0c05d8b737b6cda",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303737d0c05d8b737b6cda",
       "birth_date": "1979-05-25",
       "commissions": [
         {
@@ -7887,7 +7387,6 @@
           "permanent": "Economía"
         }
       ],
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303737d0c05d8b737b6cde",
       "id": "53303737d0c05d8b737b6cde",
       "name": "Joaquín Tuma Zedan",
       "parliamentarian_period": [
@@ -7919,7 +7418,6 @@
       ],
       "slug": "joaquín-tuma-zedan",
       "title": "Diputado",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303737d0c05d8b737b6cde",
       "images": [
         {
           "proxy_url": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg958",
@@ -7946,8 +7444,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg852",
       "image": "http://www.camara.cl/img.aspx?prmid=g852",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303738d0c05d8b737b6ce1",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303738d0c05d8b737b6ce1",
       "birth_date": "1967-02-12",
       "commissions": [
         {
@@ -8021,8 +7517,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D163%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=163&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303739d0c05d8b737b6ce6",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303739d0c05d8b737b6ce6",
       "birth_date": "1952-04-21",
       "commissions": [
         {
@@ -8113,7 +7607,6 @@
           "permanent": "Medio Ambiente y Recursos Naturales; Pesca, Acuicultura e Intereses Marítimos"
         }
       ],
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330373ad0c05d8b737b6cea",
       "id": "5330373ad0c05d8b737b6cea",
       "name": "Jorge Rathgeb Schifferli",
       "parliamentarian_period": [
@@ -8141,7 +7634,6 @@
       ],
       "slug": "jorge-rathgeb-schifferli",
       "title": "Diputado",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330373ad0c05d8b737b6cea",
       "images": [
         {
           "proxy_url": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg999",
@@ -8174,7 +7666,6 @@
           "permanent": "Relaciones Exteriores; Superación de Pobreza, Planificación y Desarrollo Social;Obras Públicas, Transporte y Telecomunicaciones"
         }
       ],
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330373bd0c05d8b737b6ced",
       "id": "5330373bd0c05d8b737b6ced",
       "name": "Jorge Sabag Villalobos",
       "parliamentarian_period": [
@@ -8209,7 +7700,6 @@
       ],
       "slug": "jorge-sabag-villalobos",
       "title": "Diputado",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330373bd0c05d8b737b6ced",
       "images": [
         {
           "proxy_url": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg893",
@@ -8236,8 +7726,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg902",
       "image": "http://www.camara.cl/img.aspx?prmid=g902",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330373cd0c05d8b737b6cf0",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330373cd0c05d8b737b6cf0",
       "birth_date": "1953-07-29",
       "commissions": [
         {
@@ -8317,8 +7805,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg906",
       "image": "http://www.camara.cl/img.aspx?prmid=g906",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330373dd0c05d8b737b6cf5",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330373dd0c05d8b737b6cf5",
       "birth_date": "1958-09-15",
       "commissions": [
         {
@@ -8407,8 +7893,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg857",
       "image": "http://www.camara.cl/img.aspx?prmid=g857",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330373ed0c05d8b737b6cfa",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330373ed0c05d8b737b6cfa",
       "birth_date": "1966-01-18",
       "commissions": [
         {
@@ -8488,8 +7972,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D690%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=690&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303746d0c05d8b737b6cff",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303746d0c05d8b737b6cff",
       "birth_date": "1955-05-22",
       "commissions": [
         {
@@ -8573,8 +8055,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg935",
       "image": "http://www.camara.cl/img.aspx?prmid=g935",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303747d0c05d8b737b6d04",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303747d0c05d8b737b6d04",
       "birth_date": "1977-07-15",
       "commissions": [
         {
@@ -8644,7 +8124,6 @@
           "permanent": "Familia y Adulto Mayor; Hacienda"
         }
       ],
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303748d0c05d8b737b6d07",
       "id": "53303748d0c05d8b737b6d07",
       "name": "José Miguel Ortiz Novoa",
       "parliamentarian_period": [
@@ -8691,7 +8170,6 @@
       ],
       "slug": "josé-miguel-ortiz-novoa",
       "title": "Diputado",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303748d0c05d8b737b6d07",
       "images": [
         {
           "proxy_url": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg879",
@@ -8723,8 +8201,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg885",
       "image": "http://www.camara.cl/img.aspx?prmid=g885",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303749d0c05d8b737b6d0b",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303749d0c05d8b737b6d0b",
       "birth_date": "1940-12-29",
       "commissions": [
         {
@@ -8790,8 +8266,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg976",
       "image": "http://www.camara.cl/img.aspx?prmid=g976",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330374ad0c05d8b737b6d0d",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330374ad0c05d8b737b6d0d",
       "birth_date": "1956-07-15",
       "commissions": [
         {
@@ -8852,8 +8326,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D687%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=687&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330374bd0c05d8b737b6d10",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330374bd0c05d8b737b6d10",
       "birth_date": "1956-07-15",
       "commissions": [
         {
@@ -8931,8 +8403,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg992",
       "image": "http://www.camara.cl/img.aspx?prmid=g992",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330374cd0c05d8b737b6d14",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330374cd0c05d8b737b6d14",
       "birth_date": "1952-09-10",
       "commissions": [
         {
@@ -8998,8 +8468,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg931",
       "image": "http://www.camara.cl/img.aspx?prmid=g931",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330374ed0c05d8b737b6d18",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330374ed0c05d8b737b6d18",
       "birth_date": "1960-04-18",
       "commissions": [
         {
@@ -9063,8 +8531,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D912%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=912&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330374fd0c05d8b737b6d1b",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330374fd0c05d8b737b6d1b",
       "birth_date": "1961-01-07",
       "commissions": [
         {
@@ -9151,8 +8617,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg891",
       "image": "http://www.camara.cl/img.aspx?prmid=g891",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303750d0c05d8b737b6d20",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303750d0c05d8b737b6d20",
       "birth_date": "1977-04-17",
       "commissions": [
         {
@@ -9224,8 +8688,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg973",
       "image": "http://www.camara.cl/img.aspx?prmid=g973",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303750d0c05d8b737b6d24",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303750d0c05d8b737b6d24",
       "birth_date": "1987-04-01",
       "commissions": [
         {
@@ -9291,8 +8753,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg930",
       "image": "http://www.camara.cl/img.aspx?prmid=g930",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303752d0c05d8b737b6d28",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303752d0c05d8b737b6d28",
       "birth_date": "1952-04-26",
       "commissions": [
         {
@@ -9366,8 +8826,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg1002",
       "image": "http://www.camara.cl/img.aspx?prmid=g1002",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303754d0c05d8b737b6d2d",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303754d0c05d8b737b6d2d",
       "birth_date": "1966-05-15",
       "commissions": [
         {
@@ -9438,8 +8896,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg946",
       "image": "http://www.camara.cl/img.aspx?prmid=g946",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303755d0c05d8b737b6d32",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303755d0c05d8b737b6d32",
       "birth_date": "1957-03-28",
       "commissions": [
         {
@@ -9508,8 +8964,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D1007%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=1007&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303756d0c05d8b737b6d36",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303756d0c05d8b737b6d36",
       "birth_date": "1963-05-10",
       "commissions": [
         {
@@ -9596,8 +9050,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg974",
       "image": "http://www.camara.cl/img.aspx?prmid=g974",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303757d0c05d8b737b6d3b",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303757d0c05d8b737b6d3b",
       "birth_date": "1973-05-18",
       "commissions": [
         {
@@ -9658,8 +9110,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg941",
       "image": "http://www.camara.cl/img.aspx?prmid=g941",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303758d0c05d8b737b6d3e",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303758d0c05d8b737b6d3e",
       "birth_date": "1961-12-23",
       "commissions": [
         {
@@ -9732,8 +9182,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg1000",
       "image": "http://www.camara.cl/img.aspx?prmid=g1000",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303759d0c05d8b737b6d43",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303759d0c05d8b737b6d43",
       "birth_date": "1958-09-17",
       "commissions": [
         {
@@ -9804,8 +9252,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D1120%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=1120&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330375ad0c05d8b737b6d48",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330375ad0c05d8b737b6d48",
       "birth_date": "1962-08-24",
       "id": "5330375ad0c05d8b737b6d48",
       "name": "Manuel José Ossandón Irarrázabal",
@@ -9871,8 +9317,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg869",
       "image": "http://www.camara.cl/img.aspx?prmid=g869",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330375bd0c05d8b737b6d4d",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330375bd0c05d8b737b6d4d",
       "birth_date": "1965-07-09",
       "commissions": [
         {
@@ -9939,8 +9383,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg986",
       "image": "http://www.camara.cl/img.aspx?prmid=g986",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330375cd0c05d8b737b6d50",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330375cd0c05d8b737b6d50",
       "birth_date": "1960-02-12",
       "commissions": [
         {
@@ -10006,8 +9448,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg949",
       "image": "http://www.camara.cl/img.aspx?prmid=g949",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330375dd0c05d8b737b6d54",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330375dd0c05d8b737b6d54",
       "birth_date": "1981-04-04",
       "commissions": [
         {
@@ -10080,8 +9520,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg977",
       "image": "http://www.camara.cl/img.aspx?prmid=g977",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330375dd0c05d8b737b6d59",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330375dd0c05d8b737b6d59",
       "birth_date": "1975-02-19",
       "commissions": [
         {
@@ -10141,8 +9579,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg920",
       "image": "http://www.camara.cl/img.aspx?prmid=g920",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330375ed0c05d8b737b6d5c",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330375ed0c05d8b737b6d5c",
       "birth_date": "1949-05-18",
       "commissions": [
         {
@@ -10213,8 +9649,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg876",
       "image": "http://www.camara.cl/img.aspx?prmid=g876",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330375fd0c05d8b737b6d61",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330375fd0c05d8b737b6d61",
       "birth_date": "1966-09-02",
       "commissions": [
         {
@@ -10286,8 +9720,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg836",
       "image": "http://www.camara.cl/img.aspx?prmid=g836",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303760d0c05d8b737b6d65",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303760d0c05d8b737b6d65",
       "birth_date": "1962-10-27",
       "commissions": [
         {
@@ -10364,8 +9796,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg940",
       "image": "http://www.camara.cl/img.aspx?prmid=g940",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303761d0c05d8b737b6d6a",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303761d0c05d8b737b6d6a",
       "birth_date": "1976-12-28",
       "commissions": [
         {
@@ -10434,8 +9864,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg913",
       "image": "http://www.camara.cl/img.aspx?prmid=g913",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303762d0c05d8b737b6d6e",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303762d0c05d8b737b6d6e",
       "birth_date": "1957-12-03",
       "commissions": [
         {
@@ -10512,8 +9940,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg905",
       "image": "http://www.camara.cl/img.aspx?prmid=g905",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303763d0c05d8b737b6d73",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303763d0c05d8b737b6d73",
       "birth_date": "1964-07-13",
       "commissions": [
         {
@@ -10590,8 +10016,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg963",
       "image": "http://www.camara.cl/img.aspx?prmid=g963",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303764d0c05d8b737b6d78",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303764d0c05d8b737b6d78",
       "birth_date": "1973-07-19",
       "commissions": [
         {
@@ -10665,8 +10089,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg981",
       "image": "http://www.camara.cl/img.aspx?prmid=g981",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303765d0c05d8b737b6d7d",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303765d0c05d8b737b6d7d",
       "birth_date": "1971-09-27",
       "commissions": [
         {
@@ -10736,8 +10158,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg868",
       "image": "http://www.camara.cl/img.aspx?prmid=g868",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303766d0c05d8b737b6d82",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303766d0c05d8b737b6d82",
       "birth_date": "1973-07-31",
       "commissions": [
         {
@@ -10823,7 +10243,6 @@
           "permanent": "Trabajo y Seguridad Social; Constitución, Legislación y Justicia"
         }
       ],
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303767d0c05d8b737b6d87",
       "id": "53303767d0c05d8b737b6d87",
       "name": "Osvaldo Andrade Lara",
       "parliamentarian_period": [
@@ -10855,7 +10274,6 @@
       ],
       "slug": "osvaldo-andrade-lara",
       "title": "Diputado",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303767d0c05d8b737b6d87",
       "images": [
         {
           "proxy_url": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg924",
@@ -10882,8 +10300,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg1005",
       "image": "http://www.camara.cl/img.aspx?prmid=g1005",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303768d0c05d8b737b6d8a",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303768d0c05d8b737b6d8a",
       "birth_date": "1951-11-28",
       "commissions": [
         {
@@ -10954,8 +10370,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg862",
       "image": "http://www.camara.cl/img.aspx?prmid=g862",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303769d0c05d8b737b6d8f",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303769d0c05d8b737b6d8f",
       "birth_date": "1949-10-25",
       "commissions": [
         {
@@ -11021,8 +10435,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg865",
       "image": "http://www.camara.cl/img.aspx?prmid=g865",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330376ad0c05d8b737b6d91",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330376ad0c05d8b737b6d91",
       "birth_date": "1956-06-09",
       "commissions": [
         {
@@ -11111,8 +10523,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg911",
       "image": "http://www.camara.cl/img.aspx?prmid=g911",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330376bd0c05d8b737b6d96",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330376bd0c05d8b737b6d96",
       "birth_date": "1964-04-24",
       "commissions": [
         {
@@ -11189,8 +10599,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D1012%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=1012&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330376cd0c05d8b737b6d9b",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330376cd0c05d8b737b6d9b",
       "birth_date": "1969-04-28",
       "commissions": [
         {
@@ -11265,8 +10673,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg994",
       "image": "http://www.camara.cl/img.aspx?prmid=g994",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330376dd0c05d8b737b6d9f",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330376dd0c05d8b737b6d9f",
       "birth_date": "1983-12-27",
       "commissions": [
         {
@@ -11337,8 +10743,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D1110%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=1110&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330376ed0c05d8b737b6da4",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330376ed0c05d8b737b6da4",
       "birth_date": "1974-06-16",
       "id": "5330376ed0c05d8b737b6da4",
       "name": "Pedro Araya Guerrero",
@@ -11412,8 +10816,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg927",
       "image": "http://www.camara.cl/img.aspx?prmid=g927",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330376fd0c05d8b737b6da9",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330376fd0c05d8b737b6da9",
       "birth_date": "1972-06-29",
       "commissions": [
         {
@@ -11487,8 +10889,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg923",
       "image": "http://www.camara.cl/img.aspx?prmid=g923",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303770d0c05d8b737b6dae",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303770d0c05d8b737b6dae",
       "birth_date": "1976-02-18",
       "commissions": [
         {
@@ -11552,8 +10952,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg925",
       "image": "http://www.camara.cl/img.aspx?prmid=g925",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303771d0c05d8b737b6db1",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303771d0c05d8b737b6db1",
       "birth_date": "1957-03-06",
       "commissions": [
         {
@@ -11627,8 +11025,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D1116%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=1116&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303772d0c05d8b737b6db6",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303772d0c05d8b737b6db6",
       "birth_date": "1943-10-31",
       "id": "53303772d0c05d8b737b6db6",
       "name": "Rabindranath Quinteros Lara",
@@ -11689,8 +11085,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg811",
       "image": "http://www.camara.cl/img.aspx?prmid=g811",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303772d0c05d8b737b6dba",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303772d0c05d8b737b6dba",
       "birth_date": "1958-03-05",
       "commissions": [
         {
@@ -11760,8 +11154,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg839",
       "image": "http://www.camara.cl/img.aspx?prmid=g839",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303773d0c05d8b737b6dbd",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303773d0c05d8b737b6dbd",
       "birth_date": "1955-08-23",
       "commissions": [
         {
@@ -11838,8 +11230,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg1001",
       "image": "http://www.camara.cl/img.aspx?prmid=g1001",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303774d0c05d8b737b6dc2",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303774d0c05d8b737b6dc2",
       "birth_date": "1951-06-02",
       "commissions": [
         {
@@ -11910,8 +11300,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg843",
       "image": "http://www.camara.cl/img.aspx?prmid=g843",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303775d0c05d8b737b6dc7",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303775d0c05d8b737b6dc7",
       "birth_date": "1950-05-24",
       "commissions": [
         {
@@ -11983,8 +11371,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg950",
       "image": "http://www.camara.cl/img.aspx?prmid=g950",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303776d0c05d8b737b6dc9",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303776d0c05d8b737b6dc9",
       "birth_date": "1955-10-09",
       "commissions": [
         {
@@ -12058,8 +11444,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg1003",
       "image": "http://www.camara.cl/img.aspx?prmid=g1003",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303777d0c05d8b737b6dce",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303777d0c05d8b737b6dce",
       "birth_date": "1976-03-15",
       "commissions": [
         {
@@ -12130,8 +11514,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D987%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=987&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303778d0c05d8b737b6dd3",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303778d0c05d8b737b6dd3",
       "birth_date": "1962-02-21",
       "commissions": [
         {
@@ -12202,8 +11584,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg947",
       "image": "http://www.camara.cl/img.aspx?prmid=g947",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303779d0c05d8b737b6dd8",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303779d0c05d8b737b6dd8",
       "birth_date": "1967-03-22",
       "commissions": [
         {
@@ -12280,8 +11660,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg860",
       "image": "http://www.camara.cl/img.aspx?prmid=g860",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330377ad0c05d8b737b6ddd",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330377ad0c05d8b737b6ddd",
       "birth_date": "1951-02-11",
       "commissions": [
         {
@@ -12354,8 +11732,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg997",
       "image": "http://www.camara.cl/img.aspx?prmid=g997",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330377bd0c05d8b737b6de0",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330377bd0c05d8b737b6de0",
       "birth_date": "1955-01-08",
       "commissions": [
         {
@@ -12415,8 +11791,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg848",
       "image": "http://www.camara.cl/img.aspx?prmid=g848",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330377cd0c05d8b737b6de3",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330377cd0c05d8b737b6de3",
       "birth_date": "1941-09-24",
       "commissions": [
         {
@@ -12496,8 +11870,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg938",
       "image": "http://www.camara.cl/img.aspx?prmid=g938",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330377dd0c05d8b737b6de8",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330377dd0c05d8b737b6de8",
       "birth_date": "1962-02-17",
       "commissions": [
         {
@@ -12577,7 +11949,6 @@
           "permanent": " Agricultura, Silvicultura y Desarrollo Rural;Deportes y Recreación"
         }
       ],
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330377ed0c05d8b737b6ded",
       "id": "5330377ed0c05d8b737b6ded",
       "name": "Rosauro Martínez Labbé",
       "parliamentarian_period": [
@@ -12620,7 +11991,6 @@
       ],
       "slug": "rosauro-martínez-labbé",
       "title": "Diputado",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330377ed0c05d8b737b6ded",
       "images": [
         {
           "proxy_url": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg863",
@@ -12652,8 +12022,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg802",
       "image": "http://www.camara.cl/img.aspx?prmid=g802",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303780d0c05d8b737b6df1",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303780d0c05d8b737b6df1",
       "birth_date": "1953-02-09",
       "commissions": [
         {
@@ -12725,8 +12093,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg979",
       "image": "http://www.camara.cl/img.aspx?prmid=g979",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303782d0c05d8b737b6df3",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303782d0c05d8b737b6df3",
       "birth_date": "1967-03-15",
       "commissions": [
         {
@@ -12792,8 +12158,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg985",
       "image": "http://www.camara.cl/img.aspx?prmid=g985",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303783d0c05d8b737b6df7",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303783d0c05d8b737b6df7",
       "birth_date": "1965-09-15",
       "commissions": [
         {
@@ -12870,7 +12234,6 @@
           "permanent": "Gobierno Interior y Regionalización; Derechos Humanos y Pueblos Originarios; Familia y Adulto Mayor"
         }
       ],
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303784d0c05d8b737b6dfc",
       "id": "53303784d0c05d8b737b6dfc",
       "name": "Sergio Ojeda Uribe",
       "parliamentarian_period": [
@@ -12917,7 +12280,6 @@
       ],
       "slug": "sergio-ojeda-uribe",
       "title": "Diputado",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303784d0c05d8b737b6dfc",
       "images": [
         {
           "proxy_url": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg877",
@@ -12949,8 +12311,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg856",
       "image": "http://www.camara.cl/img.aspx?prmid=g856",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303786d0c05d8b737b6e00",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303786d0c05d8b737b6e00",
       "birth_date": "1962-09-01",
       "commissions": [
         {
@@ -13027,8 +12387,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D916%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=916&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303787d0c05d8b737b6e05",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303787d0c05d8b737b6e05",
       "birth_date": "1954-10-18",
       "commissions": [
         {
@@ -13113,8 +12471,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg957",
       "image": "http://www.camara.cl/img.aspx?prmid=g957",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53303789d0c05d8b737b6e0a",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53303789d0c05d8b737b6e0a",
       "birth_date": "1975-10-11",
       "commissions": [
         {
@@ -13183,8 +12539,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg991",
       "image": "http://www.camara.cl/img.aspx?prmid=g991",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330378cd0c05d8b737b6e0e",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330378cd0c05d8b737b6e0e",
       "birth_date": "1987-05-23",
       "commissions": [
         {
@@ -13261,7 +12615,6 @@
           "permanent": "Minería y Energía; Educación; Recursos Hídricos y Desertificación"
         }
       ],
-      "html_url": "https://pmocl.popit.mysociety.org/persons/5330378ed0c05d8b737b6e13",
       "id": "5330378ed0c05d8b737b6e13",
       "name": "Yasna Provoste Campillay",
       "parliamentarian_period": [
@@ -13290,7 +12643,6 @@
       ],
       "slug": "yasna-provoste-campillay",
       "title": "Diputado",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/5330378ed0c05d8b737b6e13",
       "images": [
         {
           "proxy_url": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.camara.cl%2Fimg.aspx%3Fprmid%3Dg998",
@@ -13322,8 +12674,6 @@
     {
       "proxy_image": "https://pmocl.popit.mysociety.org/image-proxy/http%3A%2F%2Fwww.senado.cl%2Fappsenado%2Findex.php%3Fmo%3Dsenadores%26ac%3DgetFoto%26id%3D156%26tipo%3D1",
       "image": "http://www.senado.cl/appsenado/index.php?mo=senadores&ac=getFoto&id=156&tipo=1",
-      "html_url": "https://pmocl.popit.mysociety.org/persons/53a99d1d9240c027106412db",
-      "url": "https://pmocl.popit.mysociety.org/api/v0.1/persons/53a99d1d9240c027106412db",
       "birth_date": "1946-11-10",
       "id": "53a99d1d9240c027106412db",
       "name": "Manuel Antonio Matta Aragay",
