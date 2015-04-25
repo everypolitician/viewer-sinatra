@@ -100,7 +100,7 @@ describe "Finland" do
     before { get '/FI/term/35' }
 
     it "should have have its name" do
-      subject.css('#term h1').text.must_equal 'Eduskunta 35 (2007)'
+      subject.css('#term h1').text.must_include 'Eduskunta 35 (2007)'
     end
 
     it "should list the parties" do
