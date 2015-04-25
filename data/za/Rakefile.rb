@@ -10,7 +10,7 @@ file 'popit.json' do
   File.write('popit.json', open(POPIT_URL).read)
 end
 
-file 'za.json' => 'popit.json' do
+file 'processed.json' => 'popit.json' do
   puts "PROCESSING"
   json = JSON.load(File.read('popit.json'), lambda { |h| 
     if h.class == Hash 
@@ -47,12 +47,18 @@ file 'za.json' => 'popit.json' do
 
   end
   
-  File.write('za.json', JSON.pretty_generate(json))
+  File.write('processed.json', JSON.pretty_generate(json))
 end
 
-task :install => 'za.json' do
-  FileUtils.cp('za.json', '../')
+task :clean do
+  FileUtils.rm('processed.json') if File.exist?('processed.json')
 end
 
-task :default => 'za.json'
+task :rebuild => [ :clean, 'processed.json' ]
+
+task :default => 'processed.json'
+
+task :install => 'processed.json' do
+  FileUtils.cp('processed.json', '../za.json')
+end
 
