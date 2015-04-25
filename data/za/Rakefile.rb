@@ -2,6 +2,9 @@ require 'date'
 require 'fileutils'
 require 'json'
 require 'open-uri'
+require 'rake/clean'
+
+CLEAN.include('processed.json')
 
 Numeric.class_eval { def empty?; false; end }
 
@@ -48,10 +51,6 @@ file 'processed.json' => 'popit.json' do
   end
   
   File.write('processed.json', JSON.pretty_generate(json))
-end
-
-task :clean do
-  FileUtils.rm('processed.json') if File.exist?('processed.json')
 end
 
 task :rebuild => [ :clean, 'processed.json' ]

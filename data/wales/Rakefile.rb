@@ -2,6 +2,9 @@ require 'date'
 require 'fileutils'
 require 'json'
 require 'open-uri'
+require 'rake/clean'
+
+CLEAN.include('processed.json')
 
 file 'popit.json' do
   POPIT_URL = 'https://wales.popit.mysociety.org/api/v0.1/export.json'
@@ -30,10 +33,6 @@ file 'processed.json' => 'popit.json' do
   end
   
   File.write('processed.json', JSON.pretty_generate(json))
-end
-
-task :clean do
-  FileUtils.rm('processed.json') if File.exist?('processed.json')
 end
 
 task :rebuild => [ :clean, 'processed.json' ]
