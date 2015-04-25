@@ -10,7 +10,7 @@ file 'popit.json' do
   File.write('popit.json', open(POPIT_URL).read)
 end
 
-file 'chile.json' => 'popit.json' do
+file 'processed.json' => 'popit.json' do
   json = JSON.load(File.read('popit.json'), lambda { |h| 
     if h.class == Hash 
       h.reject! { |_, v| v.nil? or v.empty? }
@@ -58,18 +58,18 @@ file 'chile.json' => 'popit.json' do
     m[:legislative_period_id] ||= 'term/current'
   end
 
-  File.write('chile.json', JSON.pretty_generate(json))
+  File.write('processed.json', JSON.pretty_generate(json))
 end
-
-task :install => 'chile.json' do
-  FileUtils.cp('chile.json', '../')
-end
-
-task :rebuild => [ :clean, 'chile.json' ]
 
 task :clean do
-  FileUtils.rm('chile.json') if File.exist?('chile.json')
+  FileUtils.rm('processed.json') if File.exist?('processed.json')
 end
 
-task :default => 'chile.json'
+task :rebuild => [ :clean, 'processed.json' ]
+
+task :default => 'processed.json'
+
+task :install => 'processed.json' do
+  FileUtils.cp('processed.json', '../chile.json')
+end
 
