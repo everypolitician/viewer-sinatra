@@ -8,13 +8,14 @@ file 'popit.json' do
   File.write('popit.json', open(POPIT_URL).read)
 end
 
-task :post_process => 'popit.json' do
+file 'processed.json' => 'popit.json' do
   json = JSON.load(File.read('popit.json'), lambda { |h| 
     if h.class == Hash 
       h.reject! { |_, v| v.nil? or v.empty? }
       h.reject! { |k, v| (k == 'url' or k == 'html_url') and v[/popit.mysociety.org/] }
     end
   })
+
   leg = json['organizations'].find { |h| h['classification'] == 'legislature' }
   unless leg.has_key?('legislative_periods') and not leg['legislative_periods'].count.zero? 
     leg['legislative_periods'] = [{
@@ -28,12 +29,18 @@ task :post_process => 'popit.json' do
     end
   end
   
-  File.write('wales.json', JSON.pretty_generate(json))
+  File.write('processed.json', JSON.pretty_generate(json))
 end
+
+task :clean do
+  FileUtils.rm('processed.json') if File.exist?('processed.json')
+end
+
+task :rebuild => [ :clean, 'processed.json' ]
+
+task :default => 'processed.json'
 
 task :install => :post_process do
-  FileUtils.cp('wales.json', '../wales.json')
+  FileUtils.cp('processed.json', '../wales.json')
 end
-
-task :default => :post_process
 
