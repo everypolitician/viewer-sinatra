@@ -1,17 +1,7 @@
-require 'date'
-require 'fileutils'
-require 'json'
-require 'open-uri'
-require 'rake/clean'
+require_relative '../rakefile_common.rb'
 
-CLEAN.include('processed.json')
-
-Numeric.class_eval { def empty?; false; end }
-
-file 'popit.json' do
-  POPIT_URL = 'https://pmocl.popit.mysociety.org/api/v0.1/export.json'
-  File.write('popit.json', open(POPIT_URL).read)
-end
+@POPIT = 'pmocl'
+@DEST = 'chile'
 
 file 'processed.json' => 'popit.json' do
   json = JSON.load(File.read('popit.json'), lambda { |h| 
@@ -63,12 +53,3 @@ file 'processed.json' => 'popit.json' do
 
   File.write('processed.json', JSON.pretty_generate(json))
 end
-
-task :rebuild => [ :clean, 'processed.json' ]
-
-task :default => 'processed.json'
-
-task :install => 'processed.json' do
-  FileUtils.cp('processed.json', '../chile.json')
-end
-

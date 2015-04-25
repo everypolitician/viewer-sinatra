@@ -1,17 +1,7 @@
-require 'date'
-require 'fileutils'
-require 'json'
-require 'open-uri'
-require 'rake/clean'
+require_relative '../rakefile_common.rb'
 
-CLEAN.include('processed.json')
-
-Numeric.class_eval { def empty?; false; end }
-
-file 'popit.json' do
-  POPIT_URL = 'https://za-peoples-assembly.popit.mysociety.org/api/v0.1/export.json'
-  File.write('popit.json', open(POPIT_URL).read)
-end
+@POPIT = 'za-peoples-assembly'
+@DEST = 'za'
 
 file 'processed.json' => 'popit.json' do
   puts "PROCESSING"
@@ -51,13 +41,5 @@ file 'processed.json' => 'popit.json' do
   end
   
   File.write('processed.json', JSON.pretty_generate(json))
-end
-
-task :rebuild => [ :clean, 'processed.json' ]
-
-task :default => 'processed.json'
-
-task :install => 'processed.json' do
-  FileUtils.cp('processed.json', '../za.json')
 end
 
