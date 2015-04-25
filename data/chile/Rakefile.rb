@@ -18,6 +18,12 @@ file 'chile.json' => 'popit.json' do
     end
   }, { symbolize_names: true })
 
+  # ensure no unmatched Memberships
+  json[:memberships].keep_if { |m|
+    json[:organizations].find { |o| o[:id] == m[:organization_id] } and
+    json[:persons].find { |p| p[:id] == m[:person_id] } 
+  }
+
   # ensure there's a legislative Organization
   if json[:organizations].find_all { |h| h[:classification] == 'legislature' }.count.zero?
     json[:organizations] << {
