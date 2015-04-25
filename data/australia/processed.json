@@ -5530,12 +5530,14 @@
     {
       "id": "chamber/representatives",
       "name": "representatives",
-      "classification": "chamber"
+      "classification": "chamber",
+      "parent_id": "legislature"
     },
     {
       "id": "chamber/senate",
       "name": "senate",
-      "classification": "chamber"
+      "classification": "chamber",
+      "parent_id": "legislature"
     },
     {
       "id": "legislature",

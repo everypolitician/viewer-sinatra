@@ -50,6 +50,11 @@ file 'processed.json' => 'fromcsv.json' do
     }
   end
 
+  # ensure the chambers are children of the legislature
+  json[:organizations].find_all { |h| h[:classification] == 'chamber' }.each do |c|
+    c['parent_id'] ||= 'legislature'
+  end
+
   # Add terms — Let's simply deal with Parliaments, ignoring the 6-year Senate
   # http://en.wikipedia.org/wiki/Chronology_of_Australian_federal_parliaments
   leg = json[:organizations].find { |h| h[:classification] == 'legislature' } or raise "No legislature"
@@ -74,8 +79,6 @@ task :rebuild => [ :clean, 'processed.json' ]
 
 task :clean do
   FileUtils.rm('processed.json') if File.exist?('processed.json')
-  FileUtils.rm('fromcsv.json') if File.exist?('fromcsv.json')
-  FileUtils.rm('popit.csv') if File.exist?('popit.csv')
 end
 
 task :default => 'processed.json'
