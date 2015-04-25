@@ -29,5 +29,21 @@ describe "Chile" do
 
   #-------------------------------------------------------------------
 
+  describe "when viewing a Term page" do
+
+    before { get '/chile/term/current' }
+
+    it "should have have at least 1 party" do
+      subject.css('#term a[href*="/party/"]').count.must_be :>=, 1
+    end
+
+    it "should have have at least 1 person" do
+      subject.css('#term a[href*="/person/"]').count.must_be :>=, 1
+    end
+
+  end
+
+  #-------------------------------------------------------------------
+
 end
 
