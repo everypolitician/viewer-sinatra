@@ -3,3 +3,5 @@
 .env
 .vagrant
 .sass-cache
+
+*.swo
