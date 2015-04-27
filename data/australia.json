@@ -5530,12 +5530,14 @@
     {
       "id": "chamber/representatives",
       "name": "representatives",
-      "classification": "chamber"
+      "classification": "chamber",
+      "parent_id": "legislature"
     },
     {
       "id": "chamber/senate",
       "name": "senate",
-      "classification": "chamber"
+      "classification": "chamber",
+      "parent_id": "legislature"
     },
     {
       "id": "legislature",
@@ -5556,1667 +5558,1429 @@
       "person_id": "EZ5",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "R36",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "HK5",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "LL6",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "1K6",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "DZP",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "83P",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "MT4",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "DYW",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "HWK",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "008K0",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "HW9",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "00AN0",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "HWL",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "00AN1",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8"
     },
     {
       "person_id": "HWM",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "HWN",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8"
     },
     {
       "person_id": "WF6",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "HWG",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "00AKI",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "DZW",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "DZU",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "8K6",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "8W5",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "VU5",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "83N",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "00AMM",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8"
     },
     {
       "person_id": "HWO",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "DK6",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "00AMV",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "HYM",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "DYN",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "HX4",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/478106f2-aaba-4b8b-8711-f365d1c14f35",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/478106f2-aaba-4b8b-8711-f365d1c14f35"
     },
     {
       "person_id": "E0J",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "00AMR",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "E0H",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "00AMN",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "WN6",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "PG6",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "HWP",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "HWQ",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "E3L",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "HVO",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "00AN3",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "E09",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "HWR",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "HVP",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "83M",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "9V5",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "HWS",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "PK6",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "83E",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "HWA",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "FU4",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "HWT",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "0J4",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "00ATG",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "HWE",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "00APG",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "IJ4",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "TK6",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "EM6",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "2V5",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "UK6",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "GT4",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8"
     },
     {
       "person_id": "885",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "00AMT",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "HWB",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "IPZ",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8"
     },
     {
       "person_id": "IYU",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "L6B",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "LKU",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "M3M",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "230485",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8"
     },
     {
       "person_id": "C2T",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/6ba13769-8df6-4acb-b45a-560c394274e7",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/6ba13769-8df6-4acb-b45a-560c394274e7"
     },
     {
       "person_id": "139441",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8"
     },
     {
       "person_id": "188315",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "M3A",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "7K6",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "M2X",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "E07",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "M3E",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "M3C",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f"
     },
     {
       "person_id": "220370",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/ff689ce2-f82e-4c55-9ad7-c963f2635f8c",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/ff689ce2-f82e-4c55-9ad7-c963f2635f8c"
     },
     {
       "person_id": "30540",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "M2V",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "A9B",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "FKL",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "210911",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "219646",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8"
     },
     {
       "person_id": "ECV",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "96430",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "230886",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "BU8",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "M2Y",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "91219",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "99931",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "159771",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "8T4",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "DZS",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "230531",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "217266",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "E0D",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "9K6",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "YT4",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8"
     },
     {
       "person_id": "241067",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "240756",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "250077",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "137174",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "I0O",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "249710",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "207800",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "249764",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8"
     },
     {
       "person_id": "249127",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "ZN4",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "242515",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "241589",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "249308",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "00BCM",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "2K6",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "193430",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "241586",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "249758",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "148150",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8"
     },
     {
       "person_id": "140590",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "231027",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "123674",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/6ba13769-8df6-4acb-b45a-560c394274e7",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/6ba13769-8df6-4acb-b45a-560c394274e7"
     },
     {
       "person_id": "182468",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "E0F",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "249224",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "165476",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "72184",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8"
     },
     {
       "person_id": "212585",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "30379",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8"
     },
     {
       "person_id": "74046",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "E5D",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8"
     },
     {
       "person_id": "248181",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "198084",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "218019",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8"
     },
     {
       "person_id": "208884",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "L6P",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "247742",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "37998",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "247130",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "241590",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "243609",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "83S",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "SE4",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "LQR",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/0afaf53b-5a67-4320-9d6f-8136e29ab846",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/0afaf53b-5a67-4320-9d6f-8136e29ab846"
     },
     {
       "person_id": "248006",
       "organization_id": "chamber/representatives",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "N26",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "G0D",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "H6X",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "008W7",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "F49",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "HLL",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "AW5",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "00AOL",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "3L6",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "HDA",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "5K4",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "e4t",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "D2I",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "C16",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "00AON",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "84N",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "7G6",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "YW4",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "84M",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "e5e",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "84L",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "ka5",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f"
     },
     {
       "person_id": "00AOQ",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "e5g",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8"
     },
     {
       "person_id": "M56",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "e5x",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "xt4",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "00AOM",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/ff689ce2-f82e-4c55-9ad7-c963f2635f8c",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/ff689ce2-f82e-4c55-9ad7-c963f2635f8c"
     },
     {
       "person_id": "e5z",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f"
     },
     {
       "person_id": "e68",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "00AOU",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "HZB",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "AI6",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "I0M",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "I0U",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f"
     },
     {
       "person_id": "I07",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f"
     },
     {
       "person_id": "I0Q",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "I0V",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8"
     },
     {
       "person_id": "8IV",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/6ba13769-8df6-4acb-b45a-560c394274e7",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/6ba13769-8df6-4acb-b45a-560c394274e7"
     },
     {
       "person_id": "GB6",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "J7Q",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "53369",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f"
     },
     {
       "person_id": "225307",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "DYU",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "204953",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "207825",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8"
     },
     {
       "person_id": "217571",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/9b8e8aac-684b-4475-9554-019a7e901d16",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/9b8e8aac-684b-4475-9554-019a7e901d16"
     },
     {
       "person_id": "CPR",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f"
     },
     {
       "person_id": "M0R",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "231199",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "192970",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f"
     },
     {
       "person_id": "200287",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f"
     },
     {
       "person_id": "bv7",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "241710",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "195565",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f"
     },
     {
       "person_id": "243273",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "112096",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "225099",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "CDK",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "HZE",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "140651",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "247871",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8"
     },
     {
       "person_id": "243237",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "245212",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8"
     },
     {
       "person_id": "HYG",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/7a86caf3-6783-4c9b-9697-9d4a412f30f0",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/7a86caf3-6783-4c9b-9697-9d4a412f30f0"
     },
     {
       "person_id": "244247",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "250026",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/0afaf53b-5a67-4320-9d6f-8136e29ab846",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/0afaf53b-5a67-4320-9d6f-8136e29ab846"
     },
     {
       "person_id": "108616",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/0afaf53b-5a67-4320-9d6f-8136e29ab846",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/0afaf53b-5a67-4320-9d6f-8136e29ab846"
     },
     {
       "person_id": "111206",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/313c2480-0c0a-48cc-92a7-af88d48fcd34",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/313c2480-0c0a-48cc-92a7-af88d48fcd34"
     },
     {
       "person_id": "217241",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "250024",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/ff0df69a-fad1-4d2b-ac25-2d3a6ef63027",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/ff0df69a-fad1-4d2b-ac25-2d3a6ef63027"
     },
     {
       "person_id": "250216",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "155410",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f"
     },
     {
       "person_id": "250045",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/0afaf53b-5a67-4320-9d6f-8136e29ab846",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/0afaf53b-5a67-4320-9d6f-8136e29ab846"
     },
     {
       "person_id": "e5v",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "00AOP",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "2L6",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "YE4",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8"
     },
     {
       "person_id": "4L6",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "7L6",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "00AOS",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "183342",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "I0P",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "H6V",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "I0N",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "G1N",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb"
     },
     {
       "person_id": "I0T",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     },
     {
       "person_id": "249499",
       "organization_id": "chamber/senate",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
-      "legislative_period_id": "term/current"
+      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea"
     }
   ],
   "warnings": {
