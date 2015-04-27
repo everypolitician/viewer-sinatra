@@ -36,25 +36,17 @@ CLEAN.include('fromcsv.json')
 task :load_json => 'fromcsv.json'
 
 
-task :process_json => :load_json do
-
-  # ensure there's a legislative Organization
-  binding.pry
-  if @json[:organizations].find_all { |h| h[:classification] == 'legislature' }.count.zero?
-    @json[:organizations] << {
-      classification: "legislature",
-      name: "Legislature",
-      id: "legislature",
-    }
-  end
-
-  # ensure the chambers are children of the legislature
+task :connect_chambers => :ensure_legislature_exists do
   @json[:organizations].find_all { |h| h[:classification] == 'chamber' }.each do |c|
     c['parent_id'] ||= 'legislature'
   end
+end
 
-  # Add terms — Let's simply deal with Parliaments, ignoring the 6-year Senate
+task :add_legislative_period => :ensure_legislature_exists do
+  # Don't use the default one, because we have info
   # http://en.wikipedia.org/wiki/Chronology_of_Australian_federal_parliaments
+  # Let's simply deal with Parliaments, ignoring the 6-year Senate
+
   leg = @json[:organizations].find { |h| h[:classification] == 'legislature' } or raise "No legislature"
   unless leg.has_key?(:legislative_periods) and not leg[:legislative_periods].count.zero? 
     leg[:legislative_periods] = [{
@@ -64,10 +56,12 @@ task :process_json => :load_json do
       classification: 'legislative period',
     }]
   end
-
-  @json[:memberships].find_all { |m| m.has_key?(:on_behalf_of_id) and m[:role] == 'member' }.each do |m|
-    m[:legislative_period_id] ||= 'term/current'
-  end
-  
 end
+
+task :process_json => [
+  :load_json, 
+  :connect_chambers,
+  :add_legislative_period,
+  :default_memberships_to_current_term,
+] 
 
