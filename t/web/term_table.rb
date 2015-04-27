@@ -72,5 +72,17 @@ describe "Finland" do
     subject.at_css('tr#mem-560 td:first').attr('rowspan').to_i.must_equal 2
   end
 
+  it "should link to 34" do
+    subject.css('a[href*="/term_table/34"]').count.must_be :>=, 1
+  end
+
+  it "should link to 36" do
+    subject.css('a[href*="/term_table/36"]').count.must_be :>=, 1
+  end
+
+  it "shouldn't link to 33" do
+    subject.css('a[href*="/term_table/33"]').count.must_equal 0
+  end
+
 end
 

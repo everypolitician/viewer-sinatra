@@ -1,9 +1,23 @@
 <div class="page-section" id="term">
   <div class="container">
-    <h1><span class="avatar"><i class="fa fa-university"></i></span> <%= @term['name'] %></h1>
+    <h1 class="text-center"><span class="avatar"><i class="fa fa-university"></i></span> <%= @term['name'] %></h1>
     <% unless @term['start_date'].to_s.empty? and @term['end_date'].to_s.empty? %>
-      <p><%= @term['start_date'] %> – <%= @term['end_date'] %></p>
+      <p class="text-center"><%= @term['start_date'] %> – <%= @term['end_date'] %></p>
     <% end %>
+
+    <p>
+    <% if @prev_term %>
+      <span><a href="<%= term_table_url(@prev_term) %>">
+        <i class="fa fa-arrow-left"></i> <%= @prev_term['name'] %>
+      </a></span>
+    <% end %>
+
+    <% if @next_term %>
+      <span style="float:right"><a href="<%= term_table_url(@next_term) %>">
+          <%= @next_term['name'] %> <i class="fa fa-arrow-right"></i>
+      </a></span>
+    <% end %>
+    </p>
 
     <% if @memberships.count.zero? %>
       

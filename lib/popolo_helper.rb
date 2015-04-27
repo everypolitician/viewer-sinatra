@@ -49,19 +49,21 @@ module Popolo
       legislature['legislative_periods'] || legislature['terms'] 
     end
 
+    def term_list
+      terms.sort_by { |t| [ (t['start_date'] || '1001-01-01'), (t['end_date'] || '2999-12-31') ] }
+    end
+
     def terms_with_members
       terms.reject { |t| term_memberships(t).count.zero? }
     end
 
-    # This will need to become a lot fancier, but it'll do for now
     def current_term
-      terms.find { |t| not t.has_key? 'end_date' }
+      term_list.last 
     end
 
     def legislative_memberships
       memberships.find_all { |m| m['organization_id'] == 'legislature' }
     end
-
 
     def term_from_id(id)
       terms.detect { |t| t['id'] == id } || terms.detect { |t| t['id'].end_with? "/#{id}" }
@@ -119,6 +121,10 @@ module Popolo
 
     def term_url(t)
       generate_url('term', t)
+    end
+
+    def term_table_url(t)
+      generate_url('term_table', t)
     end
 
     def area_name_url(t)
