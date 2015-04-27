@@ -56,12 +56,18 @@ task :add_legislative_period => :ensure_legislature_exists do
       classification: 'legislative period',
     }]
   end
+
+  chambers = @json[:organizations].find_all { |h| h[:classification] == 'chamber' } or raise "No chambers"
+  chamber_ids = chambers.map { |c| c[:id] }
+  @json[:memberships].find_all { |m| m[:role] == 'member' && chamber_ids.include?(m[:organization_id]) }.each do |m|
+    m[:legislative_period_id] ||= 'term/44'
+  end
+  
 end
 
 task :process_json => [
   :load_json, 
   :connect_chambers,
   :add_legislative_period,
-  :default_memberships_to_current_term,
 ] 
 
