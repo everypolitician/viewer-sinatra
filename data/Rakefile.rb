@@ -1,4 +1,4 @@
-﻿
+
 @COUNTRIES = FileList['*/Rakefile.rb'].pathmap('%d')
 
 def run_country
