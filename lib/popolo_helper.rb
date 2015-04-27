@@ -41,6 +41,10 @@ module Popolo
       json['organizations'].find { |o| o['classification'] == 'legislature' }
     end
 
+    def chambers
+      json['organizations'].find_all { |o| o['classification'] == 'chamber' } 
+    end
+
     def parties
       json['organizations'].find_all { |o| o['classification'] == 'party' }
     end
@@ -61,8 +65,9 @@ module Popolo
       term_list.last 
     end
 
+
     def legislative_memberships
-      memberships.find_all { |m| m['organization_id'] == 'legislature' }
+      memberships.find_all { |m| [legislature, chambers].flatten.map { |o| o['id'] }.include? m['organization_id'] }
     end
 
     def term_from_id(id)
