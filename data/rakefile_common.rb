@@ -7,6 +7,8 @@ CLEAN.include('processed.json')
 
 Numeric.class_eval { def empty?; false; end }
 
+@JSON_FILE = 'popit.json'
+
 file 'popit.json' do 
   popit_src = @POPIT_URL || "https://#{@POPIT || @DEST}.popit.mysociety.org/api/v0.1/export.json"
   File.write('popit.json', open(popit_src).read) 
@@ -21,7 +23,7 @@ task :install => 'processed.json' do
 end
 
 task :load_json => 'popit.json' do
-  @json = JSON.load(File.read('popit.json'), lambda { |h| 
+  @json = JSON.load(File.read(@JSON_FILE), lambda { |h| 
     if h.class == Hash 
       h.reject! { |_, v| v.nil? or v.empty? }
       h.reject! { |k, v| (k == :url or k == :html_url) and v[/popit.mysociety.org/] }
