@@ -63,12 +63,16 @@ end
 
 get '/:country/term_table/?' do |country|
   @term = @popolo.current_term
+  @terms = @popolo.term_list
+  (@prev_term, _, @next_term) = [nil, @terms, nil].flatten.each_cons(3).find { |p, e, n| e['id'] == @term['id'] }
   @memberships = @popolo.term_memberships(@term)
   erb :term_table
 end
 
 get '/:country/term_table/:id' do |country, id|
   @term = @popolo.term_from_id(id) or pass
+  @terms = @popolo.term_list
+  (@prev_term, _, @next_term) = [nil, @terms, nil].flatten.each_cons(3).find { |p, e, n| e['id'] == @term['id'] }
   @memberships = @popolo.term_memberships(@term)
   erb :term_table
 end
