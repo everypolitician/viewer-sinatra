@@ -1,10 +1,6 @@
 
 @COUNTRIES = FileList['*/Rakefile.rb'].pathmap('%d')
 
-def run_country
-  puts "Wahey!"
-end
-
 @COUNTRIES.each do |country|
   desc "Regenerate #{country}"
   task country.to_sym do 
