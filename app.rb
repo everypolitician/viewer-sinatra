@@ -61,6 +61,18 @@ get '/:country/term/:id' do |country, id|
   erb :term
 end
 
+get '/:country/term_table/?' do |country|
+  @term = @popolo.current_term
+  @memberships = @popolo.term_memberships(@term)
+  erb :term_table
+end
+
+get '/:country/term_table/:id' do |country, id|
+  @term = @popolo.term_from_id(id) or pass
+  @memberships = @popolo.term_memberships(@term)
+  erb :term_table
+end
+
 get '/:country/person/:id' do |country, id|
   @person = @popolo.person_from_id(id) 
   unless @person
