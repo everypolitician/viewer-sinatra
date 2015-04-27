@@ -1,0 +1,37 @@
+<div class="page-section" id="term">
+  <div class="container">
+    <h1><span class="avatar"><i class="fa fa-university"></i></span> <%= @term['name'] %></h1>
+    <% unless @term['start_date'].to_s.empty? and @term['end_date'].to_s.empty? %>
+      <p><%= @term['start_date'] %> – <%= @term['end_date'] %></p>
+    <% end %>
+
+    <% if @memberships.count.zero? %>
+      
+    <% else %>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Group</th>
+          <th>Area</th>
+          <th>Dates</th>
+        </tr>
+
+      <% @memberships.group_by { |m| m['person'] }.sort_by { |p, _| p['name'] }.each do |p, mems| %>
+        <tr id="mem-<%= p['id'].split('/').last %>">
+          <td rowspan="<%= mems.count %>"><%= p['name'] %></td>
+          <% mems.each do |m| %>
+            <td><%= m['on_behalf_of']['name'] %></td>
+            <td><%= m['area'] && m['area']['name'] %></td>
+            <td> 
+              <% if m['start_date'].to_s != @term['start_date'].to_s or m['end_date'].to_s != @term['end_date'].to_s %>
+                <p><%= m['start_date'] %>–<%= m['end_date'] %></p>
+              <% end %>
+            </td>
+          </tr>
+          <% end %>
+      <% end %>
+      </table>
+
+    <% end %>
+    </div>
+</div>
