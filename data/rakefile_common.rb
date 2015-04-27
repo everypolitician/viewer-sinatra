@@ -79,4 +79,7 @@ task :default_memberships_to_current_term => [:ensure_legislative_period] do
   end
 end
 
+# Individual country files should override this
+task :process_json => :load_json
+
 
