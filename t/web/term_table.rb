@@ -37,51 +37,69 @@ end
 # Country-specific tests for edge cases
 
 
-describe "Finland" do
-
-  before { get '/finland/term_table/35' }
+describe "Per Country Tests" do
 
   subject { Nokogiri::HTML(last_response.body) }
 
-  it "should have have its name" do
-    subject.css('#term h1').text.must_include 'Eduskunta 35 (2007)'
+  describe "Finland" do
+
+    before { get '/finland/term_table/35' }
+
+    it "should have have its name" do
+      subject.css('#term h1').text.must_include 'Eduskunta 35 (2007)'
+    end
+
+    it "should list the parties" do
+      subject.css('#term table').text.must_include 'Finnish Centre Party'
+    end
+
+    it "should list the areas" do
+      subject.css('#term table').text.must_include 'Oulun'
+    end
+
+    it "shouldn't show any dates for Mikko Kuoppa" do
+      subject.css('tr#mem-444').text.wont_include '20'
+    end
+
+    it "should show early departure date for Matti Vanhanen" do
+      subject.css('tr#mem-414 td:last').text.must_include '2010-09-19'
+    end
+
+    it "should show late start date for Risto Kuisma" do
+      subject.css('tr#mem-473 td:last').text.must_include '2010-07-13'
+    end
+
+    it "should have two rows for Merikukka Forsius" do
+      # Changed Party mid-term, so one entry per party
+      subject.at_css('tr#mem-560 td:first').attr('rowspan').to_i.must_equal 2
+    end
+
+    it "should link to 34" do
+      subject.css('a[href*="/term_table/34"]').count.must_be :>=, 1
+    end
+
+    it "should link to 36" do
+      subject.css('a[href*="/term_table/36"]').count.must_be :>=, 1
+    end
+
+    it "shouldn't link to 33" do
+      subject.css('a[href*="/term_table/33"]').count.must_equal 0
+    end
+
   end
 
-  it "should list the parties" do
-    subject.css('#term table').text.must_include 'Finnish Centre Party'
-  end
+  describe "Australia" do
 
-  it "should list the areas" do
-    subject.css('#term table').text.must_include 'Oulun'
-  end
+    before { get '/australia/term_table/' }
 
-  it "shouldn't show any dates for Mikko Kuoppa" do
-    subject.css('tr#mem-444').text.wont_include '20'
-  end
+    it "should include a Representative" do
+      subject.at_css('tr#mem-EZ5 td:first').text.must_include 'Tony Abbott'
+    end
 
-  it "should show early departure date for Matti Vanhanen" do
-    subject.css('tr#mem-414 td:last').text.must_include '2010-09-19'
-  end
+    it "should include a Senator" do
+      subject.at_css('tr#mem-GB6 td:first').text.must_include 'Jacinta Collins'
+    end
 
-  it "should show late start date for Risto Kuisma" do
-    subject.css('tr#mem-473 td:last').text.must_include '2010-07-13'
-  end
-
-  it "should have two rows for Merikukka Forsius" do
-    # Changed Party mid-term, so one entry per party
-    subject.at_css('tr#mem-560 td:first').attr('rowspan').to_i.must_equal 2
-  end
-
-  it "should link to 34" do
-    subject.css('a[href*="/term_table/34"]').count.must_be :>=, 1
-  end
-
-  it "should link to 36" do
-    subject.css('a[href*="/term_table/36"]').count.must_be :>=, 1
-  end
-
-  it "shouldn't link to 33" do
-    subject.css('a[href*="/term_table/33"]').count.must_equal 0
   end
 
 end
