@@ -22,6 +22,20 @@
     <% if @memberships.count.zero? %>
       
     <% else %>
+      <h2>Party Groupings</h2>
+
+      <ul class="grid-list">
+        <% @memberships.group_by { |m| m['on_behalf_of'] }.sort_by { |p, ms| ms.count }.reverse.each do |party, mems| %>
+          <li><div class="avatar-unit">
+            <span class="avatar"><i class="fa fa-users"></i></span>
+            <h3><%= party['name'] %></h3>
+            <p><%= mems.count %> seat<% if mems.count > 1 %>s<% end %></p>
+          </div></li>
+        <% end %>
+      </ul>
+
+      <h2>Members</h3>
+
       <table>
         <tr>
           <th>Name</th>
