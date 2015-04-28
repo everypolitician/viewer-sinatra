@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="<%= url('main.css') %>">
+    <link rel="stylesheet" type="text/css" href="/main.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300,400italic" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="/javascript/issue.js"></script>
     <title>PopIt Viewer</title>
 </head>
 <body>
@@ -22,26 +21,22 @@
                 <div class="site-header__logo">
                     <h2>
                       <% if @country %>
-                        <a href="/"><%= @country.capitalize %></a>
+                        <%= @country.capitalize %>
                       <% else %>
-                        <a href="/">EveryPolitician</a>
+                        EveryPolitician
                       <% end %>
                     </h2>
                 </div>
                 <div class="site-header__navigation site-header__navigation--primary">
                     <nav role="navigation">
                       <% if @country %>
-                        <a href="/<%= @country %>/terms.html">Terms</a>
-                        <a href="/<%= @country %>/parties.html">Parties</a>
-                        <a href="/<%= @country %>/people.html">People</a>
-                      <% else %>
-                        <a href="/">Pick a country</a>
+                        <a href="http://everypolitician.org">EveryPolitician</a>
                       <% end %>
                     </nav>
                 </div>
                 <div class="site-header__navigation site-header__navigation--secondary">
                     <nav role="navigation">
-                        <a href="http://everypolitician.org">EveryPolitician <i class="fa fa-external-link-square"></i></a>
+                        <a href="/">View by country</a>
                     </nav>
                 </div>
             </div>
@@ -56,7 +51,7 @@
                 <div class="column-five-twelfths">
                     <div class="footer__about">
                         <h2 class="tiny-logo">EveryPolitician</h2>
-                        <p>EveryPolitician is a tiny project, from the folks that brought you <a href="http://mapit.poplus.org/">MapIt</a>, <a href="http://sayit.poplus.org/">SayIt</a> &amp; <a href="http://popit.poplus.org/">PopIt</a>. EveryPolitician is a <a href="http://poplus.org">Poplus</a> project</p>
+                        <p>EveryPolitician is a project from the folks that brought you <a href="http://mapit.poplus.org/">MapIt</a>, <a href="http://sayit.poplus.org/">SayIt</a> &amp; <a href="http://popit.poplus.org/">PopIt</a>. EveryPolitician is a <a href="http://poplus.org">Poplus</a> project</p>
                     </div>
                 </div>
                 <div class="column-seven-twelfths">

@@ -23,7 +23,7 @@ describe "Basic loads" do
 
     # Then ensure the current term table for each loads OK
     countries.each do |country|
-      url = "/#{country}/term_table"
+      url = "/#{country}/term_table.html"
       get(url)
       last_response.status.must_equal 200
       noko = Nokogiri::HTML(last_response.body)
@@ -43,7 +43,7 @@ describe "Per Country Tests" do
 
   describe "Finland" do
 
-    before { get '/finland/term_table/35' }
+    before { get '/finland/term_table/35.html' }
 
     it "should have have its name" do
       subject.css('#term h1').text.must_include 'Eduskunta 35 (2007)'
@@ -95,7 +95,7 @@ describe "Per Country Tests" do
 
   describe "Australia" do
 
-    before { get '/australia/term_table/' }
+    before { get '/australia/term_table.html' }
 
     it "should include a Representative" do
       subject.at_css('#house-representatives tr#mem-EZ5 td:first').text.must_include 'Tony Abbott'

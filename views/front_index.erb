@@ -1,12 +1,9 @@
 <div class="page-section" id="home">
     <div class="container">
-        <h1>PopIt-Viewer</h1>
-        <p>This is a simple demo site for viewing PopIt data</p>
-
         <ul class="grid-list">
           <% @countries.sort.each do |c| %>
             <li>
-                <a class="avatar-unit" href="/<%= c %>/">
+                <a class="avatar-unit" href="/<%= c %>/term_table.html">
                     <span class="avatar"><i class="fa fa-users"></i></span>
                     <h3><%= c.capitalize %></h3>
                 </a>
