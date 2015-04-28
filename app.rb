@@ -62,7 +62,7 @@ get '/:country/term/:id' do |country, id|
   erb :term
 end
 
-get '/:country/term_table/?:id?' do |country, id|
+get '/:country/term_table/?:id?.html' do |country, id|
   @term = id ? @popolo.term_from_id(id) :  @popolo.current_term
   pass unless @term
   @terms = @popolo.term_list
