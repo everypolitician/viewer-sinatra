@@ -37,8 +37,13 @@ task :load_json => 'fromcsv.json'
 
 
 task :connect_chambers => :ensure_legislature_exists do
+  better_name = { 
+    'senate' => 'Senate',
+    'representatives' => 'House of Representatives',
+  }
   @json[:organizations].find_all { |h| h[:classification] == 'chamber' }.each do |c|
-    c['parent_id'] ||= 'legislature'
+    c[:name] = better_name[c[:name]] || c[:name]
+    c[:parent_id] ||= 'legislature'
   end
 end
 

@@ -5529,13 +5529,13 @@
     },
     {
       "id": "chamber/representatives",
-      "name": "representatives",
+      "name": "House of Representatives",
       "classification": "chamber",
       "parent_id": "legislature"
     },
     {
       "id": "chamber/senate",
-      "name": "senate",
+      "name": "Senate",
       "classification": "chamber",
       "parent_id": "legislature"
     },
