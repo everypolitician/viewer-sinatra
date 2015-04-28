@@ -86,6 +86,11 @@ describe "Per Country Tests" do
       subject.css('a[href*="/term_table/33"]').count.must_equal 0
     end
 
+    it "shouldn't have a heading for the house name" do
+      subject.css('h3').text.downcase.wont_include 'eduskunta'
+    end
+
+
   end
 
   describe "Australia" do
@@ -93,11 +98,15 @@ describe "Per Country Tests" do
     before { get '/australia/term_table/' }
 
     it "should include a Representative" do
-      subject.at_css('tr#mem-EZ5 td:first').text.must_include 'Tony Abbott'
+      subject.at_css('#house-representatives tr#mem-EZ5 td:first').text.must_include 'Tony Abbott'
     end
 
     it "should include a Senator" do
-      subject.at_css('tr#mem-GB6 td:first').text.must_include 'Jacinta Collins'
+      subject.at_css('#house-senate tr#mem-GB6 td:first').text.must_include 'Jacinta Collins'
+    end
+
+    it "should have a heading for the house name" do
+      subject.css('h3').text.downcase.must_include 'senate'
     end
 
   end

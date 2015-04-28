@@ -37,8 +37,9 @@
       <h2>Members</h3>
 
       <% @memberships.group_by { |m| m['organization'] }.each do |leg, leg_mems| %>
-        <h3><%= leg['name'] %></h3>
-        <table>
+        <% if @memberships.find { |m| m['organization']['id'] != leg['id'] } %><h3><%= leg['name'] %></h3><% end %>
+        
+        <table id="house-<%= leg['id'].split('/').last %>">
           <tr>
             <th>Name</th>
             <th>Group</th>
