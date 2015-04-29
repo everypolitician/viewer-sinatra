@@ -10,7 +10,7 @@ mapping = {
   'australia'     => [ 'australia', 'au' ],
   'denmark'       => [ 'denmark', 'dk', 'folketing' ],
   'chile'         => [ 'chile', 'cl' ],
-  'eduskunta'     => [ 'finland', 'fi', 'eduskunta' ],
+  'finland'       => [ 'finland', 'fi', 'eduskunta' ],
   'greenland'     => [ 'greenland', 'inatsisartut', 'gl', 'grl' ],
   'wales'         => [ 'wales', 'gb-wls', 'wls' ],
 }

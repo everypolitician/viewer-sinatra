@@ -4,14 +4,9 @@ require 'minitest/autorun'
 
 include Popolo::Helper
 
-#-----------------------------------------------------------------------
-# This file is identical to `suomi.rb` other than what data it uses. 
-# If you edit one, make sure to copy to the other as well.
-#-----------------------------------------------------------------------
-
 describe "Eduskunta" do
 
-  subject { Popolo::Data.new('eduskunta') }
+  subject { Popolo::Data.new('finland') }
 
   describe "party" do
 
