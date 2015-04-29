@@ -13,6 +13,7 @@ mapping = {
   'chile'         => [ 'chile', 'cl' ],
   'finland'       => [ 'finland', 'fi', 'eduskunta' ],
   'greenland'     => [ 'greenland', 'inatsisartut', 'gl', 'grl' ],
+  'italy'         => [ 'italy', 'it' ],
   'wales'         => [ 'wales', 'gb-wls', 'wls' ],
 }
 
