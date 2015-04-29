@@ -11,7 +11,7 @@ mapping = {
   'denmark'       => [ 'denmark', 'dk', 'folketing' ],
   'estonia'       => [ 'estonia', 'ee', 'riigikogu' ],
   'chile'         => [ 'chile', 'cl' ],
-  'eduskunta'     => [ 'finland', 'fi', 'eduskunta' ],
+  'finland'       => [ 'finland', 'fi', 'eduskunta' ],
   'greenland'     => [ 'greenland', 'inatsisartut', 'gl', 'grl' ],
   'wales'         => [ 'wales', 'gb-wls', 'wls' ],
 }

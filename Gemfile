@@ -11,6 +11,3 @@ gem 'promise'
 gem 'pry'
 gem 'rake'
 
-# For data generation
-gem 'csv_to_popolo', '>=0.8.1', :github => 'tmtmtmtm/csv_to_popolo'
-
