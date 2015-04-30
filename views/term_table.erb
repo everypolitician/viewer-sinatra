@@ -50,7 +50,7 @@
             <h2 class="text-center">Members</h3>
 
           <% @memberships.group_by { |m| m['organization'] }.each do |leg, leg_mems| %>
-            <table class="term-membership-table js-sortable" id="house-<%= leg['id'].split('/').last %>">
+            <table class="term-membership-table <% unless @country == 'finland' %>js-sortable<% end %>" id="house-<%= leg['id'].split('/').last %>">
                 <thead class="js-fixed-thead">
 
                   <% if @memberships.group_by { |m| m['organization'] }.length > 1 %>
