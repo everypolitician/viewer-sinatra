@@ -56,37 +56,42 @@ p.lead {
 .button {
     background-color: $colour_green;
     border-radius: $border_radius;
-    border: 0;
+    border: 1px solid $colour_green;
     color: $colour_white;
     display: inline-block;
     font-weight: $body_typeface_bold;
     padding: 0.75em 1.5em;
-    @include vendor-prefix(transition, background-color $animation-short);
+    @include vendor-prefix(transition, all $animation-short);
     &:hover,
     &:active,
     &:focus {
         background-color: darken($colour_green, 5%);
+        border-color: darken($colour_green, 5%);
         color: $colour_white;
-        @include vendor-prefix(transition, background-color $animation-short);
+        @include vendor-prefix(transition, all $animation-short);
     }
 }
 
 .button--secondary {
     background-color: $colour_red;
+    border-color: $colour_red;
     &:hover,
     &:active,
     &:focus {
         background-color: darken($colour_red, 5%);
+        border-color: darken($colour_red, 5%);
     }
 }
 
 .button--tertiary {
     background-color: $colour_light_grey;
+    border-color: $colour_light_grey;
     color: $colour_dark_grey;
     &:hover,
     &:active,
     &:focus {
         background-color: darken($colour_light_grey, 5%);
+        border-color: darken($colour_light_grey, 5%);
         color: $colour_black;
     }
 }
@@ -95,11 +100,12 @@ p.lead {
     background: transparent;
     color: $colour_dark_grey;
     font-weight: normal;
-    border: 1px solid rgba(0,0,0,0.1);
+    border-color: rgba(0,0,0,0.1);
     &:hover,
     &:active,
     &:focus {
         background-color: rgba(0,0,0,0.1);
+        border-color: rgba(0,0,0,0.1);
         color: $colour_dark_grey;
     }
 }
@@ -170,11 +176,21 @@ p.lead {
     @media ( min-width: $medium_screen) {
         padding: 4em 0;
     }
+
+    & > .container {
+      & > :first-child {
+        margin-top: 0;
+      }
+
+      & > :last-child {
+        margin-bottom: 0;
+      }
+    }
 }
 
 .page-section--grey {
     background-color: $colour_off_white;
-    
+
     pre {
         background-color: #fff;
     }
@@ -258,7 +274,7 @@ p.lead {
     @include flex-align(center);
     @include flex-wrap(wrap);
     @extend .unstyled-list;
-  
+
     & > * {
         @include flex(0 0 100%);
 
@@ -302,16 +318,22 @@ p.lead {
             text-shadow: 0 1px 0 rgba(0,0,0,0.2);
         }
     }
-    
+
     h3 {
         font-weight: 500;
-        
+
         & + p {
             margin-bottom: 0.2em;
         }
     }
-    
+
     p {
         opacity: 0.5;
     }
+}
+
+.js-fixed-thead__clone {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
 }

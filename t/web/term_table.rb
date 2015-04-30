@@ -50,28 +50,28 @@ describe "Per Country Tests" do
     end
 
     it "should list the parties" do
-      subject.css('#term table').text.must_include 'Finnish Centre Party'
+      subject.css('.term-membership-table').text.must_include 'Finnish Centre Party'
     end
 
     it "should list the areas" do
-      subject.css('#term table').text.must_include 'Oulun'
+      subject.css('.term-membership-table').text.must_include 'Oulun'
     end
 
     it "shouldn't show any dates for Mikko Kuoppa" do
-      subject.css('tr#mem-444').text.wont_include '20'
+      subject.css('.term-membership-table tr#mem-444').text.wont_include '20'
     end
 
     it "should show early departure date for Matti Vanhanen" do
-      subject.css('tr#mem-414 td:last').text.must_include '2010-09-19'
+      subject.css('.term-membership-table tr#mem-414 td:last').text.must_include '2010-09-19'
     end
 
     it "should show late start date for Risto Kuisma" do
-      subject.css('tr#mem-473 td:last').text.must_include '2010-07-13'
+      subject.css('.term-membership-table tr#mem-473 td:last').text.must_include '2010-07-13'
     end
 
     it "should have two rows for Merikukka Forsius" do
       # Changed Party mid-term, so one entry per party
-      subject.at_css('tr#mem-560 td:first').attr('rowspan').to_i.must_equal 2
+      subject.at_css('.term-membership-table tr#mem-560 td:first').attr('rowspan').to_i.must_equal 2
     end
 
     it "should link to 34" do
@@ -86,8 +86,8 @@ describe "Per Country Tests" do
       subject.css('a[href*="/term_table/33"]').count.must_equal 0
     end
 
-    it "shouldn't have a heading for the house name" do
-      subject.css('h3').text.downcase.wont_include 'eduskunta'
+    it "shouldn't have a button for the house name" do
+      subject.css('a.button').text.downcase.wont_include 'eduskunta'
     end
 
 
@@ -105,8 +105,8 @@ describe "Per Country Tests" do
       subject.at_css('#house-senate tr#mem-GB6 td:first').text.must_include 'Jacinta Collins'
     end
 
-    it "should have a heading for the house name" do
-      subject.css('h3').text.downcase.must_include 'senate'
+    it "should have a button with the house name" do
+      subject.css('a.button').text.downcase.must_include 'senate'
     end
 
   end
