@@ -170,11 +170,21 @@ p.lead {
     @media ( min-width: $medium_screen) {
         padding: 4em 0;
     }
+
+    & > .container {
+      & > :first-child {
+        margin-top: 0;
+      }
+
+      & > :last-child {
+        margin-bottom: 0;
+      }
+    }
 }
 
 .page-section--grey {
     background-color: $colour_off_white;
-    
+
     pre {
         background-color: #fff;
     }
@@ -258,7 +268,7 @@ p.lead {
     @include flex-align(center);
     @include flex-wrap(wrap);
     @extend .unstyled-list;
-  
+
     & > * {
         @include flex(0 0 100%);
 
@@ -302,15 +312,15 @@ p.lead {
             text-shadow: 0 1px 0 rgba(0,0,0,0.2);
         }
     }
-    
+
     h3 {
         font-weight: 500;
-        
+
         & + p {
             margin-bottom: 0.2em;
         }
     }
-    
+
     p {
         opacity: 0.5;
     }
