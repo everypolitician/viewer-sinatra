@@ -53,6 +53,12 @@ p.lead {
     font-size: 1.2em;
 }
 
+.large-screen-only {
+  @media(max-width: $medium_screen_max) {
+    display: none;
+  }
+}
+
 .button {
     background-color: $colour_green;
     border-radius: $border_radius;

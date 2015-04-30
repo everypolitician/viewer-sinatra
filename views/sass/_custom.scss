@@ -10,3 +10,34 @@
     border-color: $colour_green;
   }
 }
+
+.table-action-buttons {
+  position: relative;
+  display: none;
+
+  @media (min-width: $medium-screen) {
+    display: block;
+  }
+
+  & > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  & > :last-child {
+    left: auto;
+    right: 0;
+  }
+
+  // If this is the only child, give it a height,
+  // otherwise the parent cell will collapse to zero
+  // and the buttons will overlap the row beneath.
+  &:first-child:last-child {
+    height: 4em; // same as outerheight() of a .button
+  }
+}
+
+.button--download {
+  @extend .button--tertiary;
+}
