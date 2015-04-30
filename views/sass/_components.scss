@@ -337,3 +337,38 @@ p.lead {
   top: 0;
   background-color: #fff;
 }
+
+.js-sortable {
+  th {
+    cursor: pointer;
+
+    &:after {
+      display: inline-block;
+      content: "\f0dc";
+
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transform: translate(0, 0);
+
+      color: #ccc;
+      margin-left: 0.5em;
+    }
+
+    &:hover:after {
+      color: inherit;
+    }
+
+    &.sortedDown:after {
+      content: "\f0dd";
+      color: $colour_green;
+    }
+
+    &.sortedUp:after {
+      content: "\f0de";
+      color: $colour_green;
+    }
+  }
+}

@@ -20,7 +20,8 @@
                     <li><a href="#avatar-units">Avatar units</a></li>
                     <li><a href="#basic-lists">Unstyled and inline lists</a></li>
                     <li><a href="#alerts">Alerts</a></li>
-                    <li><a href="#tables">Fixed table headers</a></li>
+                    <li><a href="#table-headers">Fixed table headers</a></li>
+                    <li><a href="#table-sorting">Sortable tables</a></li>
                 </ul>
             </div>
 
@@ -166,28 +167,28 @@
                 <p><strong>Note:</strong> In modern browsers and Internet Explorer 10+, the list will break into as many columns as will fit on the screen. Older browsers will see a single column. <a href="http://caniuse.com/#search=flex">Show full browser compatibility table.</a></p>
 
                 <hr>
-                
+
                 <h1 id="avatar-units">Avatar units</h1>
-                  
+
                 <p>Avatar units provide a simple way of displaying the name of a thing along with an icon representing it and, optionally, some extra information like a date or location:</p>
-                
+
                 <a class="avatar-unit" href="#">
                     <span class="avatar"><i class="fa fa-user"></i></span>
                     <h3>Tony Stark</h3>
                     <p>CEO, Stark Industries</p>
                 </a>
-                
+
                 <pre>
 &lt;a class="avatar-unit" href="#"&gt;
     &lt;span class="avatar"&gt;&lt;i class="fa fa-user"&gt;&lt;/i&gt;&lt;/span&gt;
     &lt;h3&gt;Tony Stark&lt;/h3&gt;
     &lt;p&gt;CEO, Stark Industries&lt;/p&gt;
 &lt;/a&gt;</pre>
-                
+
                 <p>Avatar units must contain a <code>&lt;span class="avatar"&gt;</code> element, but all other content is optional. When combined with <code>.grid-list</code>, above, Avatar units of different heights will be vertically aligned along their common centre.</p>
 
                 <p>You can change the icon displayed by replacing <code>&lt;i class="fa fa-user"&gt;</code> with one of the icon codes from the <a href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome docs</a>.</p>
-                
+
                 <hr>
 
                 <h1 id="basic-lists">Unstyled and inline lists</h1>
@@ -221,7 +222,7 @@
 
                 <hr>
 
-                <h1 id="tables">Fixed table headers</h1>
+                <h1 id="table-headers">Fixed table headers</h1>
 
                 <p>If you have a very long table, add a class of <code>js-fixed-thead</code> to the <code>&lt;thead&gt;</code> element, and it will automatically stick to the top of the window when the user scrolls down the page.</p>
 
@@ -237,10 +238,59 @@
   &lt;tr&gt;
     …
   &lt;/tr&gt;
+&lt;/table&gt;</pre>
+
+                <hr>
+
+                <h1 id="table-sorting">Sortable tables</h1>
+
+                <p>Add a class of <code>js-sortable</code> to your <code>&lt;table&gt;</code> element, and it will become sortable. The first time a user clicks one of table’s header cells, that column will sort from A–Z. The second time, it’ll sort Z–A. And the third time, it’ll reset to its original sort order.</p>
+
+                <table class="js-sortable">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Organization</th>
+                      <th>First appearance</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td>Tony Stark</td>
+                    <td>Stark Industries</td>
+                    <td>Tales of Suspense #39</td>
+                  </tr>
+                  <tr>
+                    <td>Obadiah Stane</td>
+                    <td>Stark Industries</td>
+                    <td>Iron Man #163</td>
+                  </tr>
+                  <tr>
+                    <td>Justin Hammer</td>
+                    <td>Hammer Industries</td>
+                    <td>Iron Man #120</td>
+                  </tr>
+                  <tr>
+                    <td>Nick Fury</td>
+                    <td>S.H.I.E.L.D.</td>
+                    <td>Fantastic Four #21</td>
+                  </tr>
+                </table>
+
+                <pre>
+&lt;table class="js-sortable"&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Group&lt;/th&gt;
+          &lt;th&gt;Area&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
   &lt;tr&gt;
     …
   &lt;/tr&gt;
 &lt;/table&gt;</pre>
+
+            <p><strong>Note:</strong> Make sure your table headers cells are correctly marked up as <code>&lt;th&gt;</code> elements inside a <code>&lt;thead&gt;</code>, as above.</p>
 
             </div>
         </div>
