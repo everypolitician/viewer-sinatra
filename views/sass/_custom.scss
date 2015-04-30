@@ -1,0 +1,12 @@
+.term-membership-table {
+  .button-group {
+    margin-bottom: 1em;
+  }
+
+  // Make the selected tab look unclickable
+  .button--primary {
+    cursor: default;
+    background-color: $colour_green;
+    border-color: $colour_green;
+  }
+}

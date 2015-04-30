@@ -50,12 +50,25 @@
             <h2 class="text-center">Members</h3>
 
           <% @memberships.group_by { |m| m['organization'] }.each do |leg, leg_mems| %>
-              <% if @memberships.find { |m| m['organization']['id'] != leg['id'] } %>
-                <h3 class="text-center"><%= leg['name'] %></h3>
-              <% end %>
-
-            <table id="house-<%= leg['id'].split('/').last %>">
+            <table class="term-membership-table" id="house-<%= leg['id'].split('/').last %>">
                 <thead class="js-fixed-thead">
+
+                  <% if @memberships.group_by { |m| m['organization'] }.length > 1 %>
+                    <tr>
+                        <td colspan="4" class="text-center">
+                            <div class="button-group">
+                              <% @memberships.group_by { |m| m['organization'] }.each do |leg2, leg_mems2| %>
+                                  <% if leg2['id'] == leg['id'] %>
+                                    <a class="button button--primary" href="#house-<%= leg2['id'].split('/').last %>"><%= leg2['name'] %></a>
+                                  <% else %>
+                                    <a class="button button--quarternary" href="#house-<%= leg2['id'].split('/').last %>"><%= leg2['name'] %></a>
+                                  <% end %>
+                              <% end %>
+                            </div>
+                        </td>
+                    </tr>
+                  <% end %>
+
                     <tr>
                         <th>Name</th>
                         <th>Group</th>
