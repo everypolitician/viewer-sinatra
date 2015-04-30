@@ -71,6 +71,115 @@
 
 }(jQuery));
 
+(function ($) {
+
+  $.fn.sortable = function() {
+
+    // Call this on a <table> and it'll make all the columns sortable.
+
+    var sortTable = function sortTable($table, columnIndex){
+      // Find the rows to sort, and their parent
+      var $tbody = $table.children('tbody');
+      if($tbody.length == 0){ $tbody = $table; }
+      var $trs = $tbody.children('tr');
+
+      // Sort the right way, based on the state stored in $table.data
+      var currentSortOrder = $table.data('sortOrder');
+      if(columnIndex == $table.data('sortedOnColumnIndex')){
+        if(currentSortOrder == 'a-z'){
+          sortRows($tbody, $trs, columnIndex, 'z-a');
+          showSortOrder($table, columnIndex, 'z-a');
+          $table.data('sortOrder', 'z-a');
+        } else if(currentSortOrder == 'z-a'){
+          restoreOriginalSortOrder($tbody, $trs);
+          showSortOrder($table);
+          $table.removeData('sortOrder');
+          $table.removeData('sortedOnColumnIndex');
+        }
+      } else {
+        sortRows($tbody, $trs, columnIndex, 'a-z');
+        showSortOrder($table, columnIndex, 'a-z');
+        $table.data('sortOrder', 'a-z');
+        $table.data('sortedOnColumnIndex', columnIndex);
+      }
+    }
+
+    var sortRows = function sortRows($tbody, $trs, columnIndex, sortOrder){
+      $trs.detach().sort(function(rowA, rowB){
+        var valueA = $(rowA).children('td').eq(columnIndex).text();
+        var valueB = $(rowB).children('td').eq(columnIndex).text();
+
+        var moveUp = 1;
+        var moveDown = -1;
+        if(sortOrder == 'z-a'){
+          var moveUp = -1;
+          var moveDown = 1;
+        }
+
+        if(valueA > valueB) {
+          return moveUp;
+        } else if(valueA < valueB){
+          return moveDown;
+        } else {
+          return 0;
+        }
+      }).appendTo($tbody);
+    }
+
+    var restoreOriginalSortOrder = function restoreOriginalSortOrder($tbody, $trs){
+      $trs.detach().sort(function(rowA, rowB){
+        var valueA = $(rowA).data('originalSortOrder');
+        var valueB = $(rowB).data('originalSortOrder');
+
+        if(valueA > valueB) {
+          return 1;
+        } else if(valueA < valueB){
+          return -1;
+        } else {
+          return 0;
+        }
+      }).appendTo($tbody);
+    }
+
+    var showSortOrder = function showSortOrder($table, columnIndex, sortOrder){
+      $table.find('th').removeClass('sortedUp sortedDown');
+
+      if(typeof columnIndex !== 'undefined'){
+        // For compatibility with $.fixedThead() we
+        // can't assume there is only row of thead cells.
+        var $ths = $table.find('th:nth-child(' + (columnIndex+1) + ')');
+
+        if(sortOrder == 'a-z'){
+          $ths.addClass('sortedDown');
+        } else if(sortOrder == 'z-a'){
+          $ths.addClass('sortedUp');
+        }
+      }
+    }
+
+    var saveOriginalSortOrder = function saveOriginalSortOrder($table){
+      $table.find('tr').each(function(i){
+        $(this).data('originalSortOrder', i);
+      });
+    }
+
+    return this.each(function() {
+      var $table = $(this);
+
+      saveOriginalSortOrder($table);
+
+      $table.on('click', 'thead th', function(){
+        var eq = $(this).prevAll().length;
+        sortTable($table, eq);
+      });
+    });
+
+  };
+
+}(jQuery));
+
 $(function(){
   $('.js-fixed-thead').fixedThead();
+
+  $('.js-sortable').sortable();
 });
