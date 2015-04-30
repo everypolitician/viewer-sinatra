@@ -20,6 +20,7 @@
                     <li><a href="#avatar-units">Avatar units</a></li>
                     <li><a href="#basic-lists">Unstyled and inline lists</a></li>
                     <li><a href="#alerts">Alerts</a></li>
+                    <li><a href="#tables">Fixed table headers</a></li>
                 </ul>
             </div>
 
@@ -217,6 +218,29 @@
                 <div class="alert alert--error">
                     <p><strong>Something went wrong.</strong> Try reloading your browser.</p>
                 </div>
+
+                <hr>
+
+                <h1 id="tables">Fixed table headers</h1>
+
+                <p>If you have a very long table, add a class of <code>js-fixed-thead</code> to the <code>&lt;thead&gt;</code> element, and it will automatically stick to the top of the window when the user scrolls down the page.</p>
+
+                <pre>
+&lt;table&gt;
+  &lt;thead class="js-fixed-thead"&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Group&lt;/th&gt;
+          &lt;th&gt;Area&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tr&gt;
+    …
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    …
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
 
             </div>
         </div>

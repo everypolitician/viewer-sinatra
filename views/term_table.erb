@@ -55,12 +55,14 @@
               <% end %>
 
             <table id="house-<%= leg['id'].split('/').last %>">
-                <tr>
-                    <th>Name</th>
-                    <th>Group</th>
-                    <th>Area</th>
-                    <th>Dates</th>
-                </tr>
+                <thead class="js-fixed-thead">
+                    <tr>
+                        <th>Name</th>
+                        <th>Group</th>
+                        <th>Area</th>
+                        <th>Dates</th>
+                    </tr>
+                </thead>
 
               <% leg_mems.group_by { |m| m['person'] }.sort_by { |p, _| p['name'] }.each do |p, mems| %>
                   <%# Each person can have multiple party affiliations in a single term, so we
