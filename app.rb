@@ -75,17 +75,14 @@ get '/:country/term_table/?:id?.html' do |country, id|
   @terms = @popolo.term_list
   (@prev_term, _, @next_term) = [nil, @terms, nil].flatten.each_cons(3).find { |p, e, n| e['id'] == @term['id'] }
   @memberships = @popolo.term_memberships(@term)
+  @csv_url = "/#{country}/term_table/#{@term['id'].split('/').last}.csv"
   erb :term_table
 end
 
 get '/:country/term_table/?:id?.csv' do |country, id|
-
   @term = id ? @popolo.term_from_id(id) :  @popolo.current_term
   pass unless @term
 
-  content_type 'application/csv'
-  attachment   "everypolitician-#{country}-#{@term['id'].split('/').last}.csv"
-  
   @terms = @popolo.term_list
   @memberships = @popolo.term_memberships(@term)
 
@@ -100,6 +97,9 @@ get '/:country/term_table/?:id?.csv' do |country, id|
       end_date: m['end_date']
     }.values.to_csv
   end
+
+  content_type 'application/csv'
+  attachment   "everypolitician-#{country}-#{@term['id'].split('/').last}.csv"
   [header, rows].compact.join
 end
 
