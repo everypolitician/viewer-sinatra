@@ -56,9 +56,9 @@
                     <tr>
                         <td colspan="4" class="text-center">
                             <div class="table-action-buttons">
-                              <a class="button button--download" href="#">
+                              <a class="button button--download" href="<%= @csv_url %>">
                                 <i class="fa fa-download"></i>
-                                <span class="large-screen-only">Download</span>
+                                <span class="large-screen-only">CSV</span>
                               </a>
                             </div>
                           <% if @memberships.group_by { |m| m['organization'] }.length > 1 %>
