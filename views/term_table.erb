@@ -53,9 +53,15 @@
             <table class="term-membership-table <% unless @country == 'finland' %>js-sortable<% end %>" id="house-<%= leg['id'].split('/').last %>">
                 <thead class="js-fixed-thead">
 
-                  <% if @memberships.group_by { |m| m['organization'] }.length > 1 %>
                     <tr>
                         <td colspan="4" class="text-center">
+                            <div class="table-action-buttons">
+                              <a class="button button--download" href="<%= @csv_url %>">
+                                <i class="fa fa-download"></i>
+                                <span class="large-screen-only">CSV</span>
+                              </a>
+                            </div>
+                          <% if @memberships.group_by { |m| m['organization'] }.length > 1 %>
                             <div class="button-group">
                               <% @memberships.group_by { |m| m['organization'] }.each do |leg2, leg_mems2| %>
                                   <% if leg2['id'] == leg['id'] %>
@@ -65,9 +71,9 @@
                                   <% end %>
                               <% end %>
                             </div>
+                          <% end %>
                         </td>
                     </tr>
-                  <% end %>
 
                     <tr>
                         <th>Name</th>
