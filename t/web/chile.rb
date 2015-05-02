@@ -31,7 +31,7 @@ describe "Chile" do
 
   describe "when viewing a Term page" do
 
-    before { get '/chile/term/2014' }
+    before { get '/chile/term/8' }
 
     it "should have have at least 1 party" do
       subject.css('#term a[href*="/party/"]').count.must_be :>=, 1
