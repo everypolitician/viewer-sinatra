@@ -1970,46 +1970,46 @@
     },
     {
       "id": "legislature",
-      "name": "Legislature",
+      "name": "Alþingi",
       "classification": "legislature",
       "legislative_periods": [
         {
           "id": "term/2013–",
-          "name": "2013–",
+          "name": "Alþingi 2013–",
           "classification": "legislative period",
           "start_date": "2013"
         },
         {
           "id": "term/1995–1999",
-          "name": "1995–1999",
+          "name": "Alþingi 1995–1999",
           "classification": "legislative period",
           "start_date": "1995",
           "end_date": "1999"
         },
         {
           "id": "term/1999–2003",
-          "name": "1999–2003",
+          "name": "Alþingi 1999–2003",
           "classification": "legislative period",
           "start_date": "1999",
           "end_date": "2003"
         },
         {
           "id": "term/2003–2007",
-          "name": "2003–2007",
+          "name": "Alþingi 2003–2007",
           "classification": "legislative period",
           "start_date": "2003",
           "end_date": "2007"
         },
         {
           "id": "term/2007–2009",
-          "name": "2007–2009",
+          "name": "Alþingi 2007–2009",
           "classification": "legislative period",
           "start_date": "2007",
           "end_date": "2009"
         },
         {
           "id": "term/2009–2013",
-          "name": "2009–2013",
+          "name": "Alþingi 2009–2013",
           "classification": "legislative period",
           "start_date": "2009",
           "end_date": "2013"
