@@ -15,6 +15,7 @@ mapping = {
   'chile'         => [ 'chile', 'cl' ],
   'finland'       => [ 'finland', 'fi', 'eduskunta' ],
   'greenland'     => [ 'greenland', 'inatsisartut', 'gl', 'grl' ],
+  'iceland'       => [ 'iceland', 'is', 'alþingi', 'althing' ],
   'iran'          => [ 'iran', 'ir' ],
   'kazakhstan'    => [ 'kazakhstan', 'kz' ],
   'italy'         => [ 'italy', 'it' ],
