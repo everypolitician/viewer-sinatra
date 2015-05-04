@@ -1,6 +1,7 @@
 {
   "persons": [
     {
+      "email": "null",
       "id": "EZ5",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/EZ5/upload_ref_binary/EZ5.JPG",
       "name": "The Hon Tony Abbott MP",
@@ -243,6 +244,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "HWK",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/HWK/upload_ref_binary/HWK.jpg",
       "name": "The Hon Mark Butler MP",
@@ -319,6 +321,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "00AN0",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/00AN0/upload_ref_binary/00AN0.JPG",
       "name": "The Hon Steven Ciobo MP",
@@ -345,6 +348,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "HWL",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/HWL/upload_ref_binary/HWL.jpg",
       "name": "The Hon Jason Clare MP",
@@ -375,7 +379,17 @@
       "id": "00AN1",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/00AN1/upload_ref_binary/00AN1.JPG",
       "name": "The Hon John Cobb MP",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.johncobb.com.au/",
           "note": "website"
@@ -388,6 +402,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "HWM",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/HWM/upload_ref_binary/HWM.JPG",
       "name": "The Hon Julie Collins MP",
@@ -462,6 +477,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "HWG",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/HWG/upload_ref_binary/HWG.JPG",
       "name": "The Hon Mark Dreyfus QC  MP",
@@ -513,10 +529,20 @@
       "id": "DZW",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/DZW/upload_ref_binary/DZW.jpg",
       "name": "The Hon Justine Elliot MP",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
         {
           "url": "https://www.facebook.com/JustineElliotMP",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -676,6 +702,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "HWO",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/HWO/upload_ref_binary/HWO.jpg",
       "name": "Mr Alex Hawke MP",
@@ -756,6 +783,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "HYM",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/HYM/upload_ref_binary/HYM.jpg",
       "name": "Mr Steve Irons MP",
@@ -836,6 +864,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "E0J",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/E0J/upload_ref_binary/E0J.JPG",
       "name": "The Hon Michael Keenan MP",
@@ -889,6 +918,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "E0H",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/E0H/upload_ref_binary/E0H.jpg",
       "name": "Mr Andrew Laming MP",
@@ -946,6 +976,12 @@
       "id": "WN6",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/WN6/upload_ref_binary/WN6.JPG",
       "name": "The Hon Ian Macfarlane MP",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
         {
           "url": "https://www.facebook.com/IanMacfarlaneMP",
@@ -963,10 +999,21 @@
       ]
     },
     {
+      "email": "null",
       "id": "PG6",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/PG6/upload_ref_binary/PG6.jpg",
       "name": "The Hon Jenny Macklin MP",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.jennymacklin.net.au",
           "note": "website"
@@ -1006,6 +1053,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "HWQ",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/HWQ/upload_ref_binary/HWQ.JPG",
       "name": "The Hon Richard Marles MP",
@@ -1032,6 +1080,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "E3L",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/E3L/upload_ref_binary/E3L.JPG",
       "name": "The Hon Scott Morrison MP",
@@ -1133,6 +1182,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "HWR",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/HWR/upload_ref_binary/HWR.JPG",
       "name": "The Hon Melissa Parke MP",
@@ -1153,6 +1203,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "HVP",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/HVP/upload_ref_binary/HVP.jpg",
       "name": "Mr Graham Perrett MP",
@@ -1179,6 +1230,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "83M",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/83M/upload_ref_binary/83M.jpg",
       "name": "The Hon Tanya Plibersek MP",
@@ -1232,10 +1284,21 @@
       ]
     },
     {
+      "email": "null",
       "id": "HWS",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/HWS/upload_ref_binary/HWS.jpg",
       "name": "Mr Rowan Ramsey MP",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.rowanramsey.com.au/",
           "note": "website"
@@ -1252,7 +1315,17 @@
       "id": "PK6",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/PK6/upload_ref_binary/PK6.JPG",
       "name": "Mr Don Randall MP",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.donrandallmp.com/",
           "note": "website"
@@ -1292,6 +1365,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "HWA",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/HWA/upload_ref_binary/HWA.jpg",
       "name": "The Hon Amanda Rishworth MP",
@@ -1345,6 +1419,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "HWT",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/HWT/upload_ref_binary/HWT.jpg",
       "name": "The Hon Stuart Robert MP",
@@ -1355,6 +1430,10 @@
         }
       ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.robert.com.au/",
           "note": "website"
@@ -1367,10 +1446,21 @@
       ]
     },
     {
+      "email": "null",
       "id": "0J4",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/0J4/upload_ref_binary/0J4.jpg",
       "name": "The Hon Philip Ruddock MP",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.ruddockmp.com.au/",
           "note": "website"
@@ -1383,6 +1473,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "00ATG",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/00ATG/upload_ref_binary/00ATG.jpg",
       "name": "The Hon Bill Shorten MP",
@@ -1409,6 +1500,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "HWE",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/HWE/upload_ref_binary/HWE.jpg",
       "name": "Mr Luke Simpkins MP",
@@ -1504,6 +1596,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "EM6",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/EM6/upload_ref_binary/EM6.JPG",
       "name": "The Hon Dr Sharman Stone MP",
@@ -1530,6 +1623,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "2V5",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/2V5/upload_ref_binary/2V5.jpg",
       "name": "The Hon Wayne Swan MP",
@@ -1583,6 +1677,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "GT4",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/GT4/upload_ref_binary/GT4.JPG",
       "name": "The Hon Warren Truss MP",
@@ -1667,6 +1762,22 @@
       "id": "HWB",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/HWB/upload_ref_binary/HWB.JPG",
       "name": "Mr Tony Zappia MP",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
+      "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
+        }
+      ],
       "images": [
         {
           "url": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/HWB/upload_ref_binary/HWB.JPG"
@@ -1674,6 +1785,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "IPZ",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/IPZ/upload_ref_binary/IPZ.JPG",
       "name": "The Hon Darren Chester MP",
@@ -1700,6 +1812,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "IYU",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/IYU/upload_ref_binary/IYU.JPG",
       "name": "The Hon Jamie Briggs MP",
@@ -1753,6 +1866,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "LKU",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/LKU/upload_ref_binary/lku.jpg",
       "name": "Ms Kelly O'Dwyer MP",
@@ -1779,6 +1893,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "M3M",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/m3m/upload_ref_binary/m3m.jpg",
       "name": "Mr John Alexander OAM  MP",
@@ -1805,6 +1920,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "230485",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/230485/upload_ref_binary/230485.jpg",
       "name": "Mr George Christensen MP",
@@ -1831,6 +1947,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "C2T",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/c2t/upload_ref_binary/c2t.jpg",
       "name": "Mr Andrew Wilkie MP",
@@ -1857,10 +1974,21 @@
       ]
     },
     {
+      "email": "null",
       "id": "139441",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/139441/upload_ref_binary/139441.jpg",
       "name": "Mr Ken O'Dowd MP",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.kenodowd.com.au/",
           "note": "website"
@@ -1873,6 +2001,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "188315",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/188315/upload_ref_binary/188315.jpg",
       "name": "Mr Bert Van Manen MP",
@@ -1883,6 +2012,10 @@
         }
       ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.bertvanmanen.com.au/",
           "note": "website"
@@ -1895,6 +2028,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "M3A",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/m3a/upload_ref_binary/m3a.jpg",
       "name": "Mr Ken Wyatt AM  MP",
@@ -1921,13 +2055,24 @@
       ]
     },
     {
+      "email": "null",
       "id": "7K6",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/7K6/upload_ref_binary/7K6.jpg",
       "name": "The Hon Warren Entsch MP",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
         {
           "url": "https://www.facebook.com/WarrenEntschMP",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -1937,6 +2082,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "M2X",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/m2x/upload_ref_binary/m2x.jpg",
       "name": "Mr Wyatt Roy MP",
@@ -1963,6 +2109,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "E07",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/E07/upload_ref_binary/E07.JPG",
       "name": "Mrs Louise Markus MP",
@@ -1983,6 +2130,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "M3E",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/m3e/upload_ref_binary/m3e.jpg",
       "name": "Mr Rob Mitchell MP",
@@ -2036,6 +2184,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "220370",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/220370/upload_ref_binary/220370.jpg",
       "name": "Mrs Natasha Griggs MP",
@@ -2110,6 +2259,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "A9B",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/a9b/upload_ref_binary/a9b.jpg",
       "name": "Mr Stephen Jones MP",
@@ -2163,6 +2313,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "210911",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/210911/upload_ref_binary/210911.jpg",
       "name": "Mr Dan Tehan MP",
@@ -2189,6 +2340,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "219646",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/219646/upload_ref_binary/219646.jpg",
       "name": "The Hon Michael McCormack MP",
@@ -2219,7 +2371,17 @@
       "id": "ECV",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/ECV/upload_ref_binary/ECV.JPG",
       "name": "Mr Chris Hayes MP",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.chrishayesmp.com/",
           "note": "website"
@@ -2232,6 +2394,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "96430",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/96430/upload_ref_binary/96430.jpg",
       "name": "Mr Ewen Jones MP",
@@ -2258,6 +2421,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "230886",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/230886/upload_ref_binary/230886.jpg",
       "name": "Mrs Karen Andrews MP",
@@ -2305,6 +2469,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "M2Y",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/m2y/upload_ref_binary/m2y.jpg",
       "name": "The Hon Alan Tudge MP",
@@ -2331,6 +2496,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "91219",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/91219/upload_ref_binary/91219.jpg",
       "name": "The Hon Ed Husic MP",
@@ -2357,6 +2523,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "99931",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/99931/upload_ref_binary/99931.jpg",
       "name": "Mr Craig Kelly MP",
@@ -2410,6 +2577,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "8T4",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/8T4/upload_ref_binary/8T4.jpg",
       "name": "Mr Laurie Ferguson MP",
@@ -2463,6 +2631,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "230531",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/230531/upload_ref_binary/230531.jpg",
       "name": "Mr Scott Buchholz MP",
@@ -2516,6 +2685,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "E0D",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/E0D/upload_ref_binary/E0D.JPG",
       "name": "Mr Ross Vasta MP",
@@ -2536,6 +2706,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "9K6",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/9K6/upload_ref_binary/9K6.jpg",
       "name": "The Hon Teresa Gambaro MP",
@@ -2566,7 +2737,17 @@
       "id": "YT4",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/YT4/upload_ref_binary/YT4.JPG",
       "name": "The Hon Bruce Scott MP",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.maranoa.info",
           "note": "website"
@@ -2579,6 +2760,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "241067",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/241067/upload_ref_binary/241067.jpg",
       "name": "Mr David Coleman MP",
@@ -2599,6 +2781,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "240756",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/240756/upload_ref_binary/240756.jpg",
       "name": "Mr Tony Pasin MP",
@@ -2615,6 +2798,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "250077",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/250077/upload_ref_binary/250077.jpg",
       "name": "Mr Nickolas Varvaris MP",
@@ -2635,6 +2819,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "137174",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/137174/upload_ref_binary/137174.jpg",
       "name": "Mr Andrew Nikolic AM  CSC  MP",
@@ -2661,6 +2846,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "I0O",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/I0O/upload_ref_binary/I0O.JPG",
       "name": "Hon David Feeney MP",
@@ -2671,6 +2857,10 @@
         }
       ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.davidfeeney.com.au",
           "note": "website"
@@ -2683,6 +2873,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "249710",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/249710/upload_ref_binary/249710.jpg",
       "name": "Ms Lisa Chesters MP",
@@ -2709,6 +2900,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "207800",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/207800/upload_ref_binary/207800.jpg",
       "name": "Mr Brett Whiteley MP",
@@ -2731,6 +2923,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "249764",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/249764/upload_ref_binary/249764.jpg",
       "name": "Ms Michelle Landry MP",
@@ -2768,6 +2961,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "ZN4",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/ZN4/upload_ref_binary/ZN4.jpg",
       "name": "Ms Sarah Henderson MP",
@@ -2794,6 +2988,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "242515",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/242515/upload_ref_binary/242515.jpg",
       "name": "Mr Michael Sukkar MP",
@@ -2814,6 +3009,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "241589",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/241589/upload_ref_binary/241589.jpg",
       "name": "Mrs Karen McNamara MP",
@@ -2830,6 +3026,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "249308",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/249308/upload_ref_binary/249308.jpg",
       "name": "Ms Melissa Price MP",
@@ -2846,6 +3043,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "00BCM",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/00BCM/upload_ref_binary/00BCM.jpg",
       "name": "Dr Peter Hendy MP",
@@ -2866,6 +3064,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "2K6",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/2K6/upload_ref_binary/2K6.jpg",
       "name": "The Hon Mal Brough MP",
@@ -2886,6 +3085,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "193430",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/193430/upload_ref_binary/193430.jpg",
       "name": "Mr Tim Watts MP",
@@ -2939,6 +3139,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "249758",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/249758/upload_ref_binary/249758.jpg",
       "name": "Mr Matt Williams MP",
@@ -2955,6 +3156,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "148150",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/148150/upload_ref_binary/148150.jpg",
       "name": "Mr Keith Pitt MP",
@@ -2975,6 +3177,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "140590",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/140590/upload_ref_binary/140590.jpg",
       "name": "Ms Clare O'Neil MP",
@@ -2997,6 +3200,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "231027",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/231027/upload_ref_binary/231027.jpg",
       "name": "Mr Angus Taylor MP",
@@ -3019,6 +3223,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "123674",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/123674/upload_ref_binary/123674.jpg",
       "name": "Ms Cathy McGowan AO  MP",
@@ -3045,6 +3250,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "182468",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/182468/upload_ref_binary/182468.jpg",
       "name": "Hon Matt Thistlethwaite MP",
@@ -3071,6 +3277,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "E0F",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/E0F/upload_ref_binary/E0F.JPG",
       "name": "Mr Jason Wood MP",
@@ -3097,6 +3304,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "249224",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/249224/upload_ref_binary/249224.jpg",
       "name": "Ms Joanne Ryan MP",
@@ -3123,6 +3331,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "165476",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/165476/upload_ref_binary/165476.jpg",
       "name": "Ms Fiona Scott MP",
@@ -3143,6 +3352,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "72184",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/72184/upload_ref_binary/72184.jpg",
       "name": "Dr David Gillespie MP",
@@ -3169,6 +3379,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "212585",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/212585/upload_ref_binary/212585.jpg",
       "name": "Mr Eric Hutchinson MP",
@@ -3195,6 +3406,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "30379",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/30379/upload_ref_binary/30379.jpg",
       "name": "Mr Andrew Broad MP",
@@ -3221,9 +3433,16 @@
       ]
     },
     {
+      "email": "null",
       "id": "74046",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/74046/upload_ref_binary/74046.jpg",
       "name": "Mr Ian Goodenough MP",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
         {
           "url": "https://www.facebook.com/IanGoodenoughMP",
@@ -3241,6 +3460,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "E5D",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/E5D/upload_ref_binary/E5D.JPG",
       "name": "The Hon Barnaby Joyce MP",
@@ -3267,6 +3487,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "248181",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/248181/upload_ref_binary/248181.jpg",
       "name": "Ms Sharon Claydon MP",
@@ -3289,6 +3510,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "198084",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/198084/upload_ref_binary/198084.jpg",
       "name": "Mr Rick Wilson MP",
@@ -3315,6 +3537,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "218019",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/218019/upload_ref_binary/218019.jpg",
       "name": "Mr Kevin Hogan MP",
@@ -3341,6 +3564,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "208884",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/208884/upload_ref_binary/208884.jpg",
       "name": "Hon Christian Porter MP",
@@ -3361,6 +3585,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "L6P",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/L6P/upload_ref_binary/L6P.jpg",
       "name": "Hon Alannah MacTiernan MP",
@@ -3387,6 +3612,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "247742",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/247742/upload_ref_binary/247742.jpg",
       "name": "Mr Luke Howarth MP",
@@ -3407,6 +3633,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "37998",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/37998/upload_ref_binary/37998.jpg",
       "name": "Dr Jim Chalmers MP",
@@ -3433,6 +3660,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "247130",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/247130/upload_ref_binary/247130.jpg",
       "name": "Mr Craig Laundy MP",
@@ -3453,6 +3681,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "241590",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/241590/upload_ref_binary/241590.jpg",
       "name": "Mrs Lucy Wicks MP",
@@ -3479,6 +3708,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "243609",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/243609/upload_ref_binary/243609.jpg",
       "name": "Mr Andrew Giles MP",
@@ -3532,6 +3762,16 @@
           "value": "https://twitter.com/BronwynBishop"
         }
       ],
+      "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
+        }
+      ],
       "images": [
         {
           "url": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/SE4/upload_ref_binary/SE4.JPG"
@@ -3539,6 +3779,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "LQR",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/LQR/upload_ref_binary/LQR.jpg",
       "name": "Mr Clive Palmer MP",
@@ -3588,6 +3829,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "N26",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/N26/upload_ref_binary/N26.jpg",
       "name": "Senator the Hon Eric Abetz",
@@ -3614,6 +3856,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "G0D",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/G0D/upload_ref_binary/G0D.JPG",
       "name": "Senator Cory Bernardi",
@@ -3624,6 +3867,10 @@
         }
       ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.senatorbernardi.com/",
           "note": "website"
@@ -3636,6 +3883,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "H6X",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/H6X/upload_ref_binary/H6X.jpg",
       "name": "Senator the Hon Simon Birmingham",
@@ -3666,6 +3914,22 @@
       "id": "008W7",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/008W7/upload_ref_binary/008W7.jpg",
       "name": "Senator the Hon George Brandis",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
+      "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
+        }
+      ],
       "images": [
         {
           "url": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/008W7/upload_ref_binary/008W7.jpg"
@@ -3700,6 +3964,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "HLL",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/HLL/upload_ref_binary/HLL.jpg",
       "name": "Senator David Bushby",
@@ -3710,6 +3975,10 @@
         }
       ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.davidbushby.com.au/",
           "note": "website"
@@ -3736,6 +4005,10 @@
         {
           "url": "https://www.facebook.com/senatorkimjcarr",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -3755,6 +4028,16 @@
           "value": "https://twitter.com/richardmcolbeck"
         }
       ],
+      "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
+        }
+      ],
       "images": [
         {
           "url": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/00AOL/upload_ref_binary/00AOL.JPG"
@@ -3772,6 +4055,16 @@
           "value": "https://twitter.com/ConroyMO"
         }
       ],
+      "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
+        }
+      ],
       "images": [
         {
           "url": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/3L6/upload_ref_binary/3L6.jpg"
@@ -3779,6 +4072,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "HDA",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/HDA/upload_ref_binary/HDA.JPG",
       "name": "Senator the Hon Mathias Cormann",
@@ -3836,7 +4130,17 @@
       "id": "e4t",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/E4T/upload_ref_binary/E4T.JPG",
       "name": "Senator the Hon Concetta Fierravanti-Wells",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.senatorcfw.com.au/",
           "note": "website"
@@ -3849,6 +4153,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "D2I",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/D2I/upload_ref_binary/D2I.JPG",
       "name": "Senator the Hon Mitch Fifield",
@@ -3875,10 +4180,21 @@
       ]
     },
     {
+      "email": "null",
       "id": "C16",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/C16/upload_ref_binary/C16.JPG",
       "name": "Senator the Hon Bill Heffernan",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.billheffernan.com.au/",
           "note": "website"
@@ -3891,13 +4207,24 @@
       ]
     },
     {
+      "email": "null",
       "id": "00AON",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/00AON/upload_ref_binary/00AON.JPG",
       "name": "Senator the Hon David Johnston",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
         {
           "url": "https://www.facebook.com/SenatorDavidJohnston",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -3907,9 +4234,16 @@
       ]
     },
     {
+      "email": "null",
       "id": "84N",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/84N/upload_ref_binary/84N.jpg",
       "name": "Senator the Hon Joe Ludwig",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
         {
           "url": "https://www.facebook.com/SenatorJoeLudwig",
@@ -3954,6 +4288,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "YW4",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/YW4/upload_ref_binary/YW4.JPG",
       "name": "Senator the Hon Ian Macdonald",
@@ -3994,6 +4329,10 @@
         {
           "url": "https://www.facebook.com/pages/Brett-Mason/62364092302?fref=ts",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -4017,6 +4356,10 @@
         {
           "url": "https://www.facebook.com/senatormcewen",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -4080,6 +4423,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "00AOQ",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/00AOQ/upload_ref_binary/00AOQ.JPG",
       "name": "Senator Claire Moore",
@@ -4106,9 +4450,16 @@
       ]
     },
     {
+      "email": "null",
       "id": "e5g",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/E5G/upload_ref_binary/E5G.JPG",
       "name": "Senator the Hon Fiona Nash",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
         {
           "url": "https://www.facebook.com/pages/Fiona-Nash/86298154631",
@@ -4180,6 +4531,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "xt4",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/XT4/upload_ref_binary/XT4.JPG",
       "name": "Senator the Hon Michael Ronaldson",
@@ -4193,6 +4545,10 @@
         {
           "url": "https://www.facebook.com/senronno",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -4206,6 +4562,12 @@
       "id": "00AOM",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/00AOM/upload_ref_binary/00AOM.JPG",
       "name": "Senator the Hon Nigel Scullion",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
         {
           "url": "https://www.facebook.com/SenatorNigelScullion",
@@ -4264,6 +4626,10 @@
         {
           "url": "https://www.facebook.com/SenatorGlennSterle",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -4273,6 +4639,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "00AOU",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/00AOU/upload_ref_binary/00AOU.jpg",
       "name": "Senator the Hon Penny Wong",
@@ -4299,10 +4666,21 @@
       ]
     },
     {
+      "email": "null",
       "id": "HZB",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/HZB/upload_ref_binary/HZB.JPG",
       "name": "Senator Catryna Bilyk",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.catrynabilyk.com",
           "note": "website"
@@ -4336,6 +4714,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "I0M",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/I0M/upload_ref_binary/I0M.JPG",
       "name": "Senator the Hon Michaelia Cash",
@@ -4349,6 +4728,10 @@
         {
           "url": "https://www.facebook.com/pages/Senator-Michaelia-Cash/204751982883846",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -4372,6 +4755,10 @@
         {
           "url": "https://www.facebook.com/Senator.Sarah.Hanson.Young",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -4395,6 +4782,10 @@
         {
           "url": "https://www.facebook.com/SenatorLudlam",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -4404,6 +4795,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "I0Q",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/I0Q/upload_ref_binary/I0Q.JPG",
       "name": "Senator the Hon Scott Ryan",
@@ -4414,6 +4806,10 @@
         }
       ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.scottryan.com.au",
           "note": "website"
@@ -4426,6 +4822,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "I0V",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/I0V/upload_ref_binary/I0V.JPG",
       "name": "Senator John Williams",
@@ -4436,6 +4833,10 @@
         }
       ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.johnwilliams.com.au/",
           "note": "website"
@@ -4460,6 +4861,10 @@
       ],
       "links": [
         {
+          "url": "null",
+          "note": "facebook"
+        },
+        {
           "url": "http://www.nickxenophon.com.au",
           "note": "website"
         }
@@ -4471,9 +4876,26 @@
       ]
     },
     {
+      "email": "null",
       "id": "GB6",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/GB6/upload_ref_binary/GB6.JPG",
       "name": "Senator the Hon Jacinta Collins",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
+      "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
+        }
+      ],
       "images": [
         {
           "url": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/GB6/upload_ref_binary/GB6.JPG"
@@ -4481,6 +4903,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "J7Q",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/j7q/upload_ref_binary/J7Q.JPG",
       "name": "Senator Chris Back",
@@ -4488,6 +4911,16 @@
         {
           "type": "twitter",
           "value": "https://twitter.com/senatorback"
+        }
+      ],
+      "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -4551,7 +4984,17 @@
       "id": "DYU",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/DYU/upload_ref_binary/DYU.jpg",
       "name": "Senator David Fawcett",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.senator.fawcett.net.au",
           "note": "website"
@@ -4572,6 +5015,16 @@
         {
           "type": "twitter",
           "value": "https://twitter.com/mceachian"
+        }
+      ],
+      "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -4595,6 +5048,10 @@
         {
           "url": "https://www.facebook.com/senatormckenzie",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -4608,10 +5065,20 @@
       "id": "217571",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/217571/upload_ref_binary/217571.jpg",
       "name": "Senator John Madigan",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
         {
           "url": "https://www.facebook.com/SenatorJohnMadigan",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -4635,6 +5102,10 @@
         {
           "url": "https://www.facebook.com/lee.rhiannon",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -4712,6 +5183,10 @@
         {
           "url": "https://www.facebook.com/larissawaters",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -4748,7 +5223,17 @@
       "id": "bv7",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/BV7/upload_ref_binary/bv7.jpg",
       "name": "Senator the Hon Arthur Sinodinos AO",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.arthursinodinos.com.au/",
           "note": "website"
@@ -4761,6 +5246,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "241710",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/241710/upload_ref_binary/241710.jpg",
       "name": "Senator Dean Smith",
@@ -4810,6 +5296,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "243273",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/243273/upload_ref_binary/243273.jpg",
       "name": "Senator Anne Ruston",
@@ -4823,6 +5310,10 @@
         {
           "url": "https://www.facebook.com/AnneRuston",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -4832,6 +5323,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "112096",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/112096/upload_ref_binary/112096.jpg",
       "name": "Senator Sue Lines",
@@ -4845,6 +5337,10 @@
         {
           "url": "https://www.facebook.com/SueLinesWA",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -4854,6 +5350,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "225099",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/225099/upload_ref_binary/225099.jpg",
       "name": "Senator Sam Dastyari",
@@ -4867,6 +5364,10 @@
         {
           "url": "https://www.facebook.com/senator.sam.dastyari",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -4876,6 +5377,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "CDK",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/CDK/upload_ref_binary/CDK.jpg",
       "name": "Senator Nova Peris OAM",
@@ -4902,6 +5404,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "HZE",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/HZE/upload_ref_binary/HZE.jpg",
       "name": "Senator Zed Seselja",
@@ -4915,6 +5418,10 @@
         {
           "url": "https://www.facebook.com/zed.seselja",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -4924,6 +5431,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "140651",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/140651/upload_ref_binary/140651.jpg",
       "name": "Senator Deborah O'Neill",
@@ -4937,6 +5445,10 @@
         {
           "url": "https://www.facebook.com/SenatorDebONeill",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -4946,13 +5458,24 @@
       ]
     },
     {
+      "email": "null",
       "id": "247871",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/247871/upload_ref_binary/247871.jpg",
       "name": "Senator Barry O'Sullivan",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
         {
           "url": "https://www.facebook.com/BarryOQLD",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -4962,9 +5485,26 @@
       ]
     },
     {
+      "email": "null",
       "id": "243237",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/243237/upload_ref_binary/243237.jpg",
       "name": "Senator Joe Bullock",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
+      "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
+        }
+      ],
       "images": [
         {
           "url": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/243237/upload_ref_binary/243237.jpg"
@@ -4986,6 +5526,10 @@
         {
           "url": "https://www.facebook.com/Canavan4Senate",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -5018,6 +5562,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "244247",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/244247/upload_ref_binary/244247.jpg",
       "name": "Senator Chris Ketter",
@@ -5031,6 +5576,10 @@
         {
           "url": "https://www.facebook.com/pages/Senator-Chris-Ketter/1429436547338406",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -5043,10 +5592,20 @@
       "id": "250026",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/250026/upload_ref_binary/250026.jpg",
       "name": "Senator Jacqui Lambie",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
         {
           "url": "https://www.facebook.com/senatorlambie",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -5069,6 +5628,10 @@
         {
           "url": "https://www.facebook.com/senatorlazarus",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -5101,6 +5664,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "217241",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/217241/upload_ref_binary/217241.jpg",
       "name": "Senator James McGrath",
@@ -5123,6 +5687,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "250024",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/250024/upload_ref_binary/250024.jpg",
       "name": "Senator Ricky Muir",
@@ -5136,6 +5701,10 @@
         {
           "url": "https://www.facebook.com/SenatorRickyMuir",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -5159,6 +5728,10 @@
         {
           "url": "https://www.facebook.com/LindaReynoldsWA",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -5168,6 +5741,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "155410",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/155410/upload_ref_binary/155410.jpg",
       "name": "Senator Janet Rice",
@@ -5181,6 +5755,10 @@
         {
           "url": "https://www.facebook.com/Janet.Rice.Greens",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -5190,13 +5768,24 @@
       ]
     },
     {
+      "email": "null",
       "id": "250045",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/250045/upload_ref_binary/250045.jpg",
       "name": "Senator Dio Wang",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
         {
           "url": "https://www.facebook.com/wangforsenate",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -5218,6 +5807,10 @@
       ],
       "links": [
         {
+          "url": "null",
+          "note": "facebook"
+        },
+        {
           "url": "http://www.stephenparry.com.au",
           "note": "website"
         }
@@ -5233,7 +5826,17 @@
       "id": "00AOP",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/00AOP/upload_ref_binary/00AOP.jpg",
       "name": "Senator Gavin Marshall",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.gavinmarshall.org/",
           "note": "website"
@@ -5250,7 +5853,17 @@
       "id": "2L6",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/2L6/upload_ref_binary/2L6.jpg",
       "name": "Senator Mark Bishop",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.senatormarkbishop.com.au",
           "note": "website"
@@ -5275,6 +5888,10 @@
       ],
       "links": [
         {
+          "url": "null",
+          "note": "facebook"
+        },
+        {
           "url": "http://www.ronboswell.com/",
           "note": "website"
         }
@@ -5298,6 +5915,10 @@
       ],
       "links": [
         {
+          "url": "null",
+          "note": "facebook"
+        },
+        {
           "url": "http://www.senatoralaneggleston.com/",
           "note": "website"
         }
@@ -5313,6 +5934,22 @@
       "id": "7L6",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/7L6/upload_ref_binary/7L6.JPG",
       "name": "Senator the Hon John Hogg",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
+      "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
+        }
+      ],
       "images": [
         {
           "url": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/7L6/upload_ref_binary/7L6.JPG"
@@ -5332,6 +5969,10 @@
       ],
       "links": [
         {
+          "url": "null",
+          "note": "facebook"
+        },
+        {
           "url": "http://www.ursulastephens.com/",
           "note": "website"
         }
@@ -5347,6 +5988,22 @@
       "id": "183342",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/183342/upload_ref_binary/183342.jpg",
       "name": "Senator the Hon Lin Thorp",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
+      "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
+        }
+      ],
       "images": [
         {
           "url": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/183342/upload_ref_binary/183342.jpg"
@@ -5354,9 +6011,16 @@
       ]
     },
     {
+      "email": "null",
       "id": "I0P",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/I0P/upload_ref_binary/I0P.JPG",
       "name": "Senator Mark Furner",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
         {
           "url": "https://www.facebook.com/senatormarkfurner",
@@ -5374,6 +6038,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "H6V",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/H6V/upload_ref_binary/H6V.jpg",
       "name": "Senator Sue Boyce",
@@ -5384,6 +6049,10 @@
         }
       ],
       "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
         {
           "url": "http://www.sueboyce.com.au/",
           "note": "website"
@@ -5396,13 +6065,24 @@
       ]
     },
     {
+      "email": "null",
       "id": "I0N",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/I0N/upload_ref_binary/I0N.JPG",
       "name": "Senator the Hon Don Farrell",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
         {
           "url": "https://www.facebook.com/pages/Senator-Don-Farrell/516285871759553",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -5412,13 +6092,24 @@
       ]
     },
     {
+      "email": "null",
       "id": "G1N",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/G1N/upload_ref_binary/G1N.JPG",
       "name": "Senator Helen Kroger",
+      "contact_details": [
+        {
+          "type": "twitter",
+          "value": "null"
+        }
+      ],
       "links": [
         {
           "url": "https://www.facebook.com/pages/Senator-Helen-Kroger/121783847876832",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -5428,6 +6119,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "I0T",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/I0T/upload_ref_binary/I0T.JPG",
       "name": "Senator Louise Pratt",
@@ -5441,6 +6133,10 @@
         {
           "url": "https://www.facebook.com/SenatorLouisePratt",
           "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -5450,6 +6146,7 @@
       ]
     },
     {
+      "email": "null",
       "id": "249499",
       "image": "http://parlinfo.aph.gov.au/parlInfo/download/handbook/allmps/249499/upload_ref_binary/249499.jpg",
       "name": "Senator Mehmet Tillem",
@@ -5457,6 +6154,16 @@
         {
           "type": "twitter",
           "value": "https://twitter.com/MehmetTillem"
+        }
+      ],
+      "links": [
+        {
+          "url": "null",
+          "note": "facebook"
+        },
+        {
+          "url": "null",
+          "note": "website"
         }
       ],
       "images": [
@@ -5468,76 +6175,64 @@
   ],
   "organizations": [
     {
-      "id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "name": "Liberal Party of Australia",
       "classification": "party"
     },
     {
-      "id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "name": "Australian Labor Party",
       "classification": "party"
     },
     {
-      "id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
+      "id": "party/ab684772-f278-47b3-9864-2ca9adb54027",
       "name": "The Nationals",
       "classification": "party"
     },
     {
-      "id": "party/478106f2-aaba-4b8b-8711-f365d1c14f35",
+      "id": "party/81b8b2dc-d317-41a7-b32f-9599a417bb90",
       "name": "Katter's Australian Party",
       "classification": "party"
     },
     {
-      "id": "party/6ba13769-8df6-4acb-b45a-560c394274e7",
+      "id": "party/5b5cf88f-7a1e-4eaa-85de-4476c2ebea0b",
       "name": "Independent",
       "classification": "party"
     },
     {
-      "id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
+      "id": "party/ea1e7a9a-1369-4fce-9307-39b0f581ae5f",
       "name": "Australian Greens",
       "classification": "party"
     },
     {
-      "id": "party/ff689ce2-f82e-4c55-9ad7-c963f2635f8c",
+      "id": "party/bb6bb990-a6f6-4047-9ee2-3465684c4b84",
       "name": "Country Liberal Party",
       "classification": "party"
     },
     {
-      "id": "party/0afaf53b-5a67-4320-9d6f-8136e29ab846",
+      "id": "party/e943cfc1-6e56-4af3-bc26-76e4d5c8e238",
       "name": "Palmer United Party",
       "classification": "party"
     },
     {
-      "id": "party/9b8e8aac-684b-4475-9554-019a7e901d16",
+      "id": "party/f98197f0-52e8-4d1d-8470-179177a1ab32",
       "name": "Democratic Labour Party",
       "classification": "party"
     },
     {
-      "id": "party/7a86caf3-6783-4c9b-9697-9d4a412f30f0",
+      "id": "party/a05c87e6-9723-4838-9328-c48fa654dffc",
       "name": "Family First Party",
       "classification": "party"
     },
     {
-      "id": "party/313c2480-0c0a-48cc-92a7-af88d48fcd34",
+      "id": "party/fd08db88-b152-4491-bf68-393fda3f36fc",
       "name": "Liberal Democratic Party",
       "classification": "party"
     },
     {
-      "id": "party/ff0df69a-fad1-4d2b-ac25-2d3a6ef63027",
+      "id": "party/2346505e-3f83-4d77-b5f1-33e7780d26b4",
       "name": "Australian Motoring Enthusiast Party",
       "classification": "party"
-    },
-    {
-      "id": "chamber/representatives",
-      "name": "House of Representatives",
-      "classification": "chamber",
-      "parent_id": "legislature"
-    },
-    {
-      "id": "chamber/senate",
-      "name": "Senate",
-      "classification": "chamber",
-      "parent_id": "legislature"
     },
     {
       "id": "legislature",
@@ -5547,8 +6242,8 @@
         {
           "id": "term/44",
           "name": "44th Parliament",
-          "start_date": "2013-09-07",
-          "classification": "legislative period"
+          "classification": "legislative period",
+          "start_date": "2013-09-07"
         }
       ]
     }
@@ -5556,1668 +6251,1668 @@
   "memberships": [
     {
       "person_id": "EZ5",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "R36",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HK5",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "LL6",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "1K6",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "DZP",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "83P",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "MT4",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "DYW",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HWK",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "008K0",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HW9",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "00AN0",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HWL",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "00AN1",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
+      "on_behalf_of_id": "party/ab684772-f278-47b3-9864-2ca9adb54027",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HWM",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HWN",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
+      "on_behalf_of_id": "party/ab684772-f278-47b3-9864-2ca9adb54027",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "WF6",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HWG",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "00AKI",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "DZW",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "DZU",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "8K6",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "8W5",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "VU5",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "83N",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "00AMM",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
+      "on_behalf_of_id": "party/ab684772-f278-47b3-9864-2ca9adb54027",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HWO",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "DK6",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "00AMV",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HYM",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "DYN",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HX4",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/478106f2-aaba-4b8b-8711-f365d1c14f35",
+      "on_behalf_of_id": "party/81b8b2dc-d317-41a7-b32f-9599a417bb90",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "E0J",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "00AMR",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "E0H",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "00AMN",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "WN6",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "PG6",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HWP",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HWQ",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "E3L",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HVO",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "00AN3",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "E09",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HWR",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HVP",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "83M",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "9V5",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HWS",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "PK6",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "83E",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HWA",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "FU4",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HWT",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "0J4",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "00ATG",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HWE",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "00APG",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "IJ4",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "TK6",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "EM6",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "2V5",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "UK6",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "GT4",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
+      "on_behalf_of_id": "party/ab684772-f278-47b3-9864-2ca9adb54027",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "885",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "00AMT",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HWB",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "IPZ",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
+      "on_behalf_of_id": "party/ab684772-f278-47b3-9864-2ca9adb54027",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "IYU",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "L6B",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "LKU",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "M3M",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "230485",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
+      "on_behalf_of_id": "party/ab684772-f278-47b3-9864-2ca9adb54027",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "C2T",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/6ba13769-8df6-4acb-b45a-560c394274e7",
+      "on_behalf_of_id": "party/5b5cf88f-7a1e-4eaa-85de-4476c2ebea0b",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "139441",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
+      "on_behalf_of_id": "party/ab684772-f278-47b3-9864-2ca9adb54027",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "188315",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "M3A",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "7K6",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "M2X",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "E07",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "M3E",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "M3C",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
+      "on_behalf_of_id": "party/ea1e7a9a-1369-4fce-9307-39b0f581ae5f",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "220370",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/ff689ce2-f82e-4c55-9ad7-c963f2635f8c",
+      "on_behalf_of_id": "party/bb6bb990-a6f6-4047-9ee2-3465684c4b84",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "30540",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "M2V",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "A9B",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "FKL",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "210911",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "219646",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
+      "on_behalf_of_id": "party/ab684772-f278-47b3-9864-2ca9adb54027",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "ECV",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "96430",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "230886",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "BU8",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "M2Y",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "91219",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "99931",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "159771",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "8T4",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "DZS",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "230531",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "217266",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "E0D",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "9K6",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "YT4",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
+      "on_behalf_of_id": "party/ab684772-f278-47b3-9864-2ca9adb54027",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "241067",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "240756",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "250077",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "137174",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "I0O",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "249710",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "207800",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "249764",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
+      "on_behalf_of_id": "party/ab684772-f278-47b3-9864-2ca9adb54027",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "249127",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "ZN4",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "242515",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "241589",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "249308",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "00BCM",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "2K6",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "193430",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "241586",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "249758",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "148150",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
+      "on_behalf_of_id": "party/ab684772-f278-47b3-9864-2ca9adb54027",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "140590",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "231027",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "123674",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/6ba13769-8df6-4acb-b45a-560c394274e7",
+      "on_behalf_of_id": "party/5b5cf88f-7a1e-4eaa-85de-4476c2ebea0b",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "182468",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "E0F",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "249224",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "165476",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "72184",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
+      "on_behalf_of_id": "party/ab684772-f278-47b3-9864-2ca9adb54027",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "212585",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "30379",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
+      "on_behalf_of_id": "party/ab684772-f278-47b3-9864-2ca9adb54027",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "74046",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "E5D",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
+      "on_behalf_of_id": "party/ab684772-f278-47b3-9864-2ca9adb54027",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "248181",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "198084",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "218019",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
+      "on_behalf_of_id": "party/ab684772-f278-47b3-9864-2ca9adb54027",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "208884",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "L6P",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "247742",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "37998",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "247130",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "241590",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "243609",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "83S",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "SE4",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "LQR",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/0afaf53b-5a67-4320-9d6f-8136e29ab846",
+      "on_behalf_of_id": "party/e943cfc1-6e56-4af3-bc26-76e4d5c8e238",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "248006",
-      "organization_id": "chamber/representatives",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "N26",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "G0D",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "H6X",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "008W7",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "F49",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HLL",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "AW5",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "00AOL",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "3L6",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HDA",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "5K4",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "e4t",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "D2I",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "C16",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "00AON",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "84N",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "7G6",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "YW4",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "84M",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "e5e",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "84L",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "ka5",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
+      "on_behalf_of_id": "party/ea1e7a9a-1369-4fce-9307-39b0f581ae5f",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "00AOQ",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "e5g",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
+      "on_behalf_of_id": "party/ab684772-f278-47b3-9864-2ca9adb54027",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "M56",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "e5x",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "xt4",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "00AOM",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/ff689ce2-f82e-4c55-9ad7-c963f2635f8c",
+      "on_behalf_of_id": "party/bb6bb990-a6f6-4047-9ee2-3465684c4b84",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "e5z",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
+      "on_behalf_of_id": "party/ea1e7a9a-1369-4fce-9307-39b0f581ae5f",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "e68",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "00AOU",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HZB",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "AI6",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "I0M",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "I0U",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
+      "on_behalf_of_id": "party/ea1e7a9a-1369-4fce-9307-39b0f581ae5f",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "I07",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
+      "on_behalf_of_id": "party/ea1e7a9a-1369-4fce-9307-39b0f581ae5f",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "I0Q",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "I0V",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
+      "on_behalf_of_id": "party/ab684772-f278-47b3-9864-2ca9adb54027",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "8IV",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/6ba13769-8df6-4acb-b45a-560c394274e7",
+      "on_behalf_of_id": "party/5b5cf88f-7a1e-4eaa-85de-4476c2ebea0b",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "GB6",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "J7Q",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "53369",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
+      "on_behalf_of_id": "party/ea1e7a9a-1369-4fce-9307-39b0f581ae5f",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "225307",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "DYU",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "204953",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "207825",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
+      "on_behalf_of_id": "party/ab684772-f278-47b3-9864-2ca9adb54027",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "217571",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/9b8e8aac-684b-4475-9554-019a7e901d16",
+      "on_behalf_of_id": "party/f98197f0-52e8-4d1d-8470-179177a1ab32",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "CPR",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
+      "on_behalf_of_id": "party/ea1e7a9a-1369-4fce-9307-39b0f581ae5f",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "M0R",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "231199",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "192970",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
+      "on_behalf_of_id": "party/ea1e7a9a-1369-4fce-9307-39b0f581ae5f",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "200287",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
+      "on_behalf_of_id": "party/ea1e7a9a-1369-4fce-9307-39b0f581ae5f",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "bv7",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "241710",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "195565",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
+      "on_behalf_of_id": "party/ea1e7a9a-1369-4fce-9307-39b0f581ae5f",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "243273",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "112096",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "225099",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "CDK",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HZE",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "140651",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "247871",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
+      "on_behalf_of_id": "party/ab684772-f278-47b3-9864-2ca9adb54027",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "243237",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "245212",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
+      "on_behalf_of_id": "party/ab684772-f278-47b3-9864-2ca9adb54027",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "HYG",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/7a86caf3-6783-4c9b-9697-9d4a412f30f0",
+      "on_behalf_of_id": "party/a05c87e6-9723-4838-9328-c48fa654dffc",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "244247",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "250026",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/0afaf53b-5a67-4320-9d6f-8136e29ab846",
+      "on_behalf_of_id": "party/e943cfc1-6e56-4af3-bc26-76e4d5c8e238",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "108616",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/0afaf53b-5a67-4320-9d6f-8136e29ab846",
+      "on_behalf_of_id": "party/e943cfc1-6e56-4af3-bc26-76e4d5c8e238",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "111206",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/313c2480-0c0a-48cc-92a7-af88d48fcd34",
+      "on_behalf_of_id": "party/fd08db88-b152-4491-bf68-393fda3f36fc",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "217241",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "250024",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/ff0df69a-fad1-4d2b-ac25-2d3a6ef63027",
+      "on_behalf_of_id": "party/2346505e-3f83-4d77-b5f1-33e7780d26b4",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "250216",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "155410",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/d10bf43e-ee08-4025-9925-05f83ffd586f",
+      "on_behalf_of_id": "party/ea1e7a9a-1369-4fce-9307-39b0f581ae5f",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "250045",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/0afaf53b-5a67-4320-9d6f-8136e29ab846",
+      "on_behalf_of_id": "party/e943cfc1-6e56-4af3-bc26-76e4d5c8e238",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "e5v",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "00AOP",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "2L6",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "YE4",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/c37ae9d1-0256-4389-8808-9dbcf9af34b8",
+      "on_behalf_of_id": "party/ab684772-f278-47b3-9864-2ca9adb54027",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "4L6",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "7L6",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "00AOS",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "183342",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "I0P",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "H6V",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "I0N",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "G1N",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/28a2020c-c658-45e1-a096-c0dbf01119bb",
+      "on_behalf_of_id": "party/0bea7f0a-a46a-4c60-adba-9ebf1a7fe9bb",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "I0T",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     },
     {
       "person_id": "249499",
-      "organization_id": "chamber/senate",
+      "organization_id": "legislature",
       "role": "member",
-      "on_behalf_of_id": "party/08ecb7b5-1822-4ffd-8b17-2434da7cc6ea",
+      "on_behalf_of_id": "party/ec823ffc-68a0-4b06-81da-e0d2def57135",
       "legislative_period_id": "term/44"
     }
   ],
