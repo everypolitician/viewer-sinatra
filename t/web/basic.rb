@@ -20,7 +20,7 @@ describe "Viewer" do
     before { get '/' }
 
     it "should have show some text" do
-      last_response.body.must_include 'PopIt Viewer'
+      last_response.body.must_include 'EveryPolitician'
     end
 
   end

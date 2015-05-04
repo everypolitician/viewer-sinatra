@@ -49,6 +49,10 @@ describe "Per Country Tests" do
       subject.css('#term h1').text.must_include 'Eduskunta 35 (2007)'
     end
 
+    it "should have the correct page title" do
+      subject.css('title').text.must_equal 'Eduskunta 35 (2007)'
+    end
+
     it "should list the parties" do
       subject.css('.term-membership-table').text.must_include 'Finnish Centre Party'
     end
@@ -90,7 +94,6 @@ describe "Per Country Tests" do
       subject.css('a.button').text.downcase.wont_include 'eduskunta'
     end
 
-
   end
 
   describe "Australia" do
@@ -107,6 +110,10 @@ describe "Per Country Tests" do
 
     it "should have a button with the house name" do
       subject.css('a.button').text.downcase.must_include 'senate'
+    end
+
+    it "should have the correct page title" do
+      subject.css('title').text.must_equal '44th Parliament'
     end
 
   end
