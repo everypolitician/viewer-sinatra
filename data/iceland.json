@@ -1,0 +1,4106 @@
+{
+  "persons": [
+    {
+      "id": "person/aea6fc86-0fd1-4b6d-b062-2ec5baea989b",
+      "name": "Frosti Sigurjónsson"
+    },
+    {
+      "id": "person/87e09647-9546-469e-9de2-849af85b8137",
+      "name": "Brynjar Þór Níelsson"
+    },
+    {
+      "id": "person/49c28f6b-4b8e-4533-883d-9ef8250bd484",
+      "name": "Björt Ólafsdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Bj%C3%B6rt_%C3%93lafsd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/83c7c3d0-2731-4e15-b59c-7cdfcb88e3cd",
+      "name": "Sigrún Magnúsdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Sigr%C3%BAn_Magn%C3%BAsd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/3b838f7e-ef84-41fc-bb94-ce05947aec8e",
+      "name": "Árni Þór Sigurðsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%81rni_%C3%9E%C3%B3r_Sigur%C3%B0sson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/b9fdd34b-9b4d-4e0c-833e-941591ab5376",
+      "name": "Helgi Hrafn Gunnarsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Helgi_Hrafn_Gunnarsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/78caed9f-e6cc-4da4-a4f2-d712fa2d7f66",
+      "name": "Hanna B. Kristjánsdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Hanna_Birna_Kristj%C3%A1nsd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/af9e36b6-d847-425d-94e6-4df9b242ffbd",
+      "name": "Sigríður I. Ingadóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Sigr%C3%AD%C3%B0ur_Ingibj%C3%B6rg_Ingad%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/d28a3b88-c2dc-4eff-94c9-ebb7a2fd28ff",
+      "name": "Pétur H. Blöndal",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/P%C3%A9tur_H._Bl%C3%B6ndal",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/89efe83f-3bda-432e-a410-8b4e01382487",
+      "name": "Guðlaugur Þór Þórðarson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Gu%C3%B0laugur_%C3%9E%C3%B3r_%C3%9E%C3%B3r%C3%B0arson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/26c0d070-ad5d-43e9-9ecc-c23683544c03",
+      "name": "Karl Garðarsson"
+    },
+    {
+      "id": "person/def7fd9d-9f04-455e-8e76-a12eb5998bcb",
+      "name": "Jón Þór Ólafsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/J%C3%B3n_%C3%9E%C3%B3r_%C3%93lafsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/d9858311-2f14-4aa9-a07e-be580256a98f",
+      "name": "Óttarr Proppé",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%93ttarr_Propp%C3%A9",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/492c704a-0e6d-4aa2-9408-cdd4c8a63bc2",
+      "name": "Árni Páll Árnason",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%81rni_P%C3%A1ll_%C3%81rnason",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/1f6f2b27-c71c-47f2-ad9b-16458c13472a",
+      "name": "Willum Þór Þórsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Willum_%C3%9E%C3%B3r_%C3%9E%C3%B3rsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/34440bd1-2875-4e65-888d-4d3dc6c5bfb8",
+      "name": "Vilhjálmur Bjarnason"
+    },
+    {
+      "id": "person/7fddaaaf-d768-43a9-bc6d-3e66f69a4ab4",
+      "name": "Þorsteinn Sæmundsson"
+    },
+    {
+      "id": "person/9a88e6a2-83c5-4832-844f-3e832c0df11c",
+      "name": "Elín Hirst",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/El%C3%ADn_Hirst",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/3aa31434-adf1-4710-b48c-02f9670b444a",
+      "name": "Gunnar Bragi Sveinsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Gunnar_Bragi_Sveinsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/fae3cf33-9c94-4226-a41c-94891bbf7b64",
+      "name": "Einar K. Guðfinnsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Einar_K._Gu%C3%B0finnsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/e0d93583-029a-48c1-a338-2c1e1ea97698",
+      "name": "Ásmundur Einar Daðason",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%81smundur_Einar_Da%C3%B0ason",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/907c86d7-720d-4fa4-bdfb-8a76116cca44",
+      "name": "Haraldur Benediktsson"
+    },
+    {
+      "id": "person/94aa97b3-6019-4d71-b75d-32de5c438b3d",
+      "name": "Elsa Lára Arnardóttir"
+    },
+    {
+      "id": "person/bf74a597-cddc-4edc-a430-a1f315826bb4",
+      "name": "Jóhanna M. Sigmundsdóttir"
+    },
+    {
+      "id": "person/33aa5f4a-b701-487d-a867-da33b3007728",
+      "name": "Lilja R. Magnúsdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Lilja_Rafney_Magn%C3%BAsd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/549cdf4b-0891-47d1-b380-4e109c823422",
+      "name": "Sigmundur D. Gunnlaugsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Sigmundur_Dav%C3%AD%C3%B0_Gunnlaugsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/ed2402eb-fd5e-4529-a1df-ada4f8d100db",
+      "name": "Kristján Þór Júlíusson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Kristj%C3%A1n_%C3%9E%C3%B3r_J%C3%BAl%C3%ADusson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/fadb4c4e-30ea-4cfe-bd43-fc881ed550b5",
+      "name": "Höskuldur Þór Þórhallsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/H%C3%B6skuldur_%C3%9E%C3%B3r_%C3%9E%C3%B3rhallsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/b80d6544-e723-45bb-9c7e-ae5e55554249",
+      "name": "Steingrímur J. Sigfússon",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Steingr%C3%ADmur_J._Sigf%C3%BAsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/4cf03bd0-dc49-497d-9b14-7106d3019cff",
+      "name": "Líneik Anna Sævarsdóttir"
+    },
+    {
+      "id": "person/7a2331a8-53ab-4ee5-8fc4-26ba7642d0b6",
+      "name": "Valgerður Gunnarsdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Valger%C3%B0ur_Gunnarsd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/ce04b9ec-9e07-4ceb-bf4a-e34f0a423f1b",
+      "name": "Kristján L. Möller",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Kristj%C3%A1n_L._M%C3%B6ller",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/ca841257-3389-4943-a5f3-9aab00c10708",
+      "name": "Þórunn Egilsdóttir"
+    },
+    {
+      "id": "person/70d2d02c-780f-4749-810a-2c359121da95",
+      "name": "Bjarkey Gunnarsdóttir"
+    },
+    {
+      "id": "person/e0e605d3-5879-4d66-99d8-ddf558e47db5",
+      "name": "Brynhildur Pétursdóttir"
+    },
+    {
+      "id": "person/675c2c1f-9b90-47e9-b963-2ac2eee4d1a1",
+      "name": "Sigurður I. Jóhannsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Sigur%C3%B0ur_Ingi_J%C3%B3hannsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/b874fe01-7215-4e21-9624-91c8ce4d7095",
+      "name": "Ragnheiður E. Árnadóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Ragnhei%C3%B0ur_El%C3%ADn_%C3%81rnad%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/ee3d02aa-f103-4163-9a3a-61c0d26584bc",
+      "name": "Silja Dögg Gunnarsdóttir"
+    },
+    {
+      "id": "person/3b2cbc08-b1e0-4e2a-aae3-6d88f2ea8511",
+      "name": "Unnur Brá Konráðsdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Unnur_Br%C3%A1_Konr%C3%A1%C3%B0sd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/79e037fb-4e62-4792-abe6-299e3de649b9",
+      "name": "Páll Jóhann Pálsson"
+    },
+    {
+      "id": "person/d8e8dd13-87cf-4af8-b428-7bfe1b8005b2",
+      "name": "Oddný G. Harðardóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Oddn%C3%BD_G._Har%C3%B0ard%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/8ff31b7b-3cf4-4f3e-9de0-5b10074508bf",
+      "name": "Ásmundur Friðriksson"
+    },
+    {
+      "id": "person/6688a803-30c5-4edf-9381-8a9db07b9355",
+      "name": "Haraldur Einarsson"
+    },
+    {
+      "id": "person/ce8cc5f8-0bb1-4a4e-939a-ec709d403241",
+      "name": "Vilhjálmur Árnason",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Vilhj%C3%A1lmur_%C3%81rnason",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/9dfab559-8b39-4a22-9bd1-c44f076b4eef",
+      "name": "Páll Valur Björnsson"
+    },
+    {
+      "id": "person/c9e9a72a-3bf7-4d7f-a915-7ae9a81dea50",
+      "name": "Egill Jónsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/22784924-056e-4efd-a755-40005af4dd99",
+      "name": "Friðrik Sophusson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Fri%C3%B0rik_Sophusson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/b5ff8574-df65-4a9f-bd6a-01d07bc620c6",
+      "name": "Gunnlaugur Sigmundsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/c033cbab-4f34-4b59-a799-ce53903952d5",
+      "name": "Guðmundur Bjarnason",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/6887cb96-3024-43df-ab5a-8021e37cbb9e",
+      "name": "Guðný Guðbjörnsdóttir",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/274412ac-08c1-4cef-a1bf-f5c063cae329",
+      "name": "Hjörleifur Guttormsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Hj%C3%B6rleifur_Guttormsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/6d71d513-011d-4364-b4ed-e53fcb128695",
+      "name": "Jón Hannibalsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/J%C3%B3n_Baldvin_Hannibalsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/5e37740b-80b0-4395-89a3-bc6b410c0411",
+      "name": "Kristín Halldórsdóttir",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/92ebfc43-1ee6-4aab-83ff-ea7be1cb6d3d",
+      "name": "Kristín Ástgeirsdóttir",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/cdda42c2-5c97-4895-ac94-e336b16ba8c0",
+      "name": "Ragnar Arnalds",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Ragnar_Arnalds",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/ffa405e8-879d-4f39-8b85-fb5429783a98",
+      "name": "Stefán Guðmundsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/185e8b80-bfea-4edb-9f25-b7f44d954ccf",
+      "name": "Svavar Gestsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Svavar_Gestsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/41aca5f5-98a2-4c6b-8fe7-4d1f73ac0828",
+      "name": "Ágúst Einarsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/b2ad288b-6354-4e77-920f-a437f03b3ffb",
+      "name": "Ólafur Einarsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%93lafur_Einarsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/7a2eb929-7568-4645-8c30-a1d204b23090",
+      "name": "Ólafur Grímsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%93lafur_Ragnar_Gr%C3%ADmsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/a70b990b-1d47-4980-bce4-0e31b9458c6b",
+      "name": "Þorsteinn Pálsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%9Eorsteinn_P%C3%A1lsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/62a39a93-d3e3-4897-86c5-a0f911e699d3",
+      "name": "Finnur Ingólfsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Finnur_Ing%C3%B3lfsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/e5707673-cdb7-4566-a0ed-d64e854aae67",
+      "name": "Guðjón Guðmundsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/441e092f-024a-40da-9cf2-d19beb4b3e87",
+      "name": "Gísli Einarsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/e861bde4-79c1-4425-9cbe-5aaeea2b38af",
+      "name": "Hjálmar Jónsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/87ef2a76-f64b-4201-8320-f168afa63cd9",
+      "name": "Sigríður Ingvarsdóttir"
+    },
+    {
+      "id": "person/e34376fd-063b-4739-92f9-0a6e6df6de04",
+      "name": "Ingibjörg Pálmadóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Ingibj%C3%B6rg_P%C3%A1lmad%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/60313371-99e4-4125-909f-2e9a0d19444e",
+      "name": "Katrín Fjeldsted",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Katr%C3%ADn_Fjeldsted",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/1b4ef436-afc2-4e0a-8a8c-f7ad0c6d2846",
+      "name": "Kristján Pálsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/42aaee86-f1c1-403a-812b-c13ff18eedaa",
+      "name": "Lára Ragnarsdóttir",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/b14dbb38-5727-44f4-88bb-f264c601668b",
+      "name": "Páll Pétursson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/P%C3%A1ll_P%C3%A9tursson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/0cea0f9d-3d9c-49f5-a5d5-059c47f51108",
+      "name": "Sighvatur Björgvinsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Sighvatur_Bj%C3%B6rgvinsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/50ab0a36-bea7-464c-b63d-86c78b93927b",
+      "name": "Sigríður Jóhannesdóttir",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/66a64c14-b2c2-4bac-ba14-933228caf219",
+      "name": "Svanfríður Jónasdóttir",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/d6906f84-407c-4d5a-99ea-6f3b44aef6df",
+      "name": "Sverrir Hermannsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Sverrir_Hermannsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/2a86becb-ec95-459d-8e40-66439cf4c34f",
+      "name": "Vilhjálmur Egilsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/06680ee6-cbaa-49f7-af00-344b349eaf23",
+      "name": "Adolf Berndsen"
+    },
+    {
+      "id": "person/257019bd-a4d8-4348-a60d-ffdc830568ad",
+      "name": "Árni Jóhannsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/91399dd2-6bae-4a57-94e5-95b236c21e41",
+      "name": "Ísólfur Pálmason",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/dd254171-315d-4fd5-b1c3-d488e8999592",
+      "name": "Ólafur Haraldsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/d414c928-fa09-4841-9c88-cd0911d870a0",
+      "name": "Anna Gunnarsdóttir",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/20be8e03-9a05-4cf2-ae9f-e4a71e20e1bf",
+      "name": "Bryndís Hlöðversdóttir",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/4bac8ed4-2c60-41a6-aa49-cff8cd41395b",
+      "name": "Dagný Jónsdóttir",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/5ea780db-e9df-4c63-b872-5424f866e507",
+      "name": "Davíð Oddsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Dav%C3%AD%C3%B0_Oddsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/76ff0a1e-9dd6-45a5-87a3-a891892253a3",
+      "name": "Drífa Hjartardóttir",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/6bdc2212-d7f4-4e10-b7c0-e01add2c9251",
+      "name": "Gunnar Birgisson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Gunnar_Birgisson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/72073a67-b661-4b0c-8ab5-28aff721c348",
+      "name": "Sigurrós Þorgrímsdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Sigurr%C3%B3s_%C3%9Eorgr%C3%ADmsd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/94d8f58b-4336-44c1-9aaf-ccb4db4833bf",
+      "name": "Gunnar Örlygsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/9f277a24-b219-48a8-b29b-e01b9d180bfd",
+      "name": "Guðjón Hjörleifsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/ed87b2b0-c3dc-4cdb-a800-feeb9939590c",
+      "name": "Guðmundur Hallvarðsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/ba9ae8da-64d0-466b-bbfd-255b5452834e",
+      "name": "Guðmundur Stefánsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Gu%C3%B0mundur_%C3%81rni_Stef%C3%A1nsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/1afaa8c6-b484-4a56-a989-f41d131f204d",
+      "name": "Valdimar Friðriksson"
+    },
+    {
+      "id": "person/e933e995-0097-44c1-9789-5145d1305570",
+      "name": "Guðrún Ögmundsdóttir",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/b74da199-5373-4c83-8fe5-497577adc1ff",
+      "name": "Halldór Blöndal",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Halld%C3%B3r_Bl%C3%B6ndal",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/3d96c132-0b38-42ed-a145-a77ca6aaafb6",
+      "name": "Halldór Ásgrímsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Halld%C3%B3r_%C3%81sgr%C3%ADmsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/167c51f9-52bf-4a11-886b-5c92844b9f1c",
+      "name": "Guðjón Jónsson"
+    },
+    {
+      "id": "person/fb47bc9d-eb4d-4c46-8dca-101af5e41b76",
+      "name": "Hjálmar Árnason",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/0ee6fb51-6a16-412d-9368-d938ec7b76d1",
+      "name": "Jóhann Ársælsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/14a6157a-5443-40af-bda6-e753ca7ab069",
+      "name": "Jón Kristjánsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/J%C3%B3n_Kristj%C3%A1nsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/913cafb4-0cdb-4298-8328-86aaffff5ce2",
+      "name": "Jónína Bjartmarz",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/J%C3%B3n%C3%ADna_Bjartmarz",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/fe957291-5f50-4bca-b9cb-974dd704dc37",
+      "name": "Magnús Hafsteinsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Magn%C3%BAs_%C3%9E%C3%B3r_Hafsteinsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/c8cfeda1-46a2-408d-8df1-a1d7bb0192c4",
+      "name": "Margrét Frímannsdóttir",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/89830761-58ea-4990-92ed-5fd0eac598f7",
+      "name": "Rannveig Guðmundsdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Rannveig_Gu%C3%B0mundsd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/196940a8-f5e9-48c6-85d1-b2db65476829",
+      "name": "Sigríður Þórðardóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Sigr%C3%AD%C3%B0ur_Anna_%C3%9E%C3%B3r%C3%B0ard%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/7239f9f1-6c18-47dc-9b83-e3a592a74af5",
+      "name": "Sigurjón Þórðarson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Sigurj%C3%B3n_%C3%9E%C3%B3r%C3%B0arson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/820f64f6-5741-43cb-a358-6575988fcadd",
+      "name": "Sólveig Pétursdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/S%C3%B3lveig_P%C3%A9tursd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/d824a707-d638-410c-a860-a83b515e89e6",
+      "name": "Tómas Olrich",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/T%C3%B3mas_Ingi_Olrich",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/2a0be90a-e35d-4374-a3ba-8a6695442431",
+      "name": "Árni Magnússon",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%81rni_Magn%C3%BAsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/d35fa56a-3ffd-406b-871d-f9e56169a0c3",
+      "name": "Sæunn Stefánsdóttir"
+    },
+    {
+      "id": "person/3e87fba7-08f5-4af5-a4c8-9a41921d32a3",
+      "name": "Arnbjörg Sveinsdóttir",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/38552220-1ff5-48ba-985a-c41d1eaf81bb",
+      "name": "Bjarni Harðarson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Bjarni_Har%C3%B0arson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/c7476a2a-9c6f-48c1-a163-784968991ea0",
+      "name": "Helga Harðardóttir"
+    },
+    {
+      "id": "person/4ad760a0-9912-4949-8bca-4642b0d05c4b",
+      "name": "Björk Guðjónsdóttir",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/7ba93a62-7dae-47dd-a282-7bc4f8e22bbc",
+      "name": "Björn Bjarnason",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Bj%C3%B6rn_Bjarnason",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/5576e92a-6eff-45b4-9e9e-b78d18b4f8a4",
+      "name": "Einar Sigurðsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/fa036e35-16c3-4cde-b5a4-976265ccbb6d",
+      "name": "Ellert Schram",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/80f412a9-c08f-446c-adb9-bfeb45f5b02f",
+      "name": "Geir Haarde",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Geir_H._Haarde",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/76c8c093-9197-4aa4-a425-d694b73b534a",
+      "name": "Grétar Jónsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/cc108a50-da8b-4133-995b-031aeef9f2b1",
+      "name": "Gunnar Svavarsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/e6482ba8-7cc2-42fb-b3bd-659c1cc6fb24",
+      "name": "Guðfinna Bjarnadóttir",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/be681851-7cec-4000-b4ae-ce17845125ec",
+      "name": "Guðni Ágústsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Gu%C3%B0ni_%C3%81g%C3%BAstsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/cf2cd8e1-dcdb-4a75-9003-a245a748a227",
+      "name": "Ingibjörg Gísladóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Ingibj%C3%B6rg_S%C3%B3lr%C3%BAn_G%C3%ADslad%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/5a27ed10-1ca4-4157-8147-7e5b1a24df27",
+      "name": "Jón Magnússon",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/J%C3%B3n_Magn%C3%BAsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/ea4cbf15-d679-4755-a8dc-eb7c6252af07",
+      "name": "Karl Matthíasson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/11806f7d-5c3d-4a7a-a7e3-b73f0aef40ea",
+      "name": "Kjartan Ólafsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Kjartan_%C3%93lafsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/24025730-f39b-49b2-adb1-7fc8de15b915",
+      "name": "Kolbrún Halldórsdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Kolbr%C3%BAn_Halld%C3%B3rsd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/851b59f5-1611-446d-865c-c2e9c274a034",
+      "name": "Kristinn Gunnarsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/cdb3128d-33de-4bfb-87e2-704fccd01446",
+      "name": "Lúðvík Bergvinsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/38b1bb38-5523-405a-82eb-c764b6cb4939",
+      "name": "Magnús Stefánsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Magn%C3%BAs_Stef%C3%A1nsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/5d9b898a-6b53-4c5f-a0d9-3a07ce80e078",
+      "name": "Sigurður Kristjánsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Sigur%C3%B0ur_K%C3%A1ri_Kristj%C3%A1nsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/e28426da-22e0-46a2-a869-e552eaca69b9",
+      "name": "Sturla Böðvarsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Sturla_B%C3%B6%C3%B0varsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/6558816c-a7f4-4234-84dd-53f913973272",
+      "name": "Valgerður Sverrisdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Valger%C3%B0ur_Sverrisd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/745372f7-13b7-4ff5-8697-221ffb534ecd",
+      "name": "Ágúst Ágústsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/9ea75e98-c89e-4596-af3c-7bbf6f819988",
+      "name": "Ármann Ólafsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/acaa25a8-78c5-4519-a152-39011f2ce7a7",
+      "name": "Árni Mathiesen",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%81rni_Mathiesen",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/81bab60a-4ce9-4651-a6c9-0b61f565f0da",
+      "name": "Ásta Möller",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/21b1c270-1bc1-4be8-b144-edd3410de3e2",
+      "name": "Guðjón Kristjánsson",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/ec0c0b80-e9ac-47fa-b47b-c35078deda6f",
+      "name": "Herdís Þórðardóttir",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/2fb7c753-953c-4c62-9455-7ac1c982e58a",
+      "name": "Einar Kristjánsson"
+    },
+    {
+      "id": "person/6bd7d25b-dd27-4853-8c08-b30681875069",
+      "name": "Atli Gíslason",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Atli_G%C3%ADslason",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/e2c9d7ec-9dbc-4c28-a945-6f300867d73e",
+      "name": "Birgir Ármannsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Birgir_%C3%81rmannsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/5bc6a2b9-536b-4b20-9931-b2bf3c4d99c8",
+      "name": "Birgitta Jónsdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Birgitta_J%C3%B3nsd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/f6ec37b4-c84c-4bf4-8f39-625faf323b56",
+      "name": "Birkir Jónsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Birkir_J%C3%B3n_J%C3%B3nsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/f1dbbcff-0e90-4bfc-be82-098bff6c5297",
+      "name": "Bjarni Benediktsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Bjarni_Benediktsson,_Jr.",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/442a4a67-52d4-446b-b196-d9985b6ffe2d",
+      "name": "Björgvin Sigurðsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Bj%C3%B6rgvin_G._Sigur%C3%B0sson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/1579a151-b80d-471d-90ff-ad3f3eb4fdd2",
+      "name": "Björn Gíslason",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Bj%C3%B6rn_Valur_G%C3%ADslason",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/2a26a29f-9ef3-4f5b-8a4d-776897fc62fd",
+      "name": "Einar Guðfinnsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Einar_K._Gu%C3%B0finnsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/d6752a92-978d-4b16-a3fc-cddba106c4d9",
+      "name": "Eygló Harðardóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Eygl%C3%B3_Har%C3%B0ard%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/3c1cb880-2607-42d0-a0b5-d06c619ea135",
+      "name": "Gunnar Sveinsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Gunnar_Bragi_Sveinsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/8de05407-3701-4f9f-8085-13e56082b4e2",
+      "name": "Guðbjartur Hannesson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Gu%C3%B0bjartur_Hannesson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/9530aa30-f589-46c6-953f-a69067c64f53",
+      "name": "Guðfríður Grétarsdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Gu%C3%B0fr%C3%AD%C3%B0ur_Lilja_Gr%C3%A9tarsd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/4e6645b0-60dc-49ed-97f1-869a057cac1a",
+      "name": "Guðlaugur Þórðarson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Gu%C3%B0laugur_%C3%9E%C3%B3r_%C3%9E%C3%B3r%C3%B0arson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/02a38e73-00cc-4125-9dae-b567cc60108c",
+      "name": "Guðmundur Steingrímsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Gu%C3%B0mundur_Steingr%C3%ADmsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/22e28b11-6ae6-4fd5-abe1-a4d73afcb735",
+      "name": "Helgi Hjörvar",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Helgi_Hj%C3%B6rvar",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/82c5c1b3-fde3-457c-aa33-685ca1cefc4c",
+      "name": "Höskuldur Þórhallsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/H%C3%B6skuldur_%C3%9E%C3%B3rhallsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/8814e996-8998-4ee0-bc3b-602ed659f271",
+      "name": "Illugi Gunnarsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Illugi_Gunnarsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/2c32e98e-676d-44d2-b4da-c30fe06f45a1",
+      "name": "Jóhanna Sigurðardóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/J%C3%B3hanna_Sigur%C3%B0ard%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/af99b88b-9a46-4ca8-9e5a-910479a01bfe",
+      "name": "Jón Bjarnason",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/J%C3%B3n_Bjarnason",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/e0cc27d3-3999-4d27-a9d6-1a4e62cb4ef0",
+      "name": "Jón Gunnarsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/J%C3%B3n_Gunnarsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/ad905835-e425-4ca0-b3ae-b4069188eee4",
+      "name": "Jónína Guðmundsdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/J%C3%B3n%C3%ADna_R%C3%B3s_Gu%C3%B0mundsd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/c49df6b6-5702-4e22-8d60-3d8728d3789a",
+      "name": "Katrín Jakobsdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Katr%C3%ADn_Jakobsd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/b87b44fc-3006-4b97-a812-448f1506ef11",
+      "name": "Katrín Júlíusdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Katr%C3%ADn_J%C3%BAl%C3%ADusd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/87cf09a6-b7d1-4db3-94e4-4ed47f4a4c50",
+      "name": "Kristján Júlíusson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Kristj%C3%A1n_%C3%9E%C3%B3r_J%C3%BAl%C3%ADusson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/bd770953-5eda-491e-8e9e-ae0901366c6c",
+      "name": "Kristján Möller",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Kristj%C3%A1n_L._M%C3%B6ller",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/2f31e545-540e-431e-9dc0-254538a8171e",
+      "name": "Lilja Magnúsdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Lilja_Rafney_Magn%C3%BAsd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/4ab332c5-5274-4e4e-9f03-0f485ba23634",
+      "name": "Lilja Mósesdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Lilja_M%C3%B3sesd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/dea05403-c4b6-415d-ac5b-07b1a611a42c",
+      "name": "Magnús Schram",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Magn%C3%BAs_Orri_Schram",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/505fa81a-8797-45ba-8ba0-4910afce2e46",
+      "name": "Margrét Tryggvadóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Margr%C3%A9t_Tryggvad%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/ea82271e-7cae-498c-a249-0a096093b803",
+      "name": "Oddný Harðardóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Oddn%C3%BD_G._Har%C3%B0ard%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/6c81e88e-3fcd-477a-a797-38f2d0872a50",
+      "name": "Pétur Blöndal",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/P%C3%A9tur_H._Bl%C3%B6ndal",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/db479c7a-7072-4b14-8206-ed8a9486960e",
+      "name": "Ragnheiður Árnadóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Ragnhei%C3%B0ur_El%C3%ADn_%C3%81rnad%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/e7a01ac7-3b1d-417d-8faa-90249f239aa5",
+      "name": "Ragnheiður Ríkharðsdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Ragnhei%C3%B0ur_R%C3%ADkhar%C3%B0sd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/1fe39c5a-9a90-4439-8811-ee53d82c3b1a",
+      "name": "Róbert Marshall",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/R%C3%B3bert_Marshall",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/b9efe9aa-b4c7-4475-b1f6-9e8175a95139",
+      "name": "Sigmundur Gunnlaugsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Sigmundur_Dav%C3%AD%C3%B0_Gunnlaugsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/30d1693f-d51b-4fb4-896e-3a38f081392c",
+      "name": "Sigmundur Rúnarsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Sigmundur_Ernir_R%C3%BAnarsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/71fc0f75-3122-49b7-b8ad-d9b8c9945d77",
+      "name": "Sigríður Ingadóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Sigr%C3%AD%C3%B0ur_Ingibj%C3%B6rg_Ingad%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/1bc74c37-164b-4cc5-a1f5-43ca94d12c9a",
+      "name": "Sigurður Jóhannsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Sigur%C3%B0ur_Ingi_J%C3%B3hannsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/8bfda5b7-1d0f-4237-a166-d68584782dd1",
+      "name": "Siv Friðleifsdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Siv_Fri%C3%B0leifsd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/5ca683f3-ad6a-4d98-8606-bec2b1f69672",
+      "name": "Skúli Helgason",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Sk%C3%BAli_Helgason",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/e70d9511-a82b-4c69-bab1-860166af5d3c",
+      "name": "Steingrímur Sigfússon",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Steingr%C3%ADmur_J._Sigf%C3%BAsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/af8e4ba5-97fb-4867-9228-f7319ff819e6",
+      "name": "Steinunn Óskarsdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Steinunn_Vald%C3%ADs_%C3%93skarsd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/e91e800f-0410-4ba2-adbc-15e579aa0b00",
+      "name": "Mörður Árnason",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/M%C3%B6r%C3%B0ur_%C3%81rnason",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/a878e10b-f8a8-4802-ab70-354ede98383e",
+      "name": "Svandís Svavarsdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Svand%C3%ADs_Svavarsd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/c7224b83-6837-410e-868f-f60389aad7b4",
+      "name": "Tryggvi Herbertsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Tryggvi_%C3%9E%C3%B3r_Herbertsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/8758d6f9-49b9-474a-95bc-e911816b93f6",
+      "name": "Unnur Konráðsdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Unnur_Br%C3%A1_Konr%C3%A1%C3%B0sd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/c092b7f3-86a8-4b81-a31d-935f62e33178",
+      "name": "Valgerður Bjarnadóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Valger%C3%B0ur_Bjarnad%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/e6051c6c-20cf-43f0-9cb9-f6440ca8c446",
+      "name": "Vigdís Hauksdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Vigd%C3%ADs_Hauksd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/2cd587fb-8b87-4d29-a237-8f2ce86dec08",
+      "name": "Álfheiður Ingadóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%81lfhei%C3%B0ur_Ingad%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/aff3eea5-f5d4-4a4a-acbe-9615d41d597e",
+      "name": "Árni Árnason",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%81rni_P%C3%A1ll_%C3%81rnason",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/aa07a109-cb27-4aab-9dcb-1d23542fef65",
+      "name": "Árni Johnsen",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%81rni_Johnsen",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/71087d16-796c-4af4-83dd-ae872656edda",
+      "name": "Árni Sigurðsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%81rni_%C3%9E%C3%B3r_Sigur%C3%B0sson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/c04a9664-1363-452a-aca4-c811c2bdfb59",
+      "name": "Ásbjörn Óttarsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%81sbj%C3%B6rn_%C3%93ttarsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/b7914c39-0550-4da1-8466-aeee46c337b0",
+      "name": "Ásmundur Daðason",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%81smundur_Einar_Da%C3%B0ason",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/ec7eeaa5-ddd9-4cec-a926-22f7770da641",
+      "name": "Ásta Jóhannesdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%81sta_Ragnhei%C3%B0ur_J%C3%B3hannesd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/ccb62163-37eb-4dff-9f79-d16c49d4ab13",
+      "name": "Ólína Þorvarðardóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%93l%C3%ADna_%C3%9Eorvar%C3%B0ard%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/e23d27e3-0368-4a53-a199-e98347666dca",
+      "name": "Ólöf Nordal",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%93l%C3%B6f_Nordal",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/a9fcd1dc-1e8a-4281-88d9-4497a990a7cf",
+      "name": "Ögmundur Jónasson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%96gmundur_J%C3%B3nasson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/3b364f03-2deb-4ca0-b418-76605f0975aa",
+      "name": "Össur Skarphéðinsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%96ssur_Skarph%C3%A9%C3%B0insson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/128e5b10-87bb-47e4-a41f-bbc06124ac22",
+      "name": "Þorgerður Gunnarsdóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%9Eorger%C3%B0ur_Katr%C3%ADn_Gunnarsd%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/5f643f53-d1c2-4351-8599-3f124db36bbc",
+      "name": "Þráinn Bertelsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%9Er%C3%A1inn_Bertelsson",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/8c2a1c9c-b5b7-48c6-a032-16ad9eb99e01",
+      "name": "Þuríður Backman",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%9Eur%C3%AD%C3%B0ur_Backman",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/98fee86f-3a2b-465f-b820-7d546d088133",
+      "name": "Þór Saari",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%9E%C3%B3r_Saari",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/17b69fe4-9e23-4f09-aa2f-01c2cce070f9",
+      "name": "Þórunn Sveinbjarnardóttir",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/%C3%9E%C3%B3runn_Sveinbjarnard%C3%B3ttir",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/f7e83c10-7c55-470a-922b-27f2de22599f",
+      "name": "Lúðvík Geirsson",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/L%C3%BA%C3%B0v%C3%ADk_Geirsson",
+          "note": "wikipedia"
+        }
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "name": "Progressive Party",
+      "classification": "party"
+    },
+    {
+      "id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "name": "Independence Party",
+      "classification": "party"
+    },
+    {
+      "id": "party/c1d570d6-b2b9-4abf-a3b7-4e0e7bdfe501",
+      "name": "Bright Future",
+      "classification": "party"
+    },
+    {
+      "id": "party/4556d4ca-a5cd-4158-925e-51bb4f101bd4",
+      "name": "Left-Green Movement",
+      "classification": "party"
+    },
+    {
+      "id": "party/a7e65c5f-f056-4868-9949-e455bfe97eee",
+      "name": "Pirate Party",
+      "classification": "party"
+    },
+    {
+      "id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "name": "Social Democratic Alliance",
+      "classification": "party"
+    },
+    {
+      "id": "party/4afc56d9-3486-4666-bf9c-c9625f01e749",
+      "name": "Women's List",
+      "classification": "party"
+    },
+    {
+      "id": "party/1203325f-0b97-4ffe-9b3e-e6f61d45cce2",
+      "name": "People's Alliance",
+      "classification": "party"
+    },
+    {
+      "id": "party/9c329800-226e-4d6f-a333-86835da3399d",
+      "name": "Social Democratic Party",
+      "classification": "party"
+    },
+    {
+      "id": "party/8f3897b2-deab-4275-a600-ab5542ac40e7",
+      "name": "National Awakening",
+      "classification": "party"
+    },
+    {
+      "id": "party/e884ce39-a6ef-4021-9185-33cd9c077df7",
+      "name": "Liberal Party",
+      "classification": "party"
+    },
+    {
+      "id": "party/bc033218-f0be-4dea-893d-9a6ffbe01e03",
+      "name": "Independent",
+      "classification": "party"
+    },
+    {
+      "id": "party/7b31af9b-0fe5-40b8-87f0-a82c75f42b8e",
+      "name": "Solidarity",
+      "classification": "party"
+    },
+    {
+      "id": "party/f1bd2d92-f380-4807-b534-e083b0d98268",
+      "name": "Citizens' Movement",
+      "classification": "party"
+    },
+    {
+      "id": "legislature",
+      "name": "Legislature",
+      "classification": "legislature",
+      "legislative_periods": [
+        {
+          "id": "term/2013–",
+          "name": "2013–",
+          "classification": "legislative period",
+          "start_date": "2013"
+        },
+        {
+          "id": "term/1995–1999",
+          "name": "1995–1999",
+          "classification": "legislative period",
+          "start_date": "1995",
+          "end_date": "1999"
+        },
+        {
+          "id": "term/1999–2003",
+          "name": "1999–2003",
+          "classification": "legislative period",
+          "start_date": "1999",
+          "end_date": "2003"
+        },
+        {
+          "id": "term/2003–2007",
+          "name": "2003–2007",
+          "classification": "legislative period",
+          "start_date": "2003",
+          "end_date": "2007"
+        },
+        {
+          "id": "term/2007–2009",
+          "name": "2007–2009",
+          "classification": "legislative period",
+          "start_date": "2007",
+          "end_date": "2009"
+        },
+        {
+          "id": "term/2009–2013",
+          "name": "2009–2013",
+          "classification": "legislative period",
+          "start_date": "2009",
+          "end_date": "2013"
+        }
+      ]
+    }
+  ],
+  "memberships": [
+    {
+      "person_id": "person/aea6fc86-0fd1-4b6d-b062-2ec5baea989b",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Reykjavik Constituency North"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/87e09647-9546-469e-9de2-849af85b8137",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Reykjavik Constituency North"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/49c28f6b-4b8e-4533-883d-9ef8250bd484",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c1d570d6-b2b9-4abf-a3b7-4e0e7bdfe501",
+      "area": {
+        "name": "Reykjavik Constituency North"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/83c7c3d0-2731-4e15-b59c-7cdfcb88e3cd",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Reykjavik Constituency North"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/3b838f7e-ef84-41fc-bb94-ce05947aec8e",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/4556d4ca-a5cd-4158-925e-51bb4f101bd4",
+      "area": {
+        "name": "Reykjavik Constituency North"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/b9fdd34b-9b4d-4e0c-833e-941591ab5376",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/a7e65c5f-f056-4868-9949-e455bfe97eee",
+      "area": {
+        "name": "Reykjavik Constituency North"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/78caed9f-e6cc-4da4-a4f2-d712fa2d7f66",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Reykjavik Constituency South"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/af9e36b6-d847-425d-94e6-4df9b242ffbd",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Reykjavik Constituency South"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/d28a3b88-c2dc-4eff-94c9-ebb7a2fd28ff",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Reykjavik Constituency South"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/89efe83f-3bda-432e-a410-8b4e01382487",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Reykjavik Constituency South"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/26c0d070-ad5d-43e9-9ecc-c23683544c03",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Reykjavik Constituency South"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/def7fd9d-9f04-455e-8e76-a12eb5998bcb",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/a7e65c5f-f056-4868-9949-e455bfe97eee",
+      "area": {
+        "name": "Reykjavik Constituency South"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/d9858311-2f14-4aa9-a07e-be580256a98f",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c1d570d6-b2b9-4abf-a3b7-4e0e7bdfe501",
+      "area": {
+        "name": "Reykjavik Constituency South"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/492c704a-0e6d-4aa2-9408-cdd4c8a63bc2",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Southwest Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/1f6f2b27-c71c-47f2-ad9b-16458c13472a",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Southwest Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/34440bd1-2875-4e65-888d-4d3dc6c5bfb8",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Southwest Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/7fddaaaf-d768-43a9-bc6d-3e66f69a4ab4",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Southwest Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/9a88e6a2-83c5-4832-844f-3e832c0df11c",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Southwest Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/3aa31434-adf1-4710-b48c-02f9670b444a",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Northwest Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/fae3cf33-9c94-4226-a41c-94891bbf7b64",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Northwest Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/e0d93583-029a-48c1-a338-2c1e1ea97698",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Northwest Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/907c86d7-720d-4fa4-bdfb-8a76116cca44",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Northwest Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/94aa97b3-6019-4d71-b75d-32de5c438b3d",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Northwest Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/bf74a597-cddc-4edc-a430-a1f315826bb4",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Northwest Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/33aa5f4a-b701-487d-a867-da33b3007728",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/4556d4ca-a5cd-4158-925e-51bb4f101bd4",
+      "area": {
+        "name": "Northwest Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/549cdf4b-0891-47d1-b380-4e109c823422",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Northeast Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/ed2402eb-fd5e-4529-a1df-ada4f8d100db",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Northeast Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/fadb4c4e-30ea-4cfe-bd43-fc881ed550b5",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Northeast Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/b80d6544-e723-45bb-9c7e-ae5e55554249",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/4556d4ca-a5cd-4158-925e-51bb4f101bd4",
+      "area": {
+        "name": "Northeast Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/4cf03bd0-dc49-497d-9b14-7106d3019cff",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Northeast Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/7a2331a8-53ab-4ee5-8fc4-26ba7642d0b6",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Northeast Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/ce04b9ec-9e07-4ceb-bf4a-e34f0a423f1b",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Northeast Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/ca841257-3389-4943-a5f3-9aab00c10708",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Northeast Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/70d2d02c-780f-4749-810a-2c359121da95",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/4556d4ca-a5cd-4158-925e-51bb4f101bd4",
+      "area": {
+        "name": "Northeast Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/e0e605d3-5879-4d66-99d8-ddf558e47db5",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c1d570d6-b2b9-4abf-a3b7-4e0e7bdfe501",
+      "area": {
+        "name": "Northeast Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/675c2c1f-9b90-47e9-b963-2ac2eee4d1a1",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "South Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/b874fe01-7215-4e21-9624-91c8ce4d7095",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "South Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/ee3d02aa-f103-4163-9a3a-61c0d26584bc",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "South Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/3b2cbc08-b1e0-4e2a-aae3-6d88f2ea8511",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "South Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/79e037fb-4e62-4792-abe6-299e3de649b9",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "South Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/d8e8dd13-87cf-4af8-b428-7bfe1b8005b2",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "South Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/8ff31b7b-3cf4-4f3e-9de0-5b10074508bf",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "South Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/6688a803-30c5-4edf-9381-8a9db07b9355",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "South Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/ce8cc5f8-0bb1-4a4e-939a-ec709d403241",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "South Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/9dfab559-8b39-4a22-9bd1-c44f076b4eef",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c1d570d6-b2b9-4abf-a3b7-4e0e7bdfe501",
+      "area": {
+        "name": "South Constituency"
+      },
+      "legislative_period_id": "term/2013–"
+    },
+    {
+      "person_id": "person/c9e9a72a-3bf7-4d7f-a915-7ae9a81dea50",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Eastern Region"
+      },
+      "legislative_period_id": "term/1995–1999"
+    },
+    {
+      "person_id": "person/22784924-056e-4efd-a755-40005af4dd99",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Capital Region"
+      },
+      "legislative_period_id": "term/1995–1999"
+    },
+    {
+      "person_id": "person/b5ff8574-df65-4a9f-bd6a-01d07bc620c6",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Westfjords"
+      },
+      "legislative_period_id": "term/1995–1999"
+    },
+    {
+      "person_id": "person/c033cbab-4f34-4b59-a799-ce53903952d5",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Northeastern Region"
+      },
+      "legislative_period_id": "term/1995–1999"
+    },
+    {
+      "person_id": "person/6887cb96-3024-43df-ab5a-8021e37cbb9e",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/4afc56d9-3486-4666-bf9c-c9625f01e749",
+      "area": {
+        "name": "Capital Region"
+      },
+      "legislative_period_id": "term/1995–1999"
+    },
+    {
+      "person_id": "person/274412ac-08c1-4cef-a1bf-f5c063cae329",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/1203325f-0b97-4ffe-9b3e-e6f61d45cce2",
+      "area": {
+        "name": "Eastern Region"
+      },
+      "legislative_period_id": "term/1995–1999"
+    },
+    {
+      "person_id": "person/6d71d513-011d-4364-b4ed-e53fcb128695",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/9c329800-226e-4d6f-a333-86835da3399d",
+      "area": {
+        "name": "Capital Region"
+      },
+      "legislative_period_id": "term/1995–1999"
+    },
+    {
+      "person_id": "person/5e37740b-80b0-4395-89a3-bc6b410c0411",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/4afc56d9-3486-4666-bf9c-c9625f01e749",
+      "area": {
+        "name": "Reykjanes"
+      },
+      "legislative_period_id": "term/1995–1999"
+    },
+    {
+      "person_id": "person/92ebfc43-1ee6-4aab-83ff-ea7be1cb6d3d",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/4afc56d9-3486-4666-bf9c-c9625f01e749",
+      "area": {
+        "name": "Capital Region"
+      },
+      "legislative_period_id": "term/1995–1999"
+    },
+    {
+      "person_id": "person/cdda42c2-5c97-4895-ac94-e336b16ba8c0",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/1203325f-0b97-4ffe-9b3e-e6f61d45cce2",
+      "area": {
+        "name": "Northwestern Region"
+      },
+      "legislative_period_id": "term/1995–1999"
+    },
+    {
+      "person_id": "person/ffa405e8-879d-4f39-8b85-fb5429783a98",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Northwestern Region"
+      },
+      "legislative_period_id": "term/1995–1999"
+    },
+    {
+      "person_id": "person/185e8b80-bfea-4edb-9f25-b7f44d954ccf",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/1203325f-0b97-4ffe-9b3e-e6f61d45cce2",
+      "area": {
+        "name": "Capital Region"
+      },
+      "legislative_period_id": "term/1995–1999"
+    },
+    {
+      "person_id": "person/41aca5f5-98a2-4c6b-8fe7-4d1f73ac0828",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/8f3897b2-deab-4275-a600-ab5542ac40e7",
+      "area": {
+        "name": "Reykjanes"
+      },
+      "legislative_period_id": "term/1995–1999"
+    },
+    {
+      "person_id": "person/b2ad288b-6354-4e77-920f-a437f03b3ffb",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Reykjanes"
+      },
+      "legislative_period_id": "term/1995–1999"
+    },
+    {
+      "person_id": "person/7a2eb929-7568-4645-8c30-a1d204b23090",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/1203325f-0b97-4ffe-9b3e-e6f61d45cce2",
+      "area": {
+        "name": "Reykjanes"
+      },
+      "legislative_period_id": "term/1995–1999"
+    },
+    {
+      "person_id": "person/a70b990b-1d47-4980-bce4-0e31b9458c6b",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Southern Region"
+      },
+      "legislative_period_id": "term/1995–1999"
+    },
+    {
+      "person_id": "person/62a39a93-d3e3-4897-86c5-a0f911e699d3",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "end_date": "2000",
+      "area": {
+        "name": "Reykjavik"
+      },
+      "legislative_period_id": "term/1999–2003"
+    },
+    {
+      "person_id": "person/e5707673-cdb7-4566-a0ed-d64e854aae67",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "West"
+      },
+      "legislative_period_id": "term/1999–2003"
+    },
+    {
+      "person_id": "person/441e092f-024a-40da-9cf2-d19beb4b3e87",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "West"
+      },
+      "legislative_period_id": "term/1999–2003"
+    },
+    {
+      "person_id": "person/e861bde4-79c1-4425-9cbe-5aaeea2b38af",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "end_date": "2001",
+      "area": {
+        "name": "Northwest"
+      },
+      "legislative_period_id": "term/1999–2003"
+    },
+    {
+      "person_id": "person/87ef2a76-f64b-4201-8320-f168afa63cd9",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "start_date": "2001",
+      "area": {
+        "name": "Northwest"
+      },
+      "legislative_period_id": "term/1999–2003"
+    },
+    {
+      "person_id": "person/e34376fd-063b-4739-92f9-0a6e6df6de04",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "end_date": "2001",
+      "area": {
+        "name": "West"
+      },
+      "legislative_period_id": "term/1999–2003"
+    },
+    {
+      "person_id": "person/60313371-99e4-4125-909f-2e9a0d19444e",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Reykjavik"
+      },
+      "legislative_period_id": "term/1999–2003"
+    },
+    {
+      "person_id": "person/1b4ef436-afc2-4e0a-8a8c-f7ad0c6d2846",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Reykjanes"
+      },
+      "legislative_period_id": "term/1999–2003"
+    },
+    {
+      "person_id": "person/42aaee86-f1c1-403a-812b-c13ff18eedaa",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Reykjavik"
+      },
+      "legislative_period_id": "term/1999–2003"
+    },
+    {
+      "person_id": "person/b14dbb38-5727-44f4-88bb-f264c601668b",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Northwest"
+      },
+      "legislative_period_id": "term/1999–2003"
+    },
+    {
+      "person_id": "person/0cea0f9d-3d9c-49f5-a5d5-059c47f51108",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "end_date": "2001",
+      "area": {
+        "name": "West Fjords"
+      },
+      "legislative_period_id": "term/1999–2003"
+    },
+    {
+      "person_id": "person/50ab0a36-bea7-464c-b63d-86c78b93927b",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Reykjanes"
+      },
+      "legislative_period_id": "term/1999–2003"
+    },
+    {
+      "person_id": "person/66a64c14-b2c2-4bac-ba14-933228caf219",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Northeast"
+      },
+      "legislative_period_id": "term/1999–2003"
+    },
+    {
+      "person_id": "person/d6906f84-407c-4d5a-99ea-6f3b44aef6df",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/e884ce39-a6ef-4021-9185-33cd9c077df7",
+      "area": {
+        "name": "Reykjavik"
+      },
+      "legislative_period_id": "term/1999–2003"
+    },
+    {
+      "person_id": "person/2a86becb-ec95-459d-8e40-66439cf4c34f",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "end_date": "2003",
+      "area": {
+        "name": "Northwest"
+      },
+      "legislative_period_id": "term/1999–2003"
+    },
+    {
+      "person_id": "person/06680ee6-cbaa-49f7-af00-344b349eaf23",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "start_date": "2003",
+      "area": {
+        "name": "Northwest"
+      },
+      "legislative_period_id": "term/1999–2003"
+    },
+    {
+      "person_id": "person/257019bd-a4d8-4348-a60d-ffdc830568ad",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/4556d4ca-a5cd-4158-925e-51bb4f101bd4",
+      "area": {
+        "name": "Northeast"
+      },
+      "legislative_period_id": "term/1999–2003"
+    },
+    {
+      "person_id": "person/91399dd2-6bae-4a57-94e5-95b236c21e41",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "South"
+      },
+      "legislative_period_id": "term/1999–2003"
+    },
+    {
+      "person_id": "person/dd254171-315d-4fd5-b1c3-d488e8999592",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Reykjavik"
+      },
+      "legislative_period_id": "term/1999–2003"
+    },
+    {
+      "person_id": "person/d414c928-fa09-4841-9c88-cd0911d870a0",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Northwest"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/20be8e03-9a05-4cf2-ae9f-e4a71e20e1bf",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "end_date": "2005",
+      "area": {
+        "name": "Reykjavik North"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/4bac8ed4-2c60-41a6-aa49-cff8cd41395b",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Northeast"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/5ea780db-e9df-4c63-b872-5424f866e507",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "end_date": "2006",
+      "area": {
+        "name": "Reykjavik North"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/76ff0a1e-9dd6-45a5-87a3-a891892253a3",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "South"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/6bdc2212-d7f4-4e10-b7c0-e01add2c9251",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "end_date": "2006",
+      "area": {
+        "name": "Southwest"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/72073a67-b661-4b0c-8ab5-28aff721c348",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "start_date": "2006",
+      "area": {
+        "name": "Southwest"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/94d8f58b-4336-44c1-9aaf-ccb4db4833bf",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "start_date": "2005",
+      "area": {
+        "name": "Southwest"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/9f277a24-b219-48a8-b29b-e01b9d180bfd",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "South"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/ed87b2b0-c3dc-4cdb-a800-feeb9939590c",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Reykjavik South"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/ba9ae8da-64d0-466b-bbfd-255b5452834e",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "end_date": "2005",
+      "area": {
+        "name": "Southwest"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/1afaa8c6-b484-4a56-a989-f41d131f204d",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "start_date": "2005",
+      "area": {
+        "name": "Southwest"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/e933e995-0097-44c1-9789-5145d1305570",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Reykjavik North"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/b74da199-5373-4c83-8fe5-497577adc1ff",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Northeast"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/3d96c132-0b38-42ed-a145-a77ca6aaafb6",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "end_date": "2006",
+      "area": {
+        "name": "Reykjavik North"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/167c51f9-52bf-4a11-886b-5c92844b9f1c",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "start_date": "2006",
+      "area": {
+        "name": "Reykjavik North"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/fb47bc9d-eb4d-4c46-8dca-101af5e41b76",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "South"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/0ee6fb51-6a16-412d-9368-d938ec7b76d1",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Northwest"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/14a6157a-5443-40af-bda6-e753ca7ab069",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Northeast"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/913cafb4-0cdb-4298-8328-86aaffff5ce2",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Reykjavik South"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/fe957291-5f50-4bca-b9cb-974dd704dc37",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/e884ce39-a6ef-4021-9185-33cd9c077df7",
+      "area": {
+        "name": "South"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/c8cfeda1-46a2-408d-8df1-a1d7bb0192c4",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "South"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/89830761-58ea-4990-92ed-5fd0eac598f7",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Southwest"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/196940a8-f5e9-48c6-85d1-b2db65476829",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Southwest"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/7239f9f1-6c18-47dc-9b83-e3a592a74af5",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/e884ce39-a6ef-4021-9185-33cd9c077df7",
+      "area": {
+        "name": "Northwest"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/820f64f6-5741-43cb-a358-6575988fcadd",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Reykjavik South"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/d824a707-d638-410c-a860-a83b515e89e6",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "end_date": "2004",
+      "area": {
+        "name": "Northeast"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/2a0be90a-e35d-4374-a3ba-8a6695442431",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "end_date": "2006",
+      "area": {
+        "name": "Reykjavik North"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/d35fa56a-3ffd-406b-871d-f9e56169a0c3",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "start_date": "2006",
+      "area": {
+        "name": "Reykjavik North"
+      },
+      "legislative_period_id": "term/2003–2007"
+    },
+    {
+      "person_id": "person/3e87fba7-08f5-4af5-a4c8-9a41921d32a3",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Northeast"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/38552220-1ff5-48ba-985a-c41d1eaf81bb",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "end_date": "2008",
+      "area": {
+        "name": "South"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/c7476a2a-9c6f-48c1-a163-784968991ea0",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "start_date": "2008",
+      "area": {
+        "name": "South"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/4ad760a0-9912-4949-8bca-4642b0d05c4b",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "South"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/7ba93a62-7dae-47dd-a282-7bc4f8e22bbc",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Reykjavik South"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/5576e92a-6eff-45b4-9e9e-b78d18b4f8a4",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Northeast"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/fa036e35-16c3-4cde-b5a4-976265ccbb6d",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Reykjavik North"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/80f412a9-c08f-446c-adb9-bfeb45f5b02f",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Reykjavik South"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/76c8c093-9197-4aa4-a425-d694b73b534a",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/e884ce39-a6ef-4021-9185-33cd9c077df7",
+      "area": {
+        "name": "South"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/cc108a50-da8b-4133-995b-031aeef9f2b1",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Southwest"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/e6482ba8-7cc2-42fb-b3bd-659c1cc6fb24",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Reykjavik North"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/be681851-7cec-4000-b4ae-ce17845125ec",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "end_date": "2008-11-17",
+      "area": {
+        "name": "South"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/cf2cd8e1-dcdb-4a75-9003-a245a748a227",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Reykjavik South"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/5a27ed10-1ca4-4157-8147-7e5b1a24df27",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "start_date": "2009",
+      "area": {
+        "name": "Reykjavik South"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/ea4cbf15-d679-4755-a8dc-eb7c6252af07",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/e884ce39-a6ef-4021-9185-33cd9c077df7",
+      "start_date": "2009",
+      "area": {
+        "name": "Northwest"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/11806f7d-5c3d-4a7a-a7e3-b73f0aef40ea",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "South"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/24025730-f39b-49b2-adb1-7fc8de15b915",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/4556d4ca-a5cd-4158-925e-51bb4f101bd4",
+      "area": {
+        "name": "Reykjavik South"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/851b59f5-1611-446d-865c-c2e9c274a034",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/bc033218-f0be-4dea-893d-9a6ffbe01e03",
+      "start_date": "2009",
+      "area": {
+        "name": "Northwest"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/cdb3128d-33de-4bfb-87e2-704fccd01446",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "South"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/38b1bb38-5523-405a-82eb-c764b6cb4939",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Northwest"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/5d9b898a-6b53-4c5f-a0d9-3a07ce80e078",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Reykjavik North"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/e28426da-22e0-46a2-a869-e552eaca69b9",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Northwest"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/6558816c-a7f4-4234-84dd-53f913973272",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Northeast"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/745372f7-13b7-4ff5-8697-221ffb534ecd",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Reykjavik South"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/9ea75e98-c89e-4596-af3c-7bbf6f819988",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Southwest"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/acaa25a8-78c5-4519-a152-39011f2ce7a7",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "South"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/81bab60a-4ce9-4651-a6c9-0b61f565f0da",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Reykjavik South"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/21b1c270-1bc1-4be8-b144-edd3410de3e2",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/e884ce39-a6ef-4021-9185-33cd9c077df7",
+      "area": {
+        "name": "Northwest"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/ec0c0b80-e9ac-47fa-b47b-c35078deda6f",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "end_date": "2007-07-14",
+      "area": {
+        "name": "Northwest"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/2fb7c753-953c-4c62-9455-7ac1c982e58a",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "start_date": "2007-07-14",
+      "area": {
+        "name": "Northwest"
+      },
+      "legislative_period_id": "term/2007–2009"
+    },
+    {
+      "person_id": "person/6bd7d25b-dd27-4853-8c08-b30681875069",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/bc033218-f0be-4dea-893d-9a6ffbe01e03",
+      "start_date": "2011-03-21",
+      "area": {
+        "name": "South Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/e2c9d7ec-9dbc-4c28-a945-6f300867d73e",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Reykjavik Constituency South"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/5bc6a2b9-536b-4b20-9931-b2bf3c4d99c8",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/a7e65c5f-f056-4868-9949-e455bfe97eee",
+      "start_date": "2012",
+      "area": {
+        "name": "Reykjavik Constituency South"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/f6ec37b4-c84c-4bf4-8f39-625faf323b56",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Northeast Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/f1dbbcff-0e90-4bfc-be82-098bff6c5297",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Southwest Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/442a4a67-52d4-446b-b196-d9985b6ffe2d",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "South Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/1579a151-b80d-471d-90ff-ad3f3eb4fdd2",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/4556d4ca-a5cd-4158-925e-51bb4f101bd4",
+      "area": {
+        "name": "Northeast Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/2a26a29f-9ef3-4f5b-8a4d-776897fc62fd",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Northwest Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/d6752a92-978d-4b16-a3fc-cddba106c4d9",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "South Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/3c1cb880-2607-42d0-a0b5-d06c619ea135",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Northwest Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/8de05407-3701-4f9f-8085-13e56082b4e2",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Northwest Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/9530aa30-f589-46c6-953f-a69067c64f53",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/4556d4ca-a5cd-4158-925e-51bb4f101bd4",
+      "area": {
+        "name": "Southwest Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/4e6645b0-60dc-49ed-97f1-869a057cac1a",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Reykjavik Constituency South"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/02a38e73-00cc-4125-9dae-b567cc60108c",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c1d570d6-b2b9-4abf-a3b7-4e0e7bdfe501",
+      "start_date": "2011-08-22",
+      "area": {
+        "name": "Northwest Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/22e28b11-6ae6-4fd5-abe1-a4d73afcb735",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Reykjavik Constituency North"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/82c5c1b3-fde3-457c-aa33-685ca1cefc4c",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Northeast Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/8814e996-8998-4ee0-bc3b-602ed659f271",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Reykjavik Constituency North"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/2c32e98e-676d-44d2-b4da-c30fe06f45a1",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Reykjavik Constituency North"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/af99b88b-9a46-4ca8-9e5a-910479a01bfe",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/bc033218-f0be-4dea-893d-9a6ffbe01e03",
+      "start_date": "2013-01-24",
+      "area": {
+        "name": "Northwest Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/e0cc27d3-3999-4d27-a9d6-1a4e62cb4ef0",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Southwest Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/ad905835-e425-4ca0-b3ae-b4069188eee4",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Northeast Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/c49df6b6-5702-4e22-8d60-3d8728d3789a",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/4556d4ca-a5cd-4158-925e-51bb4f101bd4",
+      "area": {
+        "name": "Reykjavik Constituency North"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/b87b44fc-3006-4b97-a812-448f1506ef11",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Southwest Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/87cf09a6-b7d1-4db3-94e4-4ed47f4a4c50",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Northeast Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/bd770953-5eda-491e-8e9e-ae0901366c6c",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Northeast Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/2f31e545-540e-431e-9dc0-254538a8171e",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/4556d4ca-a5cd-4158-925e-51bb4f101bd4",
+      "area": {
+        "name": "Northwest Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/4ab332c5-5274-4e4e-9f03-0f485ba23634",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7b31af9b-0fe5-40b8-87f0-a82c75f42b8e",
+      "start_date": "2011-03-21",
+      "area": {
+        "name": "Reykjavik Constituency South"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/dea05403-c4b6-415d-ac5b-07b1a611a42c",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Southwest Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/505fa81a-8797-45ba-8ba0-4910afce2e46",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f1bd2d92-f380-4807-b534-e083b0d98268",
+      "area": {
+        "name": "South Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/ea82271e-7cae-498c-a249-0a096093b803",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "South Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/6c81e88e-3fcd-477a-a797-38f2d0872a50",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Reykjavik Constituency North"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/db479c7a-7072-4b14-8206-ed8a9486960e",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "South Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/e7a01ac7-3b1d-417d-8faa-90249f239aa5",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Southwest Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/1fe39c5a-9a90-4439-8811-ee53d82c3b1a",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c1d570d6-b2b9-4abf-a3b7-4e0e7bdfe501",
+      "start_date": "2012-10-12",
+      "area": {
+        "name": "South Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/b9efe9aa-b4c7-4475-b1f6-9e8175a95139",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Reykjavik Constituency North"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/30d1693f-d51b-4fb4-896e-3a38f081392c",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Northeast Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/71fc0f75-3122-49b7-b8ad-d9b8c9945d77",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Reykjavik Constituency South"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/1bc74c37-164b-4cc5-a1f5-43ca94d12c9a",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "South Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/8bfda5b7-1d0f-4237-a166-d68584782dd1",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Southwest Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/5ca683f3-ad6a-4d98-8606-bec2b1f69672",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Reykjavik Constituency South"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/e70d9511-a82b-4c69-bab1-860166af5d3c",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/4556d4ca-a5cd-4158-925e-51bb4f101bd4",
+      "area": {
+        "name": "Northeast Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/af8e4ba5-97fb-4867-9228-f7319ff819e6",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "end_date": "2010",
+      "area": {
+        "name": "Reykjavik Constituency North"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/e91e800f-0410-4ba2-adbc-15e579aa0b00",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "start_date": "2010",
+      "area": {
+        "name": "Reykjavik Constituency North"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/a878e10b-f8a8-4802-ab70-354ede98383e",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/4556d4ca-a5cd-4158-925e-51bb4f101bd4",
+      "area": {
+        "name": "Reykjavik Constituency South"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/c7224b83-6837-410e-868f-f60389aad7b4",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Northeast Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/8758d6f9-49b9-474a-95bc-e911816b93f6",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "South Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/c092b7f3-86a8-4b81-a31d-935f62e33178",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Reykjavik Constituency North"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/e6051c6c-20cf-43f0-9cb9-f6440ca8c446",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "area": {
+        "name": "Reykjavik Constituency South"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/2cd587fb-8b87-4d29-a237-8f2ce86dec08",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/4556d4ca-a5cd-4158-925e-51bb4f101bd4",
+      "area": {
+        "name": "Reykjavik Constituency North"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/aff3eea5-f5d4-4a4a-acbe-9615d41d597e",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Southwest Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/aa07a109-cb27-4aab-9dcb-1d23542fef65",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "South Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/71087d16-796c-4af4-83dd-ae872656edda",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/4556d4ca-a5cd-4158-925e-51bb4f101bd4",
+      "area": {
+        "name": "Reykjavik Constituency North"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/c04a9664-1363-452a-aca4-c811c2bdfb59",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Northwest Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/b7914c39-0550-4da1-8466-aeee46c337b0",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f6da4734-3792-4479-a206-d8cb3b754b1a",
+      "start_date": "2011-06-01",
+      "area": {
+        "name": "Northwest Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/ec7eeaa5-ddd9-4cec-a926-22f7770da641",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Reykjavik Constituency South"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/ccb62163-37eb-4dff-9f79-d16c49d4ab13",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Northwest Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/e23d27e3-0368-4a53-a199-e98347666dca",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Reykjavik Constituency South"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/a9fcd1dc-1e8a-4281-88d9-4497a990a7cf",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/4556d4ca-a5cd-4158-925e-51bb4f101bd4",
+      "area": {
+        "name": "Southwest Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/3b364f03-2deb-4ca0-b418-76605f0975aa",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "area": {
+        "name": "Reykjavik Constituency South"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/128e5b10-87bb-47e4-a41f-bbc06124ac22",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/5bdf6c62-7cb4-4c85-afb5-0dce0abed2db",
+      "area": {
+        "name": "Reykjavik Constituency South"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/5f643f53-d1c2-4351-8599-3f124db36bbc",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/4556d4ca-a5cd-4158-925e-51bb4f101bd4",
+      "start_date": "2009-08-14",
+      "area": {
+        "name": "Reykjavik Constituency North"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/8c2a1c9c-b5b7-48c6-a032-16ad9eb99e01",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/4556d4ca-a5cd-4158-925e-51bb4f101bd4",
+      "area": {
+        "name": "Northeast Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/98fee86f-3a2b-465f-b820-7d546d088133",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/f1bd2d92-f380-4807-b534-e083b0d98268",
+      "area": {
+        "name": "Southwest Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/17b69fe4-9e23-4f09-aa2f-01c2cce070f9",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "end_date": "2011",
+      "area": {
+        "name": "Southwest Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    },
+    {
+      "person_id": "person/f7e83c10-7c55-470a-922b-27f2de22599f",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/47e500bb-627b-4c94-bf3f-b80973f6d195",
+      "start_date": "2011",
+      "area": {
+        "name": "Southwest Constituency"
+      },
+      "legislative_period_id": "term/2009–2013"
+    }
+  ],
+  "warnings": {
+    "skipped": [
+      "source"
+    ]
+  }
+}
