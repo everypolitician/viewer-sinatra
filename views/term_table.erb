@@ -79,7 +79,7 @@
                         <th>Name</th>
                         <th>Group</th>
                         <th>Area</th>
-                        <th>Dates</th>
+                        <% if leg_mems.any? { |m| m['start_date'].to_s != @term['start_date'].to_s or m['end_date'].to_s != @term['end_date'].to_s } %><th>Dates</th><% end %>
                     </tr>
                 </thead>
 
@@ -93,11 +93,11 @@
                       <% end %>
                         <td><%= m['on_behalf_of']['name'] %></td>
                         <td><%= m['area'] && m['area']['name'] %></td>
-                        <td>
+                      <% if leg_mems.any? { |m| m['start_date'].to_s != @term['start_date'].to_s or m['end_date'].to_s != @term['end_date'].to_s }%>  <td>
                           <% if m['start_date'].to_s != @term['start_date'].to_s or m['end_date'].to_s != @term['end_date'].to_s %>
                             <%= m['start_date'] %>–<%= m['end_date'] %>
                           <% end %>
-                        </td>
+                        </td><% end %>
                     </tr>
                   <% end %>
               <% end %>
