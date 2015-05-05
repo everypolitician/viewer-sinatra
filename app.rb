@@ -19,6 +19,7 @@ mapping = {
   'iran'          => [ 'iran', 'ir' ],
   'kazakhstan'    => [ 'kazakhstan', 'kz' ],
   'italy'         => [ 'italy', 'it' ],
+  'turkey'        => [ 'turkey', 'tk' ],
   'wales'         => [ 'wales', 'gb-wls', 'wls' ],
 }
 
