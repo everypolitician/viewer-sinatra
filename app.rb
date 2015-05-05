@@ -58,13 +58,15 @@ get '/:country/term/:id' do |country, id|
 end
 
 get '/:country/term_table/?:id?.html' do |country, id|
-  @country = country
   @term = id ? @popolo.term_from_id(id) :  @popolo.current_term
   pass unless @term
+
+  @country = country
   @page_title = @term['name']
   @terms = @popolo.term_list
   (@prev_term, _, @next_term) = [nil, @terms, nil].flatten.each_cons(3).find { |p, e, n| e['id'] == @term['id'] }
   @memberships = @popolo.term_memberships(@term)
+  @houses = @memberships.map { |m| m['organization'] }.uniq
   @csv_url = "/#{country}/term_table/#{@term['id'].split('/').last}.csv"
   erb :term_table
 end
@@ -73,24 +75,9 @@ get '/:country/term_table/?:id?.csv' do |country, id|
   @term = id ? @popolo.term_from_id(id) :  @popolo.current_term
   pass unless @term
 
-  @terms = @popolo.term_list
-  @memberships = @popolo.term_memberships(@term)
-
-  header = %w(id name group area start_date end_date).to_csv
-  rows = @memberships.sort_by { |m| [m['person']['name'], m['start_date']] }.map do |m|
-    { 
-      id: m['person']['id'].split('/').last,
-      name: m['person']['name'],
-      group: m['on_behalf_of']['name'],
-      area: m['area'] && m['area']['name'],
-      start_date: m['start_date'],
-      end_date: m['end_date']
-    }.values.to_csv
-  end
-
   content_type 'application/csv'
   attachment   "everypolitician-#{country}-#{@term['id'].split('/').last}.csv"
-  [header, rows].compact.join
+  @popolo.term_as_csv(@term)
 end
 
 get '/:country/person/:id' do |country, id|

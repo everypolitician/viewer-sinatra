@@ -47,7 +47,7 @@
 
     <div class="page-section page-section">
         <div class="container">
-            <h2 class="text-center">Members</h3>
+            <h2 class="text-center">Members</h2>
 
           <% @memberships.group_by { |m| m['organization'] }.each do |leg, leg_mems| %>
             <table class="term-membership-table <% unless @country == 'finland' %>js-sortable<% end %>" id="house-<%= leg['id'].split('/').last %>">
@@ -61,13 +61,13 @@
                                 <span class="large-screen-only">CSV</span>
                               </a>
                             </div>
-                          <% if @memberships.group_by { |m| m['organization'] }.length > 1 %>
+                          <% if @houses.count > 1 %>
                             <div class="button-group">
-                              <% @memberships.group_by { |m| m['organization'] }.each do |leg2, leg_mems2| %>
-                                  <% if leg2['id'] == leg['id'] %>
-                                    <a class="button button--primary" href="#house-<%= leg2['id'].split('/').last %>"><%= leg2['name'] %></a>
+                              <% @houses.each do |h| %>
+                                  <% if h['id'] == leg['id'] %>
+                                    <a class="button button--primary" href="#house-<%= h['id'].split('/').last %>"><%= h['name'] %></a>
                                   <% else %>
-                                    <a class="button button--quarternary" href="#house-<%= leg2['id'].split('/').last %>"><%= leg2['name'] %></a>
+                                    <a class="button button--quarternary" href="#house-<%= h['id'].split('/').last %>"><%= h['name'] %></a>
                                   <% end %>
                               <% end %>
                             </div>
@@ -79,7 +79,7 @@
                         <th>Name</th>
                         <th>Group</th>
                         <th>Area</th>
-                        <th>Dates</th>
+                        <% if leg_mems.any? { |m| m['start_date'].to_s != @term['start_date'].to_s or m['end_date'].to_s != @term['end_date'].to_s } %><th>Dates</th><% end %>
                     </tr>
                 </thead>
 
@@ -93,11 +93,11 @@
                       <% end %>
                         <td><%= m['on_behalf_of']['name'] %></td>
                         <td><%= m['area'] && m['area']['name'] %></td>
-                        <td>
+                      <% if leg_mems.any? { |m| m['start_date'].to_s != @term['start_date'].to_s or m['end_date'].to_s != @term['end_date'].to_s }%>  <td>
                           <% if m['start_date'].to_s != @term['start_date'].to_s or m['end_date'].to_s != @term['end_date'].to_s %>
-                            <%= m['start_date'] %>–<%= m['end_date'] or 'current' %>
+                            <%= m['start_date'] %>–<%= m['end_date'] %>
                           <% end %>
-                        </td>
+                        </td><% end %>
                     </tr>
                   <% end %>
               <% end %>

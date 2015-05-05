@@ -106,6 +106,24 @@ module Popolo
       legislative_memberships.find_all { |m| m.has_key?('area') && m['area']['name'] == name }
     end
 
+    require 'csv'
+    def term_as_csv(t)
+      memberships = term_memberships(t)
+
+      header = %w(id name group area start_date end_date).to_csv
+      rows = memberships.sort_by { |m| [m['person']['name'], m['start_date']] }.map do |m|
+        { 
+          id: m['person']['id'].split('/').last,
+          name: m['person']['name'],
+          group: m['on_behalf_of']['name'],
+          area: m['area'] && m['area']['name'],
+          start_date: m['start_date'],
+          end_date: m['end_date']
+        }.values.to_csv
+      end 
+      [header, rows].compact.join
+    end 
+
   end
 
   module Helper
