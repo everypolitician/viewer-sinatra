@@ -19,7 +19,7 @@ describe "Finland" do
 
   describe "when viewing the MP list page" do
 
-    before { get '/eduskunta/people.html' }
+    before { get '/finland/people.html' }
 
     it "should have Alexander Stubb" do
       subject.css('#people ul').inner_html.must_include 'Stubb Alexander'
@@ -46,7 +46,7 @@ describe "Finland" do
 
   describe "when viewing the Party list page" do
 
-    before { get '/Finland/parties.html' }
+    before { get '/finland/parties.html' }
 
     it "should have Left Alliance" do
       subject.css('#parties ul').inner_html.must_include 'Left Alliance'
@@ -62,7 +62,7 @@ describe "Finland" do
 
   describe "when viewing Person 1031" do
 
-    before { get '/fi/person/1031' }
+    before { get '/finland/person/1031' }
 
     it "should have have their name" do
       subject.css('h1').text.must_equal 'Stubb Alexander'
@@ -78,7 +78,7 @@ describe "Finland" do
 
   describe "when viewing Person 910615" do
 
-    before { get '/FINLAND/person/910615' }
+    before { get '/finland/person/910615' }
 
     # This differs from 'eduskunta-old'
     it "should have two legislative terms" do
@@ -97,7 +97,7 @@ describe "Finland" do
 
   describe "when viewing an Term page" do
 
-    before { get '/FI/term/35' }
+    before { get '/finland/term/35' }
 
     it "should have have its name" do
       subject.css('#term h1').text.must_include 'Eduskunta 35 (2007)'
@@ -130,7 +130,7 @@ describe "Finland" do
 
   describe "when viewing an Party page" do
 
-    before { get '/EdusKunta/party/kok' }
+    before { get '/finland/party/kok' }
 
     it "should have have their name" do
       subject.css('h1').text.must_equal 'National Coalition Party'

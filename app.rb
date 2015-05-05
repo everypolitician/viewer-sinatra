@@ -2,41 +2,27 @@ require 'sinatra'
 require 'json'
 require 'sass'
 require 'csv'
+require 'set'
+
 require_relative './lib/popolo_helper'
 
 helpers Popolo::Helper
 
-mapping = {
-  # filename  => [ primary, aliases (all lower case) ]
-  'australia'     => [ 'australia', 'au' ],
-  'canada'        => [ 'canada', 'ca' ],
-  'denmark'       => [ 'denmark', 'dk', 'folketing' ],
-  'estonia'       => [ 'estonia', 'ee', 'riigikogu' ],
-  'chile'         => [ 'chile', 'cl' ],
-  'finland'       => [ 'finland', 'fi', 'eduskunta' ],
-  'greenland'     => [ 'greenland', 'inatsisartut', 'gl', 'grl' ],
-  'iceland'       => [ 'iceland', 'is', 'alþingi', 'althing' ],
-  'iran'          => [ 'iran', 'ir' ],
-  'kazakhstan'    => [ 'kazakhstan', 'kz' ],
-  'italy'         => [ 'italy', 'it' ],
-  'turkey'        => [ 'turkey', 'tk' ],
-  'wales'         => [ 'wales', 'gb-wls', 'wls' ],
-}
+ALL_COUNTRIES = Dir['data/*.json'].map { |f| File.basename f, '.json' }.to_set
 
 before '/:country/*' do |country, _|
   # Allow inbuilt sinatra requests through
   pass if country == '__sinatra__'
 
-  found = mapping.find { |fn, codes| codes.include? country.downcase } or
-    halt 404
-  @country = found.last.first
-  @popolo = Popolo::Data.new(found.first)
+  halt 404 unless ALL_COUNTRIES.include? country 
+  @country = country
+  @popolo = Popolo::Data.new(@country)
 end
 
 set :erb, :trim => '-' 
 
 get '/' do
-  @countries = mapping.map { |k, v| v.first }
+  @countries = ALL_COUNTRIES.to_a
   erb :front_index
 end
 
