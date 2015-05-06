@@ -1,0 +1,3119 @@
+{
+  "persons": [
+    {
+      "id": "person/99c60c5d-f350-4bcb-bb9a-2c7bef2991c1",
+      "name": "Nyamjavyn Batbayar",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Nyamjavyn_Batbayar",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/e68d6ca2-6dbc-4652-8324-7eca1e58c502",
+      "name": "Bayarbaataryn Bolor",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/13730f87-303e-4592-8245-fa12a27948a1",
+      "name": "Almalikyn Tleikhan",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/0570f279-a81f-4bf5-83b6-57e2e1607c36",
+      "name": "Agilapyn Bakei",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/bb66b35c-20b5-4f97-8c95-2bd49d2617e4",
+      "name": "Khaltmaagiin Battulga",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/4e5761c0-d740-42b0-aef7-d30ba81197c0",
+      "name": "Dashdondogiin Ganbat",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/e6f61c6b-f1cc-4ed1-bdeb-39dc062a8f1a",
+      "name": "Yondongiin Otgonbayar",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/fc17cbc7-526c-4ead-ae25-4a75e2b9d582",
+      "name": "Tsedeviin Dashdorj",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/4c493e7d-dd1c-4999-814f-3fe0f3e747c4",
+      "name": "Jamyansürengiin Batsuuri",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/d8210b6e-6383-450f-b543-32092532a148",
+      "name": "Khayangaagiin Bolorchuluun",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/b5d90dce-9751-46d1-8e8f-9bb3af1f5aea",
+      "name": "Nyamtaishirgiin Nomtoibayar",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/78fe5c4d-29b2-4094-8c90-2b3589ef0046",
+      "name": "Batsükhiin Narankhüü",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/f6630172-47ca-4989-93e9-ea65347832d4",
+      "name": "Yadamsürengiin Sanjmyatav",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/df762d85-8e4b-4f0a-abef-7e3d928173bb",
+      "name": "Dulamsürengiin Oyuunkhorol",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/63e38944-88dc-45c4-b7dd-3a76db3b6f32",
+      "name": "Gavaagiin Batkhüü",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/2a4ef319-7e6d-4ac0-9cd9-7af254533469",
+      "name": "Dashzevegiin Zorigt",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/c268dc95-d422-4836-a1e2-a7a22bf82c9b",
+      "name": "Dashdembereliin Bat-Erdene",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/5dd52387-84a8-4f83-9928-aea361229ea7",
+      "name": "Mönkhchuluuny Zorigt",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/M%C3%B6nkhchuluuny_Zorigt",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/a4a58c93-527b-41e3-a27b-6e545f3c224c",
+      "name": "Sangajavyn Bayarzsogt",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/8a1affe8-f2cc-4798-a262-0f05c3053cbf",
+      "name": "Jargaltulgyn Erdenebat",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/fe616ca4-3383-40f9-8a60-e55f24ea5327",
+      "name": "Miyeegombyn Enkhbold",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Miyeegombyn_Enkhbold",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/11981d8c-5c2f-4bae-95bc-0e5e888436a2",
+      "name": "Sükhbaataryn Batbold",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/S%C3%BCkhbaataryn_Batbold",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/85be4223-3370-4117-9cf6-652d2199c6ca",
+      "name": "Chimediin Khürelbaatar",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/d87bb8ec-aabd-443a-9357-991e5f641b91",
+      "name": "Battogtokhyn Choijilsüren",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/6235b55d-38b9-4b97-8ff6-5043f0fdbd97",
+      "name": "Sandagiin Byambatsogt",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/8a5cb6ab-c26a-406d-aa24-4c39adee4a36",
+      "name": "Dogsomyn Battsogt",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/13c86237-6e32-4415-ab30-651960da3175",
+      "name": "Luvsantserengiin Enkh-Amgalan",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/799b1ded-8559-4b18-8fc3-3bebd5f1f545",
+      "name": "Tserenpiliin Davaasüren",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/04349c21-1a2b-4ab7-a884-366810e88993",
+      "name": "Badmaanyambuugiin Bat-Erdene",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Badmaanyambuugiin_Bat-Erdene",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/dfb4bfe3-54b6-4f59-9d42-a8800a931364",
+      "name": "Batkhüügiin Garamgaibaatar",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/31f7612a-2df2-459c-a769-8aaeb3a99f33",
+      "name": "Sainkhüügiin Ganbaatar",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/1dc2f20c-aa0f-4d1d-8454-d8b4bab97a4d",
+      "name": "Damdingiin Khayankhyarvaa",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/b2572947-d0e1-49b8-bfa8-36d840a5c4c1",
+      "name": "Otgonbilegiin Sodbileg",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/86fd3905-7f54-4058-944c-93d68b53a677",
+      "name": "Logiin Tsog",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/c805bf8b-a4bb-4750-accf-b92534d91ce7",
+      "name": "Tsedevdambyn Oyuungerel",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/18796e61-2485-4c2b-a2f1-ac6dab8bcccc",
+      "name": "Luvsanvandangiin Bold",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/a9f5ad7e-cb1a-43f6-a503-09500f29d47e",
+      "name": "Jalbasürengiin Batzandan",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/4c9e04b9-73f2-43b1-8e90-4591c511bc9c",
+      "name": "Davaajavyn Gankhuyag",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/1036ab1d-3513-4690-806e-31d7d3aecf38",
+      "name": "Dashjamtsyn Arvin",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/37f9caf1-372a-4537-9a89-85cc062cc80f",
+      "name": "Luvsannyamyn Gantömör",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/5d1b9056-b431-46fb-ad38-9f9351048115",
+      "name": "Rinchinnyamyn Amarjargal",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Rinchinnyamyn_Amarjargal",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/8acd806d-dbad-4466-a489-bed346c7427c",
+      "name": "Sodnomzunduin Erdene",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/9ae0f761-c873-4230-837b-c2728d33269b",
+      "name": "Saldangiin Odontuyaa",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/eebd7dab-2dff-4675-a7b1-198b8d042aee",
+      "name": "Luvsangiin Erdenechimeg",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/19e65af8-4fe2-40f7-ba0f-1f34dc24edf6",
+      "name": "Dolgorsürengiin Sumyaabazar",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Dolgors%C3%BCrengiin_Sumyaabazar",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/c44b044f-1c66-44fe-89a5-fc719298a60b",
+      "name": "Gantömöriin Uyanga",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/b8e749fe-b7a9-4500-a575-bd5db42d7b68",
+      "name": "Garidkhüügiin Bayarsaikhan",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/7ce972e6-dae0-4b81-9a77-772fea2a8a2c",
+      "name": "Norovyn Altankhuyag",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/60c37ef6-6d1b-4b23-a5e3-1e720e04966d",
+      "name": "Migeddorjiin Batchimeg",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/cb141cbe-0b5c-44dd-874c-fc3f1d5c2e77",
+      "name": "Radnaagiin Burmaa",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/7095a54e-efa5-4a64-8e04-182e4614ed69",
+      "name": "Radnaasümbereliin Gonchigdorj",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/d1d72bb7-012f-4f86-a913-dc31952561a5",
+      "name": "Chimediin Saikhanbileg",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/bf2c9e2b-ec2a-43ca-8b85-0d7c701f6f98",
+      "name": "Khishigdembereliin Temüüjin",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/4a73d3ac-65f5-4bcc-a059-152a82185b76",
+      "name": "Sharavdorjiin Tüvdendorj",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/d7506853-9f48-47fa-8857-01de018b8d49",
+      "name": "Zandaakhüügiin Enkhbold",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/8d5be103-bb14-476f-888c-eeee8963eb30",
+      "name": "Dondogdorjiin Erdenebat",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/f2c93e86-43aa-4036-b7c4-3d1101172bdf",
+      "name": "Tsevelmaagiin Bayarsaikhan",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/b85b20f8-f589-4c52-a23d-8181a8052a42",
+      "name": "Damdingiin Demberel",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/373624f6-7ce0-40ab-a844-ed49bd8e10c3",
+      "name": "Nyamaagiin Enkhbold",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/6e3188c6-369b-4b63-b401-71ffc126ddf5",
+      "name": "Sunduin Batbold",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/5d2f1858-1a6c-4ca4-ae68-5436e237ea41",
+      "name": "Danzangiin Lündeejantsan",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/0f8933e2-fb45-4398-bdd5-316d22471260",
+      "name": "Tsendiin Nyamdorj",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/d7987c1e-b4d9-43ca-a65c-6f3966ad5ea2",
+      "name": "Yangugiin Sodbaatar",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/03cb6ea5-a16c-43dd-a55b-7d952d3e8550",
+      "name": "Ukhnaagiin Xürelsükh",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/9527aef9-b784-43da-a589-2f2641167d38",
+      "name": "Jadambyn Enkhbayar",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/51dba0ca-1a47-4fbd-9730-94a31d3f9fff",
+      "name": "Ölziisaikhany Enkhtüvshin",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/ffc77f94-8fb5-4594-9484-0c115cdff0d4",
+      "name": "Mishigiin Sonompil",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/d961fb5d-9dc8-46c3-8005-4018bc07926b",
+      "name": "Namdagiin Battsereg",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/3a461814-ad2e-4dba-839f-627184661b03",
+      "name": "Zangadyn Bayanselenge",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/8934220a-27e9-4378-850c-24c260ddf5b6",
+      "name": "Dendeviin Terbishdagva",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/5cfed035-322d-4670-bcac-4b2bf29df7a1",
+      "name": "Chültemiin Ulaan",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/9774bd08-b37e-4240-8e45-1204360e589f",
+      "name": "Tserendashiin Tsolmon",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/43be78a2-113e-4db2-a8c2-2d55aaeb41ee",
+      "name": "Oktyabriin Baasankhüü",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/5fb487a8-79e2-4da0-9522-bc13ae329a75",
+      "name": "Tserendashiin Oyuunbaatar",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/ff110451-545a-4f4a-9a62-1b1f120e1978",
+      "name": "Sanjaasürengiin Oyuun",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/56e57381-771d-4807-bf4d-4aa89a1469fc",
+      "name": "Sambuugiin Demberel",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/12b7d87b-3044-44c8-a7b0-dd28313b5a18",
+      "name": "Nyamjavyn Batbayar",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Nyamjavyn_Batbayar",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/b5b51e23-3608-4e40-b111-577157e44093",
+      "name": "Radnaasümbereliin Gonchigdorj",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Radnaas%C3%BCmbereliin_Gonchigdorj",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/9f3fb2ae-e813-400e-b3a8-d4b65c44a39f",
+      "name": "Sambuugiin Lambaa",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/6ae23189-de1f-458e-af8d-904e8398f9e3",
+      "name": "Khalidoldain Jekei",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/0dab7de4-bd92-4df9-95e9-17426acf495f",
+      "name": "Almalikyn Tleikhan",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/8cab8d89-24aa-4718-9d5f-32ca377397da",
+      "name": "Khavdislamyn Badyelkhan",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/2d043c5c-267f-4c47-9712-04f362b4cf5d",
+      "name": "Gombojavyn Zandanshatar",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Gombojavyn_Zandanshatar",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/348cb33d-65e2-4cb9-afab-27c8fe64c2d5",
+      "name": "Batjargalyn Batbayar",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Batjargalyn_Batbayar",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/82f9712f-43cd-4338-9d30-26f7cb169f99",
+      "name": "Khaltmaagiin Battulga",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/3feb9030-73ce-4771-863a-626e296bc88d",
+      "name": "Enebishiin Mönkh-Ochir",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/be81fcef-bed8-4012-840f-2d221043a49d",
+      "name": "Tsegmidiin Tsengel",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/48ef2393-f805-4570-962a-f4d33c9d723d",
+      "name": "Tsedeviin Dashdorj",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/0db9ee20-449e-4d34-90ab-a9fdaecac553",
+      "name": "Jadambyn Enkhbayar",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/f81913b3-32fb-4549-acbf-f67b261aeced",
+      "name": "Jamyansürengiin Batsuuri",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/a3d4fe49-6222-4b4a-bb03-19ffa52994bb",
+      "name": "Yaichiliin Batsuuri",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/56666d45-73ae-4d76-98f3-d29de52996c5",
+      "name": "Dorjiin Odbayar",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/fdab90d1-7430-4d95-86b4-fd72adde0ad9",
+      "name": "Tsendiin Shinebayar",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/caa359c9-0a40-4eb6-b1e0-1f012912b546",
+      "name": "Püreviin Altangerel",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/bf9bcfda-8a03-4e16-a8d8-56989e78afb1",
+      "name": "Khalzkhüügiin Narankhüü",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/8ba5d6df-f075-4092-b26c-e1843e30651a",
+      "name": "Radnaabazaryn Rash",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/8c897a00-4d97-4739-83d5-f04cf7aef015",
+      "name": "Dogsomjavyn Baldan-Ochir",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/839bd1e3-aeba-41ec-bdd6-b0a4ccefce42",
+      "name": "Dulamsürengiin Oyuunkhorol",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/a4c7b17c-d253-45ff-854c-3c694be1bc06",
+      "name": "Shinensambuugiin Saikhansambuu",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/e5b57e1d-8521-4e60-b69a-03d2a411c099",
+      "name": "Danzangiin Lündeejantsan",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/cf5e102c-ddc0-489e-a027-6e73a008852b",
+      "name": "Gavaagiin Batkhüü",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/63bc22f1-8730-4f8b-b07c-40171e7ac22a",
+      "name": "Dashzevegiin Zorigt",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/0c0e8f44-612b-4b88-aff0-7b756f3d9b4f",
+      "name": "Zandaakhüügiin Enkhbold",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Zandaakh%C3%BC%C3%BCgiin_Enkhbold",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/bfc08d71-ee31-4f03-add0-d04d13fa4200",
+      "name": "Khookhoryn Badamsüren",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/b2d57c4f-8daf-4500-ae18-6b58dc53a13e",
+      "name": "Tsevelmaagiin Bayarsaikhan",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/2ad129ee-8fd8-4de4-8d60-3e3726c9047c",
+      "name": "Chültemiin Ulaan",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/84df6839-3254-4eb2-b947-25648bb74ed8",
+      "name": "Rentsengiin Bud",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/41fec483-b164-46c1-a436-bc657f18761c",
+      "name": "Ochirbatyn Chuluunbat",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/d490fd44-04f7-43eb-9a60-57540cf9b617",
+      "name": "Erdeniin Bat-Uul",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Erdeniin_Bat-Uul",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/c9aa8e84-0d26-4d4b-a19c-52f1952df026",
+      "name": "Sangajavyn Bayartsogt",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/558b312c-5e8f-4cb1-b876-be115df0c9cf",
+      "name": "Sunduin Batbold",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/8de86dbe-ab1f-44c1-92cf-54934a69528d",
+      "name": "Doltsongiin Dondog",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/441da54a-c1ec-4acc-8db0-e4013fd28a16",
+      "name": "Miyegombyn Enkhbold",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/fb0a15fb-4d36-4b49-964c-08cee3bbd6b4",
+      "name": "Nyamaagiin Enkhbold",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/1911792c-64d1-4982-bb4a-b96e7bfefd58",
+      "name": "Battogtokhyn Choijilsüren",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/2e1987db-d785-4c33-8372-6fe2b6acb10a",
+      "name": "Tsendiin Nyamdorj",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Tsendiin_Nyamdorj",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/39726cde-9481-41fa-8f74-eaf4470da249",
+      "name": "Chimediin Khürelbaatar",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/d4756326-5890-45e4-ae77-fdcb9dd3527a",
+      "name": "Sandagiin Byambatsogt",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/c556c173-1b87-408f-be6b-9e36a31b3a51",
+      "name": "Damdiny Demberel",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Damdiny_Demberel",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/013c6f49-d492-47dd-983a-717802a68c27",
+      "name": "Rinchinnyamyn Amarjargal",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Rinchinnyamyn_Amarjargal",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/cc8c0889-51aa-4ba3-b055-21136a83186e",
+      "name": "Tserenpiliin Davaasüren",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/be5cd2f8-eabc-4852-b00b-2f10f556b645",
+      "name": "Ölziisaikhany Enkhtüvshin",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/fcbc1287-11ce-438e-b79d-d28550138a83",
+      "name": "Lamjavyn Gundalai",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Lamjavyn_Gundalai",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/b0d2d025-251e-48c6-94d7-df88cbe5e48c",
+      "name": "Tserenbatyn Sedvanchig",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/15719522-eedb-4595-abdb-abd6443243a6",
+      "name": "Dashjamtsyn Arvin",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/5a170e52-a8ce-4a77-ad60-af366144899a",
+      "name": "Badmaanyambuugiin Bat-Erdene",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Badmaanyambuugiin_Bat-Erdene",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/44df9f44-b00a-4ca7-967b-bcca19cb99e5",
+      "name": "Navaansamdangiin Ganbyamba",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/67e568ee-7df4-47e1-85f3-3176134e724c",
+      "name": "Jamyankhorloogiin Sükhbaatar",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/5c664a64-0639-45d7-b845-0a43f34b64b9",
+      "name": "Damdiny Khayankhyarvaa",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/58008f7b-f948-4c9b-bb5e-ce9d7f303ea0",
+      "name": "Lüimediin Gansükh",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/a6a22bbb-a98f-4fc3-acc8-aa44c0924b13",
+      "name": "Dorjdambyn Damba-Ochir",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/c8e10686-427a-4ddd-8314-df59f83eba69",
+      "name": "Dürzeegiin Odkhüü",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/44ffe70f-6a4b-4154-8d36-194d97687968",
+      "name": "Delegiin Zagdjav",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/851b3c7a-a4e4-472c-90a0-802ce2736978",
+      "name": "Luvsanvandangiin Bold",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/8acd933f-560e-4bcd-8a23-47f599c7dc79",
+      "name": "Tsogtyn Batbayar",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Tsogtyn_Batbayar",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/06f7cf2f-3aaf-4c3e-9d25-de76fe2f8170",
+      "name": "Davaajavyn Gankhuyag",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/0238756d-b5d4-4024-a438-c760d5a31820",
+      "name": "Chimediin Saikhanbileg",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Chimediin_Saikhanbileg",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/c64518d7-637a-4ca1-85b0-4387aa6e7150",
+      "name": "Zorigiin Altai",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/4a565a2b-c682-4302-afa5-115d08d0292e",
+      "name": "Sanjaagiin Bayar",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Sanjaagiin_Bayar",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/96baa519-35c6-4f56-98cf-6ae2918ecd77",
+      "name": "Sükhbaataryn Batbold",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/S%C3%BCkhbaataryn_Batbold",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/de04039a-4fd0-4068-9442-19deccaa6b17",
+      "name": "Luvsannyamyn Gantömör",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/b6448925-73d0-47c4-8854-37f32f7e310b",
+      "name": "Tsakhiagiin Elbegdorj",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Tsakhiagiin_Elbegdorj",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/5d657a97-fc41-4bd9-9e5d-0de46bf64acd",
+      "name": "Garidkhüügiin Bayarsaikhan",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/f7fe9a7d-ce5a-4432-8ebe-6b6490f005cf",
+      "name": "Dagvadorjiin Ochirbat",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/f40c48b3-05d9-45de-b81c-fba5ee67778f",
+      "name": "Dashdorjiin Zorigt",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/19f95590-0395-4e56-89bd-506b1888dcb2",
+      "name": "Tsendiin Mönkh-Orgil",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/44cfd736-9303-4ab9-bf21-b685ab2048a4",
+      "name": "Khishigdembereliin Temüüjin",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/51847ad9-ea8f-4b9b-97e5-badf1c1bb29e",
+      "name": "Dangaasurengiin Enkhbat",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/f94409d5-539d-41a6-9e48-62c70fe23867",
+      "name": "Sodnomzunduin Erdene",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/a753371e-f944-4dce-821f-33cc92cad701",
+      "name": "Dendeviin Terbishdagva",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/fa189771-ba8d-4b1a-a4eb-7aa9af755a19",
+      "name": "Norovyn Altankhuyag",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Norovyn_Altankhuyag",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/bbda4266-ff0f-4657-a9e8-41b73501f0d8",
+      "name": "Davaagiin Batbayar",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Kyokush%C5%ABzan_Noboru",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/81b803f1-5dee-4493-9c9c-4e0b84bc70de",
+      "name": "Sanjaasürengiin Oyuun",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Sanjaas%C3%BCrengiin_Oyuun",
+          "note": "wikipedia"
+        }
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "name": "Democratic Party",
+      "classification": "party"
+    },
+    {
+      "id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "name": "Mongolian People's Party",
+      "classification": "party"
+    },
+    {
+      "id": "party/1ca875f3-f36c-4d82-9e1c-aa440ea3d936",
+      "name": "Independent",
+      "classification": "party"
+    },
+    {
+      "id": "party/0497a95d-df34-4d63-a0ae-c9108b9b8ea0",
+      "name": "Justice Coalition",
+      "classification": "party"
+    },
+    {
+      "id": "party/ec8fb72d-2b16-4d34-993d-27844ea60281",
+      "name": "Civil Will-Green Party",
+      "classification": "party"
+    },
+    {
+      "id": "legislature",
+      "name": "State Great Khural",
+      "classification": "legislature",
+      "legislative_periods": [
+        {
+          "id": "term/2012",
+          "name": "State Grand Khural 2012–",
+          "classification": "legislative period",
+          "start_date": "2012-06-28"
+        },
+        {
+          "id": "term/2008",
+          "name": "State Grand Khural 2008–2012",
+          "classification": "legislative period",
+          "start_date": "2008-07-23",
+          "end_date": "2012-06-28"
+        }
+      ]
+    }
+  ],
+  "memberships": [
+    {
+      "person_id": "person/99c60c5d-f350-4bcb-bb9a-2c7bef2991c1",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Arkhangai"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/e68d6ca2-6dbc-4652-8324-7eca1e58c502",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Arkhangai"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/13730f87-303e-4592-8245-fa12a27948a1",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Bayan-Ölgii"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/0570f279-a81f-4bf5-83b6-57e2e1607c36",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Bayan-Ölgii"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/bb66b35c-20b5-4f97-8c95-2bd49d2617e4",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Bayankhongor"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/4e5761c0-d740-42b0-aef7-d30ba81197c0",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Bayankhongor"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/e6f61c6b-f1cc-4ed1-bdeb-39dc062a8f1a",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Bulgan"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/fc17cbc7-526c-4ead-ae25-4a75e2b9d582",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Govi-Altai"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/4c493e7d-dd1c-4999-814f-3fe0f3e747c4",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Govisümber•Dornogovi"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/d8210b6e-6383-450f-b543-32092532a148",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/1ca875f3-f36c-4d82-9e1c-aa440ea3d936",
+      "area": {
+        "name": "Dornod"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/b5d90dce-9751-46d1-8e8f-9bb3af1f5aea",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Dornod"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/78fe5c4d-29b2-4094-8c90-2b3589ef0046",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Dundgovi"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/f6630172-47ca-4989-93e9-ea65347832d4",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Zavkhan"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/df762d85-8e4b-4f0a-abef-7e3d928173bb",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Zavkhan"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/63e38944-88dc-45c4-b7dd-3a76db3b6f32",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Övörkhangai"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/2a4ef319-7e6d-4ac0-9cd9-7af254533469",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Övörkhangai"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/c268dc95-d422-4836-a1e2-a7a22bf82c9b",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ömnögovi"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/5dd52387-84a8-4f83-9928-aea361229ea7",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Sükhbaatar"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/a4a58c93-527b-41e3-a27b-6e545f3c224c",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Selenge"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/8a1affe8-f2cc-4798-a262-0f05c3053cbf",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Selenge"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/fe616ca4-3383-40f9-8a60-e55f24ea5327",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Töv"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/11981d8c-5c2f-4bae-95bc-0e5e888436a2",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Töv"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/85be4223-3370-4117-9cf6-652d2199c6ca",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Uvs"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/d87bb8ec-aabd-443a-9357-991e5f641b91",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Uvs"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/6235b55d-38b9-4b97-8ff6-5043f0fdbd97",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Khovd"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/8a5cb6ab-c26a-406d-aa24-4c39adee4a36",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/0497a95d-df34-4d63-a0ae-c9108b9b8ea0",
+      "area": {
+        "name": "Khovd"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/13c86237-6e32-4415-ab30-651960da3175",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Khövsgöl"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/799b1ded-8559-4b18-8fc3-3bebd5f1f545",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/1ca875f3-f36c-4d82-9e1c-aa440ea3d936",
+      "area": {
+        "name": "Khövsgöl"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/04349c21-1a2b-4ab7-a884-366810e88993",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Khentii"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/dfb4bfe3-54b6-4f59-9d42-a8800a931364",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Khentii"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/31f7612a-2df2-459c-a769-8aaeb3a99f33",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/1ca875f3-f36c-4d82-9e1c-aa440ea3d936",
+      "area": {
+        "name": "Darkhan-Uul"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/1dc2f20c-aa0f-4d1d-8454-d8b4bab97a4d",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Darkhan-Uul"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/b2572947-d0e1-49b8-bfa8-36d840a5c4c1",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Orkhon"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/86fd3905-7f54-4058-944c-93d68b53a677",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/0497a95d-df34-4d63-a0ae-c9108b9b8ea0",
+      "area": {
+        "name": "Orkhon"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/c805bf8b-a4bb-4750-accf-b92534d91ce7",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ulan Bator — Baganuur•Bagakhangai•Khan-Uul"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/18796e61-2485-4c2b-a2f1-ac6dab8bcccc",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ulan Bator — Baganuur•Bagakhangai•Khan-Uul"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/a9f5ad7e-cb1a-43f6-a503-09500f29d47e",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ulan Bator — Bayanzürkh•Nalaikh"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/4c9e04b9-73f2-43b1-8e90-4591c511bc9c",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ulan Bator — Bayanzürkh•Nalaikh"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/1036ab1d-3513-4690-806e-31d7d3aecf38",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ulan Bator — Bayanzürkh•Nalaikh"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/37f9caf1-372a-4537-9a89-85cc062cc80f",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ulan Bator — Sükhbaatar"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/5d1b9056-b431-46fb-ad38-9f9351048115",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ulan Bator — Sükhbaatar"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/8acd806d-dbad-4466-a489-bed346c7427c",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ulan Bator — Bayangol"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/9ae0f761-c873-4230-837b-c2728d33269b",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ulan Bator — Bayangol"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/eebd7dab-2dff-4675-a7b1-198b8d042aee",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ulan Bator — Songino Khairkhan"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/19e65af8-4fe2-40f7-ba0f-1f34dc24edf6",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Ulan Bator — Songino Khairkhan"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/c44b044f-1c66-44fe-89a5-fc719298a60b",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/0497a95d-df34-4d63-a0ae-c9108b9b8ea0",
+      "area": {
+        "name": "Ulan Bator — Chingeltei"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/b8e749fe-b7a9-4500-a575-bd5db42d7b68",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ulan Bator — Chingeltei"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/7ce972e6-dae0-4b81-9a77-772fea2a8a2c",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/60c37ef6-6d1b-4b23-a5e3-1e720e04966d",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/cb141cbe-0b5c-44dd-874c-fc3f1d5c2e77",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/7095a54e-efa5-4a64-8e04-182e4614ed69",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/d1d72bb7-012f-4f86-a913-dc31952561a5",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/bf2c9e2b-ec2a-43ca-8b85-0d7c701f6f98",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/4a73d3ac-65f5-4bcc-a059-152a82185b76",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/d7506853-9f48-47fa-8857-01de018b8d49",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/8d5be103-bb14-476f-888c-eeee8963eb30",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/f2c93e86-43aa-4036-b7c4-3d1101172bdf",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/b85b20f8-f589-4c52-a23d-8181a8052a42",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/373624f6-7ce0-40ab-a844-ed49bd8e10c3",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/6e3188c6-369b-4b63-b401-71ffc126ddf5",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/5d2f1858-1a6c-4ca4-ae68-5436e237ea41",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/0f8933e2-fb45-4398-bdd5-316d22471260",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/d7987c1e-b4d9-43ca-a65c-6f3966ad5ea2",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/03cb6ea5-a16c-43dd-a55b-7d952d3e8550",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/9527aef9-b784-43da-a589-2f2641167d38",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/51dba0ca-1a47-4fbd-9730-94a31d3f9fff",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/ffc77f94-8fb5-4594-9484-0c115cdff0d4",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/0497a95d-df34-4d63-a0ae-c9108b9b8ea0",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/d961fb5d-9dc8-46c3-8005-4018bc07926b",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/0497a95d-df34-4d63-a0ae-c9108b9b8ea0",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/3a461814-ad2e-4dba-839f-627184661b03",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/0497a95d-df34-4d63-a0ae-c9108b9b8ea0",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/8934220a-27e9-4378-850c-24c260ddf5b6",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/0497a95d-df34-4d63-a0ae-c9108b9b8ea0",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/5cfed035-322d-4670-bcac-4b2bf29df7a1",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/0497a95d-df34-4d63-a0ae-c9108b9b8ea0",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/9774bd08-b37e-4240-8e45-1204360e589f",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/0497a95d-df34-4d63-a0ae-c9108b9b8ea0",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/43be78a2-113e-4db2-a8c2-2d55aaeb41ee",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/0497a95d-df34-4d63-a0ae-c9108b9b8ea0",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/5fb487a8-79e2-4da0-9522-bc13ae329a75",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/0497a95d-df34-4d63-a0ae-c9108b9b8ea0",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/ff110451-545a-4f4a-9a62-1b1f120e1978",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/ec8fb72d-2b16-4d34-993d-27844ea60281",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/56e57381-771d-4807-bf4d-4aa89a1469fc",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/ec8fb72d-2b16-4d34-993d-27844ea60281",
+      "area": {
+        "name": "n/a"
+      },
+      "legislative_period_id": "term/2012"
+    },
+    {
+      "person_id": "person/12b7d87b-3044-44c8-a7b0-dd28313b5a18",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Arkhangai"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/b5b51e23-3608-4e40-b111-577157e44093",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Arkhangai"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/9f3fb2ae-e813-400e-b3a8-d4b65c44a39f",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Arkhangai"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/6ae23189-de1f-458e-af8d-904e8398f9e3",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Bayan-Ölgii"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/0dab7de4-bd92-4df9-95e9-17426acf495f",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Bayan-Ölgii"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/8cab8d89-24aa-4718-9d5f-32ca377397da",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Bayan-Ölgii"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/2d043c5c-267f-4c47-9712-04f362b4cf5d",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Bayankhongor"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/348cb33d-65e2-4cb9-afab-27c8fe64c2d5",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Bayankhongor"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/82f9712f-43cd-4338-9d30-26f7cb169f99",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Bayankhongor"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/3feb9030-73ce-4771-863a-626e296bc88d",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Bulgan"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/be81fcef-bed8-4012-840f-2d221043a49d",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Bulgan"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/48ef2393-f805-4570-962a-f4d33c9d723d",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Govi-Altai"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/0db9ee20-449e-4d34-90ab-a9fdaecac553",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Govi-Altai"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/f81913b3-32fb-4549-acbf-f67b261aeced",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Govisümber•Dornogovi"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/a3d4fe49-6222-4b4a-bb03-19ffa52994bb",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Govisümber•Dornogovi"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/56666d45-73ae-4d76-98f3-d29de52996c5",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Dornod"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/fdab90d1-7430-4d95-86b4-fd72adde0ad9",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Dornod"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/caa359c9-0a40-4eb6-b1e0-1f012912b546",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Dornod"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/bf9bcfda-8a03-4e16-a8d8-56989e78afb1",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Dundgovi"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/8ba5d6df-f075-4092-b26c-e1843e30651a",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Dundgovi"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/8c897a00-4d97-4739-83d5-f04cf7aef015",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Zavkhan"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/839bd1e3-aeba-41ec-bdd6-b0a4ccefce42",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Zavkhan"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/a4c7b17c-d253-45ff-854c-3c694be1bc06",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Zavkhan"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/e5b57e1d-8521-4e60-b69a-03d2a411c099",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Övörkhangai"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/cf5e102c-ddc0-489e-a027-6e73a008852b",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Övörkhangai"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/63bc22f1-8730-4f8b-b07c-40171e7ac22a",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Övörkhangai"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/0c0e8f44-612b-4b88-aff0-7b756f3d9b4f",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Övörkhangai"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/bfc08d71-ee31-4f03-add0-d04d13fa4200",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Ömnögovi"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/b2d57c4f-8daf-4500-ae18-6b58dc53a13e",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ömnögovi"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/2ad129ee-8fd8-4de4-8d60-3e3726c9047c",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Sükhbaatar"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/84df6839-3254-4eb2-b947-25648bb74ed8",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Sükhbaatar"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/41fec483-b164-46c1-a436-bc657f18761c",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Selenge"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/d490fd44-04f7-43eb-9a60-57540cf9b617",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Selenge"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/c9aa8e84-0d26-4d4b-a19c-52f1952df026",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Selenge"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/558b312c-5e8f-4cb1-b876-be115df0c9cf",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Töv"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/8de86dbe-ab1f-44c1-92cf-54934a69528d",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Töv"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/441da54a-c1ec-4acc-8db0-e4013fd28a16",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Töv"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/fb0a15fb-4d36-4b49-964c-08cee3bbd6b4",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Töv"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/1911792c-64d1-4982-bb4a-b96e7bfefd58",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Uvs"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/2e1987db-d785-4c33-8372-6fe2b6acb10a",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Uvs"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/39726cde-9481-41fa-8f74-eaf4470da249",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Uvs"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/d4756326-5890-45e4-ae77-fdcb9dd3527a",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Khovd"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/c556c173-1b87-408f-be6b-9e36a31b3a51",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Khovd"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/013c6f49-d492-47dd-983a-717802a68c27",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Khovd"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/cc8c0889-51aa-4ba3-b055-21136a83186e",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Khövsgöl"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/be5cd2f8-eabc-4852-b00b-2f10f556b645",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Khövsgöl"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/fcbc1287-11ce-438e-b79d-d28550138a83",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Khövsgöl"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/b0d2d025-251e-48c6-94d7-df88cbe5e48c",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Khövsgöl"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/15719522-eedb-4595-abdb-abd6443243a6",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Khentii"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/5a170e52-a8ce-4a77-ad60-af366144899a",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Khentii"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/44df9f44-b00a-4ca7-967b-bcca19cb99e5",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Khentii"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/67e568ee-7df4-47e1-85f3-3176134e724c",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Darkhan-Uul"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/5c664a64-0639-45d7-b845-0a43f34b64b9",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Darkhan-Uul"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/58008f7b-f948-4c9b-bb5e-ce9d7f303ea0",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Darkhan-Uul"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/a6a22bbb-a98f-4fc3-acc8-aa44c0924b13",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Orkhon"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/c8e10686-427a-4ddd-8314-df59f83eba69",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Orkhon"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/44ffe70f-6a4b-4154-8d36-194d97687968",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Ulan Bator — Baganuur•Bagakhangai•Khan-Uul"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/851b3c7a-a4e4-472c-90a0-802ce2736978",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ulan Bator — Baganuur•Bagakhangai•Khan-Uul"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/8acd933f-560e-4bcd-8a23-47f599c7dc79",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Ulan Bator — Bayanzürkh•Nalaikh"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/06f7cf2f-3aaf-4c3e-9d25-de76fe2f8170",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ulan Bator — Bayanzürkh•Nalaikh"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/0238756d-b5d4-4024-a438-c760d5a31820",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ulan Bator — Bayanzürkh•Nalaikh"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/c64518d7-637a-4ca1-85b0-4387aa6e7150",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/1ca875f3-f36c-4d82-9e1c-aa440ea3d936",
+      "area": {
+        "name": "Ulan Bator — Bayanzürkh•Nalaikh"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/4a565a2b-c682-4302-afa5-115d08d0292e",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Ulan Bator — Sükhbaatar"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/96baa519-35c6-4f56-98cf-6ae2918ecd77",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Ulan Bator — Sükhbaatar"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/de04039a-4fd0-4068-9442-19deccaa6b17",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ulan Bator — Sükhbaatar"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/b6448925-73d0-47c4-8854-37f32f7e310b",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ulan Bator — Chingeltei"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/5d657a97-fc41-4bd9-9e5d-0de46bf64acd",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ulan Bator — Chingeltei"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/f7fe9a7d-ce5a-4432-8ebe-6b6490f005cf",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Ulan Bator — Chingeltei"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/f40c48b3-05d9-45de-b81c-fba5ee67778f",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Ulan Bator — Chingeltei"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/19f95590-0395-4e56-89bd-506b1888dcb2",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Ulan Bator — Bayangol"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/44cfd736-9303-4ab9-bf21-b685ab2048a4",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ulan Bator — Bayangol"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/51847ad9-ea8f-4b9b-97e5-badf1c1bb29e",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/ec8fb72d-2b16-4d34-993d-27844ea60281",
+      "area": {
+        "name": "Ulan Bator — Bayangol"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/f94409d5-539d-41a6-9e48-62c70fe23867",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ulan Bator — Bayangol"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/a753371e-f944-4dce-821f-33cc92cad701",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/c8a62f79-c205-47bb-88ad-794d65b0dc7b",
+      "area": {
+        "name": "Ulan Bator — Songino Khairkhan"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/fa189771-ba8d-4b1a-a4eb-7aa9af755a19",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ulan Bator — Songino Khairkhan"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/bbda4266-ff0f-4657-a9e8-41b73501f0d8",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/85d85a9e-8d5d-4d44-b7f0-5be053be20b5",
+      "area": {
+        "name": "Ulan Bator — Songino Khairkhan"
+      },
+      "legislative_period_id": "term/2008"
+    },
+    {
+      "person_id": "person/81b803f1-5dee-4493-9c9c-4e0b84bc70de",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/ec8fb72d-2b16-4d34-993d-27844ea60281",
+      "area": {
+        "name": "Ulan Bator — Songino Khairkhan"
+      },
+      "legislative_period_id": "term/2008"
+    }
+  ],
+  "warnings": {
+    "skipped": [
+      "name_mn",
+      "source"
+    ]
+  }
+}
