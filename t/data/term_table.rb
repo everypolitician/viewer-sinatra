@@ -31,6 +31,7 @@ describe "Basic loads" do
       last_response.header['Content-Disposition'].must_include country
       data = CSV.parse(last_response.body, headers: true)
       data.first.headers.must_include 'group'
+      data.first.headers.must_include 'chamber'
       data.count.must_be :>, 1
     end
 
