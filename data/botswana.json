@@ -1,0 +1,1305 @@
+{
+  "persons": [
+    {
+      "id": "person/944d6ddf-8ee9-4979-8c36-10254dd788b8",
+      "name": "Ronald Shamukuni",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/f039ee0d-a3f3-4616-9236-819a3923e20e",
+      "name": "Kostantinos Markus",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/b9ac44a0-2cc1-44db-b84b-bfce9e1a99e1",
+      "name": "Tawana Moremi",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/ee58f892-7f43-4a8a-8bc6-02c48d4115cf",
+      "name": "Thato Kwerepe",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/1f799851-928f-4ab5-afb4-3754c9656eca",
+      "name": "Bagalatia Arone",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/549a2aae-6398-4c80-b1e3-e2cca02a0eab",
+      "name": "Guma Moyo",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/4b3db1c2-ff1a-4482-93ea-4caa05637100",
+      "name": "Biggie Butale",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/3c6e4dc8-531c-4dde-9257-a35e18492dc1",
+      "name": "Buti Billy",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/6e5ee286-50d5-4ea2-8c76-3602bf676948",
+      "name": "Wynter Mmolotsi",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/a00ef08e-6284-44c0-ba71-474bed0a7b7f",
+      "name": "Mokwaledi Moswaane",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/204c5c8d-2836-4499-94c2-f466c2665cf0",
+      "name": "Polson Majaga",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/101f55a4-88a5-45cf-89ff-70f9d5fb5445",
+      "name": "Edwin Batshu",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Edwin_Batshu",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/430aa5af-7ba5-41f0-85f5-37208368d12c",
+      "name": "Fidelis Molao",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/24e4bd36-7cfa-4cff-997b-c33167c067db",
+      "name": "Thapelo Olopeng",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/345122aa-4aab-4ab7-9a1a-df995862a53f",
+      "name": "Shaw Kgathi",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Shaw_Kgathi",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/45d2c480-5a9f-4cbb-8fcf-2cd296418915",
+      "name": "Kefentse Mzwinila",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/172094b5-4340-467e-b21a-71633cd9c30c",
+      "name": "Nonofo Molefhi",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Nonofo_Molefhi",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/08a7ea00-76c7-47c8-bd4e-294af0f723ec",
+      "name": "Dithapelo Keorapetse",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/bdb6f557-8b00-49b4-a342-1000f95802b5",
+      "name": "Prince Maele",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/4dc0c3f2-f0d9-49e1-9c97-b1aad14552e7",
+      "name": "Moiseraela Goya",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/4ee48d3e-1d2c-47ce-9447-425c397855f6",
+      "name": "Dorcus Makgatho-Malesu",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/4eb45620-38fd-4932-9780-1432112d4422",
+      "name": "Botlogile Tshireletso",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/163e869e-ce89-4b8a-8c74-3fadc983bd9d",
+      "name": "Joseph Molefe",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/7a29205d-beda-4d2f-b10c-ca48094a068c",
+      "name": "Dikgang Makgalemele",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/85e6a51a-0bb0-4035-8c13-1738b9f0af34",
+      "name": "Kgotla Autlwetse",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/a2852821-808b-48ec-99af-d66cb93733e9",
+      "name": "Tshekedi Khama II",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Tshekedi_Khama_II",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/77a448cb-0779-4c60-a1bf-5b60efe92bc7",
+      "name": "Pelonomi Venson-Moitoi",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Pelonomi_Venson-Moitoi",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/cc95033f-8a9f-4587-bd59-0b56f950a9ab",
+      "name": "Lelatisitswe Sethomo",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/45d1d7d3-2198-466d-af71-da7654392086",
+      "name": "Slumber Tsogwane",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/1d43a6da-250f-4a0b-a423-7b71b5008cf1",
+      "name": "Isaac Davids",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/627ca1ce-cb29-4e33-bb73-dff23a96cd65",
+      "name": "Gilbert Mangole",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/a307b3db-5678-4be9-8fac-3a1ba4d69b12",
+      "name": "Phenyo Butale",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/4bec08c3-bd4b-43ce-a437-70ba443f238b",
+      "name": "Haskins Nkaigwa",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/84d36919-7b1e-4945-8d19-010a81073969",
+      "name": "Kagiso Molatlhegi",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/997a29e4-8cdd-4b62-bb61-adfc9899b956",
+      "name": "Duma Boko",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Duma_Boko",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/c44f57f6-28bf-4392-a9ac-45beb9398fcc",
+      "name": "Ndaba Gaolathe",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/0f7da197-e277-44b2-b9cf-77d4b40579b8",
+      "name": "Same Bathobakae",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/1953fa5d-5c00-4352-94ff-f97fa0e529f8",
+      "name": "Samuel Rantuana",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/43545ce5-ef5a-48fb-889a-3ccc574f44f3",
+      "name": "Sedirwa Kgoroba",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/b4e08300-e5bc-42e7-bb38-57edf2a58c26",
+      "name": "Pius Mokgware",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/1628e306-c84a-4762-8905-5710c947c4eb",
+      "name": "Tshenolo Mabeo",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/64abdba2-128b-4b5f-b824-ff6773b5b24c",
+      "name": "Mohammed I. Khan",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/d7b2ba75-8119-423b-a692-86dce584adc3",
+      "name": "Tlamelo Mmatli",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/78b605eb-2a88-4ee0-a244-158ced6947dc",
+      "name": "Vincent Seretse",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/3591aeac-0779-44ec-b4d7-3d1edfcc4259",
+      "name": "Liakat Kablay",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/bd73713f-7a42-4fb3-99fd-d364e92d63ca",
+      "name": "Ngaka Ngaka",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/44c9d008-444e-4120-8016-a42582507fcd",
+      "name": "Sadique Kebonang",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/987d1245-9c8e-4942-9604-22d7e56911e5",
+      "name": "James Mathokgwane",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/00f9effe-2daf-4ae0-8b17-2f304ea1f5fe",
+      "name": "Alfred Madigele",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/b264028a-d0a8-4aed-88c9-acda5a430b23",
+      "name": "Patrick Ralotsia",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/b0204d2c-d1c0-454b-8e1d-48e5083f2d7a",
+      "name": "Abram Kesupile",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/dc487858-8420-4fab-9383-3f449d017dc0",
+      "name": "Mokgweetsi Masisi",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Mokgweetsi_Masisi",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/0365bb25-ab60-4357-a974-4ed797075974",
+      "name": "Shawn Ntlhaile",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/89edce87-4fe0-4a2f-a856-140fd90a5d26",
+      "name": "Itumeleng Moipisi",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/406fdade-f8ca-4961-a7e4-dee634f8eefe",
+      "name": "Frans Van Der Westhuizen",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/479bd363-0734-4f65-a8c5-e1b6d124c5da",
+      "name": "Noah Salakae",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/74809055-f1b6-4fcc-bf7c-dc33942b9360",
+      "name": "Christiaan De Graaff",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/e8ebb033-f825-4422-bba4-c7e9e9759122",
+      "name": "Kenneth Matambo",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/908578b5-9fa7-449c-9cc8-cd2d0c81b3d4",
+      "name": "Unity Dow",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Unity_Dow",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/c5bf2527-7e4f-45cd-a41b-cfdbb08b6ea8",
+      "name": "Eric Molale",
+      "links": [
+        {
+          "url": "",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/9876d115-eb66-4269-8299-586fcaf63be0",
+      "name": "Kitso Mokaila",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Kitso_Mokaila",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/7eb51db4-7d4d-45d2-be16-537a83fee8e4",
+      "name": "Ian Khama",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Ian_Khama",
+          "note": "wikipedia"
+        }
+      ]
+    },
+    {
+      "id": "person/23c66ad2-4820-40f1-9b97-097f07328e01",
+      "name": "Athaliah Molokomme",
+      "links": [
+        {
+          "url": "http://en.wikipedia.org/wiki/Athaliah_Molokomme",
+          "note": "wikipedia"
+        }
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "name": "BDP",
+      "classification": "party"
+    },
+    {
+      "id": "party/b6925434-c843-4007-a4e0-de34dc124ac3",
+      "name": "UDC",
+      "classification": "party"
+    },
+    {
+      "id": "party/7706b43a-5aa3-4aa1-83cb-ac3b6bd1db5d",
+      "name": "BCP",
+      "classification": "party"
+    },
+    {
+      "id": "party/609f0624-d1b9-47cc-a81b-871fa16f4cda",
+      "name": "",
+      "classification": "party"
+    },
+    {
+      "id": "legislature",
+      "name": "National Assembly",
+      "classification": "legislature",
+      "legislative_periods": [
+        {
+          "id": "term/2014",
+          "name": "2014",
+          "classification": "legislative period"
+        }
+      ]
+    }
+  ],
+  "memberships": [
+    {
+      "person_id": "person/944d6ddf-8ee9-4979-8c36-10254dd788b8",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Chobe"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/f039ee0d-a3f3-4616-9236-819a3923e20e",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Maun East"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/b9ac44a0-2cc1-44db-b84b-bfce9e1a99e1",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/b6925434-c843-4007-a4e0-de34dc124ac3",
+      "area": {
+        "name": "Maun West"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/ee58f892-7f43-4a8a-8bc6-02c48d4115cf",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Ngami"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/1f799851-928f-4ab5-afb4-3754c9656eca",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7706b43a-5aa3-4aa1-83cb-ac3b6bd1db5d",
+      "area": {
+        "name": "Okavango"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/549a2aae-6398-4c80-b1e3-e2cca02a0eab",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Tati East"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/4b3db1c2-ff1a-4482-93ea-4caa05637100",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Tati West"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/3c6e4dc8-531c-4dde-9257-a35e18492dc1",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Francistown East"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/6e5ee286-50d5-4ea2-8c76-3602bf676948",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/b6925434-c843-4007-a4e0-de34dc124ac3",
+      "area": {
+        "name": "Francistown South"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/a00ef08e-6284-44c0-ba71-474bed0a7b7f",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Francistown West"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/204c5c8d-2836-4499-94c2-f466c2665cf0",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Nata-Gweta"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/101f55a4-88a5-45cf-89ff-70f9d5fb5445",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Nkange"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/430aa5af-7ba5-41f0-85f5-37208368d12c",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Shashe West"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/24e4bd36-7cfa-4cff-997b-c33167c067db",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Tonota"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/345122aa-4aab-4ab7-9a1a-df995862a53f",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Bobonong"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/45d2c480-5a9f-4cbb-8fcf-2cd296418915",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Mmadinare"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/172094b5-4340-467e-b21a-71633cd9c30c",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Selibe Phikwe East"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/08a7ea00-76c7-47c8-bd4e-294af0f723ec",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7706b43a-5aa3-4aa1-83cb-ac3b6bd1db5d",
+      "area": {
+        "name": "Selibe Phikwe West"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/bdb6f557-8b00-49b4-a342-1000f95802b5",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Lerala-Maunalala"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/4dc0c3f2-f0d9-49e1-9c97-b1aad14552e7",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Palapye"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/4ee48d3e-1d2c-47ce-9447-425c397855f6",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Sefhare-Ramokgonami"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/4eb45620-38fd-4932-9780-1432112d4422",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Mahalapye East"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/163e869e-ce89-4b8a-8c74-3fadc983bd9d",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Mahalapye West"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/7a29205d-beda-4d2f-b10c-ca48094a068c",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Shosong"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/85e6a51a-0bb0-4035-8c13-1738b9f0af34",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Serowe North"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/a2852821-808b-48ec-99af-d66cb93733e9",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Serowe West"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/77a448cb-0779-4c60-a1bf-5b60efe92bc7",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Serowe South"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/cc95033f-8a9f-4587-bd59-0b56f950a9ab",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Boteti East"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/45d1d7d3-2198-466d-af71-da7654392086",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Boteti West"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/1d43a6da-250f-4a0b-a423-7b71b5008cf1",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/b6925434-c843-4007-a4e0-de34dc124ac3",
+      "area": {
+        "name": "Mochudi East"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/627ca1ce-cb29-4e33-bb73-dff23a96cd65",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/b6925434-c843-4007-a4e0-de34dc124ac3",
+      "area": {
+        "name": "Mochudi West"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/a307b3db-5678-4be9-8fac-3a1ba4d69b12",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/b6925434-c843-4007-a4e0-de34dc124ac3",
+      "area": {
+        "name": "Gaborone Central"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/4bec08c3-bd4b-43ce-a437-70ba443f238b",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/b6925434-c843-4007-a4e0-de34dc124ac3",
+      "area": {
+        "name": "Gaborone North"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/84d36919-7b1e-4945-8d19-010a81073969",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Gaborone South"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/997a29e4-8cdd-4b62-bb61-adfc9899b956",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/b6925434-c843-4007-a4e0-de34dc124ac3",
+      "area": {
+        "name": "Gaborone Bonnington North"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/c44f57f6-28bf-4392-a9ac-45beb9398fcc",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/b6925434-c843-4007-a4e0-de34dc124ac3",
+      "area": {
+        "name": "Gaborone Bonnington South"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/0f7da197-e277-44b2-b9cf-77d4b40579b8",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/b6925434-c843-4007-a4e0-de34dc124ac3",
+      "area": {
+        "name": "Tlokweng"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/1953fa5d-5c00-4352-94ff-f97fa0e529f8",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7706b43a-5aa3-4aa1-83cb-ac3b6bd1db5d",
+      "area": {
+        "name": "Ramotswa"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/43545ce5-ef5a-48fb-889a-3ccc574f44f3",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/b6925434-c843-4007-a4e0-de34dc124ac3",
+      "area": {
+        "name": "Mogodtishane"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/b4e08300-e5bc-42e7-bb38-57edf2a58c26",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/b6925434-c843-4007-a4e0-de34dc124ac3",
+      "area": {
+        "name": "Gabane-Mmankgodi"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/1628e306-c84a-4762-8905-5710c947c4eb",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Thamaga-Kumakwane"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/64abdba2-128b-4b5f-b824-ff6773b5b24c",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/b6925434-c843-4007-a4e0-de34dc124ac3",
+      "area": {
+        "name": "Molepolole North"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/d7b2ba75-8119-423b-a692-86dce584adc3",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/b6925434-c843-4007-a4e0-de34dc124ac3",
+      "area": {
+        "name": "Molepolole South"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/78b605eb-2a88-4ee0-a244-158ced6947dc",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Lentswaeletau-Mmopane"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/3591aeac-0779-44ec-b4d7-3d1edfcc4259",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Letlhakeng-Lephephe"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/bd73713f-7a42-4fb3-99fd-d364e92d63ca",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Takatokwane"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/44c9d008-444e-4120-8016-a42582507fcd",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Lobatse"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/987d1245-9c8e-4942-9604-22d7e56911e5",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/b6925434-c843-4007-a4e0-de34dc124ac3",
+      "area": {
+        "name": "Goodhope-Mabule"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/00f9effe-2daf-4ae0-8b17-2f304ea1f5fe",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Mmathethe-Molapowabojang"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/b264028a-d0a8-4aed-88c9-acda5a430b23",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Kanye North"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/b0204d2c-d1c0-454b-8e1d-48e5083f2d7a",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/b6925434-c843-4007-a4e0-de34dc124ac3",
+      "area": {
+        "name": "Kanye South"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/dc487858-8420-4fab-9383-3f449d017dc0",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Moshupa-Manyana"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/0365bb25-ab60-4357-a974-4ed797075974",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/b6925434-c843-4007-a4e0-de34dc124ac3",
+      "area": {
+        "name": "Jwaneng-Mabutsane"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/89edce87-4fe0-4a2f-a856-140fd90a5d26",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Kgalagadi North"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/406fdade-f8ca-4961-a7e4-dee634f8eefe",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Kgalagadi South"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/479bd363-0734-4f65-a8c5-e1b6d124c5da",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/b6925434-c843-4007-a4e0-de34dc124ac3",
+      "area": {
+        "name": "Ghanzi North"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/74809055-f1b6-4fcc-bf7c-dc33942b9360",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": "Ghanzi South"
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/e8ebb033-f825-4422-bba4-c7e9e9759122",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": ""
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/908578b5-9fa7-449c-9cc8-cd2d0c81b3d4",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": ""
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/c5bf2527-7e4f-45cd-a41b-cfdbb08b6ea8",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": ""
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/9876d115-eb66-4269-8299-586fcaf63be0",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": ""
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/7eb51db4-7d4d-45d2-be16-537a83fee8e4",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/7aaafd5c-71bc-425f-9917-8eeb33ca92f8",
+      "area": {
+        "name": ""
+      },
+      "legislative_period_id": "term/2014"
+    },
+    {
+      "person_id": "person/23c66ad2-4820-40f1-9b97-097f07328e01",
+      "organization_id": "legislature",
+      "role": "member",
+      "on_behalf_of_id": "party/609f0624-d1b9-47cc-a81b-871fa16f4cda",
+      "area": {
+        "name": ""
+      },
+      "legislative_period_id": "term/2014"
+    }
+  ],
+  "warnings": {
+    "skipped": [
+      "source"
+    ]
+  }
+}
