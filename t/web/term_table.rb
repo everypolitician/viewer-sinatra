@@ -23,6 +23,7 @@ describe "Basic loads" do
 
     # Then ensure the current term table for each loads OK
     countries.each do |country|
+      # puts "Testing #{country}"
       url = "/#{country}/term_table.html"
       get(url)
       last_response.status.must_equal 200
