@@ -8,15 +8,21 @@ require_relative './lib/popolo_helper'
 
 helpers Popolo::Helper
 
-ALL_COUNTRIES = Dir['data/*.json'].map { |f| File.basename f, '.json' }.to_set
+ALL_COUNTRIES = Dir['data/*.json'].map { |f| 
+  name = File.basename(f, '.json')
+  {
+    file: name,
+    name: name,
+    url: name.downcase,
+  }
+}
 
 before '/:country/*' do |country, _|
   # Allow inbuilt sinatra requests through
   pass if country == '__sinatra__'
 
-  halt 404 unless ALL_COUNTRIES.include? country 
-  @country = country
-  @popolo = Popolo::Data.new(@country)
+  @country = ALL_COUNTRIES.find { |c| c[:url] == country } or halt 404 
+  @popolo = Popolo::Data.new(@country[:file])
 end
 
 set :erb, :trim => '-' 
@@ -61,7 +67,6 @@ get '/:country/term_table/?:id?.html' do |country, id|
   @term = id ? @popolo.term_from_id(id) :  @popolo.current_term
   pass unless @term
 
-  @country = country
   @page_title = @term['name']
   @terms = @popolo.term_list
   (@prev_term, _, @next_term) = [nil, @terms, nil].flatten.each_cons(3).find { |p, e, n| e['id'] == @term['id'] }

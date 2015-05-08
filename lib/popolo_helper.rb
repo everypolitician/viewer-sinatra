@@ -131,7 +131,7 @@ module Popolo
     def generate_url(type, obj)
       raise "#{type} is Nil" if obj.nil?
       raise "#{type} has no 'id': #{obj}" unless obj.has_key? 'id'
-      [ '', @country, type, obj['id'].split('/').last ].join("/")
+      [ '', @country[:url], type, obj['id'].split('/').last ].join("/")
     end
 
     def person_url(p)
