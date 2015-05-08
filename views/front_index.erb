@@ -1,11 +1,11 @@
 <div class="page-section" id="home">
     <div class="container">
         <ul class="grid-list">
-          <% @countries.sort.each do |c| %>
+          <% @countries.sort_by { |c| c[:name] }.each do |c| %>
             <li>
-                <a class="avatar-unit" href="/<%= c %>/term_table.html">
+                <a class="avatar-unit" href="/<%= c[:url] %>/term_table.html">
                     <span class="avatar"><i class="fa fa-users"></i></span>
-                    <h3><%= c.capitalize %></h3>
+                    <h3><%= c[:name] %></h3>
                 </a>
             </li>
           <% end %>
