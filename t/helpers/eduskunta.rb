@@ -6,7 +6,7 @@ include Popolo::Helper
 
 describe "Eduskunta" do
 
-  subject { Popolo::Data.new('finland') }
+  subject { Popolo::Data.new('Finland') }
 
   describe "party" do
 

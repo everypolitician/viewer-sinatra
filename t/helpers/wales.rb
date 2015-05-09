@@ -6,7 +6,7 @@ include Popolo::Helper
 
 describe "Welsh Assembly" do
 
-  subject { Popolo::Data.new('wales') }
+  subject { Popolo::Data.new('Wales') }
 
   describe "party" do
 
