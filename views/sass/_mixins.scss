@@ -61,6 +61,7 @@
 @mixin flex-wrap($wrap) {
   -moz-box-wrap: $wrap;
   -webkit-box-wrap: $wrap;
+  -webkit-flex-wrap: $wrap;
   -ms-flexbox-wrap: $wrap;
   flex-wrap: $wrap;
 }
