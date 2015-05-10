@@ -117,6 +117,10 @@ describe "Per Country Tests" do
       subject.css('title').text.must_equal '44th Parliament'
     end
 
+    it "should list the correct source" do
+      subject.css('.source-credits').text.must_include 'morph.io/tmtmtmtm/popit-australia'
+    end
+
   end
 
 end

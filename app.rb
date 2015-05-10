@@ -73,6 +73,7 @@ get '/:country/term_table/?:id?.html' do |country, id|
   @memberships = @popolo.term_memberships(@term)
   @houses = @memberships.map { |m| m['organization'] }.uniq
   @csv_url = "/#{country}/term_table/#{@term['id'].split('/').last}.csv"
+  @data_source = @popolo.data_source
   erb :term_table
 end
 
