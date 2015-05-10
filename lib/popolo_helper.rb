@@ -106,6 +106,11 @@ module Popolo
       legislative_memberships.find_all { |m| m.has_key?('area') && m['area']['name'] == name }
     end
 
+    def data_source
+      json.has_key?('meta') && json['meta']['source']
+    end
+
+
     require 'csv'
     def term_as_csv(t)
       memberships = term_memberships(t)
