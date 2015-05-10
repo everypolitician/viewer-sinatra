@@ -56,9 +56,13 @@
                     <tr>
                         <td colspan="4" class="text-center">
                             <div class="table-action-buttons">
-                              <a class="button button--download" href="<%= @csv_url %>">
+                              <a class="button button--download" href="<%= @urls[:csv] %>">
                                 <i class="fa fa-download"></i>
                                 <span class="large-screen-only">CSV</span>
+                              </a>
+                              <a class="button button--download" href="<%= @urls[:json] %>">
+                                <i class="fa fa-download"></i>
+                                <span class="large-screen-only">JSON</span>
                               </a>
                             </div>
                           <% if @houses.count > 1 %>

@@ -11,7 +11,7 @@ module Popolo
     end
 
     def json
-      @_data ||= JSON.parse(File.read("data/#{@_file}.json"))
+      @_data ||= JSON.parse(File.read("public/data/#{@_file}.json"))
     end
 
     def persons
