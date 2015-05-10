@@ -8,7 +8,7 @@ require_relative './lib/popolo_helper'
 
 helpers Popolo::Helper
 
-ALL_COUNTRIES = Dir['data/*.json'].map { |f| 
+ALL_COUNTRIES = Dir['public/data/*.json'].map { |f| 
   name = File.basename(f, '.json')
   {
     file: name,
@@ -72,7 +72,10 @@ get '/:country/term_table/?:id?.html' do |country, id|
   (@prev_term, _, @next_term) = [nil, @terms, nil].flatten.each_cons(3).find { |p, e, n| e['id'] == @term['id'] }
   @memberships = @popolo.term_memberships(@term)
   @houses = @memberships.map { |m| m['organization'] }.uniq
-  @csv_url = "/#{country}/term_table/#{@term['id'].split('/').last}.csv"
+  @urls = {
+    csv: "/#{@country[:url]}/term_table/#{@term['id'].split('/').last}.csv",
+    json: "/data/#{@country[:name]}.json",
+  }
   @data_source = @popolo.data_source
   erb :term_table
 end
