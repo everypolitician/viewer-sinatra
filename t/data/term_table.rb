@@ -42,24 +42,23 @@ end
 
 describe "Per Country Tests" do
 
-  it "Finland" do
+  it "should have one chamber for Finland" do
 
     get('/finland/term_table/35.csv')
 
     data = CSV.parse(last_response.body, headers: true)
-    chamber_index = data.headers.find_index('chamber')
-    chambers = data.map { |row| row[chamber_index] }.uniq
+    chambers = data.map { |row| row['chamber'] }.uniq
     chambers.count.must_equal 1
     chambers.must_include 'Eduskunta'
   end
 
-  it "Australia" do
+  it "should have two chambers for Australia" do
 
     get('/australia/term_table.csv')
 
     data = CSV.parse(last_response.body, headers: true)
     chamber_index = data.headers.find_index('chamber')
-    chambers = data.map { |row| row[chamber_index] }.uniq
+    chambers = data.map { |row| row['chamber'] }.uniq
     chambers.count.must_equal 2
     chambers.must_include "House of Representatives"
     chambers.must_include "Senate"
