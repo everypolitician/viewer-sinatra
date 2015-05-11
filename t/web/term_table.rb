@@ -123,5 +123,18 @@ describe "Per Country Tests" do
 
   end
 
+  describe "Canada" do
+
+    before { get '/canada/term_table.html' }
+
+    it "should have three parties with 2 seats" do
+      doubles = subject.xpath('//div[@class="avatar-unit"]')
+      doubles = subject.xpath('//p[contains(.,"2 seats")]/../h3').map { |p| p.text }
+      doubles.count.must_equal 3
+      doubles.first.must_equal 'Bloc Québécois'
+      doubles.last.must_equal 'Green Party'
+    end
+  end
+
 end
 
