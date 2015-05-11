@@ -39,3 +39,30 @@ describe "Basic loads" do
 
 end
 
+
+describe "Per Country Tests" do
+
+  it "Finland" do
+
+    get('/finland/term_table/35.csv')
+
+    data = CSV.parse(last_response.body, headers: true)
+    chamber_index = data.headers.find_index('chamber')
+    chambers = data.map { |row| row[chamber_index] }.uniq
+    chambers.count.must_equal 1
+    chambers.must_include 'Eduskunta'
+  end
+
+  it "Australia" do
+
+    get('/australia/term_table.csv')
+
+    data = CSV.parse(last_response.body, headers: true)
+    chamber_index = data.headers.find_index('chamber')
+    chambers = data.map { |row| row[chamber_index] }.uniq
+    chambers.count.must_equal 2
+    chambers.must_include "House of Representatives"
+    chambers.must_include "Senate"
+  end
+
+end
