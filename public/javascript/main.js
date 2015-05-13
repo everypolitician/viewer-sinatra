@@ -209,4 +209,10 @@ $(function(){
   $('.js-fixed-thead').fixedThead();
 
   $('.js-sortable').sortable();
+
+  $('.js-navigation-menu').on('change', function(){
+    window.location.href = $(this).val();
+  });
+
+  $('html').removeClass('no-js');
 });
