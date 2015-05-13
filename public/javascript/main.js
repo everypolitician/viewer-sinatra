@@ -83,6 +83,10 @@
       if($tbody.length == 0){ $tbody = $table; }
       var $trs = $tbody.children('tr');
 
+      if(!$table.data('unrowspanned')){
+        undoRowspans($table, $trs);
+      }
+
       // Sort the right way, based on the state stored in $table.data
       var currentSortOrder = $table.data('sortOrder');
       if(columnIndex == $table.data('sortedOnColumnIndex')){
@@ -102,6 +106,29 @@
         $table.data('sortOrder', 'a-z');
         $table.data('sortedOnColumnIndex', columnIndex);
       }
+    }
+
+    var undoRowspans = function undoRowspans($table, $trs){
+      // Loop through each row, finding rowspanned cells
+      $trs.each(function(row_index){
+        var $tr = $(this);
+        $tr.children('td[rowspan]').each(function(){
+          var $td = $(this);
+          var span = parseInt($td.attr('rowspan'));
+          var col_index = $td.prevAll().length;
+          if(span > 1){
+            // Found one! Unrowspan it, and insert clones of the cell
+            // in the same position on subsequent rows.
+            $td.removeAttr('rowspan');
+            $tr.nextAll().slice(0, span - 1).each(function(){
+              var $newTr = $(this);
+              var $clone = $td.clone(); // creates a new clone for each row
+              $clone.insertBefore($newTr.children('td').eq(col_index));
+            });
+          }
+        })
+      });
+      $table.data('unrowspanned', true);
     }
 
     var sortRows = function sortRows($tbody, $trs, columnIndex, sortOrder){
