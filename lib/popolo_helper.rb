@@ -115,16 +115,19 @@ module Popolo
     def term_as_csv(t)
       memberships = term_memberships(t)
 
-      header = %w(id name group area chamber start_date end_date).to_csv
+      header = %w(id name email twitter group area chamber start_date end_date).to_csv
       rows = memberships.sort_by { |m| [m['person']['name'], m['start_date']] }.map do |m|
         { 
           id: m['person']['id'].split('/').last,
           name: m['person']['name'],
+          email: m['person']['email'],
+          # Let's assume for now there will be only zero or one ...
+          twitter: ((m['person']['contact_details'] || {}).find { |d| d['type'] == 'twitter' } || {})['value'],
           group: m['on_behalf_of']['name'],
           area: m['area'] && m['area']['name'],
           chamber: m['organization']['name'],
           start_date: m['start_date'],
-          end_date: m['end_date']
+          end_date: m['end_date'],
         }.values.to_csv
       end 
       [header, rows].compact.join
