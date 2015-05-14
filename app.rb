@@ -35,10 +35,11 @@ end
 get '/countries.json' do
   content_type :json
   countries = ALL_COUNTRIES.map { |c|
+    last_term_id = Popolo::Data.new(c[:file]).current_term['id'].split('/').last
     {
       name: c[:name],
       url: "/#{c[:url]}",
-      current_term_csv: "/#{c[:url]}/term_table.csv"
+      latest_term_csv: "/#{c[:url]}/term_table/#{last_term_id}.csv",
     }
   }
   JSON.pretty_generate(countries)

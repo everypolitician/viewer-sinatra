@@ -20,6 +20,7 @@ describe "countries.json" do
     data = JSON.parse(last_response.body)
     estonia = data.find { |c| c['name'] == 'Estonia' }
     estonia['url'].must_equal '/estonia'
+    estonia['latest_term_csv'].must_include 'riigikogu_xiii.csv'
   end
 
 end
