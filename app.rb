@@ -32,6 +32,17 @@ get '/' do
   erb :front_index
 end
 
+get '/countries.json' do
+  content_type :json
+  countries = ALL_COUNTRIES.map { |c|
+    {
+      name: c[:name],
+      url: "/#{c[:url]}",
+    }
+  }
+  JSON.pretty_generate(countries)
+end
+
 get '/about.html' do
   erb :about
 end
