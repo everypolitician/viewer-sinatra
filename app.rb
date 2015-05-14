@@ -38,6 +38,7 @@ get '/countries.json' do
     {
       name: c[:name],
       url: "/#{c[:url]}",
+      current_term_csv: "/#{c[:url]}/term_table.csv"
     }
   }
   JSON.pretty_generate(countries)
