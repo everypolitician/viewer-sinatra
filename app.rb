@@ -40,6 +40,7 @@ get '/countries.json' do
       name: c[:name],
       url: "/#{c[:url]}",
       latest_term_csv: "/#{c[:url]}/term_table/#{last_term_id}.csv",
+      popolo: "/data/#{c[:file]}.json",
     }
   }
   JSON.pretty_generate(countries)
@@ -87,7 +88,7 @@ get '/:country/term_table/?:id?.html' do |country, id|
   @houses = @memberships.map { |m| m['organization'] }.uniq
   @urls = {
     csv: "/#{@country[:url]}/term_table/#{@term['id'].split('/').last}.csv",
-    json: "/data/#{@country[:name]}.json",
+    json: "/data/#{@country[:file]}.json",
   }
   @data_source = @popolo.data_source
   erb :term_table
