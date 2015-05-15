@@ -12,7 +12,7 @@ ALL_COUNTRIES = Dir['public/data/*.json'].map { |f|
   name = File.basename(f, '.json')
   {
     file: name,
-    name: name,
+    name: name.gsub('_', ' '),
     url: name.downcase,
   }
 }
