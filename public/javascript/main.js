@@ -133,38 +133,21 @@
 
     var sortRows = function sortRows($tbody, $trs, columnIndex, sortOrder){
       $trs.detach().sort(function(rowA, rowB){
-        var valueA = $(rowA).children('td').eq(columnIndex).text();
-        var valueB = $(rowB).children('td').eq(columnIndex).text();
-
-        var moveUp = 1;
-        var moveDown = -1;
-        if(sortOrder == 'z-a'){
-          var moveUp = -1;
-          var moveDown = 1;
+        var valueA = $(rowA).children('td').eq(columnIndex).text(),
+            valueB = $(rowB).children('td').eq(columnIndex).text(),
+            tmp = valueA;
+        if (sortOrder == 'z-a') {
+          valueA = valueB; valueB = tmp;
         }
-
-        if(valueA > valueB) {
-          return moveUp;
-        } else if(valueA < valueB){
-          return moveDown;
-        } else {
-          return 0;
-        }
+        return valueA.localeCompare(valueB);
       }).appendTo($tbody);
     }
 
     var restoreOriginalSortOrder = function restoreOriginalSortOrder($tbody, $trs){
       $trs.detach().sort(function(rowA, rowB){
-        var valueA = $(rowA).data('originalSortOrder');
-        var valueB = $(rowB).data('originalSortOrder');
-
-        if(valueA > valueB) {
-          return 1;
-        } else if(valueA < valueB){
-          return -1;
-        } else {
-          return 0;
-        }
+        var valueA = $(rowA).data('originalSortOrder'),
+            valueB = $(rowB).data('originalSortOrder');
+        return valueA - valueB;
       }).appendTo($tbody);
     }
 
