@@ -211,6 +211,14 @@ p.lead {
     }
 }
 
+.page-section--no-padding {
+    padding: 0;
+}
+
+.page-section--border-top {
+    border-top: 1px solid $colour_borders;
+}
+
 .hero {
     @extend .page-section;
     text-align: center;
@@ -377,4 +385,49 @@ p.lead {
       color: $colour_green;
     }
   }
+}
+
+.term-navigation {
+    text-align: center;
+    padding: 0.5em 0;
+
+    & > * {
+        display: block;
+        padding: 0.5em 0;
+        font-size: 0.9em;
+    }
+
+    @media (min-width: $large_screen) {
+        padding: 0;
+        position: relative;
+
+        & > * {
+            padding: 1em 0;
+        }
+    }
+}
+
+@media (min-width: $large_screen) {
+    .term-navigation__prev {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .term-navigation__next {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.term-navigation__jump {
+    .no-js & {
+        display: none;
+    }
+
+    select {
+        margin-left: 0.3em;
+        vertical-align: 0.1em;
+    }
 }
