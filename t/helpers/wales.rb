@@ -10,10 +10,10 @@ describe "Welsh Assembly" do
 
   describe "party" do
 
-    let(:party) { subject.party_from_id('5e109a9f-5312-4602-a80a-c44950552c96') }
+    let(:party) { subject.organizations.find { |o| o['name'] == 'Plaid Cymru' } }
 
-    it "should get the correct party" do
-      party['name'].must_equal 'Plaid Cymru'
+    it "should get find a party" do
+      party['classification'].must_equal 'party'
     end
   end
 
