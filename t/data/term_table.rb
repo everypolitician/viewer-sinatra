@@ -42,6 +42,16 @@ end
 
 describe "Per Country Tests" do
 
+  it "should have emails and twitter handles for Wales" do
+
+    get('/wales/term_table.csv')
+
+    data = CSV.parse(last_response.body, headers: true)
+    ar = data.find { |row| row['id'] == '421' }
+    ar['email'].must_equal 'Aled.Roberts@assembly.wales'
+    ar['twitter'].must_include 'aledrobertsam'
+  end
+
   it "should have one chamber for Finland" do
 
     get('/finland/term_table/35.csv')

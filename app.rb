@@ -12,7 +12,7 @@ ALL_COUNTRIES = Dir['public/data/*.json'].map { |f|
   name = File.basename(f, '.json')
   {
     file: name,
-    name: name,
+    name: name.gsub('_', ' '),
     url: name.downcase,
   }
 }
@@ -35,9 +35,12 @@ end
 get '/countries.json' do
   content_type :json
   countries = ALL_COUNTRIES.map { |c|
+    last_term_id = Popolo::Data.new(c[:file]).current_term['id'].split('/').last
     {
       name: c[:name],
       url: "/#{c[:url]}",
+      latest_term_csv: "/#{c[:url]}/term_table/#{last_term_id}.csv",
+      popolo: "/data/#{c[:file]}.json",
     }
   }
   JSON.pretty_generate(countries)
@@ -85,7 +88,7 @@ get '/:country/term_table/?:id?.html' do |country, id|
   @houses = @memberships.map { |m| m['organization'] }.uniq
   @urls = {
     csv: "/#{@country[:url]}/term_table/#{@term['id'].split('/').last}.csv",
-    json: "/data/#{@country[:name]}.json",
+    json: "/data/#{@country[:file]}.json",
   }
   @data_source = @popolo.data_source
   erb :term_table

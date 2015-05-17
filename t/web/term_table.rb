@@ -118,7 +118,7 @@ describe "Per Country Tests" do
     end
 
     it "should list the correct source" do
-      subject.css('.source-credits').text.must_include 'morph.io/tmtmtmtm/popit-australia'
+      subject.css('.source-credits').text.must_include 'morph.io/openaustralia/aus_mp_contact_details'
     end
 
   end
