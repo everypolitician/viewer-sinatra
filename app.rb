@@ -8,15 +8,6 @@ require_relative './lib/popolo_helper'
 
 helpers Popolo::Helper
 
-OLD_COUNTRIES = Dir['public/data/*.json'].map do |f|
-  name = File.basename(f, '.json')
-  {
-    file: name,
-    name: name.gsub('_', ' '),
-    url: name.downcase
-  }
-end
-
 ALL_COUNTRIES = Dir['src/*.src'].map do |f|
   name = File.basename(f, '.src')
   {
@@ -30,7 +21,7 @@ before '/:country/*' do |country, _|
   # Allow inbuilt sinatra requests through
   pass if country == '__sinatra__'
 
-  @country = ALL_COUNTRIES.find { |c| c[:url] == country } or halt 404
+  @country = ALL_COUNTRIES.find { |c| c[:url] == country } || halt(404)
   @popolo = Popolo::Data.new(@country[:file])
 end
 
@@ -81,7 +72,7 @@ get '/:country/parties.html' do
 end
 
 get '/:country/term/:id' do |_country, id|
-  @term = @popolo.term_from_id(id) or pass
+  @term = @popolo.term_from_id(id) || pass
   @memberships = @popolo.term_memberships(@term)
   erb :term
 end
@@ -92,7 +83,9 @@ get '/:country/term_table/?:id?.html' do |_country, id|
 
   @page_title = @term['name']
   @terms = @popolo.term_list
-  (@prev_term, _, @next_term) = [nil, @terms, nil].flatten.each_cons(3).find { |_p, e, _n| e['id'] == @term['id'] }
+  (@prev_term, _, @next_term) = [nil, @terms, nil]
+                                .flatten.each_cons(3)
+                                .find { |_p, e, _n| e['id'] == @term['id'] }
   @memberships = @popolo.term_memberships(@term)
   @houses = @memberships.map { |m| m['organization'] }.uniq
   @urls = {
@@ -117,14 +110,14 @@ get '/:country/person/:id' do |_country, id|
   unless @person
     people = @popolo.people_with_name(id)
     # TODO: handle having more than one person with the same name
-    @person = people.first or pass
+    @person = people.first || pass
   end
   @legislative_memberships = @popolo.person_legislative_memberships(@person)
   erb :person
 end
 
 get '/:country/party/:id' do |_country, id|
-  @party = @popolo.party_from_id(id) or pass
+  @party = @popolo.party_from_id(id) || pass
   @memberships = @popolo.party_memberships(@party['id'])
   erb :party
 end

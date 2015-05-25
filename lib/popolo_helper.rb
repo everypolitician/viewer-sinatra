@@ -85,7 +85,7 @@ module Popolo
     end
 
     def term_memberships(t)
-      mems_with_terms = legislative_memberships.find_all { |m| m['legislative_period_id'] == t['id'] }
+      legislative_memberships.find_all { |m| m['legislative_period_id'] == t['id'] }
     end
 
     def person_from_id(id)
@@ -118,7 +118,7 @@ module Popolo
           return l_twitter['url']
         end
       end
-          end
+    end
 
     def party_from_id(id)
       p = organizations.detect { |r| r['id'] == id } || organizations.detect { |r| r['id'].end_with? "/#{id}" }
