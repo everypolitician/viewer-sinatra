@@ -8,8 +8,17 @@ require_relative './lib/popolo_helper'
 
 helpers Popolo::Helper
 
-ALL_COUNTRIES = Dir['public/data/*.json'].map { |f| 
+OLD_COUNTRIES = Dir['public/data/*.json'].map { |f| 
   name = File.basename(f, '.json')
+  {
+    file: name,
+    name: name.gsub('_', ' '),
+    url: name.downcase,
+  }
+}
+
+ALL_COUNTRIES = Dir['src/*.src'].map { |f| 
+  name = File.basename(f, '.src')
   {
     file: name,
     name: name.gsub('_', ' '),

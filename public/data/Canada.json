@@ -4470,11 +4470,6 @@
       "name": "Green Party"
     },
     {
-      "classification": "party",
-      "id": "party/b01a7c13-c1c9-4f66-862c-8825aaa90aa2",
-      "name": "Independent"
-    },
-    {
       "classification": "legislature",
       "id": "legislature",
       "legislative_periods": [
@@ -4485,7 +4480,12 @@
           "start_date": "2011-06-02"
         }
       ],
-      "name": "Legislature"
+      "name": "House of Commons"
+    },
+    {
+      "classification": "party",
+      "id": "party/b01a7c13-c1c9-4f66-862c-8825aaa90aa2",
+      "name": "Independent"
     },
     {
       "classification": "party",
