@@ -4951,19 +4951,6 @@
       "name": "Katter's Australian Party"
     },
     {
-      "classification": "legislature",
-      "id": "legislature",
-      "legislative_periods": [
-        {
-          "classification": "legislative period",
-          "id": "term/44",
-          "name": "44th Parliament",
-          "start_date": "2013-09-07"
-        }
-      ],
-      "name": "Legislature"
-    },
-    {
       "classification": "party",
       "id": "party/02b5b73a-c76e-4558-9a0c-ad6c6a1d6b90",
       "name": "Liberal Democratic Party"
@@ -4977,6 +4964,19 @@
       "classification": "party",
       "id": "party/a68ecbc2-495f-4913-a5b9-98e7ace1f66f",
       "name": "Palmer United Party"
+    },
+    {
+      "classification": "legislature",
+      "id": "legislature",
+      "legislative_periods": [
+        {
+          "classification": "legislative period",
+          "id": "term/44",
+          "name": "44th Parliament",
+          "start_date": "2013-09-07"
+        }
+      ],
+      "name": "Parliament"
     },
     {
       "classification": "chamber",

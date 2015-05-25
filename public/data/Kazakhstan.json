@@ -1,9 +1,4 @@
 {
-  "warnings": {
-    "skipped": [
-      "source"
-    ]
-  },
   "persons": [
     {
       "id": "person/1374",

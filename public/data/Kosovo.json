@@ -13031,7 +13031,7 @@
   ],
   "organizations": [
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_",
       "sources": [
         {
@@ -13040,7 +13040,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_58",
       "name": "6+",
       "sources": [
@@ -13050,7 +13050,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_45",
       "name": "AAK",
       "sources": [
@@ -13060,7 +13060,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_60",
       "name": "AAK",
       "sources": [
@@ -13738,7 +13738,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_41",
       "name": "Grupi 6+",
       "sources": [
@@ -13748,7 +13748,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_30",
       "name": "Grupi 7+",
       "sources": [
@@ -13758,7 +13758,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_5",
       "name": "Grupi Parlamentar 'Komunitetet tjera'",
       "sources": [
@@ -13768,7 +13768,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_12",
       "name": "Grupi Parlamentar GP 6+",
       "sources": [
@@ -13778,7 +13778,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_10",
       "name": "Grupi Parlamentar ORA",
       "sources": [
@@ -13788,7 +13788,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_19",
       "name": "Grupi Parlamentar Për integrim",
       "sources": [
@@ -13798,7 +13798,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_11",
       "name": "Grupi Parlamentar SLKM",
       "sources": [
@@ -13808,7 +13808,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_3",
       "name": "Grupi Parlamentar i AAK-së",
       "sources": [
@@ -13818,7 +13818,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_9",
       "name": "Grupi Parlamentar i AAK-së",
       "sources": [
@@ -13828,7 +13828,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_4",
       "name": "Grupi Parlamentar i KP-së",
       "sources": [
@@ -13838,7 +13838,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_24",
       "name": "Grupi Parlamentar i LDD-së",
       "sources": [
@@ -13848,7 +13848,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_1",
       "name": "Grupi Parlamentar i LDK-së",
       "sources": [
@@ -13858,7 +13858,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_7",
       "name": "Grupi Parlamentar i LDK-së",
       "sources": [
@@ -13868,7 +13868,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_2",
       "name": "Grupi Parlamentar i PDK-së",
       "sources": [
@@ -13878,7 +13878,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_8",
       "name": "Grupi Parlamentar i PDK-së",
       "sources": [
@@ -13888,7 +13888,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_29",
       "name": "Grupi i AAK-së",
       "sources": [
@@ -13898,7 +13898,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_27",
       "name": "Grupi i AKR-së",
       "sources": [
@@ -13908,7 +13908,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_28",
       "name": "Grupi i LDD-së",
       "sources": [
@@ -13918,7 +13918,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_26",
       "name": "Grupi i LDK-së",
       "sources": [
@@ -13928,7 +13928,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_25",
       "name": "Grupi i PDK-së",
       "sources": [
@@ -13938,7 +13938,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_32",
       "name": "Grupi i SLS-së",
       "sources": [
@@ -13948,7 +13948,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_40",
       "name": "Grupi i Vetëvendosjes",
       "sources": [
@@ -13958,7 +13958,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_38",
       "name": "Grupi për Integrim",
       "sources": [
@@ -14046,7 +14046,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_42",
       "name": "KKR",
       "sources": [
@@ -14220,7 +14220,7 @@
       "name": "Kuvendit"
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_44",
       "name": "LDK",
       "sources": [
@@ -14230,7 +14230,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_55",
       "name": "LDK",
       "sources": [
@@ -14775,7 +14775,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_57",
       "name": "Lista serbe",
       "sources": [
@@ -14795,7 +14795,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_56",
       "name": "Lëvizja Vetëvendosje",
       "sources": [
@@ -14828,7 +14828,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_59",
       "name": "NISMA",
       "sources": [
@@ -14930,7 +14930,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_43",
       "name": "PDK",
       "sources": [
@@ -14940,7 +14940,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_54",
       "name": "PDK",
       "sources": [
@@ -14950,7 +14950,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_47",
       "name": "PG",
       "sources": [
@@ -14960,7 +14960,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_31",
       "name": "Pa Grup",
       "sources": [
@@ -14970,7 +14970,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_61",
       "name": "Pa Grup",
       "sources": [
@@ -14980,7 +14980,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_20",
       "name": "Pa Grup Parlamentar",
       "sources": [
@@ -14990,7 +14990,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_6",
       "name": "Pa grup",
       "sources": [
@@ -15050,7 +15050,7 @@
       ]
     },
     {
-      "classification": "faction",
+      "classification": "parliamentary_group",
       "id": "parliamentary_group_46",
       "name": "SLS",
       "sources": [

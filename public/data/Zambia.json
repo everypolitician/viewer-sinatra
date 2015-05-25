@@ -1804,7 +1804,8 @@
         {
           "classification": "legislative period",
           "id": "term/2011",
-          "name": "2011"
+          "name": "11th Assembly",
+          "start_date": "2011-10-06"
         }
       ],
       "name": "National Assembly"

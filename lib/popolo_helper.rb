@@ -1,17 +1,30 @@
 module Popolo
 
   require 'date'
+  require 'fileutils'
   require 'json'
+  require 'open-uri'
   require 'promise'
 
   class Data
 
-    def initialize(file)
-      @_file = file
+    def initialize(country, cache_dir = 'public/data')
+      @_country = country
+      @_cache_dir = cache_dir
+      @_src_file = "src/#{@_country}.src"
+
+      @_data_file = "#{@_cache_dir}/#{@_country}.json"
     end
 
     def json
-      @_data ||= JSON.parse(File.read("public/data/#{@_file}.json"))
+      unless File.exist? @_data_file
+        raise "No source file: #{@_src_file}" unless File.exist? @_src_file
+        locn = File.read(@_src_file).chomp
+        locn = "https://raw.githubusercontent.com/everypolitician/everypolitician-data/#{locn}/data/#{@_country}/final.json" unless locn[/^http/]
+        fetched_json = open(locn).read
+        File.write @_data_file, fetched_json
+      end
+      @_data ||= JSON.parse(File.read(@_data_file))
     end
 
     def persons
