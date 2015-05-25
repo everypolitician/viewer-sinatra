@@ -1,5 +1,4 @@
 module Popolo
-
   require 'date'
   require 'fileutils'
   require 'json'
@@ -7,7 +6,6 @@ module Popolo
   require 'promise'
 
   class Data
-
     def initialize(country, cache_dir = 'public/data')
       @_country = country
       @_cache_dir = cache_dir
@@ -18,7 +16,7 @@ module Popolo
 
     def json
       unless File.exist? @_data_file
-        raise "No source file: #{@_src_file}" unless File.exist? @_src_file
+        fail "No source file: #{@_src_file}" unless File.exist? @_src_file
         locn = File.read(@_src_file).chomp
         locn = "https://raw.githubusercontent.com/everypolitician/everypolitician-data/#{locn}/data/#{@_country}/final.json" unless locn[/^http/]
         fetched_json = open(locn).read
@@ -36,26 +34,26 @@ module Popolo
     end
 
     def memberships
-      @_mems ||= json['memberships'].map { |m|
+      @_mems ||= json['memberships'].map do |m|
         m['organization'] ||= promise { party_from_id(m['organization_id']) }
         m['on_behalf_of'] ||= promise { party_from_id(m['on_behalf_of_id']) }
-        m['person']       ||= promise { person_from_id(m['person_id']) or raise "No such person: #{m['person_id']}" }
-        if m.has_key?('legislative_period_id')
+        m['person'] ||= promise { person_from_id(m['person_id']) || fail("No such person: #{m['person_id']}") }
+        if m.key?('legislative_period_id')
           m['legislative_period'] ||= promise { term_from_id(m['legislative_period_id']) }
           m['start_date'] ||= promise { m['legislative_period']['start_date'] || '' }
           m['end_date'] ||= promise { m['legislative_period']['end_date'] || '' }
         end
         m
-      }
+      end
     end
 
     def legislature
-      # TODO cope with more than one!
+      # TODO: cope with more than one!
       json['organizations'].find { |o| o['classification'] == 'legislature' }
     end
 
     def chambers
-      json['organizations'].find_all { |o| o['classification'] == 'chamber' } 
+      json['organizations'].find_all { |o| o['classification'] == 'chamber' }
     end
 
     def parties
@@ -63,11 +61,11 @@ module Popolo
     end
 
     def terms
-      legislature['legislative_periods'] || legislature['terms'] 
+      legislature['legislative_periods'] || legislature['terms']
     end
 
     def term_list
-      terms.sort_by { |t| [ (t['start_date'] || '1001-01-01'), (t['end_date'] || '2999-12-31') ] }
+      terms.sort_by { |t| [(t['start_date'] || '1001-01-01'), (t['end_date'] || '2999-12-31')] }
     end
 
     def terms_with_members
@@ -75,9 +73,8 @@ module Popolo
     end
 
     def current_term
-      term_list.last 
+      term_list.last
     end
-
 
     def legislative_memberships
       memberships.find_all { |m| [legislature, chambers].flatten.map { |o| o['id'] }.include? m['organization_id'] }
@@ -96,7 +93,7 @@ module Popolo
     end
 
     def people_with_name(name)
-      persons.find_all { |p| p['name'] == name } 
+      persons.find_all { |p| p['name'] == name }
     end
 
     def person_memberships(p)
@@ -107,23 +104,21 @@ module Popolo
       legislative_memberships.find_all { |m| m['person_id'] == p['id'] }
     end
 
-    # Let's just take the first for now. 
-    # TODO expand this to look in Identifiers
+    # Let's just take the first for now.
+    # TODO: expand this to look in Identifiers
     def persons_twitter(p)
-      if p.has_key? 'contact_details'
-        if cd_twitter = p['contact_details'].find { |d| d['type'] == 'twitter' } 
+      if p.key? 'contact_details'
+        if cd_twitter = p['contact_details'].find { |d| d['type'] == 'twitter' }
           return cd_twitter['value']
         end
       end
 
-      if p.has_key? 'links'
+      if p.key? 'links'
         if l_twitter = p['links'].find { |d| d['note'][/twitter/i] }
           return l_twitter['url']
         end
       end
-
-      return
-    end
+          end
 
     def party_from_id(id)
       p = organizations.detect { |r| r['id'] == id } || organizations.detect { |r| r['id'].end_with? "/#{id}" }
@@ -134,13 +129,12 @@ module Popolo
     end
 
     def named_area_memberships(name)
-      legislative_memberships.find_all { |m| m.has_key?('area') && m['area']['name'] == name }
+      legislative_memberships.find_all { |m| m.key?('area') && m['area']['name'] == name }
     end
 
     def data_source
-      json.has_key?('meta') && json['meta']['source']
+      json.key?('meta') && json['meta']['source']
     end
-
 
     require 'csv'
     def term_as_csv(t)
@@ -148,7 +142,7 @@ module Popolo
 
       header = %w(id name email twitter group area chamber start_date end_date).to_csv
       rows = memberships.sort_by { |m| [m['person']['name'], m['start_date']] }.map do |m|
-        { 
+        {
           id: m['person']['id'].split('/').last,
           name: m['person']['name'],
           email: m['person']['email'],
@@ -158,20 +152,18 @@ module Popolo
           area: m['area'] && m['area']['name'],
           chamber: m['organization']['name'],
           start_date: m['start_date'],
-          end_date: m['end_date'],
+          end_date: m['end_date']
         }.values.to_csv
-      end 
+      end
       [header, rows].compact.join
-    end 
-
+    end
   end
 
   module Helper
-
     def generate_url(type, obj)
-      raise "#{type} is Nil" if obj.nil?
-      raise "#{type} has no 'id': #{obj}" unless obj.has_key? 'id'
-      [ '', @country[:url], type, obj['id'].split('/').last ].join("/")
+      fail "#{type} is Nil" if obj.nil?
+      fail "#{type} has no 'id': #{obj}" unless obj.key? 'id'
+      ['', @country[:url], type, obj['id'].split('/').last].join('/')
     end
 
     def person_url(p)
@@ -187,15 +179,13 @@ module Popolo
     end
 
     def term_table_url(t)
-      generate_url('term_table', t) + ".html"
+      generate_url('term_table', t) + '.html'
     end
 
     def area_name_url(t)
       # Ugh. We should probably change generate_url to take an
       # (optional) argument for which key to look up by
-      generate_url('area', {'id' => t})
+      generate_url('area', 'id' => t)
     end
-
   end
 end
-
