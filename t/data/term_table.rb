@@ -15,10 +15,10 @@ end
 describe 'Basic loads' do
   it 'should be able to load every country' do
     # Get the list of countries on the homepage
-    frontpage = get('/')
-    countries = Nokogiri::HTML(last_response.body).css('#home ul.grid-list li a').map do |n|
-      n.attr('href').split('/')[1]
-    end
+    get '/'
+    countries = Nokogiri::HTML(last_response.body)
+                .css('#home ul.grid-list li a')
+                .map { |n| n.attr('href').split('/')[1] }
 
     # Then ensure the CSV for each loads OK
     countries.each do |country|
@@ -66,7 +66,6 @@ describe 'Per Country Tests' do
     get('/australia/term_table.csv')
 
     data = CSV.parse(last_response.body, headers: true)
-    chamber_index = data.headers.find_index('chamber')
     chambers = data.map { |row| row['chamber'] }.uniq
     chambers.count.must_equal 2
     chambers.must_include 'House of Representatives'

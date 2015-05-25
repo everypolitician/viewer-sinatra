@@ -8,7 +8,8 @@ describe 'Welsh Assembly' do
   subject { Popolo::Data.new('Wales') }
 
   describe 'party' do
-    let(:parties) { subject.organizations.find_all { |o| o['classification'] == 'party' } }
+    let(:orgs)    { subject.organizations }
+    let(:parties) { orgs.find_all { |o| o['classification'] == 'party' } }
 
     it 'should have some parties' do
       parties.count.must_be :>, 1
@@ -26,7 +27,8 @@ describe 'Welsh Assembly' do
       mems.count.must_equal 2
       leg_mems.count.must_equal 1
       leg_mems.first['organization']['classification'].must_equal 'legislature'
-      (mems - leg_mems).first['organization']['classification'].must_equal 'executive'
+      missing = (mems - leg_mems).first['organization']
+      missing['classification'].must_equal 'executive'
     end
   end
 end

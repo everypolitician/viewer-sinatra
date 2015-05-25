@@ -102,7 +102,7 @@ describe 'Eduskunta' do
     end
 
     it 'should have someone who joined at that term' do
-      mems.map { |m| m['person']['name'] }.must_include 'Stenius-Kaukonen Marjatta'
+      mems.map { |m| m['person']['name'] }.must_include 'Salolainen Pertti'
     end
 
     it 'should have someone still serving' do
