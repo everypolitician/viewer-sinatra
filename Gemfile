@@ -1,6 +1,6 @@
-source "https://rubygems.org"
-ruby "2.0.0"
-gem 'sinatra', :github => "sinatra/sinatra"
+source 'https://rubygems.org'
+ruby '2.0.0'
+gem 'sinatra', github: 'sinatra/sinatra'
 gem 'json'
 gem 'thin'
 gem 'nokogiri'
@@ -10,4 +10,3 @@ gem 'sass'
 gem 'promise'
 gem 'pry'
 gem 'rake'
-
