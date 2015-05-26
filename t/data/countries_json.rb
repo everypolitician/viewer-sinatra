@@ -26,6 +26,6 @@ describe 'countries.json' do
     data = JSON.parse(last_response.body)
     nz = data.find { |c| c['name'] == 'New Zealand' }
     nz['url'].must_equal '/new_zealand'
-    nz['popolo'].must_equal '/data/New_Zealand.json'
+    nz['popolo'].must_match %r{/data/\w+-New_Zealand.json}
   end
 end
