@@ -1,0 +1,2650 @@
+{
+  "persons": [
+    {
+      "gender": "male",
+      "id": "51",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "AMBETO BLAISE"
+    },
+    {
+      "gender": "male",
+      "id": "62",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/ampion.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/ampion.jpg"
+        }
+      ],
+      "name": "AMPION PHILIPPE"
+    },
+    {
+      "gender": "male",
+      "id": "33",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/ANIABA%20Symphorien.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/ANIABA%20Symphorien.jpg"
+        }
+      ],
+      "name": "ANIABA PIERRE SYMPHORIEN"
+    },
+    {
+      "gender": "male",
+      "id": "48",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/AYESSA.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/AYESSA.jpg"
+        }
+      ],
+      "name": "AYESSA FIRMIN"
+    },
+    {
+      "gender": "male",
+      "id": "69",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/badiadio.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/badiadio.jpg"
+        }
+      ],
+      "name": "BADIABIO JOSEPH"
+    },
+    {
+      "gender": "male",
+      "id": "70",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "BASSOUAMA PIERRE"
+    },
+    {
+      "gender": "male",
+      "id": "28",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/BATHEAS%20J.M.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/BATHEAS%20J.M.jpg"
+        }
+      ],
+      "name": "BATHEAS JEAN MARIE"
+    },
+    {
+      "gender": "male",
+      "id": "118",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "BATI BENOIT"
+    },
+    {
+      "gender": "male",
+      "id": "111",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Bidimbou.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Bidimbou.jpg"
+        }
+      ],
+      "name": "BIDIMBOU MICHEL"
+    },
+    {
+      "gender": "male",
+      "id": "38",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "BININGA AIME ANGE WILFRID"
+    },
+    {
+      "gender": "male",
+      "id": "87",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "BIZONZI NOUNY GABRIEL"
+    },
+    {
+      "gender": "male",
+      "id": "79",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "BONGO BERNARD CLAUDE AUGE"
+    },
+    {
+      "gender": "male",
+      "id": "7",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/BONGO%20MAVOUNGOU%20Remond.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/BONGO%20MAVOUNGOU%20Remond.jpg"
+        }
+      ],
+      "name": "BONGO MAVOUNGOU RAYMOND"
+    },
+    {
+      "gender": "male",
+      "id": "50",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "BOPOUMBOU JEAN MARIE"
+    },
+    {
+      "gender": "male",
+      "id": "1",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/BOUITY%20Viaudo.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/BOUITY%20Viaudo.jpg"
+        }
+      ],
+      "name": "BOUITY VIAUDO ROLAND"
+    },
+    {
+      "gender": "male",
+      "id": "110",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "BOUNKOULOU BENJAMIN"
+    },
+    {
+      "gender": "male",
+      "id": "54",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Bouya%20Serge.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Bouya%20Serge.jpg"
+        }
+      ],
+      "name": "BOUYA JEAN JACQUES"
+    },
+    {
+      "gender": "male",
+      "id": "6",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "COUSSOUD MAVOUNGOU AIME MARTIN PARFAIT"
+    },
+    {
+      "gender": "male",
+      "id": "29",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/djombo_henri.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/djombo_henri.jpg"
+        }
+      ],
+      "name": "DJOMBO HENRI"
+    },
+    {
+      "gender": "female",
+      "id": "80",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "EBOUREFE EDITH"
+    },
+    {
+      "gender": "male",
+      "id": "83",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Elenga%20Faustin.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Elenga%20Faustin.jpg"
+        }
+      ],
+      "name": "ELENGA FAUSTIN"
+    },
+    {
+      "gender": "male",
+      "id": "39",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "EPOLA JULIEN"
+    },
+    {
+      "gender": "male",
+      "id": "30",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/eteka.JPG",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/eteka.JPG"
+        }
+      ],
+      "name": "ETEKA YEMETH VALERE"
+    },
+    {
+      "gender": "female",
+      "id": "72",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/FILA.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/FILA.jpg"
+        }
+      ],
+      "name": "FILA NEE LEMINA ISABELLE MARTHE"
+    },
+    {
+      "gender": "male",
+      "id": "17",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/follo.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/follo.jpg"
+        }
+      ],
+      "name": "FOLLO ISAAC RAYMOND"
+    },
+    {
+      "gender": "female",
+      "id": "73",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "FOUEMINA TANGUY JASTEL"
+    },
+    {
+      "gender": "male",
+      "id": "20",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/foutou.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/foutou.jpg"
+        }
+      ],
+      "name": "FOUTOU GUILLAUME"
+    },
+    {
+      "gender": "male",
+      "id": "67",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/GAKOSSO.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/GAKOSSO.jpg"
+        }
+      ],
+      "name": "GAKOSSO JEAN CLAUDE"
+    },
+    {
+      "gender": "male",
+      "id": "59",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Gantsia-Gambou%20Guy%20Th..jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Gantsia-Gambou%20Guy%20Th..jpg"
+        }
+      ],
+      "name": "GANTSIO NGAMBOU GUY TIMOTHEE"
+    },
+    {
+      "gender": "male",
+      "id": "64",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "GONGARAD NKOU AUGUSTE CELESTIN"
+    },
+    {
+      "gender": "male",
+      "id": "66",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/IBARA%20Felix.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/IBARA%20Felix.jpg"
+        }
+      ],
+      "name": "IBARA NDELI FELIX"
+    },
+    {
+      "gender": "male",
+      "id": "15",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "IBEYABO ALPHONSINE"
+    },
+    {
+      "gender": "male",
+      "id": "121",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Ibovi%20Jean%20Claude.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Ibovi%20Jean%20Claude.jpg"
+        }
+      ],
+      "name": "IBOYI Jean Claude"
+    },
+    {
+      "gender": "male",
+      "id": "34",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "IBRAHIM DIAWARA"
+    },
+    {
+      "gender": "female",
+      "id": "84",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/IKIA.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/IKIA.jpg"
+        }
+      ],
+      "name": "IKIA SASSOU NGUESSO CLAUDIA"
+    },
+    {
+      "id": "123",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Ingani%20Hyac.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Ingani%20Hyac.jpg"
+        }
+      ],
+      "name": "INGANI Hyacinthe"
+    },
+    {
+      "gender": "male",
+      "id": "65",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/BRUNO%20ITOUA.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/BRUNO%20ITOUA.jpg"
+        }
+      ],
+      "name": "ITOUA BRUNO JEAN RICHARD"
+    },
+    {
+      "gender": "male",
+      "id": "114",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "KALLA MARCEL"
+    },
+    {
+      "gender": "male",
+      "id": "89",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/KIDZIE%20Hilaire%20Epiphane.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/KIDZIE%20Hilaire%20Epiphane.jpg"
+        }
+      ],
+      "name": "KIDZIE HILAIRE EPIPAHNE"
+    },
+    {
+      "gender": "male",
+      "id": "103",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Kignoubi-Kia-Mboungou-copie-1.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Kignoubi-Kia-Mboungou-copie-1.jpg"
+        }
+      ],
+      "name": "KIGNOUMBI KIA MBOUNGOU JOSEPH"
+    },
+    {
+      "gender": "male",
+      "id": "5",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "KILOEMBA AMEDEE"
+    },
+    {
+      "gender": "male",
+      "id": "9",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/KITOMBO%20GOKO%20Alphonse.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/KITOMBO%20GOKO%20Alphonse.jpg"
+        }
+      ],
+      "name": "KITOMBO NGOKO ALPHONSE"
+    },
+    {
+      "gender": "male",
+      "id": "115",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "KOLLO LAURENT"
+    },
+    {
+      "gender": "male",
+      "id": "98",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "KOUA ALPHONSE"
+    },
+    {
+      "gender": "male",
+      "id": "22",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/koumba.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/koumba.jpg"
+        }
+      ],
+      "name": "KOUMBA JUSTIN"
+    },
+    {
+      "gender": "male",
+      "id": "74",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/KOURISSA.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/KOURISSA.jpg"
+        }
+      ],
+      "name": "KOURISSA JEAN DE DIEU"
+    },
+    {
+      "gender": "male",
+      "id": "97",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "LENGOMA DIEUDONNE"
+    },
+    {
+      "gender": "male",
+      "id": "96",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/LEOUOBO%20Marcel.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/LEOUOBO%20Marcel.jpg"
+        }
+      ],
+      "name": "LEOUOBO MARCEL"
+    },
+    {
+      "gender": "male",
+      "id": "95",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "LEYINDA ALAIN PASCAL"
+    },
+    {
+      "gender": "male",
+      "id": "18",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "LOEMBET DELPHIN"
+    },
+    {
+      "gender": "female",
+      "id": "2",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "LOEMBET NEE NITOU-LANDOU VERONIQUE"
+    },
+    {
+      "gender": "male",
+      "id": "47",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "LONGOBE GABRIEL"
+    },
+    {
+      "gender": "male",
+      "id": "92",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "LOUELA BOUMBA JEAN"
+    },
+    {
+      "gender": "male",
+      "id": "68",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "LOUSSAKOU FRANCOIS"
+    },
+    {
+      "gender": "male",
+      "id": "3",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "MABIALA ALEXANDRE"
+    },
+    {
+      "gender": "male",
+      "id": "94",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/PIERRE-MABIALA.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/PIERRE-MABIALA.jpg"
+        }
+      ],
+      "name": "MABIALA PIERRE"
+    },
+    {
+      "gender": "male",
+      "id": "117",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "MABONZO ANDRE EMILE"
+    },
+    {
+      "gender": "male",
+      "id": "91",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Mahoungou%20Massila.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Mahoungou%20Massila.jpg"
+        }
+      ],
+      "name": "MAHOUNGOU MASILA YVES BERNARD"
+    },
+    {
+      "gender": "male",
+      "id": "81",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "MALANDA JEAN JACQUES"
+    },
+    {
+      "gender": "male",
+      "id": "85",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "MALONGA PHILIBERT"
+    },
+    {
+      "gender": "male",
+      "id": "25",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "MANGONDO GERRY GERARD"
+    },
+    {
+      "gender": "male",
+      "id": "26",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "MANIA VENANCE"
+    },
+    {
+      "gender": "male",
+      "id": "19",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Mavoungou%20M..jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Mavoungou%20M..jpg"
+        }
+      ],
+      "name": "MAVOUNGOU MAKAYA JEAN BAPTISTE"
+    },
+    {
+      "gender": "male",
+      "id": "16",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Mavoungou%20M..jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Mavoungou%20M..jpg"
+        }
+      ],
+      "name": "MAVOUNGOU MAURICE"
+    },
+    {
+      "gender": "male",
+      "id": "12",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Mavoungou%20M..jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Mavoungou%20M..jpg"
+        }
+      ],
+      "name": "MAVOUNGOU ZINGA MABIO"
+    },
+    {
+      "gender": "male",
+      "id": "100",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Mavoungou%20Ngot.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Mavoungou%20Ngot.jpg"
+        }
+      ],
+      "name": "MAVOUNGOU-NGOT JEAN MICHEL"
+    },
+    {
+      "gender": "male",
+      "id": "63",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/mboulou%20raymond.JPG",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/mboulou%20raymond.JPG"
+        }
+      ],
+      "name": "MBOULOU RAYMOND ZEPHIRIN"
+    },
+    {
+      "gender": "male",
+      "id": "32",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Mbouma%20A..jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Mbouma%20A..jpg"
+        }
+      ],
+      "name": "MBOUMA ALBERT"
+    },
+    {
+      "gender": "male",
+      "id": "107",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "MFOUTOU SIMON"
+    },
+    {
+      "gender": "male",
+      "id": "78",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "MIAKASSISSA DAMIEN"
+    },
+    {
+      "gender": "male",
+      "id": "13",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Milandou%20Cl..jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Milandou%20Cl..jpg"
+        }
+      ],
+      "name": "MILANDOU CLAUDE ABRAHAM"
+    },
+    {
+      "gender": "male",
+      "id": "23",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/MOKA%20Alain.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/MOKA%20Alain.jpg"
+        }
+      ],
+      "name": "MOKA ALAIN"
+    },
+    {
+      "gender": "male",
+      "id": "49",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/MOKOKO%20Leon%20Rapha%C3%ABl.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/MOKOKO%20Leon%20Rapha%C3%ABl.jpg"
+        }
+      ],
+      "name": "MOKOKO LEON RAPHAEL"
+    },
+    {
+      "gender": "male",
+      "id": "77",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "MOUAGNI AIME HYDEVERT"
+    },
+    {
+      "gender": "male",
+      "id": "109",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/moudoudou.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/moudoudou.jpg"
+        }
+      ],
+      "name": "MOUDOUDOU PLACIDE"
+    },
+    {
+      "gender": "male",
+      "id": "41",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Mouele%20Hubert.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Mouele%20Hubert.jpg"
+        }
+      ],
+      "name": "MOUELE SERGE HUBERT"
+    },
+    {
+      "gender": "male",
+      "id": "104",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/thierry.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/thierry.jpg"
+        }
+      ],
+      "name": "MOUNGALLAT THIERRY LEZIN"
+    },
+    {
+      "gender": "female",
+      "id": "116",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/CLAUDINE.jpeg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/CLAUDINE.jpeg"
+        }
+      ],
+      "name": "MUNARI NEE MABONDZO CLAUDINE"
+    },
+    {
+      "gender": "male",
+      "id": "14",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "NDINGA ALEXIS"
+    },
+    {
+      "gender": "male",
+      "id": "31",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/NDINGA%20MAKANDA.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/NDINGA%20MAKANDA.jpg"
+        }
+      ],
+      "name": "NDINGA MAKANDA ACCEL ARNAUD"
+    },
+    {
+      "gender": "male",
+      "id": "35",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "NDOUANE DAMBERT RENE"
+    },
+    {
+      "gender": "male",
+      "id": "46",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "NGOKANA DENIS AUGUSTE MARIE"
+    },
+    {
+      "gender": "male",
+      "id": "122",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/NGOLO%20Pierre.JPG",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/NGOLO%20Pierre.JPG"
+        }
+      ],
+      "name": "NGOLO Pierre"
+    },
+    {
+      "gender": "male",
+      "id": "119",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "NGOMA MBOUNGOU ULRICH"
+    },
+    {
+      "gender": "male",
+      "id": "108",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "NGOUBILI CHARLES DAVID"
+    },
+    {
+      "gender": "male",
+      "id": "58",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/NGOUELONDELE%20Hugues.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/NGOUELONDELE%20Hugues.jpg"
+        }
+      ],
+      "name": "NGOUELONDELE HUGUES"
+    },
+    {
+      "gender": "male",
+      "id": "55",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "NGOUONIMBA JOSUE RODRIGUE"
+    },
+    {
+      "gender": "male",
+      "id": "93",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Pierre-Michel-Nguimbi.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Pierre-Michel-Nguimbi.jpg"
+        }
+      ],
+      "name": "NGUIMBI PIERRE MICHEL"
+    },
+    {
+      "gender": "male",
+      "id": "90",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "NIANGA ELENGA ANDRE"
+    },
+    {
+      "gender": "male",
+      "id": "8",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Nkodia%20Kim.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Nkodia%20Kim.jpg"
+        }
+      ],
+      "name": "NKODIA KYND GAETAN"
+    },
+    {
+      "gender": "male",
+      "id": "86",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "NSONDE JEAN MARIE"
+    },
+    {
+      "gender": "male",
+      "id": "101",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "NZENGUI MOMBO HANDEL LAURY"
+    },
+    {
+      "gender": "male",
+      "id": "40",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "OBIE THIERRY"
+    },
+    {
+      "gender": "male",
+      "id": "37",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Odzoki.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Odzoki.jpg"
+        }
+      ],
+      "name": "ODZOCKI SERGE MICHEL"
+    },
+    {
+      "gender": "male",
+      "id": "60",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/okombi-salissa-andre-2009.png",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/okombi-salissa-andre-2009.png"
+        }
+      ],
+      "name": "OKOMBI SALISSA ANDRE"
+    },
+    {
+      "gender": "male",
+      "id": "52",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/OKOULA%20Roger%20Edouard.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/OKOULA%20Roger%20Edouard.jpg"
+        }
+      ],
+      "name": "OKOULA ROGER EDOUARD"
+    },
+    {
+      "gender": "male",
+      "id": "76",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "OLLINGO ONIANGUE JEAN CLAUDE"
+    },
+    {
+      "gender": "male",
+      "id": "44",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Gilbert%20Ondongo.gif",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Gilbert%20Ondongo.gif"
+        }
+      ],
+      "name": "ONDONGO GILBERT"
+    },
+    {
+      "gender": "male",
+      "id": "61",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "ONDZE NEE NGAMBOLO B."
+    },
+    {
+      "gender": "female",
+      "id": "75",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Opimbat%20charlotte.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Opimbat%20charlotte.jpg"
+        }
+      ],
+      "name": "OPIMBAT CHARLOTTE"
+    },
+    {
+      "gender": "male",
+      "id": "42",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/OPIMBAT%20L%C3%A9on%20Alfred.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/OPIMBAT%20L%C3%A9on%20Alfred.jpg"
+        }
+      ],
+      "name": "OPIMBAT LEON ALFRED"
+    },
+    {
+      "gender": "male",
+      "id": "56",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "OSSEBI HENRI"
+    },
+    {
+      "gender": "male",
+      "id": "82",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/OSSIALA%20Sylvestre.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/OSSIALA%20Sylvestre.jpg"
+        }
+      ],
+      "name": "OSSIALA SYLVESTRE"
+    },
+    {
+      "gender": "male",
+      "id": "102",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/emile_OUOSSO.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/emile_OUOSSO.jpg"
+        }
+      ],
+      "name": "OUOSSO EMILE"
+    },
+    {
+      "gender": "male",
+      "id": "43",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "OVAGA JEAN DANIEL"
+    },
+    {
+      "gender": "male",
+      "id": "45",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "OWASSA-YAUCKA ABEL JOEL"
+    },
+    {
+      "gender": "male",
+      "id": "71",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Pandou%20Anicet.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Pandou%20Anicet.jpg"
+        }
+      ],
+      "name": "PANDOU ANICET WILFRID"
+    },
+    {
+      "gender": "male",
+      "id": "24",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Sabaye.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Sabaye.jpg"
+        }
+      ],
+      "name": "SABAYE FERDINAND"
+    },
+    {
+      "gender": "male",
+      "id": "53",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/DENIS_CHRISTEL.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/DENIS_CHRISTEL.jpg"
+        }
+      ],
+      "name": "SASSOU NGUESSO DENIS CHRISTEL"
+    },
+    {
+      "gender": "male",
+      "id": "21",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "SAYI HONORE"
+    },
+    {
+      "gender": "male",
+      "id": "112",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "SIBALY JEAN"
+    },
+    {
+      "gender": "male",
+      "id": "57",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Soussa%20Louis.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Soussa%20Louis.jpg"
+        }
+      ],
+      "name": "SOUSSA LOUIS"
+    },
+    {
+      "gender": "male",
+      "id": "11",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "TCHIGNOUMBA BOUMBA PAUL GILBERT"
+    },
+    {
+      "gender": "male",
+      "id": "4",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Tengo.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Tengo.jpg"
+        }
+      ],
+      "name": "TENGO LAURENT"
+    },
+    {
+      "gender": "male",
+      "id": "10",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "THYSTHERE TCHICAYA JEAN MARC"
+    },
+    {
+      "gender": "female",
+      "id": "88",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "TIELE-GAMBIA OLOU ANTOINETTE"
+    },
+    {
+      "gender": "female",
+      "id": "27",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Tono%20F.%20L.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Tono%20F.%20L.jpg"
+        }
+      ],
+      "name": "TONO MARIE LOUISE"
+    },
+    {
+      "gender": "male",
+      "id": "99",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "TSALABIENDZE JOSEPH"
+    },
+    {
+      "gender": "male",
+      "id": "113",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Tsaty%20Mabiala.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Tsaty%20Mabiala.jpg"
+        }
+      ],
+      "name": "TSATY MABIALA PASCAL"
+    },
+    {
+      "gender": "male",
+      "id": "106",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "TSEKE MOUKILA JEAN"
+    },
+    {
+      "gender": "male",
+      "id": "105",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "TSOUMOU MOUKASSA ADRIEN"
+    },
+    {
+      "gender": "male",
+      "id": "36",
+      "image": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg",
+      "images": [
+        {
+          "url": "http://www.assemblee-nationale.cg/upload_deputes/Harmoirie.jpg"
+        }
+      ],
+      "name": "ZONIABA AYIMESSONE HENRI"
+    }
+  ],
+  "organizations": [
+    {
+      "classification": "party",
+      "id": "party/63926a7c-87ca-4eb0-9ae6-68d5076a9f3d",
+      "name": ""
+    },
+    {
+      "classification": "legislature",
+      "id": "legislature",
+      "legislative_periods": [
+        {
+          "classification": "legislative period",
+          "id": "term/13",
+          "name": "13ème législature",
+          "start_date": "2012"
+        }
+      ],
+      "name": "Assemblee Nationale"
+    },
+    {
+      "classification": "party",
+      "id": "party/d0c79a93-dc56-407e-8f7e-a077b7e11698",
+      "name": "CLUB 2002 PUR"
+    },
+    {
+      "classification": "party",
+      "id": "party/deca9ae2-f1ba-434f-bdb8-0d4aa9cdeabc",
+      "name": "CPR"
+    },
+    {
+      "classification": "party",
+      "id": "party/1eed89b0-640d-49ba-95dc-50913f10a33b",
+      "name": "INDEPENDANT"
+    },
+    {
+      "classification": "party",
+      "id": "party/d576a5e5-2dcd-4825-b0c0-f0234e4da3d6",
+      "name": "MAR"
+    },
+    {
+      "classification": "party",
+      "id": "party/86d3fb59-87d6-4487-b410-e03bfbcf7bd3",
+      "name": "MCDDI"
+    },
+    {
+      "classification": "party",
+      "id": "party/a3bad772-0f76-46fd-948f-e6e1e2606756",
+      "name": "MUST"
+    },
+    {
+      "classification": "party",
+      "id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "name": "PCT"
+    },
+    {
+      "classification": "party",
+      "id": "party/72419e22-ca54-49b2-b922-b377f016e2fb",
+      "name": "PRL"
+    },
+    {
+      "classification": "party",
+      "id": "party/5719ca2e-f0d9-4cb8-900d-85ce1843e56e",
+      "name": "RC"
+    },
+    {
+      "classification": "party",
+      "id": "party/df0b26e0-3536-4ba4-b2bf-ec7f035679ea",
+      "name": "RDPS"
+    },
+    {
+      "classification": "party",
+      "id": "party/271bbea9-76c2-4ca0-af4c-c514dd6d8eac",
+      "name": "UPADS"
+    },
+    {
+      "classification": "party",
+      "id": "party/3bb381a4-5267-4a63-89bd-4123b1a0448d",
+      "name": "UR"
+    }
+  ],
+  "meta": {
+    "source": "https://morph.io/tmtmtmtm/congo-assemblee"
+  },
+  "memberships": [
+    {
+      "area": {
+        "name": "LOANGO"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d576a5e5-2dcd-4825-b0c0-f0234e4da3d6",
+      "organization_id": "legislature",
+      "person_id": "1",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Circonscription de"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/df0b26e0-3536-4ba4-b2bf-ec7f035679ea",
+      "organization_id": "legislature",
+      "person_id": "10",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MOUTAMBA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "100",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "NYANGA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/1eed89b0-640d-49ba-95dc-50913f10a33b",
+      "organization_id": "legislature",
+      "person_id": "101",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "YAYA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "102",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "SIBITI"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/271bbea9-76c2-4ca0-af4c-c514dd6d8eac",
+      "organization_id": "legislature",
+      "person_id": "103",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "SIBITI2"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "104",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "BAMBAMA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/271bbea9-76c2-4ca0-af4c-c514dd6d8eac",
+      "organization_id": "legislature",
+      "person_id": "105",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "KOMONO"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "106",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MAYEYE"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "107",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "ZANAGA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "108",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MADINGOU"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "109",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MVOU-MVOU2"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/1eed89b0-640d-49ba-95dc-50913f10a33b",
+      "organization_id": "legislature",
+      "person_id": "11",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "BOKO-SONGHO"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/3bb381a4-5267-4a63-89bd-4123b1a0448d",
+      "organization_id": "legislature",
+      "person_id": "110",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "KAYES"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "111",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "KINGOUE"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "112",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "LOUDIMA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/271bbea9-76c2-4ca0-af4c-c514dd6d8eac",
+      "organization_id": "legislature",
+      "person_id": "113",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MABOMBO"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "114",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MFOUATI"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "115",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MOUYONDZI"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/a3bad772-0f76-46fd-948f-e6e1e2606756",
+      "organization_id": "legislature",
+      "person_id": "116",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "NKAYI"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "117",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "TSIAKI"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/63926a7c-87ca-4eb0-9ae6-68d5076a9f3d",
+      "organization_id": "legislature",
+      "person_id": "118",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "YAMBA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/a3bad772-0f76-46fd-948f-e6e1e2606756",
+      "organization_id": "legislature",
+      "person_id": "119",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "LOANDJILI1"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/df0b26e0-3536-4ba4-b2bf-ec7f035679ea",
+      "organization_id": "legislature",
+      "person_id": "12",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "TALANGAI"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/63926a7c-87ca-4eb0-9ae6-68d5076a9f3d",
+      "organization_id": "legislature",
+      "person_id": "121",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "OUENZE"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "122",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "TALANGAI"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "123",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "LOANDJILI2"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "13",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "LUMUMBA1"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/1eed89b0-640d-49ba-95dc-50913f10a33b",
+      "organization_id": "legislature",
+      "person_id": "14",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "LUMUMBA2"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "15",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "LUMUMBA3"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d576a5e5-2dcd-4825-b0c0-f0234e4da3d6",
+      "organization_id": "legislature",
+      "person_id": "16",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "NGOYO"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "17",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MONGO MPOUKOU"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/df0b26e0-3536-4ba4-b2bf-ec7f035679ea",
+      "organization_id": "legislature",
+      "person_id": "18",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "TCHIAMBA NZASSI"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/df0b26e0-3536-4ba4-b2bf-ec7f035679ea",
+      "organization_id": "legislature",
+      "person_id": "19",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "HINDA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d576a5e5-2dcd-4825-b0c0-f0234e4da3d6",
+      "organization_id": "legislature",
+      "person_id": "2",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "DOLISIE1"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/271bbea9-76c2-4ca0-af4c-c514dd6d8eac",
+      "organization_id": "legislature",
+      "person_id": "20",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "DOLISIE2"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/271bbea9-76c2-4ca0-af4c-c514dd6d8eac",
+      "organization_id": "legislature",
+      "person_id": "21",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "BANDA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "22",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "IMPFONDO"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "23",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "BETOU"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/63926a7c-87ca-4eb0-9ae6-68d5076a9f3d",
+      "organization_id": "legislature",
+      "person_id": "24",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "BOUANELA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/63926a7c-87ca-4eb0-9ae6-68d5076a9f3d",
+      "organization_id": "legislature",
+      "person_id": "25",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "DONGOU"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "26",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "EPENA1"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "27",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "EPENA2"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "28",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "ENYELLE"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "29",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "KAKAMOEKA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "3",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Circonscription de"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "30",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "OUESSO"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "31",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MOKEKO"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "32",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "NGBALA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "33",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "PIKOUNDA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "34",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "SEMBE"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "35",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "SOUANKE"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "36",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "EWO1"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "37",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "EWO2"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "38",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "ETOUMBI"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "39",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MADINGO-KAYES"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d576a5e5-2dcd-4825-b0c0-f0234e4da3d6",
+      "organization_id": "legislature",
+      "person_id": "4",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "KELLE"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "40",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MBAMA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "41",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Circonscription de"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/63926a7c-87ca-4eb0-9ae6-68d5076a9f3d",
+      "organization_id": "legislature",
+      "person_id": "42",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "OKOYO"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "43",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "OWANDO1"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "44",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "OWANDO2"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "45",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "BOUNDJI"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "46",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "LOUKOLELA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "47",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MAKOUA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "48",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MOSSAKA1"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "49",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MVOUTI1"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/df0b26e0-3536-4ba4-b2bf-ec7f035679ea",
+      "organization_id": "legislature",
+      "person_id": "5",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MOSSAKA2"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "50",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "NGOKO"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "51",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "NTOKOU"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "52",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "OYO"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "53",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "TCHIKAPIKA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "54",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "DJAMBALA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "55",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "ABALA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "56",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "ALLEMBE"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "57",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "GAMBOMA1"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "58",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "GAMBOMA2"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "59",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MVOUTI2"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "6",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "LEKANA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "60",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MAKOTIMPOKO"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "61",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MBON"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "62",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MPOUYA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "63",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "NGO"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "64",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "OLLMOBO1"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "65",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "OLLOMBO2"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "66",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "ONGOGNI"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "67",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MAKELEKELE"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/5719ca2e-f0d9-4cb8-900d-85ce1843e56e",
+      "organization_id": "legislature",
+      "person_id": "68",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MAKELEKELE2"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/86d3fb59-87d6-4487-b410-e03bfbcf7bd3",
+      "organization_id": "legislature",
+      "person_id": "69",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "NZAMBI"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "7",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MAKELEKELE3"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/72419e22-ca54-49b2-b922-b377f016e2fb",
+      "organization_id": "legislature",
+      "person_id": "70",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MAKELEKELE4"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/1eed89b0-640d-49ba-95dc-50913f10a33b",
+      "organization_id": "legislature",
+      "person_id": "71",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "BACONGO1"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/5719ca2e-f0d9-4cb8-900d-85ce1843e56e",
+      "organization_id": "legislature",
+      "person_id": "72",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "BACONGO2"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/5719ca2e-f0d9-4cb8-900d-85ce1843e56e",
+      "organization_id": "legislature",
+      "person_id": "73",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "POTO-POTO1"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "74",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "POTO-POTO2"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "75",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "POTO-POTO3"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "76",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MOUNGALI1"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/deca9ae2-f1ba-434f-bdb8-0d4aa9cdeabc",
+      "organization_id": "legislature",
+      "person_id": "77",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MOUNGALI2"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "78",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "OUENZE2"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d0c79a93-dc56-407e-8f7e-a077b7e11698",
+      "organization_id": "legislature",
+      "person_id": "79",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "TIE-TIE1"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "8",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "OUENZE3"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "80",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "OUENZE4"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/1eed89b0-640d-49ba-95dc-50913f10a33b",
+      "organization_id": "legislature",
+      "person_id": "81",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "TALANGAI3"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "82",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "TALANGAI4"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "83",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "TALANGAI5"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "84",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MFILOU1"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/86d3fb59-87d6-4487-b410-e03bfbcf7bd3",
+      "organization_id": "legislature",
+      "person_id": "85",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MFILOU2"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "86",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MADIBOU"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/1eed89b0-640d-49ba-95dc-50913f10a33b",
+      "organization_id": "legislature",
+      "person_id": "87",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "DJIRI1"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "88",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "DJIRI2"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "89",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "TIE-TIE2"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "9",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "ILE MBAMOU"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "90",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "KIMONGO"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "91",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "LONDELA-KAYES"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/1eed89b0-640d-49ba-95dc-50913f10a33b",
+      "organization_id": "legislature",
+      "person_id": "92",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "LOUVAKOU"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "93",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MAKABANA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "94",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MAYOKO"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/271bbea9-76c2-4ca0-af4c-c514dd6d8eac",
+      "organization_id": "legislature",
+      "person_id": "95",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MBINDA"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "96",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MOUNGOUNDOU-NORD"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/d6e227af-0cde-4af2-8827-4004a5daaed9",
+      "organization_id": "legislature",
+      "person_id": "97",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MOUNGOUNDOU-SUD"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/1eed89b0-640d-49ba-95dc-50913f10a33b",
+      "organization_id": "legislature",
+      "person_id": "98",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "MOSSENDJO"
+      },
+      "legislative_period_id": "term/13",
+      "on_behalf_of_id": "party/1eed89b0-640d-49ba-95dc-50913f10a33b",
+      "organization_id": "legislature",
+      "person_id": "99",
+      "role": "member"
+    }
+  ]
+}
