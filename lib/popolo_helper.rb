@@ -16,18 +16,21 @@ module Popolo
     def json
       @_data ||= begin 
         fail "No source file: #{@_src_file}" unless File.exist? @_src_file
-        # (sha, mtime) = File.read(@_src_file).chomp.split('|')
-        sha = File.read(@_src_file).chomp
+        (sha, @lastmod) = File.read(@_src_file).chomp.split('|')
 
         data_file = "#{@_cache_dir}/#{sha}-#{@_country}.json"
         unless File.exist? data_file
           locn = "https://raw.githubusercontent.com/everypolitician/everypolitician-data/#{sha}/data/#{@_country}/final.json" 
-          require 'colorize'
-          warn "Fetching #{locn} to #{data_file}".green
           File.write data_file, open(locn).read
         end
 
         JSON.parse(File.read(data_file))
+      end
+    end
+
+    def lastmod
+      @lastmod ||= begin
+        File.read(@_src_file).chomp.split('|').last
       end
     end
 
