@@ -10,19 +10,29 @@ module Popolo
       @_country = country
       @_cache_dir = cache_dir
       @_src_file = "src/#{@_country}.src"
-
-      @_data_file = "#{@_cache_dir}/#{@_country}.json"
+      (sha, @lastmod) = File.read(@_src_file).chomp.split('|')
+      @popolo_file = "#{@_cache_dir}/#{sha}-#{@_country}.json"
     end
 
     def json
-      unless File.exist? @_data_file
+      @_data ||= begin 
         fail "No source file: #{@_src_file}" unless File.exist? @_src_file
-        locn = File.read(@_src_file).chomp
-        locn = "https://raw.githubusercontent.com/everypolitician/everypolitician-data/#{locn}/data/#{@_country}/final.json" unless locn[/^http/]
-        fetched_json = open(locn).read
-        File.write @_data_file, fetched_json
+
+        unless File.exist? @popolo_file
+          locn = "https://raw.githubusercontent.com/everypolitician/everypolitician-data/#{sha}/data/#{@_country}/final.json" 
+          File.write @popolo_file, open(locn).read
+        end
+
+        JSON.parse(File.read(@popolo_file))
       end
-      @_data ||= JSON.parse(File.read(@_data_file))
+    end
+
+    def lastmod
+      @lastmod 
+    end
+
+    def popolo_url
+      @popolo_file.sub('public','')
     end
 
     def persons

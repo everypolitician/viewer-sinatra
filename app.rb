@@ -35,12 +35,13 @@ end
 get '/countries.json' do
   content_type :json
   countries = ALL_COUNTRIES.map do |c|
-    last_term_id = Popolo::Data.new(c[:file]).current_term['id'].split('/').last
+    pd = Popolo::Data.new(c[:file])
+    last_term_id = pd.current_term['id'].split('/').last
     {
       name: c[:name],
       url: "/#{c[:url]}",
       latest_term_csv: "/#{c[:url]}/term_table/#{last_term_id}.csv",
-      popolo: "/data/#{c[:file]}.json"
+      popolo: pd.popolo_url
     }
   end
   JSON.pretty_generate(countries)
@@ -78,6 +79,8 @@ get '/:country/term/:id' do |_country, id|
 end
 
 get '/:country/term_table/?:id?.html' do |_country, id|
+  last_modified Time.at(@popolo.lastmod.to_i)
+
   @term = id ? @popolo.term_from_id(id) : @popolo.current_term
   pass unless @term
 
@@ -90,13 +93,15 @@ get '/:country/term_table/?:id?.html' do |_country, id|
   @houses = @memberships.map { |m| m['organization'] }.uniq
   @urls = {
     csv: "/#{@country[:url]}/term_table/#{@term['id'].split('/').last}.csv",
-    json: "/data/#{@country[:file]}.json"
+    json: @popolo.popolo_url
   }
   @data_source = @popolo.data_source
   erb :term_table
 end
 
 get '/:country/term_table/?:id?.csv' do |country, id|
+  last_modified Time.at(@popolo.lastmod.to_i)
+
   @term = id ? @popolo.term_from_id(id) : @popolo.current_term
   pass unless @term
 
