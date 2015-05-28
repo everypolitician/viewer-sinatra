@@ -1,4 +1,5 @@
 language: ruby
+cache: bundler
 
 script: bundle exec rake test
 rvm:
@@ -7,3 +8,6 @@ rvm:
 notifications:
   slack:
     secure: GVD9d+kwR5hzab5ZnWugbCkp9QSYyheSrABWkD+LmpMcWcx7jijajSn4LLvDi/zHYn1MdOBcPe08hSygmpm7ViUApp0EJcSzE4BLU/5oAs+ANV0Qq6jsssMlyo3v8eRAqHNiLxAiAsz+lc0EZWfQnSW8kHzzbO3NeYq1NRL5CgQ=
+
+after_success:
+- scripts/release.sh
