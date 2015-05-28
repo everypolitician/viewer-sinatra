@@ -10,8 +10,8 @@ module Popolo
       @_country = country
       @_cache_dir = cache_dir
       @_src_file = "src/#{@_country}.src"
-      (sha, @lastmod) = File.read(@_src_file).chomp.split('|')
-      @popolo_file = "#{@_cache_dir}/#{sha}-#{@_country}.json"
+      (@sha, @lastmod) = File.read(@_src_file).chomp.split('|')
+      @popolo_file = "#{@_cache_dir}/#{@sha}-#{@_country}.json"
     end
 
     def json
@@ -19,7 +19,7 @@ module Popolo
         fail "No source file: #{@_src_file}" unless File.exist? @_src_file
 
         unless File.exist? @popolo_file
-          locn = "https://raw.githubusercontent.com/everypolitician/everypolitician-data/#{sha}/data/#{@_country}/final.json" 
+          locn = "https://raw.githubusercontent.com/everypolitician/everypolitician-data/#{@sha}/data/#{@_country}/final.json" 
           File.write @popolo_file, open(locn).read
         end
 
