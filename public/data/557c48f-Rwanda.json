@@ -1,0 +1,1972 @@
+{
+  "persons": [
+    {
+      "email": "agnes.nyirabagenzi@parliament.gov.rw",
+      "family_name": "NYIRABAGENZI",
+      "given_name": "AGNES",
+      "id": "174",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=174"
+        }
+      ],
+      "name": "AGNES NYIRABAGENZI",
+      "sort_name": "NYIRABAGENZI AGNES"
+    },
+    {
+      "email": "abbas.mukama@parliament.gov.rw",
+      "family_name": "MUKAMA",
+      "given_name": "Abbas",
+      "id": "87",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=87"
+        }
+      ],
+      "name": "Abbas MUKAMA",
+      "sort_name": "MUKAMA Abbas"
+    },
+    {
+      "email": "adolphe.bazatoha@parliament.gov.rw",
+      "family_name": "BAZATOHA",
+      "given_name": "Adolphe",
+      "id": "2",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=2"
+        }
+      ],
+      "name": "Adolphe BAZATOHA",
+      "sort_name": "BAZATOHA Adolphe"
+    },
+    {
+      "email": "agnes.mukazibera@parliament.gov.rw",
+      "family_name": "MUKAZIBERA",
+      "given_name": "Agnès",
+      "id": "126",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=126"
+        }
+      ],
+      "name": "Agnès MUKAZIBERA",
+      "sort_name": "MUKAZIBERA Agnès"
+    },
+    {
+      "email": "alfred.kayiranga@parliament.gov.rw",
+      "family_name": "KAYIRANGA RWASA",
+      "given_name": "Alfred",
+      "id": "59",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=59"
+        }
+      ],
+      "name": "Alfred KAYIRANGA RWASA",
+      "sort_name": "KAYIRANGA RWASA Alfred"
+    },
+    {
+      "email": "alphonsine.mukarugema@parliament.gov.rw",
+      "family_name": "MUKARUGEMA",
+      "given_name": "Alphonsine",
+      "id": "114",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=114"
+        }
+      ],
+      "name": "Alphonsine MUKARUGEMA",
+      "sort_name": "MUKARUGEMA Alphonsine"
+    },
+    {
+      "email": "amiel.ngabo@parliament.gov.rw",
+      "family_name": "NGABO",
+      "given_name": "Amiel",
+      "id": "153",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=153"
+        }
+      ],
+      "name": "Amiel NGABO",
+      "sort_name": "NGABO Amiel"
+    },
+    {
+      "email": "anitha.mutesi@parliament.gov.rw",
+      "family_name": "MUTESI",
+      "given_name": "Anitha",
+      "id": "330",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=330"
+        }
+      ],
+      "name": "Anitha MUTESI",
+      "sort_name": "MUTESI Anitha"
+    },
+    {
+      "email": "annonciata.mukarugwiza@parliament.gov.rw",
+      "family_name": "MUKARUGWIZA",
+      "given_name": "Annonciata",
+      "id": "309",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=309"
+        }
+      ],
+      "name": "Annonciata MUKARUGWIZA",
+      "sort_name": "MUKARUGWIZA Annonciata"
+    },
+    {
+      "email": "annoncee.manirarora@parliament.gov.rw",
+      "family_name": "MANIRARORA",
+      "given_name": "Annoncée",
+      "id": "264",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=264"
+        }
+      ],
+      "name": "Annoncée MANIRARORA",
+      "sort_name": "MANIRARORA Annoncée"
+    },
+    {
+      "email": "athanasie.gahondogo@parliament.gov.rw",
+      "family_name": "GAHONDOGO",
+      "given_name": "Athanasie",
+      "id": "6",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=6"
+        }
+      ],
+      "name": "Athanasie GAHONDOGO",
+      "sort_name": "GAHONDOGO Athanasie"
+    },
+    {
+      "email": "athanasie.nyiragwaneza@parliament.gov.rw",
+      "family_name": "NYIRAGWANEZA",
+      "given_name": "Athanasie",
+      "id": "180",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=180"
+        }
+      ],
+      "name": "Athanasie NYIRAGWANEZA",
+      "sort_name": "NYIRAGWANEZA Athanasie"
+    },
+    {
+      "email": "berthe.mujawamariya@parliament.gov.rw",
+      "family_name": "MUJAWAMARIYA",
+      "given_name": "Berthe",
+      "id": "75",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=75"
+        }
+      ],
+      "name": "Berthe MUJAWAMARIYA",
+      "sort_name": "MUJAWAMARIYA Berthe"
+    },
+    {
+      "email": "chantal.kabasinga@parliament.gov.rw",
+      "family_name": "KABASINGA",
+      "given_name": "Chantal",
+      "id": "258",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=258"
+        }
+      ],
+      "name": "Chantal KABASINGA",
+      "sort_name": "KABASINGA Chantal"
+    },
+    {
+      "email": "christine.muhongayire@parliament.gov.rw",
+      "family_name": "MUHONGAYIRE",
+      "given_name": "Christine",
+      "id": "267",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=267"
+        }
+      ],
+      "name": "Christine MUHONGAYIRE",
+      "sort_name": "MUHONGAYIRE Christine"
+    },
+    {
+      "email": "Clotilde.mukakarangwa@parliament.gov.rw",
+      "family_name": "MUKAKARANGWA",
+      "given_name": "Clotilde",
+      "id": "84",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=84"
+        }
+      ],
+      "name": "Clotilde MUKAKARANGWA",
+      "sort_name": "MUKAKARANGWA Clotilde"
+    },
+    {
+      "email": "constance.mukayuhi@parliament.gov.rw",
+      "family_name": "MUKAYUHI RWAKA",
+      "given_name": "Constance",
+      "id": "123",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=123"
+        }
+      ],
+      "name": "Constance MUKAYUHI RWAKA",
+      "sort_name": "MUKAYUHI RWAKA Constance"
+    },
+    {
+      "email": "cecile.murumunawabo@parliament.gov.rw",
+      "family_name": "MURUMUNAWABO",
+      "given_name": "Cécile",
+      "id": "315",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=315"
+        }
+      ],
+      "name": "Cécile MURUMUNAWABO",
+      "sort_name": "MURUMUNAWABO Cécile"
+    },
+    {
+      "email": "donatille.mukabalisa@parliament.gov.rw",
+      "family_name": "MUKABALISA",
+      "given_name": "Donatille",
+      "id": "276",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=276"
+        }
+      ],
+      "name": "Donatille MUKABALISA",
+      "sort_name": "MUKABALISA Donatille"
+    },
+    {
+      "email": "devota.uwamariya@parliament.gov.rw",
+      "family_name": "UWAMARIYA",
+      "given_name": "Dévote",
+      "id": "225",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=225"
+        }
+      ],
+      "name": "Dévote UWAMARIYA",
+      "sort_name": "UWAMARIYA Dévote"
+    },
+    {
+      "email": "edda.mukabagwiza@parliament.gov.rw",
+      "family_name": "MUKABAGWIZA",
+      "given_name": "Edda",
+      "id": "270",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=270"
+        }
+      ],
+      "name": "Edda MUKABAGWIZA",
+      "sort_name": "MUKABAGWIZA Edda"
+    },
+    {
+      "email": "edouard.bamporiki@parliament.gov.rw",
+      "family_name": "BAMPORIKI",
+      "given_name": "Edouard",
+      "id": "243",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=243"
+        }
+      ],
+      "name": "Edouard BAMPORIKI",
+      "sort_name": "BAMPORIKI Edouard"
+    },
+    {
+      "email": "emmanuel.mudidi@parliament.gov.rw",
+      "family_name": "MUDIDI",
+      "given_name": "Emmanuel",
+      "id": "72",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=72"
+        }
+      ],
+      "name": "Emmanuel MUDIDI",
+      "sort_name": "MUDIDI Emmanuel"
+    },
+    {
+      "email": "emmanuella.mukanyabyenda@parliament.gov.rw",
+      "family_name": "MUKANYABYENDA",
+      "given_name": "Emmanuella",
+      "id": "288",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=288"
+        }
+      ],
+      "name": "Emmanuella MUKANYABYENDA",
+      "sort_name": "MUKANYABYENDA Emmanuella"
+    },
+    {
+      "email": "esperance.mwiza@parliament.gov.rw",
+      "family_name": "MWIZA",
+      "given_name": "Espérance",
+      "id": "150",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=150"
+        }
+      ],
+      "name": "Espérance MWIZA",
+      "sort_name": "MWIZA Espérance"
+    },
+    {
+      "email": "esperance.nyirasafari@parliament.gov.rw",
+      "family_name": "NYIRASAFARI",
+      "given_name": "Espérance",
+      "id": "327",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=327"
+        }
+      ],
+      "name": "Espérance NYIRASAFARI",
+      "sort_name": "NYIRASAFARI Espérance"
+    },
+    {
+      "email": "eugene.barikana@parliament.gov.rw",
+      "family_name": "BARIKANA",
+      "given_name": "Eugène",
+      "id": "246",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=246"
+        }
+      ],
+      "name": "Eugène BARIKANA",
+      "sort_name": "BARIKANA Eugène"
+    },
+    {
+      "email": "euthalie.nyirabega@parliament.gov.rw",
+      "family_name": "NYIRABEGA",
+      "given_name": "Euthalie",
+      "id": "177",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=177"
+        }
+      ],
+      "name": "Euthalie NYIRABEGA",
+      "sort_name": "NYIRABEGA Euthalie"
+    },
+    {
+      "email": "evariste.kalisa@parliament.gov.rw",
+      "family_name": "KALISA",
+      "given_name": "Evariste",
+      "id": "41",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=41"
+        }
+      ],
+      "name": "Evariste KALISA",
+      "sort_name": "KALISA Evariste"
+    },
+    {
+      "email": "fidele.rwigamba@parliament.gov.rw",
+      "family_name": "RWIGAMBA",
+      "given_name": "Fidèle",
+      "id": "300",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=300"
+        }
+      ],
+      "name": "Fidèle RWIGAMBA",
+      "sort_name": "RWIGAMBA Fidèle"
+    },
+    {
+      "email": "fortunee.nyiramadirida@parliament.gov.rw",
+      "family_name": "NYIRAMADIRIDA",
+      "given_name": "Fortunee",
+      "id": "186",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=186"
+        }
+      ],
+      "name": "Fortunee NYIRAMADIRIDA",
+      "sort_name": "NYIRAMADIRIDA Fortunee"
+    },
+    {
+      "email": "francois.byabarumwanzi@parliament.gov.rw",
+      "family_name": "BYABARUMWANZI",
+      "given_name": "François",
+      "id": "4",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=4"
+        }
+      ],
+      "name": "François BYABARUMWANZI",
+      "sort_name": "BYABARUMWANZI François"
+    },
+    {
+      "email": "francoise.mukayisenga@parliament.gov.rw",
+      "family_name": "MUKAYISENGA",
+      "given_name": "Françoise",
+      "id": "120",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=120"
+        }
+      ],
+      "name": "Françoise MUKAYISENGA",
+      "sort_name": "MUKAYISENGA Françoise"
+    },
+    {
+      "email": "giovani.bushishi@parliament@gov.rw",
+      "family_name": "BUSHISHI",
+      "given_name": "GIOVANNI",
+      "id": "333",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=333"
+        }
+      ],
+      "name": "GIOVANNI BUSHISHI",
+      "sort_name": "BUSHISHI GIOVANNI"
+    },
+    {
+      "email": "gabriel.semasaka@parliament.gov.rw",
+      "family_name": "SEMASAKA",
+      "given_name": "Gabriel",
+      "id": "210",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=210"
+        }
+      ],
+      "name": "Gabriel SEMASAKA",
+      "sort_name": "SEMASAKA Gabriel"
+    },
+    {
+      "email": "gastone.rusiha@parliament.gov.rw",
+      "family_name": "RUSIHA",
+      "given_name": "Gastone",
+      "id": "279",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=279"
+        }
+      ],
+      "name": "Gastone RUSIHA",
+      "sort_name": "RUSIHA Gastone"
+    },
+    {
+      "email": "georgette.rutayisire@parliament.gov.rw",
+      "family_name": "RUTAYISIRE",
+      "given_name": "Georgette",
+      "id": "303",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=303"
+        }
+      ],
+      "name": "Georgette RUTAYISIRE",
+      "sort_name": "RUTAYISIRE Georgette"
+    },
+    {
+      "email": "gloriose.uwanyirigira@parliament.gov.rw",
+      "family_name": "UWANYIRIGIRA",
+      "given_name": "Gloriose",
+      "id": "297",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=297"
+        }
+      ],
+      "name": "Gloriose UWANYIRIGIRA",
+      "sort_name": "UWANYIRIGIRA Gloriose"
+    },
+    {
+      "email": "henriette.mukamurangwa@parliament.gov.rw",
+      "family_name": "MUKAMURANGWA SEBERA",
+      "given_name": "Henriette",
+      "id": "90",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=90"
+        }
+      ],
+      "name": "Henriette MUKAMURANGWA SEBERA",
+      "sort_name": "MUKAMURANGWA SEBERA Henriette"
+    },
+    {
+      "email": "ignacienne.nyirarukundo@parliament.gov.rw",
+      "family_name": "NYIRARUKUNDO",
+      "given_name": "Ignatienne",
+      "id": "189",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=189"
+        }
+      ],
+      "name": "Ignatienne NYIRARUKUNDO",
+      "sort_name": "NYIRARUKUNDO Ignatienne"
+    },
+    {
+      "email": "innocent.kayitare@parliament.gov.rw",
+      "family_name": "KAYITARE",
+      "given_name": "Innocent",
+      "id": "62",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=62"
+        }
+      ],
+      "name": "Innocent KAYITARE",
+      "sort_name": "KAYITARE Innocent"
+    },
+    {
+      "email": "iphigenie.mukandera@parliament.gov.rw",
+      "family_name": "MUKANDERA",
+      "given_name": "Iphigénie",
+      "id": "306",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=306"
+        }
+      ],
+      "name": "Iphigénie MUKANDERA",
+      "sort_name": "MUKANDERA Iphigénie"
+    },
+    {
+      "email": "jeanbaptiste.rucibigango@parliament.gov.rw",
+      "family_name": "RUCIBIGANGO",
+      "given_name": "J.Baptiste",
+      "id": "198",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=198"
+        }
+      ],
+      "name": "J.Baptiste RUCIBIGANGO",
+      "sort_name": "RUCIBIGANGO J.Baptiste"
+    },
+    {
+      "email": "jacqueline.mukakanyamugenge@parliament.gov.rw",
+      "family_name": "MUKAKANYAMUGENGE",
+      "given_name": "Jacqueline",
+      "id": "81",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=81"
+        }
+      ],
+      "name": "Jacqueline MUKAKANYAMUGENGE",
+      "sort_name": "MUKAKANYAMUGENGE Jacqueline"
+    },
+    {
+      "email": "jmvianney.gatabazi@parliament.gov.rw",
+      "family_name": "GATABAZI",
+      "given_name": "Jean Marie Vianey",
+      "id": "249",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=249"
+        }
+      ],
+      "name": "Jean Marie Vianey GATABAZI",
+      "sort_name": "GATABAZI Jean Marie Vianey"
+    },
+    {
+      "email": "jeanthierry.karemera@parliament.gov.rw",
+      "family_name": "KAREMERA",
+      "given_name": "Jean Thierry",
+      "id": "53",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=53"
+        }
+      ],
+      "name": "Jean Thierry KAREMERA",
+      "sort_name": "KAREMERA Jean Thierry"
+    },
+    {
+      "email": "jhenriette.mukabikino@parliament.gov.rw",
+      "family_name": "MUKABIKINO",
+      "given_name": "Jeanne Henriette",
+      "id": "273",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=273"
+        }
+      ],
+      "name": "Jeanne Henriette MUKABIKINO",
+      "sort_name": "MUKABIKINO Jeanne Henriette"
+    },
+    {
+      "email": "jdarc.nyinawase@parliament.gov.rw",
+      "family_name": "NYINAWASE",
+      "given_name": "Jeanne d'Arc",
+      "id": "171",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=171"
+        }
+      ],
+      "name": "Jeanne d'Arc NYINAWASE",
+      "sort_name": "NYINAWASE Jeanne d'Arc"
+    },
+    {
+      "email": "jeannedarc.uwimanimpaye@parliament.gov.rw",
+      "family_name": "UWIMANIMPAYE",
+      "given_name": "Jeanne d’Arc",
+      "id": "237",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=237"
+        }
+      ],
+      "name": "Jeanne d’Arc UWIMANIMPAYE",
+      "sort_name": "UWIMANIMPAYE Jeanne d’Arc"
+    },
+    {
+      "email": "john.rukurwabyoma@parliament.gov.rw",
+      "family_name": "RUKU-RWABYOMA",
+      "given_name": "John",
+      "id": "321",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=321"
+        }
+      ],
+      "name": "John RUKU-RWABYOMA",
+      "sort_name": "RUKU-RWABYOMA John"
+    },
+    {
+      "email": "desire.nyandwi@parliament.gov.rw",
+      "family_name": "NYANDWI",
+      "given_name": "Joseph Désiré",
+      "id": "168",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=168"
+        }
+      ],
+      "name": "Joseph Désiré NYANDWI",
+      "sort_name": "NYANDWI Joseph Désiré"
+    },
+    {
+      "email": "juliana.kantengwa@parliament.gov.rw",
+      "family_name": "KANTENGWA",
+      "given_name": "Juliana",
+      "id": "50",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=50"
+        }
+      ],
+      "name": "Juliana KANTENGWA",
+      "sort_name": "KANTENGWA Juliana"
+    },
+    {
+      "email": "justine.mukobwa@parliament.gov.rw",
+      "family_name": "MUKOBWA",
+      "given_name": "Justine",
+      "id": "312",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=312"
+        }
+      ],
+      "name": "Justine MUKOBWA",
+      "sort_name": "MUKOBWA Justine"
+    },
+    {
+      "email": "juvenal.nkusi@parliament.gov.rw",
+      "family_name": "NKUSI",
+      "given_name": "Juvénal",
+      "id": "162",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=162"
+        }
+      ],
+      "name": "Juvénal NKUSI",
+      "sort_name": "NKUSI Juvénal"
+    },
+    {
+      "email": "liberata.kayitesi@parliament.gov.rw",
+      "family_name": "KAYITESI",
+      "given_name": "Libérata",
+      "id": "63",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=63"
+        }
+      ],
+      "name": "Libérata KAYITESI",
+      "sort_name": "KAYITESI Libérata"
+    },
+    {
+      "email": "mclaire.uwamana@parliament.gov.rw",
+      "family_name": "UWAMAMA",
+      "given_name": "Marie Claire",
+      "id": "294",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=294"
+        }
+      ],
+      "name": "Marie Claire UWAMAMA",
+      "sort_name": "UWAMAMA Marie Claire"
+    },
+    {
+      "email": "mjosee.kankera@parliament.gov.rw",
+      "family_name": "KANKERA",
+      "given_name": "Marie Josée",
+      "id": "47",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=47"
+        }
+      ],
+      "name": "Marie Josée KANKERA",
+      "sort_name": "KANKERA Marie Josée"
+    },
+    {
+      "email": "mmediatrice.izabiriza@parliament.gov.rw",
+      "family_name": "IZABIRIZA",
+      "given_name": "Marie Mediatrice",
+      "id": "255",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=255"
+        }
+      ],
+      "name": "Marie Mediatrice IZABIRIZA",
+      "sort_name": "IZABIRIZA Marie Mediatrice"
+    },
+    {
+      "email": "marierose.mureshyankwano@parliament.gov.rw",
+      "family_name": "MURESHYANKWANO",
+      "given_name": "Marie Rose",
+      "id": "135",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=135"
+        }
+      ],
+      "name": "Marie Rose MURESHYANKWANO",
+      "sort_name": "MURESHYANKWANO Marie Rose"
+    },
+    {
+      "email": "marietherese.murekatete@parliament.gov.rw",
+      "family_name": "MUREKATETE",
+      "given_name": "Marie Thérèse",
+      "id": "132",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=132"
+        }
+      ],
+      "name": "Marie Thérèse MUREKATETE",
+      "sort_name": "MUREKATETE Marie Thérèse"
+    },
+    {
+      "email": "nura.nikuze@parliament.gov.rw",
+      "family_name": "NIKUZE",
+      "given_name": "Nura",
+      "id": "156",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=156"
+        }
+      ],
+      "name": "Nura NIKUZE",
+      "sort_name": "NIKUZE Nura"
+    },
+    {
+      "email": "philbert.uwiringiyimana@parliament.gov.rw",
+      "family_name": "UWIRINGIYIMANA",
+      "given_name": "Philbert",
+      "id": "291",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=291"
+        }
+      ],
+      "name": "Philbert UWIRINGIYIMANA",
+      "sort_name": "UWIRINGIYIMANA Philbert"
+    },
+    {
+      "email": "petronille.mukandekezi@parliament.gov.rw",
+      "family_name": "MUKANDEKEZI",
+      "given_name": "Pétronille",
+      "id": "285",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=285"
+        }
+      ],
+      "name": "Pétronille MUKANDEKEZI",
+      "sort_name": "MUKANDEKEZI Pétronille"
+    },
+    {
+      "email": "rose.mukantabana@parliament.gov.rw",
+      "family_name": "MUKANTABANA",
+      "given_name": "Rose",
+      "id": "102",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=102"
+        }
+      ],
+      "name": "Rose MUKANTABANA",
+      "sort_name": "MUKANTABANA Rose"
+    },
+    {
+      "email": "connie.bwiza@parliament.gov.rw",
+      "family_name": "BWIZA",
+      "given_name": "SEKAMANA  Connie",
+      "id": "5",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=5"
+        }
+      ],
+      "name": "SEKAMANA  Connie BWIZA",
+      "sort_name": "BWIZA SEKAMANA  Connie"
+    },
+    {
+      "email": "samuel.musabyimana@parliament.gov.rw",
+      "family_name": "MUSABYIMANA",
+      "given_name": "Samuel",
+      "id": "141",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=141"
+        }
+      ],
+      "name": "Samuel MUSABYIMANA",
+      "sort_name": "MUSABYIMANA Samuel"
+    },
+    {
+      "email": "speciose.mukandutiye@parliament.gov.rw",
+      "family_name": "MUKANDUTIYE",
+      "given_name": "Spéciose",
+      "id": "96",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=96"
+        }
+      ],
+      "name": "Spéciose MUKANDUTIYE",
+      "sort_name": "MUKANDUTIYE Spéciose"
+    },
+    {
+      "email": "suzane.mukayijore@parliament.gov.rw",
+      "family_name": "MUKAYIJORE",
+      "given_name": "Suzanne",
+      "id": "117",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=117"
+        }
+      ],
+      "name": "Suzanne MUKAYIJORE",
+      "sort_name": "MUKAYIJORE Suzanne"
+    },
+    {
+      "email": "francesca.tengera@parliament.gov.rw",
+      "family_name": "TENGERA",
+      "given_name": "TWIKIRIZE Francesca",
+      "id": "318",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=318"
+        }
+      ],
+      "name": "TWIKIRIZE Francesca TENGERA",
+      "sort_name": "TENGERA TWIKIRIZE Francesca"
+    },
+    {
+      "email": "theogene.munyangeyo@parliament.gov.rw",
+      "family_name": "MUNYANGEYO",
+      "given_name": "Theogene",
+      "id": "282",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=282"
+        }
+      ],
+      "name": "Theogene MUNYANGEYO",
+      "sort_name": "MUNYANGEYO Theogene"
+    },
+    {
+      "email": "theoneste.safari@parliament.gov.rw",
+      "family_name": "BEGUMISA SAFARI",
+      "given_name": "Theoneste",
+      "id": "3",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=3"
+        }
+      ],
+      "name": "Theoneste BEGUMISA SAFARI",
+      "sort_name": "BEGUMISA SAFARI Theoneste"
+    },
+    {
+      "email": "theobald.mporanyi@parliament.gov.rw",
+      "family_name": "MPORANYI",
+      "given_name": "Théobald",
+      "id": "69",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=69"
+        }
+      ],
+      "name": "Théobald MPORANYI",
+      "sort_name": "MPORANYI Théobald"
+    },
+    {
+      "email": "theodomir.niyonsenga@parliament.gov.rw",
+      "family_name": "NIYONSENGA",
+      "given_name": "Théodomir",
+      "id": "324",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=324"
+        }
+      ],
+      "name": "Théodomir NIYONSENGA",
+      "sort_name": "NIYONSENGA Théodomir"
+    },
+    {
+      "email": "theoneste.karenzi@parliament.gov.rw",
+      "family_name": "KARENZI",
+      "given_name": "Théoneste",
+      "id": "261",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=261"
+        }
+      ],
+      "name": "Théoneste KARENZI",
+      "sort_name": "KARENZI Théoneste"
+    },
+    {
+      "email": "veneranda.nyirahirwa@parliament.gov.rw",
+      "family_name": "NYIRAHIRWA",
+      "given_name": "Veneranda",
+      "id": "183",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=183"
+        }
+      ],
+      "name": "Veneranda NYIRAHIRWA",
+      "sort_name": "NYIRAHIRWA Veneranda"
+    },
+    {
+      "email": "yvonne.uwayisenga@parliament.gov.rw",
+      "family_name": "UWAYISENGA",
+      "given_name": "Yvonne",
+      "id": "231",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=231"
+        }
+      ],
+      "name": "Yvonne UWAYISENGA",
+      "sort_name": "UWAYISENGA Yvonne"
+    },
+    {
+      "email": "zeno.mutimura@parliament.gov.rw",
+      "family_name": "MUTIMURA",
+      "given_name": "ZENO",
+      "id": "147",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.parliament.gov.rw/member-details/?width=650&detailId=147"
+        }
+      ],
+      "name": "ZENO MUTIMURA",
+      "sort_name": "MUTIMURA ZENO"
+    }
+  ],
+  "organizations": [
+    {
+      "classification": "legislature",
+      "id": "legislature",
+      "legislative_periods": [
+        {
+          "classification": "legislative period",
+          "id": "term/2013",
+          "name": "3rd Legislature",
+          "start_date": "2013"
+        }
+      ],
+      "name": "Chamber of Deputies"
+    },
+    {
+      "classification": "party",
+      "id": "party/7fb3fdb3-cd34-4fa6-9216-78bea6b823cd",
+      "name": "FPR -Inkotanyi"
+    },
+    {
+      "classification": "party",
+      "id": "party/bc05a93b-01b7-4b2e-8dad-8acc8c84ccb2",
+      "name": "PDC"
+    },
+    {
+      "classification": "party",
+      "id": "party/e94bd634-c4f2-4a53-97c9-ff5dd6578e13",
+      "name": "PDI"
+    },
+    {
+      "classification": "party",
+      "id": "party/c1aa9997-205d-4636-bce6-a7757a5917e7",
+      "name": "PL"
+    },
+    {
+      "classification": "party",
+      "id": "party/0563c658-57ba-4eba-9c3c-b6c900f7edfd",
+      "name": "PPC"
+    },
+    {
+      "classification": "party",
+      "id": "party/b0801c52-2701-491f-8933-fd0a0528aa5e",
+      "name": "PSD"
+    },
+    {
+      "classification": "party",
+      "id": "party/75e971fb-e878-4bde-a493-463c0944fef3",
+      "name": "PSR"
+    },
+    {
+      "classification": "party",
+      "id": "party/b8da0de6-7ab1-4c82-abd6-3f314afdccca",
+      "name": "Persons with Disabilities"
+    },
+    {
+      "classification": "party",
+      "id": "party/27f3984c-66d5-4294-a6f9-3f95749fcbef",
+      "name": "RPF -Inkotanyi"
+    },
+    {
+      "classification": "party",
+      "id": "party/ff83f666-5c39-4634-a07b-0c3b400eb9ab",
+      "name": "RPF- Inkotanyi"
+    },
+    {
+      "classification": "party",
+      "id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "name": "RPF-Inkontanyi"
+    },
+    {
+      "classification": "party",
+      "id": "party/f5d87627-8041-4e1f-bda6-b0e1c7edcb58",
+      "name": "RPF-Inkotanyi"
+    },
+    {
+      "classification": "party",
+      "id": "party/7b84625d-74f8-4125-9e21-585197b75723",
+      "name": "Women"
+    },
+    {
+      "classification": "party",
+      "id": "party/457710df-3965-4265-a570-d0d668d66559",
+      "name": "Women -South"
+    },
+    {
+      "classification": "party",
+      "id": "party/9e013734-626e-4ff7-84a4-bc8c235247eb",
+      "name": "Women Representative"
+    },
+    {
+      "classification": "party",
+      "id": "party/7c3f822a-d5a2-4029-86a1-e443739bd7b0",
+      "name": "Women Representative-North"
+    },
+    {
+      "classification": "party",
+      "id": "party/75b1d192-ec50-4022-a0c4-6384068fb354",
+      "name": "Women-Kigali"
+    },
+    {
+      "classification": "party",
+      "id": "party/c48eb9f0-3ca4-4c0c-b886-ed68c79ac499",
+      "name": "Women-North"
+    },
+    {
+      "classification": "party",
+      "id": "party/7253964f-8331-4552-84b8-a382af6188c0",
+      "name": "Women-Western"
+    },
+    {
+      "classification": "party",
+      "id": "party/d172a671-92c2-4ef6-8528-113a3e651563",
+      "name": "Youth"
+    }
+  ],
+  "meta": {
+    "source": "https://morph.io/tmtmtmtm/rwanda-chamber-of-deputies"
+  },
+  "memberships": [
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/7b84625d-74f8-4125-9e21-585197b75723",
+      "organization_id": "legislature",
+      "person_id": "102",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Southern Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "organization_id": "legislature",
+      "person_id": "114",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Northern  Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/7b84625d-74f8-4125-9e21-585197b75723",
+      "organization_id": "legislature",
+      "person_id": "117",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Western Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "organization_id": "legislature",
+      "person_id": "120",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "organization_id": "legislature",
+      "person_id": "123",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "organization_id": "legislature",
+      "person_id": "126",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Northern Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/7b84625d-74f8-4125-9e21-585197b75723",
+      "organization_id": "legislature",
+      "person_id": "132",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Western  Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "organization_id": "legislature",
+      "person_id": "135",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Western  Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "organization_id": "legislature",
+      "person_id": "141",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "organization_id": "legislature",
+      "person_id": "147",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Western  Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "organization_id": "legislature",
+      "person_id": "150",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Northern  Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "organization_id": "legislature",
+      "person_id": "153",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Western  Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/7b84625d-74f8-4125-9e21-585197b75723",
+      "organization_id": "legislature",
+      "person_id": "156",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Eastern  Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/b0801c52-2701-491f-8933-fd0a0528aa5e",
+      "organization_id": "legislature",
+      "person_id": "162",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Southern  Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "organization_id": "legislature",
+      "person_id": "168",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Western  Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/7b84625d-74f8-4125-9e21-585197b75723",
+      "organization_id": "legislature",
+      "person_id": "171",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Southern"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/f5d87627-8041-4e1f-bda6-b0e1c7edcb58",
+      "organization_id": "legislature",
+      "person_id": "174",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/7b84625d-74f8-4125-9e21-585197b75723",
+      "organization_id": "legislature",
+      "person_id": "177",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Eastern  Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/9e013734-626e-4ff7-84a4-bc8c235247eb",
+      "organization_id": "legislature",
+      "person_id": "180",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Eastern Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/b0801c52-2701-491f-8933-fd0a0528aa5e",
+      "organization_id": "legislature",
+      "person_id": "183",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Northern"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/c48eb9f0-3ca4-4c0c-b886-ed68c79ac499",
+      "organization_id": "legislature",
+      "person_id": "186",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/457710df-3965-4265-a570-d0d668d66559",
+      "organization_id": "legislature",
+      "person_id": "189",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Southern Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/75e971fb-e878-4bde-a493-463c0944fef3",
+      "organization_id": "legislature",
+      "person_id": "198",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/b0801c52-2701-491f-8933-fd0a0528aa5e",
+      "organization_id": "legislature",
+      "person_id": "2",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Northern  Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "organization_id": "legislature",
+      "person_id": "210",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/7c3f822a-d5a2-4029-86a1-e443739bd7b0",
+      "organization_id": "legislature",
+      "person_id": "225",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/75b1d192-ec50-4022-a0c4-6384068fb354",
+      "organization_id": "legislature",
+      "person_id": "231",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Eastern Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/9e013734-626e-4ff7-84a4-bc8c235247eb",
+      "organization_id": "legislature",
+      "person_id": "237",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali City"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/f5d87627-8041-4e1f-bda6-b0e1c7edcb58",
+      "organization_id": "legislature",
+      "person_id": "243",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/27f3984c-66d5-4294-a6f9-3f95749fcbef",
+      "organization_id": "legislature",
+      "person_id": "246",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Northern  Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/f5d87627-8041-4e1f-bda6-b0e1c7edcb58",
+      "organization_id": "legislature",
+      "person_id": "249",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "southern"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/7b84625d-74f8-4125-9e21-585197b75723",
+      "organization_id": "legislature",
+      "person_id": "255",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Northern"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/7b84625d-74f8-4125-9e21-585197b75723",
+      "organization_id": "legislature",
+      "person_id": "258",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": ""
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/7fb3fdb3-cd34-4fa6-9216-78bea6b823cd",
+      "organization_id": "legislature",
+      "person_id": "261",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/7253964f-8331-4552-84b8-a382af6188c0",
+      "organization_id": "legislature",
+      "person_id": "264",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Southern"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/7b84625d-74f8-4125-9e21-585197b75723",
+      "organization_id": "legislature",
+      "person_id": "267",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/f5d87627-8041-4e1f-bda6-b0e1c7edcb58",
+      "organization_id": "legislature",
+      "person_id": "270",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": ""
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/7253964f-8331-4552-84b8-a382af6188c0",
+      "organization_id": "legislature",
+      "person_id": "273",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Eastern Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/c1aa9997-205d-4636-bce6-a7757a5917e7",
+      "organization_id": "legislature",
+      "person_id": "276",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/b8da0de6-7ab1-4c82-abd6-3f314afdccca",
+      "organization_id": "legislature",
+      "person_id": "279",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/c1aa9997-205d-4636-bce6-a7757a5917e7",
+      "organization_id": "legislature",
+      "person_id": "282",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Western"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/7b84625d-74f8-4125-9e21-585197b75723",
+      "organization_id": "legislature",
+      "person_id": "285",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "South"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/7b84625d-74f8-4125-9e21-585197b75723",
+      "organization_id": "legislature",
+      "person_id": "288",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Western"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/d172a671-92c2-4ef6-8528-113a3e651563",
+      "organization_id": "legislature",
+      "person_id": "291",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Western"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/7b84625d-74f8-4125-9e21-585197b75723",
+      "organization_id": "legislature",
+      "person_id": "294",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/7b84625d-74f8-4125-9e21-585197b75723",
+      "organization_id": "legislature",
+      "person_id": "297",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Eastern Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "organization_id": "legislature",
+      "person_id": "3",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/f5d87627-8041-4e1f-bda6-b0e1c7edcb58",
+      "organization_id": "legislature",
+      "person_id": "300",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/b0801c52-2701-491f-8933-fd0a0528aa5e",
+      "organization_id": "legislature",
+      "person_id": "303",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Eastern"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/7b84625d-74f8-4125-9e21-585197b75723",
+      "organization_id": "legislature",
+      "person_id": "306",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Eastern"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/7b84625d-74f8-4125-9e21-585197b75723",
+      "organization_id": "legislature",
+      "person_id": "309",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/d172a671-92c2-4ef6-8528-113a3e651563",
+      "organization_id": "legislature",
+      "person_id": "312",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ff83f666-5c39-4634-a07b-0c3b400eb9ab",
+      "organization_id": "legislature",
+      "person_id": "315",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/f5d87627-8041-4e1f-bda6-b0e1c7edcb58",
+      "organization_id": "legislature",
+      "person_id": "318",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Eastern"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/f5d87627-8041-4e1f-bda6-b0e1c7edcb58",
+      "organization_id": "legislature",
+      "person_id": "321",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Northern"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/b0801c52-2701-491f-8933-fd0a0528aa5e",
+      "organization_id": "legislature",
+      "person_id": "324",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/f5d87627-8041-4e1f-bda6-b0e1c7edcb58",
+      "organization_id": "legislature",
+      "person_id": "327",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Eastern"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/7b84625d-74f8-4125-9e21-585197b75723",
+      "organization_id": "legislature",
+      "person_id": "330",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Southern Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/b0801c52-2701-491f-8933-fd0a0528aa5e",
+      "organization_id": "legislature",
+      "person_id": "333",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Southern Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/c1aa9997-205d-4636-bce6-a7757a5917e7",
+      "organization_id": "legislature",
+      "person_id": "4",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Northern Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/c1aa9997-205d-4636-bce6-a7757a5917e7",
+      "organization_id": "legislature",
+      "person_id": "41",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Western Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "organization_id": "legislature",
+      "person_id": "47",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Eastern Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "organization_id": "legislature",
+      "person_id": "5",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Eastern Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "organization_id": "legislature",
+      "person_id": "50",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/0563c658-57ba-4eba-9c3c-b6c900f7edfd",
+      "organization_id": "legislature",
+      "person_id": "53",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Western Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "organization_id": "legislature",
+      "person_id": "59",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Southern Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "organization_id": "legislature",
+      "person_id": "6",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Southern Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "organization_id": "legislature",
+      "person_id": "62",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Eastern Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "organization_id": "legislature",
+      "person_id": "63",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Western Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "organization_id": "legislature",
+      "person_id": "69",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "organization_id": "legislature",
+      "person_id": "72",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Eastern Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/7b84625d-74f8-4125-9e21-585197b75723",
+      "organization_id": "legislature",
+      "person_id": "75",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Southern Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/b0801c52-2701-491f-8933-fd0a0528aa5e",
+      "organization_id": "legislature",
+      "person_id": "81",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Southern Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/bc05a93b-01b7-4b2e-8dad-8acc8c84ccb2",
+      "organization_id": "legislature",
+      "person_id": "84",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Western  Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/e94bd634-c4f2-4a53-97c9-ff5dd6578e13",
+      "organization_id": "legislature",
+      "person_id": "87",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Kigali"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/c1aa9997-205d-4636-bce6-a7757a5917e7",
+      "organization_id": "legislature",
+      "person_id": "90",
+      "role": "member"
+    },
+    {
+      "area": {
+        "name": "Southern Province"
+      },
+      "legislative_period_id": "term/2013",
+      "on_behalf_of_id": "party/ed2949d8-f40a-4fdc-b523-ddddf7f521dc",
+      "organization_id": "legislature",
+      "person_id": "96",
+      "role": "member"
+    }
+  ]
+}
