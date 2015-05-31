@@ -12,9 +12,7 @@ helpers Popolo::Helper
 ISO = IsoCountryCodes.for_select
 ISO_REMAP = { 
   'Congo-Brazzaville' => 'CG',
-  'Iran' => 'IR',
   'Kosovo' => 'XK',
-  'Tanzania' => 'TZ',
   'UK' => 'GB',
   'Scotland' => 'GB-SCT',
   'Wales' => 'GB-WLS',
@@ -24,7 +22,7 @@ ISO_REMAP = {
 ALL_COUNTRIES = Dir['src/*.src'].map do |f|
   file = File.basename(f, '.src')
   name = file.tr('_', ' ')
-  code = ISO_REMAP[name] || ISO.find { |iso_name, iso_code| iso_name == name }.last 
+  code = ISO_REMAP[name] || ISO.find { |iso_name, iso_code| iso_name.start_with? name }.last 
   {
     file: file,
     name: name,
