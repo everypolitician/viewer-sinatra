@@ -45,8 +45,6 @@ set :erb, trim: '-'
 
 get '/' do
   @countries = ALL_COUNTRIES.to_a
-  require 'pry'
-  binding.pry
   erb :front_index
 end
 
