@@ -3,17 +3,33 @@ require 'json'
 require 'sass'
 require 'csv'
 require 'set'
+require 'iso_country_codes'
 
 require_relative './lib/popolo_helper'
 
 helpers Popolo::Helper
 
+ISO = IsoCountryCodes.for_select
+ISO_REMAP = { 
+  'Congo-Brazzaville' => 'CG',
+  'Iran' => 'IR',
+  'Kosovo' => 'XK',
+  'Tanzania' => 'TZ',
+  'UK' => 'GB',
+  'Scotland' => 'GB-SCT',
+  'Wales' => 'GB-WLS',
+  'Northern Ireland' => 'GB-NIR',
+}
+
 ALL_COUNTRIES = Dir['src/*.src'].map do |f|
-  name = File.basename(f, '.src')
+  file = File.basename(f, '.src')
+  name = file.tr('_', ' ')
+  code = ISO_REMAP[name] || ISO.find { |iso_name, iso_code| iso_name == name }.last 
   {
-    file: name,
-    name: name.gsub('_', ' '),
-    url: name.downcase
+    file: file,
+    name: name,
+    code: code,
+    url: file.downcase
   }
 end
 
@@ -40,6 +56,7 @@ get '/countries.json' do
     {
       name: c[:name],
       url: "/#{c[:url]}",
+      code: c[:code],
       latest_term_csv: "/#{c[:url]}/term_table/#{last_term_id}.csv",
       popolo: pd.popolo_url
     }

@@ -18,7 +18,15 @@ describe 'countries.json' do
     data = JSON.parse(last_response.body)
     estonia = data.find { |c| c['name'] == 'Estonia' }
     estonia['url'].must_equal '/estonia'
+    estonia['code'].must_equal 'EE'
     estonia['latest_term_csv'].must_include 'riigikogu_xiii.csv'
+  end
+
+  it 'should have non-standard country-codes' do
+    get('/countries.json')
+    data = JSON.parse(last_response.body)
+    estonia = data.find { |c| c['name'] == 'Kosovo' }
+    estonia['code'].must_equal 'XK'
   end
 
   it 'should know where the Popolo JSON lives' do
