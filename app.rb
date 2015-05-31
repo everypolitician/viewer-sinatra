@@ -19,14 +19,23 @@ ISO_REMAP = {
   'Northern Ireland' => 'GB-NIR',
 }
 
+def name_to_iso_code(name)
+  if code = ISO_REMAP[name]
+    return code
+  elsif code = ISO.find { |iname, _| iname == name }
+    return code.last
+  elsif code = ISO.find { |iname, _| iname.start_with? name }
+    return code.last
+  end
+end
+
 ALL_COUNTRIES = Dir['src/*.src'].map do |f|
   file = File.basename(f, '.src')
   name = file.tr('_', ' ')
-  code = ISO_REMAP[name] || ISO.find { |iso_name, iso_code| iso_name.start_with? name }.last 
   {
     file: file,
     name: name,
-    code: code,
+    code: name_to_iso_code(name),
     url: file.downcase
   }
 end
