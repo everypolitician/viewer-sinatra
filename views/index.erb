@@ -1,7 +1,20 @@
 <div class="container" id="home">
-    <div class="hero">
-        <h1>We’re cataloguing every politician in <%= @country[:name].capitalize %>!</h1>
-        <p class="lead">View the <a href="/<%= @country[:url] %>/term_table.html">current term</a>.
-        </p>
-    </div>
+  <div class="page-section">
+    <h3>We’re cataloguing every politician in <%= @country[:name].capitalize %>.</h3>
+    <p>We currently have information for:</p>
+
+    <ul class="grid-list">
+      <% @terms.sort_by { |t| t['start_date'] }.reverse.each do |t| %>
+        <li>
+          <a class="avatar-unit" href="<%= term_table_url(t) %>">
+            <span class="avatar"><i class="fa fa-university"></i></span>
+            <h3><%= t['name'] %></h3>
+            <% unless t['start_date'].to_s.empty? and t['end_date'].to_s.empty? %>
+              <p><%= t['start_date'] %> - <%= t['end_date'] %></p>
+            <% end %>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+  </div>
 </div>
