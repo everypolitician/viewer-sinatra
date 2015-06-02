@@ -3,7 +3,7 @@
         <ul class="grid-list">
           <% @countries.sort_by { |c| c[:name] }.each do |c| %>
             <li>
-                <a class="avatar-unit" href="/<%= c[:url] %>/term_table.html">
+                <a class="avatar-unit" href="/<%= c[:url] %>/">
                     <span class="avatar"><i class="fa fa-users"></i></span>
                     <h3><%= c[:name] %></h3>
                 </a>
