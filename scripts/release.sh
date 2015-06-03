@@ -15,7 +15,7 @@ if [[ "$TRAVIS_PULL_REQUEST" == "false" && "$TRAVIS_BRANCH" == "master" ]]; then
   cd /tmp
   wget -m localhost:4567
   git clone "git@github.com:everypolitician/viewer-static.git"
-  cd everypolitician-data
+  cd viewer-static
   git checkout gh-pages
   cp -R ../localhost:4567/* .
   git add .
