@@ -22,7 +22,7 @@
                 <div class="site-header__logo">
                     <h2>
                       <% if @country %>
-                        <%= @country[:name] %>
+                        <a href="/<%= @country[:url] %>/"><%= @country[:name] %></a>
                       <% else %>
                         EveryPolitician
                       <% end %>
