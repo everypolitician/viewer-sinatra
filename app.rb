@@ -9,7 +9,7 @@ require_relative './lib/popolo_helper'
 
 helpers Popolo::Helper
 
-cjson = 'https://raw.githubusercontent.com/everypolitician/everypolitician-data/47d7846cf068b90e4a2d0e058396ac6b946089ca/countries.json'
+cjson = File.read('DATASOURCE').chomp
 ALL_COUNTRIES = JSON.parse(open(cjson).read, symbolize_names: true ).each do |c|
   c[:name] = c[:country]
   c[:url] = File.dirname(c[:popolo]).split('/').last.downcase
