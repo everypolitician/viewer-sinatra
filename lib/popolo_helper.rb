@@ -6,26 +6,24 @@ module Popolo
   require 'promise'
 
   class Data
-    def initialize(country, cache_dir = '_cached_data')
-      @_country = country
-      @_cache_dir = cache_dir
+    def initialize(c, cache_dir = '_cached_data')
       FileUtils.mkpath cache_dir
-      @_src_file = "src/#{@_country}.src"
-      (@sha, @lastmod) = File.read(@_src_file).chomp.split('|')
-      @popolo_file = "#{@_cache_dir}/#{@sha}-#{@_country}.json"
-      @popolo_url = "https://raw.githubusercontent.com/everypolitician/everypolitician-data/#{@sha}/data/#{@_country}/final.json" 
+
+      @lastmod = c[:lastmod]
+
+      @popolo_url = "https://raw.githubusercontent.com/everypolitician/everypolitician-data/#{c[:sha]}/#{c[:popolo]}" 
+      @cache_file = "#{cache_dir}/#{c[:sha]}-#{c[:url]}.json"
 
     end
 
     def json
       @_data ||= begin 
-        fail "No source file: #{@_src_file}" unless File.exist? @_src_file
-
-        unless File.exist? @popolo_file
-          File.write @popolo_file, open(@popolo_url).read
+        unless File.exist? @cache_file
+          puts "Writing #{@popolo_url} to #{@cache_file}"
+          File.write @cache_file, open(@popolo_url).read
         end
 
-        JSON.parse(File.read(@popolo_file))
+        JSON.parse(File.read(@cache_file))
       end
     end
 
