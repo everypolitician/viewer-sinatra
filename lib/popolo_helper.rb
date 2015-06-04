@@ -6,9 +6,10 @@ module Popolo
   require 'promise'
 
   class Data
-    def initialize(country, cache_dir = 'public/data')
+    def initialize(country, cache_dir = '_cached_data')
       @_country = country
       @_cache_dir = cache_dir
+      FileUtils.mkpath cache_dir
       @_src_file = "src/#{@_country}.src"
       (@sha, @lastmod) = File.read(@_src_file).chomp.split('|')
       @popolo_file = "#{@_cache_dir}/#{@sha}-#{@_country}.json"
