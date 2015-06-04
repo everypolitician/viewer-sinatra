@@ -1,43 +1,18 @@
-require 'sinatra'
-require 'json'
-require 'sass'
 require 'csv'
+require 'json'
+require 'open-uri'
+require 'sass'
 require 'set'
-require 'iso_country_codes'
+require 'sinatra'
 
 require_relative './lib/popolo_helper'
 
 helpers Popolo::Helper
 
-ISO = IsoCountryCodes.for_select
-ISO_REMAP = { 
-  'Congo-Brazzaville' => 'CG',
-  'Kosovo' => 'XK',
-  'UK' => 'GB',
-  'Scotland' => 'GB-SCT',
-  'Wales' => 'GB-WLS',
-  'Northern Ireland' => 'GB-NIR',
-}
-
-def name_to_iso_code(name)
-  if code = ISO_REMAP[name]
-    return code
-  elsif code = ISO.find { |iname, _| iname == name }
-    return code.last
-  elsif code = ISO.find { |iname, _| iname.start_with? name }
-    return code.last
-  end
-end
-
-ALL_COUNTRIES = Dir['src/*.src'].map do |f|
-  file = File.basename(f, '.src')
-  name = file.tr('_', ' ')
-  {
-    file: file,
-    name: name,
-    code: name_to_iso_code(name),
-    url: file.downcase
-  }
+cjson = File.read('DATASOURCE').chomp
+ALL_COUNTRIES = JSON.parse(open(cjson).read, symbolize_names: true ).each do |c|
+  c[:name] = c[:country]
+  c[:url] = File.dirname(c[:popolo]).split('/').last.downcase
 end
 
 before '/:country/*' do |country, _|
@@ -45,7 +20,7 @@ before '/:country/*' do |country, _|
   pass if country == '__sinatra__'
 
   @country = ALL_COUNTRIES.find { |c| c[:url] == country } || halt(404)
-  @popolo = Popolo::Data.new(@country[:file])
+  @popolo = Popolo::Data.new(@country)
 end
 
 set :erb, trim: '-'
@@ -58,7 +33,7 @@ end
 get '/countries.json' do
   content_type :json
   countries = ALL_COUNTRIES.map do |c|
-    pd = Popolo::Data.new(c[:file])
+    pd = Popolo::Data.new(c)
     last_term_id = pd.current_term['id'].split('/').last
     {
       name: c[:name],

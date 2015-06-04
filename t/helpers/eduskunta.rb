@@ -4,8 +4,16 @@ require 'minitest/autorun'
 
 include Popolo::Helper
 
+FINLAND = {
+  country: "Finland",
+  code: "FI",
+  popolo: "data/Finland/final.json",
+  lastmod: "1432548937",
+  sha: "c9d6e1a"
+}
+
 describe 'Eduskunta' do
-  subject { Popolo::Data.new('Finland') }
+  subject { Popolo::Data.new(FINLAND) }
 
   describe 'party' do
     let(:party) { subject.party_from_id('kok') }

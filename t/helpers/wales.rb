@@ -4,8 +4,16 @@ require 'minitest/autorun'
 
 include Popolo::Helper
 
+WALES = {
+  country: "Wales",
+  code: "GB-WLS",
+  popolo: "data/Wales/final.json",
+  lastmod: "1431599670",
+  sha: "07690d6"
+}
+
 describe 'Welsh Assembly' do
-  subject { Popolo::Data.new('Wales') }
+  subject { Popolo::Data.new(WALES) }
 
   describe 'party' do
     let(:orgs)    { subject.organizations }
