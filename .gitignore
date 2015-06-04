@@ -5,3 +5,5 @@
 .sass-cache
 
 *.swo
+
+_cached_data/*
