@@ -99,17 +99,6 @@ get '/:country/term_table/?:id?.html' do |_country, id|
   erb :term_table
 end
 
-get '/:country/term_table/?:id?.csv' do |country, id|
-  last_modified Time.at(@popolo.lastmod.to_i)
-
-  @term = id ? @popolo.term_from_id(id) : @popolo.current_term
-  pass unless @term
-
-  content_type 'application/csv'
-  attachment "everypolitician-#{country}-#{@term['id'].split('/').last}.csv"
-  @popolo.term_as_csv(@term)
-end
-
 get '/:country/person/:id' do |_country, id|
   @person = @popolo.person_from_id(id)
   unless @person
