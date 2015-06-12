@@ -1,7 +1,7 @@
 module Popolo
   require 'date'
   require 'fileutils'
-  require 'json'
+  require 'yajl/json_gem'
   require 'open-uri'
   require 'promise'
 
