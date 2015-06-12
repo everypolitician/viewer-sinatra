@@ -11,8 +11,10 @@ module Popolo
 
       @lastmod = c[:lastmod]
 
-      @popolo_url = "https://raw.githubusercontent.com/everypolitician/everypolitician-data/#{c[:sha]}/#{c[:popolo]}" 
+      @github_url = "https://raw.githubusercontent.com/everypolitician/everypolitician-data/#{c[:sha]}/"
+      @popolo_url = @github_url + c[:popolo]
       @cache_file = "#{cache_dir}/#{c[:sha]}-#{c[:url]}.json"
+      @term_list  = c[:legislative_periods]
 
     end
 
@@ -33,6 +35,11 @@ module Popolo
 
     def popolo_url
       @popolo_url
+    end
+
+    def csv_url(term)
+      found = @term_list.find { |t| t[:id].split('/').last == term['id'].split('/').last } or return
+      @github_url + found[:csv]
     end
 
     def persons
@@ -115,22 +122,6 @@ module Popolo
       legislative_memberships.find_all { |m| m['person_id'] == p['id'] }
     end
 
-    # Let's just take the first for now.
-    # TODO: expand this to look in Identifiers
-    def persons_twitter(p)
-      if p.key? 'contact_details'
-        if cd_twitter = p['contact_details'].find { |d| d['type'] == 'twitter' }
-          return cd_twitter['value']
-        end
-      end
-
-      if p.key? 'links'
-        if l_twitter = p['links'].find { |d| d['note'][/twitter/i] }
-          return l_twitter['url']
-        end
-      end
-    end
-
     def party_from_id(id)
       p = organizations.detect { |r| r['id'] == id } || organizations.detect { |r| r['id'].end_with? "/#{id}" }
     end
@@ -147,27 +138,6 @@ module Popolo
       json.key?('meta') && json['meta']['source']
     end
 
-    require 'csv'
-    def term_as_csv(t)
-      memberships = term_memberships(t)
-
-      header = %w(id name email twitter group area chamber start_date end_date).to_csv
-      rows = memberships.sort_by { |m| [m['person']['name'], m['start_date']] }.map do |m|
-        {
-          id: m['person']['id'].split('/').last,
-          name: m['person']['name'],
-          email: m['person']['email'],
-          # Let's assume for now there will be only zero or one ...
-          twitter: persons_twitter(m['person']),
-          group: m['on_behalf_of']['name'],
-          area: m['area'] && m['area']['name'],
-          chamber: m['organization']['name'],
-          start_date: m['start_date'],
-          end_date: m['end_date']
-        }.values.to_csv
-      end
-      [header, rows].compact.join
-    end
   end
 
   module Helper
