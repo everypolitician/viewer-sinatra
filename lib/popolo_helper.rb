@@ -79,7 +79,8 @@ module Popolo
     end
 
     def terms_with_members
-      terms.reject { |t| term_memberships(t).count.zero? }
+      lpms = memberships.map { |m| m['legislative_period_id'] }.uniq
+      terms.select { |t| lpms.include? t['id'] }
     end
 
     def current_term
