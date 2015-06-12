@@ -1,5 +1,5 @@
 require 'csv'
-require 'json'
+require 'yajl/json_gem'
 require 'open-uri'
 require 'sass'
 require 'set'
@@ -85,7 +85,7 @@ get '/:country/term_table/?:id?.html' do |_country, id|
   pass unless @term
 
   @page_title = @term['name']
-  @terms = @popolo.term_list
+  @terms = @popolo.terms_with_members
   (@prev_term, _, @next_term) = [nil, @terms, nil]
                                 .flatten.each_cons(3)
                                 .find { |_p, e, _n| e['id'] == @term['id'] }
