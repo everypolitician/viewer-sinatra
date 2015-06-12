@@ -92,7 +92,7 @@ get '/:country/term_table/?:id?.html' do |_country, id|
   @memberships = @popolo.term_memberships(@term)
   @houses = @memberships.map { |m| m['organization'] }.uniq
   @urls = {
-    csv: "/#{@country[:url]}/term_table/#{@term['id'].split('/').last}.csv",
+    csv: @popolo.csv_url(@term),
     json: @popolo.popolo_url
   }
   @data_source = @popolo.data_source

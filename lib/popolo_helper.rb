@@ -11,8 +11,10 @@ module Popolo
 
       @lastmod = c[:lastmod]
 
-      @popolo_url = "https://raw.githubusercontent.com/everypolitician/everypolitician-data/#{c[:sha]}/#{c[:popolo]}" 
+      @github_url = "https://raw.githubusercontent.com/everypolitician/everypolitician-data/#{c[:sha]}/"
+      @popolo_url = @github_url + c[:popolo]
       @cache_file = "#{cache_dir}/#{c[:sha]}-#{c[:url]}.json"
+      @term_list  = c[:legislative_periods]
 
     end
 
@@ -33,6 +35,11 @@ module Popolo
 
     def popolo_url
       @popolo_url
+    end
+
+    def csv_url(term)
+      found = @term_list.find { |t| t[:id].split('/').last == term['id'].split('/').last } or return
+      @github_url + found[:csv]
     end
 
     def persons
