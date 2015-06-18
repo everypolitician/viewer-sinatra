@@ -72,14 +72,6 @@ get '/:country/term_table/?:id?.html' do |_country, id|
   erb :term_table
 end
 
-# We'll probably need a 'by-ID' version of this later, but for now most
-# of the data we have only has a bare { name: X } on Memberships
-get '/:country/area/:name' do |_country, name|
-  @area = { 'name' => name }
-  @memberships = @popolo.named_area_memberships(name)
-  erb :area
-end
-
 get '/*.css' do |filename|
   scss :"sass/#{filename}"
 end
