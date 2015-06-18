@@ -51,12 +51,6 @@ get '/:country/' do
   erb :index
 end
 
-get '/:country/term/:id' do |_country, id|
-  @term = @popolo.term_from_id(id) || pass
-  @memberships = @popolo.term_memberships(@term)
-  erb :term
-end
-
 get '/:country/term_table/?:id?.html' do |_country, id|
   last_modified Time.at(@popolo.lastmod.to_i)
 
