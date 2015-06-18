@@ -72,17 +72,6 @@ get '/:country/term_table/?:id?.html' do |_country, id|
   erb :term_table
 end
 
-get '/:country/person/:id' do |_country, id|
-  @person = @popolo.person_from_id(id)
-  unless @person
-    people = @popolo.people_with_name(id)
-    # TODO: handle having more than one person with the same name
-    @person = people.first || pass
-  end
-  @legislative_memberships = @popolo.person_legislative_memberships(@person)
-  erb :person
-end
-
 get '/:country/party/:id' do |_country, id|
   @party = @popolo.party_from_id(id) || pass
   @memberships = @popolo.party_memberships(@party['id'])
