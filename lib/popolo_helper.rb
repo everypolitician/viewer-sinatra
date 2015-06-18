@@ -147,18 +147,6 @@ module Popolo
       ['', @country[:url], type, obj['id'].split('/').last].join('/')
     end
 
-    def person_url(p)
-      generate_url('person', p)
-    end
-
-    def party_url(p)
-      generate_url('party', p)
-    end
-
-    def term_url(t)
-      generate_url('term', t)
-    end
-
     def term_table_url(t)
       if t[:csv]
         t[:csv].downcase.sub(/^data/, '').sub(/term-(.*?).csv/, 'term_table/\1.html')
@@ -167,10 +155,5 @@ module Popolo
       end
     end
 
-    def area_name_url(t)
-      # Ugh. We should probably change generate_url to take an
-      # (optional) argument for which key to look up by
-      generate_url('area', 'id' => t)
-    end
   end
 end
