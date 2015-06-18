@@ -46,36 +46,9 @@ get '/countries.json' do
   JSON.pretty_generate(countries)
 end
 
-get '/about.html' do
-  erb :about
-end
-
 get '/:country/' do
   @terms = @popolo.terms_with_members
   erb :index
-end
-
-get '/:country/terms.html' do
-  @terms = @popolo.terms_with_members
-  erb :terms
-end
-
-get '/:country/people.html' do
-  @people = @popolo.persons
-  erb :people
-end
-
-get '/:country/parties.html' do
-  @parties = @popolo.parties
-  # TODO: make this *current* memberships
-  @memberships = @popolo.legislative_memberships
-  erb :parties
-end
-
-get '/:country/term/:id' do |_country, id|
-  @term = @popolo.term_from_id(id) || pass
-  @memberships = @popolo.term_memberships(@term)
-  erb :term
 end
 
 get '/:country/term_table/?:id?.html' do |_country, id|
@@ -97,31 +70,6 @@ get '/:country/term_table/?:id?.html' do |_country, id|
   }
   @data_source = @popolo.data_source
   erb :term_table
-end
-
-get '/:country/person/:id' do |_country, id|
-  @person = @popolo.person_from_id(id)
-  unless @person
-    people = @popolo.people_with_name(id)
-    # TODO: handle having more than one person with the same name
-    @person = people.first || pass
-  end
-  @legislative_memberships = @popolo.person_legislative_memberships(@person)
-  erb :person
-end
-
-get '/:country/party/:id' do |_country, id|
-  @party = @popolo.party_from_id(id) || pass
-  @memberships = @popolo.party_memberships(@party['id'])
-  erb :party
-end
-
-# We'll probably need a 'by-ID' version of this later, but for now most
-# of the data we have only has a bare { name: X } on Memberships
-get '/:country/area/:name' do |_country, name|
-  @area = { 'name' => name }
-  @memberships = @popolo.named_area_memberships(name)
-  erb :area
 end
 
 get '/*.css' do |filename|

@@ -31,10 +31,11 @@ describe 'Viewer' do
   end
 
   describe 'unknown country' do
-    before { get '/revalia/parties.html' }
+    before { get '/revalia/' }
 
     it 'should have no match for Revalia' do
       last_response.status.must_equal 404
     end
   end
+
 end
