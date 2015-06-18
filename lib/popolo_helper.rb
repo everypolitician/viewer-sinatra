@@ -160,7 +160,11 @@ module Popolo
     end
 
     def term_table_url(t)
-      generate_url('term_table', t) + '.html'
+      if t[:csv]
+        t[:csv].downcase.sub(/^data/, '').sub(/term-(.*?).csv/, 'term_table/\1.html')
+      else 
+        generate_url('term_table', t) + '.html'
+      end
     end
 
     def area_name_url(t)

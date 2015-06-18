@@ -47,7 +47,6 @@ get '/countries.json' do
 end
 
 get '/:country/' do
-  @terms = @popolo.terms_with_members
   erb :index
 end
 
