@@ -78,7 +78,7 @@ module Popolo
     end
 
     def terms
-      legislature['legislative_periods'] || legislature['terms']
+      legislature['legislative_periods'] || legislature['terms'] || json['events'].find_all { |e| e['classification'] == 'legislative period' } 
     end
 
     def term_list
