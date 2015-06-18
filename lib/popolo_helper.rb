@@ -85,11 +85,6 @@ module Popolo
       terms.sort_by { |t| [(t['start_date'] || '1001-01-01'), (t['end_date'] || '2999-12-31')] }
     end
 
-    def terms_with_members
-      lpms = memberships.map { |m| m['legislative_period_id'] }.uniq
-      terms.select { |t| lpms.include? t['id'] }
-    end
-
     def current_term
       term_list.last
     end
@@ -148,11 +143,7 @@ module Popolo
     end
 
     def term_table_url(t)
-      if t[:csv]
-        t[:csv].downcase.sub(/^data/, '').sub(/term-(.*?).csv/, 'term_table/\1.html')
-      else 
-        generate_url('term_table', t) + '.html'
-      end
+      t[:csv].downcase.sub(/^data/, '').sub(/term-(.*?).csv/, 'term_table/\1.html')
     end
 
   end

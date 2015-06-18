@@ -57,10 +57,10 @@ get '/:country/term_table/?:id?.html' do |_country, id|
   pass unless @term
 
   @page_title = @term['name']
-  @terms = @popolo.terms_with_members
+  @terms = @country[:legislative_periods].sort_by { |t| t[:start_date].to_s }
   (@prev_term, _, @next_term) = [nil, @terms, nil]
                                 .flatten.each_cons(3)
-                                .find { |_p, e, _n| e['id'] == @term['id'] }
+                                .find { |_p, e, _n| e[:id] == @term['id'] }
   @memberships = @popolo.term_memberships(@term)
   @houses = @memberships.map { |m| m['organization'] }.uniq
   @urls = {
