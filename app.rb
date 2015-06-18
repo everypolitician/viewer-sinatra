@@ -46,10 +46,6 @@ get '/countries.json' do
   JSON.pretty_generate(countries)
 end
 
-get '/about.html' do
-  erb :about
-end
-
 get '/:country/' do
   @terms = @popolo.terms_with_members
   erb :index
