@@ -51,11 +51,6 @@ get '/:country/' do
   erb :index
 end
 
-get '/:country/terms.html' do
-  @terms = @popolo.terms_with_members
-  erb :terms
-end
-
 get '/:country/people.html' do
   @people = @popolo.persons
   erb :people
