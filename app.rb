@@ -51,11 +51,6 @@ get '/:country/' do
   erb :index
 end
 
-get '/:country/people.html' do
-  @people = @popolo.persons
-  erb :people
-end
-
 get '/:country/parties.html' do
   @parties = @popolo.parties
   # TODO: make this *current* memberships
