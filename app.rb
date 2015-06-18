@@ -51,13 +51,6 @@ get '/:country/' do
   erb :index
 end
 
-get '/:country/parties.html' do
-  @parties = @popolo.parties
-  # TODO: make this *current* memberships
-  @memberships = @popolo.legislative_memberships
-  erb :parties
-end
-
 get '/:country/term/:id' do |_country, id|
   @term = @popolo.term_from_id(id) || pass
   @memberships = @popolo.term_memberships(@term)
