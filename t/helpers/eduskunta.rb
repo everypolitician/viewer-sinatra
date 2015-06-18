@@ -73,18 +73,6 @@ describe 'Eduskunta' do
     end
   end
 
-  describe 'terms with members' do
-    let(:terms) { subject.terms_with_members }
-
-    it 'should include 25' do
-      terms.map { |t| t['name'] }.must_include 'Eduskunta 25 (1970)'
-    end
-
-    it "shouldn't include 24" do
-      terms.map { |t| t['name'] }.wont_include 'Eduskunta 24 (1966)'
-    end
-  end
-
   describe 'current term' do
     let(:term) { subject.current_term }
 

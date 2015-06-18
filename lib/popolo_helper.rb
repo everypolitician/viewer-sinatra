@@ -85,11 +85,6 @@ module Popolo
       terms.sort_by { |t| [(t['start_date'] || '1001-01-01'), (t['end_date'] || '2999-12-31')] }
     end
 
-    def terms_with_members
-      lpms = memberships.map { |m| m['legislative_period_id'] }.uniq
-      terms.select { |t| lpms.include? t['id'] }
-    end
-
     def current_term
       term_list.last
     end
@@ -147,26 +142,9 @@ module Popolo
       ['', @country[:url], type, obj['id'].split('/').last].join('/')
     end
 
-    def person_url(p)
-      generate_url('person', p)
-    end
-
-    def party_url(p)
-      generate_url('party', p)
-    end
-
-    def term_url(t)
-      generate_url('term', t)
-    end
-
     def term_table_url(t)
-      generate_url('term_table', t) + '.html'
+      t[:csv].downcase.sub(/^data/, '').sub(/term-(.*?).csv/, 'term_table/\1.html')
     end
 
-    def area_name_url(t)
-      # Ugh. We should probably change generate_url to take an
-      # (optional) argument for which key to look up by
-      generate_url('area', 'id' => t)
-    end
   end
 end

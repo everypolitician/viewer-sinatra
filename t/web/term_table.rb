@@ -16,12 +16,21 @@ describe 'Basic loads' do
     # Get the list of countries on the homepage
     get '/'
     countries = Nokogiri::HTML(last_response.body)
-                .css('#home ul.grid-list li a')
-                .map { |n| n.attr('href').split('/')[1] }
+                .css('#home ul.grid-list li a/@href')
+                .map(&:text)
 
-    # Then ensure the current term table for each loads OK
+    # Then get the front page for each
     countries.each do |country|
-      get "/#{country}/term_table.html"
+      puts "Testing #{country}"
+      get country
+      last_response.status.must_equal 200
+      noko = Nokogiri::HTML(last_response.body)
+      terms = noko.css('a[href*="/term_table/"]/@href').map(&:text)
+      terms.size.wont_be :zero?
+
+      # Then get the first term for each
+      # puts "GET #{terms.first}"
+      get terms.first
       last_response.status.must_equal 200
       noko = Nokogiri::HTML(last_response.body)
       noko.css('table th').text.must_include 'Name'
