@@ -4,6 +4,7 @@ require 'open-uri'
 require 'sass'
 require 'set'
 require 'sinatra'
+require 'pry'
 
 require_relative './lib/popolo_helper'
 
@@ -11,8 +12,13 @@ helpers Popolo::Helper
 
 cjson = File.read('DATASOURCE').chomp
 ALL_COUNTRIES = JSON.parse(open(cjson).read, symbolize_names: true ).each do |c|
+  # Temporary workaround for new file layout, relying on only 1 house
+  # TODO: cope with multiple legislatures per country
+  c[:legislatures].first.each { |k,v| c[k] = v }
+  c.delete :legislatures
+
   c[:name] = c[:country]
-  c[:url] = File.dirname(c[:popolo]).split('/').last.downcase
+  c[:url] = File.dirname(c[:popolo]).split('/')[-2].downcase
 end
 
 before '/:country/*' do |country, _|
@@ -53,15 +59,13 @@ end
 get '/:country/term_table/:id.html' do |_, id|
   last_modified Time.at(@popolo.lastmod.to_i)
 
-  @terms = @country[:legislative_periods].sort_by { |t| t[:start_date].to_s }
-  @term = @terms.find { |t| t[:id].split('/').last == id } or pass
-
-  @page_title = @term[:name]
-  (@prev_term, _, @next_term) = [nil, @terms, nil]
+  @terms = @country[:legislative_periods]
+  (@next_term, @term, @prev_term) = [nil, @terms, nil]
                                 .flatten.each_cons(3)
-                                .find { |_p, e, _n| e[:id] == @term['id'] }
+                                .find { |_p, e, _n| e[:id].split('/').last == id }
   # Ugh
   @term['id'] = @term[:id]
+  @page_title = @term[:name]
   @memberships = @popolo.term_memberships(@term)
   @houses = @memberships.map { |m| m['organization'] }.uniq
   @urls = {
