@@ -53,13 +53,15 @@ end
 get '/:country/term_table/:id.html' do |_, id|
   last_modified Time.at(@popolo.lastmod.to_i)
 
-  @term = @popolo.term_from_id(id) or pass
-
-  @page_title = @term['name']
   @terms = @country[:legislative_periods].sort_by { |t| t[:start_date].to_s }
+  @term = @terms.find { |t| t[:id].split('/').last == id } or pass
+
+  @page_title = @term[:name]
   (@prev_term, _, @next_term) = [nil, @terms, nil]
                                 .flatten.each_cons(3)
                                 .find { |_p, e, _n| e[:id] == @term['id'] }
+  # Ugh
+  @term['id'] = @term[:id]
   @memberships = @popolo.term_memberships(@term)
   @houses = @memberships.map { |m| m['organization'] }.uniq
   @urls = {
