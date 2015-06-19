@@ -1,8 +1,34 @@
+require 'open-uri'
+require 'fileutils'
+
+module EveryPolitician
+
+  class GithubFile
+
+    def initialize(url, cache_dir = '_cached_data')
+      FileUtils.mkpath cache_dir
+      @cache_file = File.join cache_dir, url.split('/everypolitician-data/').last.tr('/', '-')
+      @url = url
+    end
+
+    def raw
+      @_data ||= begin
+        unless File.exist? @cache_file
+          puts "Writing #{@url} to #{@cache_file}"
+          File.write @cache_file, open(@url).read
+        end
+        File.read(@cache_file)
+      end
+    end
+
+  end
+
+end
+
+
 module Popolo
   require 'date'
-  require 'fileutils'
   require 'yajl/json_gem'
-  require 'open-uri'
   require 'promise'
 
   class Data
@@ -13,20 +39,12 @@ module Popolo
 
       @github_url = "https://raw.githubusercontent.com/everypolitician/everypolitician-data/#{c[:sha]}/"
       @popolo_url = @github_url + c[:popolo]
-      @cache_file = "#{cache_dir}/#{c[:sha]}-#{c[:url]}.json"
       @term_list  = c[:legislative_periods]
 
     end
 
     def json
-      @_data ||= begin 
-        unless File.exist? @cache_file
-          puts "Writing #{@popolo_url} to #{@cache_file}"
-          File.write @cache_file, open(@popolo_url).read
-        end
-
-        JSON.parse(File.read(@cache_file))
-      end
+      @_data ||= JSON.parse( EveryPolitician::GithubFile.new(@popolo_url).raw )
     end
 
     def lastmod
