@@ -50,17 +50,18 @@ get '/:country/' do
   erb :index
 end
 
-get '/:country/term_table/?:id?.html' do |_country, id|
+get '/:country/term_table/:id.html' do |_, id|
   last_modified Time.at(@popolo.lastmod.to_i)
 
-  @term = id ? @popolo.term_from_id(id) : @popolo.current_term
-  pass unless @term
-
-  @page_title = @term['name']
   @terms = @country[:legislative_periods].sort_by { |t| t[:start_date].to_s }
+  @term = @terms.find { |t| t[:id].split('/').last == id } or pass
+
+  @page_title = @term[:name]
   (@prev_term, _, @next_term) = [nil, @terms, nil]
                                 .flatten.each_cons(3)
                                 .find { |_p, e, _n| e[:id] == @term['id'] }
+  # Ugh
+  @term['id'] = @term[:id]
   @memberships = @popolo.term_memberships(@term)
   @houses = @memberships.map { |m| m['organization'] }.uniq
   @urls = {
@@ -68,6 +69,7 @@ get '/:country/term_table/?:id?.html' do |_country, id|
     json: @popolo.popolo_url
   }
   @data_source = @popolo.data_source
+  # @csv = CSV.parse(EveryPolitician::GithubFile.new(@urls[:csv]).raw, headers: true, header_converters: :symbol, converters: :all)
   erb :term_table
 end
 

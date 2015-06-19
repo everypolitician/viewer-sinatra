@@ -106,23 +106,4 @@ describe 'Eduskunta' do
     end
   end
 
-  describe 'area' do
-    let(:area_mems) { subject.named_area_memberships('Oulun') }
-
-    it 'should have had 38 members' do
-      area_mems.map { |m| m['person_id'] }.uniq.count.must_equal 38
-    end
-  end
-
-  describe 'person by name' do
-    let(:people) { subject.people_with_name('Stubb Alexander') }
-
-    it 'should get one person' do
-      people.count.must_equal 1
-    end
-
-    it 'should get the correct person' do
-      people.first['name'].must_equal 'Stubb Alexander'
-    end
-  end
 end
