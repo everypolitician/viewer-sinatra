@@ -69,6 +69,7 @@ get '/:country/term_table/:id.html' do |_, id|
     json: @popolo.popolo_url
   }
   @data_source = @popolo.data_source
+  # @csv = CSV.parse(EveryPolitician::GithubFile.new(@urls[:csv]).raw, headers: true, header_converters: :symbol, converters: :all)
   erb :term_table
 end
 
