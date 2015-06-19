@@ -98,7 +98,7 @@ describe 'Per Country Tests' do
   end
 
   describe 'Australia' do
-    before { get '/australia/term_table.html' }
+    before { get '/australia/term_table/44.html' }
 
     it 'should include a Representative' do
       subject.at_css('#house-representatives tr#mem-EZ5 td:first')
@@ -124,7 +124,7 @@ describe 'Per Country Tests' do
   end
 
   describe 'Canada' do
-    before { get '/canada/term_table.html' }
+    before { get '/canada/term_table/41.html' }
 
     it 'should have three parties with 2 seats' do
       doubles = subject.xpath('//p[contains(.,"2 seats")]/../h3').map(&:text)
