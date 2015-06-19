@@ -105,10 +105,6 @@ module Popolo
       persons.detect { |r| r['id'] == id } || persons.detect { |r| r['id'].end_with? "/#{id}" }
     end
 
-    def people_with_name(name)
-      persons.find_all { |p| p['name'] == name }
-    end
-
     def person_memberships(p)
       memberships.find_all { |m| m['person_id'] == p['id'] }
     end
@@ -125,10 +121,6 @@ module Popolo
       legislative_memberships.find_all { |m| m['on_behalf_of_id'] == id }
     end
 
-    def named_area_memberships(name)
-      legislative_memberships.find_all { |m| m.key?('area') && m['area']['name'] == name }
-    end
-
     def data_source
       json.key?('meta') && json['meta']['source']
     end
@@ -136,15 +128,8 @@ module Popolo
   end
 
   module Helper
-    def generate_url(type, obj)
-      fail "#{type} is Nil" if obj.nil?
-      fail "#{type} has no 'id': #{obj}" unless obj.key? 'id'
-      ['', @country[:url], type, obj['id'].split('/').last].join('/')
-    end
-
     def term_table_url(t)
       t[:csv].downcase.sub(/^data/, '').sub(/term-(.*?).csv/, 'term_table/\1.html')
     end
-
   end
 end
