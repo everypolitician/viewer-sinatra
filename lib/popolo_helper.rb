@@ -20,11 +20,8 @@ module EveryPolitician
         File.read(@cache_file)
       end
     end
-
   end
-
 end
-
 
 module Popolo
   require 'date'
@@ -40,7 +37,6 @@ module Popolo
       @github_url = "https://raw.githubusercontent.com/everypolitician/everypolitician-data/#{c[:sha]}/"
       @popolo_url = @github_url + c[:popolo]
       @term_list  = c[:legislative_periods]
-
     end
 
     def json
@@ -147,7 +143,8 @@ module Popolo
 
   module Helper
     def term_table_url(t)
-      t[:csv].downcase.sub(/^data/, '').sub(/term-(.*?).csv/, 'term_table/\1.html')
+      t[:csv].sub(%r{data/([^/]+)/[^/]+/term-(.*?).csv}, '/\1/term_table/\2.html').downcase
+      # t[:csv].downcase.sub(/^data/, '').sub(/term-(.*?).csv/, 'term_table/\1.html')
     end
   end
 end
