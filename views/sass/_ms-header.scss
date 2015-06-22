@@ -1,0 +1,37 @@
+// mySociety header
+
+$mysociety-banner-background: #333333;
+$mysociety-banner-height: 41px;
+
+.ms-header {
+    background-color: $mysociety-banner-background;
+}
+
+.ms-header__row {
+    @extend .container;
+    @include clearfix();
+}
+
+.ms-header__logo {
+    height: $mysociety-banner-height;
+    text-align: center;
+
+    @media (min-width: $medium-screen) {
+        float: right;
+        text-align: right;
+    }
+
+    a {
+        display: inline-block;
+        height: 0;
+        padding-top: $mysociety-banner-height;
+        width: 101px;
+        overflow: hidden;
+        background: transparent url("/images/mysociety-header_logo.png") center center no-repeat;
+
+        @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+            background-image: url("/images/mysociety-header_logo@2.png");
+            background-size: 101px 21px;
+        }
+    }
+}

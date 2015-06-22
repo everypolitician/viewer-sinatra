@@ -1,0 +1,38 @@
+body {
+    background-color: $mysociety-banner-background;
+}
+
+#wrapper {
+    background-color: #fff;
+}
+
+.ms-footer {
+    background-color: $mysociety-banner-background;
+    border-top: none;
+
+    a {
+        color: $colour_light_grey;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color:darken($colour_links, 10%);
+        }
+    }
+}
+
+.ms-footer__logo {
+    a {
+        display: block;
+        height: 0;
+        padding-top: 21px;
+        width: 101px;
+        overflow: hidden;
+        background: transparent url("/images/mysociety-header_logo.png") center center no-repeat;
+
+        @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+            background-image: url("/images/mysociety-header_logo@2.png");
+            background-size: 101px 21px;
+        }
+    }
+}

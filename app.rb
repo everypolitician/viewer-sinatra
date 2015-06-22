@@ -36,6 +36,11 @@ get '/' do
   erb :front_index
 end
 
+get '/new_index' do
+  @countries = ALL_COUNTRIES.to_a
+  erb :new_index, :layout => :new_layout
+end
+
 get '/countries.json' do
   content_type :json
   countries = ALL_COUNTRIES.map do |c|

@@ -5,6 +5,10 @@
     border-bottom: 1px solid $colour_borders;
     text-align: center;
 
+    @media (min-width: $large_screen) {
+        padding: 2em 0 1em;
+    }
+
     .container {
         @include clearfix;
 
@@ -40,7 +44,7 @@
 
     @media (min-width: $medium_screen) {
         float: left;
-        margin: -0.5em -1em 1em -1em;
+        margin: -0.5em -0.8em 1em -0.8em;
     }
 
     @media (min-width: $large_screen) {
@@ -49,7 +53,7 @@
         top: 3px;
         float: none;
         text-align: center;
-        margin: 0;
+        margin: 0 -0.8em;
     }
 
     a {
