@@ -8,7 +8,13 @@
     .ui-autocomplete-input {
         border: none;
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        background-color: #f9f9f9;
+        background: #f9f9f9 url("/images/homepage-search-icon.png") 0.9em 50% no-repeat;
+        text-indent: 2em;
+
+        @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+            background-image: url("/images/homepage-search-icon@2.png");
+            background-size: 20px 20px;
+        }
 
         &:focus {
             outline: none;
@@ -44,7 +50,7 @@
 
 .ui-menu .ui-menu-item {
     line-height: 1em;
-    padding: 0.5em 1em 0.5em 0.66em;
+    padding: 0.5em 1em 0.5em 2.66em; // 2.66 = 0.66 input padding + 2em search icon offset
     border: none;
     border-bottom: 1px solid $colour_off_white;
 
