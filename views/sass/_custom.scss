@@ -1,43 +1,99 @@
-.term-membership-table {
-  .button-group {
-    margin-bottom: 1em;
-  }
+.homepage-hero {
+    select,
+    .ui-autocomplete-input {
+        width: 20em;
+        max-width: 100%;
+    }
 
-  // Make the selected tab look unclickable
-  .button--primary {
-    cursor: default;
-    background-color: $colour_green;
-    border-color: $colour_green;
-  }
+    .ui-autocomplete-input {
+        border: none;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        background-color: #f9f9f9;
+
+        &:focus {
+            outline: none;
+            background-color: #fff;
+        }
+    }
+
+    h1 + p {
+      font-size: 1.2em;
+    }
+}
+
+.ui-widget {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.ui-widget-content {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    border-radius: $border_radius;
+    background: #fff;
+}
+
+.ui-menu .ui-menu-item {
+    line-height: 1em;
+    padding: 0.5em 1em 0.5em 0.66em;
+    border: none;
+    border-bottom: 1px solid $colour_off_white;
+
+    &:first-child {
+        @include border-top-radius($border_radius);
+    }
+
+    &:last-child {
+        @include border-bottom-radius($border_radius);
+        border-bottom: none;
+    }
+
+    &.ui-state-focus {
+        margin: 0;
+        background: $colour_lighter_grey;
+    }
+}
+
+.term-membership-table {
+    .button-group {
+        margin-bottom: 1em;
+    }
+
+    // Make the selected tab look unclickable
+    .button--primary {
+        cursor: default;
+        background-color: $colour_green;
+        border-color: $colour_green;
+    }
 }
 
 .table-action-buttons {
-  position: relative;
-  display: none;
+    position: relative;
+    display: none;
 
-  @media (min-width: $medium-screen) {
-    display: block;
-  }
+    @media (min-width: $medium-screen) {
+        display: block;
+    }
 
-  & > * {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+    & > * {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 
-  & > :last-child {
-    left: auto;
-    right: 0;
-  }
+    & > :last-child {
+        left: auto;
+        right: 0;
+    }
 
-  // If this is the only child, give it a height,
-  // otherwise the parent cell will collapse to zero
-  // and the buttons will overlap the row beneath.
-  &:first-child:last-child {
-    height: 4em; // same as outerheight() of a .button
-  }
+    // If this is the only child, give it a height,
+    // otherwise the parent cell will collapse to zero
+    // and the buttons will overlap the row beneath.
+    &:first-child:last-child {
+        height: 4em; // same as outerheight() of a .button
+    }
 }
 
 .button--download {
-  @extend .button--tertiary;
+    @extend .button--tertiary;
 }
