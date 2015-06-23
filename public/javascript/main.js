@@ -226,5 +226,5 @@ $(function(){
   $('label[for="country-selector"]').on('click', function(e){
     e.preventDefault();
     $('#country-selector').siblings('.ui-autocomplete-input').focus();
-  })
+  });
 });

@@ -18,6 +18,7 @@ ALL_COUNTRIES = JSON.parse(open(cjson).read, symbolize_names: true ).each do |c|
   c.delete :legislatures
 
   c[:name] = c[:country]
+  c[:code] = c[:code]
   c[:url] = File.dirname(c[:popolo]).split('/')[-2].downcase
 end
 

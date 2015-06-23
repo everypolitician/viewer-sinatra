@@ -16,8 +16,17 @@
         }
     }
 
+    h1, p {
+      text-shadow: 0 2px 20px rgba(0,0,0,0.2);
+    }
+
     h1 + p {
       font-size: 1.2em;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
     }
 }
 
@@ -51,6 +60,21 @@
     &.ui-state-focus {
         margin: 0;
         background: $colour_lighter_grey;
+    }
+}
+
+.homepage-map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+
+    .jvectormap-container {
+        height: 150%;
+        top: -5em;
     }
 }
 

@@ -4,6 +4,7 @@
         <p><label for="country-selector">Find representatives in your country</label></p>
         <%= erb :country_selector %>
     </div>
+    <div class="homepage-map"></div>
 </div>
 
 <div class="page-section">
@@ -16,3 +17,41 @@
         <p>Blah blah blah blah blah blah. Blah blah blah. Blah blah blah.</p>
     </div>
 </div>
+
+<script type="text/javascript">
+$(function(){
+  var countryCodes = {}
+  <% @countries.each do |country| %>
+    countryCodes['<%= country[:code] %>'] = 'rgba(255,255,255,0.5)'
+  <% end %>
+
+  $('.homepage-map').vectorMap({
+    map: 'world_mill_en',
+    backgroundColor: 'transparent',
+    zoomOnScroll: false,
+    zoomButtons: false,
+    panOnDrag: false,
+    regionStyle: {
+      initial: {
+        "fill": "rgba(255,255,255,0.3)",
+        "fill-opacity": 1,
+      },
+      hover: {
+        "fill-opacity": 1,
+        "cursor": "default"
+      }
+    },
+    hoverColor: false,
+    zoomMin: 4,
+    series: {
+      regions: [{
+        values: countryCodes,
+        attribute: 'fill'
+      }]
+    },
+    onRegionTipShow: function(e, $label, regionCode){
+      e.preventDefault();
+    }
+  });
+});
+</script>
