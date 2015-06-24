@@ -23,13 +23,12 @@ describe 'Per Country Tests' do
         .text.must_include 'Tony Abbott'
     end
 
-    it 'should include a Senator' do
-      subject.at_css('#house-senate tr#mem-GB6 td:first')
-        .text.must_include 'Jacinta Collins'
+    it 'should not include any Senators' do
+      subject.css('#house-senate').count.must_equal 0
     end
 
-    it 'should have a button with the house name' do
-      subject.css('a.button').text.downcase.must_include 'senate'
+    it 'should not have a button with the house name' do
+      subject.css('a.button').text.downcase.wont_include 'senate'
     end
 
     it 'should have the correct page title' do
