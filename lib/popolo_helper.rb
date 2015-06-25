@@ -64,11 +64,16 @@ module Popolo
       json['organizations']
     end
 
+    def areas
+      json['areas'] || []
+    end
+
     def memberships
       @_mems ||= json['memberships'].map do |m|
         m['organization'] ||= promise { party_from_id(m['organization_id']) }
         m['on_behalf_of'] ||= promise { party_from_id(m['on_behalf_of_id']) }
         m['person'] ||= promise { person_from_id(m['person_id']) || fail("No such person: #{m['person_id']}") }
+        m['area'] ||= promise { area_from_id(m['area_id']) || fail("No such area: #{m['area_id']}") } if m['area_id']
         if m.key?('legislative_period_id')
           m['legislative_period'] ||= promise { term_from_id(m['legislative_period_id']) }
           m['start_date'] ||= promise { m['legislative_period']['start_date'] || '' }
@@ -133,6 +138,10 @@ module Popolo
 
     def party_memberships(id)
       legislative_memberships.find_all { |m| m['on_behalf_of_id'] == id }
+    end
+
+    def area_from_id(id)
+      a = areas.find { |a| a['id'] == id } || areas.find { |a| a['id'].end_with? "/#{id}" }
     end
 
     def data_source
