@@ -215,4 +215,16 @@ $(function(){
   });
 
   $('html').removeClass('no-js');
+
+  // http://baymard.com/labs/country-selector
+  $('.js-select-to-autocomplete').selectToAutocomplete().on('change', function(){
+    console.log('user selected country:', $(this).val());
+  }).on('focus', function(){
+    $(this).next().trigger("focus");
+  });
+
+  $('label[for="country-selector"]').on('click', function(e){
+    e.preventDefault();
+    $('#country-selector').siblings('.ui-autocomplete-input').focus();
+  });
 });

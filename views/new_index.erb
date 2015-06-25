@@ -1,0 +1,61 @@
+<div class="hero hero--jazzy text-center homepage-hero">
+    <div class="container">
+        <h1><%= @countries.length %> countries of data (so far)</h1>
+        <p><label for="country-selector">Find representatives in your country</label></p>
+        <%= erb :country_selector %>
+    </div>
+    <div class="homepage-map"></div>
+</div>
+
+<div class="page-section">
+    <div class="container row">
+        <div class="column-two-thirds">
+            <h3>What is EveryPolitician?</h3>
+            <p>Blah blah blah. Blah blah blach blah blah. Blah blah blah. Blah blah blah blah. Blah blah blah blah blah blah. Blah blah blah. Blah blah blah blah.</p>
+            <a href="#" class="button button--small">Blah blah blah</a>
+        </div>
+        <div class="column-one-third">
+            <h3>Contribute your data</h3>
+            <p>Blah blah blah blah blah blah. Blah blah blah. Blah blah blah.</p>
+            <a href="#" class="button button--small button--secondary">Blah blah</a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function(){
+  var countryCodes = {}
+  <% @countries.each do |country| %>
+    countryCodes['<%= country[:code] %>'] = 'rgba(255,255,255,0.5)'
+  <% end %>
+
+  $('.homepage-map').vectorMap({
+    map: 'world_mill_en',
+    backgroundColor: 'transparent',
+    zoomOnScroll: false,
+    zoomButtons: false,
+    panOnDrag: false,
+    regionStyle: {
+      initial: {
+        "fill": "rgba(255,255,255,0.3)",
+        "fill-opacity": 1,
+      },
+      hover: {
+        "fill-opacity": 1,
+        "cursor": "default"
+      }
+    },
+    hoverColor: false,
+    zoomMin: 4,
+    series: {
+      regions: [{
+        values: countryCodes,
+        attribute: 'fill'
+      }]
+    },
+    onRegionTipShow: function(e, $label, regionCode){
+      e.preventDefault();
+    }
+  });
+});
+</script>
