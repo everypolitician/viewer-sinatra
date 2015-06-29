@@ -16,7 +16,7 @@ describe 'Per Country Tests' do
   let(:memtable) { subject.css('.term-membership-table') }
 
   describe 'Malaysia' do
-    before { get '/malaysia/term_table/13.html' }
+    before { get '/malaysia/term-table/13.html' }
 
     it 'should have have its name' do
       subject.css('#term h1').text.must_include '13th Parliament of Malaysia'

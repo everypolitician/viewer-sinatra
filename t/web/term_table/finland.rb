@@ -16,7 +16,7 @@ describe 'Per Country Tests' do
   let(:memtable) { subject.css('.term-membership-table') }
 
   describe 'Finland' do
-    before { get '/finland/term_table/35.html' }
+    before { get '/finland/term-table/35.html' }
 
     it 'should have have its name' do
       subject.css('#term h1').text.must_include 'Eduskunta 35 (2007)'
@@ -52,15 +52,15 @@ describe 'Per Country Tests' do
     end
 
     it 'should link to 34' do
-      subject.css('a[href*="/term_table/34"]').count.must_be :>=, 1
+      subject.css('a[href*="/term-table/34"]').count.must_be :>=, 1
     end
 
     it 'should link to 36' do
-      subject.css('a[href*="/term_table/36"]').count.must_be :>=, 1
+      subject.css('a[href*="/term-table/36"]').count.must_be :>=, 1
     end
 
     it "shouldn't link to 33" do
-      subject.css('a[href*="/term_table/33"]').count.must_equal 0
+      subject.css('a[href*="/term-table/33"]').count.must_equal 0
     end
 
     it "shouldn't have a button for the house name" do

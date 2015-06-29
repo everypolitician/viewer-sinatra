@@ -25,7 +25,7 @@ describe 'Basic loads' do
       get country
       last_response.status.must_equal 200
       noko = Nokogiri::HTML(last_response.body)
-      terms = noko.css('a[href*="/term_table/"]/@href').map(&:text)
+      terms = noko.css('a[href*="/term-table/"]/@href').map(&:text)
       terms.size.wont_be :zero?
 
       # Then get the first term for each

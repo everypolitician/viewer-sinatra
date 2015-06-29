@@ -14,17 +14,19 @@ cjson = File.read('DATASOURCE').chomp
 ALL_COUNTRIES = JSON.parse(open(cjson).read, symbolize_names: true ).each do |c|
   # Temporary workaround for new file layout, relying on only 1 house
   # TODO: cope with multiple legislatures per country
-  c[:legislatures].first.each { |k,v| c[k] = v }
+  c[:url] = c[:slug].downcase
+
+  c[:legislatures].first.each { |k,v| c[k] ||= v }
   c.delete :legislatures
 
   c[:name] = c[:country]
-  c[:url] = File.dirname(c[:popolo]).split('/')[-2].downcase
 end
 
 before '/:country/*' do |country, _|
   # Allow inbuilt sinatra requests through
   pass if country == '__sinatra__'
 
+  # binding.pry
   @country = ALL_COUNTRIES.find { |c| c[:url] == country } || halt(404)
   @popolo = Popolo::Data.new(@country)
 end
@@ -45,7 +47,7 @@ get '/:country/' do
   erb :index
 end
 
-get '/:country/term_table/:id.html' do |_, id|
+get '/:country/term-table/:id.html' do |_, id|
   last_modified Time.at(@popolo.lastmod.to_i)
 
   @terms = @country[:legislative_periods]
