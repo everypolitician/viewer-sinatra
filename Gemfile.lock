@@ -19,7 +19,6 @@ GEM
     mini_portile (0.5.3)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
-    promise (0.3.1)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -47,7 +46,6 @@ DEPENDENCIES
   iso_country_codes
   json
   nokogiri
-  promise
   pry
   rack-test
   rake
@@ -56,6 +54,3 @@ DEPENDENCIES
   sinatra!
   thin
   yajl-ruby
-
-BUNDLED WITH
-   1.10.4
