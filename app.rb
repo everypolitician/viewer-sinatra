@@ -59,7 +59,6 @@ get '/:country/:house/term-table/:id.html' do |_, house, id|
   # Ugh
   @term['id'] = @term[:id]
   @page_title = @term[:name]
-  @memberships = @popolo.term_memberships(@term)
   @urls = {
     csv: @popolo.csv_url(@term),
     json: @popolo.popolo_url
