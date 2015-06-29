@@ -65,8 +65,7 @@
         <div class="container">
             <h2 class="text-center">Members</h2>
 
-          <% @memberships.group_by { |m| m['organization'] }.each do |leg, leg_mems| %>
-            <table class="term-membership-table js-sortable" id="house-<%= leg['id'].split('/').last %>">
+            <table class="term-membership-table js-sortable" id="house-<%= @memberships.first['organization']['id'].split('/').last %>">
                 <thead class="js-fixed-thead">
                     <tr>
                         <td colspan="4" class="text-center">
@@ -87,11 +86,11 @@
                         <th>Name</th>
                         <th>Group</th>
                         <th>Area</th>
-                        <% if leg_mems.any? { |m| m['start_date'].to_s != @term[:start_date].to_s or m['end_date'].to_s != @term[:end_date].to_s } %><th>Dates</th><% end %>
+                        <% if @memberships.any? { |m| m['start_date'].to_s != @term[:start_date].to_s or m['end_date'].to_s != @term[:end_date].to_s } %><th>Dates</th><% end %>
                     </tr>
                 </thead>
 
-              <% leg_mems.group_by { |m| m['person'] }.sort_by { |p, _| p['name'] }.each do |p, mems| %>
+              <% @memberships.group_by { |m| m['person'] }.sort_by { |p, _| p['name'] }.each do |p, mems| %>
                   <%# Each person can have multiple party affiliations in a single term, so we
                       loop through them and set the first cell (their name) to span all the rows %>
                   <% mems.each_with_index do |m, i| %>
@@ -101,7 +100,7 @@
                       <% end %>
                         <td><%= m['on_behalf_of']['name'].to_s.empty? ? 'Independent' : m['on_behalf_of']['name'] %></td>
                         <td><%= m['area'] && m['area']['name'] %></td>
-                      <% if leg_mems.any? { |m| m['start_date'].to_s != @term[:start_date].to_s or m['end_date'].to_s != @term[:end_date].to_s }%>  <td>
+                      <% if @memberships.any? { |m| m['start_date'].to_s != @term[:start_date].to_s or m['end_date'].to_s != @term[:end_date].to_s }%>  <td>
                           <% if m['start_date'].to_s != @term[:start_date].to_s or m['end_date'].to_s != @term[:end_date].to_s %>
                             <%= m['start_date'] %>–<%= m['end_date'] %>
                           <% end %>
@@ -109,9 +108,7 @@
                     </tr>
                   <% end %>
               <% end %>
-
             </table>
-          <% end %>
         </div>
     </div>
 
