@@ -31,6 +31,7 @@ set :erb, trim: '-'
 
 get '/' do
   @countries = ALL_COUNTRIES.to_a
+  @cjson = cjson
   erb :front_index
 end
 
