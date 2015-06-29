@@ -16,7 +16,7 @@ describe 'Per Country Tests' do
   let(:memtable) { subject.css('.term-membership-table') }
 
   describe 'Australia' do
-    before { get '/australia/term-table/44.html' }
+    before { get '/australia/representatives/term-table/44.html' }
 
     it 'should include a Representative' do
       subject.at_css('#house-representatives tr#mem-EZ5 td:first')

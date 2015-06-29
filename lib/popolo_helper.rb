@@ -152,7 +152,8 @@ module Popolo
 
   module Helper
     def term_table_url(t)
-      "/%s/term-table/%s.html" % [ @country[:slug].downcase, t[:csv][/term-(.*?).csv/, 1] ]
+      # TODO include the _correct_ legislature when we handle >1
+      "/%s/%s/term-table/%s.html" % [ @country[:slug].downcase, @country[:legislatures].first[:slug].downcase, t[:csv][/term-(.*?).csv/, 1] ]
     end
   end
 end

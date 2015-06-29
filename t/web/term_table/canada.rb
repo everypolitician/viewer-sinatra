@@ -16,7 +16,7 @@ describe 'Per Country Tests' do
   let(:memtable) { subject.css('.term-membership-table') }
 
   describe 'Canada' do
-    before { get '/canada/term-table/41.html' }
+    before { get '/canada/commons/term-table/41.html' }
 
     it 'should have three parties with 2 seats' do
       doubles = subject.xpath('//p[contains(.,"2 seats")]/../h3').map(&:text)
