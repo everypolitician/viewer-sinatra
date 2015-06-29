@@ -24,9 +24,7 @@ module EveryPolitician
 end
 
 module Popolo
-  require 'date'
   require 'yajl/json_gem'
-  require 'promise'
 
   class Data
     def initialize(c, cache_dir = '_cached_data')
