@@ -152,8 +152,7 @@ module Popolo
 
   module Helper
     def term_table_url(t)
-      t[:csv].sub(%r{data/([^/]+)/[^/]+/term-(.*?).csv}, '/\1/term_table/\2.html').downcase
-      # t[:csv].downcase.sub(/^data/, '').sub(/term-(.*?).csv/, 'term_table/\1.html')
+      "/%s/term-table/%s.html" % [ @country[:slug].downcase, t[:csv][/term-(.*?).csv/, 1] ]
     end
   end
 end
