@@ -49,12 +49,11 @@
     <div class="page-section page-section--grey">
         <div class="container">
             <h2 class="text-center">Party Groupings</h2>
-
             <ul class="grid-list">
-              <% @memberships.group_by { |m| m['on_behalf_of'] }.sort_by { |p, ms| [-ms.count, p['name']] }.each do |party, mems| %>
+              <% @csv.group_by { |r| r[:group] }.sort_by { |p, ms| [-ms.count, p] }.each do |party, mems| %>
                 <li><div class="avatar-unit">
                     <span class="avatar"><i class="fa fa-users"></i></span>
-                    <h3><%= party['name'].to_s.empty? ? 'Independent' : party['name'] %></h3>
+                    <h3><%= party.to_s.empty? ? 'Independent' : party %></h3>
                     <p><%= mems.count %> seat<% if mems.count > 1 %>s<% end %></p>
                 </div></li>
               <% end %>
