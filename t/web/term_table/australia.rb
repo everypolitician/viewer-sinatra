@@ -19,7 +19,7 @@ describe 'Per Country Tests' do
     before { get '/australia/representatives/term-table/44.html' }
 
     it 'should include a Representative' do
-      subject.at_css('#house-representatives tr#mem-EZ5 td:first')
+      subject.at_css('.term-membership-table tr#mem-EZ5 td:first')
         .text.must_include 'Tony Abbott'
     end
 

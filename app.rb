@@ -60,13 +60,13 @@ get '/:country/:house/term-table/:id.html' do |_, house, id|
   # Ugh
   @term['id'] = @term[:id]
   @page_title = @term[:name]
-  @memberships = @popolo.term_memberships(@term)
   @urls = {
     csv: @popolo.csv_url(@term),
     json: @popolo.popolo_url
   }
   @data_source = @popolo.data_source
-  # @csv = CSV.parse(EveryPolitician::GithubFile.new(@urls[:csv]).raw, headers: true, header_converters: :symbol, converters: :all)
+
+  @csv = CSV.parse(EveryPolitician::GithubFile.new(@urls[:csv]).raw, headers: true, header_converters: :symbol, converters: :all)
   erb :term_table
 end
 
