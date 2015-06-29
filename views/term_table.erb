@@ -69,7 +69,6 @@
           <% @memberships.group_by { |m| m['organization'] }.each do |leg, leg_mems| %>
             <table class="term-membership-table js-sortable" id="house-<%= leg['id'].split('/').last %>">
                 <thead class="js-fixed-thead">
-
                     <tr>
                         <td colspan="4" class="text-center">
                             <div class="table-action-buttons">
@@ -82,17 +81,6 @@
                                 <span class="large-screen-only">JSON</span>
                               </a>
                             </div>
-                          <% if @houses.count > 1 %>
-                            <div class="button-group">
-                              <% @houses.each do |h| %>
-                                  <% if h['id'] == leg['id'] %>
-                                    <a class="button button--primary" href="#house-<%= h['id'].split('/').last %>"><%= h['name'] %></a>
-                                  <% else %>
-                                    <a class="button button--quarternary" href="#house-<%= h['id'].split('/').last %>"><%= h['name'] %></a>
-                                  <% end %>
-                              <% end %>
-                            </div>
-                          <% end %>
                         </td>
                     </tr>
 
