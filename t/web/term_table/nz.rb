@@ -16,7 +16,7 @@ describe 'Per Country Tests' do
   let(:memtable) { subject.css('.term-membership-table') }
 
   describe 'New Zeland' do
-    before { get '/new-zealand/term-table/51.html' }
+    before { get '/new-zealand/house/term-table/51.html' }
 
     it 'should have minus, rather than underscore, in its url' do
       subject.css('#term h1').text.must_include '51st Parliament'

@@ -16,7 +16,7 @@ describe 'Per Country Tests' do
   let(:memtable) { subject.css('.term-membership-table') }
 
   describe 'Finland' do
-    before { get '/finland/term-table/35.html' }
+    before { get '/finland/eduskunta/term-table/35.html' }
 
     it 'should have have its name' do
       subject.css('#term h1').text.must_include 'Eduskunta 35 (2007)'
