@@ -41,22 +41,6 @@ get '/new_index' do
   erb :new_index, :layout => :new_layout
 end
 
-get '/countries.json' do
-  content_type :json
-  countries = ALL_COUNTRIES.map do |c|
-    pd = Popolo::Data.new(c)
-    last_term_id = pd.current_term['id'].split('/').last
-    {
-      name: c[:name],
-      url: "/#{c[:url]}",
-      code: c[:code],
-      latest_term_csv: "/#{c[:url]}/term_table/#{last_term_id}.csv",
-      popolo: pd.popolo_url
-    }
-  end
-  JSON.pretty_generate(countries)
-end
-
 get '/:country/' do
   erb :index
 end
