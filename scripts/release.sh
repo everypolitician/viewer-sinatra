@@ -13,7 +13,7 @@ if [[ "$TRAVIS_PULL_REQUEST" == "false" && "$TRAVIS_BRANCH" == "master" ]]; then
   bundle exec ruby app.rb &
   while ! nc -z localhost 4567; do sleep 1; done
   cd /tmp
-  wget -m localhost:4567
+  wget -m localhost:4567 || (echo "wget exited with non-zero exit code: $?" >&2 && exit 1)
   git clone "git@github.com:everypolitician/viewer-static.git"
   cd viewer-static
   git checkout gh-pages
