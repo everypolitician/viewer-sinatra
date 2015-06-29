@@ -60,7 +60,6 @@ get '/:country/:house/term-table/:id.html' do |_, house, id|
   @term['id'] = @term[:id]
   @page_title = @term[:name]
   @memberships = @popolo.term_memberships(@term)
-  @houses = @memberships.map { |m| m['organization'] }.uniq
   @urls = {
     csv: @popolo.csv_url(@term),
     json: @popolo.popolo_url
