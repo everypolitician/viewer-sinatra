@@ -4,7 +4,7 @@
     <p>We currently have information for:</p>
 
     <ul class="grid-list">
-      <% @country[:legislative_periods].each do |t| %>
+      <% @country[:legislatures].first[:legislative_periods].each do |t| %>
         <li>
           <a class="avatar-unit" href="<%= term_table_url(t) %>">
             <span class="avatar"><i class="fa fa-university"></i></span>
