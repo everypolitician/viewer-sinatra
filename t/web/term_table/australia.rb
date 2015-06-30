@@ -11,24 +11,19 @@ def app
   Sinatra::Application
 end
 
-describe 'Per Country Tests' do
+describe 'Per Country Tests: Australia' do
   subject { Nokogiri::HTML(last_response.body) }
   let(:memtable) { subject.css('.term-membership-table') }
 
-  describe 'Australia' do
+  describe 'Representatives' do
     before { get '/australia/representatives/term-table/44.html' }
 
     it 'should include a Representative' do
-      subject.at_css('.term-membership-table tr#mem-EZ5 td:first')
-        .text.must_include 'Tony Abbott'
+      subject.css('.term-membership-table').text.must_include 'Tony Abbott'
     end
 
     it 'should not include any Senators' do
-      subject.css('#house-senate').count.must_equal 0
-    end
-
-    it 'should not have a button with the house name' do
-      subject.css('a.button').text.downcase.wont_include 'senate'
+      subject.css('.term-membership-table').text.wont_include 'Alan Eggleston'
     end
 
     it 'should have the correct page title' do
@@ -39,4 +34,25 @@ describe 'Per Country Tests' do
       subject.css('.source-credits').text.must_include 'openaustralia'
     end
   end
+
+  describe 'Senate' do
+    before { get '/australia/senate/term-table/44.html' }
+
+    it 'should include a Senator' do
+      subject.css('.term-membership-table').text.must_include 'Alan Eggleston'
+    end
+
+    it 'should not include any Representatives' do
+      subject.css('.term-membership-table').text.wont_include 'Tony Abbott'
+    end
+
+    it 'should have the correct page title' do
+      subject.css('title').text.must_equal '44th Parliament'
+    end
+
+    it 'should list the correct source' do
+      subject.css('.source-credits').text.must_include 'openaustralia'
+    end
+  end
+
 end
