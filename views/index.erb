@@ -5,7 +5,7 @@
 
     <% @country[:legislatures].each do |house| %>
       <h4><%= house[:name] %></h4>
-      <ul class="grid-list">
+      <ul class="grid-list" id="terms-<%= house[:slug].downcase %>">
         <% house[:legislative_periods].each do |t| %>
           <li>
             <a class="avatar-unit" href="<%= term_table_url(t) %>">
