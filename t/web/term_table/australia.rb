@@ -13,7 +13,18 @@ end
 
 describe 'Per Country Tests: Australia' do
   subject { Nokogiri::HTML(last_response.body) }
-  let(:memtable) { subject.css('.term-membership-table') }
+
+  describe 'Country page' do
+    before { get '/australia/' }
+
+    it 'should link to the House of Representatives' do
+      subject.css('#terms-representatives a[href*="/44.html"]').count.must_equal 1
+    end
+
+    it 'should link to the Senate' do
+      subject.css('#terms-senate a[href*="/44.html"]').count.must_equal 1
+    end
+  end
 
   describe 'Representatives' do
     before { get '/australia/representatives/term-table/44.html' }
