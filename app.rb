@@ -12,10 +12,7 @@ helpers Popolo::Helper
 
 cjson = File.read('DATASOURCE').chomp
 ALL_COUNTRIES = JSON.parse(open(cjson).read, symbolize_names: true ).each do |c|
-  # Temporary workaround for new file layout, relying on only 1 house
-  # TODO: cope with multiple legislatures per country
   c[:url] = c[:slug].downcase
-  c[:legislatures].first.each { |k,v| c[k] ||= v }
   c[:name] = c[:country]
 end
 
@@ -44,27 +41,29 @@ get '/:country/' do
 end
 
 get '/:country/:house/term-table/:id.html' do |_, house, id|
-  popolo = Popolo::Data.new(@country)
+  house = @country[:legislatures].find { |h| h[:slug].downcase == house } || halt(404)
+
   last_modified Time.at(@country[:lastmod].to_i)
 
-  @terms = @country[:legislative_periods]
+  @terms = house[:legislative_periods]
   (@next_term, @term, @prev_term) = [nil, @terms, nil]
-                                .flatten.each_cons(3)
-                                .find { |_p, e, _n| e[:id].split('/').last == id }
-
-
-  # We don't actually _use_ the house yet, or even check that we're viewing 
-  # the _correct_ one. Just that this country _has_ one called this
-  _house = @country[:legislatures].find { |h| h[:slug].downcase == house } || halt(404)
-
+    .flatten.each_cons(3)
+    .find { |_p, e, _n| e[:id].split('/').last == id }
   @page_title = @term[:name]
-  @urls = {
-    csv: popolo.csv_url(@term),
-    json: popolo.popolo_url
-  }
-  @data_source = popolo.data_source
 
-  @csv = CSV.parse(EveryPolitician::GithubFile.new(@urls[:csv]).raw, headers: true, header_converters: :symbol, converters: :all)
+  last_sha = house[:sha]
+  csv_file = EveryPolitician::GithubFile.new(@term[:csv], last_sha)
+  @csv = CSV.parse(csv_file.raw, headers: true, header_converters: :symbol, converters: :all)
+
+  popolo_file = EveryPolitician::GithubFile.new(house[:popolo], last_sha)
+  popolo = JSON.parse(popolo_file.raw)
+
+  @urls = {
+    csv: csv_file.url,
+    json: popolo_file.url,
+  }
+  @data_source = popolo.key?('meta') && popolo['meta']['source']
+
   erb :term_table
 end
 
