@@ -45,7 +45,7 @@ end
 
 get '/:country/:house/term-table/:id.html' do |_, house, id|
   popolo = Popolo::Data.new(@country)
-  last_modified Time.at(popolo.lastmod.to_i)
+  last_modified Time.at(@country[:lastmod].to_i)
 
   @terms = @country[:legislative_periods]
   (@next_term, @term, @prev_term) = [nil, @terms, nil]

@@ -30,8 +30,6 @@ module Popolo
     def initialize(c, cache_dir = '_cached_data')
       FileUtils.mkpath cache_dir
 
-      @lastmod = c[:lastmod]
-
       @github_url = "https://raw.githubusercontent.com/everypolitician/everypolitician-data/#{c[:sha]}/"
       @popolo_url = @github_url + c[:popolo]
       @term_list  = c[:legislative_periods]
@@ -39,10 +37,6 @@ module Popolo
 
     def json
       @_data ||= JSON.parse( EveryPolitician::GithubFile.new(@popolo_url).raw )
-    end
-
-    def lastmod
-      @lastmod 
     end
 
     def popolo_url
