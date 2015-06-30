@@ -24,7 +24,6 @@ before '/:country/*' do |country, _|
   pass if country == '__sinatra__'
 
   @country = ALL_COUNTRIES.find { |c| c[:url] == country } || halt(404)
-  @popolo = Popolo::Data.new(@country)
 end
 
 set :erb, trim: '-'
@@ -45,7 +44,8 @@ get '/:country/' do
 end
 
 get '/:country/:house/term-table/:id.html' do |_, house, id|
-  last_modified Time.at(@popolo.lastmod.to_i)
+  popolo = Popolo::Data.new(@country)
+  last_modified Time.at(popolo.lastmod.to_i)
 
   @terms = @country[:legislative_periods]
   (@next_term, @term, @prev_term) = [nil, @terms, nil]
@@ -59,10 +59,10 @@ get '/:country/:house/term-table/:id.html' do |_, house, id|
 
   @page_title = @term[:name]
   @urls = {
-    csv: @popolo.csv_url(@term),
-    json: @popolo.popolo_url
+    csv: popolo.csv_url(@term),
+    json: popolo.popolo_url
   }
-  @data_source = @popolo.data_source
+  @data_source = popolo.data_source
 
   @csv = CSV.parse(EveryPolitician::GithubFile.new(@urls[:csv]).raw, headers: true, header_converters: :symbol, converters: :all)
   erb :term_table
