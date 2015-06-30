@@ -57,8 +57,6 @@ get '/:country/:house/term-table/:id.html' do |_, house, id|
   # the _correct_ one. Just that this country _has_ one called this
   _house = @country[:legislatures].find { |h| h[:slug].downcase == house } || halt(404)
 
-  # Ugh
-  @term['id'] = @term[:id]
   @page_title = @term[:name]
   @urls = {
     csv: @popolo.csv_url(@term),

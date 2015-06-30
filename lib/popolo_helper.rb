@@ -50,7 +50,7 @@ module Popolo
     end
 
     def csv_url(term)
-      found = @term_list.find { |t| t[:id].split('/').last == term['id'].split('/').last } or return
+      found = @term_list.find { |t| t[:id].split('/').last == term[:id].split('/').last } or return
       @github_url + found[:csv]
     end
 
