@@ -12,7 +12,7 @@
         <div class="container">
             <div class="term-navigation">
               <% if @prev_term %>
-                <a href="<%= term_table_url(@prev_term) %>" class="term-navigation__prev">
+                <a href="<%= term_table_url(@country, @house, @prev_term) %>" class="term-navigation__prev">
                     <i class="fa fa-arrow-left"></i>
                     <%= @prev_term[:name] %>
                 </a>
@@ -21,7 +21,7 @@
               <span class="term-navigation__jump">Jump to:
                   <select class="js-navigation-menu">
                     <% @terms.each do |t| %>
-                      <option value="<%= term_table_url(t) %>" <% if t[:name] == @term[:name] %>selected<% end %>>
+                      <option value="<%= term_table_url(@country, @house, t) %>" <% if t[:name] == @term[:name] %>selected<% end %>>
                         <%= t[:name] %>
                         <% unless t[:start_date].to_s.empty? and t[:end_date].to_s.empty? %>
                           (<%= t[:start_date] %>–<%= t[:end_date] or 'current' %>)
@@ -32,7 +32,7 @@
               </span>
 
               <% if @next_term %>
-                <a href="<%= term_table_url(@next_term) %>" class="term-navigation__next">
+                <a href="<%= term_table_url(@country, @house, @next_term) %>" class="term-navigation__next">
                     <%= @next_term[:name] %>
                     <i class="fa fa-arrow-right"></i>
                 </a>

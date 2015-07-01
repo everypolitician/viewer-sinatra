@@ -40,21 +40,21 @@ get '/:country/' do
 end
 
 get '/:country/:house/term-table/:id.html' do |_, house, id|
-  house = @country[:legislatures].find { |h| h[:slug].downcase == house } || halt(404)
+  @house = @country[:legislatures].find { |h| h[:slug].downcase == house } || halt(404)
 
   last_modified Time.at(@country[:lastmod].to_i)
 
-  @terms = house[:legislative_periods]
+  @terms = @house[:legislative_periods]
   (@next_term, @term, @prev_term) = [nil, @terms, nil]
     .flatten.each_cons(3)
     .find { |_p, e, _n| e[:slug] == id }
   @page_title = @term[:name]
 
-  last_sha = house[:sha]
+  last_sha = @house[:sha]
   csv_file = EveryPolitician::GithubFile.new(@term[:csv], last_sha)
   @csv = CSV.parse(csv_file.raw, headers: true, header_converters: :symbol, converters: :all)
 
-  popolo_file = EveryPolitician::GithubFile.new(house[:popolo], last_sha)
+  popolo_file = EveryPolitician::GithubFile.new(@house[:popolo], last_sha)
   popolo = JSON.parse(popolo_file.raw)
 
   @urls = {
