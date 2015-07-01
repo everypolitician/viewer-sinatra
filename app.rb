@@ -13,7 +13,6 @@ helpers Popolo::Helper
 cjson = File.read('DATASOURCE').chomp
 ALL_COUNTRIES = JSON.parse(open(cjson).read, symbolize_names: true ).each do |c|
   c[:url] = c[:slug].downcase
-  c[:name] = c[:country]
 end
 
 before '/:country/*' do |country, _|
@@ -48,7 +47,7 @@ get '/:country/:house/term-table/:id.html' do |_, house, id|
   @terms = house[:legislative_periods]
   (@next_term, @term, @prev_term) = [nil, @terms, nil]
     .flatten.each_cons(3)
-    .find { |_p, e, _n| e[:id].split('/').last == id }
+    .find { |_p, e, _n| e[:slug] == id }
   @page_title = @term[:name]
 
   last_sha = house[:sha]
