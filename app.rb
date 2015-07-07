@@ -73,6 +73,10 @@ get '/contribute.html' do
   erb :contribute
 end
 
+get '/usage.html' do
+  erb :usage
+end
+
 get '/*.css' do |filename|
   scss :"sass/#{filename}"
 end
