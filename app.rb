@@ -20,7 +20,7 @@ set :erb, trim: '-'
 get '/' do
   @countries = ALL_COUNTRIES.to_a
   @cjson = cjson
-  erb :front_index
+  erb :front_index, :layout => :new_layout
 end
 
 get '/new_index' do
