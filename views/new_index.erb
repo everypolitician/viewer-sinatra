@@ -1,7 +1,7 @@
 <div class="hero hero--jazzy text-center homepage-hero">
     <div class="container">
-        <h1><%= @countries.length %> countries of data (so far)</h1>
-        <p><label for="country-selector">Find representatives in your country</label></p>
+        <h1>Data for <%= @countries.length %> countries (so far)</h1>
+        <p><label for="country-selector">Find representatives from your country:</label></p>
         <%= erb :country_selector %>
     </div>
     <div class="homepage-map"></div>
