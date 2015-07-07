@@ -15,13 +15,6 @@ ALL_COUNTRIES = JSON.parse(open(cjson).read, symbolize_names: true ).each do |c|
   c[:url] = c[:slug].downcase
 end
 
-before '/:country/*' do |country, _|
-  # Allow inbuilt sinatra requests through
-  pass if country == '__sinatra__'
-
-  @country = ALL_COUNTRIES.find { |c| c[:url] == country } || halt(404)
-end
-
 set :erb, trim: '-'
 
 get '/' do
@@ -35,11 +28,17 @@ get '/new_index' do
   erb :new_index, :layout => :new_layout
 end
 
-get '/:country/' do
-  erb :index
+get '/:country/' do |country|
+  if @country = ALL_COUNTRIES.find { |c| c[:url] == country } 
+    erb :index
+  else
+    @missing = country
+    erb :country_missing
+  end
 end
 
-get '/:country/:house/term-table/:id.html' do |_, house, id|
+get '/:country/:house/term-table/:id.html' do |country, house, id|
+  @country = ALL_COUNTRIES.find { |c| c[:url] == country } || halt(404)
   @house = @country[:legislatures].find { |h| h[:slug].downcase == house } || halt(404)
 
   last_modified Time.at(@country[:lastmod].to_i)
