@@ -4,13 +4,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/javascript/jquery-ui-1.11.4.custom/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="/javascript/jquery-jvectormap/jquery-jvectormap-2.0.2.css">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/main.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300,400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,400italic">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="/javascript/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+    <script src="/javascript/jquery.select-to-autocomplete.js"></script>
+    <script src="/javascript/jquery-jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="/javascript/jquery-jvectormap/jquery-jvectormap-world-mill-en.js"></script>
     <script src="/javascript/main.js"></script>
     <title><%= @page_title ||= "EveryPolitician" %></title>
 </head>
@@ -37,7 +43,8 @@
                 </div>
                 <div class="site-header__navigation site-header__navigation--secondary">
                     <nav role="navigation">
-                        <a href="/">View by country</a>
+                        <a href="/">Data</a>
+                        <a href="about.html">About</a>
                     </nav>
                 </div>
             </div>
@@ -47,20 +54,16 @@
             <%= yield %>
         </div>
 
-        <footer class="site-footer">
+        <footer class="site-footer ms-footer">
             <div class="container">
                 <div class="column-five-twelfths">
                     <div class="footer__about">
-                        <h2 class="tiny-logo">EveryPolitician</h2>
-                        <p>EveryPolitician is a project from the folks that brought you <a href="http://mapit.poplus.org/">MapIt</a>, <a href="http://sayit.poplus.org/">SayIt</a> &amp; <a href="http://popit.poplus.org/">PopIt</a>. EveryPolitician is a <a href="http://poplus.org">Poplus</a> project</p>
+                        <h2 class="ms-footer__logo"><a href="http://www.mysociety.org">mySociety</a></h2>
+                        <p>EveryPolitician is another project from the awesome people at mySociety.</p>
+                        <p>You might also want to check out <a href="http://mapit.poplus.org/">MapIt</a>, which makes dealing with geographic boundaries a breeze, and <a href="http://sayit.poplus.org/">SayIt</a>, a beautiful interface for organising, reading, and searching speeches and debates.</p>
                     </div>
                 </div>
                 <div class="column-seven-twelfths">
-                    <div class="footer__about">
-                        <nav role="navigation">
-                            <a href="http://everypolitician.org/about">About</a>
-                        </nav>
-                    </div>
                 </div>
             </div>
         </footer>
