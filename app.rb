@@ -65,6 +65,10 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
   erb :term_table
 end
 
+get '/about.html' do
+  erb :about
+end
+
 get '/*.css' do |filename|
   scss :"sass/#{filename}"
 end
