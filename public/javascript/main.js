@@ -218,7 +218,8 @@ $(function(){
 
   // http://baymard.com/labs/country-selector
   $('.js-select-to-autocomplete').selectToAutocomplete().on('change', function(){
-    console.log('user selected country:', $(this).val());
+    // Assumes the <option>'s `value` attribute is a URL slug for the country
+    window.location.href = '/' + $(this).val() + '/';
   }).on('focus', function(){
     $(this).next().trigger("focus");
   });
