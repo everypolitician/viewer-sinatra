@@ -38,6 +38,20 @@
     }
 }
 
+.header-logo {
+    display: inline-block;
+    width: 270px;
+    height: 0;
+    padding-top: 50px;
+    overflow: hidden;
+    background: transparent url("/images/site-logo.png") 0 0 no-repeat;
+
+    @media ($high_dpi_screen) {
+        background-image: url("/images/site-logo@2.png");
+        background-size: 270px 50px;
+    }
+}
+
 .site-header__navigation {
     text-align: left;
     margin: 0 -1em;
