@@ -1,1002 +1,906 @@
 {
-  "afghanistan": {
-    "displayName": "Afghanistan",
-    "allNames": "AF"
-  },
-  "aland": {
-    "displayName": "Åland",
-    "allNames": "AX Aaland Aland Islands"
-  },
-  "albania": {
-    "displayName": "Albania",
-    "allNames": "AL"
-  },
-  "algeria": {
-    "displayName": "Algeria",
-    "allNames": "DZ"
-  },
-  "american-samoa": {
-    "displayName": "American Samoa",
-    "allNames": "AS"
-  },
-  "andorra": {
-    "displayName": "Andorra",
-    "allNames": "AD"
-  },
-  "angola": {
-    "displayName": "Angola",
-    "allNames": "AO"
-  },
-  "anguilla": {
-    "displayName": "Anguilla",
-    "allNames": "AI"
-  },
-  "antarctica": {
-    "displayName": "Antarctica",
-    "allNames": "AQ"
-  },
-  "antigua-and-barbuda": {
-    "displayName": "Antigua And Barbuda",
-    "allNames": "AG"
-  },
-  "argentina": {
-    "displayName": "Argentina",
-    "allNames": "AR"
-  },
-  "armenia": {
-    "displayName": "Armenia",
-    "allNames": "AM"
-  },
-  "aruba": {
-    "displayName": "Aruba",
-    "allNames": "AW"
-  },
-  "australia": {
-    "displayName": "Australia",
-    "allNames": "AU"
-  },
-  "austria": {
-    "displayName": "Austria",
-    "allNames": "AT Österreich Osterreich Oesterreich "
-  },
-  "azerbaijan": {
-    "displayName": "Azerbaijan",
-    "allNames": "AZ"
-  },
   "bahamas": {
     "displayName": "Bahamas",
-    "allNames": "BS"
-  },
-  "bahrain": {
-    "displayName": "Bahrain",
-    "allNames": "BH"
-  },
-  "bangladesh": {
-    "displayName": "Bangladesh",
-    "allNames": "BD"
-  },
-  "barbados": {
-    "displayName": "Barbados",
-    "allNames": "BB"
-  },
-  "belarus": {
-    "displayName": "Belarus",
-    "allNames": "BY"
-  },
-  "belgium": {
-    "displayName": "Belgium",
-    "allNames": "BE België Belgie Belgien Belgique"
-  },
-  "belize": {
-    "displayName": "Belize",
-    "allNames": "BZ"
-  },
-  "benin": {
-    "displayName": "Benin",
-    "allNames": "BJ"
-  },
-  "bermuda": {
-    "displayName": "Bermuda",
-    "allNames": "BM"
-  },
-  "bhutan": {
-    "displayName": "Bhutan",
-    "allNames": "BT"
-  },
-  "bolivia": {
-    "displayName": "Bolivia",
-    "allNames": "BO"
-  },
-  "bonaire-sint-eustatius-and-saba": {
-    "displayName": "Bonaire, Sint Eustatius and Saba",
-    "allNames": "BQ"
-  },
-  "bosnia-and-herzegovina": {
-    "displayName": "Bosnia and Herzegovina",
-    "allNames": "BA"
-  },
-  "botswana": {
-    "displayName": "Botswana",
-    "allNames": "BW"
-  },
-  "bouvet-island": {
-    "displayName": "Bouvet Island",
-    "allNames": "BV"
-  },
-  "brazil": {
-    "displayName": "Brazil",
-    "allNames": "BR Brasil"
-  },
-  "british-indian-ocean-territory": {
-    "displayName": "British Indian Ocean Territory",
-    "allNames": "IO"
-  },
-  "brunei-darussalam": {
-    "displayName": "Brunei Darussalam",
-    "allNames": "BN"
-  },
-  "bulgaria": {
-    "displayName": "Bulgaria",
-    "allNames": "BG"
-  },
-  "burkina-faso": {
-    "displayName": "Burkina Faso",
-    "allNames": "BF"
-  },
-  "burundi": {
-    "displayName": "Burundi",
-    "allNames": "BI"
-  },
-  "cabo-verde": {
-    "displayName": "Cabo Verde",
-    "allNames": "CV Cape Verde"
-  },
-  "cambodia": {
-    "displayName": "Cambodia",
-    "allNames": "KH"
-  },
-  "cameroon": {
-    "displayName": "Cameroon",
-    "allNames": "CM"
-  },
-  "canada": {
-    "displayName": "Canada",
-    "allNames": "CA"
-  },
-  "cayman-islands": {
-    "displayName": "Cayman Islands",
-    "allNames": "KY"
-  },
-  "central-african-republic": {
-    "displayName": "Central African Republic",
-    "allNames": "CF"
-  },
-  "chad": {
-    "displayName": "Chad",
-    "allNames": "TD"
-  },
-  "chile": {
-    "displayName": "Chile",
-    "allNames": "CL"
-  },
-  "china": {
-    "displayName": "China",
-    "allNames": "CN Zhongguo Zhonghua Peoples Republic"
-  },
-  "christmas-island": {
-    "displayName": "Christmas Island",
-    "allNames": "CX"
-  },
-  "cocos-keeling-islands": {
-    "displayName": "Cocos (Keeling) Islands",
-    "allNames": "CC"
-  },
-  "colombia": {
-    "displayName": "Colombia",
-    "allNames": "CO"
-  },
-  "comoros": {
-    "displayName": "Comoros",
-    "allNames": "KM"
-  },
-  "congo-brazzaville": {
-    "displayName": "Congo-Brazzaville",
-    "allNames": "CG"
+    "allNames": "Bahamas バハマ Bahama’s"
   },
   "congo-the-democratic-republic-of-the": {
-    "displayName": "Congo, the Democratic Republic of the",
-    "allNames": "CD"
-  },
-  "cook-islands": {
-    "displayName": "Cook Islands",
-    "allNames": "CK"
-  },
-  "costa-rica": {
-    "displayName": "Costa Rica",
-    "allNames": "CR"
-  },
-  "croatia": {
-    "displayName": "Croatia",
-    "allNames": "HR Hrvatska"
-  },
-  "cuba": {
-    "displayName": "Cuba",
-    "allNames": "CU"
-  },
-  "curacao": {
-    "displayName": "Curaçao",
-    "allNames": "CW Curacao"
-  },
-  "cyprus": {
-    "displayName": "Cyprus",
-    "allNames": "CY"
-  },
-  "czech-republic": {
-    "displayName": "Czech Republic",
-    "allNames": "CZ Česká Ceska"
-  },
-  "denmark": {
-    "displayName": "Denmark",
-    "allNames": "DK Danmark"
-  },
-  "djibouti": {
-    "displayName": "Djibouti",
-    "allNames": "DJ"
-  },
-  "dominica": {
-    "displayName": "Dominica",
-    "allNames": "DM"
-  },
-  "dominican-republic": {
-    "displayName": "Dominican Republic",
-    "allNames": "DO"
-  },
-  "ecuador": {
-    "displayName": "Ecuador",
-    "allNames": "EC"
-  },
-  "egypt": {
-    "displayName": "Egypt",
-    "allNames": "EG"
-  },
-  "el-salvador": {
-    "displayName": "El Salvador",
-    "allNames": "SV"
-  },
-  "equatorial-guinea": {
-    "displayName": "Equatorial Guinea",
-    "allNames": "GQ"
-  },
-  "eritrea": {
-    "displayName": "Eritrea",
-    "allNames": "ER"
-  },
-  "estonia": {
-    "displayName": "Estonia",
-    "allNames": "EE Eesti"
-  },
-  "ethiopia": {
-    "displayName": "Ethiopia",
-    "allNames": "ET"
-  },
-  "falkland-islands-malvinas": {
-    "displayName": "Falkland Islands (Malvinas)",
-    "allNames": "FK"
-  },
-  "faroe-islands": {
-    "displayName": "Faroe Islands",
-    "allNames": "FO Føroyar Færøerne"
-  },
-  "fiji": {
-    "displayName": "Fiji",
-    "allNames": "FJ"
-  },
-  "finland": {
-    "displayName": "Finland",
-    "allNames": "FI Suomi"
-  },
-  "france": {
-    "displayName": "France",
-    "allNames": "FR République française"
-  },
-  "french-guiana": {
-    "displayName": "French Guiana",
-    "allNames": "GF"
-  },
-  "french-polynesia": {
-    "displayName": "French Polynesia",
-    "allNames": "PF"
-  },
-  "french-southern-territories": {
-    "displayName": "French Southern Territories",
-    "allNames": "TF"
-  },
-  "gabon": {
-    "displayName": "Gabon",
-    "allNames": "GA"
-  },
-  "gambia": {
-    "displayName": "Gambia",
-    "allNames": "GM"
-  },
-  "georgia": {
-    "displayName": "Georgia",
-    "allNames": "GE"
-  },
-  "germany": {
-    "displayName": "Germany",
-    "allNames": "DE Bundesrepublik Deutschland"
-  },
-  "ghana": {
-    "displayName": "Ghana",
-    "allNames": "GH"
-  },
-  "gibraltar": {
-    "displayName": "Gibraltar",
-    "allNames": "GI"
-  },
-  "greece": {
-    "displayName": "Greece",
-    "allNames": "GR"
-  },
-  "greenland": {
-    "displayName": "Greenland",
-    "allNames": "GL grønland"
-  },
-  "grenada": {
-    "displayName": "Grenada",
-    "allNames": "GD"
-  },
-  "guadeloupe": {
-    "displayName": "Guadeloupe",
-    "allNames": "GP"
-  },
-  "guam": {
-    "displayName": "Guam",
-    "allNames": "GU"
-  },
-  "guatemala": {
-    "displayName": "Guatemala",
-    "allNames": "GT"
-  },
-  "guernsey": {
-    "displayName": "Guernsey",
-    "allNames": "GG"
-  },
-  "guinea": {
-    "displayName": "Guinea",
-    "allNames": "GN"
-  },
-  "guinea-bissau": {
-    "displayName": "Guinea-Bissau",
-    "allNames": "GW"
-  },
-  "guyana": {
-    "displayName": "Guyana",
-    "allNames": "GY"
-  },
-  "haiti": {
-    "displayName": "Haiti",
-    "allNames": "HT"
-  },
-  "heard-island-and-mcdonald-islands": {
-    "displayName": "Heard Island and McDonald Islands",
-    "allNames": "HM"
-  },
-  "holy-see-vatican-city-state": {
-    "displayName": "Holy See (Vatican City State)",
-    "allNames": "VA"
-  },
-  "honduras": {
-    "displayName": "Honduras",
-    "allNames": "HN"
-  },
-  "hong-kong": {
-    "displayName": "Hong Kong",
-    "allNames": "HK"
-  },
-  "hungary": {
-    "displayName": "Hungary",
-    "allNames": "HU"
-  },
-  "iceland": {
-    "displayName": "Iceland",
-    "allNames": "IS Island"
-  },
-  "india": {
-    "displayName": "India",
-    "allNames": "IN"
-  },
-  "indonesia": {
-    "displayName": "Indonesia",
-    "allNames": "ID"
-  },
-  "iran": {
-    "displayName": "Iran",
-    "allNames": "IR Islamic Republic of Iran"
-  },
-  "iraq": {
-    "displayName": "Iraq",
-    "allNames": "IQ"
-  },
-  "ireland": {
-    "displayName": "Ireland",
-    "allNames": "IE Éire"
-  },
-  "isle-of-man": {
-    "displayName": "Isle of Man",
-    "allNames": "IM"
-  },
-  "israel": {
-    "displayName": "Israel",
-    "allNames": "IL"
-  },
-  "italy": {
-    "displayName": "Italy",
-    "allNames": "IT Italia"
-  },
-  "ivory-coast": {
-    "displayName": "Côte d'Ivoire",
-    "allNames": "CI Cote dIvoire"
-  },
-  "jamaica": {
-    "displayName": "Jamaica",
-    "allNames": "JM"
-  },
-  "japan": {
-    "displayName": "Japan",
-    "allNames": "JP Nippon Nihon"
-  },
-  "jersey": {
-    "displayName": "Jersey",
-    "allNames": "JE"
-  },
-  "jordan": {
-    "displayName": "Jordan",
-    "allNames": "JO"
-  },
-  "kazakhstan": {
-    "displayName": "Kazakhstan",
-    "allNames": "KZ"
-  },
-  "kenya": {
-    "displayName": "Kenya",
-    "allNames": "KE"
-  },
-  "kiribati": {
-    "displayName": "Kiribati",
-    "allNames": "KI"
-  },
-  "korea-democratic-peoples-republic-of": {
-    "displayName": "Korea, Democratic People's Republic of",
-    "allNames": "KP North Korea"
-  },
-  "korea-republic-of": {
-    "displayName": "Korea, Republic of",
-    "allNames": "KR South Korea"
-  },
-  "kuwait": {
-    "displayName": "Kuwait",
-    "allNames": "KW"
-  },
-  "kyrgyzstan": {
-    "displayName": "Kyrgyzstan",
-    "allNames": "KG"
-  },
-  "lao-peoples-democratic-republic": {
-    "displayName": "Lao People's Democratic Republic",
-    "allNames": "LA"
-  },
-  "latvia": {
-    "displayName": "Latvia",
-    "allNames": "LV"
-  },
-  "lebanon": {
-    "displayName": "Lebanon",
-    "allNames": "LB"
-  },
-  "lesotho": {
-    "displayName": "Lesotho",
-    "allNames": "LS"
-  },
-  "liberia": {
-    "displayName": "Liberia",
-    "allNames": "LR"
-  },
-  "libyan-arab-jamahiriya": {
-    "displayName": "Libyan Arab Jamahiriya",
-    "allNames": "LY"
-  },
-  "liechtenstein": {
-    "displayName": "Liechtenstein",
-    "allNames": "LI"
-  },
-  "lithuania": {
-    "displayName": "Lithuania",
-    "allNames": "LT"
-  },
-  "luxembourg": {
-    "displayName": "Luxembourg",
-    "allNames": "LU"
-  },
-  "macao": {
-    "displayName": "Macao",
-    "allNames": "MO"
-  },
-  "macedonia-the-former-yugoslav-republic-of": {
-    "displayName": "Macedonia, The Former Yugoslav Republic Of",
-    "allNames": "MK"
-  },
-  "madagascar": {
-    "displayName": "Madagascar",
-    "allNames": "MG"
-  },
-  "malawi": {
-    "displayName": "Malawi",
-    "allNames": "MW"
-  },
-  "malaysia": {
-    "displayName": "Malaysia",
-    "allNames": "MY"
-  },
-  "maldives": {
-    "displayName": "Maldives",
-    "allNames": "MV"
-  },
-  "mali": {
-    "displayName": "Mali",
-    "allNames": "ML"
-  },
-  "malta": {
-    "displayName": "Malta",
-    "allNames": "MT"
-  },
-  "marshall-islands": {
-    "displayName": "Marshall Islands",
-    "allNames": "MH"
-  },
-  "martinique": {
-    "displayName": "Martinique",
-    "allNames": "MQ"
-  },
-  "mauritania": {
-    "displayName": "Mauritania",
-    "allNames": "MR"
-  },
-  "mauritius": {
-    "displayName": "Mauritius",
-    "allNames": "MU"
-  },
-  "mayotte": {
-    "displayName": "Mayotte",
-    "allNames": "YT"
-  },
-  "mexico": {
-    "displayName": "Mexico",
-    "allNames": "MX Mexicanos"
+    "displayName": "Congo, The Democratic Republic Of The",
+    "allNames": "Congo (Dem. Rep.) Kongo (Dem. Rep.) Congo (Rep. Dem.) コンゴ民主共和国 Congo [DRC] Congo (The Democratic Republic Of The)"
+  },
+  "congo": {
+    "displayName": "Congo",
+    "allNames": "Congo Kongo コンゴ共和国 Congo [Republiek]"
+  },
+  "korea-north": {
+    "displayName": "Korea (North)",
+    "allNames": "Korea (North) Nordkorea Corée du Nord Corea del Norte 朝鮮民主主義人民共和国 Noord-Korea Korea Democratic People's Republic Korea (Democratic People s Republic of)"
+  },
+  "south-korea": {
+    "displayName": "South Korea",
+    "allNames": "South Korea Korea (South) Südkorea Corée du Sud Corea del Sur 大韓民国 Zuid-Korea Korea (Republic of)"
+  },
+  "macedonia": {
+    "displayName": "Macedonia",
+    "allNames": "Macedonia Mazedonien Macédoine F.Y.R.O.M (Macedonia) マケドニア旧ユーゴスラビア共和国 Macedonië [FYROM] Macedonia (The Former Yugoslav Republic of)"
   },
   "micronesia": {
     "displayName": "Micronesia",
-    "allNames": "FM Federated States"
+    "allNames": "Micronesia Mikronesien Micronésie ミクロネシア連邦 Micronesië"
   },
-  "moldova-republic-of": {
-    "displayName": "Moldova, Republic of",
-    "allNames": "MD"
+  "afghanistan": {
+    "displayName": "Afghanistan",
+    "allNames": "Afghanistan Afganistán アフガニスタン"
   },
-  "monaco": {
-    "displayName": "Monaco",
-    "allNames": "MC"
+  "albania": {
+    "displayName": "Albania",
+    "allNames": "Albania Albanien Albanie アルバニア Albanië"
   },
-  "mongolia": {
-    "displayName": "Mongolia",
-    "allNames": "MN"
+  "algeria": {
+    "displayName": "Algeria",
+    "allNames": "Algeria الجزائر Algerien Algérie Argelia アルジェリア Algerije"
   },
-  "montenegro": {
-    "displayName": "Montenegro",
-    "allNames": "ME"
+  "american-samoa": {
+    "displayName": "American Samoa",
+    "allNames": "American Samoa Amerikanisch-Samoa Samoa américaines Samoa Americana アメリカ領サモア Amerikaans Samoa"
   },
-  "montserrat": {
-    "displayName": "Montserrat",
-    "allNames": "MS"
+  "andorra": {
+    "displayName": "Andorra",
+    "allNames": "Andorre Andorra アンドラ"
   },
-  "morocco": {
-    "displayName": "Morocco",
-    "allNames": "MA"
+  "angola": {
+    "displayName": "Angola",
+    "allNames": "Angola アンゴラ"
   },
-  "mozambique": {
-    "displayName": "Mozambique",
-    "allNames": "MZ"
+  "anguilla": {
+    "displayName": "Anguilla",
+    "allNames": "Anguilla アンギラ"
+  },
+  "antigua-and-barbuda": {
+    "displayName": "Antigua and Barbuda",
+    "allNames": "Antigua and Barbuda Antigua und Barbuda Antigua et Barbuda Antigua y Barbuda アンティグア・バーブーダ Antigua en Barbuda"
+  },
+  "argentina": {
+    "displayName": "Argentina",
+    "allNames": "Argentina Argentinien Argentine アルゼンチン Argentinië"
+  },
+  "armenia": {
+    "displayName": "Armenia",
+    "allNames": "Armenia Armenien Arménie アルメニア Armenië"
+  },
+  "aruba": {
+    "displayName": "Aruba",
+    "allNames": "Aruba アルバ"
+  },
+  "australia": {
+    "displayName": "Australia",
+    "allNames": "Australia Australien Australie オーストラリア Australië"
+  },
+  "austria": {
+    "displayName": "Austria",
+    "allNames": "Austria Österreich Autriche オーストリア Oostenrijk"
+  },
+  "azerbaijan": {
+    "displayName": "Azerbaijan",
+    "allNames": "Azerbaijan Aserbaidschan Azerbaïdjan Azerbaiyán アゼルバイジャン Azerbeidzjan"
+  },
+  "bahrain": {
+    "displayName": "Bahrain",
+    "allNames": "Bahrain البحرين Bahreïn Bahrein バーレーン"
+  },
+  "bangladesh": {
+    "displayName": "Bangladesh",
+    "allNames": "Bangladesh Bangladesch バングラデシュ"
+  },
+  "barbados": {
+    "displayName": "Barbados",
+    "allNames": "Barbade Barbados バルバドス"
+  },
+  "belarus": {
+    "displayName": "Belarus",
+    "allNames": "Belarus Weißrussland Biélorussie Bielorrusia ベラルーシ Wit-Rusland Беларусь"
+  },
+  "belgium": {
+    "displayName": "Belgium",
+    "allNames": "Belgium Belgien Belgique Bélgica ベルギー België"
+  },
+  "belize": {
+    "displayName": "Belize",
+    "allNames": "Belize Belice ベリーズ"
+  },
+  "benin": {
+    "displayName": "Benin",
+    "allNames": "Benin Bénin ベナン"
+  },
+  "bermuda": {
+    "displayName": "Bermuda",
+    "allNames": "Bermuda Bermudes Bermudas バミューダ"
+  },
+  "bhutan": {
+    "displayName": "Bhutan",
+    "allNames": "Bhutan Bhoutan Bután ブータン"
+  },
+  "bolivia": {
+    "displayName": "Bolivia",
+    "allNames": "Bolivia Bolivien Bolivie ボリビア多民族国"
+  },
+  "bosnia-and-herzegovina": {
+    "displayName": "Bosnia and Herzegovina",
+    "allNames": "Bosnia and Herzegovina Bosnien und Herzegowina Bosnie et Herzégovine Bosnia y Herzegovina ボスニア・ヘルツェゴビナ Bosnië en Herzegovina Bosnia Herzegovina"
+  },
+  "botswana": {
+    "displayName": "Botswana",
+    "allNames": "Botswana ボツワナ"
+  },
+  "brazil": {
+    "displayName": "Brazil",
+    "allNames": "Brazil Brasilien Brésil Brasil ブラジル Brazilië"
+  },
+  "british-virgin-islands": {
+    "displayName": "British Virgin Islands",
+    "allNames": "British Virgin Islands Britische Jungferninseln Îles Vierges britanniques Islas Vírgenes del Reino Unido イギリス領ヴァージン諸島 Britse Maagdeneilanden Virgin Islands (British)"
+  },
+  "brunei": {
+    "displayName": "Brunei",
+    "allNames": "Brunei ブルネイ・ダルサラーム"
+  },
+  "bulgaria": {
+    "displayName": "Bulgaria",
+    "allNames": "Bulgaria Bulgarien Bulgarie ブルガリア Bulgarije"
+  },
+  "burkina-faso": {
+    "displayName": "Burkina Faso",
+    "allNames": "Burkina Faso ブルキナファソ"
   },
   "myanmar": {
     "displayName": "Myanmar",
-    "allNames": "MM"
+    "allNames": "Myanmar ミャンマー"
+  },
+  "burundi": {
+    "displayName": "Burundi",
+    "allNames": "Burundi ブルンジ"
+  },
+  "cambodia": {
+    "displayName": "Cambodia",
+    "allNames": "Cambodia Kambodscha Cambodge Camboya カンボジア Cambodja"
+  },
+  "cameroon": {
+    "displayName": "Cameroon",
+    "allNames": "Cameroon Kamerun Cameroun Camerún カメルーン Kameroen"
+  },
+  "canada": {
+    "displayName": "Canada",
+    "allNames": "Canada Kanada Canadá カナダ"
+  },
+  "cape-verde": {
+    "displayName": "Cape Verde",
+    "allNames": "Cape Verde Kap Verde Cap Vert Cabo Verde カーボベルデ Kaapverdië"
+  },
+  "cayman-islands": {
+    "displayName": "Cayman Islands",
+    "allNames": "Cayman Islands Kaimaninseln Îles Caïmans Islas Caimán ケイマン諸島 Caymaneilanden"
+  },
+  "central-african-republic": {
+    "displayName": "Central African Republic",
+    "allNames": "Central African Republic Zentralafrikanische Republik République Centrafricaine República Centroafricana 中央アフリカ共和国 Centraal-Afrikaanse Republiek"
+  },
+  "chad": {
+    "displayName": "Chad",
+    "allNames": "Chad تشاد Tschad Tchad チャド Tsjaad"
+  },
+  "chile": {
+    "displayName": "Chile",
+    "allNames": "Chile チリ Chili"
+  },
+  "china": {
+    "displayName": "China",
+    "allNames": "China Chine 中国"
+  },
+  "colombia": {
+    "displayName": "Colombia",
+    "allNames": "Colombia Kolumbien Colombie コロンビア"
+  },
+  "comoros": {
+    "displayName": "Comoros",
+    "allNames": "Comoros Union der Komoren Comores コモロ Comoren"
+  },
+  "costa-rica": {
+    "displayName": "Costa Rica",
+    "allNames": "Costa Rica コスタリカ"
+  },
+  "croatia": {
+    "displayName": "Croatia",
+    "allNames": "Croatia Kroatien Croatie Croacia クロアチア Kroatië Croatia (Hrvatska)"
+  },
+  "cuba": {
+    "displayName": "Cuba",
+    "allNames": "Cuba Kuba キューバ"
+  },
+  "cura-ao": {
+    "displayName": "Curaçao",
+    "allNames": "Curaçao キュラソー島"
+  },
+  "cyprus": {
+    "displayName": "Cyprus",
+    "allNames": "Cyprus Zypern Chypre Chipre キプロス"
+  },
+  "czech-republic": {
+    "displayName": "Czech Republic",
+    "allNames": "Czech Republic Tschechische Republik République Tchèque República Checa チェコ Tsjechië"
+  },
+  "denmark": {
+    "displayName": "Denmark",
+    "allNames": "Denmark Dänemark Danemark Dinamarca デンマーク Denemarken"
+  },
+  "djibouti": {
+    "displayName": "Djibouti",
+    "allNames": "Djibouti جيبوتي Dschibuti ジブチ"
+  },
+  "dominica": {
+    "displayName": "Dominica",
+    "allNames": "Dominica ドミニカ国"
+  },
+  "dominican-republic": {
+    "displayName": "Dominican Republic",
+    "allNames": "Dominican Republic Dominikanische Republik République Dominicaine República Dominicana ドミニカ共和国 Dominicaanse Republiek"
+  },
+  "ecuador": {
+    "displayName": "Ecuador",
+    "allNames": "Ecuador Équateur エクアドル"
+  },
+  "egypt": {
+    "displayName": "Egypt",
+    "allNames": "Egypt مصر Ägypten Égypte Egipto エジプト Egypte"
+  },
+  "el-salvador": {
+    "displayName": "El Salvador",
+    "allNames": "El Salvador Salvador エルサルバドル"
+  },
+  "equatorial-guinea": {
+    "displayName": "Equatorial Guinea",
+    "allNames": "Equatorial Guinea Äquatorial-Guinea Guinée Équatoriale Guinea Ecuatorial 赤道ギニア Equatoriaal-Guinea"
+  },
+  "eritrea": {
+    "displayName": "Eritrea",
+    "allNames": "Eritrea إريتريا Érythrée エリトリア"
+  },
+  "estonia": {
+    "displayName": "Estonia",
+    "allNames": "Estonia Estland Estonie エストニア"
+  },
+  "ethiopia": {
+    "displayName": "Ethiopia",
+    "allNames": "Ethiopia Äthiopien Éthiopie Etiopía エチオピア Ethiopië"
+  },
+  "falkland-islands": {
+    "displayName": "Falkland Islands",
+    "allNames": "Falkland Islands Falklandinseln Îles Malouines Islas Malvinas フォークランド（マルビナス）諸島 Falklandeilanden [Islas Malvinas]"
+  },
+  "faroe-islands": {
+    "displayName": "Faroe Islands",
+    "allNames": "Faroe Islands Färöer-Inseln Îles Féroé Islas Faroe フェロー諸島 Faeröer"
+  },
+  "fiji": {
+    "displayName": "Fiji",
+    "allNames": "Fiji Fidschi Fidji フィジー"
+  },
+  "finland": {
+    "displayName": "Finland",
+    "allNames": "Finland Finnland Finlande Finlandia フィンランド"
+  },
+  "france": {
+    "displayName": "France",
+    "allNames": "France Frankreich the French Republic フランス Frankrijk Francia"
+  },
+  "french-polynesia": {
+    "displayName": "French Polynesia",
+    "allNames": "French Polynesia Französisch-Polynesien Polynésie Française Polinesia Francesa フランス領ポリネシア Frans-Polynesië"
+  },
+  "gabon": {
+    "displayName": "Gabon",
+    "allNames": "Gabon Gabun Gabón ガボン"
+  },
+  "gambia": {
+    "displayName": "Gambia",
+    "allNames": "Gambia ガンビア"
+  },
+  "georgia": {
+    "displayName": "Georgia",
+    "allNames": "Georgia Georgien Géorgie グルジア Georgië"
+  },
+  "germany": {
+    "displayName": "Germany",
+    "allNames": "Germany Deutschland Allemagne Alemania ドイツ Duitsland"
+  },
+  "ghana": {
+    "displayName": "Ghana",
+    "allNames": "Ghana ガーナ"
+  },
+  "gibraltar": {
+    "displayName": "Gibraltar",
+    "allNames": "Gibraltar ジブラルタル"
+  },
+  "greece": {
+    "displayName": "Greece",
+    "allNames": "Greece Griechenland Grèce Grecia ギリシャ Griekenland"
+  },
+  "greenland": {
+    "displayName": "Greenland",
+    "allNames": "Greenland Grönland Groenland Groenlandia グリーンランド"
+  },
+  "grenada": {
+    "displayName": "Grenada",
+    "allNames": "Grenada グレナダ"
+  },
+  "guam": {
+    "displayName": "Guam",
+    "allNames": "Guam グアム"
+  },
+  "guatemala": {
+    "displayName": "Guatemala",
+    "allNames": "Guatemala グアテマラ"
+  },
+  "guernsey": {
+    "displayName": "Guernsey",
+    "allNames": "Guernsey and Alderney Guernsey und Alderney Guernsey et Alderney Guernsey y Alderney ガーンジー Guernsey"
+  },
+  "guinea": {
+    "displayName": "Guinea",
+    "allNames": "Guinea Guinée ギニア Guinee"
+  },
+  "guinea-bissau": {
+    "displayName": "Guinea-Bissau",
+    "allNames": "Guinea-Bissau Guinée-Bissau ギニアビサウ Guinee-Bissau"
+  },
+  "guyana": {
+    "displayName": "Guyana",
+    "allNames": "Guyana ガイアナ"
+  },
+  "haiti": {
+    "displayName": "Haiti",
+    "allNames": "Haiti ハイチ Haïti"
+  },
+  "honduras": {
+    "displayName": "Honduras",
+    "allNames": "Honduras ホンジュラス"
+  },
+  "hong-kong": {
+    "displayName": "Hong Kong",
+    "allNames": "Hong Kong 香港 Hongkong"
+  },
+  "hungary": {
+    "displayName": "Hungary",
+    "allNames": "Hungary Ungarn Hongrie Hungría ハンガリー Hongarije"
+  },
+  "iceland": {
+    "displayName": "Iceland",
+    "allNames": "Iceland Island Islande Islandia アイスランド IJsland"
+  },
+  "india": {
+    "displayName": "India",
+    "allNames": "India Indien Inde インド"
+  },
+  "indonesia": {
+    "displayName": "Indonesia",
+    "allNames": "Indonesia Indonesien Indonésie インドネシア Indonesië"
+  },
+  "iran": {
+    "displayName": "Iran",
+    "allNames": "Iran Irán Iran (Islamic Republic Of) イラン・イスラム共和国 Islamic Republic of Iran"
+  },
+  "iraq": {
+    "displayName": "Iraq",
+    "allNames": "Iraq العراق Irak イラク"
+  },
+  "ireland": {
+    "displayName": "Ireland",
+    "allNames": "Ireland Irland Irlande Irlanda アイルランド Ierland"
+  },
+  "isle-of-man": {
+    "displayName": "Isle of Man",
+    "allNames": "Isle of Man Insel Man Île de Man Isla de Man マン島"
+  },
+  "israel": {
+    "displayName": "Israel",
+    "allNames": "Israel Israël イスラエル"
+  },
+  "italy": {
+    "displayName": "Italy",
+    "allNames": "Italy Italien Italie Italia イタリア Italië"
+  },
+  "c-te-d-ivoire": {
+    "displayName": "Côte D'Ivoire",
+    "allNames": "Côte D'Ivoire Elfenbeinküste コートジボワール Ivoorkust Cote D'Ivoire (Ivory Coast) Cote d Ivoire (Ivory Coast)"
+  },
+  "jamaica": {
+    "displayName": "Jamaica",
+    "allNames": "Jamaica Jamaika Jamaïque ジャマイカ"
+  },
+  "japan": {
+    "displayName": "Japan",
+    "allNames": "Japan Japon Japón 日本"
+  },
+  "jersey": {
+    "displayName": "Jersey",
+    "allNames": "Jersey ジャージー"
+  },
+  "jordan": {
+    "displayName": "Jordan",
+    "allNames": "Jordan الأردن Jordanien Jordanie Jordania ヨルダン Jordanië"
+  },
+  "kazakhstan": {
+    "displayName": "Kazakhstan",
+    "allNames": "Kazakhstan Kasachstan Kazajistán カザフスタン Kazachstan"
+  },
+  "kenya": {
+    "displayName": "Kenya",
+    "allNames": "Kenya Kenia ケニア"
+  },
+  "kiribati": {
+    "displayName": "Kiribati",
+    "allNames": "Kiribati キリバス"
+  },
+  "kuwait": {
+    "displayName": "Kuwait",
+    "allNames": "Kuwait الكويت Koweït クウェート Koeweit"
+  },
+  "kyrgyzstan": {
+    "displayName": "Kyrgyzstan",
+    "allNames": "Kyrgyzstan Kirgisistan Kirghizistan Kirguizistán キルギス Kirgizië Kyrgzstan"
+  },
+  "laos": {
+    "displayName": "Laos",
+    "allNames": "Laos ラオス人民民主共和国 Lao People s Democratic Republic"
+  },
+  "latvia": {
+    "displayName": "Latvia",
+    "allNames": "Latvia Lettland Lettonie Letonia ラトビア Letland"
+  },
+  "lebanon": {
+    "displayName": "Lebanon",
+    "allNames": "Lebanon لبنان Libanon Liban Líbano レバノン"
+  },
+  "lesotho": {
+    "displayName": "Lesotho",
+    "allNames": "Lesotho レソト"
+  },
+  "liberia": {
+    "displayName": "Liberia",
+    "allNames": "Liberia リベリア"
+  },
+  "libya": {
+    "displayName": "Libya",
+    "allNames": "Libya ليبيا Libyen Libye Libia リビア Libië Libyan Arab Jamahiriya"
+  },
+  "liechtenstein": {
+    "displayName": "Liechtenstein",
+    "allNames": "Liechtenstein リヒテンシュタイン"
+  },
+  "lithuania": {
+    "displayName": "Lithuania",
+    "allNames": "Lithuania Litauen Lituanie Lituania リトアニア Litouwen Літва"
+  },
+  "luxembourg": {
+    "displayName": "Luxembourg",
+    "allNames": "Luxembourg Luxemburg Luxemburgo ルクセンブルク"
+  },
+  "madagascar": {
+    "displayName": "Madagascar",
+    "allNames": "Madagascar Madagaskar the Republic of Madagascar マダガスカル"
+  },
+  "malawi": {
+    "displayName": "Malawi",
+    "allNames": "Malawi マラウイ"
+  },
+  "malaysia": {
+    "displayName": "Malaysia",
+    "allNames": "Malaysia Malaisie Malasia マレーシア Maleisië"
+  },
+  "maldives": {
+    "displayName": "Maldives",
+    "allNames": "Maldives Malediven Maldivas モルディブ Maldiven"
+  },
+  "mali": {
+    "displayName": "Mali",
+    "allNames": "Mali マリ"
+  },
+  "malta": {
+    "displayName": "Malta",
+    "allNames": "Malta Malte マルタ"
+  },
+  "marshall-islands": {
+    "displayName": "Marshall Islands",
+    "allNames": "Marshall Islands Marshallinseln Îles Marshall Islas Marshall マーシャル諸島 Marshalleilanden"
+  },
+  "mauritania": {
+    "displayName": "Mauritania",
+    "allNames": "Mauritania موريتانيا Mauretanien Mauritanie モーリタニア Mauritanië"
+  },
+  "mauritius": {
+    "displayName": "Mauritius",
+    "allNames": "Mauritius Île Maurice Mauricio モーリシャス"
+  },
+  "mexico": {
+    "displayName": "Mexico",
+    "allNames": "Mexico Mexiko Mexique México メキシコ"
+  },
+  "moldova": {
+    "displayName": "Moldova",
+    "allNames": "Moldova Moldawien Moldavie Moldavia the Republic of Moldova モルドバ共和国 Moldavië"
+  },
+  "monaco": {
+    "displayName": "Monaco",
+    "allNames": "Monaco Mónaco モナコ"
+  },
+  "mongolia": {
+    "displayName": "Mongolia",
+    "allNames": "Mongolia Mongolei Mongolie モンゴル Mongolië"
+  },
+  "montenegro": {
+    "displayName": "Montenegro",
+    "allNames": "Crna Gora Montenegro モンテネグロ"
+  },
+  "montserrat": {
+    "displayName": "Montserrat",
+    "allNames": "Montserrat モントセラト"
+  },
+  "morocco": {
+    "displayName": "Morocco",
+    "allNames": "Morocco المغرب Marokko Maroc Marruecos モロッコ"
+  },
+  "mozambique": {
+    "displayName": "Mozambique",
+    "allNames": "Mozambique Mosambik モザンビーク"
   },
   "namibia": {
     "displayName": "Namibia",
-    "allNames": "NA"
+    "allNames": "Namibia Namibie ナミビア Namibië"
   },
   "nauru": {
     "displayName": "Nauru",
-    "allNames": "NR"
+    "allNames": "Nauru ナウル"
   },
   "nepal": {
     "displayName": "Nepal",
-    "allNames": "NP"
+    "allNames": "Nepal Népal the Federal Democratic Republic of Nepal ネパール"
   },
   "netherlands": {
     "displayName": "Netherlands",
-    "allNames": "NL Holland Nederland"
+    "allNames": "Netherlands Niederlande Pays-Bas Países Bajos オランダ Nederland"
   },
   "new-caledonia": {
     "displayName": "New Caledonia",
-    "allNames": "NC"
+    "allNames": "New Caledonia Neukaledonien Nouvelle Calédonie Nueva Caledonia ニューカレドニア Nieuw-Caledonië"
   },
   "new-zealand": {
     "displayName": "New Zealand",
-    "allNames": "NZ"
+    "allNames": "New Zealand Neuseeland Nouvelle ZÃ©lande Nueva Zelanda ニュージーランド Nieuw-Zeeland"
   },
   "nicaragua": {
     "displayName": "Nicaragua",
-    "allNames": "NI"
+    "allNames": "Nicaragua ニカラグア"
   },
   "niger": {
     "displayName": "Niger",
-    "allNames": "NE"
+    "allNames": "Niger Níger ニジェール"
   },
   "nigeria": {
     "displayName": "Nigeria",
-    "allNames": "NG"
-  },
-  "niue": {
-    "displayName": "Niue",
-    "allNames": "NU"
+    "allNames": "Nigeria Nigéria the Federal Republic of Nigeria ナイジェリア"
   },
   "norfolk-island": {
     "displayName": "Norfolk Island",
-    "allNames": "NF"
-  },
-  "northern-ireland": {
-    "displayName": "Northern Ireland",
-    "allNames": "GB-NIR"
+    "allNames": "Norfolk Island Norfolkinsel Île de Norfolk Isla de Norfolk ノーフォーク島 Norfolkeiland"
   },
   "northern-mariana-islands": {
     "displayName": "Northern Mariana Islands",
-    "allNames": "MP"
+    "allNames": "Northern Mariana Islands Nördliche Marianen Mariannes du Nord Islas Marianas del Norte 北マリアナ諸島 Noordelijke Marianeneilanden"
   },
   "norway": {
     "displayName": "Norway",
-    "allNames": "NO Norge Noreg"
+    "allNames": "Norway Norwegen Norvège Noruega ノルウェー Noorwegen"
   },
   "oman": {
     "displayName": "Oman",
-    "allNames": "OM"
+    "allNames": "Oman عمان Omán オマーン"
   },
   "pakistan": {
     "displayName": "Pakistan",
-    "allNames": "PK"
+    "allNames": "Pakistan Paquistán パキスタン"
   },
   "palau": {
     "displayName": "Palau",
-    "allNames": "PW"
-  },
-  "palestinian-territory-occupied": {
-    "displayName": "Palestinian Territory, Occupied",
-    "allNames": "PS"
+    "allNames": "Palau パラオ"
   },
   "panama": {
     "displayName": "Panama",
-    "allNames": "PA"
+    "allNames": "Panama Panamá パナマ"
   },
   "papua-new-guinea": {
     "displayName": "Papua New Guinea",
-    "allNames": "PG"
+    "allNames": "Papua New Guinea Papua-Neuguinea Papouasie Nouvelle-Guinée Papúa Nueva Guinea パプアニューギニア Papoea-Nieuw-Guinea"
   },
   "paraguay": {
     "displayName": "Paraguay",
-    "allNames": "PY"
+    "allNames": "Paraguay パラグアイ"
   },
   "peru": {
     "displayName": "Peru",
-    "allNames": "PE"
+    "allNames": "Peru Pérou Perú ペルー"
   },
   "philippines": {
     "displayName": "Philippines",
-    "allNames": "PH"
-  },
-  "pitcairn": {
-    "displayName": "Pitcairn",
-    "allNames": "PN"
+    "allNames": "Philippines Philippinen Filipinas フィリピン Filipijnen"
   },
   "poland": {
     "displayName": "Poland",
-    "allNames": "PL"
+    "allNames": "Poland Polen Pologne Polonia ポーランド"
   },
   "portugal": {
     "displayName": "Portugal",
-    "allNames": "PT"
+    "allNames": "Portugal ポルトガル"
   },
   "puerto-rico": {
     "displayName": "Puerto Rico",
-    "allNames": "PR"
+    "allNames": "Puerto Rico プエルトリコ"
   },
   "qatar": {
     "displayName": "Qatar",
-    "allNames": "QA"
-  },
-  "réunion": {
-    "displayName": "Réunion",
-    "allNames": "RE Reunion"
+    "allNames": "Qatar قطر Katar カタール"
   },
   "romania": {
     "displayName": "Romania",
-    "allNames": "RO"
+    "allNames": "Romania Rumänien Roumanie Rumania ルーマニア Roemenië"
   },
-  "russian-federation": {
-    "displayName": "Russian Federation",
-    "allNames": "RU Russia Rossiya"
+  "russia": {
+    "displayName": "Russia",
+    "allNames": "Russia Russland Russie Rusia ロシア連邦 Rusland Россия Расія"
   },
   "rwanda": {
     "displayName": "Rwanda",
-    "allNames": "RW"
+    "allNames": "Rwanda Ruanda ルワンダ"
   },
-  "saint-barthélemy": {
+  "saint-barth-lemy": {
     "displayName": "Saint Barthélemy",
-    "allNames": "BL"
+    "allNames": "Saint Barthélemy Saint-Barthélemy サン・バルテルミー"
   },
   "saint-helena": {
     "displayName": "Saint Helena",
-    "allNames": "SH"
+    "allNames": "Saint Helena Sankt Helena Sainte Hélène Santa Helena セントヘレナ・アセンションおよびトリスタンダクーニャ Sint-Helena"
   },
   "saint-kitts-and-nevis": {
     "displayName": "Saint Kitts and Nevis",
-    "allNames": "KN"
+    "allNames": "Saint Kitts and Nevis Föderation St. Kitts und Nevis Saint Kitts et Nevis Saint Kitts y Nevis セントクリストファー・ネイビス Saint Kitts en Nevis St. Kitts and Nevis"
   },
   "saint-lucia": {
     "displayName": "Saint Lucia",
-    "allNames": "LC"
+    "allNames": "Saint Lucia Saint-Lucie Santa Lucía セントルシア"
   },
-  "saint-martin-french-part": {
-    "displayName": "Saint Martin (French Part)",
-    "allNames": "MF"
+  "saint-martin": {
+    "displayName": "Saint Martin",
+    "allNames": "Saint Martin サン・マルタン（フランス領） Saint-Martin"
   },
   "saint-pierre-and-miquelon": {
     "displayName": "Saint Pierre and Miquelon",
-    "allNames": "PM"
+    "allNames": "Saint Pierre and Miquelon Saint-Pierre und Miquelon Saint-Pierre-et-Miquelon San Pedro y Miquelón サンピエール島・ミクロン島 Saint Pierre en Miquelon"
   },
   "saint-vincent-and-the-grenadines": {
     "displayName": "Saint Vincent and the Grenadines",
-    "allNames": "VC"
+    "allNames": "Saint Vincent and the Grenadines Saint Vincent und die Grenadinen Saint-Vincent et les Grenadines San Vicente y Granadinas セントビンセントおよびグレナディーン諸島 Saint Vincent en de Grenadines"
   },
   "samoa": {
     "displayName": "Samoa",
-    "allNames": "WS"
+    "allNames": "Samoa サモア"
   },
   "san-marino": {
     "displayName": "San Marino",
-    "allNames": "SM"
-  },
-  "sao-tome-and-principe": {
-    "displayName": "Sao Tome and Principe",
-    "allNames": "ST"
+    "allNames": "San Marino Saint-Marin サンマリノ"
   },
   "saudi-arabia": {
     "displayName": "Saudi Arabia",
-    "allNames": "SA"
+    "allNames": "Saudi Arabia السعودية Saudi-Arabien Arabie Saoudite Arabia Saudí サウジアラビア Saoedi-Arabië"
   },
   "senegal": {
     "displayName": "Senegal",
-    "allNames": "SN"
+    "allNames": "Senegal Sénégal セネガル"
   },
   "serbia": {
     "displayName": "Serbia",
-    "allNames": "RS"
+    "allNames": "Serbia Serbien Serbie セルビア Servië"
   },
   "seychelles": {
     "displayName": "Seychelles",
-    "allNames": "SC"
+    "allNames": "Seychelles Seychellen セーシェル"
   },
   "sierra-leone": {
     "displayName": "Sierra Leone",
-    "allNames": "SL"
+    "allNames": "Sierra Leone シエラレオネ"
   },
   "singapore": {
     "displayName": "Singapore",
-    "allNames": "SG"
+    "allNames": "Singapore Singapur Singapour シンガポール"
   },
-  "sint-maarten-dutch-part": {
-    "displayName": "Sint Maarten (Dutch Part)",
-    "allNames": "SX"
+  "sint-maarten": {
+    "displayName": "Sint Maarten",
+    "allNames": "Sint Maarten セント・マーチン島"
   },
   "slovakia": {
     "displayName": "Slovakia",
-    "allNames": "SK"
+    "allNames": "Slovakia Slowakei Slovaquie República Eslovaca スロバキア Slowakije"
   },
   "slovenia": {
     "displayName": "Slovenia",
-    "allNames": "SI"
+    "allNames": "Slovenia Slowenien Slovénie Eslovenia スロベニア Slovenië"
   },
   "solomon-islands": {
     "displayName": "Solomon Islands",
-    "allNames": "SB"
+    "allNames": "Solomon Islands Salomonen Îles Salomon Islas Salomón ソロモン諸島 Salomonseilanden"
   },
   "somalia": {
     "displayName": "Somalia",
-    "allNames": "SO"
+    "allNames": "Somalia الصومال ソマリア Somalië"
   },
   "south-africa": {
     "displayName": "South Africa",
-    "allNames": "ZA"
-  },
-  "south-georgia-and-the-south-sandwich-islands": {
-    "displayName": "South Georgia and the South Sandwich Islands",
-    "allNames": "GS"
+    "allNames": "South Africa Republik Südafrika Afrique du Sud República de Sudáfrica 南アフリカ Zuid-Afrika"
   },
   "south-sudan": {
     "displayName": "South Sudan",
-    "allNames": "SS"
+    "allNames": "South Sudan Südsudan 南スーダン Zuid-Soedan"
   },
   "spain": {
     "displayName": "Spain",
-    "allNames": "ES España"
+    "allNames": "Spain Spanien Espagne España スペイン Spanje"
   },
   "sri-lanka": {
     "displayName": "Sri Lanka",
-    "allNames": "LK"
+    "allNames": "Sri Lanka スリランカ"
   },
   "sudan": {
     "displayName": "Sudan",
-    "allNames": "SD"
+    "allNames": "Sudan السودان Soudan Sudán スーダン Soedan"
   },
   "suriname": {
     "displayName": "Suriname",
-    "allNames": "SR"
-  },
-  "svalbard-and-jan-mayen": {
-    "displayName": "Svalbard and Jan Mayen",
-    "allNames": "SJ"
+    "allNames": "Suriname Surinam スリナム"
   },
   "swaziland": {
     "displayName": "Swaziland",
-    "allNames": "SZ"
+    "allNames": "Swaziland Swasiland Suazilandia スワジランド"
   },
   "sweden": {
     "displayName": "Sweden",
-    "allNames": "SE Sverige"
+    "allNames": "Sweden Schweden Suède Suecia スウェーデン Zweden"
   },
   "switzerland": {
     "displayName": "Switzerland",
-    "allNames": "CH Swiss Confederation Schweiz Suisse Svizzera Svizra"
+    "allNames": "Switzerland Schweiz Suisse Suiza スイス Zwitserland"
   },
-  "syrian-arab-republic": {
-    "displayName": "Syrian Arab Republic",
-    "allNames": "SY Syria"
+  "syria": {
+    "displayName": "Syria",
+    "allNames": "Syria سوريا سورية Syrien Syrie Siria シリア・アラブ共和国 Syrië"
   },
-  "taiwan-province-of-china": {
-    "displayName": "Taiwan, Province of China",
-    "allNames": "TW"
+  "s-o-tom-and-pr-ncipe": {
+    "displayName": "São Tomé and Príncipe",
+    "allNames": "São Tomé and Príncipe São Tomé und Príncipe São Tomé et Príncipe Santo Tomé y Príncipe サントメ・プリンシペ Sao Tomé en Principe"
   },
   "tajikistan": {
     "displayName": "Tajikistan",
-    "allNames": "TJ"
+    "allNames": "Tajikistan Tadschikistan Tayikistán タジキスタン Tadzjikistan Tajikstan"
   },
-  "tanzania-united-republic-of": {
-    "displayName": "Tanzania, United Republic of",
-    "allNames": "TZ"
+  "tanzania": {
+    "displayName": "Tanzania",
+    "allNames": "Tanzania Tansania Tanzanie タンザニア Tanzania United Republic"
   },
   "thailand": {
     "displayName": "Thailand",
-    "allNames": "TH"
+    "allNames": "Thailand Thaïlande Tailandia タイ"
   },
   "timor-leste": {
     "displayName": "Timor-Leste",
-    "allNames": "TL"
+    "allNames": "East Timor Timor-Leste Timor oriental Timor Oriental 東ティモール Oost-Timor"
   },
   "togo": {
     "displayName": "Togo",
-    "allNames": "TG"
+    "allNames": "Togo トーゴ"
   },
   "tokelau": {
     "displayName": "Tokelau",
-    "allNames": "TK"
+    "allNames": "Tokelau Îles Tokelau Islas Tokelau トケラウ"
   },
   "tonga": {
     "displayName": "Tonga",
-    "allNames": "TO"
+    "allNames": "Tonga トンガ"
   },
   "trinidad-and-tobago": {
     "displayName": "Trinidad and Tobago",
-    "allNames": "TT"
+    "allNames": "Trinidad and Tobago Trinidad und Tobago Trinité et Tobago Trinidad y Tobago トリニダード・トバゴ Trinidad en Tobago"
   },
   "tunisia": {
     "displayName": "Tunisia",
-    "allNames": "TN"
+    "allNames": "Tunisia تونس Tunesien Tunisie Túnez チュニジア Tunesië"
   },
   "turkey": {
     "displayName": "Turkey",
-    "allNames": "TR Türkiye Turkiye"
+    "allNames": "Turkey Türkei Turquie Turquía トルコ Turkije"
   },
   "turkmenistan": {
     "displayName": "Turkmenistan",
-    "allNames": "TM"
+    "allNames": "Turkmenistan Turkménistan Turkmenistán トルクメニスタン"
   },
   "turks-and-caicos-islands": {
     "displayName": "Turks and Caicos Islands",
-    "allNames": "TC"
+    "allNames": "Turks and Caicos Islands Turks- und Caicosinseln Îles Turks et Caïcos Islas Turks y Caicos タークス・カイコス諸島 Turks- en Caicoseilanden"
   },
   "tuvalu": {
     "displayName": "Tuvalu",
-    "allNames": "TV"
+    "allNames": "Tuvalu ツバル"
+  },
+  "virgin-islands-u-s": {
+    "displayName": "Virgin Islands, U.S.",
+    "allNames": "Virgin Islands of the United States Amerikanische Jungferninseln Îles Vierges américaines Islas Vírgenes de los Estados Unidos アメリカ領ヴァージン諸島 Amerikaanse Maagdeneilanden Virgin Islands (U.S.)"
   },
   "uganda": {
     "displayName": "Uganda",
-    "allNames": "UG"
+    "allNames": "Uganda ウガンダ Oeganda"
   },
   "ukraine": {
     "displayName": "Ukraine",
-    "allNames": "UA Ukrayina"
+    "allNames": "Ukraine Ucrania ウクライナ Oekraïne Украина Україна Украіна"
   },
   "united-arab-emirates": {
     "displayName": "United Arab Emirates",
-    "allNames": "AE UAE Emirates"
+    "allNames": "United Arab Emirates الإمارات العربية المتحدة Vereinigte Arabische Emirate Émirats Arabes Unis Emiratos Árabes Unidos アラブ首長国連邦 Verenigde Arabische Emiraten"
   },
-  "uk": {
+  "united-kingdom": {
     "displayName": "United Kingdom",
-    "allNames": "GB Great Britain England UK Wales Scotland Northern Ireland"
+    "allNames": "United Kingdom Vereinigtes Königreich Royaume-Uni Reino Unido イギリス Verenigd Koninkrijk Great Britain (UK)"
   },
   "united-states": {
     "displayName": "United States",
-    "allNames": "US USA United States of America"
-  },
-  "united-states-minor-outlying-islands": {
-    "displayName": "United States Minor Outlying Islands",
-    "allNames": "UM"
+    "allNames": "United States of America Vereinigte Staaten von Amerika États-Unis Estados Unidos アメリカ合衆国 Verenigde Staten"
   },
   "uruguay": {
     "displayName": "Uruguay",
-    "allNames": "UY"
+    "allNames": "Uruguay ウルグアイ"
   },
   "uzbekistan": {
     "displayName": "Uzbekistan",
-    "allNames": "UZ"
+    "allNames": "Uzbekistan Usbekistan Ouzbékistan Uzbekistán ウズベキスタン Oezbekistan"
   },
   "vanuatu": {
     "displayName": "Vanuatu",
-    "allNames": "VU"
+    "allNames": "Vanuatu バヌアツ"
+  },
+  "vatican-city": {
+    "displayName": "Vatican City",
+    "allNames": "Vatican City Vatikan Cité du Vatican Ciudad del Vaticano バチカン市国 Vaticaanstad Vatican City State (Holy See)"
   },
   "venezuela": {
     "displayName": "Venezuela",
-    "allNames": "VE"
+    "allNames": "Venezuela ベネズエラ・ボリバル共和国"
   },
   "vietnam": {
     "displayName": "Vietnam",
-    "allNames": "VN"
-  },
-  "virgin-islands-british": {
-    "displayName": "Virgin Islands, British",
-    "allNames": "VG"
-  },
-  "virgin-islands-us": {
-    "displayName": "Virgin Islands, U.S.",
-    "allNames": "VI"
+    "allNames": "Vietnam ベトナム Viet Nam"
   },
   "wallis-and-futuna": {
     "displayName": "Wallis and Futuna",
-    "allNames": "WF"
-  },
-  "western-sahara": {
-    "displayName": "Western Sahara",
-    "allNames": "EH"
+    "allNames": "Wallis and Futuna Wallis und Futuna Wallis et Futuna Wallis y Futuna ウォリス・フツナ Wallis en Futuna"
   },
   "yemen": {
     "displayName": "Yemen",
-    "allNames": "YE"
+    "allNames": "Yemen اليمن Jemen Yémen イエメン"
   },
   "zambia": {
     "displayName": "Zambia",
-    "allNames": "ZM"
+    "allNames": "Zambia Sambia Zambie ザンビア"
   },
   "zimbabwe": {
     "displayName": "Zimbabwe",
-    "allNames": "ZW"
+    "allNames": "Zimbabwe Simbabwe Zimbabue ジンバブエ"
+  },
+  "aland": {
+    "displayName": "Åland Islands",
+    "allNames": "Åland Islands Åland オーランド諸島 Ålandeilanden"
   }
 }
