@@ -23,18 +23,18 @@ set :erb, trim: '-'
 get '/' do
   @countries = ALL_COUNTRIES.to_a
   @world = WORLD.to_a
-  erb :new_index
+  erb :homepage
 end
 
 get '/countries.html' do
   @countries = ALL_COUNTRIES.to_a
   @cjson = cjson
-  erb :front_index
+  erb :countries
 end
 
 get '/:country/' do |country|
   if @country = ALL_COUNTRIES.find { |c| c[:url] == country }
-    erb :index
+    erb :country
   elsif @missing = WORLD[country.to_sym]
     erb :country_missing
   else 
