@@ -38,20 +38,20 @@
                       <% if @country %>
                         <a href="/<%= @country[:url] %>/"><%= @country[:name] %></a>
                       <% else %>
-                        <span class="header-logo">EveryPolitician</span>
+                        <a href="/"><span class="header-logo">EveryPolitician</span></a>
                       <% end %>
                     </h2>
                 </div>
                 <div class="site-header__navigation site-header__navigation--primary">
                     <nav role="navigation">
                       <% if @country %>
-                        <a href="http://everypolitician.org">EveryPolitician</a>
+                        <a href="/"><span class="header-logo">EveryPolitician</span></a>
                       <% end %>
                     </nav>
                 </div>
                 <div class="site-header__navigation site-header__navigation--secondary">
                     <nav role="navigation">
-                        <a href="/">Data</a>
+                        <a href="/countries.html">Data</a>
                         <a href="/about.html">About</a>
                     </nav>
                 </div>
@@ -77,6 +77,6 @@
         </footer>
 
     </div>
-</body>
+  </body>
 </html>
 

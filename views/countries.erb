@@ -47,7 +47,7 @@
       onRegionClick: function(event, code, region) { 
         event.preventDefault();
         if(ep_link = ep_countries[code]) { 
-          var url = 'http://data.everypolitician.org/' + ep_link;
+          var url = '/' + ep_link + "/";
           window.location = url;
         } 
         return false;

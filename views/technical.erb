@@ -1,0 +1,158 @@
+<div class="container" id="about">
+  <div class="page-section">
+
+    <h1>Technical overview</h1>
+    <p>
+      <a href="/">EveryPolitician</a> makes data about politicians
+      available in a consistent manner. If you’re a developer who wants
+      to write code that consumes that data, this page is for you.
+    </p>
+    <h2>The data: CSV or JSON (Popolo)</h2>
+    <p>
+      EveryPolitician publishes the data so you can use it however you want.
+      Use it to power your tools, to drive data-based projects, and to help
+      people know more about who their politicians are. It’s available to
+      download in either <a href="https://en.wikipedia.org/wiki/JSON">JSON</a> or
+      <a href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> formats.
+    </p>
+    <p>
+      Broadly speaking, we provide the complete, rich data in JSON. We use the <a
+      href="http://www.popoloproject.com/">Popolo standard</a> &mdash; if
+      you’re a developer that’s great for you because you get every
+      detail of the data. The CSV data is simpler &mdash; it’s ideal for
+      dropping into a spreadsheet or displaying in a web page.
+    </p>
+    <p>
+      For example, if someone changes their name, their latest name will be
+      what’s presented as their name in the CSV. But if you dive into the JSON
+      data you’re be able to see the dates when this new name applied, and what
+      it was before. You can think of the JSON as the full data in its raw
+      form, and the CSVs as the refined, more pragmatic version.
+    </p>
+    <p>
+      EveryPolitician doesn’t provide an API for you to query the data
+      &mdash; we simply make the whole lot available for download, and if you
+      need to be selective about which bits to use, you can do that
+      processing at your end. 
+    </p>
+    <p>
+      However, we <em>do</em> slice the CSV data up into separate files
+      for each legislative period for a country.  We use these
+      "parliamentary terms" because pretty much every legislature in the
+      world can be broken down in this way, and applications often only
+      really want to know data about the people currently in these
+      positions. For many countries we currently only <em>have</em> data
+      for the current period, but we‘re very keen to also add older,
+      "historic" data too.
+    </p>
+    <h2>
+      Getting the most recent data
+    </h2>
+    <p>
+      If you just browse the site, you’ll find that EveryPolitician links to
+      the most recently updated version of its data files.
+    </p>
+    <p>
+      But if you’re accessing the data programmatically, that won’t work nicely
+      for you because the data is hosted on github, which doesn’t serve the
+      right MIME type when your application fetches the data. Instead, you
+      should pull it via RawGit, and to do that you’ll need to know the URL of
+      the most recent data &mdash; and that means determining the SHA of the git
+      commit that put it there. The SHA may be different for each legislature
+      (because we rebuild the data as changes and additions come in on a
+      per-legislature basis), so to find that out, you need to look in
+      <code>countries.json</code>.
+    </p>
+    <h3>
+      Explaining <code>countries.json</code>
+    </h3>
+    <p>
+      EveryPolitician publishes a list in JSON format of
+      all the countries we have data for:
+      <a href="https://raw.githubusercontent.com/everypolitician/everypolitician-data/master/countries.json"><code>countries.json</code></a>.
+      This file includes metadata about what’s available to download.
+    </p>
+    <p>
+      Key fields that <code>countries.json</code> has for each country include:
+    </p>
+    <ul>
+      <li>
+        <code>name</code>:
+        the name of the country to help human-reading of the data
+      </li>
+      <li>
+        <code>slug</code>:
+        the name with spaces replaced by hyphens and punctuation
+        stripped, so suitable for use in URLs and directory names
+      </li>
+      <li>
+        <code>code</code>:
+        the country code (for example, <code>EE</code> for Estonia),
+        which helps with programmatic lookups. We’re using 
+        <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha-2</a>
+        country codes where possible (with additional ISO 3166-2 
+        three-letter codes where appropriate: for example, <code>GB-WLS</code> for Wales).
+      </li>
+      <li>
+        <code>legislatures</code>:
+        a list of legislatures within this county.  There are lots of
+        ways governments are organised. Some have a single house, others
+        have separate upper and lower chambers. Sometimes a country
+        changes its entire legislative process completely, such as the
+        Council of Deputies in Libya replaced the General National
+        Congress. We separate each of these out individually.
+      </li>
+    </ul>
+    <p>
+      Within the legislatures, in addition to a similar <code>name</code>
+      and <code>slug</code>, these fields help you identify and locate the
+      data you want:
+    </p>
+    <ul>
+      <li>
+        <code>popolo</code>:
+        the path to the Popolo JSON file
+      </li>
+      <li>
+        <code>lastmod</code>:
+        Unix time when the data was last modified
+      </li>
+      <li>
+        <code>sha</code>:
+        git’s hash for the commit in which the data was last modified (see following section)
+      </li>
+      <li>
+        <code>legislative_periods</code>:
+        a list of each of the terms, or periods. Each one of those has these fields:
+        <ul>
+          <li><code>id</code>, <code>name</code>, <code>start_date</code>, and <code>slug</code></li>
+          <li>
+            and also a path (from the directory containing <code>countries.json</code>) to the CSV file containing the data for this term of this legislature
+            (for example, <code>data/Bangladesh/House/term-10.csv</code>)
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h3>
+      How to get the most up-to-date version of the data
+    </h3>
+    <p>
+      EveryPolitician’s data is being updated frequently. 
+    </p>
+    <p>
+      The EveryPolitician website offers up the most recent versions of its
+      files, so <strong>if you’re just browsing, then you’ll be getting the latest
+      data</strong>. But if you’re working with the data programmatically (for example,
+      in a client-side app making calls to the data), that won’t work for you.
+      GitHub won’t send the right headers, because it’s not really a data
+      store. So instead, use the RawGit URL and the most recent SHA, shown as
+      <code>sha</code> in the <code>countries.json</code> file, for the data
+      for the legislature you want.
+    </p>
+    <p>
+      If you’re writing an app and you want to cache the data files locally,
+      it’s probably better to do that based on the SHA, and refresh on change.
+    </p>
+    
+  </div>
+</div>
