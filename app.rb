@@ -74,6 +74,11 @@ get '/about.html' do
   erb :about
 end
 
+get '/status/all_countries.html' do
+  @world = WORLD.to_a
+  erb :all_countries
+end
+
 get '/technical.html' do
   erb :technical
 end

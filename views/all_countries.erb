@@ -1,0 +1,15 @@
+<div class="page-section" id="home">
+  
+    <div class="container">
+        <ul class="grid-list">
+          <% @world.sort_by { |k, _| k }.each do |k, v| %>
+            <li>
+                <a class="avatar-unit" href="/<%= k %>/">
+                    <span class="avatar"><i class="fa fa-users"></i></span>
+                    <h3><%= v[:displayName] %></h3>
+                </a>
+            </li>
+          <% end %>
+        </ul>
+    </div>
+</div>
