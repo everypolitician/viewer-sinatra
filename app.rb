@@ -69,6 +69,10 @@ get '/about.html' do
   erb :about
 end
 
+get '/technical.html' do
+  erb :technical
+end
+
 get '/contribute.html' do
   erb :contribute
 end
