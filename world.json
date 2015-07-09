@@ -902,5 +902,33 @@
   "aland": {
     "displayName": "Åland Islands",
     "allNames": "Åland Islands Åland オーランド諸島 Ålandeilanden"
+  },
+  "macau": {
+    "displayName": "Macau",
+    "allNames": "Macau Macao 澳門 Àomén"
+  },
+  "northern-ireland": {
+    "displayName": "Northern Ireland",
+    "allNames": "Northern Ireland Tuaisceart Éireann Norlin Airlann"
+  },
+  "pitcairn-islands": {
+    "displayName": "Pitcairn Islands",
+    "allNames": "Pitcairn Island Islands"
+  },
+  "sark": {
+    "displayName": "Sark",
+    "allNames": "Sark Sercq Sèr Cerq"
+  },
+  "scotland": {
+    "displayName": "Scotland",
+    "allNames": "Scotland Alba"
+  },
+  "wales": {
+    "displayName": "Wales",
+    "allNames": "Wales Cymru"
+  },
+  "alderney": {
+    "displayName": "Alderney",
+    "allNames": "Alderney Aurigny Aoeur'gny"
   }
 }
