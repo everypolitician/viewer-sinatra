@@ -35,9 +35,10 @@ end
 get '/:country/' do |country|
   if @country = ALL_COUNTRIES.find { |c| c[:url] == country }
     erb :index
-  else
-    @missing = country
+  elsif @missing = WORLD[country.to_sym]
     erb :country_missing
+  else 
+    halt(404)
   end
 end
 

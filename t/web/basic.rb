@@ -38,19 +38,27 @@ describe 'Viewer' do
     end
   end
 
-  describe 'unknown country' do
-    before { get '/revalia/' }
+  describe 'country with no data' do
+    before { get '/marshall-islands/' }
 
-    it 'should have go to no-match page for Revalia' do
+    it 'should have go to no-match page for the Marshall Islands' do
       last_response.status.must_equal 200
       last_response.body.must_include 'Sorry'
     end
   end
 
   describe 'unknown house of unknown country' do
-    before { get '/revalia/upper' }
+    before { get '/marshall-islands/upper' }
 
-    it 'should have no match for Upper House of Revalia' do
+    it 'should have no match for Upper House of the Marshall Islands' do
+      last_response.status.must_equal 404
+    end
+  end
+
+  describe 'completely unknown country' do
+    before { get '/revalia/' }
+
+    it 'should have go to no-match page for Revalia' do
       last_response.status.must_equal 404
     end
   end
