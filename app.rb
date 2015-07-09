@@ -79,6 +79,10 @@ get '/status/all_countries.html' do
   erb :all_countries
 end
 
+get '/technical.html' do
+  erb :technical
+end
+
 get '/contribute.html' do
   erb :contribute
 end
