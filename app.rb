@@ -15,6 +15,9 @@ ALL_COUNTRIES = JSON.parse(open(cjson).read, symbolize_names: true ).each do |c|
   c[:url] = c[:slug].downcase
 end
 
+wjson = File.read('world.json')
+WORLD = JSON.parse(wjson, symbolize_names: true)
+
 set :erb, trim: '-'
 
 get '/' do
@@ -25,11 +28,12 @@ end
 
 get '/new_index' do
   @countries = ALL_COUNTRIES.to_a
+  @world = WORLD.to_a
   erb :new_index
 end
 
 get '/:country/' do |country|
-  if @country = ALL_COUNTRIES.find { |c| c[:url] == country } 
+  if @country = ALL_COUNTRIES.find { |c| c[:url] == country }
     erb :index
   else
     @missing = country
