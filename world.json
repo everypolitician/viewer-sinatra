@@ -3,15 +3,15 @@
     "displayName": "Bahamas",
     "allNames": "Bahamas バハマ Bahama’s"
   },
-  "congo-the-democratic-republic-of-the": {
+  "congo-kinshasa": {
     "displayName": "Congo, The Democratic Republic Of The",
-    "allNames": "Congo (Dem. Rep.) Kongo (Dem. Rep.) Congo (Rep. Dem.) コンゴ民主共和国 Congo [DRC] Congo (The Democratic Republic Of The)"
+    "allNames": "Congo (Dem. Rep.) Kinshasa Kongo (Dem. Rep.) Congo (Rep. Dem.) コンゴ民主共和国 Congo [DRC] Congo (The Democratic Republic Of The)"
   },
-  "congo": {
+  "congo-brazzaville": {
     "displayName": "Congo",
-    "allNames": "Congo Kongo コンゴ共和国 Congo [Republiek]"
+    "allNames": "Congo Brazzaville Kongo コンゴ共和国 Congo [Republiek]"
   },
-  "korea-north": {
+  "north-korea": {
     "displayName": "Korea (North)",
     "allNames": "Korea (North) Nordkorea Corée du Nord Corea del Norte 朝鮮民主主義人民共和国 Noord-Korea Korea Democratic People's Republic Korea (Democratic People s Republic of)"
   },
@@ -171,7 +171,7 @@
     "displayName": "Canada",
     "allNames": "Canada Kanada Canadá カナダ"
   },
-  "cape-verde": {
+  "cabo-verde": {
     "displayName": "Cape Verde",
     "allNames": "Cape Verde Kap Verde Cap Vert Cabo Verde カーボベルデ Kaapverdië"
   },
@@ -215,9 +215,9 @@
     "displayName": "Cuba",
     "allNames": "Cuba Kuba キューバ"
   },
-  "cura-ao": {
+  "curacao": {
     "displayName": "Curaçao",
-    "allNames": "Curaçao キュラソー島"
+    "allNames": "Curaçao Curacao キュラソー島"
   },
   "cyprus": {
     "displayName": "Cyprus",
@@ -225,7 +225,7 @@
   },
   "czech-republic": {
     "displayName": "Czech Republic",
-    "allNames": "Czech Republic Tschechische Republik République Tchèque República Checa チェコ Tsjechië"
+    "allNames": "Czech Republic Czechia Tschechische Republik République Tchèque República Checa チェコ Tsjechië"
   },
   "denmark": {
     "displayName": "Denmark",
@@ -407,7 +407,7 @@
     "displayName": "Italy",
     "allNames": "Italy Italien Italie Italia イタリア Italië"
   },
-  "c-te-d-ivoire": {
+  "ivory-coast": {
     "displayName": "Côte D'Ivoire",
     "allNames": "Côte D'Ivoire Elfenbeinküste コートジボワール Ivoorkust Cote D'Ivoire (Ivory Coast) Cote d Ivoire (Ivory Coast)"
   },
@@ -617,7 +617,7 @@
   },
   "papua-new-guinea": {
     "displayName": "Papua New Guinea",
-    "allNames": "Papua New Guinea Papua-Neuguinea Papouasie Nouvelle-Guinée Papúa Nueva Guinea パプアニューギニア Papoea-Nieuw-Guinea"
+    "allNames": "Papua New Guinea PNG Papua-Neuguinea Papouasie Nouvelle-Guinée Papúa Nueva Guinea パプアニューギニア Papoea-Nieuw-Guinea"
   },
   "paraguay": {
     "displayName": "Paraguay",
@@ -629,7 +629,7 @@
   },
   "philippines": {
     "displayName": "Philippines",
-    "allNames": "Philippines Philippinen Filipinas フィリピン Filipijnen"
+    "allNames": "The Philippines Philippinen Filipinas フィリピン Filipijnen"
   },
   "poland": {
     "displayName": "Poland",
@@ -659,7 +659,7 @@
     "displayName": "Rwanda",
     "allNames": "Rwanda Ruanda ルワンダ"
   },
-  "saint-barth-lemy": {
+  "saint-barthelemy": {
     "displayName": "Saint Barthélemy",
     "allNames": "Saint Barthélemy Saint-Barthélemy サン・バルテルミー"
   },
@@ -779,7 +779,7 @@
     "displayName": "Syria",
     "allNames": "Syria سوريا سورية Syrien Syrie Siria シリア・アラブ共和国 Syrië"
   },
-  "s-o-tom-and-pr-ncipe": {
+  "sao-tome-and-principe": {
     "displayName": "São Tomé and Príncipe",
     "allNames": "São Tomé and Príncipe São Tomé und Príncipe São Tomé et Príncipe Santo Tomé y Príncipe サントメ・プリンシペ Sao Tomé en Principe"
   },
@@ -835,7 +835,7 @@
     "displayName": "Tuvalu",
     "allNames": "Tuvalu ツバル"
   },
-  "virgin-islands-u-s": {
+  "us-virgin-islands": {
     "displayName": "Virgin Islands, U.S.",
     "allNames": "Virgin Islands of the United States Amerikanische Jungferninseln Îles Vierges américaines Islas Vírgenes de los Estados Unidos アメリカ領ヴァージン諸島 Amerikaanse Maagdeneilanden Virgin Islands (U.S.)"
   },
@@ -851,7 +851,7 @@
     "displayName": "United Arab Emirates",
     "allNames": "United Arab Emirates الإمارات العربية المتحدة Vereinigte Arabische Emirate Émirats Arabes Unis Emiratos Árabes Unidos アラブ首長国連邦 Verenigde Arabische Emiraten"
   },
-  "united-kingdom": {
+  "uk": {
     "displayName": "United Kingdom",
     "allNames": "United Kingdom Vereinigtes Königreich Royaume-Uni Reino Unido イギリス Verenigd Koninkrijk Great Britain (UK)"
   },
