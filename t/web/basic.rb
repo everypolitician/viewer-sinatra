@@ -44,6 +44,7 @@ describe 'Viewer' do
     it 'should have go to no-match page for the Marshall Islands' do
       last_response.status.must_equal 200
       last_response.body.must_include 'Sorry'
+      last_response.body.must_include 'Marshall Islands'
     end
   end
 
