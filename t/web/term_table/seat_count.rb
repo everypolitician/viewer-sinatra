@@ -31,4 +31,13 @@ describe 'Seat Count' do
       seatcount.css('span.seatcount').map(&:text).map(&:to_i).reduce(&:+).must_equal 101
     end
   end
+
+  describe 'Historic Finland' do
+    before { get '/finland/eduskunta/term-table/35.html' }
+
+    it 'should have 200 seats' do
+      seatcount.css('span.seatcount').map(&:text).map(&:to_i).reduce(&:+).must_equal 200
+    end
+  end
+
 end
