@@ -109,11 +109,13 @@
         </div>
     </div>
 
-    <% if @data_source %>
       <div class="page-section page-section--grey source-credits">
         <div class="container">
-          <p>Source: <a href="<%= @data_source %>"><%= @data_source %></a></p>
+          <% if @data_source %>
+            <p>Source: <a href="<%= @data_source %>"><%= @data_source %></a></p>
+          <% end %>
+          <p><b>Anything wrong?</b> If you've spotted an error, or the data is incomplete, 
+            here's <a href="/contribute.html">how to get that fixed</a>.</p>
         </div>
       </div>
-    <% end %>
 
