@@ -39,19 +39,19 @@ describe 'Viewer' do
   end
 
   describe 'country with no data' do
-    before { get '/marshall-islands/' }
+    before { get '/china/' }
 
-    it 'should have go to no-match page for the Marshall Islands' do
+    it 'should have go to no-match page for the China' do
       last_response.status.must_equal 200
       last_response.body.must_include 'Sorry'
-      last_response.body.must_include 'Marshall Islands'
+      last_response.body.must_include 'China'
     end
   end
 
   describe 'unknown house of unknown country' do
-    before { get '/marshall-islands/upper' }
+    before { get '/china/upper' }
 
-    it 'should have no match for Upper House of the Marshall Islands' do
+    it 'should have no match for Upper House of the China' do
       last_response.status.must_equal 404
     end
   end
