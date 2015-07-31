@@ -87,6 +87,14 @@ get '/contribute.html' do
   erb :contribute
 end
 
+get '/repo_structure.html' do
+  erb :repo_structure
+end
+
+get '/data_structure.html' do
+  erb :data_structure
+end
+
 get '/*.css' do |filename|
   scss :"sass/#{filename}"
 end
