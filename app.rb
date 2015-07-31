@@ -87,6 +87,10 @@ get '/contribute.html' do
   erb :contribute
 end
 
+get '/submitting.html' do
+  erb :submitting
+end
+
 get '/repo_structure.html' do
   erb :repo_structure
 end
