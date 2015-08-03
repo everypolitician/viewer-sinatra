@@ -22,6 +22,9 @@ set :erb, trim: '-'
 
 get '/' do
   @countries = ALL_COUNTRIES.to_a
+  @person_count = @countries.map { |c| c[:legislatures].map { |l| l[:person_count].to_i  } }.flatten.inject(:+)
+    .to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse
+    # http://stackoverflow.com/questions/1078347/is-there-a-rails-trick-to-adding-commas-to-large-numbers
   @world = WORLD.to_a
   erb :homepage
 end
