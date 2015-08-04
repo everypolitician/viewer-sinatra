@@ -1,28 +1,53 @@
-<div class="container" id="home">
-  <div class="page-section">
+<div class="page-section page-section--grey text-center">
+  <div class="container">
     <h3>We’re cataloguing every politician in <%= @country[:name] %>.</h3>
-    <p>We currently have information for:</p>
+    <p>We currently have information for…</p>
+  </div>
+</div>
+
+<div class="page-section">
+  <div class="container">
 
     <% @country[:legislatures].each do |house| %>
-      <h4><%= house[:name] %></h4>
-      <ul class="grid-list" id="terms-<%= house[:slug].downcase %>">
-        <% house[:legislative_periods].each do |t| %>
-          <li>
-            <a class="avatar-unit" href="<%= term_table_url(@country, house, t) %>">
-              <span class="avatar"><i class="fa fa-university"></i></span>
-              <h3><%= t[:name] %></h3>
-              <% unless t[:start_date].to_s.empty? and t[:end_date].to_s.empty? %>
-                <p><%= t[:start_date] %> - <%= t[:end_date] %></p>
-              <% end %>
-            </a>
-          </li>
-        <% end %>
-      </ul>
+      <div class="country__legislature">
+        <h4><%= house[:name] %></h4>
+        <ul class="grid-list" id="terms-<%= house[:slug].downcase %>">
+          <% house[:legislative_periods].each do |t| %>
+            <li>
+              <a class="avatar-unit" href="<%= term_table_url(@country, house, t) %>">
+                <span class="avatar"><i class="fa fa-university"></i></span>
+                <h3><%= t[:name] %></h3>
+                <% unless t[:start_date].to_s.empty? and t[:end_date].to_s.empty? %>
+                  <p><%= t[:start_date] %> - <%= t[:end_date] %></p>
+                <% end %>
+              </a>
+            </li>
+          <% end %>
+        </ul>
+      </div>
     <% end %>
 
-    <p>… but we can always use more. If you know where to find more data
-    for this country, please <a href="/contribute.html">let us
+    <p class="text-center">…but we can always use more! If you know where to find
+    more data for this country, please <a href="/contribute.html">let us
     know</a>.</p>
+
+  </div>
+</div>
+
+<div class="page-section page-section--green page-section--gender-balance-promo">
+  <div class="container">
+
+    <div class="gender-balance-promo">
+      <h3>Help us collect gender information for <%= @country[:name] %> by playing our fiendishly addictive online game, Gender Balance!</h3>
+      <p>Swipe your way through politicians in a flash, and work your way up our leaderboard.</p>
+      <p><a href="http://gender-balance.org" class="button button--primary">Play Gender Balance now</a></p>
+
+      <a href="http://gender-balance.org" class="gender-balance-promo__demo">
+        <div class="screenshot-wrapper">
+          <img src="/images/screencast.gif" width="232" height="330">
+        </div>
+      </div>
+    </a>
 
   </div>
 </div>
