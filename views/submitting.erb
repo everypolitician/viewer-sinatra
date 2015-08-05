@@ -1,79 +1,85 @@
 <div class="container" id="contribute">
   <div class="page-section">
+    <div class="row">
+      <div class="column-one-quarter">
+         <%= erb :about_nav_menu %>
+      </div>
+      <div class="column-three-quarters">
+        <h1>How We Import Data</h1>
 
-    <h1>How We Import Data</h1>
+        <p>Our preferred format for data is a simple CSV.</p>
 
-    <p>Our preferred format for data is a simple CSV.</p>
+        <p>At a minimum this should have fields for:</p>
 
-    <p>At a minimum this should have fields for:</p>
+        <ul>
+          <li><tt>id</tt>: a unique identifier for the politician</li>
+          <li><tt>name</tt>: their name</li>
+          <li><tt>area</tt>: they constituency/district they represent (if appropriate)</li>
+          <li><tt>group</tt>: the party or faction they’re part of (if appropriate)</li>
+          <li><tt>term</tt>: the legislative session this membership represents (e.g. ‘19’ for the Nineteenth Assembly)</li>
+          <li><tt>start_date</tt>: if the person joined later than the start of the term</li>
+          <li><tt>end_date</tt>: if they left before the end of the term</li>
+        </ul>
 
-    <ul>
-      <li><tt>id</tt>: a unique identifier for the politician</li>
-      <li><tt>name</tt>: their name</li>
-      <li><tt>area</tt>: they constituency/district they represent (if appropriate)</li>
-      <li><tt>group</tt>: the party or faction they’re part of (if appropriate)</li>
-      <li><tt>term</tt>: the legislative session this membership represents (e.g. ‘19’ for the Nineteenth Assembly)</li>
-      <li><tt>start_date</tt>: if the person joined later than the start of the term</li>
-      <li><tt>end_date</tt>: if they left before the end of the term</li>
-    </ul>
+        <p>If you have data for multiple legislative periods (and the more the
+        better!) these can either be included in the same file, or provided
+        in a single file per per term.</p>
 
-    <p>If you have data for multiple legislative periods (and the more the
-    better!) these can either be included in the same file, or provided
-    in a single file per per term.</p>
+        <p>If someone changed party/faction affilation in the middle of the
+        term, you should include two entries, with the relevant start/end
+        dates set. For example:</p>
 
-    <p>If someone changed party/faction affilation in the middle of the
-    term, you should include two entries, with the relevant start/end
-    dates set. For example:</p>
+        <table border="1">
+          <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>area</th>
+            <th>group</th>
+            <th>term</th>
+            <th>start_date</th>
+            <th>end_date</th>
+          </tr>
+          <tr><td>1681</td><td>Joe Smith</td><td>Easthill</td><td>White Party</td><td>19</td><td></td><td>2011-04-14</tr>
+          <tr><td>1681</td><td>Joe Smith</td><td>Easthill</td><td>Black Party</td><td>19</td><td>2011-04-14</td><td></tr>
+        </table> 
 
-    <table border="1">
-      <tr>
-        <th>id</th>
-        <th>name</th>
-        <th>area</th>
-        <th>group</th>
-        <th>term</th>
-        <th>start_date</th>
-        <th>end_date</th>
-      </tr>
-      <tr><td>1681</td><td>Joe Smith</td><td>Easthill</td><td>White Party</td><td>19</td><td></td><td>2011-04-14</tr>
-      <tr><td>1681</td><td>Joe Smith</td><td>Easthill</td><td>Black Party</td><td>19</td><td>2011-04-14</td><td></tr>
-    </table> 
+        <p>Other fields we can automatically process include:</p>
 
-    <p>Other fields we can automatically process include:</p>
+        <ul>
+          <li><tt>given_name</tt></li>
+          <li><tt>family_name</tt></li>
+          <li><tt>honorific_prefix</tt></li>
+          <li><tt>honorific_suffix</tt></li>
+          <li><tt>patronymic_name</tt></li>
+          <li><tt>sort_name</tt></li>
+          <li><tt>email</tt></li>
+          <li><tt>phone</tt></li>
+          <li><tt>fax</tt></li>
+          <li><tt>cell</tt></li>
+          <li><tt>gender</tt></li>
+          <li><tt>birth_date</tt></li>
+          <li><tt>death_date</tt></li>
+          <li><tt>image</tt></li>
+          <li><tt>summary</tt></li>
+          <li><tt>national_identity</tt></li>
+          <li><tt>twitter</tt></li>
+          <li><tt>facebook</tt></li>
+          <li><tt>blog</tt></li>
+          <li><tt>flickr</tt></li>
+          <li><tt>instagram</tt></li>
+          <li><tt>wikipedia</tt></li>
+          <li><tt>website</tt></li>
+        </ul>
 
-    <ul>
-      <li><tt>given_name</tt></li>
-      <li><tt>family_name</tt></li>
-      <li><tt>honorific_prefix</tt></li>
-      <li><tt>honorific_suffix</tt></li>
-      <li><tt>patronymic_name</tt></li>
-      <li><tt>sort_name</tt></li>
-      <li><tt>email</tt></li>
-      <li><tt>phone</tt></li>
-      <li><tt>fax</tt></li>
-      <li><tt>cell</tt></li>
-      <li><tt>gender</tt></li>
-      <li><tt>birth_date</tt></li>
-      <li><tt>death_date</tt></li>
-      <li><tt>image</tt></li>
-      <li><tt>summary</tt></li>
-      <li><tt>national_identity</tt></li>
-      <li><tt>twitter</tt></li>
-      <li><tt>facebook</tt></li>
-      <li><tt>blog</tt></li>
-      <li><tt>flickr</tt></li>
-      <li><tt>instagram</tt></li>
-      <li><tt>wikipedia</tt></li>
-      <li><tt>website</tt></li>
-    </ul>
+        <p>Ideally you would publish this file somewhere online, and keep it
+        updated with changes, but if that’s too much work, we’ll happily
+        accept a one-time file (perhaps with occasional later updates).
+        Either way, we’re happy to chat first about what will be easiest for
+        both you and us! Just drop us an email to <a
+        href="mailto:team@everypolitician.org">team@everypolitician.org</a>,
+        and let’s get more data released!</p>
 
-    <p>Ideally you would publish this file somewhere online, and keep it
-    updated with changes, but if that’s too much work, we’ll happily
-    accept a one-time file (perhaps with occasional later updates).
-    Either way, we’re happy to chat first about what will be easiest for
-    both you and us! Just drop us an email to <a
-    href="mailto:team@everypolitician.org">team@everypolitician.org</a>,
-    and let’s get more data released!</p>
-
+      </div>
+    </div>
   </div>
 </div>

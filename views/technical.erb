@@ -1,59 +1,64 @@
 <div class="container" id="about">
   <div class="page-section">
+    <div class="row">
+      <div class="column-one-quarter">
+         <%= erb :about_nav_menu %>
+      </div>
+      <div class="column-three-quarters">
+        <h1>Technical overview</h1>
+        <p>
+          <a href="/">EveryPolitician</a> makes data about politicians
+          available in a consistent manner. If you’re a developer who wants
+          to write code that consumes that data, this page is for you.
+        </p>
+        <h2>The data: CSV or JSON (Popolo)</h2>
+        <p>
+          EveryPolitician publishes the data so you can use it however you want.
+          Use it to power your tools, to drive data-based projects, and to help
+          people know more about who their politicians are. It’s available to
+          download in either <a href="https://en.wikipedia.org/wiki/JSON">JSON</a> or
+          <a href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> formats.
+        </p>
+        <p>
+          Broadly speaking, we provide the complete, rich data in JSON. We use the <a
+          href="http://www.popoloproject.com/">Popolo standard</a> &mdash; if
+          you’re a developer that’s great for you because you get every
+          detail of the data. The CSV data is simpler &mdash; it’s ideal for
+          dropping into a spreadsheet or displaying in a web page.
+        </p>
+        <p>
+          For example, if someone's name changes during a period (eg. if
+          they get married), the later version will be presented as their
+          name in the CSV. But if you dive into the JSON data you’re be able
+          to see the dates when this new name applied, and what it was
+          before. You can think of the JSON as the full data in its raw
+          form, and the CSVs as the refined, more pragmatic version.
+        </p>
+        <p>
+          EveryPolitician doesn’t provide an API for you to query the data
+          &mdash; we simply make the whole lot available for download, and if you
+          need to be selective about which bits to use, you can do that
+          processing at your end. 
+        </p>
+        <p>
+          However, we <em>do</em> slice the CSV data up into separate files
+          for each legislative period for a country.  We use these
+          "parliamentary terms" because pretty much every legislature in the
+          world can be broken down in this way, and applications often only
+          really want to know data about the people currently in these
+          positions. For many countries we currently only <em>have</em> data
+          for the current period, but we‘re very keen to also add older,
+          "historic" data too.
+        </p>
 
-    <h1>Technical overview</h1>
-    <p>
-      <a href="/">EveryPolitician</a> makes data about politicians
-      available in a consistent manner. If you’re a developer who wants
-      to write code that consumes that data, this page is for you.
-    </p>
-    <h2>The data: CSV or JSON (Popolo)</h2>
-    <p>
-      EveryPolitician publishes the data so you can use it however you want.
-      Use it to power your tools, to drive data-based projects, and to help
-      people know more about who their politicians are. It’s available to
-      download in either <a href="https://en.wikipedia.org/wiki/JSON">JSON</a> or
-      <a href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> formats.
-    </p>
-    <p>
-      Broadly speaking, we provide the complete, rich data in JSON. We use the <a
-      href="http://www.popoloproject.com/">Popolo standard</a> &mdash; if
-      you’re a developer that’s great for you because you get every
-      detail of the data. The CSV data is simpler &mdash; it’s ideal for
-      dropping into a spreadsheet or displaying in a web page.
-    </p>
-    <p>
-      For example, if someone's name changes during a period (eg. if
-      they get married), the later version will be presented as their
-      name in the CSV. But if you dive into the JSON data you’re be able
-      to see the dates when this new name applied, and what it was
-      before. You can think of the JSON as the full data in its raw
-      form, and the CSVs as the refined, more pragmatic version.
-    </p>
-    <p>
-      EveryPolitician doesn’t provide an API for you to query the data
-      &mdash; we simply make the whole lot available for download, and if you
-      need to be selective about which bits to use, you can do that
-      processing at your end. 
-    </p>
-    <p>
-      However, we <em>do</em> slice the CSV data up into separate files
-      for each legislative period for a country.  We use these
-      "parliamentary terms" because pretty much every legislature in the
-      world can be broken down in this way, and applications often only
-      really want to know data about the people currently in these
-      positions. For many countries we currently only <em>have</em> data
-      for the current period, but we‘re very keen to also add older,
-      "historic" data too.
-    </p>
-
-    <p>
-      Read more about:
-      <ul>
-        <li><a href="/data_structure.html">the Data structure</a></li>
-        <li><a href="/repo_structure.html">the Repository structure</a></li>
-      </ul>
-    </p>
-
+        <p>
+          Read more about:
+          <ul>
+            <li><a href="/data_structure.html">the Data structure</a></li>
+            <li><a href="/repo_structure.html">the Repository structure</a></li>
+          </ul>
+        </p>
+      </div>
+    </div>
   </div>
 </div>
