@@ -38,6 +38,9 @@
     list-style: none outside none;
     margin-left: 0;
     padding-left: 0;
+    ul.unstyled-list {
+      margin-left: 1.5em;
+    }
 }
 
 .inline-list {
