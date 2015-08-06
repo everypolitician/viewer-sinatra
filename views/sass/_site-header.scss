@@ -6,7 +6,15 @@
     text-align: center;
 
     @media (min-width: $large_screen) {
-        padding: 2em 0 1em;
+        padding: 1em 0 0.5em 0;
+    }
+
+    @media (min-width: $large_screen) and (min-height: 600px) {
+        padding: 1.5em 0 0.75em 0;
+    }
+
+    @media (min-width: $large_screen) and (min-height: 700px) {
+        padding: 2em 0 1em 0;
     }
 
     .container {

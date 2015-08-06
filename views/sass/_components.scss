@@ -179,8 +179,13 @@ p.lead {
 
 .page-section {
     padding: 2em 0;
-    @media ( min-width: $medium_screen) {
-        padding: 4em 0;
+
+    @media (min-width: $medium_screen) and (min-height: 600px) {
+        padding: 2.5em 0;
+    }
+
+    @media (min-width: $medium_screen) and (min-height: 700px) {
+        padding: 3em 0;
     }
 
     & > .container {
