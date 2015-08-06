@@ -211,6 +211,29 @@ p.lead {
     }
 }
 
+.page-section--green {
+    color: #fff;
+    background-color: $colour_green;
+
+    a {
+        color: #fff;
+    }
+
+    .button--primary {
+        background-color: $colour_white;
+        border-color: $colour_white;
+        color: $colour_green;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: mix($colour_green, $colour_white, 10%);
+            border-color: mix($colour_green, $colour_white, 10%);
+            color: $colour_green;
+        }
+    }
+}
+
 .page-section--no-padding {
     padding: 0;
 }
