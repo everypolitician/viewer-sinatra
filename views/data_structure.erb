@@ -1,213 +1,220 @@
 <div class="container" id="about">
   <div class="page-section">
+    <div class="row">
+      <div class="column-one-quarter">
+         <%= erb :about_nav_menu %>
+      </div>
+      <div class="column-three-quarters">
 
-<h1>About EveryPolitician’s Data</h1>
+        <h1>About EveryPolitician’s Data</h1>
 
-<p>EveryPolitician’s data is not complete. It doesn’t yet cover every
-nation in the world. We’re working on that (and 
-<a href="/contribute.html">you can help too!</a>). </p>
+        <p>EveryPolitician’s data is not complete. It doesn’t yet cover every
+        nation in the world. We’re working on that (and 
+        <a href="/contribute.html">you can help too!</a>). </p>
 
-<p>In creating EveryPolitician, we’ve made some decisions about what it
-will — and what it won’t — try to provide. This page explains how and why
-we made those decisions.</p>
+        <p>In creating EveryPolitician, we’ve made some decisions about what it
+        will — and what it won’t — try to provide. This page explains how and why
+        we made those decisions.</p>
 
-<h2>Consistent and useful</h2>
+        <h2>Consistent and useful</h2>
 
-<p>EveryPolitician’s goal is to provide basic data on every politician in
-every national-level legislature in the world, in a <em>consistent and
-useful</em> format.</p>
+        <p>EveryPolitician’s goal is to provide basic data on every politician in
+        every national-level legislature in the world, in a <em>consistent and
+        useful</em> format.</p>
 
-<p>The word "consistent" is important, and we use it in a very specific way:</p>
+        <p>The word "consistent" is important, and we use it in a very specific way:</p>
 
-<ul>
-  <li>We aim to use appropriate standards where possible (particularly 
-    <a href="http://www.popoloproject.com/">Popolo</a>)</li>
-  <li>We try to follow clear conventions about how data within and beyond 
-    those standards are expressed</a></li>
-</ul>
+        <ul>
+          <li>We aim to use appropriate standards where possible (particularly 
+            <a href="http://www.popoloproject.com/">Popolo</a>)</li>
+          <li>We try to follow clear conventions about how data within and beyond 
+            those standards are expressed</a></li>
+        </ul>
 
-<p>With this in mind, EveryPolitician will only provide data that we’re
-confident can be expressed in the same manner across the majority of
-national legislatures. This means there’s useful and interesting data
-we’re deliberately choosing to not include yet, and some that we
-probably never will.</p>
+        <p>With this in mind, EveryPolitician will only provide data that we’re
+        confident can be expressed in the same manner across the majority of
+        national legislatures. This means there’s useful and interesting data
+        we’re deliberately choosing to not include yet, and some that we
+        probably never will.</p>
 
-<p>Because we’re being very careful about what data we’re including, and
-exactly what format it will be presented in, you can be very clear what
-data you can — and cannot — expect to find here, and if you use it, you
-won’t need to spend so much time dealing with lots of exceptional
-cases.</p>
+        <p>Because we’re being very careful about what data we’re including, and
+        exactly what format it will be presented in, you can be very clear what
+        data you can — and cannot — expect to find here, and if you use it, you
+        won’t need to spend so much time dealing with lots of exceptional
+        cases.</p>
 
-<p>(NB: Because some of this data was supplied by other people, we can’t
-yet completely guarantee that the format for every country is completely
-identical yet. But we’re actively working on fixing that, so if you find
-something unexpected, please let us know!)</p>
+        <p>(NB: Because some of this data was supplied by other people, we can’t
+        yet completely guarantee that the format for every country is completely
+        identical yet. But we’re actively working on fixing that, so if you find
+        something unexpected, please let us know!)</p>
 
-<h2>Why we’re doing this</h2>
+        <h2>Why we’re doing this</h2>
 
-<p>We want to make it much easier for people to get started when building
-civic tech tools.</p>
+        <p>We want to make it much easier for people to get started when building
+        civic tech tools.</p>
 
-<p>Rather than having to start by finding data and turning that into a
-usable format — a process that can be deceptively tricky, especially if
-your tool needs to work across multiple countries — we can provide the
-initial data so you can concentrate on adding value on top of that.</p>
+        <p>Rather than having to start by finding data and turning that into a
+        usable format — a process that can be deceptively tricky, especially if
+        your tool needs to work across multiple countries — we can provide the
+        initial data so you can concentrate on adding value on top of that.</p>
 
-<p>Rather than having to start by finding data and turning that into a
-usable format — a process that can be deceptively tricky, especially if
-your tool needs to work across multiple countries — we can provide the
-starting data so you can concentrate on adding value on top of that.</p>
+        <p>Rather than having to start by finding data and turning that into a
+        usable format — a process that can be deceptively tricky, especially if
+        your tool needs to work across multiple countries — we can provide the
+        starting data so you can concentrate on adding value on top of that.</p>
 
-<p>In many cases the data EveryPolitician provides won’t be enough for
-what you need — you’ll need to combine it with other information
-locally. </p>
+        <p>In many cases the data EveryPolitician provides won’t be enough for
+        what you need — you’ll need to combine it with other information
+        locally. </p>
 
-<p>But you should be able to get started much more quickly, and by using
-data in the same consistent format that lots of other groups use
-worldwide, any tools you build for one country are likely to work much
-more easily in other countries too.</p>
+        <p>But you should be able to get started much more quickly, and by using
+        data in the same consistent format that lots of other groups use
+        worldwide, any tools you build for one country are likely to work much
+        more easily in other countries too.</p>
 
-<p>This is part of the <a href="http://poplus.org">Poplus federation</a>’s
-mission of building and sharing re-usable civic tech. In fact, this project
-has come about based on our experience of working with code and data reuse
-<a href="https://www.mysociety.org/about/mysociety-around-the-world/">across
-many countries worldwide</a>.</p>
+        <p>This is part of the <a href="http://poplus.org">Poplus federation</a>’s
+        mission of building and sharing re-usable civic tech. In fact, this project
+        has come about based on our experience of working with code and data reuse
+        <a href="https://www.mysociety.org/about/mysociety-around-the-world/">across
+        many countries worldwide</a>.</p>
 
-<h2>What data we provide</h2>
+        <h2>What data we provide</h2>
 
-<p>Put most simply, EveryPolitician data is primarily a list of data
-about <em>people</em>. Those people must be members of a specific legislature
-(for example, your country’s current parliament).</p>
+        <p>Put most simply, EveryPolitician data is primarily a list of data
+        about <em>people</em>. Those people must be members of a specific legislature
+        (for example, your country’s current parliament).</p>
 
-<p>Those people may be members of factions or parties, and represent
-particular districts or constituencies, so we provide some information
-about those too.</p>
+        <p>Those people may be members of factions or parties, and represent
+        particular districts or constituencies, so we provide some information
+        about those too.</p>
 
-<p>There are two distinct types of information provided:</p>
+        <p>There are two distinct types of information provided:</p>
 
-<ol>
-  <li><p><strong>Entity data</strong></p></li>
-  <li><p><strong>Relationship data</strong></p></li> 
-</ol>
+        <ol>
+          <li><p><strong>Entity data</strong></p></li>
+          <li><p><strong>Relationship data</strong></p></li> 
+        </ol>
 
-<h3>Entity data</h3>
+        <h3>Entity data</h3>
 
-<p>When we provide details about a Poltician, Political Group/Party,
-Constituency/District, or Legislative Period/Term, we adhere to the
-equivalent <a href="http://popoloproject.com/">Popolo Project specification</a>
-(as a <a href="http://www.popoloproject.com/specs/person.html">Person</a>,
-<a href="http://www.popoloproject.com/specs/organization.html">Organization</a>,
-<a href="http://www.popoloproject.com/specs/area.html">Area</a>, and
-<a href="http://www.popoloproject.com/specs/event.html">Event</a>)</p>
+        <p>When we provide details about a Poltician, Political Group/Party,
+        Constituency/District, or Legislative Period/Term, we adhere to the
+        equivalent <a href="http://popoloproject.com/">Popolo Project specification</a>
+        (as a <a href="http://www.popoloproject.com/specs/person.html">Person</a>,
+        <a href="http://www.popoloproject.com/specs/organization.html">Organization</a>,
+        <a href="http://www.popoloproject.com/specs/area.html">Area</a>, and
+        <a href="http://www.popoloproject.com/specs/event.html">Event</a>)</p>
 
-<p>Popolo defines these entities very well, although we make a few
-extensions to include fields that are not yet standardised, and we
-plan to tighten things up where there are multiple ways to include the
-same information.</p>
+        <p>Popolo defines these entities very well, although we make a few
+        extensions to include fields that are not yet standardised, and we
+        plan to tighten things up where there are multiple ways to include the
+        same information.</p>
 
-<h3>Relationship data</h3>
+        <h3>Relationship data</h3>
 
-<p>Not every politician is in EveryPolitician (yet). We’re currently
-limiting it to members of national-level legislatures
-(Parliament/Congress/Assembly).</p>
+        <p>Not every politician is in EveryPolitician (yet). We’re currently
+        limiting it to members of national-level legislatures
+        (Parliament/Congress/Assembly).</p>
 
-<p>So, for now, the only Relationship information we provide is the
-Membership of that Legislature. Popolo has not (yet?) standardised how
-to model things like this, and unfortunately we’ve seen many different,
-and largely mutually-exclusive, approaches to that, making it very
-difficult to write tools that can operate on this sort of
-information.</p>
+        <p>So, for now, the only Relationship information we provide is the
+        Membership of that Legislature. Popolo has not (yet?) standardised how
+        to model things like this, and unfortunately we’ve seen many different,
+        and largely mutually-exclusive, approaches to that, making it very
+        difficult to write tools that can operate on this sort of
+        information.</p>
 
-<p>So we consistently express all such memberships as a Popolo
-<a href="http://www.popoloproject.com/specs/membership.html">Membership</a> with the
-following fields:</p>
+        <p>So we consistently express all such memberships as a Popolo
+        <a href="http://www.popoloproject.com/specs/membership.html">Membership</a> with the
+        following fields:</p>
 
-<ul>
-  <li> <p><code>person</code>: the politician (Person)</p> </li>
-  <li> <p><code>organization</code>: the Legislature itself (Organization)</p> </li>
-  <li> <p><code>on_behalf_of</code>: the Parliamentary Group (faction, party) they are a member of (Organization)</p> </li>
-  <li> <p><code>area</code>: the district or constituency, where appropriate (Area)</p> </li>
-  <li> <p><code>legislative_period</code>: the Term of office (Event)</p> </li>
-  <li> <p><code>start_date</code> and/or <code>end_date</code> (if these differ from the start or end of the Term)</p> </li>
-</ul>
+        <ul>
+          <li> <p><code>person</code>: the politician (Person)</p> </li>
+          <li> <p><code>organization</code>: the Legislature itself (Organization)</p> </li>
+          <li> <p><code>on_behalf_of</code>: the Parliamentary Group (faction, party) they are a member of (Organization)</p> </li>
+          <li> <p><code>area</code>: the district or constituency, where appropriate (Area)</p> </li>
+          <li> <p><code>legislative_period</code>: the Term of office (Event)</p> </li>
+          <li> <p><code>start_date</code> and/or <code>end_date</code> (if these differ from the start or end of the Term)</p> </li>
+        </ul>
 
-<p>(People familiar with Popolo might wonder why we don’t use
-<a href="http://www.popoloproject.com/specs/post.html">Posts</a> here. 
-Posts <em>can</em> be useful in some contexts, but in our experience
-we’ve found that they only really work well in places with single-member
-constituencies, and we believe that the simplicity of having every
-legislature expressed in exactly the same way is much more valuable than
-the benefits of sometimes using Posts.)</p>
+        <p>(People familiar with Popolo might wonder why we don’t use
+        <a href="http://www.popoloproject.com/specs/post.html">Posts</a> here. 
+        Posts <em>can</em> be useful in some contexts, but in our experience
+        we’ve found that they only really work well in places with single-member
+        constituencies, and we believe that the simplicity of having every
+        legislature expressed in exactly the same way is much more valuable than
+        the benefits of sometimes using Posts.)</p>
 
-<h3>What we don’t provide (and why)</h3>
+        <h3>What we don’t provide (and why)</h3>
 
-<p>There is lots of other very valuable data available on politicians
-worldwide, and eventually we hope to include much more.</p>
+        <p>There is lots of other very valuable data available on politicians
+        worldwide, and eventually we hope to include much more.</p>
 
-<p>But for now we don’t include anything other than the above — no asset
-declarations, no memberships of corporate boards, or parliamentary
-committees, or ministerial positions, etc.</p>
+        <p>But for now we don’t include anything other than the above — no asset
+        declarations, no memberships of corporate boards, or parliamentary
+        committees, or ministerial positions, etc.</p>
 
-<p>Of course we’re not saying that this data isn’t important — far from
-it! — just that we haven’t yet worked out how to provide it in
-a way that is consistent and comparable across all national
-jurisdictions.</p>
+        <p>Of course we’re not saying that this data isn’t important — far from
+        it! — just that we haven’t yet worked out how to provide it in
+        a way that is consistent and comparable across all national
+        jurisdictions.</p>
 
-<p>As standards or conventions appear around these things, we’ll start
-to include them, but for now we believe it’s much more important to
-start with data that can be consistent everywhere.</p>
+        <p>As standards or conventions appear around these things, we’ll start
+        to include them, but for now we believe it’s much more important to
+        start with data that can be consistent everywhere.</p>
 
-<h4>Wait! EveryPolitician doesn’t tell me who’s President/Prime Minister/Premier?</h4>
+        <h4>Wait! EveryPolitician doesn’t tell me who’s President/Prime Minister/Premier?</h4>
 
-<p>That’s right – because that’s a role in the <em>executive</em> branch of
-government, not the <em>legislative</em> branch — and for now we’re only
-providing legislative information.</p>
+        <p>That’s right – because that’s a role in the <em>executive</em> branch of
+        government, not the <em>legislative</em> branch — and for now we’re only
+        providing legislative information.</p>
 
-<p>In some countries, the head of the government <em>is</em> also member
-of the legislature, and if so they’ll appear in the data — but simply in
-the same manner as any other member.</p>
+        <p>In some countries, the head of the government <em>is</em> also member
+        of the legislature, and if so they’ll appear in the data — but simply in
+        the same manner as any other member.</p>
 
-<h4>Why don’t you just add a field for “is_leader”, or add an Organisation for the Cabinet?</h4>
+        <h4>Why don’t you just add a field for “is_leader”, or add an Organisation for the Cabinet?</h4>
 
-<p>Yes: we’ve seen people do both of these things — and other things too. And
-this is an excellent example of why it’s important that data doesn’t solely adhere
-to a <strong>standard</strong>, but also that it’s <strong>consistent</strong>. 
+        <p>Yes: we’ve seen people do both of these things — and other things too. And
+        this is an excellent example of why it’s important that data doesn’t solely adhere
+        to a <strong>standard</strong>, but also that it’s <strong>consistent</strong>. 
 
-<p>We’ve seen about six or seven different ways that some of these
-things can be expressed, all in perfectly valid Popolo.</p>
+        <p>We’ve seen about six or seven different ways that some of these
+        things can be expressed, all in perfectly valid Popolo.</p>
 
-<p>Within the context of a single country, each of them makes perfect sense. But
-because they’re all different, any third-party tool needs to understand
-how <em>all</em> of them are modelled if it wants to be able to do
-something with data from multiple different sources.</p>
+        <p>Within the context of a single country, each of them makes perfect sense. But
+        because they’re all different, any third-party tool needs to understand
+        how <em>all</em> of them are modelled if it wants to be able to do
+        something with data from multiple different sources.</p>
 
-<p>So we aren’t going to add fields like this until someone works out
-the best way to do it — in a manner that can work the same way pretty
-much everywhere, and can cope with all the complexity and idiosyncrasies
-of all the different ways countries worldwide organise their
-governance.</p>
+        <p>So we aren’t going to add fields like this until someone works out
+        the best way to do it — in a manner that can work the same way pretty
+        much everywhere, and can cope with all the complexity and idiosyncrasies
+        of all the different ways countries worldwide organise their
+        governance.</p>
 
-<p>If you know how to do that, great! Start a discussion about it on the <a
-href="https://github.com/popolo-project/popolo-spec/issues/new">Popolo
-tracker</a>, and once there’s consensus we’ll look at adding it.</p>
+        <p>If you know how to do that, great! Start a discussion about it on the <a
+        href="https://github.com/popolo-project/popolo-spec/issues/new">Popolo
+        tracker</a>, and once there’s consensus we’ll look at adding it.</p>
 
-<h4>But doesn’t that make this data incomplete?</h4>
+        <h4>But doesn’t that make this data incomplete?</h4>
 
-<p>Yes it is incomplete, but it’s <em>consistent and useful</em>. 
+        <p>Yes it is incomplete, but it’s <em>consistent and useful</em>. 
 
-<p>We’re providing a <em>base data set</em> that you can build on. Just
-because <em>our</em> data doesn’t include a field for who the President
-is, that doesn’t mean that your application can’t store that
-separately.</p>
+        <p>We’re providing a <em>base data set</em> that you can build on. Just
+        because <em>our</em> data doesn’t include a field for who the President
+        is, that doesn’t mean that your application can’t store that
+        separately.</p>
 
-<h4>But I already have complete, rich data for my country’s representatives.</h4>
+        <h4>But I already have complete, rich data for my country’s representatives.</h4>
 
-<p>You probably don’t need EveryPolitician’s data then. But you could
-help others.<p>
+        <p>You probably don’t need EveryPolitician’s data then. But you could
+        help others.<p>
 
-<p>Let us know (at team@everypolitician.org) what data you have, and
-we’ll work with you to transform it into the EveryPolitician Popolo
-format so that everyone else can benefit from it too.</p>
+        <p>Let us know (at team@everypolitician.org) what data you have, and
+        we’ll work with you to transform it into the EveryPolitician Popolo
+        format so that everyone else can benefit from it too.</p>
 
+      </div>
+    </div>
   </div>
 </div>

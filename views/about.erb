@@ -1,91 +1,95 @@
 <div class="container" id="about">
   <div class="page-section">
+    <div class="row">
+      <div class="column-one-quarter">
+         <%= erb :about_nav_menu %>
+      </div>
+      <div class="column-three-quarters">
+        <h1>What is EveryPolitician?</h1>
+        <p>
+          The clue’s in the name. EveryPolitician aims to provide data
+          about, well, every politician. In the world.
+        </p>
+        <p>
+          It’s a simple but ambitious project to collect and share that
+          data, in a consistent, open format that anyone can use.
+        </p>
+        <p>
+          Why? Because this resource doesn’t yet exist. And it would be
+          incredibly useful, for a huge number of people and organisations
+          all around the world.
+        </p>
+        <p>
+          When data is in a consistent, structured format, it can be reused
+          by developers everywhere. You don’t have waste time scraping data
+          and converting it into a format you can work with; instead, you
+          can simply concentrate on making tools. And those tools can more
+          easily be picked up, used and adapted to local needs anywhere in
+          the world, saving everyone time and effort. 
+        </p>
 
-    <h1>What is EveryPolitician?</h1>
-    <p>
-      The clue’s in the name. EveryPolitician aims to provide data
-      about, well, every politician. In the world.
-    </p>
-    <p>
-      It’s a simple but ambitious project to collect and share that
-      data, in a consistent, open format that anyone can use.
-    </p>
-    <p>
-      Why? Because this resource doesn’t yet exist. And it would be
-      incredibly useful, for a huge number of people and organisations
-      all around the world.
-    </p>
-    <p>
-      When data is in a consistent, structured format, it can be reused
-      by developers everywhere. You don’t have waste time scraping data
-      and converting it into a format you can work with; instead, you
-      can simply concentrate on making tools. And those tools can more
-      easily be picked up, used and adapted to local needs anywhere in
-      the world, saving everyone time and effort. 
-    </p>
+        <h2>The data</h2>
+        <p>
+          The long term aim is to include every elected official in the
+          world, but let’s start simple. Our first goal is to have data for
+          all present-day national-level legislators.
+        </p>
+        <p>
+          To see how far we’ve got, <a href="/countries.html">pick a country</a>.
+        </p>
+        <p>
+          There’s more to this data than you’ll see there, though. For most
+          datasets there is richer information available, including contact
+          details, photos, gender, and more. 
+        </p>
+        <p>
+          If you want to use that data, you can download it in two useful formats:
+        </p>
+        <ul>
+          <li>
+            <abbr title="comma separated value">CSV</abbr> format (great for spreadsheets)
+          </li>
+          <li>
+            <abbr title="JavaScript Object Notation">JSON</abbr> in Popolo format (ideal for
+              developers)
+          </li>
+        </ul>
+        <p>
+          A note about the Popolo standard: it’s a rich, expressive format that,
+          like a language, is used in many different ways by different authors.
+          However, when we add data to EveryPolitician we always use Popolo
+          according to the same, defined principles. It’s because of this
+          consistency that the tools you build will work with EveryPolitician data
+          from any country, for any country.
+        </p>
+        <p>
+          Want more detail? Interested in using this data in a web
+          application or tool you’re building? See the <a
+          href="/technical.html">technical overview of EveryPolitician</a>.
+        </p>  
 
-    <h2>The data</h2>
-    <p>
-      The long term aim is to include every elected official in the
-      world, but let’s start simple. Our first goal is to have data for
-      all present-day national-level legislators.
-    </p>
-    <p>
-      To see how far we’ve got, <a href="/countries.html">choose a country</a>.
-    </p>
-    <p>
-      There’s more to this data than you’ll see there, though. For most
-      datasets there is richer information available, including contact
-      details, photos, gender, and more. 
-    </p>
-    <p>
-      If you want to use that data, you can download it in two useful formats:
-    </p>
-    <ul>
-      <li>
-        <abbr title="comma separated value">CSV</abbr> format (great for spreadsheets)
-      </li>
-      <li>
-        <abbr title="JavaScript Object Notation">JSON</abbr> in Popolo format (ideal for
-          developers)
-      </li>
-    </ul>
+        <h2>How can I add or correct information?</h2>
 
-    <p>
-      A note about the Popolo standard: it’s a rich, expressive format that,
-      like a language, is used in many different ways by different authors.
-      However, when we add data to EveryPolitician we always use Popolo
-      according to the same, defined principles. It’s because of this
-      consistency that the tools you build will work with EveryPolitician data
-      from any country, for any country.
-    </p>
+        <p>See our handy guide to <a href="/contribute.html">contributing</a>.
 
-    <p>
-      Want more detail? Interested in using this data in a web
-      application or tool you’re building? See the <a
-      href="/technical.html">technical overview of EveryPolitician</a>.
-    </p>  
+        <h2 id="what-next">What next?</h2>
 
-    <h2>How can I add or correct information?</h2>
-
-    <p>See our handy guide to <a href="/contribute.html">contributing</a>.
-
-    <h2 id="what-next">What next?</h2>
-
-    <p>In a way, that’s up to you. The data’s here, now go and build the tools to use it! (And don’t forget to let us know when you do.)</p>
+        <p>In a way, that’s up to you. The data’s here, now go and build the tools to use it! (And don’t forget to let us know when you do.)</p>
     
-    <p>We already know that EveryPolitician’s data will help with existing projects, like these ones which make it easy to 
-    <a href="http://sayit.poplus.org/">track what those politicians say</a>, or
-    <a href="http://www.cargografias.org/">visualise their political careers</a>, or
-    which enable citizens to <a href="http://writeit.poplus.org/">send public messages to them</a>. </p>
+        <p>We already know that EveryPolitician’s data will help with existing projects, like these ones which make it easy to 
+        <a href="http://sayit.poplus.org/">track what those politicians say</a>, or
+        <a href="http://www.cargografias.org/">visualise their political careers</a>, or
+        which enable citizens to <a href="http://writeit.poplus.org/">send public messages to them</a>. </p>
 
-    <p>As data becomes available from more countries, all in the same format,
-    more and more tools like this will become possible.</p>
+        <p>As data becomes available from more countries, all in the same format,
+        more and more tools like this will become possible.</p>
 
-    <h2 id="find-out-more">Find out more</h2>
+        <h2 id="find-out-more">Find out more</h2>
 
-    <p>EveryPolitician is a <a href="http://www.poplus.org/">Poplus</a> project. Drop by
-    our <a href="https://groups.google.com/forum/#!forum/poplus">friendly mailing list</a> 
-    to ask questions or just to say hello.</p>
+        <p>EveryPolitician is a <a href="http://www.poplus.org/">Poplus</a> project. Drop by
+        our <a href="https://groups.google.com/forum/#!forum/poplus">friendly mailing list</a> 
+        to ask questions or just to say hello.</p>
+      </div>
+    </div>
   </div>
 </div>
