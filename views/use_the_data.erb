@@ -1,0 +1,231 @@
+<div class="container" id="about">
+  <div class="page-section">
+    <div class="row">
+      <div class="column-one-quarter">
+         <%= erb :about_nav_menu %>
+      </div>
+      <div class="column-three-quarters">
+        <h1>How to use EveryPolitician&rsquo;s data</h1>
+        <p>
+          If you build a website that does something useful with <a
+          href="/countries.html">all this wonderful data</a> about the
+          politicians in your country, then that's <em>mission
+          accomplished</em> for us. But, because we're very specific about <a
+          href="/data_structure.html">what the data is and how we present
+          it</a>, that thing you built is very likely to be useful to people
+          who want the same thing in <em>their</em> country too, if you choose
+          to share it.
+        </p>
+        <p>
+          The data is available in <a href="/technical.html">JSON or CSV</a>
+          formats. If you're building a website that consumes it, the chances
+          are that you'll use the JSON, because that's the more richly
+          structured of the two. It's easy to parse JSON in pretty much any
+          programming language, both front- or back-end. But the CSV data is
+          also handy too. We keep it all in synch, so you can focus on inventing
+          and building useful ways to use it.
+        </p>
+        <p>
+          Together with the notes on this website, and the <a
+          href="http://www.popoloproject.com/">Popolo specification</a>, you're
+          probably good to go already. But we know the best way to really get
+          going is to dive into an example, so have a look at the following
+          real-world case study.
+        </p>
+        <h2>How <em>Gender Balance</em> gets its data</h2>
+        <p>
+          To show how building a site on EveryPolitician data can work, here's
+          a case study: Gender Balance, a site that plays a crowdsourcing game
+          to get or refine gender data about politicians.
+        </p>
+        <ul>
+          <li> the <a href="http://www.gender-balance.org/">Gender Balance</a> website</li>
+          <li>...and the <a href="https://github.com/everypolitician/gender-balance">source code on GitHub</a></li>
+        </ul>
+        <p>
+          The application is not only built on EveryPolitician data, but in the
+          long term it's also contributing back to it. We're helping ourselves
+          here &mdash; of course not every tool needs to do that &#9786;
+          although we do think people who run sites using the data will often
+          be interested in feeding back corrections and additions too.
+        </p>
+        <h3>The problem: crowdsource gender data</h3>
+        <p>
+          We describe the real problem we're trying to solve <a
+          href="http://www.gender-balance.org/about">on Gender Balance's
+          website</a>. In a nutshell, gender data is missing from a lot of the
+          political data out there &mdash; not just for contemporary
+          politicians, but in historical data too. This is something that can
+          be relatively easy to rectify by crowdsourcing.
+        </p>
+        <img src="/images/gender-balance-screenshot.png" alt="screenshot of Gender Balance" style="border:1px solid #ccc;"/>
+        <p>
+          The site presents politicians' profiles to the player as a stack of
+          cards. The player runs through the stack, classifying the gender of
+          each politician (possibly quite fast, by swiping). Yes, this is more
+          fun than it sounds, and certainly more fun than doing it in a
+          spreadsheet. The politicians are all from a single jurisdiction (that
+          means a player can choose a data set they're familiar with &mdash;
+          for example, their own country's current government).
+        </p>
+        
+        <h3>Stand by to handle JSON data</h3>
+        <p>
+          Gender Balance is written in Ruby, and we're starting by pulling JSON
+          data from EveryPolitician. So we're using the <a
+          href="https://rubygems.org/gems/yajl-ruby/versions/1.2.1">YAJL
+          library</a> to do the parsing work for us. It's available as a gem:
+        </p>
+        <pre>gem install yajl-ruby</pre>
+        <p>
+          ...which appears in the <a href="https://github.com/everypolitician/gender-balance/blob/235af1d14089b7acad78387cf1f398ad2592cfe0/Gemfile#L23"><code>Gemfile</code></a>
+          as:
+        </p>
+        <pre>gem 'yajl-ruby', require: 'yajl'</pre>
+        <h3>Pull the data: <code>countries.json</code></h3>
+        <p>
+          We start by pulling down <code>countries.json</code>, which declares
+          what data is available &mdash; specifically what countries are
+          available, which legislatures are represented within them, and the
+          different periods or terms within those. Effectively,
+          <code>countries.json</code> is an index to the data sets of
+          politicians that are available.
+        </p>
+        <p>
+          In the Gender Balance application, this is happening in the
+          <code><a href="https://github.com/everypolitician/gender-balance/blob/235af1d14089b7acad78387cf1f398ad2592cfe0/app/jobs/update_cache_job.rb#L22">cache_legislative_periods</a></code> process:
+        </p>
+        <pre>
+countries_json = 'https://github.com/everypolitician/' \
+  'everypolitician-data/raw/master/countries.json'
+countries = Yajl.load(open(countries_json).read, symbolize_keys: true</pre>
+        <p>
+          Now we can iterate through the countries. Many countries have one
+          legislature, but some have more (for example, an upper and lower
+          house). And finally, before we get to the politicians themselves, we
+          need to identify a specific period within that legislature. For
+          example, in many countries, a new term starts after each nationwide
+          election; where possible EveryPolitician collects historic data for
+          previous terms too, so there may be multiple periods to choose from.
+        </p>
+        <pre>
+countries.each do |country|
+  country[:legislatures].each do |legislature|
+    legislature[:legislative_periods].each do |legislative_period|
+      puts "Processing #{country[:name]} #{legislature[:name]} #{legislative_period[:name]}"</pre>
+       <h3>Create LegislativePeriods</h3>
+       <p>
+         In the application, we've defined a <code><a
+            href="https://github.com/everypolitician/gender-balance/blob/master/app/models/legislative_period.rb">LegislativePeriod</a></code>
+         class. As you'd expect this has things like the country code, the
+         legislature's name and slug, and the period's start date. But an
+         important detail here is that <code>countries.json</code> also
+         specifies the SHA of the most recent git commit for each legislature's
+         data. This is necessary for constructing the URL to the specific
+         legistlative period data. We use <code>cdn.rawgit.com</code> because
+         it serves the data file with the correct MIME type.
+       </p>
+<pre>
+def csv
+  Sinatra::Application.cache_client.fetch(cache_key, 1.month) do
+    csv_url = 'https://cdn.rawgit.com/everypolitician/everypolitician-data/' \
+      "#{legislature[:sha]}/#{legislative_period[:csv]}"
+    CSV.parse(open(csv_url).read, headers: true, header_converters: :symbol)
+  end
+end</pre>
+        <p>
+          This pulls EveryPolitician's <abbr title="comma separated
+          values">CSV</abbr> data for the person data for the specific
+          legislative period. The values in EveryPolitician CSV's header row
+          are used as the hash keys <code>CSV.parse</code> (the
+          <code>header_converters:&nbsp;:symbol</code> parameter ensures
+          they're Ruby symbols, not strings: for example, <code>:name</code>).
+        </p>
+        <h3>And then into the application...</h3>
+        <p>
+          Now the data's loaded, it's displayed by the front end in the "stack
+          of cards" interface. We present the name and party or faction each
+          politician belongs to (those are strings <code>:name</code> and
+          <code>:group</code> respectively). We also show an image of the
+          politician where one is available, using the URL in the
+          <code>:image</code> field. (In fact, to improve performance, we built
+          an image proxying mechanism to handle the images).
+        </p>
+        <p>
+          The CSV data from EveryPolitician includes a unique <code>:id</code>.
+          The ID is unique within the data set (that is, within the specified
+          legislature fo that country, in that legislative period), but it's 
+          <em>not</em> guaranteed to be unique across all data sets. So the
+          Gender Balance application assigns its own unique IDs when it adds
+          records to the database, and stores the Every Politician ID as
+          <code>politician_id</code> (together with the
+          <code>country_code</code>, <code>legislature_slug</code> and
+          <code>legislative_period_id</code>, in order to identify the source).
+          This is important, because in the long run we're interested in
+          returning the gender data collected by the application back into
+          EveryPolitician's data &mdash; relying on the <code>id</code> alone
+          would certainly not be sufficient to identify a politician.
+        </p>
+        <h2>Keeping up to date</h2>
+        <p>
+          Gender Balance has been built at a time when the EveryPolitician is
+          still adding a new legislature or country every day. So, as soon as a
+          new country is added, we want to let people get to work (or play)
+          classifing its gender data.
+        </p>
+        <p>
+          But in practice, political data is <em>never</em> stable:
+          legislatures change through both planned (elections) and unplanned
+          (revolutions and coups) processes, and politicians retire or die.
+        </p>
+        <p>
+          So to demonstrate how this can work, Gender Balance uses an
+          event-driven mechanism for ensuring it's always using the most
+          up-to-date data.
+        </p>
+        <h4>Triggered by new data on EveryPolitician</h4>
+        <p>
+          We use another of our services,
+          <a href="https://github.com/everypolitician/app-manager/">app-manager</a>,
+          to make HTTP calls triggered by events on the EveryPolitician repo.
+          This is possible because of GitHub's excellent 
+          <a href="https://developer.github.com/webhooks/">webhook mechanism and API</a>.
+        </p>
+        <p>
+          Whenever an <code>everypolitician-data</code> 
+          <a href="https://github.com/everypolitician/app-manager/blob/69dc79fca17d469efdc5cb2d39508b27229e92fe/app/jobs/handle_everypolitician_data_pull_request_job.rb#L17-L19" title="webhook trigger in app-manager">pull request gets merged</a> &mdash;
+          which simply means its data has been updated &mdash; a webhook is triggered.
+          That webhook
+          <a href="https://github.com/everypolitician/app-manager/blob/69dc79fca17d469efdc5cb2d39508b27229e92fe/app/jobs/handle_everypolitician_data_pull_request_job.rb#L42-L47" title="webhooks to listening applications">sends a request to nominated URLs</a>
+          in all the applications (which in this case includes Gender Balance) that
+          are listening. Specifically, app-manager
+         <a href="https://github.com/everypolitician/app-manager/blob/69dc79fca17d469efdc5cb2d39508b27229e92fe/app/jobs/send_webhook_job.rb" title="app-manager sends POST request">POSTs <code>countries.json</code>'s
+           contents to Gender Balance</a>.
+        </p>
+        <h3>Gender Balance updates its data</h3>
+        <p>
+          For this to work, Gender Balance must expose a URL for the webhook to hit
+          by way of notification. That's
+<a href="https://github.com/everypolitician/gender-balance/blob/7b99ad54b07070b4467d36708fadc7cb7c21145d/app.rb#L71-L77"><code>/event_handler</code></a>,
+          which waits for incoming POST requests from the webhook and executes the
+          <a href="https://github.com/everypolitician/gender-balance/blob/538b11de179e366b5710f2fe29118d101af7f994/app/jobs/update_cache_job.rb">UpdateCacheJob</a>.
+        </p>
+        <p>
+          Th UpdateCacheJob code pulls in the data &mdash; this is
+          fundamentally the same process that populated the data in the first
+          place. So, it starts by <code>countries.json</code> to make sure it's
+          got the latest information on which countries are represented, and
+          the SHA hashes needed to pull specific data, as explained above. In
+          fact, although the <code>countries.json</code> data is being passed
+          as the payload in the POST request, currently our code choses to
+          fetch the file itself. Either way, the important thing is that Gender
+          Balance is working with the most recent version of that file. After
+          all, this is all happening because EveryPolitician's data has been
+          updated, and that will <em>always</em> result in a change to
+          <code>countries.json</code> (because even a tiny change to a single
+          jurisdiction's data will result in a new SHA).
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

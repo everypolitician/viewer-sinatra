@@ -102,6 +102,10 @@ get '/data_structure.html' do
   erb :data_structure
 end
 
+get '/use_the_data.html' do
+  erb :use_the_data
+end
+
 get '/*.css' do |filename|
   scss :"sass/#{filename}"
 end
