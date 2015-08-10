@@ -19,15 +19,15 @@ describe 'Per Country Tests' do
     before { get '/finland/eduskunta/term-table/35.html' }
 
     it 'should have have its name' do
-      subject.css('#term h1').text.must_include 'Eduskunta 35 (2007)'
+      subject.css('#term h1').text.must_include 'Eduskunta 35'
     end
 
     it 'should have the correct page title' do
-      subject.css('title').text.must_equal 'Eduskunta 35 (2007)'
+      subject.css('title').text.must_equal 'Eduskunta 35'
     end
 
     it 'should list the parties' do
-      memtable.text.must_include 'Centre Party'
+      memtable.text.must_include 'Keskusta'
     end
 
     it 'should list the areas' do
