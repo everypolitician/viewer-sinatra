@@ -30,7 +30,7 @@ update_politician_image_proxy() {
   git clone "git@github.com:mysociety/politician-image-proxy.git"
   cd politician-image-proxy
   bundle install --gemfile=Gemfile
-  puts "Updating politician-image-proxy"
+  echo "Updating politician-image-proxy"
   QUIET=1 ruby scraper.rb
   git add .
   git -c "user.name=everypoliticianbot" -c "user.email=everypoliticianbot@users.noreply.github.com" commit -m "Update images" || true
