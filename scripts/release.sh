@@ -39,10 +39,12 @@ update_politician_image_proxy() {
 
 main() {
   add_ssh_key
-  if [[ "$TRAVIS_PULL_REQUEST" == "false" && "$TRAVIS_BRANCH" == "master" ]]; then
-    update_viewer_static
+  if [[ "$TRAVIS_PULL_REQUEST" == "false" ]]; then
+    if [[ "$TRAVIS_BRANCH" == "master" ]]; then
+      update_viewer_static
+    fi
+    update_politician_image_proxy
   fi
-  update_politician_image_proxy
 }
 
 main
