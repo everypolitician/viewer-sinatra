@@ -206,3 +206,21 @@
         vertical-align: bottom;
     }
 }
+
+/* */
+.decorated-url {
+  span {
+    border-radius:4px;
+    color: white;
+    padding:3px 6px;
+    &.example-sha {
+      background-color: #ef9793;
+    }
+    &.example-json {
+      background-color: #8dc7fd;
+    }
+    &.example-csv {
+      background-color: #8cd5a6;
+    }
+  }
+}
