@@ -21,7 +21,7 @@ module EveryPolitician
     def raw
       @_data ||= begin
         unless File.exist? @cache_file
-          puts "Writing #{@url} to #{@cache_file}"
+          # puts "Writing #{@url} to #{@cache_file}"
           File.write @cache_file, open(@url).read
         end
         File.read(@cache_file)
