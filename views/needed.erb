@@ -1,0 +1,37 @@
+<div class="page-section" id="home">
+    
+    <div class="container">
+
+        <h2>Source Needed</h2>
+
+        <div class="container">
+            <ul class="grid-list source-needed">
+              <% @to_find.sort_by { |i| i[:title] }.each do |i| %>
+                <li>
+                    <a class="avatar-unit" href="<%= i[:html_url] %>/">
+                        <span class="avatar"><i class="fa fa-users"></i></span>
+                        <h3><%= i[:title] %></h3>
+                    </a>
+                </li>
+              <% end %>
+            </ul>
+        </div>
+
+        <h2>Scraper Needed</h2>
+
+        <div class="container">
+            <ul class="grid-list scraper-needed">
+              <% @to_scrape.sort_by { |i| i[:title] }.each do |i| %>
+                <li>
+                    <a class="avatar-unit" href="<%= i[:html_url] %>/">
+                        <span class="avatar"><i class="fa fa-users"></i></span>
+                        <h3><%= i[:title] %></h3>
+                    </a>
+                </li>
+              <% end %>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
