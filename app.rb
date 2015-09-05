@@ -1,13 +1,16 @@
 require 'csv'
-require 'yajl/json_gem'
+require 'dotenv'
+require 'octokit'
 require 'open-uri'
+require 'pry'
 require 'sass'
 require 'set'
 require 'sinatra'
-require 'pry'
+require 'yajl/json_gem'
 
 require_relative './lib/popolo_helper'
 
+Dotenv.load
 helpers Popolo::Helper
 
 cjson = File.read('DATASOURCE').chomp
@@ -83,9 +86,17 @@ get '/status/all_countries.html' do
 end
 
 get '/needed.html' do
-  gh_url = 'https://api.github.com/repos/everypolitician/everypolitician-data/issues?labels=new%%20country,%s;per_page=100'
-  @to_scrape = JSON.parse(open(gh_url % 'to%20scrape'), symbolize_names: true) rescue []
-  @to_find   = JSON.parse(open(gh_url % 'to%20find'),   symbolize_names: true) rescue []
+  if (token = ENV['GITHUB_ACCESS_TOKEN']).to_s.empty?
+    warn "No GITHUB_ACCESS_TOKEN found"
+    client = Octokit::Client.new
+  else 
+    client = Octokit::Client.new(access_token: token)
+  end
+  client.auto_paginate = true
+
+  @to_find   = client.issues 'everypolitician/everypolitician-data', labels: "New Country,To Find"
+  @to_scrape = client.issues 'everypolitician/everypolitician-data', labels: "New Country,To Scrape"
+  
   erb :needed
 end
 
