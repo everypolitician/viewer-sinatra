@@ -35,3 +35,36 @@
     </div>
 
 </div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+    var make_node = function(text, url) { 
+      var n = $(".grid-list li:first").clone();
+      n.find('a').attr('href', url).find('h3').text(text);
+      return n;
+    };
+
+    var by_country = function(a, b) {
+      return ((a.title < b.title) ? -1 : ((a.title > b.title) ? 1 : 0));
+    };
+
+    var to_find_url = 'https://api.github.com/repos/everypolitician/everypolitician-data/issues?labels=new%20country,to%20find;per_page=100'
+    $.get(to_find_url).done(function(data) {
+      var new_nodes = $.map(data.sort(by_country), function(issue, n) { 
+        return make_node(issue.title, issue.html_url);
+      });
+      $(".source-needed").html(new_nodes);
+    });
+
+    var to_scrape_url = 'https://api.github.com/repos/everypolitician/everypolitician-data/issues?labels=new%20country,to%20scrape;per_page=100'
+    $.get(to_scrape_url).done(function(data) {
+      var new_nodes = $.map(data.sort(by_country), function(issue, n) { 
+        return make_node(issue.title, issue.html_url);
+      });
+      $(".scraper-needed").html(new_nodes);
+    });
+
+  });
+</script>
+

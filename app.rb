@@ -84,8 +84,8 @@ end
 
 get '/needed.html' do
   gh_url = 'https://api.github.com/repos/everypolitician/everypolitician-data/issues?labels=new%%20country,%s;per_page=100'
-  @to_scrape = JSON.parse(open(gh_url % 'to%20scrape'), symbolize_names: true)
-  @to_find   = JSON.parse(open(gh_url % 'to%20find'),   symbolize_names: true)
+  @to_scrape = JSON.parse(open(gh_url % 'to%20scrape'), symbolize_names: true) rescue []
+  @to_find   = JSON.parse(open(gh_url % 'to%20find'),   symbolize_names: true) rescue []
   erb :needed
 end
 
