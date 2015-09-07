@@ -59,6 +59,21 @@
             </ul>
         </div>
 
+        <h2>In Progress</h2>
+
+        <div class="container">
+            <ul class="grid-list scraper-progress">
+              <% @to_finish.sort_by { |i| i[:title] }.each do |i| %>
+                <li>
+                    <a class="avatar-unit" href="<%= i[:html_url] %>/">
+                        <span class="avatar"><i class="fa fa-users"></i></span>
+                        <h3><%= i[:title] %></h3>
+                    </a>
+                </li>
+              <% end %>
+            </ul>
+        </div>
+
     </div>
 
 </div>

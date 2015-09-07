@@ -96,6 +96,8 @@ get '/needed.html' do
 
   @to_find   = client.issues 'everypolitician/everypolitician-data', labels: "New Country,To Find"
   @to_scrape = client.issues 'everypolitician/everypolitician-data', labels: "New Country,To Scrape"
+  @to_finish = client.issues 'everypolitician/everypolitician-data', labels: "New Country,3 - WIP"
+  warn @to_finish
   
   erb :needed
 end
