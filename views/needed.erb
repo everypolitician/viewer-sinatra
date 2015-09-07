@@ -19,6 +19,13 @@
 
         <h2>Scraper Needed</h2>
 
+        <p>For the following countries we already know at least one plausible
+        source of data (see the linked Github ticket for more information). 
+        If you'd like to help write a scraper for any of these, please read 
+        our <a href="/scrapers.html">guide to writing an EveryPolitician 
+        Scraper</a> — and don't forget to leave a note on the ticket so
+        that no-one else duplicates your efforts.</p>
+
         <div class="container">
             <ul class="grid-list scraper-needed">
               <% @to_scrape.sort_by { |i| i[:title] }.each do |i| %>
