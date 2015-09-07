@@ -151,24 +151,23 @@ end
           (actually this is the default behaviour for morph.io).
         </p>
         <p>
-          But EveryPolitician also needs to know the names of the terms if there’s
-          more than one. Ideally these can be stored in a table called <code>terms</code>
-          &mdash; it’s the third parameter in the call to <code>save_sqlite</code>:
+          But EveryPolitician also needs to know the names and dates of the legislative 
+          period(s) / political term(s) that this data applies to. You could simply
+          <em>tell</em> us that, but the best approach is to store them in a 
+          <code>terms</code> table alongside the <code>data</code> table, and then 
+          we can read it automatically.
         </p>
         <p>
-          <code>ScraperWiki.save_sqlite([:id], terms, 'terms')</code>
+          This easy to do, you just provide a the third parameter to the call to 
+          <code>save_sqlite</code>:
+        </p>
+        <p>
+          <code>ScraperWiki.save_sqlite([:id], term_data, 'terms')</code>
         </p>
         <p>
           You can see an explicit example of this in the
           <a href="https://github.com/tmtmtmtm/tuvalu-parliament-wikipedia/blob/12c8155ae9a40e895b785061ba69d849888cf0b3/scraper.rb#L77-L99">scraper
           for Tuvalu</a>.
-        </p>
-        <p> 
-          If you write a scraper for EveryPolitician, you must remember to tell us
-          not only the URL we can use to get the data it extracts, but also a
-          way to determine what terms are available. If you’ve put them in a <code>terms</code>
-          table alongside the <code>data</code> table, you just need to tell us the
-          URL for that and we can read it automatically.
         </p>
         <h2>
           Finally, EveryPolitician collects the data
