@@ -125,16 +125,17 @@ require 'open-uri/cached'
   end
 end</code></pre>
         <p>
-          The data is collected in an hash called <code>data</code>, which is
-          then saved to the implicit database using the <code>:id</code> field
-          to distinguish each record. The <code>:id</code> field itself is
-          being constructed using the name, stripped of the title (in this
-          case, Senator):
+          The data is collected in an hash called <code>data</code>, which is 
+          then saved to the database, using the <code>:id</code> field to 
+          distinguish each record. (As we’re only scraping information for a
+          single period here, that will be unique.) Sometimes there will be an
+          obvious value on the page that can be used as an identifier, but here
+          we construct it from the URL:
         </p>
         <pre><code>def scrape_person(name, url)
   noko = noko_for(url)
   data = { 
-    id: url.to_s.split("/").last.sub('senator-',''),
+    id: url.to_s.split("/").last,
     name: name.sub('Senator ', ''),
     image: noko.css('img[src*="/Senators/"]/@src').text,
     source: url.to_s,
