@@ -115,7 +115,7 @@ require 'open-uri/cached'
           senators. If you look at the underlying HTML, you’ll see that list is
           in <code>&lt;div class="mod-inner"&gt;</code> &mdash; specifically
           the <code>&lt;a&gt;</code> tags within the <code>&lt;li&gt;</code>
-          tags within that. This is isolated with a single call to noko:
+          tags within that. This is isolated with a single call to nokogiri:
         </p>
         <pre><code>def scrape_list(url)
   noko = noko_for(url)
