@@ -13,7 +13,7 @@
         </p>
         <p>
           Maybe you’ll write the scraper that pulls in the data for your own
-          country. Or maybe you'll just pick <a
+          country. Or maybe you’ll just pick <a
           href="/needed.html">one that we need</a>
           (see under: &ldquo;Scraper needed&rdquo;) simply because you’re a
           kind-hearted, helpful developer. Either way: we love you!
@@ -148,10 +148,10 @@ end
 </code></pre>
 
         <p> 
-          (You might be wondering why we're gathering so little information
-          here. Didn't we <a href="/submitting.html">say</a> that we needed
-          things like area, politicial party, etc. too?  Well, that's because 
-          we're getting <em>that</em> information from 
+          (You might be wondering why we’re gathering so little information
+          here. Didn’t we <a href="/submitting.html">say</a> that we needed
+          things like area, politicial party, etc. too?  Well, that’s because 
+          we’re getting <em>that</em> information from 
           <a href="https://github.com/tmtmtmtm/us-virgin-islands-legislature-wikipedia/blob/master/scraper.rb">a
           separate scraper</a>, using the Wikipedia page of the election 
           results, and then merging the two together as described above.) 
@@ -187,14 +187,14 @@ end
           Finally, EveryPolitician collects the data
         </h2>
         <p>
-          When you've done all the work and scraper is written, EveryPolitician
-          retrieves the data you've created by pulling it down from the URL
-          you provide. The actual mechanism is driven by Rake tasks, and doesn't
+          When you’ve done all the work and scraper is written, EveryPolitician
+          retrieves the data you’ve created by pulling it down from the URL
+          you provide. The actual mechanism is driven by Rake tasks, and doesn’t
           really affect the way you choose to write your scraper. However, if you
           look at the <code>instructions.json</code> file that is used to direct
           EveryPolitician when it collects and merges data from different sources, you can
           see how it pulls data in from scrapers that effectively map to the different
-          sources. Here's the
+          sources. Here’s the
           <a href="https://github.com/everypolitician/everypolitician-data/blob/master/data/Luxembourg/Chamber/sources/instructions.json">example
           for Luxembourg</a>.
       </div>
