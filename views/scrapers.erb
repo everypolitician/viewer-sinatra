@@ -1,0 +1,191 @@
+<div class="container" id="contribute">
+  <div class="page-section">
+    <div class="row">
+      <div class="column-one-quarter">
+         <%= erb :about_nav_menu %>
+      </div>
+      <div class="column-three-quarters">
+        <h1>About writing scrapers</h1>
+        <p>
+          We need to get data into EveryPolitician, and scrapers are a big part
+          of <a href="contribute.html#process">that process</a>. We’re busy
+          writing more, but we’d be very happy if you wrote one for us.
+        </p>
+        <p>
+          Maybe you’ll write the scraper that pulls in the data for your own
+          country. Or maybe you'll just pick <a
+          href="http://everypolitician.org/needed.html">one that we need</a>
+          (see under: &ldquo;Scraper needed&rdquo;) simply because you’re a
+          kind-hearted, helpful developer. Either way: we love you!
+        </p>
+        <h2>The basic task</h2>
+        <p>
+          The problem your scraper is solving is to convert the source data
+          (typically, but not always, a website or page) into a <a
+          href="submitting">format we can easily import</a>.
+        </p>
+        <p>
+          Also, note that your scraper will not be part of the EveryPolitician
+          codebase &mdash; it’s supporting technology, certainly, but
+          EveryPolitician is really only interested in the data it provides.
+          EveryPolitician doesn’t run scapers; it just consumes their data.
+        </p>
+        <h2>Using morph.io</h2>
+        <p>
+          It’s certainly not mandatory, but if you don’t already have somewhere
+          to run and host your scraper, we encourage you to use <a
+          href="https://morph.io">morph.io</a>. It’s a platform that not only
+          hosts (and therefore runs) your scraper, but also exposes the data it
+          yields. This is great for EveryPolitician &mdash; it means we can
+          grab the output from your scraper easily just by knowing its output
+          URL(s) But it’s also helpful for anyone else who could use that data
+          directly. (This makes sense when you consider that your scraper might
+          be collecting some fields which EveryPolitician discards &mdash; we
+          ignore fields that we’re not intested in storing, because we have a
+          mission to keep the data <a href="data_structure.html">consistent and
+          useful</a> across all the countries; but some of the data we’re
+          choosing to skip might be useful to someone else.)
+        </p>
+        <h2>
+          Multiple sources: we merge!
+        </h2>
+        <p>
+          It turns out that it’s not uncommon for a country’s politician data
+          to come from <em>more than one source</em>. That’s OK:
+          EveryPolitician expects to have to merge them. A simple example of
+          how this might come about is if the politicians’ membership
+          information (that is: who’s in which political party) is available on
+          one site, but their date-of-birth and gender data is held on another.
+        </p>
+        <p>
+          In such cases, simply write separate scrapers, and let
+          EveryPolitician deal with joinging them together. Of course you’ll
+          need to provide some common field or fields that allow the separate
+          sources to be mapped together: often this is the politician’s name.
+          Then we can merge the different data on that. And, yes, we can ease
+          some of the potential pain by using some fuzzy name-matching if the
+          spelling or format is a little wobbly on the different sources.
+        </p>
+        <h2>
+          An example
+        </h2>
+        <p>
+          Since we’ve written a lot of scrapers for this project, we’ve got into
+          a groove, and most of the time we use the same preamble to load the 
+          things we know make this work easier. So in many cases our scraper scripts
+          start like this:
+        </p>
+        <pre><code>#!/bin/env ruby
+# encoding: utf-8
+
+require 'scraperwiki'
+require 'nokogiri'
+require 'open-uri'
+require 'colorize'
+require 'pry'
+require 'open-uri/cached'
+</code></pre>
+        <p>
+          The <a href="https://github.com/scraperwiki/scraperwiki-ruby"><code>scraperwiki</code>
+          gem</a> provides access to all the magic of morph.io, including the
+          implicit database that is available for every scraper.
+          The <a href="https://rubygems.org/gems/nokogiri/versions/1.6.6.2"><code>nokogiri gem</code></a>
+          provides powerful HTML parsing tools.
+        </p>
+        <p>
+          There are often two routines in each scraper. It won’t always be
+          the case, but more often than not it’s worked for us:
+        </p>
+        <ul>
+          <li>
+            <p><code>scrape_list(url)</code> &mdash; parses the list of 
+            politicians, isolating each one by name</p>
+          </li>
+          <li>
+            <p><code>scrape_person(name, url)</code> &mdash; parses the data
+            for each individual politician</p>
+          </li>
+        </ul>
+        <p>
+          Here’s an example of a scraper we’re using to get the data for the US Virgin Islands:
+          <a href="https://github.com/tmtmtmtm/us-virgin-islands-legislature/blob/master/scraper.rb">github.com/tmtmtmtm/us-virgin-islands-legislature/blob/master/scraper.rb</a>.
+        </p>
+        <p>
+          That’s hitting <a href="http://www.legvi.org/index.php/senator-marvin-blyden">www.legvi.org/index.php/senator-marvin-blyden</a>
+          and you can see on the left hand side of that page a list of
+          senators. If you look at the underlying HTML, you’ll see that list is
+          in <code>&lt;div class="mod-inner"&gt;</code> &mdash; specifically
+          the <code>&lt;a&gt;</code> tags within the <code>&lt;li&gt;</code>
+          tags within that. This is isolated with a single call to noko:
+        </p>
+        <pre><code>def scrape_list(url)
+  noko = noko_for(url)
+  <strong>noko.css('.mod-inner li a')</strong>.each do |a|
+    mp_url = URI.join url, a.attr('href')
+    scrape_person(a.text, mp_url)
+  end
+end</code></pre>
+        <p>
+          The data is collected in an hash called <code>data</code>, which is
+          then saved to the implicit database using the <code>:id</code> field
+          to distinguish each record. The <code>:id</code> field itself is
+          being constructed using the name, stripped of the title (in this
+          case, Senator):
+        </p>
+        <pre><code>def scrape_person(name, url)
+  noko = noko_for(url)
+  data = { 
+    id: url.to_s.split("/").last.sub('senator-',''),
+    name: name.sub('Senator ', ''),
+    image: noko.css('img[src*="/Senators/"]/@src').text,
+    source: url.to_s,
+  }
+  data[:image] = URI.join(url, data[:image]).to_s unless data[:image].to_s.empty?
+  ScraperWiki.save_sqlite([:id], data)
+end
+</code></pre>
+        <h2>
+          Data and terms
+        </h2>
+        <p>
+          The politician’s data is being stored in a table called <code>data</code>
+          (actually this is the default behaviour for morph.io).
+        </p>
+        <p>
+          But EveryPolitician also needs to know the names of the terms if there’s
+          more than one. Ideally these can be stored in a table called <code>terms</code>
+          &mdash; it’s the third parameter in the call to <code>save_sqlite</code>:
+        </p>
+        <p>
+          <code>ScraperWiki.save_sqlite([:id], terms, 'terms')</code>
+        </p>
+        <p>
+          You can see an explicit example of this in the
+          <a href="https://github.com/tmtmtmtm/tuvalu-parliament-wikipedia/blob/master/scraper.rb#L77-L99">scraper
+          for Tuvalu</a>.
+        </p>
+        <p> 
+          If you write a scraper for EveryPolitician, you must remember to tell us
+          not only the URL we can use to get the data it extracts, but also a
+          way to determine what terms are available. If you’ve put them in a <code>terms</code>
+          table alongside the <code>data</code> table, you just need to tell us the
+          URL for that and we can read it automatically.
+        </p>
+        <h2>
+          Finally, EveryPolitician collects the data
+        </h2>
+        <p>
+          When you've done all the work and scraper is written, EveryPolitician
+          retrieves the data you've created by pulling it down from the URL
+          you provide. The actual mechanism is driven by Rake tasks, and doesn't
+          really affect the way you choose to write your scraper. However, if you
+          look at the <code>instructions.json</code> file that is used to direct
+          EveryPolitician when it collects and merges data from different sources, you can
+          see how it pulls data in from scrapers that effectively map to the different
+          sources. Here's the
+          <a href="https://github.com/everypolitician/everypolitician-data/blob/master/data/US_Virgin_Islands/Legislature/sources/instructions.json">example
+          for the US Virgin Islands</a>.
+      </div>
+    </div>
+  </div>
+</div>

@@ -120,6 +120,10 @@ get '/data_structure.html' do
   erb :data_structure
 end
 
+get '/scrapers.html' do
+  erb :scrapers
+end
+
 get '/*.css' do |filename|
   scss :"sass/#{filename}"
 end

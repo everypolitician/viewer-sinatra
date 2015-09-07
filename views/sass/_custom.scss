@@ -206,3 +206,26 @@
         vertical-align: bottom;
     }
 }
+
+.process-boxes div{
+  padding:1em;
+  border-radius:0.25em;
+  margin:0.5em;
+  width:66%;
+  font-weight:bold;
+  p {
+    margin: 0.25em 1em;
+    font-weight:normal;
+  }
+  &.step-0 {
+    background-color:#ffbbbb;
+    margin-top: 1em;
+  }
+  &.step-1 {
+    background-color:#ffffbb;
+  }
+  &.step-2 {
+    background-color:#bbffbb;
+    margin-bottom: 1em;
+  }
+}

@@ -7,26 +7,121 @@
       <div class="column-three-quarters">
         <h1>We need your help</h1>
 
-        <p>EveryPolitician is an ambitious project. If we’re to succeed in
-        our aim of collecting and sharing data on every elected official
-        in the entire world, we need help from people like you.</p>
-
-        <p>Right now, we’re concentrating on making sure we have current data
-        on the national legislatures for every country in the world. </p>
-
+        <p>
+          EveryPolitician is an ambitious project. If we’re to succeed in our
+          aim of collecting and sharing data on every elected official in the
+          entire world, we need help from people like you.
+        </p>
+        <p>
+          Right now, we’re concentrating on making sure we have current data on
+          the national legislatures for every country in the world.
+        </p>
         <h2>If your country is missing</h2>
-
-        <p>Do you know where to find politician data for a country that we
-        don’t presently cover? We want to hear about it!</p>
-
-        <p>If you already have the data, and want us to import it, have a look 
-        at our <a href="/submitting.html">Submitting data</a> page, for details 
-        on our preferred formats, etc.</p>
-
-        <p>Or, if you can put us in touch with a group who has this, or even
-        just know where we can find it in a reasonable well-structured for,
-        send us an email: <a
-        href="mailto:team@everypolitician.org">team@everypolitician.org</a>.</p>
+        <a name="process"></a>
+        <p>
+          Here are the three steps we follow to put a country on the
+          <a href="countries.html">EveryPolitician map</a>:
+        </p>
+        <div class="process-boxes">
+          <div class="step-0">
+            1. find the data somewhere on the web
+            <p>
+              That might simply be finding a list of politicians on the
+              parliament’s website, or knowing of a local group that already
+              collects this data.
+            </p>
+          </div>
+          <div class="step-1">
+            2. turn that into a format we can import
+            <p>
+              Often that means running a scraper that gets the data off the
+              webpage and turns it into the kind of data we can easily import
+              (or, if we’re lucky, doing next to nothing because it’s already
+              in a lovely format).
+            </p>
+          </div>
+          <div class="step-2">
+            3. pull it into EveryPolitician
+            <p>
+              We add it to the project by telling EveryPolitician where the
+              importable data is, and how to merge it in.
+            </p>
+          </div>
+        </div>
+        
+        <p>
+          If your country is not shown on the map, have a look at the list of
+          <a href="http://everypolitician.org/needed.html">countries we don’t
+          have data for</a> yet.
+        </p>
+        <p>
+          If a country is listed under &ldquo;<strong>Source
+          needed</strong>&rdquo; then it’s still at step 1 of the process. If
+          you know where there is comprehensive poltician data for that
+          country, please let us know!
+        </p>
+        <p>
+          Incidentally, there may be more than one source for a given country’s
+          data. Ideally, everything is in one place. However, things are often
+          more complicated than that, so one site might have all the
+          politician’s names and party memberships, but a different site has
+          their twitter handles. But that’s OK because we’re happy to merge
+          different sources.
+        <p>
+        <p>
+          If a country appears under &ldquo;<strong>Scraper
+          needed</strong>&rdquo; it means that we do have at least one source
+          for the data, but so far nobody has turned that data into <a
+          href="submitting.html">a format we can easily import</a> &mdash; this
+          is waiting at step 2. It will be on our list of things to do (in
+          fact, you should see it as an
+          <a href="https://github.com/everypolitician/everypolitician-data/issues?q=is%3Aopen+label%3A%22To+Find%22++label%3A%22New+country%22+">issue
+          on GitHub</a>).
+        </p>
+        <p>
+          If we’re very lucky the data identified in the source is already in a
+          lovely format, and we can move straight to step 3. That’s very rare,
+          though, so normally the data will need to be taken off the web pages
+          it’s on and turned into easy-to-import data. That’s what the scrapers
+          do, and we basically have one for every country whose data is in
+          EveryPolitician.
+        </p>
+        <p>
+          If you’re a developer and you fancy writing such a scraper, we’d be
+          stupendously grateful. We’ve written some <a
+          href="scrapers.html">guidelines about writing scrapers</a> to help
+          you (depending on how complex or clean the source data, it might be
+          easier &mdash; and more fun! &mdash; than you think).
+        </p>
+        <p>
+          Once the data’s in a suitable format, we’ll add it to
+          EveryPolitician’s list of scrapers (what this really means is making
+          the Rake tasks aware of where to get the formatted data, and how to
+          merge it all together). That’s step 3 and we’ll take care of that for
+          you.
+        </p>
+        <p>
+          In summary, if you:
+        </p>
+        <ul>
+          <li>
+            know where there’s a missing source for a country we’re currently lacking
+          </li>
+          <li>
+            have some or all of the data we’re looking for, or can put us in
+            touch with a group who has it, or even just know where we can find
+            it in a reasonably well-structured form
+          </li>
+          <li>
+            or want to write a scraper for one of the countries we haven’t done yet
+          </li>
+        </ul>
+        <p>
+          ...then please send an email to
+          <a
+          href="mailto:team@everypolitician.org">team@everypolitician.org</a>
+          and tell us!
+        </p>
 
         <h2>If you see an error in the data</h2>
 
