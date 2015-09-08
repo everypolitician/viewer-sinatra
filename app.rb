@@ -62,7 +62,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
 
   last_sha = @house[:sha]
   csv_file = EveryPolitician::GithubFile.new(@term[:csv], last_sha)
-  @csv = CSV.parse(csv_file.raw, headers: true, header_converters: :symbol, converters: :all)
+  @csv = CSV.parse(csv_file.raw, headers: true, header_converters: :symbol, converters: nil)
 
   popolo_file = EveryPolitician::GithubFile.new(@house[:popolo], last_sha)
   popolo = JSON.parse(popolo_file.raw)
@@ -97,7 +97,6 @@ get '/needed.html' do
   @to_find   = client.issues 'everypolitician/everypolitician-data', labels: "New Country,To Find"
   @to_scrape = client.issues 'everypolitician/everypolitician-data', labels: "New Country,To Scrape"
   @to_finish = client.issues 'everypolitician/everypolitician-data', labels: "New Country,3 - WIP"
-  warn @to_finish
   
   erb :needed
 end
