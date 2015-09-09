@@ -841,7 +841,7 @@
   },
   "us-virgin-islands": {
     "displayName": "U.S. Virgin Islands",
-    "allNames": "Virgin Islands of the United States Amerikanische Jungferninseln Îles Vierges américaines Islas Vírgenes de los Estados Unidos アメリカ領ヴァージン諸島 Amerikaanse Maagdeneilanden Virgin Islands (U.S.)"
+    "allNames": "US Virgin Islands of the United States Amerikanische Jungferninseln Îles Vierges américaines Islas Vírgenes de los Estados Unidos アメリカ領ヴァージン諸島 Amerikaanse Maagdeneilanden Virgin Islands (U.S.)"
   },
   "uganda": {
     "displayName": "Uganda",
@@ -857,11 +857,11 @@
   },
   "uk": {
     "displayName": "United Kingdom",
-    "allNames": "United Kingdom Vereinigtes Königreich Royaume-Uni Reino Unido イギリス Verenigd Koninkrijk Great Britain (UK)"
+    "allNames": "United Kingdom Vereinigtes Königreich Royaume-Uni Reino Unido イギリス Verenigd Koninkrijk Great Britain (UK) England U.K."
   },
   "united-states-of-america": {
     "displayName": "United States of America",
-    "allNames": "United States of America Vereinigte Staaten von Amerika États-Unis Estados Unidos アメリカ合衆国 Verenigde Staten"
+    "allNames": "USA U.S.A. United States of America Vereinigte Staaten von Amerika États-Unis Estados Unidos アメリカ合衆国 Verenigde Staten"
   },
   "uruguay": {
     "displayName": "Uruguay",
