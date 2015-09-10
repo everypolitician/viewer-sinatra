@@ -38,8 +38,8 @@ update_politician_image_proxy() {
 }
 
 main() {
-  add_ssh_key
   if [[ "$TRAVIS_PULL_REQUEST" == "false" ]]; then
+    add_ssh_key
     if [[ "$TRAVIS_BRANCH" == "master" ]]; then
       update_viewer_static
     fi
