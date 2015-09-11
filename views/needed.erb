@@ -107,6 +107,14 @@
       $(".scraper-needed").html(new_nodes);
     });
 
+    var to_scrape_url = 'https://api.github.com/repos/everypolitician/everypolitician-data/issues?labels=new%20country,3%20-%20WIP;per_page=100'
+    $.get(to_scrape_url).done(function(data) {
+      var new_nodes = $.map(data.sort(by_country), function(issue, n) { 
+        return make_node(issue.title, issue.html_url);
+      });
+      $(".scraper-progress").html(new_nodes);
+    });
+
   });
 </script>
 

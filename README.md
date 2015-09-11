@@ -2,8 +2,8 @@
 
 Local development requires [Vagrant](http://docs.vagrantup.com/v2/installation/).
 
-    git clone https://github.com/mysociety/popolo-viewer-sinatra.git
-    cd popolo-viewer-sinatra
+    git clone https://github.com/everypolitician/viewer-sinatra.git
+    cd viewer-sinatra
     vagrant up
     vagrant ssh
 
