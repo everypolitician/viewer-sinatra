@@ -1,0 +1,2 @@
+/*! modernizr 3 flexwrap, stripped | MIT */
+!function(w,d,u){function t(p){var n,i=5;if("CSS"in w&&"supports"in w.CSS){for(;i--;)if(n=p[i].replace(/([A-Z])/g,function(s,m){return"-"+m.toLowerCase()}).replace(/^ms-/,"-ms-"),w.CSS.supports(n,"wrap"))return!0;return!1}for(i=0;5>i;i++)if(n=p[i],l.s[n]!==u)return!0;return!1}var a={e:d.createElement("modernizr")},l={s:a.e.style};t(["flexWrap","MozFlexWrap","OFlexWrap","msFlexWrap","WebkitFlexWrap"])&&(d.documentElement.className+=" flexwrap"),delete l.s,delete a.e}(window,document);
