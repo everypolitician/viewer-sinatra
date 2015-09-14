@@ -314,11 +314,13 @@ p.lead {
     border-color: mix(#fff, $colour_red, 40%);
 }
 
+.grid-list {
+    @extend .unstyled-list;
+}
 .flexwrap .grid-list {
     @include flexbox();
     @include flex-align(center);
     @include flex-wrap(wrap);
-    @extend .unstyled-list;
 
     & > * {
         @include flex(0 0 100%);
