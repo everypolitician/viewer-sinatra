@@ -315,10 +315,12 @@ p.lead {
 }
 
 .grid-list {
+    @extend .unstyled-list;
+}
+.flexwrap .grid-list {
     @include flexbox();
     @include flex-align(center);
     @include flex-wrap(wrap);
-    @extend .unstyled-list;
 
     & > * {
         @include flex(0 0 100%);

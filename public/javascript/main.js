@@ -218,8 +218,11 @@ $(function(){
 
   // http://baymard.com/labs/country-selector
   $('.js-select-to-autocomplete').selectToAutocomplete().on('change', function(){
-    // Assumes the <option>'s `value` attribute is a URL slug for the country
-    window.location.href = '/' + $(this).val() + '/';
+    var v = $(this).val();
+    if (v) {
+        // Assumes the <option>'s `value` attribute is a URL slug for the country
+        window.location.href = '/' + v + '/';
+    }
   }).on('focus', function(){
     $(this).next().trigger("focus");
   });
