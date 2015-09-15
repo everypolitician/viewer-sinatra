@@ -43,7 +43,7 @@ main() {
     if [[ "$TRAVIS_BRANCH" == "master" ]]; then
       update_viewer_static
     fi
-    update_politician_image_proxy
+    # update_politician_image_proxy
   fi
 }
 
