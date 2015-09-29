@@ -1,3 +1,4 @@
+require 'cgi'
 require 'csv'
 require 'dotenv'
 require 'octokit'
@@ -72,6 +73,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
     json: popolo_file.url,
   }
   @data_source = popolo.key?('meta') && popolo['meta']['source']
+  @data_source_unescaped = CGI.unescape(@data_source)
 
   erb :term_table
 end
