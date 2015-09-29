@@ -112,7 +112,7 @@
       <div class="page-section page-section--grey source-credits">
         <div class="container">
           <% if @data_source %>
-            <p>Source: <a href="<%= @data_source %>"><%= @data_source %></a></p>
+            <p>Source: <a href="<%= @data_source %>"><%= @data_source_unescaped %></a></p>
           <% end %>
           <p><b>Anything wrong?</b> If you've spotted an error, or the data is incomplete, 
             here's <a href="/contribute.html">how to get that fixed</a>.</p>
