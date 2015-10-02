@@ -70,7 +70,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
     csv: csv_file.url,
     json: popolo_file.url,
   }
-  @data_sources = popolo['meta']['sources'].map { |s| CGI.unescape(s) }
+  @data_sources = (popolo['meta']['sources'] || [popolo['meta']['source']]).map { |s| CGI.unescape(s) }
   erb :term_table
 end
 
