@@ -111,8 +111,8 @@
 
       <div class="page-section page-section--grey source-credits">
         <div class="container">
-          <% if @data_source %>
-            <p>Source: <a href="<%= @data_source %>"><%= @data_source_unescaped %></a></p>
+          <% if @data_sources %>
+            <p>Main Source<% if @data_sources.size > 1 %>s<% end %>: <%= @data_sources.map { |url| %Q(<a href="#{url}">#{url}</a>) }.join(", ") %></p>
           <% end %>
           <p><b>Anything wrong?</b> If you've spotted an error, or the data is incomplete, 
             here's <a href="/contribute.html">how to get that fixed</a>.</p>
