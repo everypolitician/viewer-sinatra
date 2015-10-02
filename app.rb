@@ -53,8 +53,6 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
   @country = ALL_COUNTRIES.find { |c| c[:url] == country } || halt(404)
   @house = @country[:legislatures].find { |h| h[:slug].downcase == house } || halt(404)
 
-  last_modified Time.at(@country[:lastmod].to_i)
-
   @terms = @house[:legislative_periods]
   (@next_term, @term, @prev_term) = [nil, @terms, nil]
     .flatten.each_cons(3)
