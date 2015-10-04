@@ -955,6 +955,10 @@
     "displayName": "Abkhazia",
     "allNames": "Abkhazia Apsny Apkhazeti Abkhaziya"
   },
+  "south-ossetia": {
+    "displayName": "South Ossetia",
+    "allNames": "South Ossetia Tskhinvali Республикӕ Хуссар Ирыстон Respublikæ Xussar Iryston სამხრეთ ოსეთის რესპუბლიკა Samkhreti Oseti Resp'ublik Республика Южная Осетия Respublika Yuzhnaya Osetiya"
+  },
   "nagorno-karabakh": {
     "displayName": "Nagorno-Karabakh",
     "allNames": "Nagorno Karabakh Հանրապետություն Artsakh"
