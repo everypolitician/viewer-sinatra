@@ -16,7 +16,7 @@ describe 'Basic loads' do
     # Get the list of countries on the homepage
     get '/countries.html'
     countries = Nokogiri::HTML(last_response.body)
-                .css('#home ul.grid-list li a/@href')
+                .css('#countries ul.grid-list li a/@href')
                 .map(&:text)
 
     countries.wont_be :empty?
