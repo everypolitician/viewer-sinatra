@@ -1,6 +1,6 @@
 <div class="hero hero--jazzy text-center homepage-hero">
     <div class="container">
-        <h1><%= @person_count %> politicians from <a href="/countries.html"><%= @countries.length %> countries</a> (so far)</h1>
+        <h1><%= commify(@person_count) %> politicians from <a href="/countries.html"><%= @countries.length %> countries</a> (so far)</h1>
         <p><label for="country-selector">Find representatives from your country:</label></p>
         <%= erb :country_selector %>
     </div>
