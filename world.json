@@ -857,7 +857,7 @@
   },
   "united-arab-emirates": {
     "displayName": "United Arab Emirates",
-    "allNames": "United Arab Emirates الإمارات العربية المتحدة Vereinigte Arabische Emirate Émirats Arabes Unis Emiratos Árabes Unidos アラブ首長国連邦 Verenigde Arabische Emiraten"
+    "allNames": "United Arab Emirates UAE الإمارات العربية المتحدة Vereinigte Arabische Emirate Émirats Arabes Unis Emiratos Árabes Unidos アラブ首長国連邦 Verenigde Arabische Emiraten"
   },
   "uk": {
     "displayName": "United Kingdom",
@@ -881,7 +881,7 @@
   },
   "vatican-city": {
     "displayName": "Vatican City",
-    "allNames": "Vatican City Vatikan Cité du Vatican Ciudad del Vaticano バチカン市国 Vaticaanstad Vatican City State (Holy See)"
+    "allNames": "Vatican City Vatikan Cité du Vatican Ciudad del Vaticano バチカン市国 Vaticaanstad Vatican City State Holy See"
   },
   "venezuela": {
     "displayName": "Venezuela",
@@ -962,6 +962,10 @@
   "nagorno-karabakh": {
     "displayName": "Nagorno-Karabakh",
     "allNames": "Nagorno Karabakh Հանրապետություն Artsakh"
+  },
+  "sahrawi-arab-democratic-republic": {
+    "displayName": "Sahrawi Arab Democratic Republic",
+    "allNames": "Sahrawi Arab Democratic Republic SADR Western Sahara الجمهورية العربية الصحراوية الديمقراطية al-Jumhūrīyah al-‘Arabīyah aṣ-Ṣaḥrāwīyah ad-Dīmuqrāṭīyah"
   },
   "kosovo": {
     "displayName": "Kosovo",
