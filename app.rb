@@ -30,6 +30,10 @@ get '/' do
     .to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse
     # http://stackoverflow.com/questions/1078347/is-there-a-rails-trick-to-adding-commas-to-large-numbers
   @world = WORLD.to_a
+
+  # :TODO: Tony, replace this with something that uses real person_count.
+  @world.each { |slug, country| country[:totalPeople] = [0, 1, 20, 98765].sample }
+
   erb :homepage
 end
 
