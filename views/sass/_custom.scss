@@ -61,8 +61,9 @@
 }
 
 .ui-menu .ui-menu-item {
+    position: relative;
     line-height: 1em;
-    padding: 0.5em 1em 0.5em 2.66em; // 2.66 = 0.66 input padding + 2em search icon offset
+    padding: 0.7em 6em 0.7em 2.66em; // 2.66 = 0.66 input padding + 2em search icon offset
     border: none;
     border-bottom: 1px solid $colour_off_white;
 
@@ -79,6 +80,15 @@
         margin: 0;
         background: $colour_lighter_grey;
     }
+}
+
+.autocomplete-country__people {
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    margin-top: -0.5em;
+    color: #999;
+    font-size: 0.8em;
 }
 
 .homepage-map {

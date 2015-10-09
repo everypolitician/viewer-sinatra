@@ -227,6 +227,21 @@ $(function(){
     $(this).next().trigger("focus");
   });
 
+  // Once the autocomplete widget has been created, we add our own
+  // little hack to display the number of politicians in each country.
+  var optionTitles = {};
+  $('select.js-select-to-autocomplete option').each(function(){
+    if($(this).val() != ''){
+      optionTitles[ $(this).text() ] = $(this).attr('title');
+    }
+  });
+  $('.ui-autocomplete-input').autocomplete('instance')._renderItem = function(ul, item) {
+    var $li = $('<li>');
+    $('<span>').text(item.label).appendTo($li);
+    $('<span>').addClass('autocomplete-country__people').text(optionTitles[item.label]).appendTo($li);
+    return $li.appendTo(ul);
+  }
+
   $('label[for="country-selector"]').on('click', function(e){
     e.preventDefault();
     $('#country-selector').siblings('.ui-autocomplete-input').focus();
