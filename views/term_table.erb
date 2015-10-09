@@ -1,19 +1,9 @@
 <div class="page-section" id="term">
     <div class="container text-center">
         <h1><span class="avatar"><i class="fa fa-university"></i></span> <%= @term[:name] %></h1>
-
       <% unless @term[:start_date].to_s.empty? and @term[:end_date].to_s.empty? %>
         <p><%= @term[:start_date] %> – <%= @term[:end_date] or 'current' %></p>
       <% end %>
-
-        <a href="<%= @urls[:csv] %>" class="term-download">
-          <i class="fa fa-download"></i>
-          <% if @terms.length > 1 %>
-            Download all <%= @terms.length %> terms as JSON
-          <% else %>
-            Download as JSON
-      <% end %>
-        </a>
     </div>
 </div>
 
