@@ -31,8 +31,10 @@ get '/' do
     # http://stackoverflow.com/questions/1078347/is-there-a-rails-trick-to-adding-commas-to-large-numbers
   @world = WORLD.to_a
 
-  # :TODO: Tony, replace this with something that uses real person_count.
-  @world.each { |slug, country| country[:totalPeople] = [0, 1, 20, 98765].sample }
+  @world.each { |slug, country|
+    cjdata = @countries.find(->{{}}) { |c| c[:url] == slug.to_s }
+    country[:totalPeople] = (cjdata[:legislatures] || []).map { |l| l[:person_count].to_i }.inject(0, :+)
+  }
 
   erb :homepage
 end
