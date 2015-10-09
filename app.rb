@@ -39,6 +39,7 @@ end
 
 get '/countries.html' do
   @countries = ALL_COUNTRIES.to_a
+  @world = WORLD.to_a
   @cjson = cjson
   erb :countries
 end
