@@ -106,43 +106,35 @@
     }
 }
 
-.term-membership-table {
-    .button-group {
-        margin-bottom: 1em;
+.term-membership-table__title {
+    position: relative;
+    padding: 1em 0;
+
+    @media (min-width: $medium_screen) {
+        text-align: center;
     }
 
-    // Make the selected tab look unclickable
-    .button--primary {
-        cursor: default;
-        background-color: $colour_green;
-        border-color: $colour_green;
+    h2 {
+        margin-bottom: 0;
+    }
+
+    .button {
+        position: absolute;
+        right: 0;
+        top: 0.5em;
     }
 }
 
-.table-action-buttons {
-    position: relative;
-    display: none;
+.party-groupings__title {
+    font-size: 0.875em;
+    margin-bottom: 1.5em;
 
-    @media (min-width: $medium-screen) {
-        display: block;
+    @media (min-width: $medium_screen) {
+        text-align: center;
     }
 
-    & > * {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
-    & > :last-child {
-        left: auto;
-        right: 0;
-    }
-
-    // If this is the only child, give it a height,
-    // otherwise the parent cell will collapse to zero
-    // and the buttons will overlap the row beneath.
-    &:first-child:last-child {
-        height: 4em; // same as outerheight() of a .button
+    h2 {
+        margin-bottom: 0;
     }
 }
 
@@ -157,11 +149,24 @@
 
     @media (min-height: 600px) {
         padding-bottom: 1.5em;
-        margin-bottom: 2em 0;
+        margin-bottom: 2em;
     }
 
     & > :last-child {
         margin-bottom: 0;
+    }
+}
+
+.country__legislature__header {
+    @include clearfix();
+
+    h3 {
+        float: left;
+    }
+
+    .button {
+        float: right;
+        margin-top: -0.3em; // visually align with heading
     }
 }
 
