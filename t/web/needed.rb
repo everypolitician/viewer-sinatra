@@ -17,8 +17,8 @@ describe 'Needed' do
   describe "when viewing the What’s Needed page" do
     before { get '/needed.html' }
 
-    it 'should need a scraper for the Vatican' do
-      last_response.body.must_include 'Vatican City'
+    it 'should need a scraper for Eritrea' do
+      last_response.body.must_include 'Eritrea'
     end
   end
 
