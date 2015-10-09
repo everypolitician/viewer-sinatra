@@ -1,9 +1,19 @@
 <div class="page-section" id="term">
-    <div class="container">
-        <h1 class="text-center"><span class="avatar"><i class="fa fa-university"></i></span> <%= @term[:name] %></h1>
+    <div class="container text-center">
+        <h1><span class="avatar"><i class="fa fa-university"></i></span> <%= @term[:name] %></h1>
+
       <% unless @term[:start_date].to_s.empty? and @term[:end_date].to_s.empty? %>
-        <p class="text-center"><%= @term[:start_date] %> – <%= @term[:end_date] or 'current' %></p>
+        <p><%= @term[:start_date] %> – <%= @term[:end_date] or 'current' %></p>
       <% end %>
+
+        <a href="<%= @urls[:csv] %>" class="term-download">
+          <i class="fa fa-download"></i>
+          <% if @terms.length > 1 %>
+            Download all <%= @terms.length %> terms as JSON
+          <% else %>
+            Download as JSON
+      <% end %>
+        </a>
     </div>
 </div>
 
@@ -44,7 +54,9 @@
 
     <div class="page-section page-section--grey" id="seat-count">
         <div class="container">
-            <h2 class="text-center">Party Groupings</h2>
+            <div class="party-groupings__title">
+                <h2>Party Groupings</h2>
+            </div>
             <ul class="grid-list">
               <% @csv.find_all { |r| r[:end_date].to_s.empty? || r[:end_date] == @term[:end_date] }.group_by { |r| r[:group] }.sort_by { |p, ms| [-ms.count, p] }.each do |party, mems| %>
                 <li id="party-<%= mems.first[:group_id] %>"><div class="avatar-unit">
@@ -59,21 +71,16 @@
 
     <div class="page-section page-section">
         <div class="container">
-            <h2 class="text-center">Members</h2>
 
             <table class="term-membership-table js-sortable">
                 <thead class="js-fixed-thead">
                     <tr>
-                        <td colspan="4" class="text-center">
-                            <div class="table-action-buttons">
+                        <td colspan="4">
+                            <div class="term-membership-table__title">
                               <a class="button button--download" href="<%= @urls[:csv] %>">
-                                <i class="fa fa-download"></i>
-                                <span class="large-screen-only">CSV</span>
+                                    <i class="fa fa-download"></i> CSV
                               </a>
-                              <a class="button button--download" href="<%= @urls[:json] %>">
-                                <i class="fa fa-download"></i>
-                                <span class="large-screen-only">JSON</span>
-                              </a>
+                                <h2>Members</h2>
                             </div>
                         </td>
                     </tr>
