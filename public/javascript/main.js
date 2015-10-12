@@ -227,6 +227,13 @@ $(function(){
     $(this).next().trigger("focus");
   });
 
+  // Fix the incorrect default autocomplete width, which meant that
+  // autocomplete menu was longer than the search input it's linked to.
+  // http://stackoverflow.com/a/11845718/3096375
+  jQuery.ui.autocomplete.prototype._resizeMenu = function(){
+    this.menu.element.outerWidth( this.element.outerWidth() );
+  }
+
   // Once the autocomplete widget has been created, we add our own
   // little hack to display the number of politicians in each country.
   var optionTitles = {};
@@ -235,7 +242,7 @@ $(function(){
       optionTitles[ $(this).text() ] = $(this).attr('title');
     }
   });
-  $('.ui-autocomplete-input').autocomplete('instance')._renderItem = function(ul, item) {
+  jQuery.ui.autocomplete.prototype._renderItem = function(ul, item) {
     var $li = $('<li>');
     $('<span>').text(item.label).appendTo($li);
     $('<span>').addClass('autocomplete-country__people').text(optionTitles[item.label]).appendTo($li);
