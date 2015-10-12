@@ -62,7 +62,7 @@
 
 .ui-menu .ui-menu-item {
     position: relative;
-    line-height: 1em;
+    line-height: 1.2em;
     padding: 0.7em 6em 0.7em 2.66em; // 2.66 = 0.66 input padding + 2em search icon offset
     border: none;
     border-bottom: 1px solid $colour_off_white;
@@ -89,6 +89,7 @@
     margin-top: -0.5em;
     color: #999;
     font-size: 0.8em;
+    line-height: 1.2em;
 }
 
 .homepage-map {
