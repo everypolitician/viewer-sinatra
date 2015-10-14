@@ -131,10 +131,16 @@
       $table.data('unrowspanned', true);
     }
 
+    var getSortValue = function($element){
+      // Table cells can specify a custom value by which
+      // they will be sorted (useful for names and dates).
+      return $element.attr('data-sortable-sortvalue') || $element.text();
+    }
+
     var sortRows = function sortRows($tbody, $trs, columnIndex, sortOrder){
       $trs.detach().sort(function(rowA, rowB){
-        var valueA = $(rowA).children('td').eq(columnIndex).text();
-        var valueB = $(rowB).children('td').eq(columnIndex).text();
+        var valueA = getSortValue( $(rowA).children('td').eq(columnIndex) );
+        var valueB = getSortValue( $(rowB).children('td').eq(columnIndex) );
 
         var moveUp = 1;
         var moveDown = -1;
