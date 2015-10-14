@@ -54,6 +54,15 @@ get '/:country/' do |country|
   end
 end
 
+get '/:country/:house/wikidata' do |country, house|
+  @country = ALL_COUNTRIES.find { |c| c[:url] == country } || halt(404)
+  @house = @country[:legislatures].find { |h| h[:slug].downcase == house } || halt(404)
+  last_sha = @house[:sha]
+  popolo_file = EveryPolitician::GithubFile.new(@house[:popolo], last_sha)
+  @popolo = JSON.parse(popolo_file.raw, symbolize_names: true)
+  erb :wikidata_match
+end
+
 get '/:country/:house/term-table/:id.html' do |country, house, id|
   @country = ALL_COUNTRIES.find { |c| c[:url] == country } || halt(404)
   @house = @country[:legislatures].find { |h| h[:slug].downcase == house } || halt(404)

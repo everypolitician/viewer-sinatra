@@ -1,0 +1,16 @@
+<div class="page-section" id="term">
+  <div class="container text-center">
+    <h1><span class="avatar"><i class="fa fa-university"></i></span> <%= @house[:name] %></h1>
+  </div>
+
+  <div class="container">
+    <% @popolo[:persons].partition { |p| (p[:identifiers] || []).find { |i| i[:scheme] == 'wikidata' } }.each_with_index do |l, i| %>
+      <h2><%= %w(With Without)[i] %></h2>
+      <ol>
+        <% l.each do |p| %>
+          <li><%= p[:name] %> <%= (p[:identifiers] || []).find_all { |i| i[:scheme] == 'wikidata' }.map { |i| i[:identifier] }.join(", ") %></li>
+        <% end %>
+      </ol>
+    <%end %>
+  </div>
+</div>
