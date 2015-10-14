@@ -85,7 +85,7 @@
                     </tr>
                 </thead>
 
-              <% @csv.group_by { |m| m[:id] }.sort_by { |id, mems| mems.first[:name] }.each do |id, mems| %>
+              <% @csv.group_by { |m| m[:id] }.sort_by { |id, mems| mems.first[:sort_name] }.each do |id, mems| %>
                   <%# Each person can have multiple party affiliations in a single term, so we
                       loop through them and set the first cell (their name) to span all the rows %>
                   <% mems.each_with_index do |m, i| %>
