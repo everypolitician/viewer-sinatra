@@ -77,7 +77,7 @@
                     </tr>
 
                     <tr>
-                        <th>Name</th>
+                        <th data-sortable-presorted="a-z">Name</th>
                         <th>Group</th>
                         <th>Area</th>
                         <% show_dates = @csv.any? { |m| !m[:start_date].to_s.empty? || !m[:end_date].to_s.empty? } %>
@@ -85,13 +85,13 @@
                     </tr>
                 </thead>
 
-              <% @csv.group_by { |m| m[:id] }.sort_by { |id, mems| mems.first[:name] }.each do |id, mems| %>
+              <% @csv.group_by { |m| m[:id] }.sort_by { |id, mems| mems.first[:sort_name] }.each do |id, mems| %>
                   <%# Each person can have multiple party affiliations in a single term, so we
                       loop through them and set the first cell (their name) to span all the rows %>
                   <% mems.each_with_index do |m, i| %>
                     <tr id="mem-<%= id.to_s.split('/').last %>">
                       <% if i == 0 %>
-                        <td rowspan="<%= mems.count %>"><%= m[:name] %></td>
+                        <td rowspan="<%= mems.count %>" data-sortable-sortvalue="<%= m[:sort_name] or m[:name] %>"><%= m[:name] %></td>
                       <% end %>
                         <td><%= m[:group].to_s.empty? ? 'Independent' : m[:group] %></td>
                         <td><%= m[:area] %></td>
@@ -112,7 +112,7 @@
           <% if @data_sources %>
             <p>Main Source<% if @data_sources.size > 1 %>s<% end %>: <%= @data_sources.map { |url| %Q(<a href="#{url}">#{url}</a>) }.join(", ") %></p>
           <% end %>
-          <p><b>Anything wrong?</b> If you've spotted an error, or the data is incomplete, 
+          <p><b>Anything wrong?</b> If you've spotted an error, or the data is incomplete,
             here's <a href="/contribute.html">how to get that fixed</a>.</p>
         </div>
       </div>

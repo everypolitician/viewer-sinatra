@@ -77,6 +77,20 @@
 
     // Call this on a <table> and it'll make all the columns sortable.
 
+    // Columns will be sorted based on the .text() content of each cell.
+    // If you give a cell a data-sortable-sortvalue attribute, that will be
+    // used in place of the .text() content.
+
+    // Rowspans will be un-spanned on the first sorting operation, and will
+    // *not* be re-spanned, even if the original sort order is restored.
+
+    // If the table is already pre-sorted on a particular column, give that
+    // column's <th> element an attribute of data-sortable-presorted with a
+    // value of either "a-z" or "z-a". This will stop $.sortable from
+    // attempting to unsort the column on the third header click.
+
+    // Tables can only be sorted on one column at a time.
+
     var sortTable = function sortTable($table, columnIndex){
       // Find the rows to sort, and their parent
       var $tbody = $table.children('tbody');
@@ -90,16 +104,31 @@
       // Sort the right way, based on the state stored in $table.data
       var currentSortOrder = $table.data('sortOrder');
       if(columnIndex == $table.data('sortedOnColumnIndex')){
+        // Already sorting on this column, so either reverse the direction,
+        // or unsort the column, depending on the current state.
+
         if(currentSortOrder == 'a-z'){
           sortRows($tbody, $trs, columnIndex, 'z-a');
           showSortOrder($table, columnIndex, 'z-a');
           $table.data('sortOrder', 'z-a');
+
         } else if(currentSortOrder == 'z-a'){
-          restoreOriginalSortOrder($tbody, $trs);
-          showSortOrder($table);
-          $table.removeData('sortOrder');
-          $table.removeData('sortedOnColumnIndex');
+          // If this was a presorted column, we flip back to a-z sorting.
+          // If it was a normal column, we can simply unsort it instead.
+
+          if(columnIndex == $table.data('presortedOnColumnIndex')){
+            sortRows($tbody, $trs, columnIndex, 'a-z');
+            showSortOrder($table, columnIndex, 'a-z');
+            $table.data('sortOrder', 'a-z');
+
+          } else {
+            restoreOriginalSortOrder($tbody, $trs);
+            showSortOrder($table);
+            $table.removeData('sortOrder');
+            $table.removeData('sortedOnColumnIndex');
+          }
         }
+
       } else {
         sortRows($tbody, $trs, columnIndex, 'a-z');
         showSortOrder($table, columnIndex, 'a-z');
@@ -131,10 +160,16 @@
       $table.data('unrowspanned', true);
     }
 
+    var getSortValue = function($element){
+      // Table cells can specify a custom value by which
+      // they will be sorted (useful for names and dates).
+      return $element.attr('data-sortable-sortvalue') || $element.text();
+    }
+
     var sortRows = function sortRows($tbody, $trs, columnIndex, sortOrder){
       $trs.detach().sort(function(rowA, rowB){
-        var valueA = $(rowA).children('td').eq(columnIndex).text();
-        var valueB = $(rowB).children('td').eq(columnIndex).text();
+        var valueA = getSortValue( $(rowA).children('td').eq(columnIndex) );
+        var valueB = getSortValue( $(rowB).children('td').eq(columnIndex) );
 
         var moveUp = 1;
         var moveDown = -1;
@@ -155,8 +190,8 @@
 
     var restoreOriginalSortOrder = function restoreOriginalSortOrder($tbody, $trs){
       $trs.detach().sort(function(rowA, rowB){
-        var valueA = $(rowA).data('originalSortOrder');
-        var valueB = $(rowB).data('originalSortOrder');
+        var valueA = $(rowA).data('originalSortIndex');
+        var valueB = $(rowB).data('originalSortIndex');
 
         if(valueA > valueB) {
           return 1;
@@ -186,14 +221,32 @@
 
     var saveOriginalSortOrder = function saveOriginalSortOrder($table){
       $table.find('tr').each(function(i){
-        $(this).data('originalSortOrder', i);
+        $(this).data('originalSortIndex', i);
       });
+    }
+
+    var detectPresortedTable = function detectPresortedTable($table){
+      var $presortedHeader = $table.find('th[data-sortable-presorted]');
+      var presortOrder = $presortedHeader.attr('data-sortable-presorted');
+      var columnIndex = $presortedHeader.prevAll().length;
+      $table.data('sortedOnColumnIndex', columnIndex);
+      $table.data('presortedOnColumnIndex', columnIndex);
+      if(presortOrder == 'a-z'){
+        $presortedHeader.addClass('sortedDown');
+        $table.data('sortOrder', 'a-z');
+        $table.data('presortOrder', 'a-z');
+      } else if(presortOrder == 'z-a'){
+        $presortedHeader.addClass('sortedUp');
+        $table.data('sortOrder', 'z-a');
+        $table.data('presortOrder', 'z-a');
+      }
     }
 
     return this.each(function() {
       var $table = $(this);
 
       saveOriginalSortOrder($table);
+      detectPresortedTable($table);
 
       $table.on('click', 'thead th', function(){
         var eq = $(this).prevAll().length;
