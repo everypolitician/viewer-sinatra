@@ -49,7 +49,7 @@ get '/:country/' do |country|
     erb :country
   elsif @missing = WORLD[country.to_sym]
     erb :country_missing
-  else 
+  else
     halt(404)
   end
 end
@@ -92,7 +92,7 @@ get '/needed.html' do
   if (token = ENV['GITHUB_ACCESS_TOKEN']).to_s.empty?
     warn "No GITHUB_ACCESS_TOKEN found"
     client = Octokit::Client.new
-  else 
+  else
     client = Octokit::Client.new(access_token: token)
   end
   client.auto_paginate = true
@@ -100,7 +100,7 @@ get '/needed.html' do
   @to_find   = client.issues 'everypolitician/everypolitician-data', labels: "New Country,To Find"
   @to_scrape = client.issues 'everypolitician/everypolitician-data', labels: "New Country,To Scrape"
   @to_finish = client.issues 'everypolitician/everypolitician-data', labels: "New Country,3 - WIP"
-  
+
   erb :needed
 end
 
@@ -135,3 +135,13 @@ end
 get '/styling' do
   erb :styling
 end
+
+get '/404.html' do
+  erb :fourohfour
+end
+
+not_found do
+  status 404
+  erb :fourohfour
+end
+
