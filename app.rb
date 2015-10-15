@@ -128,10 +128,6 @@ get '/scrapers.html' do
   erb :scrapers
 end
 
-get '/404.html' do
-  erb :fourohfour
-end
-
 get '/*.css' do |filename|
   scss :"sass/#{filename}"
 end
@@ -139,3 +135,13 @@ end
 get '/styling' do
   erb :styling
 end
+
+get '/404.html' do
+  erb :fourohfour
+end
+
+not_found do
+  status 404
+  erb :fourohfour
+end
+
