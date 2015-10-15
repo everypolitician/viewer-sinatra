@@ -41,5 +41,11 @@ module Popolo
     def commify(number)
       number.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse
     end
+
+    def wikidata_link(p)
+      return if p[:identifiers].nil? || p[:identifiers].empty?
+      wd = p[:identifiers].find { |i| i[:scheme] == 'wikidata' } or return
+      '<a href="https://www.wikidata.org/wiki/%s">%s</a>' % [ wd[:identifier], wd[:identifier] ]
+    end
   end
 end
