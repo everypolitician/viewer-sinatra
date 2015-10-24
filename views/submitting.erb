@@ -30,6 +30,12 @@
           <li><tt>term</tt>: the legislative period this membership represents (e.g. ‘19’ for the Nineteenth Assembly)</li>
           <li><tt>start_date</tt>: if the person joined later than the start of the term</li>
           <li><tt>end_date</tt>: if they left before the end of the term</li>
+		  <li><tt>source</tt>:
+			  the URL of the main source for this information (for example, if
+			  this data has been scraped from a single page or API call for this person
+			  then that's ideal; but if it's just an entry on a page listing many
+			  politicians, then that page's URL is fine)
+		  </li>
         </ul>
 
         <p>If you have data for multiple legislative periods (and the more the
@@ -49,9 +55,28 @@
             <th>term</th>
             <th>start_date</th>
             <th>end_date</th>
+            <th>source</th>
           </tr>
-          <tr><td>1681</td><td>Joe Smith</td><td>Easthill</td><td>White Party</td><td>19</td><td></td><td>2011-04-14</tr>
-          <tr><td>1681</td><td>Joe Smith</td><td>Easthill</td><td>Black Party</td><td>19</td><td>2011-04-14</td><td></tr>
+          <tr>
+            <td>1681</td>
+            <td>Joe Smith</td>
+            <td>Easthill</td>
+            <td>White Party</td>
+            <td>19</td>
+            <td></td>
+            <td>2011-04-14</td>
+            <td>http://example.com/jsmith</td>
+          </tr>
+          <tr>
+            <td>1681</td>
+            <td>Joe Smith</td>
+            <td>Easthill</td>
+            <td>Black Party</td>
+            <td>19</td>
+            <td>2011-04-14</td>
+            <td></td>
+            <td>http://example.com/jsmith</td>
+          </tr>
         </table> 
 
         <p>Other fields we can automatically process include:</p>
