@@ -100,8 +100,20 @@
 			write an import or update script that populates your database; or make
 			sure your code can run from scratch against a fresh download. This means you
 			need to consider things like: what happens if a politician&rsquo;s name changes?
-			Someone is removed? A whole new government is elected? Make sure your
-			application can handle this change.
+			Someone is removed? A whole new government is elected?
+    </p>
+    <p>
+      To help with this, we try to allocate a useful ID to each politician.
+      Where possible we use IDs from the original data source. For example, if
+      the official parliament website provides unique IDs for its politicians
+      &mdash; some do! &mdash; then we&rsquo;ll use them; if they don&rsquo;t,
+      we&rsquo;ll try to build something unique and yet consistent over
+      updates. This will always depend to some extent on what data is available
+      from the sources, and how we&rsquo;ve been able to identify when two
+      entries are actually the same person, and so on. IDs will be unique
+      within the legislature&rsquo;s term, and <em>should</em> be unique across
+      the whole legislature. But they aren&rsquo;t consistent across countries.
+      The management of IDs is something we&rsquo;re still working on.
 		</p>
     <a name="download-it-regularly"></a>
 		<h3>
