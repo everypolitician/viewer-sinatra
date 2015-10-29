@@ -30,18 +30,18 @@
 			How to find what data we&rsquo;ve got for you
 		</h2>
 		<p>
-			Humans look at the <a href="/">map on the front page</a>. But
+			Humans look at the <a href="countries.html">interactive map</a>. But
 			you&rsquo;re a developer: you look in
 			<code><a href="https://raw.githubusercontent.com/everypolitician/everypolitician-data/master/countries.json">countries.json</a></code>.
 		</p>
 		<p>
 			That&rsquo;s because <code>countries.json</code> is effectively
-			EveryPolitician&rsquo;s index. It contains the complete set of countries we
-			have data for as a JSON array of country objects. Those contain identifying
-			fields (like name and country code) but also the SHAs of the git commits of
-			the most recent versions of each legislature within those countries, and the
-			paths you need to <em>find</em> them. From <code>countries.json</code>, you
-			can construct the URLs of the data you want.
+			EveryPolitician&rsquo;s index. It contains a simple JSON array of objects,
+			one for every country we&rsquo;ve got data for. These contain identifying
+			fields (like name and country code) as well as metadata for each legislature
+      within those countries. From <code>countries.json</code> you
+			can <a href="repo_structure.html">construct the URLs</a> of the files that contain
+      the data you want.
 		</p>
 		<p>
 			Every time we change any of the data, we update <code>countries.json</code>.
@@ -49,7 +49,7 @@
 			for details about using this crucial file.
 		</p>
 		<h2>
-			Four policies for <em>getting the data</em>
+			Four approaches to <em>getting the data</em>
 		</h2>
 		<p>
 			You&rsquo;re going to write the code. All you need is the data.
@@ -135,7 +135,7 @@
 			approach, it pulls in the latest changes whenever the data is updated
 			&mdash; basically, it keeps itself up-to-date. So whether there&rsquo;s an
 			election in Sweden or a politician in Thailand changes their name, Gender
-			Balance will incorporate the change it as soon as EveryPolitician has the
+			Balance will incorporate the change as soon as EveryPolitician has the
 			data.
 		</p>
 		<p>
@@ -201,22 +201,20 @@
 			Where to get it from: <code>rawgit.com</code>
 		</h2>
 		<p>
-			Although the EveryPolitician data is published on GitHub, your code
-			should&rsquo;t try to download it from there. You can get away with that as
-			a human, but if your application tries it, it will run into problems.
-		</p>
+			The EveryPolitician data is published on GitHub, which means the raw
+			files are automatically available from
+			<code>raw.githubusercontent.com</code> too. But you can also get it from
+			<code>rawgit.com</code> (and <code>cdn.rawgit.com</code>) instead.
+			Here&rsquo;s why that might be useful.
+    </p>      
 		<p>
-			Because we &ldquo;publish&rdquo; our data on GitHub, it&rsquo;s
-			automatically available from <code>raw.githubusercontent.com</code> as raw
-			files too. But ideally you should get it from <code>rawgit.com</code> (and
-			<code>cdn.rawgit.com</code>) instead. Here&rsquo;s why.
-		</p>
-		<p>
-      GitHub itself doesn&rsquo;t serve the data with the right MIME-type
-      content headers. This works passably well for humans (your web browser
-      thinks it&rsquo;s getting plain text), but won&rsquo;t work properly with
-      your application. Github behaves like this, sensibly and deliberately, to
-      discourage the use of its repos for static hosting.
+      In order to discourage the use of its repos for static hosting, GitHub
+      itself doesn&rsquo;t serve the data with the right MIME-type content
+      headers. This works passably well for humans (your web browser thinks
+      it&rsquo;s getting plain text), but won&rsquo;t work properly with your
+      application if it needs the correct Content-type. This is likely to
+      matter <strong>if you're making client-side AJAX requests</strong>, for
+      example.
 		</p>
 		<p>
 			So instead, we encourage you to get the data from <a
