@@ -9,35 +9,35 @@
 
         <p class="section-intro">
 			We gather together all this lovely data, curate it, and make it
-			reliably available... so you can use it. Here&rsquo;s the bare bones of how
+			reliably available... so you can use it. Here’s the bare bones of how
 			your application can get it.
         </p>
         <p>
-			This page is for you if you&rsquo;re a developer who is planning on
+			This page is for you if you’re a developer who is planning on
 			building something wonderful or brilliant with the data we have on your
-			country&rsquo;s politicians. It tells you how to get the data and, broadly,
-			how it&rsquo;s structured (spoiler: CSV or Popolo JSON).
+			country’s politicians. It tells you how to get the data and, broadly,
+			how it’s structured (spoiler: CSV or Popolo JSON).
         </p>
 		<p>
 			We believe that by making this data available in consistent and
 			useful formats, if you write something neat that uses, for example, the data
-			for your country&rsquo;s politicians, and open it up under a free software open
-			source license... then other people will be able to adapt what you&rsquo;ve
+			for your country’s politicians, and open it up under a free software open
+			source license... then other people will be able to adapt what you’ve
 			done to run in their country too. That works because their data will be
-			formatted the same way that yours is: that&rsquo;s our side of the deal.
+			formatted the same way that yours is: that’s our side of the deal.
 		</p>
 		<h2>
-			How to find what data we&rsquo;ve got for you
+			How to find what data we’ve got for you
 		</h2>
 		<p>
 			Humans look at the <a href="countries.html">interactive map</a>. But
-			you&rsquo;re a developer: you look in
+			you’re a developer: you look in
 			<code><a href="https://raw.githubusercontent.com/everypolitician/everypolitician-data/master/countries.json">countries.json</a></code>.
 		</p>
 		<p>
-			That&rsquo;s because <code>countries.json</code> is effectively
-			EveryPolitician&rsquo;s index. It contains a simple JSON array of objects,
-			one for every country we&rsquo;ve got data for. These contain identifying
+			That’s because <code>countries.json</code> is effectively
+			EveryPolitician’s index. It contains a simple JSON array of objects,
+			one for every country we’ve got data for. These contain identifying
 			fields (like name and country code) as well as metadata for each legislature
       within those countries. From <code>countries.json</code> you
 			can <a href="repo_structure.html">construct the URLs</a> of the files that contain
@@ -49,113 +49,82 @@
 			for details about using this crucial file.
 		</p>
 		<h2>
-			Four approaches to <em>getting the data</em>
+			Three approaches to getting the data
 		</h2>
 		<p>
-			You&rsquo;re going to write the code. All you need is the data.
+			You’re going to write the code. All you need is the data.
 		</p>
 		<p>
 			But before you go any further, we want you to think about
-			<em>how</em> you&rsquo;re going to be getting it. We deliberately
-			<em>don&rsquo;t</em> provide an API &mdash; instead, we make the data
-			available and encourage you, here, to adopt a good policy on how and when
-			you actually go about getting it. There are four approaches: we encourage
-      everyone to consider using the last one (event-driven):
+			<em>how</em> you’re going to be getting it. We deliberately
+			<em>don’t</em> provide an API — instead, we make the data
+			available and encourage you to adopt a good policy on how and when
+			you actually go about getting it. There are various approaches, depending
+      on your need:
 		</p>
     <ul>
       <li><a href="#download-it-once">download it once, never worry again</a></li>
-      <li><a href="#download-it-again">download it and make it possible to download it again</a></li>
-      <li><a href="#download-it-regularly">download it regularly</a></li>
-      <li><a href="#download-triggered-by-event">download it whenever it changes: event-driven</a> (recommended)</li>
+      <li><a href="#download-it-again">download it periodically</a></li>
+      <li><a href="#download-triggered-by-event">download it whenever it changes: event-driven</a></li>
     </ul>
     <a name="download-it-once"></a>
 		<h3>
 			Download it once, never worry again
 		</h3>
 		<p>
-			If you&rsquo;re doing a one-off &mdash; maybe building an infographic or
-			plotting a graph for a printed magazine or granite sculpture &mdash; this might
-			work for you. But we don&rsquo;t recommend this because <em>political data
-			changes</em>. Elections happen, politicians die, new richer data becomes
-			available, errors get corrected.
-		</p>
-		<p>
-			So if you&rsquo;re just going to download it once and never change it
-			again, make sure that&rsquo;s a deliberate decision with good reason.
-			Alternatively, use one of the following approaches.
+			If you’re doing a one-off — maybe building an infographic or plotting a
+			graph for a printed magazine — this could work for you. But remember that
+			<em>political data changes</em> — elections happen, politicians die, errors
+			get corrected. So if it matters that the data you're using is timely, and
+			these sort of changes should be reflected in it, then it's probably better
+			to use of the following approaches.
 		</p>
     <a name="download-it-again"></a>
 		<h3>
-			Download it and make it possible to download it again
+			Download it periodically, so you keep up to date
 		</h3>
-		<p>
-			So if you are sure you want to just download the data and maybe
-			stick it into your own database, or creating static pages from the file
-			you&rsquo;ve downloaded &mdash; make sure you do it in a way you can
-			reproduce. That is, a week or a month later, if you download it again, you
-			can run the same process.
-		</p>
-		<p>
-			It depends on your project, but really we&rsquo;re suggesting you
-			write an import or update script that populates your database; or make
-			sure your code can run from scratch against a fresh download. This means you
-			need to consider things like: what happens if a politician&rsquo;s name changes?
-			Someone is removed? A whole new government is elected?
+    <p>
+      You can download the data as often as makes sense for your application
+      — perhaps every day, or every week, or whenever you press a button.
+      
+      This means your code will often be updating existing
+      data, as well as adding new data.
+      
+      You
+			need to consider things like: what happens if a politician’s name changes?
+			Someone is removed? A whole new group of politicians is elected?
     </p>
     <p>
-      To help with this, we try to allocate a useful ID to each politician.
-      Where possible we use IDs from the original data source. For example, if
-      the official parliament website provides unique IDs for its politicians
-      &mdash; some do! &mdash; then we&rsquo;ll use them; if they don&rsquo;t,
-      we&rsquo;ll try to build something unique and yet consistent over
-      updates. This will always depend to some extent on what data is available
-      from the sources, and how we&rsquo;ve been able to identify when two
-      entries are actually the same person, and so on. IDs will be unique
-      within the legislature&rsquo;s term, and <em>should</em> be unique across
-      the whole legislature. But they aren&rsquo;t consistent across countries.
-      The management of IDs is something we&rsquo;re still working on.
-		</p>
-    <a name="download-it-regularly"></a>
-		<h3>
-			Download it regularly
-		</h3>
-		<p>
-			If you <em>can</em> automate the consumption of the data, then
-			we&rsquo;d encourage you to automate its collection too. So you could set up
-			a cron job to download the latest version of the data every night... or
-			every week. The point is this that although political data isn&rsquo;t
-			especially fast-changing, nonetheless it <em>will</em> change. So if you
-			build auto-refreshing into your project, it will never fall too far behind.
+      Once you've got this working, you can safely download the data
+      whenever you know it has changed... or even automate it — for
+      example, setting up a task to pull down the latest data every night.
 		</p>
     <a name="download-triggered-by-event"></a>
 		<h3>
 			Download it whenever it changes: event-driven
 		</h3>
 		<p>
-			If you&rsquo;ve come this far &mdash; or your project is crucially
-			dependent on having the most timely data &mdash; you can benefit from the fact
-			that we publish all this data through GitHub. That means you can use
-			webhooks that notify your own application whenever our data changes. You
-      can then automatically pull the data, so you're always staying up-to-date
-      with the latest EveryPolitician data.
+			We run a service that will notify you whenever the data is updated.
+    </p>
+    <p>
+      You can register your application with the <a
+      href="https://everypolitician-app-manager.herokuapp.com/">EveryPolitician
+      app manager</a> (you'll need to login with your GitHub account) and
+      whenever the data changes we'll
+      make a POST request to the URL you nominate. This
+      operates like a webhook: your application can run any code in response to
+      the EveryPolitician data having been updated. Typically this would be to
+      pull down the latest data files.
 		</p>
 		<p>
-			We used this event-triggered mechanism for our own example application <a
-			href="http://www.gender-balance.org/">Gender Balance</a>. We started running
-			Gender Balance when there were still a lot of countries missing from the
-			EveryPolitician data set. But because Gender Balance uses this event-driven
-			approach, it pulls in the latest changes whenever the data is updated
-			&mdash; basically, it keeps itself up-to-date. So whether there&rsquo;s an
-			election in Sweden or a politician in Thailand changes their name, Gender
-			Balance will incorporate the change as soon as EveryPolitician has the
-			data.
-		</p>
-		<p>
-			You need to understand GitHub&rsquo;s webhooks to do this, but in a
-			nutshell you tell GitHub to make a request to a URL that you&rsquo;ve
-			set up to react when a particular event occurs (such as the 
-      <code>everypolitician-data</code> repo merging a pull request, which is how
-      we manage the data).
+			We use this event-triggered mechanism for the <a
+			href="http://www.gender-balance.org/">Gender Balance</a> application. It's
+			registered with the app manager, so it is alerted when there is new data
+			available to download — basically, it can keep itself up-to-date. So whether
+			there’s an election in Sweden or a politician in Thailand changes their
+			name, Gender Balance will incorporate the change as soon as EveryPolitician
+			has the data.
+
 		</p>
 		
 		<h2>
@@ -163,7 +132,7 @@
 		</h2>
 		<p>
 			The data itself is available in two formats. Which one you want will
-			depend on what you&rsquo;re trying to do with it.
+			depend on what you’re trying to do with it.
 		</p>
     <ul>
       <li><a href="#csv-data">CSV data</a> for straightforward data for a given term</li>
@@ -176,35 +145,33 @@
 		</h3>
 		<p>
 			We make the data available as CSV (comma separated values) because
-			it&rsquo;s just so <em>useful</em>. If you just want the basic data, it
+			it’s just so <em>useful</em>. If you just want the basic data, it
 			might also be the simplest way for you to absorb it. For any given
-			legislature we slice the data up into separate CSV files for each term.
-			("Terms" are important: we think, for example, that the most common use of
-			the data will be applications using the data for the current term, that is,
-			data about who&rsquo;s in power now).
+			legislature we slice the data up into separate CSV files for each
+      legislative period, or “term”.
 		</p>
 		<p>
-			The disadvantage of the CSV format is it can&rsquo;t be as rich,
-			because, by definition, it can&rsquo;t easily represent structure. So
-			that&rsquo;s what the JSON is for.
+			The disadvantage of the CSV format is it can’t be as rich,
+			because, by definition, it can’t easily represent structure. So
+			that’s what the JSON is for.
 		</p>
     <a name="json-data"></a>
 		<h3>
 			Popolo JSON data
 		</h3>
 		<p>
-			Popolo is an open standard for expressing political data &mdash; exactly
-			for the kind of thing we&rsquo;re doing here. So we provide our data in JSON
+			Popolo is an open standard for expressing political data — exactly
+			for the kind of thing we’re doing here. So we provide our data in JSON
 			format too, complying with Popolo standard. These are the same politicians
 			as in the CSV of course (we generate both the CSV and JSON anew every time
-			anything changes, keeping them perfectly in synch), but the data is richer.
-			Because Popolo can express such things well, the JSON data spans terms
-			&mdash; it has membership dates within it. So, unlike the CSV which is
-			sliced by terms, if you pull down the JSON data you&rsquo;ll be getting
+			anything changes, keeping them perfectly in sync), but the data is richer.
+      
+      So, unlike the CSV which is
+			sliced by terms, if you pull down the JSON data you’ll be getting
 			<em>all</em> the data for all the politicians across all the terms.
 		</p>
 		<p>
-			If you&rsquo;re doing anything which needs this sort of richness,
+			If you’re doing anything which needs this sort of richness,
 			grab the JSON data and use your favourite JSON library to jump right into
 			having structured data in your application.
 		</p>
@@ -217,13 +184,13 @@
 			files are automatically available from
 			<code>raw.githubusercontent.com</code> too. But you can also get it from
 			<code>rawgit.com</code> (and <code>cdn.rawgit.com</code>) instead.
-			Here&rsquo;s why that might be useful.
+			Here’s why that might be useful.
     </p>      
 		<p>
       In order to discourage the use of its repos for static hosting, GitHub
-      itself doesn&rsquo;t serve the data with the right MIME-type content
+      itself doesn’t serve the data with the right MIME-type content
       headers. This works passably well for humans (your web browser thinks
-      it&rsquo;s getting plain text), but won&rsquo;t work properly with your
+      it’s getting plain text), but won’t work properly with your
       application if it needs the correct Content-type. This is likely to
       matter <strong>if you're making client-side AJAX requests</strong>, for
       example.
@@ -234,31 +201,31 @@
 			If you ask it for a file it will get it from GitHub on your behalf, but
 			significantly when it sends it back to you it sets the correct Content-Type.
 			Of course, it also caches it so if you or anyone else asks for it again,
-			GitHub won&rsquo;t be troubled.
+			GitHub won’t be troubled.
 		</p>
 		<p>
-			This works because those files are static. And they&rsquo;re static
-			because every RawGit URL must have a commit SHA in it &mdash; that
-			is, you&rsquo;re explicitly referring to a specific file in
-			EveryPolitician&rsquo;s repo. Remember <code>countries.json</code>?
-			That&rsquo;s why we put the <em>latest commit SHA</em> in there.
+			This works because those files are static. And they’re static
+			because every RawGit URL must have a commit SHA in it — that
+			is, you’re explicitly referring to a specific file in
+			EveryPolitician’s repo. Remember <code>countries.json</code>?
+			That’s why we put the <em>latest commit SHA</em> in there.
 		</p>
 		<h3>
 			Use <code>countries.json</code> to construct the latest data URLs
 		</h3>
 		<p>
-			So, when you&rsquo;re grabbing data programmatically from
+			So, when you’re grabbing data programmatically from
 			EveryPolitician, the right way to do it is to construct a URL for the
-			<code>rawgit.com</code> domain using the SHA and path information that&rsquo;s in
+			<code>rawgit.com</code> domain using the SHA and path information that’s in
 			<code>countries.json</code>.
       <a href="repo_structure.html">Here's how to construct the URL</a>.
 		</p>
 		<p>
 			Note also that, in production, you should be using
-			<code>cdn.rawgit.com</code>. It&rsquo;s set up to be performant and
+			<code>cdn.rawgit.com</code>. It’s set up to be performant and
 			permanent. For a full and helpful explanation of this, see the <a
 			href="https://rawgit.com/faq">RawGit FAQ</a>. RawGit is a great resource,
-			but make sure you&rsquo;re using it correctly!
+			but make sure you’re using it correctly!
 		</p>
 	  </div>
     </div>
