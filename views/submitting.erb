@@ -18,12 +18,57 @@
           <a href="scrapers.html">writing a scraper</a> for us.
           </p>
           
-        <p><strong>Our preferred format for data is simple comma-separated value (CSV).</strong></p>
+        <p><strong>Our preferred format for data that we are importing is simple comma-separated value (CSV).</strong></p>
 
         <p>At a minimum this should have fields for:</p>
 
         <ul>
-          <li><tt>id</tt>: a unique identifier for the politician</li>
+          <li><code>id</code>, or <code>identifier__<em>xxx</em></code>: a unique identifier for the politician
+              <p>
+                We add a unique <code>id</code> to every politician we import into EveryPolitician
+                (it's a <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier">UUID</a>, and
+                if we know two records are for the same politician, we give them both the same <code>id</code>).
+                If you provide your own <code>id</code>, we can use it to identify the politician
+                <em>during</em> the import, but it will be overwritten with ours.
+              </p>
+              <p>
+                However, if that ID would be useful in the EveryPolitician data
+                because it maps to some external data set, you can make it
+                persist by using the name <code>identifier__<em>xxx</em></code>
+                (note: two underscores), where <code><em>xxx</em></code>
+                indicates the local ID scheme it is from. Our import mechanism
+                treats this like another <code>id</code>, that is, recognises
+                that it's a unique identifier (albeit perhaps with local scope,
+                such as its country).
+              </p>
+              <p>
+                For example, in the UK, parliament allocates a unique ID to all
+                politicians within their own system, called <a
+                href="https://en.wikipedia.org/wiki/Parliamentary_Information_Management_System">PIMS</a>,
+                so when we import that data, we add that ID as
+                <code>identifier__pims</code> in the CSV to import. That will be
+                combined with other IDs from other sources (if any — in the
+                example below, we've added Wikidata too, as
+                <code>identifier__wikidata</code>), and ultimately it appears
+                in the JSON as an (<code>identifier</code>,
+                <code>scheme</code>) pair. Here's an extract from a JSON Popolo
+                file showing how it ultimately appears within a person's entry:
+              </p>
+              <pre>
+"id": "e09079a7-6609-4fe8-93b4-bd499637e130",
+"identifiers": [
+  {
+    "identifier": "4734",
+    "scheme": "pims"
+  },
+  {
+    "identifier": "Q258473",
+    "scheme": "wikidata"
+  }
+],
+              </pre>
+              </p>
+          </li>
           <li><tt>name</tt>: their name</li>
           <li><tt>area</tt>: the <a href="https://en.wikipedia.org/wiki/Electoral_district">constituency/district</a> they represent (if appropriate)</li>
           <li><tt>group</tt>: the <a href="https://en.wikipedia.org/wiki/Parliamentary_group">party or faction</a> they’re part of (if appropriate)</li>
