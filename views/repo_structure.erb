@@ -29,18 +29,18 @@
         <p>
           This is what an EveryPolitician data URL looks like:
         </p>
-        <p style="border:1px solid #ccc;padding:1em;display:inline-block;font-size:120%;line-height:1.2">
-          <code><span style="background:#ddffdd">http://<em>domain</em></span> / <br>
+        <p class="url-demo-box">
+          <code><span class="url-part-domain">http://<em>domain</em></span> / <br>
           &nbsp;&nbsp;
           everypolitician/everypolitician-data / <br>
           &nbsp;&nbsp;
-          <span style="background:#ffdddd">commit-SHA</span> / <br>
+          <span class="url-part-sha">commit-SHA</span> / <br>
           &nbsp;&nbsp;
-          <span style="background:#ddddff">path-to-data-file</span></code>
+          <span class="url-part-file">path-to-data-file</span></code>
         </p>
         <p>
           You might expect the domain to be <code>http://github.com/</code>, but for
-          your application <a href="#">we recommend you use <code><span style="background:#ddffdd;color:#000">http://rawgit.com</span></code></a>.
+          your application <a href="#">we recommend you use <code><span class="url-part-domain">http://rawgit.com</span></code></a>.
         </p>
         <p>
           Wherever you're getting <code>countries.json</code> from, the <code>data/</code> directory
@@ -54,7 +54,7 @@
           <li>
             JSON: <a style="font-size:80%;padding-left:0.5em" href="http://rawgit.com/everypolitician/everypolitician-data/0b47c0c/data/UK/Commons/ep-popolo-v1.0.json">try it</a>
             <br>
-            <code><span style="background:#ddffdd">http://rawgit.com</span>/everypolitician/everypolitician-data/<span style="background:#ffdddd">0b47c0c</span>/<span style="background:#ddddff">data/UK/Commons/ep-popolo-v1.0.json</span></code>
+            <code><span span class="url-part-domain">http://rawgit.com</span>/everypolitician/everypolitician-data/<span span class="url-part-sha">0b47c0c</span>/<span class="url-part-file">data/UK/Commons/ep-popolo-v1.0.json</span></code>
           </li>
         </ul>
         <ul>
@@ -62,7 +62,7 @@
             CSV for the term &ldquo;56th Parliament of the United Kingdom&rdquo;:
             <a style="font-size:80%;padding-left:0.5em" href="http://rawgit.com/everypolitician/everypolitician-data/0b47c0c/data/UK/Commons/term-56.csv">try it</a>
             <br>
-            <code><span style="background:#ddffdd">http://rawgit.com</span>/everypolitician/everypolitician-data</span>/<span style="background:#ffdddd">0b47c0c</span>/<span style="background:#ffffdd">data/UK/Commons/term-56.csv</span></code>
+            <code><span class="url-part-domain">http://rawgit.com</span>/everypolitician/everypolitician-data</span>/<span class="url-part-sha">0b47c0c</span>/<span class="url-part-file-alt">data/UK/Commons/term-56.csv</span></code>
           </li>
         </ul>
         <p>
@@ -79,10 +79,10 @@
       "name": "House of Commons",
       "slug": "Commons",
       "sources_directory": "data/UK/Commons/sources",
-      "<strong>popolo</strong>": "<span style="background:#ddddff">data/UK/Commons/ep-popolo-v1.0.json</span>",
+      "<strong>popolo</strong>": "<span class="url-part-file">data/UK/Commons/ep-popolo-v1.0.json</span>",
       "lastmod": "1445087100",
       "person_count": 1337,
-      "<strong>sha</strong>": "<span style="background:#ffdddd">0b47c0c</span>",
+      "<strong>sha</strong>": "<span class="url-part-sha">0b47c0c</span>",
       "legislative_periods": [
         {
           "id": "term/56",
@@ -90,7 +90,7 @@
           "start_date": "2015-05-08",
           "wikidata": "Q21084473",
           "slug": "56",
-          "<strong>csv</strong>": "<span style="background:#ffffdd">data/UK/Commons/term-56.csv</span>"
+          "<strong>csv</strong>": "<span class="url-part-file-alt">data/UK/Commons/term-56.csv</span>"
         },
         {
           "id": "term/55",
