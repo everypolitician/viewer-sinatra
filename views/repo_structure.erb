@@ -11,8 +11,8 @@
           the most recently updated version of its data files.
         </p>
         <p>
-          But if you’re accessing the data programmatically, that won’t work
-          nicely for you because the data is hosted on github, which doesn’t
+          But if you’re accessing the data programmatically, that might not work
+          nicely for you because the data is hosted on GitHub, which doesn’t
           serve the right Content-type when your application fetches the data.
           Instead, <a href="use_the_data.html#rawgit">you should get it from
           <code>rawgit.com</code></a> (while you’re there, you should also read
@@ -40,7 +40,8 @@
         </p>
         <p>
           You might expect the domain to be <code>http://github.com/</code>, but for
-          your application <a href="/use_the_data.html#rawgit">we recommend you use <code><span class="url-part-domain">http://rawgit.com</span></code></a>.
+          your application <a href="/use_the_data.html#rawgit">we recommend you use <code><span class="url-part-domain">http://rawgit.com</span></code></a>
+          (or for best performance: <code><span class="url-part-domain">http://cdn.rawgit.com</span></code>).
         </p>
         <p>
           Wherever you’re getting <code>countries.json</code> from, the <code>data/</code> directory
