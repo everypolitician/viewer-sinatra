@@ -27,8 +27,9 @@ describe 'Seat Count' do
       irl.text.must_include 'Isamaa ja Res Publica Liidu'
     end
 
-    it 'should have 101 seats' do
-      seatcount.css('span.seatcount').map(&:text).map(&:to_i).reduce(&:+).must_equal 101
+    it 'should not have too many seats in total' do
+      seatcount.css('span.seatcount').map(&:text).map(&:to_i).reduce(&:+).must_be :<=, 101
+      seatcount.css('span.seatcount').map(&:text).map(&:to_i).reduce(&:+).must_be :>=, 90
     end
   end
 
