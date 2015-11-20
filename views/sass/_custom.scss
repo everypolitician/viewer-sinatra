@@ -223,6 +223,12 @@
     }
 }
 
+.url-demo-box {
+    border:1px solid #ccc;
+    padding:1em;
+    font-size:120%;
+    line-height:1.4
+}
 .process-boxes div{
   padding:1em;
   border-radius:0.25em;
@@ -267,4 +273,26 @@
 
 .fourohfour-suggestions__or {
     margin: 0 1em;
+}
+
+.url-part-domain {
+    background-color: #ddffdd;
+    color: #000; // because sometimes it's in a link
+    border:2px solid #009900;
+    padding: 0.1em;
+}
+.url-part-sha {
+    background-color: #ffdddd;
+    border:2px solid #990000;
+    padding: 0.1em;
+}
+.url-part-file {
+    background-color: #ddddff;
+    border:2px solid #000099;
+    padding: 0.1em;
+}
+.url-part-file-alt {
+    background-color: #ffffdd;
+    border:2px solid #999900;
+    padding: 0.1em;
 }

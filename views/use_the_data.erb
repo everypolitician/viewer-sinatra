@@ -1,0 +1,224 @@
+<div class="container" id="contribute">
+  <div class="page-section">
+    <div class="row">
+      <div class="column-one-quarter">
+         <%= erb :about_nav_menu %>
+      </div>
+      <div class="column-three-quarters">
+        <h1>Use EveryPolitician data</h1>
+        <p class="section-intro">
+          We gather together all this lovely data, curate it, and make it
+          reliably available... so you can use it. Here’s the bare bones of how
+          your application can get it.
+        </p>
+        <p>
+          This page is for you if you’re a developer who is planning on
+          building something wonderful or brilliant with the data we have on
+          your country’s politicians. It tells you how to get the data and,
+          broadly, how it’s structured (spoiler: CSV or Popolo JSON).
+        </p>
+        <p>
+          We believe that by making this data available in consistent and
+          useful formats, if you write something neat that uses, for example,
+          the data for your country’s politicians, and open it up under a free
+          software open source license... then other people will be able to
+          adapt what you’ve done to run in their country too. That works
+          because their data will be formatted the same way that yours is:
+          that’s our side of the deal.
+        </p>
+        <h2>
+          How to find what data we’ve got for you
+        </h2>
+        <p>
+          Humans look at the <a href="countries.html">interactive map</a>. But
+          you’re a developer: you look in
+          <code><a href="https://raw.githubusercontent.com/everypolitician/everypolitician-data/master/countries.json">countries.json</a></code>.
+        </p>
+        <p>
+          That’s because <code>countries.json</code> is effectively
+          EveryPolitician’s index. It contains a simple JSON array of objects,
+          one for every country we’ve got data for. These contain identifying
+          fields (like name and country code) as well as metadata for each
+          legislature within those countries. From <code>countries.json</code>
+          you can <a href="repo_structure.html">construct the URLs</a> of the
+          files that contain the data you want.
+        </p>
+        <p>
+          Every time we change any of the data, we update
+          <code>countries.json</code>. See <a
+          href="repo_structure.html">getting the most recent data</a> for
+          details about using this crucial file.
+        </p>
+        <h2>
+          Three approaches to getting the data
+        </h2>
+        <p>
+          You’re going to write the code. All you need is the data.
+        </p>
+        <p>
+          But before you go any further, we want you to think about
+          <em>how</em> you’re going to be getting it. We deliberately
+          <em>don’t</em> provide an API — instead, we make the data available
+          and encourage you to adopt a good policy on how and when you actually
+          go about getting it. There are various approaches, depending on your
+          need:
+        </p>
+        <ul>
+          <li><a href="#download-it-once">download it once, never worry again</a></li>
+          <li><a href="#download-it-again">download it periodically</a></li>
+          <li><a href="#download-triggered-by-event">download it whenever it changes: event-driven</a></li>
+        </ul>
+        <a name="download-it-once"></a>
+        <h3>
+          Download it once, never worry again
+        </h3>
+        <p>
+          If you’re doing a one-off — maybe building an infographic or plotting
+          a graph for a printed magazine — this could work for you. But
+          remember that <em>political data changes</em> — elections happen,
+          politicians die, errors get corrected. So if it matters that the data
+          you’re using is timely, and these sort of changes should be reflected
+          in it, then it’s probably better to use of the following approaches.
+        </p>
+        <a name="download-it-again"></a>
+        <h3>
+          Download it periodically, so you keep up to date
+        </h3>
+        <p>
+          You can download the data as often as makes sense for your
+          application — perhaps every day, or every week, or whenever you press
+          a button. This means your code will often be updating existing data,
+          as well as adding new data. You need to consider things like: what
+          happens if a politician’s name changes? Someone is removed? A whole
+          new group of politicians is elected?
+        </p>
+        <p>
+          Once you’ve got this working, you can safely download the data
+          whenever you know it has changed... or even automate it — for
+          example, setting up a task to pull down the latest data every night.
+        </p>
+        <a name="download-triggered-by-event"></a>
+        <h3>
+          Download it whenever it changes: event-driven
+        </h3>
+        <p>
+          We run a service that will notify you whenever the data is updated.
+        </p>
+        <p>
+          You can register your application with the <a
+          href="https://everypolitician-app-manager.herokuapp.com/">EveryPolitician
+          app manager</a> (you’ll need to login with your GitHub account)
+          and whenever the data changes we’ll make a POST request to the URL
+          you nominate. This operates like a webhook: your application can run
+          any code in response to the EveryPolitician data having been updated.
+          Typically this would be to pull down the latest data files.
+        </p>
+        <p>
+          We use this event-triggered mechanism for the <a
+          href="http://www.gender-balance.org/">Gender Balance</a> application.
+          It’s registered with the app manager, so it is alerted when there is
+          new data available to download — basically, it can keep itself
+          up-to-date. So whether there’s an election in Sweden or a politician
+          in Thailand changes their name, Gender Balance will incorporate the
+          change as soon as EveryPolitician has the data.
+        </p>
+        <h2>
+          Pick a format
+        </h2>
+        <p>
+          The data itself is available in two formats. Which one you want will
+          depend on what you’re trying to do with it.
+        </p>
+        <ul>
+          <li><a href="#csv-data">CSV data</a> for straightforward data for a given term</li>
+          <li><a href="#json-data">Popolo JSON data</a> for full structured data</li>
+        </ul>
+        <a name="csv-data"></a>
+        <h3>
+          CSV data
+        </h3>
+        <p>
+          We make the data available as CSV (comma separated values) because
+          it’s just so <em>useful</em>. If you just want the basic data, it
+          might also be the simplest way for you to absorb it. For any given
+          legislature we slice the data up into separate CSV files for each
+          legislative period, or “term”.
+        </p>
+        <p>
+          The disadvantage of the CSV format is it can’t be as rich, because,
+          by definition, it can’t easily represent structure. So that’s what
+          the JSON is for.
+        </p>
+        <a name="json-data"></a>
+        <h3>
+          Popolo JSON data
+        </h3>
+        <p>
+          <a href="http://www.popoloproject.com/">Popolo is an open
+          standard</a> for expressing political data — exactly for the kind of
+          thing we’re doing here. So we provide our data in JSON format too,
+          complying with Popolo standard. These are the same politicians as in
+          the CSV of course (we generate both the CSV and JSON anew every time
+          anything changes, keeping them perfectly in sync), but the data is
+          richer. So, unlike the CSV which is sliced by terms, if you pull down
+          the JSON data you’ll be getting <em>all</em> the data for all the
+          politicians across all the terms.
+        </p>
+        <p>
+          If you’re doing anything which needs this sort of richness, grab the
+          JSON data and use your favourite JSON library to jump right into
+          having structured data in your application.
+        </p>
+        <a name="rawgit"></a>
+        <h2>
+          Where to get it from: <code>cdn.rawgit.com</code>
+        </h2>
+        <p>
+          The EveryPolitician data is published on GitHub, which means the raw
+          files are automatically available from
+          <code>raw.githubusercontent.com</code> too. But you can also get it
+          from <code>cdn.rawgit.com</code> instead. Here’s why that might be
+          useful.
+        </p>
+        <p>
+          In order to discourage the use of its repos for static hosting,
+          GitHub itself doesn’t serve the data with the right MIME-type content
+          headers. This works passably well for humans (your web browser thinks
+          it’s getting plain text), but won’t work properly with your
+          application if it needs the correct Content-type. This is likely to
+          matter <strong>if you’re making client-side AJAX requests</strong>,
+          for example.
+        </p>
+        <p>
+          So instead, we encourage you to get the data from <a
+          href="https://rawgit.com/faq">RawGit</a>. RawGit acts as a caching
+          proxy. If you ask it for a file it will get it from GitHub on your
+          behalf, but significantly when it sends it back to you it sets the
+          correct Content-Type. Of course, it also caches it so if you or
+          anyone else asks for it again, GitHub won’t be troubled.
+        </p>
+        <p>
+          This works because those files are static. And they’re static because
+          every RawGit URL must have a commit SHA in it — that is, you’re
+          explicitly referring to a specific file in EveryPolitician’s repo.
+          Remember <code>countries.json</code>? That’s why we put the
+          <em>latest commit SHA</em> in there.
+        </p>
+        <h3>
+          Use <code>countries.json</code> to construct the latest data URLs
+        </h3>
+        <p>
+          So, when you’re grabbing data programmatically from EveryPolitician,
+          the right way to do it is to construct a URL for the
+          <code>cdn.rawgit.com</code> domain using the SHA and path information
+          that’s in <code>countries.json</code>.
+        </p>
+        <div class="process-boxes">
+          <div class="step-1">
+            <a href="repo_structure.html">Here’s how to construct the URL</a>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>

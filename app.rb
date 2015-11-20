@@ -137,6 +137,10 @@ get '/scrapers.html' do
   erb :scrapers
 end
 
+get '/use_the_data.html' do
+  erb :use_the_data
+end
+
 get '/*.css' do |filename|
   scss :"sass/#{filename}"
 end

@@ -11,16 +11,103 @@
           the most recently updated version of its data files.
         </p>
         <p>
-          But if you’re accessing the data programmatically, that won’t work nicely
-          for you because the data is hosted on github, which doesn’t serve the
-          right MIME type when your application fetches the data. Instead, you
-          should pull it via RawGit, and to do that you’ll need to know the URL of
-          the most recent data &mdash; and that means determining the SHA of the git
-          commit that put it there. The SHA may be different for each legislature
-          (because we rebuild the data as changes and additions come in on a
-          per-legislature basis), so to find that out, you need to look in
-          <code>countries.json</code>.
+          But if you’re accessing the data programmatically, that might not work
+          nicely for you because the data is hosted on GitHub, which doesn’t
+          serve the right Content-type when your application fetches the data.
+          Instead, <a href="use_the_data.html#rawgit">you should get it from
+          <code>cdn.rawgit.com</code></a> (while you’re there, you should also read
+          our notes on <a href="use_the_data.html">using the data</a> in
+          general). To do that you’ll need to know the URL of the most recent
+          data &mdash; and that means determining the SHA of the git commit
+          that put it there. You get that SHA from the current
+          <code>countries.json</code>, as shown below.
         </p>
+        
+        <h3>
+          Example URLs
+        </h3>
+        <p>
+          This is what an EveryPolitician data URL looks like:
+        </p>
+        <p class="url-demo-box">
+          <code><span class="url-part-domain">http://<em>domain</em></span><br>
+          &nbsp;&nbsp;
+          /everypolitician/everypolitician-data<br>
+          &nbsp;&nbsp;
+          /<span class="url-part-sha">commit-SHA</span><br>
+          &nbsp;&nbsp;
+          /<span class="url-part-file">path-to-data-file</span></code>
+        </p>
+        <p>
+          You might expect the domain to be <code>http://github.com/</code>, but for
+          your application <a href="/use_the_data.html#rawgit">we recommend you use <code><span class="url-part-domain">http://cdn.rawgit.com</span></code></a>.
+        </p>
+        <p>
+          Wherever you’re getting <code>countries.json</code> from, the <code>data/</code> directory
+          will be a sibling of that.
+        </p>
+        <p>
+          For example: the URLs for the most recent (at time of writing — and
+          that’s <em>already out of date</em>, which neatly demonstrates how
+          and why you need to know how to determine these SHAs) politicians’
+          data for the UK’s House of Commons legislature, for the 56th term
+          (which started 2015-05-08), look like this:
+        </p>
+        <ul>
+          <li>
+            JSON: <a style="font-size:80%;padding-left:0.5em" href="http://cdn.rawgit.com/everypolitician/everypolitician-data/0b47c0c/data/UK/Commons/ep-popolo-v1.0.json">try it</a>
+            <br>
+            <code><span span class="url-part-domain">http://cdn.rawgit.com</span>/everypolitician/everypolitician-data/<span span class="url-part-sha">0b47c0c</span>/<span class="url-part-file">data/UK/Commons/ep-popolo-v1.0.json</span></code>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            CSV for the term &ldquo;56th Parliament of the United Kingdom&rdquo;:
+            <a style="font-size:80%;padding-left:0.5em" href="http://cdn.rawgit.com/everypolitician/everypolitician-data/0b47c0c/data/UK/Commons/term-56.csv">try it</a>
+            <br>
+            <code><span class="url-part-domain">http://cdn.rawgit.com</span>/everypolitician/everypolitician-data</span>/<span class="url-part-sha">0b47c0c</span>/<span class="url-part-file-alt">data/UK/Commons/term-56.csv</span></code>
+          </li>
+        </ul>
+        <p>
+          ...because the <code>countries.json</code> contained this:
+        </p>
+        <pre>
+{
+  "name": "United Kingdom",
+  "country": "United Kingdom",
+  "code": "GB",
+  "slug": "UK",
+  "legislatures": [
+    {
+      "name": "House of Commons",
+      "slug": "Commons",
+      "sources_directory": "data/UK/Commons/sources",
+      "<strong>popolo</strong>": "<span class="url-part-file">data/UK/Commons/ep-popolo-v1.0.json</span>",
+      "lastmod": "1445087100",
+      "person_count": 1337,
+      "<strong>sha</strong>": "<span class="url-part-sha">0b47c0c</span>",
+      "legislative_periods": [
+        {
+          "id": "term/56",
+          "name": "56th Parliament of the United Kingdom",
+          "start_date": "2015-05-08",
+          "wikidata": "Q21084473",
+          "slug": "56",
+          "<strong>csv</strong>": "<span class="url-part-file-alt">data/UK/Commons/term-56.csv</span>"
+        },
+        {
+          "id": "term/55",
+          "name": "55th Parliament of the United Kingdom",
+          "start_date": "2010-05-06",
+          "end_date": "2015-03-30",
+          ...
+        },
+        ...
+      ]
+    }
+  ]
+}
+        </pre>
         <h3>
           Explaining <code>countries.json</code>
         </h3>
@@ -90,28 +177,7 @@
               </li>
             </ul>
           </li>
-        </ul>
-        <h3>
-          How to get the most up-to-date version of the data
-        </h3>
-        <p>
-          EveryPolitician’s data is being updated frequently. 
-        </p>
-        <p>
-          The EveryPolitician website offers up the most recent versions of its
-          files, so <strong>if you’re just browsing, then you’ll be getting the latest
-          data</strong>. But if you’re working with the data programmatically (for example,
-          in a client-side app making calls to the data), that won’t work for you.
-          GitHub won’t send the right headers, because it’s not really a data
-          store. So instead, use the RawGit URL and the most recent SHA, shown as
-          <code>sha</code> in the <code>countries.json</code> file, for the data
-          for the legislature you want.
-        </p>
-        <p>
-          If you’re writing an app and you want to cache the data files locally,
-          it’s probably better to do that based on the SHA, and refresh on change.
-        </p>
-    
+        </ul>    
       </div>
     </div>
   </div>
