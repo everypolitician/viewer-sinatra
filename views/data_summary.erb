@@ -1,0 +1,355 @@
+<div class="container" id="about">
+  <div class="page-section">
+    <div class="row">
+      <div class="column-one-quarter">
+         <%= erb :about_nav_menu %>
+      </div>
+      <div class="column-three-quarters">
+        <h1>What’s in EveryPolitician’s data?</h1>
+        <p class="section-intro">
+          Short answer: names. And dates of birth, twitter handles, politicial
+          group memberships, email addresses, honorific titles, image URLs, and
+          all sorts of useful things — all provided we can find them. How
+          complete this data is depends on the sources we’ve found for each
+          country.
+        </p>
+        <p>
+          This is a non-technical overview. To properly understand what
+          EveryPolitician offers, read about the <a href="technical.html">two
+          data formats available</a>, and how the <a
+          href="data_structure.html">data structure</a> encapsulates
+          <strong>entities</strong> and <strong>relationships</strong>.
+        </p>
+        <p>
+          The CSV files, which are often easier to work with, contain a useful
+          distillation of what’s in the JSON. The most common fields are
+          described below, but remember the richest data is in the JSON. For
+          example, where the CSV has one name, the JSON data might include
+          variations of that name in different languages. The JSON often
+          includes more detailed membership information too, such as start and
+          end dates, and so on. It will usually contain URLs for the sources of
+          our data.
+        </p>
+        <style>
+        .nested-boxes {
+          margin-bottom:1em;
+        }
+        .nested-boxes div {
+          padding: 0.5em 1em;
+          background: white;
+          font-family: inherit;
+        }
+        div.odd-nest {
+          background: #ddd;
+        }
+        .superscript {
+            font-size: .83em;
+            line-height: 0.5em;
+            vertical-align: baseline;
+            position: relative;
+            top: -0.4em;
+        }
+        table.definition th, table.definition td {
+          font-size: 1.125em;
+        }
+        table.definition th {
+          font-weight: normal;
+          font-family: monospace;
+          text-align: left;
+        }
+        table.definition tr:nth-of-type(odd) {
+          background-color:#eee;
+        }
+        </style>
+        <p>
+          Determine the <em>actual</em> names of the folders and files by
+          looking in the <code>data/</code> folder, or inside the
+          <a href="repo_structure.html">index file, <code>countries.json</code></a>.
+        </p>
+        <div class="nested-boxes">
+          <div class="odd-nest">
+            <ul>
+              <li>
+                folders for each <strong>country</strong>
+                <br>
+                e.g., <code>Algeria/</code>, <code>American_Samoa/</code>, <code>Albania/</code>
+              </li>
+            </ul>
+            <div>
+              <ul>
+                <li>
+                  folders for each <strong>legislature</strong>
+                  <br>
+                  e.g., <code>Assembly/</code>, <code>House/</code>, <code>Senate/</code>
+                  (many countries only have one)
+                </li>
+              </ul>
+              <div class="odd-nest">
+                <ul>
+                  <li>
+                    JSON file (Popolo format) of all data
+                    (<strong>terms</strong>, <strong>groups</strong>, <strong>persons</strong>)
+                    <br>
+                    e.g., <code>ep-popolo-v1.0.json</code>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    CSV file for each <strong>term</strong> containing <strong>persons</strong>:
+                    <br>
+                    e.g., <code>term-19.csv</code>, <code>term-2011.csv</code>, <code>term-1999-02-16.csv</code>
+                    <br>
+                    (in practice, if there’s only one term available, it’ll typically be the current one)
+                    <br>
+                    &nbsp;
+                    <div>
+                    <table class="definition">
+                      <tr>
+                        <td><strong>CSV field</strong></td>
+                        <td><strong>use &amp; example value</strong></td>
+                      </tr>
+                      <tr>
+                        <th>id</th>
+                        <td>
+                          unique within EveryPolitician
+                          <em>for this politician</em> (so you can use it to track
+                          people across terms, for example)
+                          <br>
+                          It's a <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier">UUID</a>,
+                          and looks like
+                          <br><code>2bc9cc09-a33a-42d9-89c3-14effb20b8b0</code>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>name</th>
+                        <td>
+                          common name for this politician: <code>Anne Example</code>
+                          <br>See <a href="#about-names">more about names</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>sort_name</th>
+                        <td>name for sort ordering: <code>Example, Anne</code></td>
+                      </tr>
+                      <tr>
+                        <th>email</th>
+                        <td>email address: <code>anne@example.com</code></td>
+                      </tr>
+                      <tr>
+                        <th>twitter</th>
+                        <td>twitter handle: <code>example</code> (for <code>@example</code>)</td>
+                      </tr>
+                      <tr>
+                        <th>facebook</th>
+                        <td>Facebook name: <code>AnneExample</code> (for <code>facebook.com/AnneExample)</code>
+                      </tr>
+                      <tr>
+                        <th>group</th>
+                        <td>name of political group <code>Example Faction</code></td>
+                      </tr>
+                      <tr>
+                        <th>group_id<span class="superscript">&dagger;</span></th>
+                        <td>id for group</td>
+                      </tr>
+                      <tr>
+                        <th>area</th>
+                        <td>name of area represented <code>Example County</code></td>
+                      </tr>
+                      <tr>
+                        <th>area_id<span class="superscript">&dagger;</span></th>
+                        <td>id for area</td>
+                      </tr>
+                      <tr>
+                        <th>chamber<span class="superscript">&dagger;</span></th>
+                        <td>name of chamber <code>House of Representatives</code></td>
+                      </tr>
+                      <tr>
+                        <th>term<span class="superscript">&dagger;</span></th>
+                        <td>id or index for term</td>
+                      </tr>
+                      <tr>
+                        <th>start_date</th>
+                        <td>start of membership (if needed) <code>2010-11-29</code></td>
+                      </tr>
+                      <tr>
+                        <th>end_date</th>
+                        <td>end of membership (if needed) <code>2012-07-14</code></td>
+                      </tr>
+                      <tr>
+                        <th>image</th>
+                        <td>URL to image file <code>http://example.com/example.jpg</code></td>
+                      </tr>
+                      <tr>
+                        <th>gender</th>
+                        <td>gender if known <code>M</code> or <code>F, or <code>male</code> or <code>female</code></td>
+                      </tr>
+                    </table>
+                  </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>
+          <span class="superscript">&dagger;</span>
+          Values of fields marked &dagger; will be consistent throughout the
+          legislature: if their values are equal (string comparison), then
+          they’re the same thing. So all politicians with the same
+          <code>area_id</code>, for example, are representing the same area.
+          Where appropriate, the actual value might be a useful value. For
+          example, where we can, we use <a
+          href="http://opencivicdata.readthedocs.org/en/latest/ocdids.html">Open
+           Civic Data IDs</a> like this:
+          <code>ocd-division/country:us/state:ca/cd:47</code>, but if no such
+          mapping is available from our sources, we’ll probably use a slug like
+          <code>area-foo-county</code>.
+        </p>
+        <h2>
+          Legislatures and terms
+        </h2>
+        <p>
+          For every country, we break the data down into
+          <strong>legislatures</strong> (for example, the “parliament” or
+          “congress” of the country). Currently, we’re only working with
+          national, that is, top-level, legislatures (as opposed to local or
+          state-level legislatures). In the future we hope to include those too.
+        </p>
+        <p>
+          Many countries have a single legislature. Some have two. For example,
+          the <a
+          href="http://everypolitician.org/united-states-of-america/">United
+          States of America</a> has the <em>House of Representatives</em> and
+          the <em>Senate</em>.
+        </p>
+        <p>
+          Furthermore, we split the data for those down into
+          <strong>terms</strong>. Like legislatures themselves, the way this
+          works may vary from country to country. Terms have a start and end
+          date, and the data therefore describes the membership of the
+          legislation during that period. In most democracies, new terms begin
+          after every national election. Of course, changes still occur within
+          terms -- the point is, that’s how we break the data files down for
+          you.
+        </p>
+        <p>
+          This is pragmatic because we know online services and sites are
+          likely to be concerned with the most recent term -- that is, a
+          country’s <em>current</em> legislature.
+        </p>
+        <h2>
+          Politicians
+        </h2>
+        <p>
+          <strong>The richness of the data we have will depend on the source or
+          sources from which we’re getting it.</strong> We try to use official
+          sources, but this isn’t consistently useful across the world. Indeed,
+          the EveryPolitician project exists partly because in some places it’s
+          still depressingly hard to get even basic information about the
+          current legislature.
+        </p>
+        <p>
+          But the absolute minimum data we need for a politician to be in
+          EveryPolitician is their <strong>name</strong> (by implication, we
+          also have their membership of the legislature and its term). Unless
+          the system they are in does not use such mechanisms, we’ll also have
+          the <strong>area</strong> they represent, and the
+          <strong>group</strong> (perhaps a party or faction) they belong to.
+          There may also be start and end dates if we know they did not serve
+          the full term.
+        </p>
+        <a name="about-names"></a>
+        <h3>
+          About names
+        </h3>
+        <p>
+          Names are a key part of any data set based around people. In the
+          basic CVS, the <code>name</code> will be the common name that we’ve
+          got from the source, but we’re aware that names are not quite that
+          simple. We often have this name data:
+        </p>
+        <p>
+          <code>name</code>
+          <code>given_name</code>
+          <code>family_name</code>
+          <code>honorific_prefix</code>
+          <code>honorific_suffix</code>
+          <code>patronymic_name</code>
+          <code>sort_name</code>
+        </p>
+        <p>
+          However, in the CSV you’ll be getting these in whichever language was
+          available from the source of the data. Often this is the official
+          language of the country concerned, but that’s not always
+          straightforward because many countries have multiple official
+          languages. Furthermore, you can’t determine <em>which</em> language
+          it is from within the CSV — remember that CSV really is a coarse
+          version of the data — so instead you should use the JSON. In there
+          you’ll find that fields such as names are broken out by language code
+          (and often that will include transliteration in languages that are
+          not official languages of the country concerned, too).
+        </p>
+        <h3>
+          If you <em>only</em> want names
+        </h3>
+        <p>
+          For convenience, we isolate all the names of all the politicians
+          within each legislature and make them available in their own file.
+          (Like other files, look inside <code>countries.json</code> to find
+          its path and filename; in this case under <code>names</code>). This
+          file contains <code>name</code> and <code>id</code> fields. Note that
+          there may be more than one name for each politician (for example, we
+          might have the name of a Welsh politician rendered in English and
+          Chinese). If you need to consolidate them, use the <code>id</code> to
+          match them (or, as ever, use the JSON data instead).
+        </p>
+        <p>
+          In fact, we’ve even built an external service that consolidates all
+          the names into one CSV file (caution: that currently contains well
+          over 80,000 names and growing): see
+          <a href="https://github.com/everypolitician/everypolitician-names/">everypolitician-names</a>.
+        </p>
+        <h3>
+          IDs to other data sets, including WikiData
+        </h3>
+        <p>
+          We give each politician in EveryPolitician a unique ID (actually a
+          UUID). It’s keyed as <code>id</code> in the CSV. But often we’ll know
+          useful IDs for the same politician in other data sets too. You can
+          find these in the JSON data under <code>identifiers</code>.
+        </p>
+        <p>
+          Each identifier consists of an (<code>identifier</code>,
+          <code>scheme</code>) pair. For example, here’s an entry for the
+          identifier in WikiData (the database behind Wikipedia):
+        </p>
+        <pre>
+"identifiers": [
+  {
+    "identifier": "Q1091494",
+    "scheme": "wikidata"
+  }
+]
+</pre>
+        <p>
+          (Incidentally, you can view WikiData entries like this
+          <a href="https://www.wikidata.org/wiki/Q42">wikidata.org/wiki/Q42</a>,
+          or using the Reasonator: in this example, it’s the
+          <a href="https://tools.wmflabs.org/reasonator/?q=Q1091494">Parliament of Åland</a>).
+        <p>
+          We do this for other entities (such as legislatures themselves) as
+          well as politicians. Remember that external data sets might not be
+          complete, so it’s possible to have a useful identifier which isn’t
+          populated for <em>all</em> records. For example, WikiData only holds
+          data for entries that satisfy their “notability” criteria.
+        </p>
+        <p>
+          Some legislatures have adopted the good practice of assigning unique
+          IDs to their politicians, which can be useful when using their
+          official APIs. Whenever we can find IDs like this, we’ll add them as
+          identifiers in this way.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

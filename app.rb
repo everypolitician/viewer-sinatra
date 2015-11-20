@@ -129,6 +129,10 @@ get '/repo_structure.html' do
   erb :repo_structure
 end
 
+get '/data_summary.html' do
+  erb :data_summary
+end
+
 get '/data_structure.html' do
   erb :data_structure
 end
