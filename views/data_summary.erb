@@ -189,12 +189,12 @@
         </div>
         <p>
           <span class="superscript">&dagger;</span>
-          Values of fields marked &dagger; will be consistent throughout the
-          legislature: if their values are equal (string comparison), then
-          they’re the same thing. So all politicians with the same
-          <code>area_id</code>, for example, are representing the same area.
-          Where appropriate, the actual value might be a useful value. For
-          example, where we can, we use <a
+          You can use fields marked &dagger; as IDs, although we can’t
+          guarantee they’ll always be unique <em>outside</em> this legislature.
+          For example, all politicians in this legislature with the same
+          <code>area_id</code> are representing the same area (which is what
+          you’d expect). Where appropriate, the actual value might be a useful
+          value. For example, where we can, we use <a
           href="http://opencivicdata.readthedocs.org/en/latest/ocdids.html">Open
            Civic Data IDs</a> like this:
           <code>ocd-division/country:us/state:ca/cd:47</code>, but if no such
