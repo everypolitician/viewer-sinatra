@@ -282,16 +282,8 @@
           <code>sort_name</code>
         </p>
         <p>
-          However, in the CSV you’ll be getting these in whichever language was
-          available from the source of the data. Often this is the official
-          language of the country concerned, but that’s not always
-          straightforward because many countries have multiple official
-          languages. Furthermore, you can’t determine <em>which</em> language
-          it is from within the CSV — remember that CSV really is a coarse
-          version of the data — so instead you should use the JSON. In there
-          you’ll find that fields such as names are broken out by language code
-          (and often that will include transliteration in languages that are
-          not official languages of the country concerned, too).
+          The JSON data includes <code>other_names</code>, which may contain
+          aliases as well as names for the politician in different languages.
         </p>
         <h3>
           If you <em>only</em> want names
@@ -305,12 +297,13 @@
           there may be more than one name for each politician (for example, we
           might have the name of a Welsh politician rendered in English and
           Chinese). If you need to consolidate them, use the <code>id</code> to
-          match them (or, as ever, use the JSON data instead).
+          match them (or dive into the JSON data instead).
         </p>
         <p>
-          In fact, we’ve even built an external service that consolidates all
-          the names into one CSV file (caution: that currently contains well
-          over 80,000 names and growing): see
+          In fact, we’ve even built an external service that puts all these
+          names (together with identifier fields, such as <code>id</code>) into
+          a single CSV file (caution: that currently contains well over 80,000
+          names and growing): see
           <a href="https://github.com/everypolitician/everypolitician-names/">everypolitician-names</a>.
         </p>
         <h3>
