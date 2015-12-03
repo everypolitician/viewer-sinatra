@@ -191,18 +191,19 @@
         </div>
         <p>
           <span class="superscript">&dagger;</span>
-          You can use fields marked &dagger; as IDs, although we can’t
-          guarantee they’ll always be unique <em>outside</em> this legislature.
-          For example, all politicians in this legislature with the same
+          You can consider fields marked &dagger; as identifiers that are
+          unique within this legislature (unlike <code>id</code> itself, which
+          identifies the politician within <em>all</em> of EveryPolitician’s data). For
+          example, all politicians in this legislature with the same
           <code>area_id</code> are representing the same area (which is what
           you’d expect). Where appropriate, the actual value might be a useful
-          value. For example, we like to use <a
+          value. For example, for <code>area_id</code> we like to use <a
           href="http://opencivicdata.readthedocs.org/en/latest/ocdids.html">Open
-           Civic Data IDs</a> like this:
+          Civic Data IDs</a> like this:
           <code>ocd-division/country:us/state:ca/cd:47</code>, but if no such
           mapping is available from our sources, we’ll probably use a slug like
-          <code>area-foo-county</code>. If you can suggest better values whenever
-          you find us using our own ones, please get in touch!
+          <code>area-foo-county</code>. If you can suggest better values
+          whenever you find us using our own ones, please get in touch!
         </p>
         <h2>
           Legislatures and terms
