@@ -296,3 +296,40 @@
     border:2px solid #999900;
     padding: 0.1em;
 }
+
+/* used to show nested data structure in data_summary.erb */
+.nested-boxes {
+  margin-bottom:1em;
+  div {
+    padding: 0.5em 1em;
+    background: white;
+    font-family: inherit;
+    &.odd-nest {
+      background: #ddd;
+    }
+  }
+}
+
+/* used to show data definitions in data_summary.erb */
+table.definition {
+  th, td {
+    font-size: 1.125em;
+  }
+  th {
+    font-weight: normal;
+    font-family: monospace;
+    text-align: left;
+  }
+  tr:nth-of-type(odd) {
+    background-color:#eee;
+  }
+}
+
+.superscript {
+    font-size: .83em;
+    line-height: 0.5em;
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+
