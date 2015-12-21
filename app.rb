@@ -88,10 +88,6 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
   erb :term_table
 end
 
-get '/about.html' do
-  erb :about
-end
-
 get '/status/all_countries.html' do
   @world = WORLD.to_a
   erb :all_countries
@@ -111,38 +107,6 @@ get '/needed.html' do
   @to_finish = client.issues 'everypolitician/everypolitician-data', labels: "New Country,3 - WIP"
 
   erb :needed
-end
-
-get '/technical.html' do
-  erb :technical
-end
-
-get '/contribute.html' do
-  erb :contribute
-end
-
-get '/submitting.html' do
-  erb :submitting
-end
-
-get '/repo_structure.html' do
-  erb :repo_structure
-end
-
-get '/data_summary.html' do
-  erb :data_summary
-end
-
-get '/data_structure.html' do
-  erb :data_structure
-end
-
-get '/scrapers.html' do
-  erb :scrapers
-end
-
-get '/use_the_data.html' do
-  erb :use_the_data
 end
 
 get '/*.css' do |filename|
