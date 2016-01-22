@@ -248,7 +248,7 @@
       saveOriginalSortOrder($table);
       detectPresortedTable($table);
 
-      $table.on('click', 'thead th', function(){
+      $table.on('click', 'thead th:not([data-sortable-unsortable])', function(){
         var eq = $(this).prevAll().length;
         sortTable($table, eq);
       });
