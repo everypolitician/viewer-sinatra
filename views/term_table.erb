@@ -42,7 +42,7 @@
     </div>
 <% end %>
 
-    <div class="page-section page-section--grey" id="seat-count">
+    <div class="page-section" id="seat-count">
         <div class="container">
             <div class="party-groupings__title">
                 <h2>Party Groupings</h2>
@@ -59,63 +59,49 @@
         </div>
     </div>
 
-    <div class="page-section page-section">
+    <div class="page-section page-section--grey">
         <div class="container">
 
             <% show_dates = @csv.any? { |m| !m[:start_date].to_s.empty? || !m[:end_date].to_s.empty? } %>
 
-            <table class="term-membership-table js-sortable">
-                <thead class="js-fixed-thead">
-                    <tr>
-                        <td colspan="<% if show_dates %>6<% else %>5<% end %>">
-                            <div class="term-membership-table__title">
-                              <a class="button button--download" href="<%= @urls[:csv] %>">
-                                <i class="fa fa-download"></i>
-                                <span class="large-screen-only">Download as</span> CSV
-                              </a>
-                                <h2>Members</h2>
-                            </div>
-                        </td>
-                    </tr>
+            <div class="term-membership-table__title">
+              <a class="button button--download" href="<%= @urls[:csv] %>">
+                <i class="fa fa-download"></i>
+                <span class="large-screen-only">Download as</span> CSV
+              </a>
+                <h2>Members</h2>
+            </div>
 
-                    <tr>
-                        <th data-sortable-presorted="a-z">Name</th>
-                        <th>Group</th>
-                        <th>Area</th>
-                        <% if show_dates %><th>Dates</th><% end %>
-                        <th data-sortable-unsortable>Gender</th>
-                        <th data-sortable-unsortable>Links</th>
-                    </tr>
-                </thead>
+            <div class="person-cards">
 
               <% @csv.group_by { |m| m[:id] }.sort_by { |id, mems| mems.first[:sort_name] }.each do |id, mems| %>
-                  <%# Each person can have multiple party affiliations in a single term, so we
-                      loop through them and set the first cell (their name) to span all the rows %>
-                  <% mems.each_with_index do |m, i| %>
-                    <tr id="mem-<%= id.to_s.split('/').last %>">
-                      <% if i == 0 %>
-                        <td rowspan="<%= mems.count %>" data-sortable-sortvalue="<%= m[:sort_name] or m[:name] %>"><%= m[:name] %></td>
+                <div class="person-card">
+                    <h3 class="person-card__name"><%= mems[0][:name] %></h3>
+                    <img class="person-card__image" src="<%= mems[0][:image] %>">
+                    <p class="person-card__politics"><%= mems[0][:group].to_s.empty? ? 'Independent' : mems[0][:group] %>, <%= mems[0][:area] %></p>
+                    <p class="person-card__links">
+                      <% if mems[0][:twitter] %>
+                        <a href="https://twitter.com/<%= mems[0][:twitter] %>">
+                            <i class="fa fa-twitter"></i> @<%= mems[0][:twitter] %>
+                        </a>
                       <% end %>
-                        <td><%= m[:group].to_s.empty? ? 'Independent' : m[:group] %></td>
-                        <td><%= m[:area] %></td>
-                      <% if show_dates %>
-                        <% start_date = (m[:start_date].to_s.empty? or m[:start_date].to_s == @term[:start_date].to_s) ? '' : m[:start_date].to_s %>
-                        <% end_date   = (m[:end_date].to_s.empty? or m[:end_date].to_s == @term[:end_date].to_s) ? '' : m[:end_date].to_s %>
-                        <td><%= start_date %><% unless start_date.empty? and end_date.empty? %>-<% end %><%= end_date %></td>
+                      <% if mems[0][:facebook] %>
+                        <a href="<%= mems[0][:facebook] %>">
+                            <i class="fa fa-facebook"></i>
+                            <%= mems[0][:facebook].gsub('https://www.facebook.com', '') %>
+                        </a>
                       <% end %>
-                        <td><%= m[:gender] %></td>
-                        <td>
-                          <% if m[:twitter] %>
-                            <a class="person-link person-link--twitter" href="https://twitter.com/<%= m[:twitter] %>">@<%= m[:twitter] %></a>
-                          <% end %>
-                          <% if m[:facebook] %>
-                            <a class="person-link person-link--facebook" href="<%= m[:facebook] %>"><%= m[:facebook] %></a>
-                          <% end %>
-                        </td>
-                    </tr>
-                  <% end %>
+                      </p>
+                    <label for="more-info-<%= id %>">More data</label>
+                    <input class="houdini-input" type="checkbox" id="more-info-<%= id %>">
+                    <div class="houdini-target person-card__more">
+                        <p>Gender: <%= mems[0][:gender] %></p>
+                    </div>
+                </div>
               <% end %>
-            </table>
+
+            </div>
+
         </div>
     </div>
 

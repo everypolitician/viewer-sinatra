@@ -2,6 +2,8 @@
 @import 'variables';
 @import 'mixins';
 
+@import 'houdini';
+
 *,
 *:before,
 *:after {
@@ -31,6 +33,7 @@ body {
 @import 'typography';
 @import 'layouts';
 @import 'components';
+@import 'person-cards';
 @import 'site-header';
 @import 'site-footer';
 @import 'ms-header';
