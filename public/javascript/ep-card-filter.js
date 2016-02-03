@@ -1,18 +1,16 @@
-
-// via https://css-tricks.com/snippets/jquery/make-jquery-contains-case-insensitive/
-$.expr[":"].case_insensitive_contains = $.expr.createPseudo(function(arg) {
-  return function( elem ) {
-    return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
-  };
-});
-
-
 $(document).ready(function() {
-  $("input#card-filter").show().keyup(function(e) { 
+  $('.js-filter-input').show().on('keyup', function(e) {
     var searchFor = $(this).val();
-    $(".person-card").hide();
-    $(".person-card:case_insensitive_contains('" + searchFor + "')").show();
+    if( searchFor === '' ){
+        $('.js-filter-target--hidden').removeClass('js-filter-target--hidden');
+    } else {
+        $('.js-filter-target').each(function(){
+            if( $(this).text().toUpperCase().indexOf(searchFor.toUpperCase()) < 0 ){
+                $(this).addClass('js-filter-target--hidden');
+            } else {
+                $(this).removeClass('js-filter-target--hidden');
+            }
+        });
+    }
   });
 });
-
-
