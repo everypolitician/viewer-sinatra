@@ -333,3 +333,69 @@ table.definition {
     top: -0.4em;
 }
 
+.data-completeness-wrapper {
+  background-color: darken($colour_green, 3%);
+  padding: 2em 0;
+  margin: 2em 0;
+}
+
+.data-completeness {
+  @include clearfix();
+  margin: 0 -2%;
+
+  & > div {
+    float: left;
+    width: 100%;
+    padding: 0.66em 2%;
+    font-size: 1.2em;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    @media (min-width: $medium_screen) {
+      width: 50%;
+
+      &:nth-child(2n+1) {
+        clear: left;
+      }
+    }
+
+    @media (min-width: $medium_screen * 1.5) {
+      width: 25%;
+
+      &:nth-child(2n+1) {
+        clear: none;
+      }
+
+      &:nth-child(4n+1) {
+        clear: left;
+      }
+    }
+  }
+
+  .canvas-wrapper,
+  .chart-full {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2em;
+    height: 2em;
+    margin-right: 0.5em;
+  }
+
+  .chart-full {
+    border-radius: 100%;
+    background-color: #fff;
+    color: darken($colour_green, 3%);
+    text-align: center;
+
+    .fa {
+      margin-top: 0.5em;
+    }
+  }
+}
+
+.data-completeness__label {
+  font-weight: bold;
+  margin-right: 0.2em;
+}
