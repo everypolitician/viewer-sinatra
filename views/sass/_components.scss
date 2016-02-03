@@ -30,6 +30,37 @@
     }
 }
 
+.simple-columns {
+  @include clearfix();
+  margin: 0 -1em;
+
+  & > * {
+    float: left;
+    padding: 1em;
+    width: 100%;
+
+    @media (min-width: $medium_screen) {
+      width: 50%;
+
+      &:nth-child(2n+1) {
+        clear: left;
+      }
+    }
+
+    @media (min-width: $medium_screen * 1.5) {
+      width: 33.3%;
+
+      &:nth-child(2n+1) {
+        clear: none;
+      }
+
+      &:nth-child(3n+1) {
+        clear: left;
+      }
+    }
+  }
+}
+
 .text-center {
     text-align: center;
 }
@@ -317,6 +348,7 @@ p.lead {
 .grid-list {
     @extend .unstyled-list;
 }
+
 .flexwrap .grid-list {
     @include flexbox();
     @include flex-align(center);
