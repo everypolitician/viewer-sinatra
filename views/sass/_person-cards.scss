@@ -1,56 +1,59 @@
-.person-cards {
-  @include flexbox();
-  @include flex-align(stretch);
-  @include flex-wrap(wrap);
-  margin: 0 -1em;
-}
-
 .person-card {
-  @include flex(0 0 calc(100% - 2em));
-
-  position: relative;
-
   background: #fff;
   box-shadow: 0 1px 1px rgba(0,0,0,0.2);
-  padding: 1em 1em 1em 5em;
-  margin: 1em;
+}
 
-  @media (min-width: $medium_screen) {
-    @include flex(0 0 calc(50% - 2em));
-  }
+.person-card__primary,
+.person-card__more {
+  padding: 18px;
+}
 
-  @media (min-width: $medium_screen * 1.5) {
-    @include flex(0 0 calc(33.33% - 2em));
-  }
-
-  p {
-    margin-bottom: 0.5em;
-  }
-
-  h3 {
-    margin-bottom: 0.1em;
-  }
+.person-card__primary {
+  @include clearfix();
 }
 
 .person-card__image {
-  position: absolute;
-  top: 1em;
-  left: 1em;
-  width: 3em;
-  height: 3em;
-  border-radius: 100%;
+  float: left;
+  width: (18px * 3);
+  height: auto;
 }
 
-.person-card__links {
-  a {
+.person-card__name,
+.person-card__politics {
+  margin: 0 18px 0 (18px * 4);
+  line-height: 1.3em;
+}
+
+.person-card__politics {
+  margin-top: 0.1em;
+}
+
+.person-card__more {
+  background-color: mix(#fff, $colour_green, 95%);
+  border-top: 1px solid mix(#eee, $colour_green, 95%);
+  font-size: (16em / 18);
+
+  p {
     display: block;
-    max-width: 100%;
+    width: 99%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    margin: 0;
+  }
+
+  p + p {
+    margin-top: 0.3em;
+  }
+
+  .gender {
+    text-transform: capitalize;
   }
 }
 
-.person-card label {
-  color: #999;
+.person-card__more__label {
+  display: inline-block;
+  width: (18px * 4);
+  font-size: 0.9em;
+  color: mix(#999, $colour_green, 50%);
 }

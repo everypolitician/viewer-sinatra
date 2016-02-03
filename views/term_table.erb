@@ -73,30 +73,50 @@
                 <input type="text" style="display:none" id="card-filter" placeholder="Filter…">
             </div>
 
-            <div class="person-cards">
+            <div class="simple-columns">
 
               <% @csv.group_by { |m| m[:id] }.sort_by { |id, mems| mems.first[:sort_name] }.each do |id, mems| %>
-                <div class="person-card">
-                    <h3 class="person-card__name"><%= mems[0][:name] %></h3>
-                    <img class="person-card__image" src="<%= mems[0][:image] %>">
-                    <p class="person-card__politics"><%= mems[0][:group].to_s.empty? ? 'Independent' : mems[0][:group] %>, <%= mems[0][:area] %></p>
-                    <p class="person-card__links">
-                      <% if mems[0][:twitter] %>
-                        <a href="https://twitter.com/<%= mems[0][:twitter] %>">
-                            <i class="fa fa-twitter"></i> @<%= mems[0][:twitter] %>
-                        </a>
+                <div>
+                    <div class="person-card">
+
+                        <div class="person-card__primary">
+                            <img class="person-card__image" src="<%= mems[0][:image] %>">
+                            <h3 class="person-card__name"><%= mems[0][:name] %></h3>
+                            <p class="person-card__politics">
+                                <%= mems[0][:group].to_s.empty? ? 'Independent' : mems[0][:group] %>
+                                <% if mems[0][:area] %>– <%= mems[0][:area] %><% end %>
+                            </p>
+                        </div>
+
+                      <% if mems[0][:gender] || mems[0][:twitter] || mems[0][:facebook] || mems[0][:email] %>
+                        <div class="person-card__more">
+                          <% if mems[0][:twitter] %>
+                            <p>
+                                <span class="person-card__more__label">Twitter</span>
+                                <a href="https://twitter.com/<%= mems[0][:twitter] %>">@<%= mems[0][:twitter] %></a>
+                            </p>
+                          <% end %>
+                          <% if mems[0][:facebook] %>
+                            <p>
+                                <span class="person-card__more__label">Facebook</span>
+                                <a href="<%= mems[0][:facebook] %>"><%= mems[0][:facebook].gsub('https://www.facebook.com', '') %></a>
+                            </p>
+                          <% end %>
+                          <% if mems[0][:email] %>
+                            <p>
+                                <span class="person-card__more__label">Email</span>
+                                <a href="mailto:<%= mems[0][:email] %>"><%= mems[0][:email] %></a>
+                            </p>
+                          <% end %>
+                          <% if mems[0][:gender] %>
+                            <p>
+                                <span class="person-card__more__label">Gender</span>
+                                <span class="gender"><%= mems[0][:gender] %></span>
+                            </p>
+                          <% end %>
+                        </div>
                       <% end %>
-                      <% if mems[0][:facebook] %>
-                        <a href="<%= mems[0][:facebook] %>">
-                            <i class="fa fa-facebook"></i>
-                            <%= mems[0][:facebook].gsub('https://www.facebook.com', '') %>
-                        </a>
-                      <% end %>
-                      </p>
-                    <label for="more-info-<%= id %>">More data</label>
-                    <input class="houdini-input" type="checkbox" id="more-info-<%= id %>">
-                    <div class="houdini-target person-card__more">
-                        <p>Gender: <%= mems[0][:gender] %></p>
+
                     </div>
                 </div>
               <% end %>
