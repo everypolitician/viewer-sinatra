@@ -65,18 +65,21 @@
             <% show_dates = @csv.any? { |m| !m[:start_date].to_s.empty? || !m[:end_date].to_s.empty? } %>
 
             <div class="term-membership-table__title">
-              <a class="button button--download" href="<%= @urls[:csv] %>">
-                <i class="fa fa-download"></i>
-                <span class="large-screen-only">Download as</span> CSV
-              </a>
                 <h2>Members</h2>
-                <input type="text" style="display:none" id="card-filter" placeholder="Filter…">
+                <a class="button button--download" href="<%= @urls[:csv] %>">
+                    <i class="fa fa-download"></i>
+                    <span class="large-screen-only">Download as</span> CSV
+                </a>
+                <span class="person-card-filter">
+                    <label for="filter-input" class="fa fa-search"></label>
+                    <input type="text" class="js-filter-input" id="filter-input" placeholder="Filter list…">
+                </span>
             </div>
 
             <div class="simple-columns">
 
               <% @csv.group_by { |m| m[:id] }.sort_by { |id, mems| mems.first[:sort_name] }.each do |id, mems| %>
-                <div>
+                <div class="js-filter-target">
                     <div class="person-card">
 
                         <div class="person-card__primary">

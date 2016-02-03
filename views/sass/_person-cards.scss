@@ -20,7 +20,7 @@
 
 .person-card__name,
 .person-card__politics {
-  margin: 0 18px 0 (18px * 4);
+  margin: 0 0 0 (18px * 4);
   line-height: 1.3em;
 }
 
@@ -56,4 +56,23 @@
   width: (18px * 4);
   font-size: 0.9em;
   color: mix(#999, $colour_green, 50%);
+}
+
+.person-card-filter {
+  position: absolute;
+  top: 1em;
+  left: 0;
+
+  .no-js & {
+    display: none;
+  }
+
+  label {
+    color: $colour_mid_grey;
+    margin-right: 0.5em;
+  }
+}
+
+.js-filter-target--hidden {
+  display: none;
 }
