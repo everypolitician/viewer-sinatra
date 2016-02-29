@@ -30,6 +30,37 @@
     }
 }
 
+.simple-columns {
+  @include clearfix();
+  margin: 0 -1em;
+
+  & > * {
+    float: left;
+    padding: 1em;
+    width: 100%;
+
+    @media (min-width: $medium_screen) {
+      width: 50%;
+
+      &:nth-child(2n+1) {
+        clear: left;
+      }
+    }
+
+    @media (min-width: $medium_screen * 1.5) {
+      width: 33.3%;
+
+      &:nth-child(2n+1) {
+        clear: none;
+      }
+
+      &:nth-child(3n+1) {
+        clear: left;
+      }
+    }
+  }
+}
+
 .text-center {
     text-align: center;
 }
@@ -317,6 +348,7 @@ p.lead {
 .grid-list {
     @extend .unstyled-list;
 }
+
 .flexwrap .grid-list {
     @include flexbox();
     @include flex-align(center);
@@ -408,6 +440,14 @@ p.lead {
       color: inherit;
     }
 
+    &[data-sortable-unsortable] {
+      cursor: default;
+
+      &:after {
+        display: none;
+      }
+    }
+
     &.sortedDown:after {
       content: "\f0dd";
       color: $colour_green;
@@ -463,4 +503,42 @@ p.lead {
         margin-left: 0.3em;
         vertical-align: 0.1em;
     }
+}
+
+// Little round social icons for membership tables
+.person-link {
+  display: inline-block;
+  width: 24px;
+  padding-top: 24px;
+  height: 0;
+  overflow: hidden;
+  vertical-align: middle;
+  border-radius: 100%;
+  margin-right: 0.3em;
+}
+
+.person-link--twitter {
+  background: #55acee url(../images/twitter.png) 50% 50% no-repeat;
+  background-size: 16px 13px;
+  @media($high_dpi_screen){
+    background-image: url(../images/twitter@2x.png);
+  }
+  background-image: url(../images/twitter.svg), none;
+
+  &:hover, &:focus {
+    background-color: darken(#55acee, 15%);
+  }
+}
+
+.person-link--facebook {
+  background: #3b5998 url(../images/facebook.png) 50% 50% no-repeat;
+  background-size: 8px 16px;
+  @media($high_dpi_screen){
+    background-image: url(../images/facebook@2x.png);
+  }
+  background-image: url(../images/facebook.svg), none;
+
+  &:hover, &:focus {
+    background-color: darken(#3b5998, 15%);
+  }
 }
