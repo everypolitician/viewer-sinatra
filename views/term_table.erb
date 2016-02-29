@@ -133,7 +133,9 @@
                     <div class="person-card">
 
                         <div class="person-card__primary">
-                            <img class="person-card__image" src="<%= mems[0][:image] %>">
+                          <% if mems[0][:image] %>
+                            <img class="person-card__image" src="<%= mems[0][:proxy_image] %>">
+                          <% end %>
                             <h3 class="person-card__name"><%= mems[0][:name] %></h3>
                             <p class="person-card__politics">
                                 <%= mems[0][:group].to_s.empty? ? 'Independent' : mems[0][:group] %>

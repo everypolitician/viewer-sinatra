@@ -77,6 +77,12 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
   csv_file = EveryPolitician::GithubFile.new(@term[:csv], last_sha)
   @csv = CSV.parse(csv_file.raw, headers: true, header_converters: :symbol, converters: nil)
 
+  @csv.each do |person|
+    person[:proxy_image] = 'https://mysociety.github.io/politician-image-proxy/%s/%s/%s/140x140.jpeg' % [
+      @country[:slug], @house[:slug], person[:id]
+    ]
+  end
+
   popolo_file = EveryPolitician::GithubFile.new(@house[:popolo], last_sha)
   popolo = JSON.parse(popolo_file.raw)
 

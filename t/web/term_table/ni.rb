@@ -32,5 +32,9 @@ describe 'Northern Ireland' do
       subject.css('tr#mem-62479dcd-b981-4a57-8a11-b8f8b17249fb td').last.text.must_include '2010-07-01'
     end
 
+    it 'should use the Proxy Image' do
+      subject.xpath('//h3[.="Anna Lo"]/preceding-sibling::img/@src').text.must_include 'politician-image-proxy'
+    end
+
   end
 end
