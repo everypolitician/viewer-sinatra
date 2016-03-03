@@ -18,6 +18,7 @@
                     <li><a href="#buttons">Buttons</a></li>
                     <li><a href="#grids">Grids of things</a></li>
                     <li><a href="#avatar-units">Avatar units</a></li>
+                    <li><a href="#person-cards">Person cards</a></li>
                     <li><a href="#basic-lists">Unstyled and inline lists</a></li>
                     <li><a href="#alerts">Alerts</a></li>
                     <li><a href="#table-headers">Fixed table headers</a></li>
@@ -164,7 +165,11 @@
     …
 &lt;/ul&gt;</pre>
 
-                <p><strong>Note:</strong> In modern browsers and Internet Explorer 10+, the list will break into as many columns as will fit on the screen. Older browsers will see a single column. <a href="http://caniuse.com/#search=flex">Show full browser compatibility table.</a></p>
+                <p>List items will break onto as many columns as can comfortably fit on screen, and will wrap onto as many rows as required.</p>
+
+                <p>List items will line up along their top edges. If you’d prefer them to line up along their centres (useful for multi-line <code>.avatar-unit</code>s) add a class of <code>grid-list--vertically-center</code> to your Grid list element.</p>
+
+                <p><strong>Note:</strong> List items will be displayed in a single full-width column on very old browsers, and IE9 and below. <a href="http://caniuse.com/#search=flex">Show full browser compatibility table.</a></p>
 
                 <hr>
 
@@ -185,9 +190,23 @@
     &lt;p&gt;CEO, Stark Industries&lt;/p&gt;
 &lt;/a&gt;</pre>
 
-                <p>Avatar units must contain a <code>&lt;span class="avatar"&gt;</code> element, but all other content is optional. When combined with <code>.grid-list</code>, above, Avatar units of different heights will be vertically aligned along their common centre.</p>
+                <p>Avatar units must contain a <code>&lt;span class="avatar"&gt;</code> element, but all other content is optional.</p>
 
                 <p>You can change the icon displayed by replacing <code>&lt;i class="fa fa-user"&gt;</code> with one of the icon codes from the <a href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome docs</a>.</p>
+
+                <hr>
+
+                <h1 id="person-cards">Person cards</h1>
+
+                <p>Person cards are a logical step up from Avatar units, once you want to display more information about a person than just their name and single paragraph of text.</p>
+
+                <div class="person-card">
+
+                </div>
+
+                <pre>
+                    example
+                </pre>
 
                 <hr>
 

@@ -339,40 +339,12 @@ table.definition {
   margin: 2em 0;
 }
 
+
+
 .data-completeness {
-  @include clearfix();
-  margin: 0 -2%;
-
-  & > div {
-    float: left;
-    width: 100%;
-    padding: 0.66em 2%;
-    font-size: 1.2em;
-
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-
-    @media (min-width: $medium_screen) {
-      width: 50%;
-
-      &:nth-child(2n+1) {
-        clear: left;
-      }
-    }
-
-    @media (min-width: $medium_screen * 1.5) {
-      width: 25%;
-
-      &:nth-child(2n+1) {
-        clear: none;
-      }
-
-      &:nth-child(4n+1) {
-        clear: left;
-      }
-    }
-  }
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 
   .canvas-wrapper,
   .chart-full {

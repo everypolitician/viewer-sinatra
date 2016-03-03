@@ -1,7 +1,6 @@
 <div class="page-section" id="home">
-
     <div class="container">
-        <ul class="grid-list">
+        <ul class="grid-list grid-list--vertically-center">
           <% @world.sort_by { |k, _| k }.each do |k, v| %>
             <li>
                 <a class="avatar-unit" href="/<%= k %>/">

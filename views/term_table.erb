@@ -47,7 +47,7 @@
             <div class="party-groupings__title">
                 <h2>Party Groupings</h2>
             </div>
-            <ul class="grid-list">
+            <ul class="grid-list grid-list--vertically-center">
               <% @csv.find_all { |r| r[:end_date].to_s.empty? || r[:end_date] == @term[:end_date] }.group_by { |r| r[:group] }.sort_by { |p, ms| [-ms.count, p] }.each do |party, mems| %>
                 <li id="party-<%= mems.first[:group_id] %>"><div class="avatar-unit">
                     <span class="avatar"><i class="fa fa-users"></i></span>
@@ -65,36 +65,36 @@
         </div>
         <div class="data-completeness-wrapper">
             <div class="container">
-                <div class="data-completeness">
-                    <div>
+                <div class="grid-list grid-list--vertically-center grid-list--narrow-columns">
+                    <div class="data-completeness">
                         <span class="data-completeness__label">Name</span>
                         <span class="data-completeness__percentage">100%</span>
                     </div>
-                    <div>
+                    <div class="data-completeness">
                         <span class="data-completeness__label">Area</span>
                         <span class="data-completeness__percentage">100%</span>
                     </div>
-                    <div>
+                    <div class="data-completeness">
                         <span class="data-completeness__label">Email</span>
                         <span class="data-completeness__percentage">99.7%</span>
                     </div>
-                    <div>
+                    <div class="data-completeness">
                         <span class="data-completeness__label">Photo</span>
                         <span class="data-completeness__percentage">98%</span>
                     </div>
-                    <div>
+                    <div class="data-completeness">
                         <span class="data-completeness__label">Gender</span>
                         <span class="data-completeness__percentage">81%</span>
                     </div>
-                    <div>
+                    <div class="data-completeness">
                         <span class="data-completeness__label">Twitter</span>
                         <span class="data-completeness__percentage">69.7%</span>
                     </div>
-                    <div>
+                    <div class="data-completeness">
                         <span class="data-completeness__label">Facebook</span>
                         <span class="data-completeness__percentage">36%</span>
                     </div>
-                    <div>
+                    <div class="data-completeness">
                         <span class="data-completeness__label">Parliament ID</span>
                         <span class="data-completeness__percentage">0%</span>
                     </div>
@@ -126,7 +126,7 @@
                 </span>
             </div>
 
-            <div class="simple-columns">
+            <div class="grid-list">
 
               <% @csv.group_by { |m| m[:id] }.sort_by { |id, mems| mems.first[:sort_name] }.each do |id, mems| %>
                 <div class="js-filter-target">
