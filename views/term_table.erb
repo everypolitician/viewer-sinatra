@@ -137,10 +137,26 @@
                             <img class="person-card__image" src="<%= mems[0][:proxy_image] %>">
                           <% end %>
                             <h3 class="person-card__name"><%= mems[0][:name] %></h3>
+
+                          <% mems.each_with_index do |mem, i| %>
                             <p class="person-card__politics">
-                                <%= mems[0][:group].to_s.empty? ? 'Independent' : mems[0][:group] %>
-                                <% if mems[0][:area] %>– <%= mems[0][:area] %><% end %>
+                              <% if mem[:group].to_s.empty? %>
+                                Independent
+                              <% else %>
+                                <%= mem[:group] %>
+                              <% end %>
+                              <% if mem[:area] %>
+                                – <%= mem[:area] %>
+                              <% end %>
+                              <% if !mem[:start_date].to_s.empty? and !mem[:end_date].to_s.empty? %>
+                                <span class="person-card__politics__date">(<%= mem[:start_date].to_s %> to <%= mem[:end_date].to_s %>)</span>
+                              <% elsif !mem[:start_date].to_s.empty? %>
+                                <span class="person-card__politics__date">(from <%= mem[:start_date].to_s %>)</span>
+                              <% elsif !mem[:end_date].to_s.empty? %>
+                                <span class="person-card__politics__date">(until <%= mem[:end_date].to_s %>)</span>
+                              <% end %>
                             </p>
+                          <% end %>
                         </div>
 
                       <% if mems[0][:gender] || mems[0][:twitter] || mems[0][:facebook] || mems[0][:email] %>

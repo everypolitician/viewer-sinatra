@@ -25,7 +25,20 @@
 }
 
 .person-card__politics {
-  margin-top: 0.1em;
+  margin-top: 0.2em;
+  font-size: (16em / 18);
+
+  // Bit more space between paragraphs to make it
+  // clear which date applies to which position.
+  & + .person-card__politics {
+    margin-top: 0.5em;
+  }
+}
+
+.person-card__politics__date {
+  display: block;
+  font-size: (14em / 16);
+  color: $colour_mid_grey;
 }
 
 .person-card__more {
