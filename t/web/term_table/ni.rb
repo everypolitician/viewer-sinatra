@@ -32,5 +32,10 @@ describe 'Northern Ireland' do
       subject.css('#mem-62479dcd-b981-4a57-8a11-b8f8b17249fb').last.text.must_include '2010-07-01'
     end
 
+    it 'should start with a placeholder image, but have proxy set' do
+      img = subject.css('#mem-39093c42-e2ef-4fc1-805f-e1eb9167111d img.person-card__image')
+      img.attr('src').text.must_equal '/images/person-placeholder-108px.png'
+      img.attr('data-src').text.must_include 'politician-image-proxy'
+    end
   end
 end
