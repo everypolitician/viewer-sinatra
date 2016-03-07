@@ -30,11 +30,11 @@ describe 'Per Country Tests: Australia' do
     before { get '/australia/representatives/term-table/44.html' }
 
     it 'should include a Representative' do
-      subject.css('.term-membership-table').text.must_include 'Tony Abbott'
+      subject.css('div.grid-list').text.must_include 'Tony Abbott'
     end
 
     it 'should not include any Senators' do
-      subject.css('.term-membership-table').text.wont_include 'Alan Eggleston'
+      subject.css('div.grid-list').text.wont_include 'Alan Eggleston'
     end
 
     it 'should have the correct page title' do
@@ -50,11 +50,11 @@ describe 'Per Country Tests: Australia' do
     before { get '/australia/senate/term-table/44.html' }
 
     it 'should include a Senator' do
-      subject.css('.term-membership-table').text.must_include 'Alan Eggleston'
+      subject.css('div.grid-list').text.must_include 'Alan Eggleston'
     end
 
     it 'should not include any Representatives' do
-      subject.css('.term-membership-table').text.wont_include 'Tony Abbott'
+      subject.css('div.grid-list').text.wont_include 'Tony Abbott'
     end
 
     it 'should have the correct page title' do
