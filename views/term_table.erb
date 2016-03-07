@@ -133,9 +133,21 @@
                     <div class="person-card">
 
                         <div class="person-card__primary">
+
+                          <%# If person has an image, prepare a lazy-loaded version
+                              (which is display:none until JavaScript unhides it)
+                              and a fallback for non-javascript users, otherwise
+                              just show a generic placeholder image.  %>
                           <% if mems[0][:image] %>
-                            <img class="person-card__image" src="<%= mems[0][:proxy_image] %>">
+                            <img src="/images/person-placeholder-108px.png"
+                                 data-src="<%= mems[0][:proxy_image] %>"
+                                 style="display: none"
+                                 class="person-card__image">
+                            <noscript><img src="<%= mems[0][:proxy_image] %>" class="person-card__image"></noscript>
+                          <% else %>
+                            <img src="/images/person-placeholder-108px.png" class="person-card__image">
                           <% end %>
+
                             <h3 class="person-card__name"><%= mems[0][:name] %></h3>
 
                           <% mems.each_with_index do |mem, i| %>

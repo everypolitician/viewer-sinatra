@@ -269,6 +269,12 @@ $(function(){
 
   $('html').removeClass('no-js');
 
+  $('img[data-src]:hidden').show();
+
+  var blazy = new Blazy({
+    selector: 'img[data-src]'
+  });
+
   // http://baymard.com/labs/country-selector
   $('.js-select-to-autocomplete').selectToAutocomplete().on('change', function(){
     var v = $(this).val();
