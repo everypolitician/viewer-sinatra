@@ -180,7 +180,7 @@
                           <% end %>
                         </div>
 
-                      <% if mems[0][:twitter] || mems[0][:facebook] || mems[0][:email] %>
+                      <% if mems[0][:twitter] || mems[0][:facebook] %>
                         <div class="person-card__more">
                           <% if mems[0][:twitter] %>
                             <p>
@@ -192,12 +192,6 @@
                             <p>
                                 <span class="person-card__more__label">Facebook</span>
                                 <a href="https://facebook.com/<%= mems[0][:facebook] %>"><%= mems[0][:facebook] %></a>
-                            </p>
-                          <% end %>
-                          <% if mems[0][:email] %>
-                            <p>
-                                <span class="person-card__more__label">Email</span>
-                                <a href="mailto:<%= mems[0][:email] %>"><%= mems[0][:email] %></a>
                             </p>
                           <% end %>
                         </div>
