@@ -130,7 +130,7 @@
 
               <% @csv.group_by { |m| m[:id] }.sort_by { |id, mems| mems.first[:sort_name] }.each do |id, mems| %>
                 <div class="js-filter-target">
-                    <div class="person-card">
+                    <div class="person-card" id="mem-<%= id.to_s %>">
 
                         <div class="person-card__primary">
 
