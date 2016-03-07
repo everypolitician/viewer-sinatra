@@ -171,7 +171,7 @@
                           <% end %>
                         </div>
 
-                      <% if mems[0][:gender] || mems[0][:twitter] || mems[0][:facebook] || mems[0][:email] %>
+                      <% if mems[0][:twitter] || mems[0][:facebook] || mems[0][:email] %>
                         <div class="person-card__more">
                           <% if mems[0][:twitter] %>
                             <p>
@@ -189,12 +189,6 @@
                             <p>
                                 <span class="person-card__more__label">Email</span>
                                 <a href="mailto:<%= mems[0][:email] %>"><%= mems[0][:email] %></a>
-                            </p>
-                          <% end %>
-                          <% if mems[0][:gender] %>
-                            <p>
-                                <span class="person-card__more__label">Gender</span>
-                                <span class="gender"><%= mems[0][:gender] %></span>
                             </p>
                           <% end %>
                         </div>
