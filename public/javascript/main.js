@@ -19,6 +19,21 @@
       });
     }
 
+    var deduplicateIDs = function deduplicateIDs($cloneThead){
+      // Tweak the `id` attribute of any elements inside the cloned
+      // thead, to avoid naming clashes with the original elements.
+      // Also tweak any labels inside the thead to refer to the
+      // cloned copies of whatever they pointed to originally.
+      $cloneThead.find('[id]').each(function(){
+        var oldID = $(this).attr('id');
+        var newID = oldID + '__clone';
+        $(this).attr('id', newID);
+        $cloneThead.find('[for="' + oldID + '"]').each(function(){
+          $(this).attr('for', newID);
+        });
+      });
+    }
+
     var showOrHideClone = function showOrHideClone($table, $cloneThead){
       var bounds = $table[0].getBoundingClientRect();
 
@@ -55,6 +70,7 @@
       $cloneThead.hide();
 
       calculateCloneDimensions($originalThead, $cloneThead);
+      deduplicateIDs($cloneThead);
       showOrHideClone($table, $cloneThead);
 
       $(window).resize(function(){

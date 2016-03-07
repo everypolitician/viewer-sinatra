@@ -533,3 +533,48 @@ p.lead {
     background-color: darken(#3b5998, 15%);
   }
 }
+
+.download-options {
+    position: relative;
+
+    .button {
+        cursor: pointer;
+
+        &:after {
+            @include css-triangle(0.4em, $colour_dark_grey, down);
+            margin-left: 0.5em;
+        }
+    }
+}
+
+.download-options__dropdown {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    margin-top: 0.2em;
+    padding: 0.5em 0;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid $colour_light_grey;
+    text-align: left;
+
+    a {
+        display: block;
+        padding: 0.75em 1.25em;
+        color: $colour_black;
+
+        &:hover, &:focus {
+            background-color: $colour_off_white;
+        }
+    }
+
+    h3 {
+        font-size: 1em;
+        margin-bottom: 0.2em;
+    }
+
+    p {
+        font-size: 0.875em;
+        line-height: 1.4em;
+    }
+}

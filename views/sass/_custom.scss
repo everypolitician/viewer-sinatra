@@ -119,10 +119,14 @@
         margin-bottom: 0;
     }
 
-    .button {
+    .download-options {
         position: absolute;
         right: 0;
         top: 0.5em;
+    }
+
+    .download-options__dropdown a {
+        width: 16em;
     }
 }
 
