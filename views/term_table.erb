@@ -67,11 +67,24 @@
                     <tr>
                         <td colspan="4">
                             <div class="term-membership-table__title">
-                              <a class="button button--download" href="<%= @urls[:csv] %>">
-                                <i class="fa fa-download"></i>
-                                <span class="large-screen-only">Download as</span> CSV
-                              </a>
+
+                                <div class="download-options">
+                                    <label class="houdini-label button button--tertiary" for="download-options">Download</label>
+                                    <input class="houdini-input" type="checkbox" id="download-options">
+                                    <div class="houdini-target download-options__dropdown">
+                                        <a href="<%= @urls[:csv] %>">
+                                            <h3>Download as CSV</h3>
+                                            <p>Core data on these politicians, perfect for quick analysis</p>
+                                        </a>
+                                        <a href="<%= @urls[:json] %>">
+                                            <h3>Download as JSON</h3>
+                                            <p>All the data we hold on this legislature (including historic)</p>
+                                        </a>
+                                    </div>
+                                </div>
+
                                 <h2>Members</h2>
+
                             </div>
                         </td>
                     </tr>
