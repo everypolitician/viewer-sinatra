@@ -271,8 +271,12 @@ $(function(){
 
   $('img[data-src]:hidden').show();
 
-  var blazy = new Blazy({
+  window.blazy = new Blazy({
     selector: 'img[data-src]'
+  });
+
+  $(document).on('js-filter-input:complete', function(){
+    window.blazy.revalidate();
   });
 
   // http://baymard.com/labs/country-selector

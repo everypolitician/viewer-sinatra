@@ -12,5 +12,9 @@ $(document).ready(function() {
             }
         });
     }
+    // Other scripts might want to do something special once they know
+    // the page has been filtered (eg: might want to check the viewport
+    // for new images to be lazy-loaded).
+    $(document).trigger('js-filter-input:complete');
   });
 });
