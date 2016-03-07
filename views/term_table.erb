@@ -47,7 +47,7 @@
             <div class="party-groupings__title">
                 <h2>Party Groupings</h2>
             </div>
-            <ul class="grid-list">
+            <ul class="grid-list grid-list--vertically-center">
               <% @csv.find_all { |r| r[:end_date].to_s.empty? || r[:end_date] == @term[:end_date] }.group_by { |r| r[:group] }.sort_by { |p, ms| [-ms.count, p] }.each do |party, mems| %>
                 <li id="party-<%= mems.first[:group_id] %>"><div class="avatar-unit">
                     <span class="avatar"><i class="fa fa-users"></i></span>
@@ -59,64 +59,156 @@
         </div>
     </div>
 
-    <div class="page-section page-section">
+  <% if false %>
+    <div class="page-section page-section--green">
+        <div class="container">
+            <h2 class="text-center">What’s in this dataset?</h2>
+        </div>
+        <div class="data-completeness-wrapper">
+            <div class="container">
+                <div class="grid-list grid-list--vertically-center grid-list--narrow-columns">
+                    <div class="data-completeness">
+                        <span class="data-completeness__label">Name</span>
+                        <span class="data-completeness__percentage">100%</span>
+                    </div>
+                    <div class="data-completeness">
+                        <span class="data-completeness__label">Area</span>
+                        <span class="data-completeness__percentage">100%</span>
+                    </div>
+                    <div class="data-completeness">
+                        <span class="data-completeness__label">Email</span>
+                        <span class="data-completeness__percentage">99.7%</span>
+                    </div>
+                    <div class="data-completeness">
+                        <span class="data-completeness__label">Photo</span>
+                        <span class="data-completeness__percentage">98%</span>
+                    </div>
+                    <div class="data-completeness">
+                        <span class="data-completeness__label">Gender</span>
+                        <span class="data-completeness__percentage">81%</span>
+                    </div>
+                    <div class="data-completeness">
+                        <span class="data-completeness__label">Twitter</span>
+                        <span class="data-completeness__percentage">69.7%</span>
+                    </div>
+                    <div class="data-completeness">
+                        <span class="data-completeness__label">Facebook</span>
+                        <span class="data-completeness__percentage">36%</span>
+                    </div>
+                    <div class="data-completeness">
+                        <span class="data-completeness__label">Parliament ID</span>
+                        <span class="data-completeness__percentage">0%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <p class="text-center">
+                Know where we can find more information?
+                <a href="#" class="button button--primary button--small" style="margin-left: 1em">Let us know</a>
+            </p>
+        </div>
+    </div>
+  <% end %>
+
+    <div class="page-section page-section--grey">
         <div class="container">
 
-            <table class="term-membership-table js-sortable">
-                <thead class="js-fixed-thead">
-                    <tr>
-                        <td colspan="4">
-                            <div class="term-membership-table__title">
+            <% show_dates = @csv.any? { |m| !m[:start_date].to_s.empty? || !m[:end_date].to_s.empty? } %>
 
-                                <div class="download-options">
-                                    <label class="houdini-label button button--tertiary" for="download-options">Download</label>
-                                    <input class="houdini-input" type="checkbox" id="download-options">
-                                    <div class="houdini-target download-options__dropdown">
-                                        <a href="<%= @urls[:csv] %>">
-                                            <h3>Download as CSV</h3>
-                                            <p>Core data on these politicians, perfect for quick analysis</p>
-                                        </a>
-                                        <a href="<%= @urls[:json] %>">
-                                            <h3>Download as JSON</h3>
-                                            <p>All the data we hold on this legislature (including historic)</p>
-                                        </a>
-                                    </div>
-                                </div>
+            <div class="term-membership-table__title">
+                <h2>Members</h2>
 
-                                <h2>Members</h2>
+                <span class="person-card-filter">
+                    <label for="filter-input" class="fa fa-search"></label>
+                    <input type="text" class="js-filter-input" id="filter-input" placeholder="Filter list…">
+                </span>
 
-                            </div>
-                        </td>
-                    </tr>
+                <div class="download-options">
+                    <label class="houdini-label button button--tertiary" for="download-options">Download</label>
+                    <input class="houdini-input" type="checkbox" id="download-options">
+                    <div class="houdini-target download-options__dropdown">
+                        <a href="<%= @urls[:csv] %>">
+                            <h3>Download as CSV</h3>
+                            <p>Core data on these politicians, perfect for quick analysis</p>
+                        </a>
+                        <a href="<%= @urls[:json] %>">
+                            <h3>Download as JSON</h3>
+                            <p>All the data we hold on this legislature (including historic)</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-                    <tr>
-                        <th data-sortable-presorted="a-z">Name</th>
-                        <th>Group</th>
-                        <th>Area</th>
-                        <% show_dates = @csv.any? { |m| !m[:start_date].to_s.empty? || !m[:end_date].to_s.empty? } %>
-                        <% if show_dates %><th>Dates</th><% end %>
-                    </tr>
-                </thead>
+            <div class="grid-list">
 
               <% @csv.group_by { |m| m[:id] }.sort_by { |id, mems| mems.first[:sort_name] }.each do |id, mems| %>
-                  <%# Each person can have multiple party affiliations in a single term, so we
-                      loop through them and set the first cell (their name) to span all the rows %>
-                  <% mems.each_with_index do |m, i| %>
-                    <tr id="mem-<%= id.to_s.split('/').last %>">
-                      <% if i == 0 %>
-                        <td rowspan="<%= mems.count %>" data-sortable-sortvalue="<%= m[:sort_name] or m[:name] %>"><%= m[:name] %></td>
+                <div class="js-filter-target">
+                    <div class="person-card" id="mem-<%= id.to_s %>">
+
+                        <div class="person-card__primary">
+
+                          <%# If person has an image, prepare a lazy-loaded version
+                              (which is display:none until JavaScript unhides it)
+                              and a fallback for non-javascript users, otherwise
+                              just show a generic placeholder image.  %>
+                          <% if mems[0][:image] %>
+                            <img src="/images/person-placeholder-108px.png"
+                                 data-src="<%= mems[0][:proxy_image] %>"
+                                 style="display: none"
+                                 class="person-card__image">
+                            <noscript><img src="<%= mems[0][:proxy_image] %>" class="person-card__image"></noscript>
+                          <% else %>
+                            <img src="/images/person-placeholder-108px.png" class="person-card__image">
+                          <% end %>
+
+                            <h3 class="person-card__name"><%= mems[0][:name] %></h3>
+
+                          <% mems.each_with_index do |mem, i| %>
+                            <p class="person-card__politics">
+
+                              <%= [mem[:group].to_s, mem[:area].to_s].reject { |s| s.empty? || s.downcase == 'unknown' }.join(" — ") %>
+
+                              <% if !mem[:start_date].to_s.empty? and !mem[:end_date].to_s.empty? %>
+                                <span class="person-card__politics__date">(<%= mem[:start_date].to_s %> to <%= mem[:end_date].to_s %>)</span>
+                              <% elsif !mem[:start_date].to_s.empty? %>
+                                <span class="person-card__politics__date">(from <%= mem[:start_date].to_s %>)</span>
+                              <% elsif !mem[:end_date].to_s.empty? %>
+                                <span class="person-card__politics__date">(until <%= mem[:end_date].to_s %>)</span>
+                              <% end %>
+                            </p>
+                          <% end %>
+                        </div>
+
+                      <% if mems[0][:twitter] || mems[0][:facebook] || mems[0][:email] %>
+                        <div class="person-card__more">
+                          <% if mems[0][:twitter] %>
+                            <p>
+                                <span class="person-card__more__label">Twitter</span>
+                                <a href="https://twitter.com/<%= mems[0][:twitter] %>">@<%= mems[0][:twitter] %></a>
+                            </p>
+                          <% end %>
+                          <% if mems[0][:facebook] %>
+                            <p>
+                                <span class="person-card__more__label">Facebook</span>
+                                <a href="<%= mems[0][:facebook] %>"><%= mems[0][:facebook].gsub('https://www.facebook.com', '') %></a>
+                            </p>
+                          <% end %>
+                          <% if mems[0][:email] %>
+                            <p>
+                                <span class="person-card__more__label">Email</span>
+                                <a href="mailto:<%= mems[0][:email] %>"><%= mems[0][:email] %></a>
+                            </p>
+                          <% end %>
+                        </div>
                       <% end %>
-                        <td><%= m[:group].to_s.empty? ? 'Independent' : m[:group] %></td>
-                        <td><%= m[:area] %></td>
-                      <% if show_dates %>
-                        <% start_date = (m[:start_date].to_s.empty? or m[:start_date].to_s == @term[:start_date].to_s) ? '' : m[:start_date].to_s %>
-                        <% end_date   = (m[:end_date].to_s.empty? or m[:end_date].to_s == @term[:end_date].to_s) ? '' : m[:end_date].to_s %>
-                        <td><%= start_date %><% unless start_date.empty? and end_date.empty? %>-<% end %><%= end_date %></td>
-                      <% end %>
-                    </tr>
-                  <% end %>
+
+                    </div>
+                </div>
               <% end %>
-            </table>
+
+            </div>
+
         </div>
     </div>
 

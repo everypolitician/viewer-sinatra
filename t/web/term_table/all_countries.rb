@@ -34,7 +34,9 @@ describe 'Basic loads' do
       get terms.first
       last_response.status.must_equal 200
       noko = Nokogiri::HTML(last_response.body)
-      noko.css('table th').text.must_include 'Name'
+
+      # Make sure we have at least 5 cards 
+      noko.css('.person-card').count.must_be :>=, 5
     end
   end
 end

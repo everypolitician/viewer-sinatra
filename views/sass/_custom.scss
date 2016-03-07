@@ -337,3 +337,41 @@ table.definition {
     top: -0.4em;
 }
 
+.data-completeness-wrapper {
+  background-color: darken($colour_green, 3%);
+  padding: 2em 0;
+  margin: 2em 0;
+}
+
+
+
+.data-completeness {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  .canvas-wrapper,
+  .chart-full {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2em;
+    height: 2em;
+    margin-right: 0.5em;
+  }
+
+  .chart-full {
+    border-radius: 100%;
+    background-color: #fff;
+    color: darken($colour_green, 3%);
+    text-align: center;
+
+    .fa {
+      margin-top: 0.5em;
+    }
+  }
+}
+
+.data-completeness__label {
+  font-weight: bold;
+  margin-right: 0.2em;
+}

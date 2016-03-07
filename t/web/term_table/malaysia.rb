@@ -13,7 +13,7 @@ end
 
 describe 'Per Country Tests' do
   subject { Nokogiri::HTML(last_response.body) }
-  let(:memtable) { subject.css('.term-membership-table') }
+  let(:memtable) { subject.css('div.grid-list') }
 
   describe 'Malaysia' do
     before { get '/malaysia/dewan-rakyat/term-table/13.html' }

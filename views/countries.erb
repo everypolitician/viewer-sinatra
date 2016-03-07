@@ -3,7 +3,7 @@
 
         <div class="text-center">
             <h2>Data from <%= @countries.length %> countries</h2>
-            <p>But we’re still missing <%= @world.length - @countries.length %>. 
+            <p>But we’re still missing <%= @world.length - @countries.length %>.
               <a href="/needed.html">Can you help?</a>
         </div>
 
@@ -14,7 +14,7 @@
 
         <h3 class="country-list__section-header"><%= current_letter %></h3>
 
-        <ul class="grid-list">
+        <ul class="grid-list grid-list--vertically-center">
           <% countries_sorted.each do |c| %>
 
           <% if c[:name].upcase[0,1] != current_letter %>
@@ -23,7 +23,7 @@
 
         <h3 class="country-list__section-header"><%= current_letter %></h3>
 
-        <ul class="grid-list">
+        <ul class="grid-list grid-list--vertically-center">
           <% end %>
 
             <li>
@@ -69,7 +69,7 @@
         if(ep_link = ep_countries[code]) {
           var url = '/' + ep_link + "/";
           window.location = url;
-        } else { 
+        } else {
           window.location = "/needed.html";
         }
         return false;

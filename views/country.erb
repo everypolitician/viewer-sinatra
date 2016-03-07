@@ -17,7 +17,7 @@
             <span class="large-screen-only">Download as</span> JSON
           </a>
         </div>
-        <ul class="grid-list" id="terms-<%= house[:slug].downcase %>">
+        <ul class="grid-list grid-list--vertically-center" id="terms-<%= house[:slug].downcase %>">
           <% house[:legislative_periods].each do |t| %>
             <li>
               <a class="avatar-unit" href="<%= term_table_url(@country, house, t) %>">

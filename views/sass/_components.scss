@@ -316,21 +316,45 @@ p.lead {
 
 .grid-list {
     @extend .unstyled-list;
-}
-.flexwrap .grid-list {
-    @include flexbox();
-    @include flex-align(center);
-    @include flex-wrap(wrap);
+
+    margin: 0 -1em;
 
     & > * {
-        @include flex(0 0 100%);
+        padding: 1em;
+        width: 100%;
+    }
+}
 
-        @media (min-width: $medium_screen) {
-          @include flex(0 0 50%);
+.flexwrap {
+    .grid-list {
+        @include flexbox();
+        @include flex-wrap(wrap);
+
+        & > * {
+            @media (min-width: $medium_screen) {
+                width: (100% / 2);
+            }
+
+            @media (min-width: $medium_screen * 1.5) {
+                width: (100% / 3);
+            }
         }
+    }
 
-        @media (min-width: $medium_screen * 1.5) {
-          @include flex(0 0 33%);
+    // By default, grid-list items will line up along their top edge.
+    // If you want their centres to line up instead, add this class.
+    .grid-list--vertically-center {
+        @include flex-align(center);
+    }
+
+    // By default, grid-list items inside a .container will only fit
+    // 3 to a line. If you know your list items don't have much content,
+    // you can add this class to fit 4 on a line on wide screens.
+    .grid-list--narrow-columns {
+        & > * {
+            @media (min-width: $medium_screen * 1.5) {
+                width: (100% / 4);
+            }
         }
     }
 }
@@ -339,8 +363,7 @@ p.lead {
     display: block;
     color: inherit;
     position: relative;
-    padding: 0.5em 0.5em 0.5em 3em;
-    margin-bottom: 0.5em;
+    padding: 0 0 0 3em; // make space for the avatar
 
     & > * {
         margin: 0;
@@ -408,6 +431,14 @@ p.lead {
       color: inherit;
     }
 
+    &[data-sortable-unsortable] {
+      cursor: default;
+
+      &:after {
+        display: none;
+      }
+    }
+
     &.sortedDown:after {
       content: "\f0dd";
       color: $colour_green;
@@ -463,6 +494,44 @@ p.lead {
         margin-left: 0.3em;
         vertical-align: 0.1em;
     }
+}
+
+// Little round social icons for membership tables
+.person-link {
+  display: inline-block;
+  width: 24px;
+  padding-top: 24px;
+  height: 0;
+  overflow: hidden;
+  vertical-align: middle;
+  border-radius: 100%;
+  margin-right: 0.3em;
+}
+
+.person-link--twitter {
+  background: #55acee url(../images/twitter.png) 50% 50% no-repeat;
+  background-size: 16px 13px;
+  @media($high_dpi_screen){
+    background-image: url(../images/twitter@2x.png);
+  }
+  background-image: url(../images/twitter.svg), none;
+
+  &:hover, &:focus {
+    background-color: darken(#55acee, 15%);
+  }
+}
+
+.person-link--facebook {
+  background: #3b5998 url(../images/facebook.png) 50% 50% no-repeat;
+  background-size: 8px 16px;
+  @media($high_dpi_screen){
+    background-image: url(../images/facebook@2x.png);
+  }
+  background-image: url(../images/facebook.svg), none;
+
+  &:hover, &:focus {
+    background-color: darken(#3b5998, 15%);
+  }
 }
 
 .download-options {

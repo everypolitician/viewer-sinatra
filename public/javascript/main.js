@@ -264,7 +264,7 @@
       saveOriginalSortOrder($table);
       detectPresortedTable($table);
 
-      $table.on('click', 'thead th', function(){
+      $table.on('click', 'thead th:not([data-sortable-unsortable])', function(){
         var eq = $(this).prevAll().length;
         sortTable($table, eq);
       });
@@ -284,6 +284,16 @@ $(function(){
   });
 
   $('html').removeClass('no-js');
+
+  $('img[data-src]:hidden').show();
+
+  window.blazy = new Blazy({
+    selector: 'img[data-src]'
+  });
+
+  $(document).on('js-filter-input:complete', function(){
+    window.blazy.revalidate();
+  });
 
   // http://baymard.com/labs/country-selector
   $('.js-select-to-autocomplete').selectToAutocomplete().on('change', function(){
@@ -322,4 +332,49 @@ $(function(){
     e.preventDefault();
     $('#country-selector').siblings('.ui-autocomplete-input').focus();
   });
+
+  $('.data-completeness__percentage').each(function(){
+      var percent = parseFloat( $(this).text() );
+      var label = $(this).prev().text();
+      var $parent = $(this).parent();
+
+      if(percent == 100){
+          // Display a full circle with a tick, instead of a pie chart
+          $parent.prepend('<div class="chart-full"><i class="fa fa-check"></i></div>');
+      } else {
+          // Display a pie chart (empty if percent==0)
+          if (percent == 0) {
+              var data = [{
+                  value: 100,
+                  label: "No data",
+                  color: "rgba(255, 255, 255, 0.3)"
+              }];
+          } else {
+              var data = [{
+                  value: percent,
+                  label: label,
+                  color: "rgba(255, 255, 255, 1)"
+              }, {
+                  value: 100 - percent,
+                  label: "No data",
+                  color: "rgba(255, 255, 255, 0.3)"
+              }];
+          }
+
+          var $canvas = $('<canvas width="100" height="100"></canvas>');
+          var $wrapped = $canvas.wrap('<div class="canvas-wrapper"></div>').parent();
+          $parent.prepend($wrapped);
+
+          var context = $canvas[0].getContext('2d');
+          var chart = new Chart(context).Doughnut(data, {
+              segmentShowStroke: false,
+              animation: false,
+              showTooltips: false,
+              responsive: true,
+              percentageInnerCutout: 66
+          });
+
+          $(this).data('chart', chart);
+      }
+  })
 });

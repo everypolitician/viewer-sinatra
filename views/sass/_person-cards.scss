@@ -1,0 +1,91 @@
+.person-card {
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+
+.person-card__primary,
+.person-card__more {
+  padding: 18px;
+}
+
+.person-card__primary {
+  @include clearfix();
+}
+
+.person-card__image {
+  float: left;
+  width: (18px * 3);
+  height: auto;
+}
+
+.person-card__name,
+.person-card__politics {
+  margin: 0 0 0 (18px * 4);
+  line-height: 1.3em;
+}
+
+.person-card__politics {
+  margin-top: 0.2em;
+  font-size: (16em / 18);
+
+  // Bit more space between paragraphs to make it
+  // clear which date applies to which position.
+  & + .person-card__politics {
+    margin-top: 0.5em;
+  }
+}
+
+.person-card__politics__date {
+  display: block;
+  font-size: (14em / 16);
+  color: $colour_mid_grey;
+}
+
+.person-card__more {
+  background-color: mix(#fff, $colour_green, 95%);
+  border-top: 1px solid mix(#eee, $colour_green, 95%);
+  font-size: (16em / 18);
+
+  p {
+    display: block;
+    width: 99%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+  }
+
+  p + p {
+    margin-top: 0.3em;
+  }
+
+  .gender {
+    text-transform: capitalize;
+  }
+}
+
+.person-card__more__label {
+  display: inline-block;
+  width: (18px * 4);
+  font-size: 0.9em;
+  color: mix(#999, $colour_green, 50%);
+}
+
+.person-card-filter {
+  position: absolute;
+  top: 1em;
+  left: 0;
+
+  .no-js & {
+    display: none;
+  }
+
+  label {
+    color: $colour_mid_grey;
+    margin-right: 0.5em;
+  }
+}
+
+.js-filter-target--hidden {
+  display: none;
+}
