@@ -152,14 +152,9 @@
 
                           <% mems.each_with_index do |mem, i| %>
                             <p class="person-card__politics">
-                              <% if mem[:group].to_s.empty? %>
-                                Independent
-                              <% else %>
-                                <%= mem[:group] %>
-                              <% end %>
-                              <% if mem[:area] %>
-                                – <%= mem[:area] %>
-                              <% end %>
+
+                              <%= [mem[:group].to_s, mem[:area].to_s].reject { |s| s.empty? || s.downcase == 'unknown' }.join(" — ") %>
+
                               <% if !mem[:start_date].to_s.empty? and !mem[:end_date].to_s.empty? %>
                                 <span class="person-card__politics__date">(<%= mem[:start_date].to_s %> to <%= mem[:end_date].to_s %>)</span>
                               <% elsif !mem[:start_date].to_s.empty? %>
