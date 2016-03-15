@@ -8,6 +8,7 @@ require 'sass'
 require 'set'
 require 'sinatra'
 require 'yajl/json_gem'
+require 'everypolitician/popolo'
 
 require_relative './lib/popolo_helper'
 
@@ -77,20 +78,44 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
   csv_file = EveryPolitician::GithubFile.new(@term[:csv], last_sha)
   @csv = CSV.parse(csv_file.raw, headers: true, header_converters: :symbol, converters: nil)
 
-  @csv.each do |person|
-    person[:proxy_image] = 'https://mysociety.github.io/politician-image-proxy/%s/%s/%s/140x140.jpeg' % [
-      @country[:slug], @house[:slug], person[:id]
-    ]
-  end
+  person_ids = @csv.map { |row| row[:id] }.uniq
 
   popolo_file = EveryPolitician::GithubFile.new(@house[:popolo], last_sha)
-  popolo = JSON.parse(popolo_file.raw)
+  popolo = EveryPolitician::Popolo.parse(popolo_file.raw)
+  people = popolo.persons.find_all { |p| person_ids.include?(p.id) }.sort_by { |p| p.sort_name }
+
+  memberships_by_person = popolo.memberships.find_all { |m| m.legislative_period_id == "term/#{id}" }.group_by(&:person_id)
+  areas_by_id = Hash[popolo.areas.map { |a| [a.id, a] }]
+  orgs_by_id = Hash[popolo.organizations.map { |o| [o.id, o] }]
+
+  @people = people.map do |person|
+    {
+      id: person.id,
+      name: person.name,
+      image: person.image,
+      twitter: person.twitter,
+      facebook: person.facebook,
+      proxy_image: 'https://mysociety.github.io/politician-image-proxy/%s/%s/%s/140x140.jpeg' % [
+        @country[:slug], @house[:slug], person.id
+      ],
+      memberships: memberships_by_person[person.id].map do |mem|
+        {
+          group: orgs_by_id[mem.on_behalf_of_id].name,
+          area: areas_by_id[mem.area_id].name
+        }
+      end
+    }
+  end
 
   @urls = {
     csv: csv_file.url,
     json: popolo_file.url,
   }
-  @data_sources = (popolo['meta']['sources'] || [popolo['meta']['source']]).map { |s| CGI.unescape(s) }
+
+  # TODO: Make this use EveryPolitician::Popolo once that supports the 'meta' field.
+  popolo_json = JSON.parse(popolo_file.raw)
+  @data_sources = (popolo_json['meta']['sources'] || [popolo_json['meta']['source']]).map { |s| CGI.unescape(s) }
+
   erb :term_table
 end
 
