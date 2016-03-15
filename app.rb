@@ -95,9 +95,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
       image: person.image,
       twitter: person.twitter,
       facebook: person.facebook,
-      proxy_image: 'https://mysociety.github.io/politician-image-proxy/%s/%s/%s/140x140.jpeg' % [
-        @country[:slug], @house[:slug], person.id
-      ],
+      proxy_image: image_proxy_url(person.id),
       memberships: memberships_by_person[person.id].map do |mem|
         {
           group: orgs_by_id[mem.on_behalf_of_id].name,
