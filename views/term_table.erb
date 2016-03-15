@@ -14,7 +14,7 @@
               <% if @prev_term %>
                 <a href="<%= term_table_url(@country, @house, @prev_term) %>" class="term-navigation__prev">
                     <i class="fa fa-arrow-left"></i>
-                    <%= @prev_term[:name] %>
+                    Earlier
                 </a>
               <% end %>
 
@@ -33,7 +33,7 @@
 
               <% if @next_term %>
                 <a href="<%= term_table_url(@country, @house, @next_term) %>" class="term-navigation__next">
-                    <%= @next_term[:name] %>
+                    Later
                     <i class="fa fa-arrow-right"></i>
                 </a>
               <% end %>
