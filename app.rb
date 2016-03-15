@@ -107,6 +107,12 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
         if mem.respond_to?(:area_id)
           membership[:area] = areas_by_id[mem.area_id].name
         end
+        if mem.respond_to?(:start_date)
+          membership[:start_date] = mem.start_date
+        end
+        if mem.respond_to?(:end_date)
+          membership[:end_date] = mem.end_date
+        end
         membership
       end
     }
