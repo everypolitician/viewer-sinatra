@@ -97,10 +97,17 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
       facebook: person.facebook,
       proxy_image: image_proxy_url(person.id),
       memberships: memberships_by_person[person.id].map do |mem|
-        {
-          group: orgs_by_id[mem.on_behalf_of_id].name,
-          area: areas_by_id[mem.area_id].name
-        }
+        # FIXME: This is a bit nasty because everypolitician-popolo doesn't define
+        # a on_behalf_of_id/area_id on a membership if it doesn't have one, so
+        # we have to use respond_to? to check if they have that property for now.
+        membership = {}
+        if mem.respond_to?(:on_behalf_of_id)
+          membership[:group] = orgs_by_id[mem.on_behalf_of_id].name
+        end
+        if mem.respond_to?(:area_id)
+          membership[:area] = areas_by_id[mem.area_id].name
+        end
+        membership
       end
     }
   end
