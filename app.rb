@@ -35,6 +35,12 @@ get '/' do
     country[:totalPeople] = (cjdata[:legislatures] || []).map { |l| l[:person_count].to_i }.inject(0, :+)
   }
 
+  @people = [
+    featured_person('Belgium', 'Representatives', '54', '5f3808ae-f3e8-45da-a762-a1ffe7c8e58a'),
+    featured_person('Wales', 'Assembly', '4', 'be9c1984-6f08-4a97-8ea6-e82af4daf909'),
+    featured_person('Estonia', 'Riigikogu', '13', '907f006e-cf58-4fc6-a255-d92b94028dc1')
+  ]
+
   erb :homepage
 end
 

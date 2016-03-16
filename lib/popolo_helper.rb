@@ -127,5 +127,16 @@ module Popolo
       end
       p
     end
+
+    def featured_person(country_slug, legislature_slug, term_id, person_uuid)
+      @country = ALL_COUNTRIES.find { |c| c[:slug] == country_slug }
+      @house = @country[:legislatures].find { |l| l[:slug] == legislature_slug }
+      popolo = EveryPolitician::Popolo.parse(open(@house[:popolo_url]).read)
+      memberships_by_person = popolo.memberships.find_all { |m| m.legislative_period_id == "term/#{term_id}" }.group_by(&:person_id)
+      areas_by_id = Hash[popolo.areas.map { |a| [a.id, a] }]
+      orgs_by_id = Hash[popolo.organizations.map { |o| [o.id, o] }]
+      person = popolo.persons.find { |p| p.id == person_uuid }
+      person_for_template(person, memberships_by_person, areas_by_id, orgs_by_id)
+    end
   end
 end

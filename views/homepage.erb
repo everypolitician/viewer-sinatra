@@ -7,6 +7,14 @@
     <div class="homepage-map"></div>
 </div>
 
+<div class="grid-list person-cards--social">
+  <% @people.each do |person| %>
+    <div class="js-filter-target">
+      <%= erb :person_card, locals: { person: person } %>
+    </div>
+  <% end %>
+</div>
+
 <div class="page-section">
     <div class="container row">
         <div class="column-two-thirds">
