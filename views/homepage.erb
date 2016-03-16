@@ -7,12 +7,25 @@
     <div class="homepage-map"></div>
 </div>
 
-<div class="grid-list person-cards--social">
-  <% @people.each do |person| %>
-    <div class="js-filter-target">
-      <%= erb :person_card, locals: { person: person } %>
+<div class="page-section page-section--grey">
+    <div class="container homepage-data-example">
+        <h2>The world’s richest political dataset</h2>
+
+        <p class="homepage-data-example__toggles">
+            <span class="section-toggle section-toggle--selected" data-section-toggle="social">Social media profiles</span>
+            <span class="section-toggle" data-section-toggle="bio">Biographical data</span>
+            <span class="section-toggle" data-section-toggle="contacts">Contact details</span>
+            <span class="section-toggle" data-section-toggle="identifiers">Identifiers</span>
+        </p>
+
+        <div class="grid-list" data-active-section="social">
+          <% @people.each do |person| %>
+            <div class="js-filter-target">
+              <%= erb :person_card, locals: { person: person } %>
+            </div>
+          <% end %>
+        </div>
     </div>
-  <% end %>
 </div>
 
 <div class="page-section">
