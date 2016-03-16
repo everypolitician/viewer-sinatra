@@ -112,17 +112,19 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
           membership[:end_date] = mem.end_date
         end
         membership
-      end
+      end,
+      social: [],
+      bio: [],
+      contact: [],
+      identifiers: []
     }
 
-    if person.twitter || person.facebook
-      p[:social] = {}
-      if person.twitter
-        p[:social][:twitter] = person.twitter
-      end
-      if person.facebook
-        p[:social][:facebook] = person.facebook.split('/').last
-      end
+    if person.twitter
+      p[:social] << { type: 'Twitter', value: "@#{person.twitter}", link: "https://twitter.com/#{person.twitter}" }
+    end
+    if person.facebook
+      fb_username = person.facebook.split('/').last
+      p[:social] << { type: 'Facebook', value: fb_username, link: "https://facebook.com/#{fb_username}" }
     end
     p
   end

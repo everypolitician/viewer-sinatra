@@ -178,18 +178,12 @@
                           <% end %>
                         </div>
 
-                      <% if person[:twitter] || person[:facebook] %>
+                      <% if person[:social].any? %>
                         <div class="person-card__more">
-                          <% if person[:twitter] %>
+                          <% person[:social].each do |social| %>
                             <p>
-                                <span class="person-card__more__label">Twitter</span>
-                                <a href="https://twitter.com/<%= person[:twitter] %>">@<%= person[:twitter] %></a>
-                            </p>
-                          <% end %>
-                          <% if person[:facebook] %>
-                            <p>
-                                <span class="person-card__more__label">Facebook</span>
-                                <a href="https://facebook.com/<%= person[:facebook] %>"><%= person[:facebook] %></a>
+                                <span class="person-card__more__label"><%= social[:type] %></span>
+                                <a href="<%= social[:link] %>"><%= social[:value] %></a>
                             </p>
                           <% end %>
                         </div>
