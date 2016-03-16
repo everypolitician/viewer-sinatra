@@ -84,6 +84,10 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
   popolo = EveryPolitician::Popolo.parse(popolo_file.raw)
   people = popolo.persons.find_all { |p| person_ids.include?(p.id) }.sort_by { |p| p.sort_name }
 
+  @parties = @csv.find_all { |r| r[:end_date].to_s.empty? || r[:end_date] == @term[:end_date] }
+                 .group_by { |r| r[:group] }
+                 .sort_by { |p, ms| [-ms.count, p] }
+
   memberships_by_person = popolo.memberships.find_all { |m| m.legislative_period_id == "term/#{id}" }.group_by(&:person_id)
   areas_by_id = Hash[popolo.areas.map { |a| [a.id, a] }]
   orgs_by_id = Hash[popolo.organizations.map { |o| [o.id, o] }]
