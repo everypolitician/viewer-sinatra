@@ -126,6 +126,15 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
       fb_username = person.facebook.split('/').last
       p[:social] << { type: 'Facebook', value: fb_username, link: "https://facebook.com/#{fb_username}" }
     end
+    if person.gender
+      p[:bio] << { type: 'Gender', value: person.gender }
+    end
+    if person.respond_to?(:birth_date)
+      p[:bio] << { type: 'Born', value: person.birth_date }
+    end
+    if person.respond_to?(:death_date)
+      p[:bio] << { type: 'Died', value: person.death_date }
+    end
     p
   end
 

@@ -189,6 +189,17 @@
                         </div>
                       <% end %>
 
+                      <% if person[:bio].any? %>
+                        <div class="person-card__more">
+                          <% person[:bio].each do |bio| %>
+                            <p>
+                                <span class="person-card__more__label"><%= bio[:type] %></span>
+                                <%= bio[:value] %>
+                            </p>
+                          <% end %>
+                        </div>
+                      <% end %>
+
                     </div>
                 </div>
               <% end %>
