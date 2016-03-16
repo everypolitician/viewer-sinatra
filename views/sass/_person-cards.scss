@@ -103,6 +103,12 @@ $person_card_sections: (
     color: $colour_mid_grey;
     margin-right: 0.5em;
   }
+
+  @media (min-width: $large_screen) {
+    input {
+      width: 16em;
+    }
+  }
 }
 
 .js-filter-target--hidden {
