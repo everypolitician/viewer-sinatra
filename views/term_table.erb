@@ -215,6 +215,21 @@
                         </div>
                       <% end %>
 
+                      <% if person[:identifiers].any? %>
+                        <div class="person-card__more">
+                          <% person[:identifiers].each do |identifier| %>
+                            <p>
+                                <span class="person-card__more__label"><%= identifier[:type] %></span>
+                                <% if identifier[:link] %>
+                                  <a href="<%= identifier[:link] %>"><%= identifier[:value] %></a>
+                                <% else %>
+                                  <%= identifier[:value] %>
+                                <% end %>
+                            </p>
+                          <% end %>
+                        </div>
+                      <% end %>
+
                     </div>
                 </div>
               <% end %>
