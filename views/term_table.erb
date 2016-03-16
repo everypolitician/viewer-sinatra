@@ -200,6 +200,21 @@
                         </div>
                       <% end %>
 
+                      <% if person[:contacts].any? %>
+                        <div class="person-card__more">
+                          <% person[:contacts].each do |contact| %>
+                            <p>
+                                <span class="person-card__more__label"><%= contact[:type] %></span>
+                                <% if contact[:link] %>
+                                  <a href="<%= contact[:link] %>"><%= contact[:value] %></a>
+                                <% else %>
+                                  <%= contact[:value] %>
+                                <% end %>
+                            </p>
+                          <% end %>
+                        </div>
+                      <% end %>
+
                     </div>
                 </div>
               <% end %>

@@ -115,7 +115,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
       end,
       social: [],
       bio: [],
-      contact: [],
+      contacts: [],
       identifiers: []
     }
 
@@ -134,6 +134,19 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
     end
     if person.respond_to?(:death_date)
       p[:bio] << { type: 'Died', value: person.death_date }
+    end
+    if person.email
+      p[:contacts] << { type: 'Email', value: person.email, link: "mailto:#{person.email}" }
+    end
+    if person.respond_to?(:contact_details)
+      person.contact_details.each do |cd|
+        if cd[:type] == 'phone'
+          p[:contacts] << { type: 'Phone', value: cd[:value] }
+        end
+        if cd[:type] == 'fax'
+          p[:contacts] << { type: 'Fax', value: cd[:value] }
+        end
+      end
     end
     p
   end
