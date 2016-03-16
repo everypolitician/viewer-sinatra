@@ -333,6 +333,29 @@ $(function(){
     $('#country-selector').siblings('.ui-autocomplete-input').focus();
   });
 
+  $('[data-party-filter]').on('click', function(){
+    var alreadyActive = $(this).is('[data-party-filter-active]');
+    var $targets = $('.js-filter-target[data-parties]');
+    var partyID = $(this).attr('data-party-filter');
+
+    if(alreadyActive){
+      $(this).removeAttr('data-party-filter-active');
+      $targets.removeClass('js-filter-target--hidden');
+
+    } else {
+      $('[data-party-filter-active]').removeAttr('data-party-filter-active');
+      $(this).attr('data-party-filter-active', true);
+      $targets.each(function(){
+        var partyIDs = $(this).attr('data-parties').split(' ');
+        if( partyIDs.indexOf(partyID) < 0 ){
+          $(this).addClass('js-filter-target--hidden');
+        } else {
+          $(this).removeClass('js-filter-target--hidden');
+        }
+      });
+    }
+  });
+
   $('.data-completeness__percentage').each(function(){
       var percent = parseFloat( $(this).text() );
       var label = $(this).prev().text();

@@ -134,7 +134,7 @@
             <div class="grid-list" data-active-section="bio">
 
               <% @people.each do |person| %>
-                <div class="js-filter-target">
+                <div class="js-filter-target" data-parties="<%= person[:memberships].map { |m| m[:group_id] }.uniq.reject { |s| s.empty? }.join(' ') %>">
                     <div class="person-card" id="mem-<%= person[:id] %>">
 
                         <div class="person-card__primary">

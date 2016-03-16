@@ -123,6 +123,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
           end_date: mem.end_date
         }
         membership[:group] = org_lookup[mem.on_behalf_of_id].name if mem.on_behalf_of_id
+        membership[:group_id] = mem.on_behalf_of_id
         membership[:area] = area_lookup[mem.area_id].name if mem.area_id
         membership
       end,

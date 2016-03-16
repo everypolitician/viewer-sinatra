@@ -177,6 +177,17 @@
     }
 }
 
+[data-party-filter] {
+  cursor: pointer;
+}
+
+[data-party-filter]:hover,
+[data-party-filter-active] {
+  .avatar-unit h3 {
+    text-decoration: underline;
+  }
+}
+
 .button--download {
     @extend .button--tertiary;
 }
