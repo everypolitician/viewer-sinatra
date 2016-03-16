@@ -138,7 +138,7 @@
                 </div>
             </div>
 
-            <div class="grid-list">
+            <div class="grid-list person-cards--social">
 
               <% @people.each do |person| %>
                 <div class="js-filter-target">
@@ -179,10 +179,10 @@
                         </div>
 
                       <% if person[:social].any? %>
-                        <div class="person-card__more">
+                        <div class="person-card__section person-card__section--social">
                           <% person[:social].each do |social| %>
                             <p>
-                                <span class="person-card__more__label"><%= social[:type] %></span>
+                                <span class="person-card__section__label"><%= social[:type] %></span>
                                 <a href="<%= social[:link] %>"><%= social[:value] %></a>
                             </p>
                           <% end %>
@@ -190,10 +190,10 @@
                       <% end %>
 
                       <% if person[:bio].any? %>
-                        <div class="person-card__more">
+                        <div class="person-card__section person-card__section--bio">
                           <% person[:bio].each do |bio| %>
                             <p>
-                                <span class="person-card__more__label"><%= bio[:type] %></span>
+                                <span class="person-card__section__label"><%= bio[:type] %></span>
                                 <%= bio[:value] %>
                             </p>
                           <% end %>
@@ -201,10 +201,10 @@
                       <% end %>
 
                       <% if person[:contacts].any? %>
-                        <div class="person-card__more">
+                        <div class="person-card__section person-card__section--contacts">
                           <% person[:contacts].each do |contact| %>
                             <p>
-                                <span class="person-card__more__label"><%= contact[:type] %></span>
+                                <span class="person-card__section__label"><%= contact[:type] %></span>
                                 <% if contact[:link] %>
                                   <a href="<%= contact[:link] %>"><%= contact[:value] %></a>
                                 <% else %>
@@ -216,10 +216,10 @@
                       <% end %>
 
                       <% if person[:identifiers].any? %>
-                        <div class="person-card__more">
+                        <div class="person-card__section person-card__section--identifiers">
                           <% person[:identifiers].each do |identifier| %>
                             <p>
-                                <span class="person-card__more__label"><%= identifier[:type] %></span>
+                                <span class="person-card__section__label"><%= identifier[:type] %></span>
                                 <% if identifier[:link] %>
                                   <a href="<%= identifier[:link] %>"><%= identifier[:value] %></a>
                                 <% else %>

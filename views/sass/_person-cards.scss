@@ -4,7 +4,7 @@
 }
 
 .person-card__primary,
-.person-card__more {
+.person-card__section {
   padding: 18px;
 }
 
@@ -41,10 +41,14 @@
   color: $colour_mid_grey;
 }
 
-.person-card__more {
+.person-card__section {
   background-color: mix(#fff, $colour_green, 95%);
   border-top: 1px solid mix(#eee, $colour_green, 95%);
   font-size: (16em / 18);
+
+  // The person-card sections are hidden by default,
+  // and then toggled using JavaScript.
+  display: none;
 
   p {
     display: block;
@@ -64,11 +68,26 @@
   }
 }
 
-.person-card__more__label {
+.person-card__section__label {
   display: inline-block;
   width: (18px * 4);
   font-size: 0.9em;
   color: mix(#999, $colour_green, 50%);
+}
+
+// List of person-card__sections.
+$person_card_sections: (
+  'social',
+  'bio',
+  'contacts',
+  'identifiers'
+);
+
+// Show person-card__sections when their container has the right class.
+@each $section in $person_card_sections {
+  .person-cards--#{$section} .person-card__section--#{$section} {
+    display: block;
+  }
 }
 
 .person-card-filter {
