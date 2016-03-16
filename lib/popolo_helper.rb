@@ -52,5 +52,80 @@ module Popolo
       'https://mysociety.github.io/politician-image-proxy' \
         "/#{@country[:slug]}/#{@house[:slug]}/#{id}/140x140.jpeg"
     end
+
+    # Extracts the relevant bits of information for a person to be displayed
+    # in a template.
+    def person_for_template(person, memberships_by_person, areas_by_id, orgs_by_id)
+      p = {
+        id: person.id,
+        name: person.name,
+        image: person.image,
+        proxy_image: image_proxy_url(person.id),
+        memberships: memberships_by_person[person.id].map do |mem|
+          # FIXME: This is a bit nasty because everypolitician-popolo doesn't define
+          # a on_behalf_of_id/area_id on a membership if it doesn't have one, so
+          # we have to use respond_to? to check if they have that property for now.
+          membership = {}
+          if mem.respond_to?(:on_behalf_of_id)
+            membership[:group] = orgs_by_id[mem.on_behalf_of_id].name
+          end
+          if mem.respond_to?(:area_id)
+            membership[:area] = areas_by_id[mem.area_id].name
+          end
+          if mem.respond_to?(:start_date)
+            membership[:start_date] = mem.start_date
+          end
+          if mem.respond_to?(:end_date)
+            membership[:end_date] = mem.end_date
+          end
+          membership
+        end,
+        social: [],
+        bio: [],
+        contacts: [],
+        identifiers: []
+      }
+
+      if person.twitter
+        p[:social] << { type: 'Twitter', value: "@#{person.twitter}", link: "https://twitter.com/#{person.twitter}" }
+      end
+      if person.facebook
+        fb_username = person.facebook.split('/').last
+        p[:social] << { type: 'Facebook', value: fb_username, link: "https://facebook.com/#{fb_username}" }
+      end
+      if person.gender
+        p[:bio] << { type: 'Gender', value: person.gender }
+      end
+      if person.respond_to?(:birth_date)
+        p[:bio] << { type: 'Born', value: person.birth_date }
+      end
+      if person.respond_to?(:death_date)
+        p[:bio] << { type: 'Died', value: person.death_date }
+      end
+      if person.email
+        p[:contacts] << { type: 'Email', value: person.email, link: "mailto:#{person.email}" }
+      end
+      if person.respond_to?(:contact_details)
+        person.contact_details.each do |cd|
+          if cd[:type] == 'phone'
+            p[:contacts] << { type: 'Phone', value: cd[:value] }
+          end
+          if cd[:type] == 'fax'
+            p[:contacts] << { type: 'Fax', value: cd[:value] }
+          end
+        end
+      end
+      if person.respond_to?(:identifiers)
+        person.identifiers.each do |id|
+          if id[:scheme] == 'wikidata'
+            p[:identifiers] << { type: 'Wikidata', value: id[:identifier], link: "https://www.wikidata.org/wiki/#{id[:identifier]}" }
+          end
+          if id[:scheme] == 'viaf'
+            p[:identifiers] << { type: 'VIAF', value: id[:identifier], link: "https://viaf.org/viaf/#{id[:identifier]}/" }
+          end
+        end
+      end
+      p
+    end
   end
 end
