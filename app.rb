@@ -89,12 +89,10 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
   orgs_by_id = Hash[popolo.organizations.map { |o| [o.id, o] }]
 
   @people = people.map do |person|
-    {
+    p = {
       id: person.id,
       name: person.name,
       image: person.image,
-      twitter: person.twitter,
-      facebook: person.facebook,
       proxy_image: image_proxy_url(person.id),
       memberships: memberships_by_person[person.id].map do |mem|
         # FIXME: This is a bit nasty because everypolitician-popolo doesn't define
@@ -116,6 +114,17 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
         membership
       end
     }
+
+    if person.twitter || person.facebook
+      p[:social] = {}
+      if person.twitter
+        p[:social][:twitter] = person.twitter
+      end
+      if person.facebook
+        p[:social][:facebook] = person.facebook.split('/').last
+      end
+    end
+    p
   end
 
   @urls = {
