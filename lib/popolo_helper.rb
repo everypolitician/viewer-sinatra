@@ -47,5 +47,10 @@ module Popolo
       wd = p[:identifiers].find { |i| i[:scheme] == 'wikidata' } or return
       '<a href="https://www.wikidata.org/wiki/%s">%s</a>' % [ wd[:identifier], wd[:identifier] ]
     end
+
+    def image_proxy_url(id)
+      'https://mysociety.github.io/politician-image-proxy' \
+        "/#{@country[:slug]}/#{@house[:slug]}/#{id}/140x140.jpeg"
+    end
   end
 end

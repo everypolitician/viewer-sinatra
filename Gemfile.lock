@@ -15,6 +15,7 @@ GEM
     daemons (1.2.2)
     dotenv (2.0.1)
     eventmachine (1.0.7)
+    everypolitician-popolo (0.2.0)
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
     iso_country_codes (0.7.1)
@@ -54,6 +55,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
+  everypolitician-popolo
   iso_country_codes
   json
   nokogiri
@@ -66,3 +68,6 @@ DEPENDENCIES
   sinatra!
   thin
   yajl-ruby
+
+BUNDLED WITH
+   1.11.2

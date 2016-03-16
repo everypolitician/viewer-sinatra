@@ -8,6 +8,7 @@ require 'sass'
 require 'set'
 require 'sinatra'
 require 'yajl/json_gem'
+require 'everypolitician/popolo'
 
 require_relative './lib/popolo_helper'
 
@@ -77,20 +78,98 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
   csv_file = EveryPolitician::GithubFile.new(@term[:csv], last_sha)
   @csv = CSV.parse(csv_file.raw, headers: true, header_converters: :symbol, converters: nil)
 
-  @csv.each do |person|
-    person[:proxy_image] = 'https://mysociety.github.io/politician-image-proxy/%s/%s/%s/140x140.jpeg' % [
-      @country[:slug], @house[:slug], person[:id]
-    ]
-  end
+  person_ids = @csv.map { |row| row[:id] }.uniq
 
   popolo_file = EveryPolitician::GithubFile.new(@house[:popolo], last_sha)
-  popolo = JSON.parse(popolo_file.raw)
+  popolo = EveryPolitician::Popolo.parse(popolo_file.raw)
+  people = popolo.persons.find_all { |p| person_ids.include?(p.id) }.sort_by { |p| p.sort_name }
+
+  memberships_by_person = popolo.memberships.find_all { |m| m.legislative_period_id == "term/#{id}" }.group_by(&:person_id)
+  areas_by_id = Hash[popolo.areas.map { |a| [a.id, a] }]
+  orgs_by_id = Hash[popolo.organizations.map { |o| [o.id, o] }]
+
+  @people = people.map do |person|
+    p = {
+      id: person.id,
+      name: person.name,
+      image: person.image,
+      proxy_image: image_proxy_url(person.id),
+      memberships: memberships_by_person[person.id].map do |mem|
+        # FIXME: This is a bit nasty because everypolitician-popolo doesn't define
+        # a on_behalf_of_id/area_id on a membership if it doesn't have one, so
+        # we have to use respond_to? to check if they have that property for now.
+        membership = {}
+        if mem.respond_to?(:on_behalf_of_id)
+          membership[:group] = orgs_by_id[mem.on_behalf_of_id].name
+        end
+        if mem.respond_to?(:area_id)
+          membership[:area] = areas_by_id[mem.area_id].name
+        end
+        if mem.respond_to?(:start_date)
+          membership[:start_date] = mem.start_date
+        end
+        if mem.respond_to?(:end_date)
+          membership[:end_date] = mem.end_date
+        end
+        membership
+      end,
+      social: [],
+      bio: [],
+      contacts: [],
+      identifiers: []
+    }
+
+    if person.twitter
+      p[:social] << { type: 'Twitter', value: "@#{person.twitter}", link: "https://twitter.com/#{person.twitter}" }
+    end
+    if person.facebook
+      fb_username = person.facebook.split('/').last
+      p[:social] << { type: 'Facebook', value: fb_username, link: "https://facebook.com/#{fb_username}" }
+    end
+    if person.gender
+      p[:bio] << { type: 'Gender', value: person.gender }
+    end
+    if person.respond_to?(:birth_date)
+      p[:bio] << { type: 'Born', value: person.birth_date }
+    end
+    if person.respond_to?(:death_date)
+      p[:bio] << { type: 'Died', value: person.death_date }
+    end
+    if person.email
+      p[:contacts] << { type: 'Email', value: person.email, link: "mailto:#{person.email}" }
+    end
+    if person.respond_to?(:contact_details)
+      person.contact_details.each do |cd|
+        if cd[:type] == 'phone'
+          p[:contacts] << { type: 'Phone', value: cd[:value] }
+        end
+        if cd[:type] == 'fax'
+          p[:contacts] << { type: 'Fax', value: cd[:value] }
+        end
+      end
+    end
+    if person.respond_to?(:identifiers)
+      person.identifiers.each do |id|
+        if id[:scheme] == 'wikidata'
+          p[:identifiers] << { type: 'Wikidata', value: id[:identifier], link: "https://www.wikidata.org/wiki/#{id[:identifier]}" }
+        end
+        if id[:scheme] == 'viaf'
+          p[:identifiers] << { type: 'VIAF', value: id[:identifier], link: "https://viaf.org/viaf/#{id[:identifier]}/" }
+        end
+      end
+    end
+    p
+  end
 
   @urls = {
     csv: csv_file.url,
     json: popolo_file.url,
   }
-  @data_sources = (popolo['meta']['sources'] || [popolo['meta']['source']]).map { |s| CGI.unescape(s) }
+
+  # TODO: Make this use EveryPolitician::Popolo once that supports the 'meta' field.
+  popolo_json = JSON.parse(popolo_file.raw)
+  @data_sources = (popolo_json['meta']['sources'] || [popolo_json['meta']['source']]).map { |s| CGI.unescape(s) }
+
   erb :term_table
 end
 

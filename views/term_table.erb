@@ -114,8 +114,6 @@
     <div class="page-section page-section--grey">
         <div class="container">
 
-            <% show_dates = @csv.any? { |m| !m[:start_date].to_s.empty? || !m[:end_date].to_s.empty? } %>
-
             <div class="term-membership-table__title">
                 <h2>Members</h2>
 
@@ -140,11 +138,11 @@
                 </div>
             </div>
 
-            <div class="grid-list">
+            <div class="grid-list person-cards--social">
 
-              <% @csv.group_by { |m| m[:id] }.sort_by { |id, mems| mems.first[:sort_name] }.each do |id, mems| %>
+              <% @people.each do |person| %>
                 <div class="js-filter-target">
-                    <div class="person-card" id="mem-<%= id.to_s %>">
+                    <div class="person-card" id="mem-<%= person[:id] %>">
 
                         <div class="person-card__primary">
 
@@ -152,19 +150,19 @@
                               (which is display:none until JavaScript unhides it)
                               and a fallback for non-javascript users, otherwise
                               just show a generic placeholder image.  %>
-                          <% if mems[0][:image] %>
+                          <% if person[:image] %>
                             <img src="/images/person-placeholder-108px.png"
-                                 data-src="<%= mems[0][:proxy_image] %>"
+                                 data-src="<%= person[:proxy_image] %>"
                                  style="display: none"
                                  class="person-card__image">
-                            <noscript><img src="<%= mems[0][:proxy_image] %>" class="person-card__image"></noscript>
+                            <noscript><img src="<%= person[:proxy_image] %>" class="person-card__image"></noscript>
                           <% else %>
                             <img src="/images/person-placeholder-108px.png" class="person-card__image">
                           <% end %>
 
-                            <h3 class="person-card__name"><%= mems[0][:name] %></h3>
+                            <h3 class="person-card__name"><%= person[:name] %></h3>
 
-                          <% mems.each_with_index do |mem, i| %>
+                          <% person[:memberships].each do |mem| %>
                             <p class="person-card__politics">
 
                               <%= [mem[:group].to_s, mem[:area].to_s].reject { |s| s.empty? || s.downcase == 'unknown' }.join(" — ") %>
@@ -180,18 +178,53 @@
                           <% end %>
                         </div>
 
-                      <% if mems[0][:twitter] || mems[0][:facebook] %>
-                        <div class="person-card__more">
-                          <% if mems[0][:twitter] %>
+                      <% if person[:social].any? %>
+                        <div class="person-card__section person-card__section--social">
+                          <% person[:social].each do |social| %>
                             <p>
-                                <span class="person-card__more__label">Twitter</span>
-                                <a href="https://twitter.com/<%= mems[0][:twitter] %>">@<%= mems[0][:twitter] %></a>
+                                <span class="person-card__section__label"><%= social[:type] %></span>
+                                <a href="<%= social[:link] %>"><%= social[:value] %></a>
                             </p>
                           <% end %>
-                          <% if mems[0][:facebook] %>
+                        </div>
+                      <% end %>
+
+                      <% if person[:bio].any? %>
+                        <div class="person-card__section person-card__section--bio">
+                          <% person[:bio].each do |bio| %>
                             <p>
-                                <span class="person-card__more__label">Facebook</span>
-                                <a href="https://facebook.com/<%= mems[0][:facebook] %>"><%= mems[0][:facebook] %></a>
+                                <span class="person-card__section__label"><%= bio[:type] %></span>
+                                <%= bio[:value] %>
+                            </p>
+                          <% end %>
+                        </div>
+                      <% end %>
+
+                      <% if person[:contacts].any? %>
+                        <div class="person-card__section person-card__section--contacts">
+                          <% person[:contacts].each do |contact| %>
+                            <p>
+                                <span class="person-card__section__label"><%= contact[:type] %></span>
+                                <% if contact[:link] %>
+                                  <a href="<%= contact[:link] %>"><%= contact[:value] %></a>
+                                <% else %>
+                                  <%= contact[:value] %>
+                                <% end %>
+                            </p>
+                          <% end %>
+                        </div>
+                      <% end %>
+
+                      <% if person[:identifiers].any? %>
+                        <div class="person-card__section person-card__section--identifiers">
+                          <% person[:identifiers].each do |identifier| %>
+                            <p>
+                                <span class="person-card__section__label"><%= identifier[:type] %></span>
+                                <% if identifier[:link] %>
+                                  <a href="<%= identifier[:link] %>"><%= identifier[:value] %></a>
+                                <% else %>
+                                  <%= identifier[:value] %>
+                                <% end %>
                             </p>
                           <% end %>
                         </div>
