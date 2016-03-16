@@ -90,6 +90,12 @@ $person_card_sections: (
   }
 }
 
+// Allow sections to be temporarily unhidden if they contain text
+// matching the user’s current search (via .js-filter-input)
+.js-person-card__section--visible {
+  display: block !important;
+}
+
 .person-card-filter {
   position: absolute;
   top: 1em;
