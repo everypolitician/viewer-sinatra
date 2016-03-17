@@ -70,15 +70,15 @@
             <div class="container">
                 <div class="grid-list grid-list--vertically-center grid-list--narrow-columns">
                     <div class="data-completeness">
-                        <span class="section-toggle section-toggle--selected" data-section-toggle="social">
-                            <span class="data-completeness__label">Social links</span>
-                            <span class="data-completeness__percentage"><%= @percentages[:social] %>%</span>
+                        <span class="section-toggle section-toggle--selected" data-section-toggle="bio">
+                            <span class="data-completeness__label">Biography</span>
+                            <span class="data-completeness__percentage">100%</span>
                         </span>
                     </div>
                     <div class="data-completeness">
-                        <span class="section-toggle" data-section-toggle="bio">
-                            <span class="data-completeness__label">Biography</span>
-                            <span class="data-completeness__percentage">100%</span>
+                        <span class="section-toggle" data-section-toggle="social">
+                            <span class="data-completeness__label">Social links</span>
+                            <span class="data-completeness__percentage"><%= @percentages[:social] %>%</span>
                         </span>
                     </div>
                     <div class="data-completeness">
@@ -131,7 +131,7 @@
                 </div>
             </div>
 
-            <div class="grid-list" data-active-section="social">
+            <div class="grid-list" data-active-section="bio">
 
               <% @people.each do |person| %>
                 <div class="js-filter-target">
@@ -171,23 +171,23 @@
                           <% end %>
                         </div>
 
+                        <% if person[:bio].any? %>
+                          <div class="person-card__section person-card__section--bio">
+                            <% person[:bio].each do |bio| %>
+                              <p>
+                                  <span class="person-card__section__label"><%= bio[:type] %></span>
+                                  <%= bio[:value] %>
+                              </p>
+                            <% end %>
+                          </div>
+                        <% end %>
+
                       <% if person[:social].any? %>
                         <div class="person-card__section person-card__section--social">
                           <% person[:social].each do |social| %>
                             <p>
                                 <span class="person-card__section__label"><%= social[:type] %></span>
                                 <a href="<%= social[:link] %>"><%= social[:value] %></a>
-                            </p>
-                          <% end %>
-                        </div>
-                      <% end %>
-
-                      <% if person[:bio].any? %>
-                        <div class="person-card__section person-card__section--bio">
-                          <% person[:bio].each do |bio| %>
-                            <p>
-                                <span class="person-card__section__label"><%= bio[:type] %></span>
-                                <%= bio[:value] %>
                             </p>
                           <% end %>
                         </div>
