@@ -160,16 +160,16 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
       end
     end
     if person.respond_to?(:identifiers)
-      person.identifiers.each do |id|
-        if top_identifiers.include?(id[:scheme])
-          identifier = { type: id[:scheme], value: id[:identifier] }
-          if identifier[:type] == 'wikidata'
-            identifier[:link] = "https://www.wikidata.org/wiki/#{id[:identifier]}"
-          elsif identifier[:type] == 'viaf'
-            identifier[:link] = "https://viaf.org/viaf/#{id[:identifier]}/"
-          end
-          p[:identifiers] << identifier
+      top_identifiers.each do |scheme|
+        id = person.identifiers.find { |i| i[:scheme] == scheme }
+        next if id.nil?
+        identifier = { type: id[:scheme], value: id[:identifier] }
+        if identifier[:type] == 'wikidata'
+          identifier[:link] = "https://www.wikidata.org/wiki/#{id[:identifier]}"
+        elsif identifier[:type] == 'viaf'
+          identifier[:link] = "https://viaf.org/viaf/#{id[:identifier]}/"
         end
+        p[:identifiers] << identifier
       end
     end
     p
