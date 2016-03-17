@@ -42,13 +42,14 @@
     </div>
 <% end %>
 
+<% unless @parties.length == 1 && @parties[0][0] == 'unknown' %>
     <div class="page-section page-section--grey" id="seat-count">
         <div class="container">
             <div class="party-groupings__title">
                 <h2>Party Groupings</h2>
             </div>
             <ul class="grid-list grid-list--vertically-center">
-              <% @csv.find_all { |r| r[:end_date].to_s.empty? || r[:end_date] == @term[:end_date] }.group_by { |r| r[:group] }.sort_by { |p, ms| [-ms.count, p] }.each do |party, mems| %>
+              <% @parties.each do |party, mems| %>
                 <li id="party-<%= mems.first[:group_id] %>"><div class="avatar-unit">
                     <span class="avatar"><i class="fa fa-users"></i></span>
                     <h3><%= party.to_s.empty? ? 'Independent' : party %></h3>
@@ -58,6 +59,7 @@
             </ul>
         </div>
     </div>
+<% end %>
 
     <div class="page-section page-section--green">
         <div class="container text-center">

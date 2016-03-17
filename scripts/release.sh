@@ -15,7 +15,7 @@ update_viewer_static() {
   bundle exec ruby app.rb &
   while ! nc -z localhost 4567; do sleep 1; done
   cd /tmp
-  wget -m localhost:4567/status/all_countries.html || (echo "wget exited with non-zero exit code: $?" >&2 && exit 1)
+  wget -nv -m localhost:4567/status/all_countries.html || (echo "wget exited with non-zero exit code: $?" >&2 && exit 1)
   git clone "git@github.com:everypolitician/viewer-static.git"
   cd viewer-static
   git checkout gh-pages
