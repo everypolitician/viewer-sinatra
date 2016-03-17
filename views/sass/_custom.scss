@@ -108,15 +108,15 @@
 }
 
 .homepage-data-example {
+  text-align: center;
+
   h2 {
     font-size: 1.8em;
-    text-align: center;
-    margin-bottom: 0.7em;
   }
 }
 
 .homepage-data-example__toggles {
-  text-align: center;
+  margin-top: 1em;
 
   .section-toggle {
     color: $colour_links;
