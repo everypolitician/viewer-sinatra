@@ -92,6 +92,13 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
   areas_by_id = Hash[popolo.areas.map { |a| [a.id, a] }]
   orgs_by_id = Hash[popolo.organizations.map { |o| [o.id, o] }]
 
+  identifiers = people.map { |p| p.identifiers if p.respond_to?(:identifiers) }.compact.flatten
+  top_identifiers = identifiers.reject { |i| i[:scheme] == 'everypolitician_legacy' }
+                               .group_by { |i| i[:scheme] }
+                               .sort_by { |s, ids| -ids.size }
+                               .map { |s, ids| s }
+                               .take(3)
+
   @people = people.map do |person|
     p = {
       id: person.id,
@@ -154,11 +161,8 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
     end
     if person.respond_to?(:identifiers)
       person.identifiers.each do |id|
-        if id[:scheme] == 'wikidata'
-          p[:identifiers] << { type: 'Wikidata', value: id[:identifier], link: "https://www.wikidata.org/wiki/#{id[:identifier]}" }
-        end
-        if id[:scheme] == 'viaf'
-          p[:identifiers] << { type: 'VIAF', value: id[:identifier], link: "https://viaf.org/viaf/#{id[:identifier]}/" }
+        if top_identifiers.include?(id[:scheme])
+          p[:identifiers] << { type: id[:scheme], value: id[:identifier] }
         end
       end
     end
