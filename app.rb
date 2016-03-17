@@ -92,6 +92,13 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
   areas_by_id = Hash[popolo.areas.map { |a| [a.id, a] }]
   orgs_by_id = Hash[popolo.organizations.map { |o| [o.id, o] }]
 
+  identifiers = people.map { |p| p.identifiers if p.respond_to?(:identifiers) }.compact.flatten
+  top_identifiers = identifiers.reject { |i| i[:scheme] == 'everypolitician_legacy' }
+                               .group_by { |i| i[:scheme] }
+                               .sort_by { |s, ids| -ids.size }
+                               .map { |s, ids| s }
+                               .take(3)
+
   @people = people.map do |person|
     p = {
       id: person.id,
@@ -153,17 +160,27 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
       end
     end
     if person.respond_to?(:identifiers)
-      person.identifiers.each do |id|
-        if id[:scheme] == 'wikidata'
-          p[:identifiers] << { type: 'Wikidata', value: id[:identifier], link: "https://www.wikidata.org/wiki/#{id[:identifier]}" }
+      top_identifiers.each do |scheme|
+        id = person.identifiers.find { |i| i[:scheme] == scheme }
+        next if id.nil?
+        identifier = { type: id[:scheme], value: id[:identifier] }
+        if identifier[:type] == 'wikidata'
+          identifier[:link] = "https://www.wikidata.org/wiki/#{id[:identifier]}"
+        elsif identifier[:type] == 'viaf'
+          identifier[:link] = "https://viaf.org/viaf/#{id[:identifier]}/"
         end
-        if id[:scheme] == 'viaf'
-          p[:identifiers] << { type: 'VIAF', value: id[:identifier], link: "https://viaf.org/viaf/#{id[:identifier]}/" }
-        end
+        p[:identifiers] << identifier
       end
     end
     p
   end
+
+  @percentages = {
+    social: ((@people.count { |p| p[:social].any? } / @people.count.to_f) * 100).floor,
+    bio: ((@people.count { |p| p[:bio].any? } / @people.count.to_f) * 100).floor,
+    contacts: ((@people.count { |p| p[:contacts].any? } / @people.count.to_f) * 100).floor,
+    identifiers: ((@people.count { |p| p[:identifiers].any? } / @people.count.to_f) * 100).floor
+  }
 
   @urls = {
     csv: csv_file.url,

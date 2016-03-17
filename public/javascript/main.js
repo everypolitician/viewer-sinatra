@@ -336,7 +336,7 @@ $(function(){
   $('.data-completeness__percentage').each(function(){
       var percent = parseFloat( $(this).text() );
       var label = $(this).prev().text();
-      var $parent = $(this).parent();
+      var $parent = $(this).parents('.data-completeness');
 
       if(percent == 100){
           // Display a full circle with a tick, instead of a pie chart
@@ -377,4 +377,11 @@ $(function(){
           $(this).data('chart', chart);
       }
   })
+
+  $('[data-section-toggle]').on('click', function(){
+    var section = $(this).attr('data-section-toggle');
+    $('[data-active-section]').attr('data-active-section', section);
+    $('[data-section-toggle]').removeClass('section-toggle--selected');
+    $('[data-section-toggle="' + section + '"]').addClass('section-toggle--selected');
+  });
 });

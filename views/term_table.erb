@@ -61,57 +61,48 @@
     </div>
 <% end %>
 
-  <% if false %>
     <div class="page-section page-section--green">
-        <div class="container">
-            <h2 class="text-center">What’s in this dataset?</h2>
+        <div class="container text-center">
+            <h2>What’s in this dataset?</h2>
+            <p>As much as we know. Click one of the categories to get a taste of the information we have so far.</p>
         </div>
         <div class="data-completeness-wrapper">
             <div class="container">
                 <div class="grid-list grid-list--vertically-center grid-list--narrow-columns">
                     <div class="data-completeness">
-                        <span class="data-completeness__label">Name</span>
-                        <span class="data-completeness__percentage">100%</span>
+                        <span class="section-toggle section-toggle--selected" data-section-toggle="bio">
+                            <span class="data-completeness__label">Biography</span>
+                            <span class="data-completeness__percentage"><%= @percentages[:bio] %>%</span>
+                        </span>
                     </div>
                     <div class="data-completeness">
-                        <span class="data-completeness__label">Area</span>
-                        <span class="data-completeness__percentage">100%</span>
+                        <span class="section-toggle" data-section-toggle="social">
+                            <span class="data-completeness__label">Social links</span>
+                            <span class="data-completeness__percentage"><%= @percentages[:social] %>%</span>
+                        </span>
                     </div>
                     <div class="data-completeness">
-                        <span class="data-completeness__label">Email</span>
-                        <span class="data-completeness__percentage">99.7%</span>
+                        <span class="section-toggle" data-section-toggle="contacts">
+                            <span class="data-completeness__label">Contact details</span>
+                            <span class="data-completeness__percentage"><%= @percentages[:contacts] %>%</span>
+                        </span>
                     </div>
                     <div class="data-completeness">
-                        <span class="data-completeness__label">Photo</span>
-                        <span class="data-completeness__percentage">98%</span>
-                    </div>
-                    <div class="data-completeness">
-                        <span class="data-completeness__label">Gender</span>
-                        <span class="data-completeness__percentage">81%</span>
-                    </div>
-                    <div class="data-completeness">
-                        <span class="data-completeness__label">Twitter</span>
-                        <span class="data-completeness__percentage">69.7%</span>
-                    </div>
-                    <div class="data-completeness">
-                        <span class="data-completeness__label">Facebook</span>
-                        <span class="data-completeness__percentage">36%</span>
-                    </div>
-                    <div class="data-completeness">
-                        <span class="data-completeness__label">Parliament ID</span>
-                        <span class="data-completeness__percentage">0%</span>
+                        <span class="section-toggle" data-section-toggle="identifiers">
+                            <span class="data-completeness__label">Identifiers</span>
+                            <span class="data-completeness__percentage"><%= @percentages[:identifiers] %>%</span>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <p class="text-center">
+        <div class="container text-center">
+            <p>
                 Know where we can find more information?
-                <a href="#" class="button button--primary button--small" style="margin-left: 1em">Let us know</a>
+                <a href="http://docs.everypolitician.org/contribute.html" class="button button--primary button--small" style="margin-left: 1em">Let us know</a>
             </p>
         </div>
     </div>
-  <% end %>
 
     <div class="page-section page-section--grey">
         <div class="container">
@@ -140,7 +131,7 @@
                 </div>
             </div>
 
-            <div class="grid-list person-cards--social">
+            <div class="grid-list" data-active-section="bio">
 
               <% @people.each do |person| %>
                 <div class="js-filter-target">
@@ -180,23 +171,23 @@
                           <% end %>
                         </div>
 
+                        <% if person[:bio].any? %>
+                          <div class="person-card__section person-card__section--bio">
+                            <% person[:bio].each do |bio| %>
+                              <p>
+                                  <span class="person-card__section__label"><%= bio[:type] %></span>
+                                  <%= bio[:value] %>
+                              </p>
+                            <% end %>
+                          </div>
+                        <% end %>
+
                       <% if person[:social].any? %>
                         <div class="person-card__section person-card__section--social">
                           <% person[:social].each do |social| %>
                             <p>
                                 <span class="person-card__section__label"><%= social[:type] %></span>
                                 <a href="<%= social[:link] %>"><%= social[:value] %></a>
-                            </p>
-                          <% end %>
-                        </div>
-                      <% end %>
-
-                      <% if person[:bio].any? %>
-                        <div class="person-card__section person-card__section--bio">
-                          <% person[:bio].each do |bio| %>
-                            <p>
-                                <span class="person-card__section__label"><%= bio[:type] %></span>
-                                <%= bio[:value] %>
                             </p>
                           <% end %>
                         </div>
@@ -220,7 +211,7 @@
                       <% if person[:identifiers].any? %>
                         <div class="person-card__section person-card__section--identifiers">
                           <% person[:identifiers].each do |identifier| %>
-                            <p>
+                            <p title="<%= identifier[:value] %>">
                                 <span class="person-card__section__label"><%= identifier[:type] %></span>
                                 <% if identifier[:link] %>
                                   <a href="<%= identifier[:link] %>"><%= identifier[:value] %></a>

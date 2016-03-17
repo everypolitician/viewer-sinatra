@@ -85,9 +85,15 @@ $person_card_sections: (
 
 // Show person-card__sections when their container has the right class.
 @each $section in $person_card_sections {
-  .person-cards--#{$section} .person-card__section--#{$section} {
+  [data-active-section="#{$section}"] .person-card__section--#{$section} {
     display: block;
   }
+}
+
+// Allow sections to be temporarily unhidden if they contain text
+// matching the user’s current search (via .js-filter-input)
+.js-person-card__section--visible {
+  display: block !important;
 }
 
 .person-card-filter {
