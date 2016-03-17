@@ -211,7 +211,7 @@
                       <% if person[:identifiers].any? %>
                         <div class="person-card__section person-card__section--identifiers">
                           <% person[:identifiers].each do |identifier| %>
-                            <p>
+                            <p title="<%= identifier[:value] %>">
                                 <span class="person-card__section__label"><%= identifier[:type] %></span>
                                 <% if identifier[:link] %>
                                   <a href="<%= identifier[:link] %>"><%= identifier[:value] %></a>
