@@ -72,7 +72,7 @@
                     <div class="data-completeness">
                         <span class="section-toggle section-toggle--selected" data-section-toggle="bio">
                             <span class="data-completeness__label">Biography</span>
-                            <span class="data-completeness__percentage">100%</span>
+                            <span class="data-completeness__percentage"><%= @percentages[:bio] %>%</span>
                         </span>
                     </div>
                     <div class="data-completeness">
@@ -84,13 +84,13 @@
                     <div class="data-completeness">
                         <span class="section-toggle" data-section-toggle="contacts">
                             <span class="data-completeness__label">Contact details</span>
-                            <span class="data-completeness__percentage">90%</span>
+                            <span class="data-completeness__percentage"><%= @percentages[:contacts] %>%</span>
                         </span>
                     </div>
                     <div class="data-completeness">
                         <span class="section-toggle" data-section-toggle="identifiers">
                             <span class="data-completeness__label">Identifiers</span>
-                            <span class="data-completeness__percentage">45%</span>
+                            <span class="data-completeness__percentage"><%= @percentages[:identifiers] %>%</span>
                         </span>
                     </div>
                 </div>
