@@ -161,6 +161,13 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
     p
   end
 
+  @percentages = {
+    social: ((@people.count { |p| p[:social].any? } / @people.count.to_f) * 100).floor,
+    bio: ((@people.count { |p| p[:bio].any? } / @people.count.to_f) * 100).floor,
+    contacts: ((@people.count { |p| p[:contacts].any? } / @people.count.to_f) * 100).floor,
+    identifiers: ((@people.count { |p| p[:identifiers].any? } / @people.count.to_f) * 100).floor
+  }
+
   @urls = {
     csv: csv_file.url,
     json: popolo_file.url,
