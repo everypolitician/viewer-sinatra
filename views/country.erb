@@ -12,7 +12,7 @@
       <div class="country__legislature">
         <div class="country__legislature__header">
           <h3><%= house[:name] %></h3>
-          <a class="button button--small button--download" href="https://cdn.rawgit.com/everypolitician/everypolitician-data/<%= house[:sha] %>/<%= house[:popolo] %>">
+          <a class="button button--small button--download" href="<%= house[:popolo_url] %>">
             <i class="fa fa-download"></i>
             <span class="large-screen-only">Download as</span> JSON
           </a>

@@ -5,7 +5,7 @@ module EveryPolitician
 
   class GithubFile
 
-    @@GH_PATH = "https://cdn.rawgit.com/everypolitician/everypolitician-data/%s/%s"
+    @@GH_PATH = "https://github.com/everypolitician/everypolitician-data/raw/%s/%s"
 
     def initialize(file, sha, cache_dir = '_cached_data')
       @url = @@GH_PATH % [sha, file]
