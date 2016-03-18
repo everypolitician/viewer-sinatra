@@ -35,6 +35,10 @@ get '/' do
     country[:totalPeople] = (cjdata[:legislatures] || []).map { |l| l[:person_count].to_i }.inject(0, :+)
   }
 
+  @total_statements = ALL_COUNTRIES.map do |c|
+    c[:legislatures].map { |l| l[:statement_count] }
+  end.flatten.reduce(&:+)
+
   erb :homepage
 end
 
