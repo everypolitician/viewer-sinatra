@@ -107,6 +107,40 @@
     }
 }
 
+.homepage-data-example {
+  text-align: center;
+
+  h2 {
+    font-size: 1.8em;
+  }
+}
+
+.homepage-data-example__toggles {
+  margin-top: 1em;
+
+  .section-toggle {
+    color: $colour_links;
+    margin: 0 1em;
+    cursor: pointer;
+    padding-bottom: 0.2em;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color:darken($colour_links, 10%);
+    }
+  }
+
+  .section-toggle:hover {
+    border-bottom: 2px solid transparentize($colour_links, 0.5);
+  }
+
+  .section-toggle--selected {
+    border-bottom: 2px solid transparentize($colour_links, 0.5);
+    cursor: default;
+  }
+}
+
 .term-membership-table__title {
     position: relative;
     padding: 1em 0;
