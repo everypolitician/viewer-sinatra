@@ -11,6 +11,7 @@ require 'yajl/json_gem'
 require 'everypolitician/popolo'
 
 require_relative './lib/popolo_helper'
+require_relative './lib/people'
 
 Dotenv.load
 helpers Popolo::Helper
@@ -86,104 +87,18 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
 
   popolo_file = EveryPolitician::GithubFile.new(@house[:popolo], last_sha)
   popolo = EveryPolitician::Popolo.parse(popolo_file.raw)
-  people = popolo.persons.find_all { |p| person_ids.include?(p.id) }.sort_by { |p| p.sort_name }
 
   @parties = @csv.find_all { |r| r[:end_date].to_s.empty? || r[:end_date] == @term[:end_date] }
                  .group_by { |r| r[:group] }
                  .sort_by { |p, ms| [-ms.count, p] }
 
-  memberships_by_person = popolo.memberships.find_all { |m| m.legislative_period_id == "term/#{id}" }.group_by(&:person_id)
-  areas_by_id = Hash[popolo.areas.map { |a| [a.id, a] }]
-  orgs_by_id = Hash[popolo.organizations.map { |o| [o.id, o] }]
-
-  identifiers = people.map { |p| p.identifiers if p.respond_to?(:identifiers) }.compact.flatten
-  top_identifiers = identifiers.reject { |i| i[:scheme] == 'everypolitician_legacy' }
-                               .group_by { |i| i[:scheme] }
-                               .sort_by { |s, ids| -ids.size }
-                               .map { |s, ids| s }
-                               .take(3)
-
-  @people = people.map do |person|
-    p = {
-      id: person.id,
-      name: person.name,
-      image: person.image,
-      proxy_image: image_proxy_url(person.id),
-      memberships: memberships_by_person[person.id].map do |mem|
-        # FIXME: This is a bit nasty because everypolitician-popolo doesn't define
-        # a on_behalf_of_id/area_id on a membership if it doesn't have one, so
-        # we have to use respond_to? to check if they have that property for now.
-        membership = {}
-        if mem.respond_to?(:on_behalf_of_id)
-          membership[:group] = orgs_by_id[mem.on_behalf_of_id].name
-        end
-        if mem.respond_to?(:area_id)
-          membership[:area] = areas_by_id[mem.area_id].name
-        end
-        if mem.respond_to?(:start_date)
-          membership[:start_date] = mem.start_date
-        end
-        if mem.respond_to?(:end_date)
-          membership[:end_date] = mem.end_date
-        end
-        membership
-      end,
-      social: [],
-      bio: [],
-      contacts: [],
-      identifiers: []
-    }
-
-    if person.twitter
-      p[:social] << { type: 'Twitter', value: "@#{person.twitter}", link: "https://twitter.com/#{person.twitter}" }
-    end
-    if person.facebook
-      fb_username = person.facebook.split('/').last
-      p[:social] << { type: 'Facebook', value: fb_username, link: "https://facebook.com/#{fb_username}" }
-    end
-    if person.gender
-      p[:bio] << { type: 'Gender', value: person.gender }
-    end
-    if person.respond_to?(:birth_date)
-      p[:bio] << { type: 'Born', value: person.birth_date }
-    end
-    if person.respond_to?(:death_date)
-      p[:bio] << { type: 'Died', value: person.death_date }
-    end
-    if person.email
-      p[:contacts] << { type: 'Email', value: person.email, link: "mailto:#{person.email}" }
-    end
-    if person.respond_to?(:contact_details)
-      person.contact_details.each do |cd|
-        if cd[:type] == 'phone'
-          p[:contacts] << { type: 'Phone', value: cd[:value] }
-        end
-        if cd[:type] == 'fax'
-          p[:contacts] << { type: 'Fax', value: cd[:value] }
-        end
-      end
-    end
-    if person.respond_to?(:identifiers)
-      top_identifiers.each do |scheme|
-        id = person.identifiers.find { |i| i[:scheme] == scheme }
-        next if id.nil?
-        identifier = { type: id[:scheme], value: id[:identifier] }
-        if identifier[:type] == 'wikidata'
-          identifier[:link] = "https://www.wikidata.org/wiki/#{id[:identifier]}"
-        elsif identifier[:type] == 'viaf'
-          identifier[:link] = "https://viaf.org/viaf/#{id[:identifier]}/"
-        end
-        p[:identifiers] << identifier
-      end
-    end
-    p
-  end
+  @people = People::Collection.new(popolo, person_ids)
 
   @percentages = {
-    social: ((@people.count { |p| p[:social].any? } / @people.count.to_f) * 100).floor,
-    bio: ((@people.count { |p| p[:bio].any? } / @people.count.to_f) * 100).floor,
-    contacts: ((@people.count { |p| p[:contacts].any? } / @people.count.to_f) * 100).floor,
-    identifiers: ((@people.count { |p| p[:identifiers].any? } / @people.count.to_f) * 100).floor
+    social: ((@people.count { |p| p.social.any? } / @people.count.to_f) * 100).floor,
+    bio: ((@people.count { |p| p.bio.any? } / @people.count.to_f) * 100).floor,
+    contacts: ((@people.count { |p| p.contacts.any? } / @people.count.to_f) * 100).floor,
+    identifiers: ((@people.count { |p| p.identifiers.any? } / @people.count.to_f) * 100).floor
   }
 
   @urls = {
