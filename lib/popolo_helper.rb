@@ -52,5 +52,9 @@ module Popolo
       'https://mysociety.github.io/politician-image-proxy' \
         "/#{@country[:slug]}/#{@house[:slug]}/#{id}/140x140.jpeg"
     end
+
+    def number_to_millions(num)
+      (num.to_f / 1_000_000).round(1)
+    end
   end
 end
