@@ -99,7 +99,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
                  .group_by { |r| r[:group] }
                  .sort_by { |p, ms| [-ms.count, p] }
 
-  @people = People::Collection.new(popolo, person_ids)
+  @people = People::Collection.new(popolo, person_ids, id)
 
   @percentages = {
     social: ((@people.count { |p| p.social.any? } / @people.count.to_f) * 100).floor,
