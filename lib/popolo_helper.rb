@@ -53,6 +53,10 @@ module Popolo
         "/#{@country[:slug]}/#{@house[:slug]}/#{id}/140x140.jpeg"
     end
 
+    def number_to_millions(num)
+      (num.to_f / 1_000_000).round(1)
+    end
+
     # Extracts the relevant bits of information for a person to be displayed
     # in a template.
     def person_for_template(person, memberships_by_person, areas_by_id, orgs_by_id)
