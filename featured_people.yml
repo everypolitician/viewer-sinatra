@@ -1,0 +1,14 @@
+---
+# To specify featured people remove this empty array and then follow the examples below.
+[]
+# - country: Belgium
+#   legislature: Representatives
+#   uuid: 5f3808ae-f3e8-45da-a762-a1ffe7c8e58a
+
+# - country: Wales
+#   legislature: Assembly
+#   uuid: be9c1984-6f08-4a97-8ea6-e82af4daf909
+
+# - country: Estonia
+#   legislature: Riigikogu
+#   uuid: 907f006e-cf58-4fc6-a255-d92b94028dc1

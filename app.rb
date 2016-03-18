@@ -9,6 +9,7 @@ require 'set'
 require 'sinatra'
 require 'yajl/json_gem'
 require 'everypolitician/popolo'
+require 'yaml'
 
 require_relative './lib/popolo_helper'
 require_relative './lib/people'
@@ -40,11 +41,11 @@ get '/' do
     c[:legislatures].map { |l| l[:statement_count] }
   end.flatten.reduce(&:+)
 
-  @people = [
-    featured_person('Belgium', 'Representatives', '54', '5f3808ae-f3e8-45da-a762-a1ffe7c8e58a'),
-    featured_person('Wales', 'Assembly', '4', 'be9c1984-6f08-4a97-8ea6-e82af4daf909'),
-    featured_person('Estonia', 'Riigikogu', '13', '907f006e-cf58-4fc6-a255-d92b94028dc1')
-  ]
+  featured_people = YAML.load_file('featured_people.yml')
+
+  @people = featured_people.map do |person|
+    featured_person(person['country'], person['legislature'], person['uuid'])
+  end
 
   erb :homepage
 end

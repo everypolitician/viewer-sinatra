@@ -57,7 +57,7 @@ module Popolo
       (num.to_f / 1_000_000).round(1)
     end
 
-    def featured_person(country_slug, legislature_slug, term_id, person_uuid)
+    def featured_person(country_slug, legislature_slug, person_uuid)
       country = ALL_COUNTRIES.find { |c| c[:slug] == country_slug }
       house = country[:legislatures].find { |l| l[:slug] == legislature_slug }
       popolo = EveryPolitician::Popolo.parse(open(house[:popolo_url]).read)
