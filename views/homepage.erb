@@ -10,7 +10,9 @@
 <div class="page-section page-section--grey">
     <div class="container homepage-data-example">
         <h2>The world’s richest open dataset on politicians</h2>
-        <p><strong title="<%= commify(@total_statements) %> to be precise"><%= number_to_millions(@total_statements) %> million</strong> pieces of data so far, including:</p>
+        <p><strong title="<%= commify(@total_statements) %> to be precise"><%= number_to_millions(@total_statements) %> million</strong> pieces of data so far.</p>
+
+        <% if @people.any? %>
 
         <p class="homepage-data-example__toggles">
             <span class="section-toggle section-toggle--selected" data-section-toggle="social">Social media profiles</span>
@@ -22,10 +24,12 @@
         <div class="grid-list" data-active-section="social">
           <% @people.each do |person| %>
             <div class="js-filter-target">
-              <%= erb :person_card, locals: { person: person } %>
+              <%= erb :person_card, locals: { person: person, country: person.country, house: person.house } %>
             </div>
           <% end %>
         </div>
+
+        <% end %>
     </div>
 </div>
 
