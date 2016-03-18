@@ -48,9 +48,9 @@ module Popolo
       '<a href="https://www.wikidata.org/wiki/%s">%s</a>' % [ wd[:identifier], wd[:identifier] ]
     end
 
-    def image_proxy_url(id)
+    def image_proxy_url(country_slug, house_slug, id)
       'https://mysociety.github.io/politician-image-proxy' \
-        "/#{@country[:slug]}/#{@house[:slug]}/#{id}/140x140.jpeg"
+        "/#{country_slug}/#{house_slug}/#{id}/140x140.jpeg"
     end
 
     def number_to_millions(num)

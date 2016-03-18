@@ -8,10 +8,10 @@
           just show a generic placeholder image.  %>
       <% if person[:image] %>
         <img src="/images/person-placeholder-108px.png"
-             data-src="<%= person[:proxy_image] %>"
+             data-src="<%= image_proxy_url(@country[:slug], @house[:slug], person[:id]) %>"
              style="display: none"
              class="person-card__image">
-        <noscript><img src="<%= person[:proxy_image] %>" class="person-card__image"></noscript>
+        <noscript><img src="<%= image_proxy_url(@country[:slug], @house[:slug], person[:id]) %>" class="person-card__image"></noscript>
       <% else %>
         <img src="/images/person-placeholder-108px.png" class="person-card__image">
       <% end %>
