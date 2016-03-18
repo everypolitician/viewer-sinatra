@@ -7,10 +7,12 @@ module People
 
     attr_reader :popolo
     attr_reader :person_ids
+    attr_reader :term
 
-    def initialize(popolo, person_ids)
+    def initialize(popolo, person_ids, term = nil)
       @popolo = popolo
       @person_ids = person_ids
+      @term = term
     end
 
     def popolo_people
@@ -40,7 +42,11 @@ module People
     end
 
     def memberships_by_person
-      @memberships_by_person ||= popolo.memberships.group_by(&:person_id)
+      @memberships_by_person ||= begin
+        mems = popolo.memberships
+        mems = mems.find_all { |m| m.legislative_period_id.split('/').last == term } if term
+        mems.group_by(&:person_id)
+      end
     end
 
     def areas_by_id
