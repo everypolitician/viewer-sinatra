@@ -67,14 +67,14 @@ get '/:country/:house/wikidata' do |country, house|
   erb :wikidata_match
 end
 
-get '/:country/:house/term-table/:id.html' do |country, house, id|
+get '/:country/:house/term-table/:id.html' do |country, house, termid|
   @country = ALL_COUNTRIES.find { |c| c[:url] == country } || halt(404)
   @house = @country[:legislatures].find { |h| h[:slug].downcase == house } || halt(404)
 
   @terms = @house[:legislative_periods]
   (@next_term, @term, @prev_term) = [nil, @terms, nil]
     .flatten.each_cons(3)
-    .find { |_p, e, _n| e[:slug] == id }
+    .find { |_p, e, _n| e[:slug] == termid }
   @page_title = @term[:name]
 
   last_sha = @house[:sha]
@@ -83,7 +83,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
   popolo = EveryPolitician::Popolo.parse(popolo_file.raw)
 
   # We only want memberships that are in the requested term.
-  term_memberships = popolo.memberships.find_all { |m| m.legislative_period_id.split('/').last == id }
+  term_memberships = popolo.memberships.find_all { |m| m.legislative_period_id.split('/').last == termid }
 
   # Pull all the people who held a membership in this term out of the Popolo.
   person_ids = Set.new(term_memberships.map(&:person_id))
