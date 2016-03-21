@@ -42,18 +42,18 @@
     </div>
 <% end %>
 
-<% unless @parties.length == 1 && @parties[0][0] == 'unknown' %>
+<% if @parties.any? %>
     <div class="page-section page-section--grey" id="seat-count">
         <div class="container">
             <div class="party-groupings__title">
                 <h2>Party Groupings</h2>
             </div>
             <ul class="grid-list grid-list--vertically-center">
-              <% @parties.each do |party, mems| %>
-                <li id="party-<%= mems.first[:group_id] %>"><div class="avatar-unit">
+              <% @parties.each do |party| %>
+                <li id="party-<%= party[:group_id] %>"><div class="avatar-unit">
                     <span class="avatar"><i class="fa fa-users"></i></span>
-                    <h3><%= party.to_s.empty? ? 'Independent' : party %></h3>
-                    <p><span class="seatcount"><%= mems.count %></span> seat<% if mems.count > 1 %>s<% end %></p>
+                    <h3><%= party[:name].to_s.empty? ? 'Independent' : party[:name] %></h3>
+                    <p><span class="seatcount"><%= party[:member_count] %></span> seat<% if party[:member_count] > 1 %>s<% end %></p>
                 </div></li>
               <% end %>
             </ul>

@@ -1,5 +1,4 @@
 require 'cgi'
-require 'csv'
 require 'dotenv'
 require 'octokit'
 require 'open-uri'
@@ -79,22 +78,32 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
   @page_title = @term[:name]
 
   last_sha = @house[:sha]
-  csv_file = EveryPolitician::GithubFile.new(@term[:csv], last_sha)
-  @csv = CSV.parse(csv_file.raw, headers: true, header_converters: :symbol, converters: nil)
-
-  person_ids = @csv.map { |row| row[:id] }.uniq
 
   popolo_file = EveryPolitician::GithubFile.new(@house[:popolo], last_sha)
   popolo = EveryPolitician::Popolo.parse(popolo_file.raw)
-  people = popolo.persons.find_all { |p| person_ids.include?(p.id) }.sort_by { |p| p.sort_name }
 
-  @parties = @csv.find_all { |r| r[:end_date].to_s.empty? || r[:end_date] == @term[:end_date] }
-                 .group_by { |r| r[:group] }
-                 .sort_by { |p, ms| [-ms.count, p] }
+  memberships = popolo.memberships.find_all { |m| m.legislative_period_id.split('/').last == id }
 
-  memberships_by_person = popolo.memberships.find_all { |m| m.legislative_period_id == "term/#{id}" }.group_by(&:person_id)
+  person_ids = memberships.map(&:person_id)
+  people = popolo.persons.find_all { |p| person_ids.include?(p.id) }.sort_by(&:sort_name)
+
+  memberships_by_person = memberships.group_by(&:person_id)
   areas_by_id = Hash[popolo.areas.map { |a| [a.id, a] }]
   orgs_by_id = Hash[popolo.organizations.map { |o| [o.id, o] }]
+
+  current_memberships = memberships.find_all { |mem| mem.end_date.to_s.empty? || mem.end_date == @term[:end_date] }
+                                   .group_by(&:on_behalf_of_id)
+                                   .map { |group_id, mems| [orgs_by_id[group_id], mems] }
+                                   .sort_by { |group, mems| [-mems.count, group.name] }
+
+  @parties = current_memberships.map do |group, mems|
+    { group_id: group.id, name: group.name, member_count: mems.count }
+  end
+
+  # If we don't know the parties for anyone in a term then hide the parties section.
+  if @parties.length == 1 && @parties.first[:name] == 'unknown'
+    @parties = []
+  end
 
   identifiers = people.map { |p| p.identifiers if p.respond_to?(:identifiers) }.compact.flatten
   top_identifiers = identifiers.reject { |i| i[:scheme] == 'everypolitician_legacy' }
@@ -187,7 +196,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
   }
 
   @urls = {
-    csv: csv_file.url,
+    csv: @term[:csv_url],
     json: popolo_file.url,
   }
 
