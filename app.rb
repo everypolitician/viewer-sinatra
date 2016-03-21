@@ -86,20 +86,20 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
   term_memberships = popolo.memberships.find_all { |m| m.legislative_period_id.split('/').last == termid }
 
   # Pull all the people who held a membership in this term out of the Popolo.
-  person_ids = Set.new(term_memberships.map(&:person_id))
-  people = popolo.persons.find_all { |p| person_ids.include?(p.id) }
+  wanted_people = Set.new(term_memberships.map(&:person_id))
+  people = popolo.persons.find_all { |p| wanted_people.include?(p.id) }
 
   # Create a few hashes so that looking up memberships and their related orgs and areas is faster.
-  memberships_by_person = term_memberships.group_by(&:person_id)
-  areas_by_id = Hash[popolo.areas.map { |a| [a.id, a] }]
-  orgs_by_id = Hash[popolo.organizations.map { |o| [o.id, o] }]
+  membership_lookup = term_memberships.group_by(&:person_id)
+  area_lookup = Hash[popolo.areas.map { |a| [a.id, a] }]
+  org_lookup  = Hash[popolo.organizations.map { |o| [o.id, o] }]
 
   # Pull all unique parties out of memberships. We don't want to count
   # memberships that finished before the end of the term. We then sort them by
   # size and remap them to the format that the template consumes.
   @parties = term_memberships.find_all { |mem| mem.end_date.to_s.empty? || mem.end_date == @term[:end_date] }
              .group_by(&:on_behalf_of_id)
-             .map { |group_id, mems| [orgs_by_id[group_id], mems] }
+             .map { |group_id, mems| [org_lookup[group_id], mems] }
              .sort_by { |group, mems| [-mems.count, group.name] }
              .map { |group, mems| { group_id: group.id.split('/').last, name: group.name, member_count: mems.count } }
 
@@ -121,16 +121,16 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
       name: person.name,
       image: person.image,
       proxy_image: image_proxy_url(person.id),
-      memberships: memberships_by_person[person.id].map do |mem|
+      memberships: membership_lookup[person.id].map do |mem|
         # FIXME: This is a bit nasty because everypolitician-popolo doesn't define
         # a on_behalf_of_id/area_id on a membership if it doesn't have one, so
         # we have to use respond_to? to check if they have that property for now.
         membership = {}
         if mem.respond_to?(:on_behalf_of_id)
-          membership[:group] = orgs_by_id[mem.on_behalf_of_id].name
+          membership[:group] = org_lookup[mem.on_behalf_of_id].name
         end
         if mem.respond_to?(:area_id)
-          membership[:area] = areas_by_id[mem.area_id].name
+          membership[:area] = area_lookup[mem.area_id].name
         end
         if mem.respond_to?(:start_date)
           membership[:start_date] = mem.start_date
