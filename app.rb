@@ -87,7 +87,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
 
   # Pull all the people who held a membership in this term out of the Popolo.
   person_ids = Set.new(term_memberships.map(&:person_id))
-  people = popolo.persons.find_all { |p| person_ids.include?(p.id) }.sort_by(&:sort_name)
+  people = popolo.persons.find_all { |p| person_ids.include?(p.id) }
 
   # Create a few hashes so that looking up memberships and their related orgs and areas is faster.
   memberships_by_person = term_memberships.group_by(&:person_id)
@@ -115,7 +115,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
                                .map { |s, ids| s }
                                .take(3)
 
-  @people = people.map do |person|
+  @people = people.sort_by(&:sort_name).map do |person|
     p = {
       id: person.id,
       name: person.name,
