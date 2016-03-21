@@ -94,19 +94,15 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
   area_lookup = Hash[popolo.areas.map { |a| [a.id, a] }]
   org_lookup  = Hash[popolo.organizations.map { |o| [o.id, o] }]
 
-  # Pull all unique parties out of memberships. We don't want to count
-  # memberships that finished before the end of the term. We then sort them by
-  # size and remap them to the format that the template consumes.
-  @parties = term_memberships.find_all { |mem| mem.end_date.to_s.empty? || mem.end_date == @term[:end_date] }
-             .group_by(&:on_behalf_of_id)
-             .map { |group_id, mems| [org_lookup[group_id], mems] }
-             .sort_by { |group, mems| [-mems.count, group.name] }
-             .map { |group, mems| { group_id: group.id.split('/').last, name: group.name, member_count: mems.count } }
-
-  # If we don't know the parties for anyone in a term then hide the parties section.
-  if @parties.length == 1 && @parties.first[:name] == 'unknown'
-    @parties = []
-  end
+  # Groups, ordered by size, with name and count of how many members
+  # they had at the end of the term. Don't include this section if
+  # all groups are unknown.
+  @group_data = term_memberships.find_all { |mem| mem.end_date.to_s.empty? || mem.end_date == @term[:end_date] }
+                .group_by(&:on_behalf_of_id)
+                .map { |group_id, mems| [org_lookup[group_id], mems] }
+                .sort_by { |group, mems| [-mems.count, group.name] }
+                .map { |group, mems| { group_id: group.id.split('/').last, name: group.name, member_count: mems.count } }
+  @group_data = [] if @group_data.length == 1 && @group_data.first[:name] == 'unknown'
 
   identifiers = people.map { |p| p.identifiers if p.respond_to?(:identifiers) }.compact.flatten
   top_identifiers = identifiers.reject { |i| i[:scheme] == 'everypolitician_legacy' }

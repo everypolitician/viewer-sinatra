@@ -42,14 +42,14 @@
     </div>
 <% end %>
 
-<% if @parties.any? %>
+<% if @group_data.any? %>
     <div class="page-section page-section--grey" id="seat-count">
         <div class="container">
             <div class="party-groupings__title">
                 <h2>Party Groupings</h2>
             </div>
             <ul class="grid-list grid-list--vertically-center">
-              <% @parties.each do |party| %>
+              <% @group_data.each do |party| %>
                 <li id="party-<%= party[:group_id] %>"><div class="avatar-unit">
                     <span class="avatar"><i class="fa fa-users"></i></span>
                     <h3><%= party[:name].to_s.empty? ? 'Independent' : party[:name] %></h3>
