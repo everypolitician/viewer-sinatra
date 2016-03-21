@@ -83,25 +83,25 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
   popolo = EveryPolitician::Popolo.parse(popolo_file.raw)
 
   # We only want memberships that are in the requested term.
-  memberships = popolo.memberships.find_all { |m| m.legislative_period_id.split('/').last == id }
+  term_memberships = popolo.memberships.find_all { |m| m.legislative_period_id.split('/').last == id }
 
   # Pull all the people who held a membership in this term out of the Popolo.
-  person_ids = Set.new(memberships.map(&:person_id))
+  person_ids = Set.new(term_memberships.map(&:person_id))
   people = popolo.persons.find_all { |p| person_ids.include?(p.id) }.sort_by(&:sort_name)
 
   # Create a few hashes so that looking up memberships and their related orgs and areas is faster.
-  memberships_by_person = memberships.group_by(&:person_id)
+  memberships_by_person = term_memberships.group_by(&:person_id)
   areas_by_id = Hash[popolo.areas.map { |a| [a.id, a] }]
   orgs_by_id = Hash[popolo.organizations.map { |o| [o.id, o] }]
 
   # Pull all unique parties out of memberships. We don't want to count
   # memberships that finished before the end of the term. We then sort them by
   # size and remap them to the format that the template consumes.
-  @parties = memberships.find_all { |mem| mem.end_date.to_s.empty? || mem.end_date == @term[:end_date] }
-                        .group_by(&:on_behalf_of_id)
-                        .map { |group_id, mems| [orgs_by_id[group_id], mems] }
-                        .sort_by { |group, mems| [-mems.count, group.name] }
-                        .map { |group, mems| { group_id: group.id.split('/').last, name: group.name, member_count: mems.count } }
+  @parties = term_memberships.find_all { |mem| mem.end_date.to_s.empty? || mem.end_date == @term[:end_date] }
+             .group_by(&:on_behalf_of_id)
+             .map { |group_id, mems| [orgs_by_id[group_id], mems] }
+             .sort_by { |group, mems| [-mems.count, group.name] }
+             .map { |group, mems| { group_id: group.id.split('/').last, name: group.name, member_count: mems.count } }
 
   # If we don't know the parties for anyone in a term then hide the parties section.
   if @parties.length == 1 && @parties.first[:name] == 'unknown'
