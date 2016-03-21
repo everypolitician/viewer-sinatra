@@ -199,9 +199,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
     json: popolo_file.url,
   }
 
-  # TODO: Make this use EveryPolitician::Popolo once that supports the 'meta' field.
-  popolo_json = JSON.parse(popolo_file.raw)
-  @data_sources = (popolo_json['meta']['sources'] || [popolo_json['meta']['source']]).map { |s| CGI.unescape(s) }
+  @data_sources = popolo.popolo[:meta][:sources].map { |s| CGI.unescape(s) }
 
   erb :term_table
 end
