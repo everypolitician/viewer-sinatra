@@ -84,7 +84,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
 
   memberships = popolo.memberships.find_all { |m| m.legislative_period_id.split('/').last == id }
 
-  person_ids = memberships.map(&:person_id)
+  person_ids = Set.new(memberships.map(&:person_id))
   people = popolo.persons.find_all { |p| person_ids.include?(p.id) }.sort_by(&:sort_name)
 
   memberships_by_person = memberships.group_by(&:person_id)
