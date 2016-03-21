@@ -97,7 +97,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
                                    .sort_by { |group, mems| [-mems.count, group.name] }
 
   @parties = current_memberships.map do |group, mems|
-    { group_id: group.id, name: group.name, member_count: mems.count }
+    { group_id: group.id.split('/').last, name: group.name, member_count: mems.count }
   end
 
   # If we don't know the parties for anyone in a term then hide the parties section.
