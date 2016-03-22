@@ -104,7 +104,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
                 .map { |group, mems| { group_id: group.id.split('/').last, name: group.name, member_count: mems.count } }
   @group_data = [] if @group_data.length == 1 && @group_data.first[:name] == 'unknown'
 
-  identifiers = people.map { |p| p.identifiers if p.respond_to?(:identifiers) }.compact.flatten
+  identifiers = people.map(&:identifiers).compact.flatten
   top_identifiers = identifiers.reject { |i| i[:scheme] == 'everypolitician_legacy' }
                                .group_by { |i| i[:scheme] }
                                .sort_by { |s, ids| -ids.size }
@@ -118,22 +118,12 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
       image: person.image,
       proxy_image: image_proxy_url(person.id),
       memberships: membership_lookup[person.id].map do |mem|
-        # FIXME: This is a bit nasty because everypolitician-popolo doesn't define
-        # a on_behalf_of_id/area_id on a membership if it doesn't have one, so
-        # we have to use respond_to? to check if they have that property for now.
-        membership = {}
-        if mem.respond_to?(:on_behalf_of_id)
-          membership[:group] = org_lookup[mem.on_behalf_of_id].name
-        end
-        if mem.respond_to?(:area_id)
-          membership[:area] = area_lookup[mem.area_id].name
-        end
-        if mem.respond_to?(:start_date)
-          membership[:start_date] = mem.start_date
-        end
-        if mem.respond_to?(:end_date)
-          membership[:end_date] = mem.end_date
-        end
+        membership = {
+          start_date: mem.start_date,
+          end_date: mem.end_date
+        }
+        membership[:group] = org_lookup[mem.on_behalf_of_id].name if mem.on_behalf_of_id
+        membership[:area] = area_lookup[mem.area_id].name if mem.area_id
         membership
       end,
       social: [],
@@ -149,40 +139,22 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
       fb_username = person.facebook.split('/').last
       p[:social] << { type: 'Facebook', value: fb_username, link: "https://facebook.com/#{fb_username}" }
     end
-    if person.gender
-      p[:bio] << { type: 'Gender', value: person.gender }
-    end
-    if person.respond_to?(:birth_date)
-      p[:bio] << { type: 'Born', value: person.birth_date }
-    end
-    if person.respond_to?(:death_date)
-      p[:bio] << { type: 'Died', value: person.death_date }
-    end
-    if person.email
-      p[:contacts] << { type: 'Email', value: person.email, link: "mailto:#{person.email}" }
-    end
-    if person.respond_to?(:contact_details)
-      person.contact_details.each do |cd|
-        if cd[:type] == 'phone'
-          p[:contacts] << { type: 'Phone', value: cd[:value] }
-        end
-        if cd[:type] == 'fax'
-          p[:contacts] << { type: 'Fax', value: cd[:value] }
-        end
+    p[:bio] << { type: 'Gender', value: person.gender } if person.gender
+    p[:bio] << { type: 'Born', value: person.birth_date } if person.birth_date
+    p[:bio] << { type: 'Died', value: person.death_date } if person.death_date
+    p[:contacts] << { type: 'Email', value: person.email, link: "mailto:#{person.email}" } if person.email
+    p[:contacts] << { type: 'Phone', value: person.phone } if person.phone
+    p[:contacts] << { type: 'Fax', value: person.fax } if person.fax
+    top_identifiers.each do |scheme|
+      id = person.identifiers.find { |i| i[:scheme] == scheme }
+      next if id.nil?
+      identifier = { type: id[:scheme], value: id[:identifier] }
+      if identifier[:type] == 'wikidata'
+        identifier[:link] = "https://www.wikidata.org/wiki/#{id[:identifier]}"
+      elsif identifier[:type] == 'viaf'
+        identifier[:link] = "https://viaf.org/viaf/#{id[:identifier]}/"
       end
-    end
-    if person.respond_to?(:identifiers)
-      top_identifiers.each do |scheme|
-        id = person.identifiers.find { |i| i[:scheme] == scheme }
-        next if id.nil?
-        identifier = { type: id[:scheme], value: id[:identifier] }
-        if identifier[:type] == 'wikidata'
-          identifier[:link] = "https://www.wikidata.org/wiki/#{id[:identifier]}"
-        elsif identifier[:type] == 'viaf'
-          identifier[:link] = "https://viaf.org/viaf/#{id[:identifier]}/"
-        end
-        p[:identifiers] << identifier
-      end
+      p[:identifiers] << identifier
     end
     p
   end
