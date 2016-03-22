@@ -7,13 +7,19 @@ GIT
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
 
+GIT
+  remote: https://github.com/everypolitician/everypolitician-popolo
+  revision: 5aeb13b330983b4ad7882a3130d26acafe859945
+  branch: master
+  specs:
+    everypolitician-popolo (0.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.3.8)
     coderay (1.1.0)
     dotenv (2.0.1)
-    everypolitician-popolo (0.2.0)
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
     iso_country_codes (0.7.1)
@@ -50,7 +56,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
-  everypolitician-popolo
+  everypolitician-popolo!
   iso_country_codes
   json
   nokogiri
