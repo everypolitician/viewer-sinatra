@@ -48,13 +48,23 @@ module Popolo
       '<a href="https://www.wikidata.org/wiki/%s">%s</a>' % [ wd[:identifier], wd[:identifier] ]
     end
 
-    def image_proxy_url(id)
+    def image_proxy_url(country_slug, house_slug, id)
       'https://mysociety.github.io/politician-image-proxy' \
-        "/#{@country[:slug]}/#{@house[:slug]}/#{id}/140x140.jpeg"
+        "/#{country_slug}/#{house_slug}/#{id}/140x140.jpeg"
     end
 
     def number_to_millions(num)
       (num.to_f / 1_000_000).round(1)
+    end
+
+    def featured_person(country_slug, legislature_slug, person_uuid)
+      country = ALL_COUNTRIES.find { |c| c[:slug] == country_slug }
+      house = country[:legislatures].find { |l| l[:slug] == legislature_slug }
+      popolo = EveryPolitician::Popolo.parse(open(house[:popolo_url]).read)
+      person = People::Collection.new(popolo, [person_uuid]).first
+      person.define_singleton_method(:country) { country }
+      person.define_singleton_method(:house) { house }
+      person
     end
   end
 end
