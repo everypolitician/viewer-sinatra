@@ -1,5 +1,4 @@
 require 'cgi'
-require 'csv'
 require 'dotenv'
 require 'octokit'
 require 'open-uri'
@@ -68,33 +67,42 @@ get '/:country/:house/wikidata' do |country, house|
   erb :wikidata_match
 end
 
-get '/:country/:house/term-table/:id.html' do |country, house, id|
+get '/:country/:house/term-table/:id.html' do |country, house, termid|
   @country = ALL_COUNTRIES.find { |c| c[:url] == country } || halt(404)
   @house = @country[:legislatures].find { |h| h[:slug].downcase == house } || halt(404)
 
   @terms = @house[:legislative_periods]
   (@next_term, @term, @prev_term) = [nil, @terms, nil]
     .flatten.each_cons(3)
-    .find { |_p, e, _n| e[:slug] == id }
+    .find { |_p, e, _n| e[:slug] == termid }
   @page_title = @term[:name]
 
   last_sha = @house[:sha]
-  csv_file = EveryPolitician::GithubFile.new(@term[:csv], last_sha)
-  @csv = CSV.parse(csv_file.raw, headers: true, header_converters: :symbol, converters: nil)
-
-  person_ids = @csv.map { |row| row[:id] }.uniq
 
   popolo_file = EveryPolitician::GithubFile.new(@house[:popolo], last_sha)
   popolo = EveryPolitician::Popolo.parse(popolo_file.raw)
-  people = popolo.persons.find_all { |p| person_ids.include?(p.id) }.sort_by { |p| p.sort_name }
 
-  @parties = @csv.find_all { |r| r[:end_date].to_s.empty? || r[:end_date] == @term[:end_date] }
-                 .group_by { |r| r[:group] }
-                 .sort_by { |p, ms| [-ms.count, p] }
+  # We only want memberships that are in the requested term.
+  term_memberships = popolo.memberships.find_all { |m| m.legislative_period_id.split('/').last == termid }
 
-  memberships_by_person = popolo.memberships.find_all { |m| m.legislative_period_id == "term/#{id}" }.group_by(&:person_id)
-  areas_by_id = Hash[popolo.areas.map { |a| [a.id, a] }]
-  orgs_by_id = Hash[popolo.organizations.map { |o| [o.id, o] }]
+  # Pull all the people who held a membership in this term out of the Popolo.
+  wanted_people = Set.new(term_memberships.map(&:person_id))
+  people = popolo.persons.find_all { |p| wanted_people.include?(p.id) }
+
+  # Create a few hashes so that looking up memberships and their related orgs and areas is faster.
+  membership_lookup = term_memberships.group_by(&:person_id)
+  area_lookup = Hash[popolo.areas.map { |a| [a.id, a] }]
+  org_lookup  = Hash[popolo.organizations.map { |o| [o.id, o] }]
+
+  # Groups, ordered by size, with name and count of how many members
+  # they had at the end of the term. Don't include this section if
+  # all groups are unknown.
+  @group_data = term_memberships.find_all { |mem| mem.end_date.to_s.empty? || mem.end_date == @term[:end_date] }
+                .group_by(&:on_behalf_of_id)
+                .map { |group_id, mems| [org_lookup[group_id], mems] }
+                .sort_by { |group, mems| [-mems.count, group.name] }
+                .map { |group, mems| { group_id: group.id.split('/').last, name: group.name, member_count: mems.count } }
+  @group_data = [] if @group_data.length == 1 && @group_data.first[:name] == 'unknown'
 
   identifiers = people.map { |p| p.identifiers if p.respond_to?(:identifiers) }.compact.flatten
   top_identifiers = identifiers.reject { |i| i[:scheme] == 'everypolitician_legacy' }
@@ -103,22 +111,22 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
                                .map { |s, ids| s }
                                .take(3)
 
-  @people = people.map do |person|
+  @people = people.sort_by(&:sort_name).map do |person|
     p = {
       id: person.id,
       name: person.name,
       image: person.image,
       proxy_image: image_proxy_url(person.id),
-      memberships: memberships_by_person[person.id].map do |mem|
+      memberships: membership_lookup[person.id].map do |mem|
         # FIXME: This is a bit nasty because everypolitician-popolo doesn't define
         # a on_behalf_of_id/area_id on a membership if it doesn't have one, so
         # we have to use respond_to? to check if they have that property for now.
         membership = {}
         if mem.respond_to?(:on_behalf_of_id)
-          membership[:group] = orgs_by_id[mem.on_behalf_of_id].name
+          membership[:group] = org_lookup[mem.on_behalf_of_id].name
         end
         if mem.respond_to?(:area_id)
-          membership[:area] = areas_by_id[mem.area_id].name
+          membership[:area] = area_lookup[mem.area_id].name
         end
         if mem.respond_to?(:start_date)
           membership[:start_date] = mem.start_date
@@ -187,13 +195,11 @@ get '/:country/:house/term-table/:id.html' do |country, house, id|
   }
 
   @urls = {
-    csv: csv_file.url,
+    csv: @term[:csv_url],
     json: popolo_file.url,
   }
 
-  # TODO: Make this use EveryPolitician::Popolo once that supports the 'meta' field.
-  popolo_json = JSON.parse(popolo_file.raw)
-  @data_sources = (popolo_json['meta']['sources'] || [popolo_json['meta']['source']]).map { |s| CGI.unescape(s) }
+  @data_sources = popolo.popolo[:meta][:sources].map { |s| CGI.unescape(s) }
 
   erb :term_table
 end
