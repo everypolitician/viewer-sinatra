@@ -54,7 +54,8 @@ module Popolo
     end
 
     def number_to_millions(num)
-      (num.to_f / 1_000_000).round(1)
+      result = (num.to_f / 100_000).floor.to_f / 10
+      result.modulo(1) < 0.1 ?  result.to_i : result
     end
   end
 end
