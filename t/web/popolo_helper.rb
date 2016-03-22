@@ -14,5 +14,9 @@ describe Popolo::Helper do
     it 'rounds down rather than up' do
       number_to_millions(2680000).must_equal(2.6)
     end
+
+    it 'removes the zero for whole numbers' do
+      number_to_millions(3000000).must_equal(3)
+    end
   end
 end
