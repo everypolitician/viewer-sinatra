@@ -136,7 +136,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
       p[:social] << { type: 'Twitter', value: "@#{person.twitter}", link: "https://twitter.com/#{person.twitter}" }
     end
     if person.facebook
-      fb_username = person.facebook.split('/').last
+      fb_username = URI.decode_www_form_component(person.facebook.split('/').last)
       p[:social] << { type: 'Facebook', value: fb_username, link: "https://facebook.com/#{fb_username}" }
     end
     p[:bio] << { type: 'Gender', value: person.gender } if person.gender
