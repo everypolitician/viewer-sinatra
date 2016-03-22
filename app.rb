@@ -143,10 +143,8 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
     p[:bio] << { type: 'Born', value: person.birth_date } if person.birth_date
     p[:bio] << { type: 'Died', value: person.death_date } if person.death_date
     p[:contacts] << { type: 'Email', value: person.email, link: "mailto:#{person.email}" } if person.email
-    person.contact_details.each do |cd|
-      p[:contacts] << { type: 'Phone', value: cd[:value] } if cd[:type] == 'phone'
-      p[:contacts] << { type: 'Fax', value: cd[:value] } if cd[:type] == 'fax'
-    end
+    p[:contacts] << { type: 'Phone', value: person.phone } if person.phone
+    p[:contacts] << { type: 'Fax', value: person.fax } if person.fax
     top_identifiers.each do |scheme|
       id = person.identifiers.find { |i| i[:scheme] == scheme }
       next if id.nil?
