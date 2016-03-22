@@ -96,13 +96,13 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
 
   # Groups, ordered by size, with name and count of how many members
   # they had at the end of the term. Don't include this section if
-  # all groups are unknown.
+  # there is only a single group.
   @group_data = term_memberships.find_all { |mem| mem.end_date.to_s.empty? || mem.end_date == @term[:end_date] }
                 .group_by(&:on_behalf_of_id)
                 .map { |group_id, mems| [org_lookup[group_id], mems] }
                 .sort_by { |group, mems| [-mems.count, group.name] }
                 .map { |group, mems| { group_id: group.id.split('/').last, name: group.name, member_count: mems.count } }
-  @group_data = [] if @group_data.length == 1 && @group_data.first[:name] == 'unknown'
+  @group_data = [] if @group_data.length == 1 
 
   identifiers = people.map { |p| p.identifiers if p.respond_to?(:identifiers) }.compact.flatten
   top_identifiers = identifiers.reject { |i| i[:scheme] == 'everypolitician_legacy' }
