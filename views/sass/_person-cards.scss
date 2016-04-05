@@ -50,29 +50,43 @@
   // and then toggled using JavaScript.
   display: none;
 
-  p {
-    display: block;
-    width: 99%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    margin: 0;
-  }
-
-  p + p {
-    margin-top: 0.3em;
-  }
-
   .gender {
     text-transform: capitalize;
   }
-}
 
-.person-card__section__label {
-  display: inline-block;
-  width: (18px * 4);
-  font-size: 0.9em;
-  color: mix(#999, $colour_green, 50%);
+  table {
+    font-size: inherit;
+    margin: 0;
+  }
+
+  td, th {
+    border: none;
+    padding: 0;
+  }
+
+  tr + tr {
+    th, td {
+      padding-top: 0.5em; // 0.5em space between rows
+    }
+  }
+
+  tr:hover {
+    background-color: transparent;
+  }
+
+  td {
+    padding-left: 1em;
+    width: 100%; // This column will expand as wide as possible
+    line-height: 1.3em;
+  }
+
+  th {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    font-weight: inherit;
+    color: mix(#999, $colour_green, 50%);
+    vertical-align: top;
+  }
 }
 
 // List of person-card__sections.
