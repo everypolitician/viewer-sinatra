@@ -291,7 +291,7 @@ $(function(){
     selector: 'img[data-src]'
   });
 
-  $(document).on('js-filter-input:complete', function(){
+  $(document).on('js-card-filter:updated', function(){
     window.blazy.revalidate();
   });
 
@@ -377,11 +377,4 @@ $(function(){
           $(this).data('chart', chart);
       }
   })
-
-  $('[data-section-toggle]').on('click', function(){
-    var section = $(this).attr('data-section-toggle');
-    $('[data-active-section]').attr('data-active-section', section);
-    $('[data-section-toggle]').removeClass('section-toggle--selected');
-    $('[data-section-toggle="' + section + '"]').addClass('section-toggle--selected');
-  });
 });
