@@ -197,6 +197,10 @@ var CardFilter = function(){
 
 }
 
+var scrollToTheCards = function scrollToTheCards(){
+  var scrollTop = $('.js-filter-target').parents('.page-section').position().top;
+  $('html, body').animate({ scrollTop: scrollTop });
+}
 
 $(document).ready(function(){
 
@@ -217,6 +221,7 @@ $(document).ready(function(){
     $('[data-section-toggle]').on('click', function(){
       var section = $(this).attr('data-section-toggle');
       window.cards.setFacet(section);
+      scrollToTheCards();
     });
 
     $('[data-party-filter]').on('click', function(){
@@ -227,6 +232,7 @@ $(document).ready(function(){
         var partyID = $(this).attr('data-party-filter');
         window.cards.setParty(partyID);
       }
+      scrollToTheCards();
     });
 
   }
