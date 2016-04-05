@@ -29,7 +29,7 @@ var CardFilter = function(){
   // When the UI is in its default position,
   // this is what the state should look like.
   var defaultState = {
-    facet: "biography",
+    facet: "bio",
     search: undefined,
     party: undefined
   }
@@ -96,39 +96,59 @@ var CardFilter = function(){
   // Should be completely idempotent and shouldn't assume any existing UI state.
   this._updateUI = function(){
 
-    $('[data-active-section]').attr('data-active-section', state.facet);
+    // Unhide all the cards.
+    $('.js-filter-target--hidden').removeClass('js-filter-target--hidden');
+
+    // Remove any section visibility overrides from the previous search filter.
+    $('.js-person-card__section--visible').removeClass('js-person-card__section--visible');
+
+    // Reset the facet toggle triggers.
     $('[data-section-toggle]').removeClass('section-toggle--selected');
     $('[data-section-toggle="' + state.facet + '"]').addClass('section-toggle--selected');
 
+    // Reset the party filter triggers.
+    $('[data-party-filter-active]').removeAttr('data-party-filter-active');
+    if( typeof state.party !== 'undefined' ){
+      $('[data-party-filter="' + state.party + '"]').attr('data-party-filter-active', true);
+    }
+
+    // Reset the search text input.
     if( typeof state.search === 'undefined' ){
-      $('.js-filter-target--hidden').removeClass('js-filter-target--hidden');
-      $('.js-person-card__section--visible').removeClass('js-person-card__section--visible');
       $('.js-filter-input').val('');
-
     } else {
-      $('.js-filter-target').each(function(){
-        var $target = $(this);
-        if( $target.containsText(state.search) ){
-          $target.removeClass('js-filter-target--hidden');
-        } else {
-          $target.addClass('js-filter-target--hidden');
-        }
-
-        // Person cards contain sections, which might be hidden.
-        // We want to temporarily reveal sections which contain
-        // the search text, if those sections exist.
-        $target.find('.person-card__section').each(function(){
-          var $section = $(this);
-          if( $section.containsText(state.search) ){
-            $section.addClass('js-person-card__section--visible');
-          } else {
-            $section.removeClass('js-person-card__section--visible');
-          }
-        });
-      });
-
       $('.js-filter-input').val(state.search);
     }
+
+    // Switch on correct facet (ie: the light green section on each person card).
+    $('[data-active-section]').attr('data-active-section', state.facet);
+
+    // Hide cards if they don't match the current state.party or state.search.
+    $('.js-filter-target').each(function(){
+      var $target = $(this);
+
+      if( typeof state.party !== 'undefined' ){
+        var partyIDs = $target.attr('data-parties').split(' ');
+        if( partyIDs.indexOf(state.party) < 0 ){
+          $target.addClass('js-filter-target--hidden');
+          return true; // Tell $.each() to move on to the next card.
+        }
+      }
+
+      if( typeof state.search !== 'undefined' ){
+        if( ! $target.containsText(state.search) ){
+          $target.addClass('js-filter-target--hidden');
+          return true; // Tell $.each() to move on to the next card.
+        }
+
+        // This person card matches the search text! Temporarily reveal
+        // any hidden person card sections containing the search text.
+        $target.find('.person-card__section').each(function(){
+          if( $(this).containsText(state.search) ){
+            $(this).addClass('js-person-card__section--visible');
+          }
+        });
+      }
+    });
 
     // Other scripts might want to do something special once they know
     // the page has been filtered (eg: might want to check the viewport
@@ -198,6 +218,17 @@ $(document).ready(function(){
       var section = $(this).attr('data-section-toggle');
       window.cards.setFacet(section);
     });
+
+    $('[data-party-filter]').on('click', function(){
+      var alreadyActive = $(this).is('[data-party-filter-active]');
+      if(alreadyActive){
+        window.cards.setParty(undefined);
+      } else {
+        var partyID = $(this).attr('data-party-filter');
+        window.cards.setParty(partyID);
+      }
+    });
+
   }
 
 });
