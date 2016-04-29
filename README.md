@@ -13,7 +13,7 @@ contains URLs for all the data files.
 
 For example, `DATASOURCE` may be something like:
 
-    https://cdn.rawgit.com/everypolitician/everypolitician-data/<i>sha1-hash</i>/countries.json
+<code>https://cdn.rawgit.com/everypolitician/everypolitician-data/<em>sha1-hash</em>/countries.json</code>
 
 Since `countries.json` and the URLs it contains are all versioned, that is, 
 linked to a specific commit, then `viewer-sinatra` will generate web pages populated
@@ -27,7 +27,7 @@ This is a lightweight app for generating the site. It is **not for use in produc
 
 See [everypolitician/everypolitician](https://github.com/everypolitician/everypolitician) for issues
 and a jumping-off point to more repos in the EveryPolitician stable (for example, `viewer-sinatra` itself commits
-its output to `[viewer-static]((https://github.com/everypolitician/viewer-static)`
+its output to [`viewer-static`](https://github.com/everypolitician/viewer-static)
 when building the live site).
 
 
