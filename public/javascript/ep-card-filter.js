@@ -29,7 +29,7 @@ var CardFilter = function(){
   // When the UI is in its default position,
   // this is what the state should look like.
   var defaultState = {
-    facet: "biography",
+    facet: "bio",
     search: undefined,
     party: undefined
   }
