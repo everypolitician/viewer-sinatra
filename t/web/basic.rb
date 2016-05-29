@@ -28,6 +28,10 @@ describe 'Viewer' do
     it 'should have know its country' do
       last_response.body.must_include 'Finland'
     end
+
+    it 'should have the country in the title' do
+      subject.css('title').text.must_equal 'EveryPolitician: Finland'
+    end
   end
 
   describe 'unknown house of known country' do
