@@ -50,6 +50,7 @@ end
 
 get '/:country/' do |country|
   if @country = ALL_COUNTRIES.find { |c| c[:url] == country }
+    @page_title = "EveryPolitician: #{@country[:name]}"
     erb :country
   elsif @missing = WORLD[country.to_sym]
     erb :country_missing
@@ -64,6 +65,7 @@ get '/:country/:house/wikidata' do |country, house|
   last_sha = @house[:sha]
   popolo_file = EveryPolitician::GithubFile.new(@house[:popolo], last_sha)
   @popolo = JSON.parse(popolo_file.raw, symbolize_names: true)
+  @page_title = "EveryPolitician: #{@country[:name]} — #{@house}"
   erb :wikidata_match
 end
 
@@ -75,7 +77,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
   (@next_term, @term, @prev_term) = [nil, @terms, nil]
     .flatten.each_cons(3)
     .find { |_p, e, _n| e[:slug] == termid }
-  @page_title = @term[:name]
+  @page_title = "EveryPolitician: #{@country[:name]} — #{@house[:name]} - #{@term[:name]}"
 
   last_sha = @house[:sha]
 

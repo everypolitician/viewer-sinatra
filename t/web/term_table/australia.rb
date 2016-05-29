@@ -38,7 +38,7 @@ describe 'Per Country Tests: Australia' do
     end
 
     it 'should have the correct page title' do
-      subject.css('title').text.must_equal '44th Parliament'
+      subject.css('title').text.must_equal 'EveryPolitician: Australia — House of Representatives - 44th Parliament'
     end
 
     it 'should list the correct source' do
@@ -58,7 +58,7 @@ describe 'Per Country Tests: Australia' do
     end
 
     it 'should have the correct page title' do
-      subject.css('title').text.must_equal '44th Parliament'
+      subject.css('title').text.must_equal 'EveryPolitician: Australia — Senate - 44th Parliament'
     end
 
     it 'should list the correct source' do

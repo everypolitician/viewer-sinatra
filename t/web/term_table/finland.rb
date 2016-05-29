@@ -23,7 +23,7 @@ describe 'Per Country Tests' do
     end
 
     it 'should have the correct page title' do
-      subject.css('title').text.must_equal 'Eduskunta 35'
+      subject.css('title').text.must_equal 'EveryPolitician: Finland — Eduskunta - Eduskunta 35'
     end
 
     it 'should list the parties' do
