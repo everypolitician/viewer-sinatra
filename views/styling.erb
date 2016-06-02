@@ -23,6 +23,7 @@
                     <li><a href="#alerts">Alerts</a></li>
                     <li><a href="#table-headers">Fixed table headers</a></li>
                     <li><a href="#table-sorting">Sortable tables</a></li>
+                    <li><a href="#two-columns">Two-column layout</a></li>
                 </ul>
             </div>
 
@@ -311,6 +312,27 @@
 
             <p><strong>Note:</strong> Make sure your table headers cells are correctly marked up as <code>&lt;th&gt;</code> elements inside a <code>&lt;thead&gt;</code>, as above.</p>
 
+              <h1 id="two-columns">Two-column layout</h1>
+
+              <p>
+                Use a class of <code>layout-equal-columns</code> to set up column layout. Then, for example, you
+                can have two equal columns:
+              </p>
+              <div class="layout-equal-columns">
+                <div class="first-column">
+                  <p>
+                    This is within a div of class <code>first-column</code>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                  </p>
+                </div>
+                <div class="second-column">
+                  <p>
+                    And this within <code>second-column</code>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+              <p>
+                Everything goes back to normal outside of those two columns, as you'd expect. Lovely!
+              </p>
             </div>
         </div>
 
