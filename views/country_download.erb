@@ -12,6 +12,14 @@
         <div class="country__legislature__header">
           <h3><%= house[:name] %></h3>
         </div>
+        <p>
+          Read more about
+          <a href="http://docs.everypolitician.org/data_summary.html">what’s in the data</a>
+          and how we use
+          <a href="http://docs.everypolitician.org/technical.html">CSV and JSON formats</a>.
+          If you’re a programmer, see our notes on
+          <a href="http://docs.everypolitician.org/use_the_data.html">how to use the data</a>.
+        </p>
         <div class="layout-equal-columns">
           <div class="first-column">
             <h4>Data for the whole legislature</h4>
@@ -29,12 +37,6 @@
                 <i class="fa fa-download"></i>
                 <span class="large-screen-only">Download as</span> JSON
               </a>
-            </p>
-            <p>
-              Read more about 
-              <a href="http://docs.everypolitician.org/data_summary.html">what’s in the data</a>
-              and how we use
-              <a href="http://docs.everypolitician.org/technical.html">CSV and JSON formats</a>.
             </p>
             <h4>Just politicians’ names</h4>
             <p>
@@ -58,8 +60,7 @@
               CSV files for individual terms have <em>simplified</em> data for each
               member. This might be all you need if you’re looking for the core
               data on these politicians; great for spreadsheets, perfect for
-              quick analysis. Read more about 
-              <a href="http://docs.everypolitician.org/data_summary.html">what’s in the data</a>.
+              quick analysis.
             </p>
             <ul class="unstyled-list" id="terms-<%= house[:slug].downcase %>">
               <% house[:legislative_periods].each do |t| %>
