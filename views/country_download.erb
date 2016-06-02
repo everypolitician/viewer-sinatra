@@ -61,24 +61,31 @@
               quick analysis. Read more about 
               <a href="http://docs.everypolitician.org/data_summary.html">what’s in the data</a>.
             </p>
-            <ul id="terms-<%= house[:slug].downcase %>">
+            <ul class="unstyled-list" id="terms-<%= house[:slug].downcase %>">
               <% house[:legislative_periods].each do |t| %>
                 <li id="term-<%= house[:slug].downcase %>-<%= t[:slug].downcase %>">
-                  <%= t[:name] %>
-                  <% unless t[:start_date].to_s.empty? and t[:end_date].to_s.empty? %>
-                    <%= t[:start_date] %> - <%= t[:end_date] %>
-                  <% end %>
-                  <br>
-                  <a class="button button--small button--quarternary"
-                    href="<%= term_table_url(@country, house, t) %>">
-                    <i class="fa fa-university"></i>
-                    <span class="large-screen-only">View</span> Summary
-                  </a>
-                  <a class="button button--small button--download"
-                    href="<%= t[:csv_url] %>">
-                    <i class="fa fa-download"></i>
-                    <span class="large-screen-only">Download</span> CSV
-                  </a>
+                  <!-- FIXME needs proper designer love -->
+                  <div class="avatar-unit" style="margin-bottom:1em">
+                    <span class="avatar"><i class="fa fa-university"></i></span>
+                    <h3><%= t[:name] %></h3>
+                    <p>
+                      <% unless t[:start_date].to_s.empty? and t[:end_date].to_s.empty? %>
+                        <%= t[:start_date] %> - <%= t[:end_date] %>
+                      <% end %>
+                    </p>
+                    <p>
+                      <a class="button button--small button--quarternary"
+                        href="<%= term_table_url(@country, house, t) %>">
+                        <i class="fa fa-university"></i>
+                        <span class="large-screen-only">View</span> Summary
+                      </a>
+                      <a class="button button--small button--download"
+                        href="<%= t[:csv_url] %>">
+                        <i class="fa fa-download"></i>
+                        <span class="large-screen-only">Download</span> CSV
+                      </a>
+                    </p>
+                  </div>
                 </li>
               <% end %>
             </ul>
