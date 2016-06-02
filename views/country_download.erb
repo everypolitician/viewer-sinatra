@@ -63,9 +63,9 @@
             </p>
             <ul class="unstyled-list" id="terms-<%= house[:slug].downcase %>">
               <% house[:legislative_periods].each do |t| %>
-                <li id="term-<%= house[:slug].downcase %>-<%= t[:slug].downcase %>">
+                <li id="term-<%= house[:slug].downcase %>-<%= t[:slug].downcase %>" style="margin-bottom:1.5em">
                   <!-- FIXME needs proper designer love -->
-                  <div class="avatar-unit" style="margin-bottom:1em">
+                  <div class="avatar-unit">
                     <span class="avatar"><i class="fa fa-university"></i></span>
                     <h3><%= t[:name] %></h3>
                     <p>
@@ -73,7 +73,10 @@
                         <%= t[:start_date] %> - <%= t[:end_date] %>
                       <% end %>
                     </p>
-                    <p>
+                  </div>
+                  <div class="avatar-unit">
+                    <!-- horrid use of avatar-unit to line up with the one above -->
+                    <div class="button-group">
                       <a class="button button--quarternary"
                         href="<%= term_table_url(@country, house, t) %>">
                         <i class="fa fa-university"></i>
@@ -84,7 +87,7 @@
                         <i class="fa fa-download"></i>
                         <span class="large-screen-only">Download</span> CSV
                       </a>
-                    </p>
+                    </div>
                   </div>
                 </li>
               <% end %>
