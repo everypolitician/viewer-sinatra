@@ -24,7 +24,11 @@
             </p>
             <p>
               <!-- note: house[:popolo_url] now available? -->
-              <a href="https://cdn.rawgit.com/everypolitician/everypolitician-data/<%= house[:sha] %>/<%= house[:popolo] %>">Download JSON</a>
+              <a class="button button--small button--download"
+                href="https://cdn.rawgit.com/everypolitician/everypolitician-data/<%= house[:sha] %>/<%= house[:popolo] %>">
+                <i class="fa fa-download"></i>
+                <span class="large-screen-only">Download as</span> JSON
+              </a>
             </p>
             <p>
               Read more about 
@@ -41,7 +45,11 @@
               the data, use the JSON above.
             </p>
             <p>
-              <a href="https://cdn.rawgit.com/everypolitician/everypolitician-data/<%= house[:sha] %>/<%= house[:names] %>">Download names.csv</a>
+              <a class="button button--small button--download"
+                href="https://cdn.rawgit.com/everypolitician/everypolitician-data/<%= house[:sha] %>/<%= house[:names] %>">
+                <i class="fa fa-download"></i>
+                <span class="large-screen-only">Download</span> names.csv
+              </a>
             </p>
           </div>
           <div class="second-column">
@@ -61,9 +69,16 @@
                     <%= t[:start_date] %> - <%= t[:end_date] %>
                   <% end %>
                   <br>
-                  <a href="<%= term_table_url(@country, house, t) %>">View summary</a>
-                  |
-                  <a href="<%= t[:csv_url] %>">Download CSV</a>
+                  <a class="button button--small button--quarternary"
+                    href="<%= term_table_url(@country, house, t) %>">
+                    <i class="fa fa-university"></i>
+                    <span class="large-screen-only">View</span> Summary
+                  </a>
+                  <a class="button button--small button--download"
+                    href="<%= t[:csv_url] %>">
+                    <i class="fa fa-download"></i>
+                    <span class="large-screen-only">Download</span> CSV
+                  </a>
                 </li>
               <% end %>
             </ul>
