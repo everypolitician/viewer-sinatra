@@ -180,6 +180,7 @@ end
 
 get '/:country/download' do |country|
   @country = ALL_COUNTRIES.find { |c| c[:url] == country } || halt(404)
+  @cjson = cjson
   erb :country_download
 end
 

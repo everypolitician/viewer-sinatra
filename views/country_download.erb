@@ -97,6 +97,37 @@
       </div>
     <% end %>
 
+    <h3>Other countries</h3>
+    <div class="layout-equal-columns">
+      <div class="first-column">
+        <p>
+          Want politicians who aren’t from <%= @country[:name] %>?
+          No problem: we’ve got the world covered.
+        </p>
+        <p>
+          <a class="button button--quarternary" href="/countries.html">
+            <i class="fa fa-globe"></i>
+            <span class="large-screen-only">View</span> all countries
+          </a>
+        </p>
+      </div>
+      <div class="second-column">
+        <p>
+          The file <code>countries.json</code> is the machine-readable index of
+          all the countries (and their legislatures) we’ve got data for. This
+          is especially useful if you’re interested in coding a way to
+          automatically
+          <a href="http://docs.everypolitician.org/repo_structure.html">read our data</a>.
+        </p>
+        <p>
+          <a href="<%= @cjson %>" class="button button--download">
+            <i class="fa fa-download"></i>
+            <span class="large-screen-only">Download</span> countries.json
+          </a>
+        </p>
+      </div>
+    </div>
+
   </div>
 </div>
 
