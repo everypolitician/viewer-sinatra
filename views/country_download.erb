@@ -31,7 +31,7 @@
               start and end dates of memberships, and related links.
             </p>
             <p>
-              <a class="button button--small button--download"
+              <a class="button button--download"
                 href="<%= house[:popolo_url] %>">
                 <i class="fa fa-download"></i>
                 <span class="large-screen-only">Download as</span> JSON
@@ -46,7 +46,7 @@
               the data, use the JSON above.
             </p>
             <p>
-              <a class="button button--small button--download"
+              <a class="button button--download"
                 href="https://cdn.rawgit.com/everypolitician/everypolitician-data/<%= house[:sha] %>/<%= house[:names] %>">
                 <i class="fa fa-download"></i>
                 <span class="large-screen-only">Download</span> names.csv
@@ -74,12 +74,12 @@
                       <% end %>
                     </p>
                     <p>
-                      <a class="button button--small button--quarternary"
+                      <a class="button button--quarternary"
                         href="<%= term_table_url(@country, house, t) %>">
                         <i class="fa fa-university"></i>
                         <span class="large-screen-only">View</span> Summary
                       </a>
-                      <a class="button button--small button--download"
+                      <a class="button button--download"
                         href="<%= t[:csv_url] %>">
                         <i class="fa fa-download"></i>
                         <span class="large-screen-only">Download</span> CSV
