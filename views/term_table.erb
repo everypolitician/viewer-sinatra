@@ -116,18 +116,11 @@
                 </span>
 
                 <div class="download-options">
-                    <label class="houdini-label button button--tertiary" for="download-options">Download</label>
-                    <input class="houdini-input" type="checkbox" id="download-options">
-                    <div class="houdini-target download-options__dropdown">
-                        <a href="<%= @urls[:csv] %>">
-                            <h3>Download as CSV</h3>
-                            <p>Core data on these politicians, perfect for quick analysis</p>
-                        </a>
-                        <a href="<%= @urls[:json] %>">
-                            <h3>Download as JSON</h3>
-                            <p>All the data we hold on this legislature (including historic)</p>
-                        </a>
-                    </div>
+                  <!-- download link as button? -->
+                  <a class="button button--small button--download" href="../../download">
+                    <i class="fa fa-download"></i>
+                    <span class="large-screen-only">Download data</span>
+                  </a>
                 </div>
             </div>
 

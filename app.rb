@@ -178,6 +178,11 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
   erb :term_table
 end
 
+get '/:country/download' do |country|
+  @country = ALL_COUNTRIES.find { |c| c[:url] == country } || halt(404)
+  erb :country_download
+end
+
 get '/status/all_countries.html' do
   @world = WORLD.to_a
   erb :all_countries
