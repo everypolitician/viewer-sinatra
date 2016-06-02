@@ -12,33 +12,65 @@
         <div class="country__legislature__header">
           <h3><%= house[:name] %></h3>
         </div>
-
-        <ul>
-            Full legislature
-            <br>
-            <!-- note: house[:popolo_url] now available? -->
-            <a href="https://cdn.rawgit.com/everypolitician/everypolitician-data/<%= house[:sha] %>/<%= house[:popolo] %>">JSON</a>
-            |
-            <a href="https://cdn.rawgit.com/everypolitician/everypolitician-data/<%= house[:sha] %>/<%= house[:names] %>">names</a>
-        </ul>
-
-        <ul id="terms-<%= house[:slug].downcase %>">
-          <% house[:legislative_periods].each do |t| %>
-            <li id="term-<%= house[:slug].downcase %>-<%= t[:slug].downcase %>">
-              <%= t[:name] %>
-              <% unless t[:start_date].to_s.empty? and t[:end_date].to_s.empty? %>
-                <%= t[:start_date] %> - <%= t[:end_date] %>
+        <div class="layout-equal-columns">
+          <div class="first-column">
+            <h4>Data for the whole legislature</h4>
+            <p>
+              <em>All</em> the data we have for this legislature is available
+              in a single JSON file (using the Popolo open standard).
+              This includes all the terms <!-- FIXME: if there are multiple terms -->
+              and rich data — for example, multilingual versions of names,
+              start and end dates of memberships, and related links.
+            </p>
+            <p>
+              <!-- note: house[:popolo_url] now available? -->
+              <a href="https://cdn.rawgit.com/everypolitician/everypolitician-data/<%= house[:sha] %>/<%= house[:popolo] %>">Download JSON</a>
+            </p>
+            <p>
+              Read more about 
+              <a href="http://docs.everypolitician.org/data_summary.html">what’s in the data</a>
+              and how we use
+              <a href="http://docs.everypolitician.org/technical.html">CSV and JSON formats</a>.
+            </p>
+            <h4>Just politicians’ names</h4>
+            <p>
+              We’ve also separated just the names into a CSV file. Note there
+              may be multiple names for a single politician (for example, this
+              data includes transliterations). We include the identifier too so
+              you can identify duplicates if you need to. For more control over
+              the data, use the JSON above.
+            </p>
+            <p>
+              <a href="https://cdn.rawgit.com/everypolitician/everypolitician-data/<%= house[:sha] %>/<%= house[:names] %>">Download names.csv</a>
+            </p>
+          </div>
+          <div class="second-column">
+            <h4>Data for specific terms</h4>
+            <p>
+              CSV files for individual terms have <em>simplified</em> data for each
+              member. This might be all you need if you’re looking for the core
+              data on these politicians; great for spreadsheets, perfect for
+              quick analysis. Read more about 
+              <a href="http://docs.everypolitician.org/data_summary.html">what’s in the data</a>.
+            </p>
+            <ul id="terms-<%= house[:slug].downcase %>">
+              <% house[:legislative_periods].each do |t| %>
+                <li id="term-<%= house[:slug].downcase %>-<%= t[:slug].downcase %>">
+                  <%= t[:name] %>
+                  <% unless t[:start_date].to_s.empty? and t[:end_date].to_s.empty? %>
+                    <%= t[:start_date] %> - <%= t[:end_date] %>
+                  <% end %>
+                  <br>
+                  <a href="<%= term_table_url(@country, house, t) %>">View summary</a>
+                  |
+                  <a href="<%= t[:csv_url] %>">Download CSV</a>
+                </li>
               <% end %>
-              <br>
-              <a href="<%= term_table_url(@country, house, t) %>">page</a>
-              |
-              <a href="<%= t[:csv_url] %>">CSV</a>
-            </li>
-          <% end %>
-        </ul>
+            </ul>
+          </div>
+        </div>
       </div>
     <% end %>
-
 
   </div>
 </div>
