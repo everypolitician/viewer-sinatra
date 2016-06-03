@@ -3,11 +3,9 @@
     <h3>Download data for politicians in <%= @country[:name] %>.</h3>
   </div>
 </div>
-
-<div class="page-section">
-  <div class="container">
-
-    <% @country[:legislatures].each do |house| %>
+<% @country[:legislatures].each do |house| %>
+  <div class="page-section">
+    <div class="container">
       <div class="country__legislature" id="legislature-<%= house[:slug].downcase %>">
         <div class="country__legislature__header">
           <h3><%= house[:name] %></h3>
@@ -37,6 +35,8 @@
                 <span class="large-screen-only">Download as</span> JSON
               </a>
             </p>
+          </div>
+          <div class="second-column">
             <h4>Just politicians’ names</h4>
             <p>
               We’ve also separated just the names into a CSV file. Note there
@@ -53,50 +53,51 @@
               </a>
             </p>
           </div>
-          <div class="second-column">
-            <h4>Data for specific terms</h4>
-            <p>
-              CSV files for individual terms have <em>simplified</em> data for each
-              member. This might be all you need if you’re looking for the core
-              data on these politicians; great for spreadsheets, perfect for
-              quick analysis.
-            </p>
-            <ul class="unstyled-list" id="terms-<%= house[:slug].downcase %>">
-              <% house[:legislative_periods].each do |t| %>
-                <li id="term-<%= house[:slug].downcase %>-<%= t[:slug].downcase %>" style="margin-bottom:1.5em">
-                  <!-- FIXME needs proper designer love -->
-                  <div class="avatar-unit">
-                    <span class="avatar"><i class="fa fa-university"></i></span>
-                    <h3><%= t[:name] %></h3>
-                    <p>
-                      <% unless t[:start_date].to_s.empty? and t[:end_date].to_s.empty? %>
-                        <%= t[:start_date] %> - <%= t[:end_date] %>
-                      <% end %>
-                    </p>
-                  </div>
-                  <div class="avatar-unit">
-                    <!-- horrid use of avatar-unit to line up with the one above -->
-                    <div class="button-group">
-                      <a class="button button--quarternary"
-                        href="<%= term_table_url(@country, house, t) %>">
-                        <i class="fa fa-university"></i>
-                        <span class="large-screen-only">View</span> Summary
-                      </a>
-                      <a class="button button--download"
-                        href="<%= t[:csv_url] %>">
-                        <i class="fa fa-download"></i>
-                        <span class="large-screen-only">Download</span> CSV
-                      </a>
-                    </div>
-                  </div>
-                </li>
-              <% end %>
-            </ul>
-          </div>
         </div>
       </div>
-    <% end %>
-
+      <h4>Data for specific terms</h4>
+      <p>
+        CSV files for individual terms have <em>simplified</em> data for each
+        member. This might be all you need if you’re looking for the core
+        data on these politicians; great for spreadsheets, perfect for
+        quick analysis.
+      </p>
+      <ul class="grid-list grid-list--vertically-center" id="terms-<%= house[:slug].downcase %>">
+        <% house[:legislative_periods].each do |t| %>
+          <li id="term-<%= house[:slug].downcase %>-<%= t[:slug].downcase %>" style="margin-bottom:1.5em">
+            <!-- FIXME needs proper designer love -->
+            <div class="avatar-unit">
+              <span class="avatar"><i class="fa fa-university"></i></span>
+              <h3><%= t[:name] %></h3>
+              <p>
+                <% unless t[:start_date].to_s.empty? and t[:end_date].to_s.empty? %>
+                  <%= t[:start_date] %> - <%= t[:end_date] %>
+                <% end %>
+              </p>
+            </div>
+            <div class="avatar-unit">
+              <!-- horrid use of avatar-unit to line up with the one above -->
+              <div class="button-group">
+                <a class="button button--small button--quarternary"
+                  href="<%= term_table_url(@country, house, t) %>">
+                  <i class="fa fa-university"></i>
+                  <span class="large-screen-only">View</span> Summary
+                </a>
+                <a class="button button--small button--download"
+                  href="<%= t[:csv_url] %>">
+                  <i class="fa fa-download"></i>
+                  <span class="large-screen-only">Download</span> CSV
+                </a>
+              </div>
+            </div>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+<% end %>
+<div class="page-section">
+  <div class="container">
     <h3>Other countries</h3>
     <div class="layout-equal-columns">
       <div class="first-column">
@@ -127,7 +128,6 @@
         </p>
       </div>
     </div>
-
   </div>
 </div>
 
