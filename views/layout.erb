@@ -47,7 +47,7 @@
       ga('send', 'pageview');
     </script>
 </head>
-<body>
+<body class="dark-theme">
     <div id="wrapper">
 
         <header class="site-header">
@@ -81,21 +81,70 @@
             <%= yield %>
         </div>
 
-        <footer class="site-footer ms-footer">
-            <div class="container">
-                <div class="column-five-twelfths">
-                    <div class="footer__about">
-                        <h2 class="ms-footer__logo"><a href="http://www.mysociety.org">mySociety</a></h2>
-                        <p>EveryPolitician is another democracy-boosting project from mySociety and Poplus.</p>
-                        <p>You might also enjoy <a href="http://mapit.poplus.org/">MapIt</a>, for matching geographic points to administrative areas, and <a href="http://sayit.poplus.org/">SayIt</a>, a beautiful interface for organising, reading, and searching speeches and debates.</p>
-                    </div>
-                </div>
-                <div class="column-seven-twelfths">
+        <div class="mysoc-footer" role="contentinfo">
+    <div class="container">
+        <div class="row">
+
+            <div class="column-five-twelfths">
+                <h2 class="mysoc-footer__site-name">EveryPolitician</h2>
+                <div class="mysoc-footer__site-description">
+                    <p>A simple but ambitious project to collect and share data about every politician in every country in the world, in a consistent, open format that anyone can use.</p>
                 </div>
             </div>
-        </footer>
+
+            <div class="column-one-third">
+                <nav class="mysoc-footer__links">
+                    <ul>
+                        <li role="presentation"><a href="http://docs.everypolitician.org/sources.html">Data sources</a></li>
+                        <li role="presentation"><a href="http://docs.everypolitician.org/contribute.html">Contribute</a></li>
+                        <li role="presentation"><a href="http://docs.everypolitician.org/use_the_data.html">How to use the data</a></li>
+                    </ul>
+                    <ul>
+                        <li role="presentation"><a href="http://docs.everypolitician.org/bot.html">EveryPolitician bot</a></li>
+                        <li role="presentation"><a href="http://everypolitician.org/countries.html">Countries</a></li>
+                        <li role="presentation"><a href="http://everypolitician.org/needed.html">Data we need</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="column-one-quarter">
+                <div class="mysoc-footer__donate">
+                    <p>Your donations keep this site and others like it running</p>
+                    <a href="https://www.mysociety.org/donate" class="mysoc-footer__donate__button">Donate now</a>
+                </div>
+            </div>
+
+        </div>
+        <hr class="mysoc-footer__divider" role="presentation">
+        <div class="row">
+
+            <div class="column-five-twelfths">
+                <div class="mysoc-footer__orgs">
+                    <p class="mysoc-footer__org">
+                        Built by
+                        <a href="https://www.mysociety.org" class="mysoc-footer__org__logo mysoc-footer__org__logo--mysociety">mySociety</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="column-one-third">
+                <div class="mysoc-footer__legal">
+                    <p>mySociety Limited is a project of UK Citizens Online Democracy, a registered charity in England and Wales. For full details visit <a href="https://www.mysociety.org">mysociety.org</a>.</p>
+                </div>
+            </div>
+
+            <div class="column-one-quarter">
+                <ul class="mysoc-footer__badges">
+                    <li role="presentation"><a href="https://github.com/everypolitician" class="mysoc-footer__badge mysoc-footer__badge--github">Github</a></li>
+                    <li role="presentation"><a href="https://twitter.com/mysociety" class="mysoc-footer__badge mysoc-footer__badge--twitter">Twitter</a></li>
+                    <li role="presentation"><a href="https://www.facebook.com/mySociety" class="mysoc-footer__badge mysoc-footer__badge--facebook">Facebook</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
 
     </div>
   </body>
 </html>
-
