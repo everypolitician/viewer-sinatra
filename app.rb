@@ -22,6 +22,21 @@ end
 wjson = File.read('world.json')
 WORLD = JSON.parse(wjson, symbolize_names: true)
 
+# Can't do server-side redirection on a GitHub Pages-hosted static site, so the 
+# kindest next-best-thing is to have a placeholder with meta HTTP-refresh.
+def redirect_page(page_title)
+  filename = request.path_info.sub("/", "")
+  if filename == 'about.html'
+    filename = "" # about.html maps to the root (/) on docs.
+  end
+  @head_tags = [
+    %(<meta http-equiv="refresh" content="0; url=http://docs.everypolitician.org/#{filename}">),
+    %(<link rel="canonical" href="http://docs.everypolitician.org/#{filename}"/>)
+  ].join("\n\t")
+  @page_title = page_title
+  erb :redirect
+end
+
 set :erb, trim: '-'
 
 get '/' do
@@ -209,6 +224,43 @@ end
 
 get '/404.html' do
   erb :fourohfour
+end
+
+# Old doc pages are now at docs.everypolitician.org: redirect to them
+get '/about.html' do
+  redirect_page("About") # note: about.html -> docs subdomain root (/)
+end
+
+get '/contribute.html' do
+  redirect_page("How to contribute")
+end
+
+get '/data_structure.html' do
+  redirect_page("About EveryPolitician’s data")
+end
+
+get '/data_summary.html' do
+  redirect_page("What’s in EveryPolitician’s data?")
+end
+
+get '/repo_structure.html' do
+  redirect_page("Getting the most recent data")
+end
+
+get '/scrapers.html' do
+  redirect_page("About writing scrapers")
+end
+
+get '/submitting.html' do
+  redirect_page("How we import data")
+end
+
+get '/technical.html' do
+  redirect_page("Technical overview")
+end
+
+get '/use_the_data.html' do
+  redirect_page("Use EveryPolitician data")
 end
 
 not_found do
