@@ -26,7 +26,11 @@ DOCS_URL = 'http://docs.everypolitician.org'
 
 # Can't do server-side redirection on a GitHub Pages-hosted static site, so the 
 # kindest next-best-thing is to have a placeholder with meta HTTP-refresh.
-def redirect_page(url, page_title)
+# This works for humans (i.e., browsers parse and follow the redirect) but,
+# because wget simply fetches the HTML document, this lets us continue to 
+# spider the site to generate the contents of everypolitician/viewer-static.
+# See scripts/release.sh (update_viewer_static).
+def soft_redirect(url, page_title)
   @head_tags = [
     %(<meta http-equiv="refresh" content="0; url=#{url}">),
     %(<link rel="canonical" href="#{url}"/>)
@@ -227,39 +231,39 @@ end
 # Old doc pages are now at docs.everypolitician.org: redirect to them
 get '/about.html' do
   # note: about.html -> docs subdomain root (/)
-  redirect_page(DOCS_URL + "/", "About")
+  soft_redirect(DOCS_URL + "/", "About")
 end
 
 get '/contribute.html' do
-  redirect_page(DOCS_URL + request.path_info, "How to contribute")
+  soft_redirect(DOCS_URL + request.path_info, "How to contribute")
 end
 
 get '/data_structure.html' do
-  redirect_page(DOCS_URL + request.path_info, "About EveryPolitician’s data")
+  soft_redirect(DOCS_URL + request.path_info, "About EveryPolitician’s data")
 end
 
 get '/data_summary.html' do
-  redirect_page(DOCS_URL + request.path_info, "What’s in EveryPolitician’s data?")
+  soft_redirect(DOCS_URL + request.path_info, "What’s in EveryPolitician’s data?")
 end
 
 get '/repo_structure.html' do
-  redirect_page(DOCS_URL + request.path_info, "Getting the most recent data")
+  soft_redirect(DOCS_URL + request.path_info, "Getting the most recent data")
 end
 
 get '/scrapers.html' do
-  redirect_page(DOCS_URL + request.path_info, "About writing scrapers")
+  soft_redirect(DOCS_URL + request.path_info, "About writing scrapers")
 end
 
 get '/submitting.html' do
-  redirect_page(DOCS_URL + request.path_info, "How we import data")
+  soft_redirect(DOCS_URL + request.path_info, "How we import data")
 end
 
 get '/technical.html' do
-  redirect_page(DOCS_URL + request.path_info, "Technical overview")
+  soft_redirect(DOCS_URL + request.path_info, "Technical overview")
 end
 
 get '/use_the_data.html' do
-  redirect_page(DOCS_URL + request.path_info, "Use EveryPolitician data")
+  soft_redirect(DOCS_URL + request.path_info, "Use EveryPolitician data")
 end
 
 not_found do
