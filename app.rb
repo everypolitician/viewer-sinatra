@@ -22,16 +22,14 @@ end
 wjson = File.read('world.json')
 WORLD = JSON.parse(wjson, symbolize_names: true)
 
+DOCS_URL = 'http://docs.everypolitician.org'
+
 # Can't do server-side redirection on a GitHub Pages-hosted static site, so the 
 # kindest next-best-thing is to have a placeholder with meta HTTP-refresh.
-def redirect_page(page_title)
-  filename = request.path_info.sub("/", "")
-  if filename == 'about.html'
-    filename = "" # about.html maps to the root (/) on docs.
-  end
+def redirect_page(url, page_title)
   @head_tags = [
-    %(<meta http-equiv="refresh" content="0; url=http://docs.everypolitician.org/#{filename}">),
-    %(<link rel="canonical" href="http://docs.everypolitician.org/#{filename}"/>)
+    %(<meta http-equiv="refresh" content="0; url=#{url}">),
+    %(<link rel="canonical" href="#{url}"/>)
   ].join("\n\t")
   @page_title = page_title
   erb :redirect
@@ -228,39 +226,40 @@ end
 
 # Old doc pages are now at docs.everypolitician.org: redirect to them
 get '/about.html' do
-  redirect_page("About") # note: about.html -> docs subdomain root (/)
+  # note: about.html -> docs subdomain root (/)
+  redirect_page(DOCS_URL + "/", "About")
 end
 
 get '/contribute.html' do
-  redirect_page("How to contribute")
+  redirect_page(DOCS_URL + request.path_info, "How to contribute")
 end
 
 get '/data_structure.html' do
-  redirect_page("About EveryPolitician’s data")
+  redirect_page(DOCS_URL + request.path_info, "About EveryPolitician’s data")
 end
 
 get '/data_summary.html' do
-  redirect_page("What’s in EveryPolitician’s data?")
+  redirect_page(DOCS_URL + request.path_info, "What’s in EveryPolitician’s data?")
 end
 
 get '/repo_structure.html' do
-  redirect_page("Getting the most recent data")
+  redirect_page(DOCS_URL + request.path_info, "Getting the most recent data")
 end
 
 get '/scrapers.html' do
-  redirect_page("About writing scrapers")
+  redirect_page(DOCS_URL + request.path_info, "About writing scrapers")
 end
 
 get '/submitting.html' do
-  redirect_page("How we import data")
+  redirect_page(DOCS_URL + request.path_info, "How we import data")
 end
 
 get '/technical.html' do
-  redirect_page("Technical overview")
+  redirect_page(DOCS_URL + request.path_info, "Technical overview")
 end
 
 get '/use_the_data.html' do
-  redirect_page("Use EveryPolitician data")
+  redirect_page(DOCS_URL + request.path_info, "Use EveryPolitician data")
 end
 
 not_found do
