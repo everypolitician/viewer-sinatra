@@ -178,7 +178,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
   erb :term_table
 end
 
-get '/:country/download' do |country|
+get '/:country/download.html' do |country|
   @country = ALL_COUNTRIES.find { |c| c[:url] == country } || halt(404)
   @cjson = cjson
   erb :country_download
