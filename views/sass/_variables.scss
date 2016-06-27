@@ -37,4 +37,25 @@ $medium_screen_max: $large_screen - (1em * (1px / $size_font-base));
 
 $animation-short: 0.2s ease-out;
 
+$mysoc-footer-breakpoint-sm: $medium_screen;
+
+// Giving the footer a dark theme is going to require us to override
+// pretty much all of the default colour variables.
+$mysoc-footer-background-color: #333;
+$mysoc-footer-text-color: #acacac;
+$mysoc-footer-site-name-text-color: #fff;
+
+$mysoc-footer-link-text-color: #fff;
+$mysoc-footer-link-hover-text-color: #fff;
+
+$mysoc-footer-divider-color: #4b4b4b;
+
+$mysoc-footer-donate-background-color: #434343;
+$mysoc-footer-donate-text-color: #fff;
+$mysoc-footer-donate-button-background-color: $colour_red;
+
+$mysoc-footer-legal-text-color: #9a9a9a;
+
+$mysoc-footer-image-path: '../../images/mysoc-footer-dark/';
+
 
