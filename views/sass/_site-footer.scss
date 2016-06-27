@@ -1,38 +1,12 @@
-$mysoc-footer-breakpoint-sm: $medium_screen;
-
-.dark-theme {
-  // Giving the footer a dark theme is going to require us to override
-  // pretty much all of the default colour variables.
-  $mysoc-footer-background-color: #333;
-  $mysoc-footer-text-color: #acacac;
-  $mysoc-footer-site-name-text-color: #fff;
-
-  $mysoc-footer-link-text-color: #fff;
-  $mysoc-footer-link-hover-text-color: #fff;
-
-  $mysoc-footer-divider-color: #4b4b4b;
-
-  $mysoc-footer-donate-background-color: #434343;
-  $mysoc-footer-donate-text-color: #fff;
-  $mysoc-footer-donate-button-background-color: $colour_red;
-
-  $mysoc-footer-legal-text-color: #9a9a9a;
-
-  $mysoc-footer-image-path: '../../images/mysoc-footer-dark/';
-
-  @import "ms-footer";
-  
-  .mysoc-footer {
-    // we use the layout here with three sections, rather than two
-    // (our layout code assumes two columns)
-    // so we need to shorten the width by 1.5%
-    .column-one-third {
-      width: 28.8333%;
-    }
+.mysoc-footer {
+// we use the layout here with three sections, rather than two
+// (our layout code assumes two columns)
+// so we need to shorten the width by 1.5%
+  .column-one-third {
+    width: 28.8333%;
   }
+}
 
-
-  .mysoc-footer__links {
-    font-size: 0.8888889em;
-  }
+.mysoc-footer__links {
+  font-size: 0.8888889em;
 }
