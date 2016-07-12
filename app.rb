@@ -94,7 +94,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
   (@next_term, @term, @prev_term) = [nil, @terms, nil]
     .flatten.each_cons(3)
     .find { |_p, e, _n| e[:slug] == termid }
-  @page_title = "EveryPolitician: #{@country[:name]} — #{@house[:name]} - #{@term[:name]}"
+  @page_title = "EveryPolitician: #{@house[:name]} - #{@term[:name]}"
 
   last_sha = @house[:sha]
 
@@ -131,9 +131,18 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
                                .take(3)
 
   @people = people.sort_by(&:sort_name).map do |person|
+
+    honorific_prefix = person.respond_to?(:honorific_prefix) ?
+                        person.honorific_prefix :
+                        ""
+    honorific_suffix = person.respond_to?(:honorific_suffix) ?
+                        person.honorific_suffix :
+                        ""
     p = {
       id: person.id,
       name: person.name,
+      honorific_prefix: honorific_prefix,
+      honorific_suffix: honorific_suffix,
       image: person.image,
       proxy_image: image_proxy_url(person.id),
       memberships: membership_lookup[person.id].map do |mem|
