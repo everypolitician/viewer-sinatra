@@ -385,49 +385,59 @@ $(function(){
 
           $(this).data('chart', chart);
       }
+  });
+  
+  $("a.download-with-term").on("click", function(e){
+      var term = $(e.target).data("term");
+      var house = $(e.target).data("house");
+      if (term && house) {
+          $(e.target)
+            .attr('href', $(e.target).attr('href')
+            .replace('#', "?" + $.param({term: term, house: house}) + "#"));
+      }
+  });
+
+  // Google Events Tracking
+
+  // Tracks interaction with filter field
+  // http://stackoverflow.com/questions/4220126/run-javascript-function-when-user-finishes-typing-instead-of-on-key-up
+  // Run javascript function when user finishes typing instead of on key up?
+  // setup before functions
+  //
+  var typingTimer;                //timer identifier
+  var doneTypingInterval = 2000;  //time in ms, 2 seconds
+  var $input = $('[data-ga-track-change]');
+
+  //on keyup, start the countdown
+  $input.on('keyup', function() {
+    clearTimeout(typingTimer);
+    if (this.value.length > 0)
+      typingTimer = setTimeout(doneTyping, doneTypingInterval);
+  });
+
+  //on keydown, clear the countdown
+  $input.on('keydown', function() {
+    clearTimeout(typingTimer);
+  });
+
+  function doneTyping() {
+    ga('send', 'event', $(this).attr('data-ga-track-change'), 'user input', document.title);
+  }
+
+  $('[data-ga-track-click]').on('click', function(event){
+      var that = this;
+      event.preventDefault();
+      analytics.trackEvent({
+          eventCategory: $(this).attr('data-ga-track-click'),
+          eventAction: event.type
+      })
+      .done(function(){
+          var link = $(that).attr('href');
+          if (link) window.location.href = link;
+      });
   })
 
-// Google Events Tracking
-
-// Tracks interaction with filter field
-// http://stackoverflow.com/questions/4220126/run-javascript-function-when-user-finishes-typing-instead-of-on-key-up
-// Run javascript function when user finishes typing instead of on key up?
-// setup before functions
-//
-var typingTimer;                //timer identifier
-var doneTypingInterval = 2000;  //time in ms, 2 seconds
-var $input = $('[data-ga-track-change]');
-
-//on keyup, start the countdown
-$input.on('keyup', function() {
-  clearTimeout(typingTimer);
-  if (this.value.length > 0)
-    typingTimer = setTimeout(doneTyping, doneTypingInterval);
-});
-
-//on keydown, clear the countdown
-$input.on('keydown', function() {
-  clearTimeout(typingTimer);
-});
-
-function doneTyping() {
-  ga('send', 'event', $(this).attr('data-ga-track-change'), 'user input', document.title);
-}
-
-$('[data-ga-track-click]').on('click', function(event){
-    var that = this;
-    event.preventDefault();
-    analytics.trackEvent({
-        eventCategory: $(this).attr('data-ga-track-click'),
-        eventAction: event.type
-    })
-    .done(function(){
-        var link = $(that).attr('href');
-        if (link) window.location.href = link;
-    });
-})
-
-analytics = {
+  analytics = {
 
     trackEvents: function(listOfEvents){
         // Takes a list of arguments suitable for trackEvent.
