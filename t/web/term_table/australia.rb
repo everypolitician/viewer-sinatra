@@ -44,6 +44,10 @@ describe 'Per Country Tests: Australia' do
     it 'should list the correct source' do
       subject.css('.source-credits').text.must_include 'openaustralia'
     end
+
+    it 'should list honorific prefix in Tony Abbot bio card' do
+      subject.css('div.person-card[id=mem-93e2e4cc-f5ce-4bea-be68-2fc86c38a9bc]').text.must_include 'The Honourable'
+    end
   end
 
   describe 'Senate' do
