@@ -9,10 +9,10 @@ GIT
 
 GIT
   remote: https://github.com/everypolitician/everypolitician-popolo
-  revision: 5aeb13b330983b4ad7882a3130d26acafe859945
+  revision: 2d52e945f2bc1a57731f24d1abaa3cbec29c26d1
   branch: master
   specs:
-    everypolitician-popolo (0.2.0)
+    everypolitician-popolo (0.4.0)
 
 GEM
   remote: https://rubygems.org/
@@ -70,5 +70,8 @@ DEPENDENCIES
   sinatra!
   yajl-ruby
 
+RUBY VERSION
+   ruby 2.0.0p648
+
 BUNDLED WITH
-   1.11.2
+   1.12.5
