@@ -94,7 +94,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
   (@next_term, @term, @prev_term) = [nil, @terms, nil]
     .flatten.each_cons(3)
     .find { |_p, e, _n| e[:slug] == termid }
-  @page_title = "EveryPolitician: #{@house[:name]} - #{@term[:name]}"
+  @page_title = "EveryPolitician: #{@country[:name]} — #{@house[:name]} - #{@term[:name]}"
 
   last_sha = @house[:sha]
 
