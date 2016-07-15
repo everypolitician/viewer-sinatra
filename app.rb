@@ -94,7 +94,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
   (@next_term, @term, @prev_term) = [nil, @terms, nil]
     .flatten.each_cons(3)
     .find { |_p, e, _n| e[:slug] == termid }
-  @page_title = "EveryPolitician: #{@country[:name]} — #{@house[:name]} - #{@term[:name]}"
+  @page_title = "EveryPolitician: #{@country[:name]} — #{@house[:name]} - #{@term[:name]}"
 
   last_sha = @house[:sha]
 
@@ -131,6 +131,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
                                .take(3)
 
   @people = people.sort_by(&:sort_name).map do |person|
+
     p = {
       id: person.id,
       name: person.name,
@@ -161,6 +162,8 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
     p[:bio] << { type: 'Gender', value: person.gender } if person.gender
     p[:bio] << { type: 'Born', value: person.birth_date } if person.birth_date
     p[:bio] << { type: 'Died', value: person.death_date } if person.death_date
+    p[:bio] << { type: 'Prefix', value: person.honorific_prefix } if person.honorific_prefix
+    p[:bio] << { type: 'Suffix', value: person.honorific_suffix } if person.honorific_suffix
     p[:contacts] << { type: 'Email', value: person.email, link: "mailto:#{person.email}" } if person.email
     p[:contacts] << { type: 'Phone', value: person.phone } if person.phone
     p[:contacts] << { type: 'Fax', value: person.fax } if person.fax
