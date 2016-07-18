@@ -388,12 +388,16 @@ $(function(){
   });
   
   $("a.download-with-term").on("click", function(e){
-      var term = $(e.target).data("term");
-      var house = $(e.target).data("house");
-      if (term && house) {
-          $(e.target)
-            .attr('href', $(e.target).attr('href')
-            .replace('#', "?" + $.param({term: term, house: house}) + "#"));
+      var href = $(e.target).attr('href');
+      // don't add query vars if they are any in the href already
+      // which sometimes happens in browser after page-back
+      if (href.indexOf('?') === -1) {
+          var term = $(e.target).data("term");
+          var house = $(e.target).data("house");
+          if (term && house) {
+              $(e.target)
+              .attr('href', href.replace('#', "?" + $.param({term: term, house: house}) + "#"));
+          }
       }
   });
 
