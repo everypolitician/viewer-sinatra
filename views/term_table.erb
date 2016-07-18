@@ -12,14 +12,14 @@
         <div class="container">
             <div class="term-navigation">
               <% if @prev_term %>
-                <a href="<%= term_table_url(@country, @house, @prev_term) %>" class="term-navigation__prev">
+                <a href="<%= term_table_url(@country, @house, @prev_term) %>" class="term-navigation__prev" id="term-navigation__prev">
                     <i class="fa fa-arrow-left"></i>
                     Earlier
                 </a>
               <% end %>
 
               <span class="term-navigation__jump">Jump to:
-                  <select class="js-navigation-menu">
+                  <select class="js-navigation-menu" id="term-navigation__menu">
                     <% @terms.each do |t| %>
                       <option value="<%= term_table_url(@country, @house, t) %>" <% if t[:name] == @term[:name] %>selected<% end %>>
                         <%= t[:name] %>
@@ -32,7 +32,7 @@
               </span>
 
               <% if @next_term %>
-                <a href="<%= term_table_url(@country, @house, @next_term) %>" class="term-navigation__next">
+                <a href="<%= term_table_url(@country, @house, @next_term) %>" class="term-navigation__next" id="term-navigation__next">
                     Later
                     <i class="fa fa-arrow-right"></i>
                 </a>
@@ -70,25 +70,25 @@
             <div class="container">
                 <div class="grid-list grid-list--vertically-center grid-list--narrow-columns">
                     <div class="data-completeness">
-                        <span class="section-toggle section-toggle--selected" data-section-toggle="bio">
+                        <span class="section-toggle section-toggle--selected" data-section-toggle="bio" id="section-toggle-bio">
                             <span class="data-completeness__label">Biographical</span>
                             <span class="data-completeness__percentage"><%= @percentages[:bio] %>%</span>
                         </span>
                     </div>
                     <div class="data-completeness">
-                        <span class="section-toggle" data-section-toggle="social">
+                        <span class="section-toggle" data-section-toggle="social" id="section-toggle-social">
                             <span class="data-completeness__label">Social links</span>
                             <span class="data-completeness__percentage"><%= @percentages[:social] %>%</span>
                         </span>
                     </div>
                     <div class="data-completeness">
-                        <span class="section-toggle" data-section-toggle="contacts">
+                        <span class="section-toggle" data-section-toggle="contacts" id="section-toggle-contacts">
                             <span class="data-completeness__label">Contact details</span>
                             <span class="data-completeness__percentage"><%= @percentages[:contacts] %>%</span>
                         </span>
                     </div>
                     <div class="data-completeness">
-                        <span class="section-toggle" data-section-toggle="identifiers">
+                        <span class="section-toggle" data-section-toggle="identifiers" id="section-toggle-identifiers">
                             <span class="data-completeness__label">Identifiers</span>
                             <span class="data-completeness__percentage"><%= @percentages[:identifiers] %>%</span>
                         </span>
@@ -117,7 +117,7 @@
 
                 <div class="download-options">
                   <!-- download link as button? -->
-                  <a class="button button--quarternary" href="../../download.html">
+                  <a class="button button--quarternary" href="../../download.html" id="term-table-download-button">
                     <i class="fa fa-download"></i>
                     Download <span class="large-screen-only">data</span>
                   </a>
