@@ -149,24 +149,24 @@ var page_init_function = function(){
   $(".country__legislature").each(function(){
     var house_slug = $(this).data('house');
     var $term_list_items = $('#terms-' + house_slug + ' li');
+    var wanted_house_index = 0;
+    var wanted_id = "term-" + house_slug + '-' + wanted_term;
+    // want to use jQuery's .index() but it's not behaving as I expected
+    if (wanted_house && wanted_term &&
+      wanted_house == house_slug
+    ) {
+      $term_list_items.each(function(i){
+        if ($(this).attr('id') == wanted_id) {
+          wanted_house_index = i;
+          $(this).css("background-color", "#fffadd"); // highlight (FIXME?)
+          return false; // break
+        }
+      });
+    }
     if ($term_list_items.size() > max_visible_terms) {
       $term_list_items.addClass("hidden-term");
-      var wanted_house_index = 0;
       // we need to hide some of these terms:
       // find the one we want:
-      var wanted_id = "term-" + house_slug + '-' + wanted_term;
-      // want to use jQuery's .index() but it's not behaving as I expected
-      if (wanted_house && wanted_term &&
-        wanted_house == house_slug
-      ) {
-        $term_list_items.each(function(i){
-          if ($(this).attr('id') == wanted_id) {
-            wanted_house_index = i;
-            $(this).css("background-color", "#fffadd"); // highlight (FIXME?)
-            return false; // break
-          }
-        });
-      }
       // want a slice around wanted_house_index of reduced_visible_terms items
       var max_upper_bound = $term_list_items.length - 1;
       var lower_bound = wanted_house_index - Math.floor(reduced_visible_terms/2);
