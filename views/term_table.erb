@@ -12,14 +12,14 @@
         <div class="container">
             <div class="term-navigation">
               <% if @prev_term %>
-                <a href="<%= term_table_url(@country, @house, @prev_term) %>" class="term-navigation__prev track-event" ga-description="Previous term link">
+                <a href="<%= term_table_url(@country, @house, @prev_term) %>" class="term-navigation__prev" data-ga-track-click="Previous term link">
                     <i class="fa fa-arrow-left"></i>
                     Earlier
                 </a>
               <% end %>
 
               <span class="term-navigation__jump">Jump to:
-                  <select class="js-navigation-menu track-event" ga-description="Navigation menu">
+                  <select class="js-navigation-menu" data-ga-track-click="Navigation menu">
                     <% @terms.each do |t| %>
                       <option value="<%= term_table_url(@country, @house, t) %>" <% if t[:name] == @term[:name] %>selected<% end %>>
                         <%= t[:name] %>
@@ -32,7 +32,7 @@
               </span>
 
               <% if @next_term %>
-                <a href="<%= term_table_url(@country, @house, @next_term) %>" class="term-navigation__next track-event" ga-description="Next term link">
+                <a href="<%= term_table_url(@country, @house, @next_term) %>" class="term-navigation__next" data-ga-track-click="Next term link">
                     Later
                     <i class="fa fa-arrow-right"></i>
                 </a>
@@ -70,25 +70,25 @@
             <div class="container">
                 <div class="grid-list grid-list--vertically-center grid-list--narrow-columns">
                     <div class="data-completeness">
-                        <span class="section-toggle section-toggle--selected track-event" data-section-toggle="bio" ga-description="Selection toggle: bio">
+                        <span class="section-toggle section-toggle--selected" data-section-toggle="bio" data-ga-track-click="Selection toggle: bio">
                             <span class="data-completeness__label">Biographical</span>
                             <span class="data-completeness__percentage"><%= @percentages[:bio] %>%</span>
                         </span>
                     </div>
                     <div class="data-completeness">
-                        <span class="section-toggle track-event" data-section-toggle="social" ga-description="Selection toggle: social">
+                        <span class="section-toggle" data-section-toggle="social" data-ga-track-click="Selection toggle: social">
                             <span class="data-completeness__label">Social links</span>
                             <span class="data-completeness__percentage"><%= @percentages[:social] %>%</span>
                         </span>
                     </div>
                     <div class="data-completeness">
-                        <span class="section-toggle track-event" data-section-toggle="contacts" ga-description="Selection toggle: contacts">
+                        <span class="section-toggle" data-section-toggle="contacts" data-ga-track-click="Selection toggle: contacts">
                             <span class="data-completeness__label">Contact details</span>
                             <span class="data-completeness__percentage"><%= @percentages[:contacts] %>%</span>
                         </span>
                     </div>
                     <div class="data-completeness">
-                        <span class="section-toggle track-event" data-section-toggle="identifiers" ga-description="Selection toggle: identifiers">
+                        <span class="section-toggle" data-section-toggle="identifiers" data-ga-track-click="Selection toggle: identifiers">
                             <span class="data-completeness__label">Identifiers</span>
                             <span class="data-completeness__percentage"><%= @percentages[:identifiers] %>%</span>
                         </span>
@@ -112,12 +112,12 @@
 
                 <span class="person-card-filter">
                     <label for="filter-input" class="fa fa-search"></label>
-                    <input type="text" class="js-filter-input track-event" ga-description="Filter field" placeholder="Search by name, place, etc…">
+                    <input type="text" class="js-filter-input" data-ga-track-click="Filter field" placeholder="Search by name, place, etc…">
                 </span>
 
                 <div class="download-options">
                   <!-- download link as button? -->
-                  <a class="button button--quarternary track-event" href="../../download.html" ga-description="Download button">
+                  <a class="button button--quarternary" href="../../download.html" data-ga-track-click="Download button">
                     <i class="fa fa-download"></i>
                     Download <span class="large-screen-only">data</span>
                   </a>
