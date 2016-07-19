@@ -158,7 +158,7 @@ var page_init_function = function(){
       $term_list_items.each(function(i){
         if ($(this).attr('id') == wanted_id) {
           wanted_house_index = i;
-          $(this).css("background-color", "#fffadd"); // highlight (FIXME?)
+          $(this).addClass("download-terms__highlighted");
           return false; // break
         }
       });
