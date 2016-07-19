@@ -386,19 +386,16 @@ $(function(){
           $(this).data('chart', chart);
       }
   });
-  
+
   $("a.download-with-term").on("click", function(e){
-      var href = $(e.target).attr('href');
-      // don't add query vars if they are any in the href already
-      // which sometimes happens in browser after page-back
-      if (href.indexOf('?') === -1) {
-          var term = $(e.target).data("term");
-          var house = $(e.target).data("house");
-          if (term && house) {
-              $(e.target)
-              .attr('href', href.replace('#', "?" + $.param({term: term, house: house}) + "#"));
-          }
-      }
+    var term = $(e.target).data("term");
+    var house = $(e.target).data("house");
+    if (term && house) {
+        // inject query vars into URL before the target anchor
+        e.preventDefault();
+        location = $(e.target).attr('href')
+          .replace('#', "?" + $.param({term: term, house: house}) + "#");
+    }
   });
 
   // Google Events Tracking
