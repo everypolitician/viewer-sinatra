@@ -12,14 +12,14 @@
         <div class="container">
             <div class="term-navigation">
               <% if @prev_term %>
-                <a href="<%= term_table_url(@country, @house, @prev_term) %>" class="term-navigation__prev">
+                <a href="<%= term_table_url(@country, @house, @prev_term) %>" class="term-navigation__prev" data-ga-track-click="Selection toggle: bio">
                     <i class="fa fa-arrow-left"></i>
                     Earlier
                 </a>
               <% end %>
 
               <span class="term-navigation__jump">Jump to:
-                  <select class="js-navigation-menu">
+                  <select class="js-navigation-menu" data-ga-track-click="Selection toggle: bio">
                     <% @terms.each do |t| %>
                       <option value="<%= term_table_url(@country, @house, t) %>" <% if t[:name] == @term[:name] %>selected<% end %>>
                         <%= t[:name] %>
@@ -32,7 +32,7 @@
               </span>
 
               <% if @next_term %>
-                <a href="<%= term_table_url(@country, @house, @next_term) %>" class="term-navigation__next"">
+                <a href="<%= term_table_url(@country, @house, @next_term) %>" class="term-navigation__next" data-ga-track-click="Selection toggle: bio">
                     Later
                     <i class="fa fa-arrow-right"></i>
                 </a>
@@ -117,7 +117,7 @@
 
                 <div class="download-options">
                   <!-- download link as button? -->
-                  <a class="button button--quarternary" href="../../download.html">
+                  <a class="button button--quarternary" href="../../download.html" data-ga-track-click="Selection toggle: bio">
                     <i class="fa fa-download"></i>
                     Download <span class="large-screen-only">data</span>
                   </a>

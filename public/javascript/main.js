@@ -1,5 +1,4 @@
 (function ($) {
-
   $.fn.fixedThead = function() {
 
     // Call this on a <thead> element and it'll stay attached
@@ -377,4 +376,81 @@ $(function(){
           $(this).data('chart', chart);
       }
   })
+
+// Google Analytics event tracking
+$('[data-ga-track-select]').on('focus',function(event){
+    console.log('Focus!')
+    ga('send', 'event', 'focus', eventDescription, document.title);
+})
+
+$('[data-ga-track-click]').on('click', function(event){
+    event.preventDefault()
+    event.stopPropagation()
+    var href = $(this).attr('href') || false
+
+    eventDescription = eventDescription || 'Undescribed event'
+
+    var deferred = analytics.trackEvent({
+        hitType: 'event',
+        eventCategory: event.type,
+        eventAction: eventDescription,
+        eventLabel: document.title
+    })
+
+    deferred.done(function(){
+        if (href) {
+            window.location.href = href
+        }
+    })
+})
+
+analytics = {
+
+    trackEvents: function(listOfEvents){
+        // Takes a list of arguments suitable for trackEvent.
+        // Returns a jQuery Deferred object.
+        // The deferred object is resolved when
+        // all of the trackEvent calls are resolved.
+        var dfd = $.Deferred();
+        var deferreds = [];
+        var _this = this;
+        $.each(listOfEvents, function(i, params){
+            deferreds.push(_this.trackEvent(params));
+        });
+        $.when.apply($, deferreds).done(function(){
+            dfd.resolve();
+        });
+        return dfd.promise();
+    },
+
+    trackEvent: function(params){
+        // Takes an object of event parameters, eg:
+        // { eventCategory: 'foo', eventAction: 'bar' }
+        // Returns a jQuery Deferred object.
+        // The deferred object is resolved when the GA call
+        // completes or fails to respond within 2 seconds.
+        var dfd = $.Deferred();
+
+        if(!ga.loaded){
+            // GA has not loaded (blocked by adblock?)
+            return dfd.resolve();
+        }
+
+        var defaults = {
+            hitType: 'event',
+            hitCallback: function(){
+                dfd.resolve();
+            }
+        }
+        // ga('send', $.extend(defaults, params));
+
+        // Wait a maximum of 2 seconds for GA response.
+        setTimeout(function(){
+            dfd.resolve();
+        }, 2000);
+
+        return dfd.promise();
+    }
+
+  }
 });
