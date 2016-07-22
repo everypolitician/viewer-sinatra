@@ -1,3 +1,18 @@
+<div class="page-section page-section--green page-section--no-padding">
+    <div class="container text-center">
+        <ul class="house-tabs">
+          <% @country[:legislatures].each do |house| %>
+            <li>
+                <% latest_term = house[:legislative_periods].sort_by{ |term| term[:start_date] }.last %>
+                <a class="house-tab <% if @house == house %>house-tab--active<% end %>" href="<%= term_table_url(@country, house, latest_term) %>">
+                    <%= house[:name] %>
+                </a>
+            </li>
+          <% end %>
+        </ul>
+    </div>
+</div>
+
 <div class="page-section" id="term">
     <div class="container text-center">
         <h1><span class="avatar"><i class="fa fa-university"></i></span> <%= @term[:name] %></h1>

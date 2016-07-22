@@ -498,12 +498,43 @@ p.lead {
 
 // Little round social icons for membership tables
 .person-link {
-  display: inline-block;
-  width: 24px;
-  padding-top: 24px;
-  height: 0;
-  overflow: hidden;
-  vertical-align: middle;
-  border-radius: 100%;
-  margin-right: 0.3em;
+    display: inline-block;
+    width: 24px;
+    padding-top: 24px;
+    height: 0;
+    overflow: hidden;
+    vertical-align: middle;
+    border-radius: 100%;
+    margin-right: 0.3em;
+}
+
+.house-tabs {
+    @extend .unstyled-list;
+    @extend .inline-list;
+    padding-top: 1em;
+
+    @media (min-width: $medium_screen) and (min-height: 600px) {
+        padding-top: 1.5em;
+    }
+}
+
+.house-tab {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 5px 5px 0 0;
+    background-color: mix($colour_green, #fff, 25%);
+    background: linear-gradient(180deg, mix($colour_green, #fff, 20%), 50%, mix($colour_green, #fff, 30%));
+    color: darken($colour_green, 10%) !important;
+
+    &:hover,
+    &:focus {
+        background-color: mix($colour_green, #fff, 15%);
+        background: linear-gradient(180deg, mix($colour_green, #fff, 10%), 50%, mix($colour_green, #fff, 20%));
+    }
+}
+
+.house-tab--active,
+.house-tab--active:hover,
+.house-tab--active:focus {
+    background: #fff;
 }
