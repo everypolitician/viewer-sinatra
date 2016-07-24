@@ -379,16 +379,15 @@ $(function(){
 
 // Google Analytics event tracking
 $('[data-ga-track-select]').on('focus',function(event){
-    console.log('Focus!')
     ga('send', 'event', 'focus', eventDescription, document.title);
 })
 
 $('[data-ga-track-click]').on('click', function(event){
-    event.preventDefault()
-    event.stopPropagation()
-    var href = $(this).attr('href') || false
+    event.preventDefault();
+    event.stopPropagation();
+    var href = $(this).attr('href') || false;
 
-    eventDescription = eventDescription || 'Undescribed event'
+    eventDescription = eventDescription || 'Undescribed event';
 
     var deferred = analytics.trackEvent({
         hitType: 'event',
@@ -399,7 +398,7 @@ $('[data-ga-track-click]').on('click', function(event){
 
     deferred.done(function(){
         if (href) {
-            window.location.href = href
+            window.location.href = href;
         }
     })
 })
@@ -442,7 +441,7 @@ analytics = {
                 dfd.resolve();
             }
         }
-        // ga('send', $.extend(defaults, params));
+        ga('send', $.extend(defaults, params));
 
         // Wait a maximum of 2 seconds for GA response.
         setTimeout(function(){
