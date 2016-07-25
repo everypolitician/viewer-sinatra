@@ -379,7 +379,7 @@ $(function(){
 
 // Google Analytics event tracking
 $('[data-ga-track-select]').on('focus',function(event){
-    ga('send', 'event', 'focus', $(this).attr('data-ga-tack-click'), document.title);
+    ga('send', 'event', 'focus', $(this).attr('data-ga-tack-select'), document.title);
 })
 
 $('[data-ga-track-click]').on('click', function(event){

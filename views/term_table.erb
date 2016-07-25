@@ -19,7 +19,7 @@
               <% end %>
 
               <span class="term-navigation__jump">Jump to:
-                  <select class="js-navigation-menu" data-ga-track-click="Selection toggle: bio">
+                  <select class="js-navigation-menu" data-ga-track-select="Selection toggle: bio">
                     <% @terms.each do |t| %>
                       <option value="<%= term_table_url(@country, @house, t) %>" <% if t[:name] == @term[:name] %>selected<% end %>>
                         <%= t[:name] %>
