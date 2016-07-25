@@ -384,7 +384,6 @@ $('[data-ga-track-select]').on('focus',function(event){
 
 $('[data-ga-track-click]').on('click', function(event){
     event.preventDefault();
-    event.stopPropagation();
     var href = $(this).attr('href') || false;
 
     eventDescription = $(this).attr('data-ga-track-click') || 'Undescribed event';
@@ -452,4 +451,5 @@ analytics = {
     }
 
   }
+
 });
