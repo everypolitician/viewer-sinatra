@@ -43,6 +43,10 @@ class PersonCard
     person.memberships.where(legislative_period_id: term.id)
   end
 
+  def positions
+    []
+  end
+
   private
 
   attr_reader :person, :term

@@ -178,6 +178,24 @@
                                   <% end %>
                                 </p>
                               <% end %>
+
+
+                              <% # TODO: populate :positions with executive branch positions, eg: "President" %>
+                              <% person.positions.each do |pos| %>
+                                <p class="person-card__politics">
+
+                                <%= pos[:position] %>
+
+                                <% if !pos[:start_date].to_s.empty? and !pos[:end_date].to_s.empty? %>
+                                  <span class="person-card__politics__date">(<%= pos[:start_date].to_s %> to <%= pos[:end_date].to_s %>)</span>
+                                <% elsif !pos[:start_date].to_s.empty? %>
+                                  <span class="person-card__politics__date">(from <%= pos[:start_date].to_s %>)</span>
+                                <% elsif !pos[:end_date].to_s.empty? %>
+                                  <span class="person-card__politics__date">(until <%= pos[:end_date].to_s %>)</span>
+                                <% end %>
+                                </p>
+                              <% end %>
+
                             </div>
 
                             <% %i(bio social contacts identifiers).select { |s| person.send(s).any? }.each do |section| %>
