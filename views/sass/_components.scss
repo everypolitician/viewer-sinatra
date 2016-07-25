@@ -513,6 +513,17 @@ p.lead {
     @extend .inline-list;
     padding-top: 1em;
 
+    // Make the tabs scroll horizontally on small screens.
+    // TODO: Make this not suck when the currently selected tab is
+    // hidden off to the far right of the line.
+    @media (max-width: $small_screen_max) {
+        text-align: left;
+        white-space: nowrap;
+        overflow: auto;
+        margin: 0 -1em;
+        padding: 1em 0.5em 0 0.5em;
+    }
+
     @media (min-width: $medium_screen) and (min-height: 600px) {
         padding-top: 1.5em;
     }
@@ -537,4 +548,8 @@ p.lead {
 .house-tab--active:hover,
 .house-tab--active:focus {
     background: #fff;
+}
+
+.source-credits a {
+    @extend .break-word;
 }

@@ -34,6 +34,7 @@ $high_dpi_screen: '-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi
 
 $large_screen_max: $giant_screen - (1em * (1px / $size_font-base));
 $medium_screen_max: $large_screen - (1em * (1px / $size_font-base));
+$small_screen_max: $medium_screen - (1em * (1px / $size_font-base));
 
 $animation-short: 0.2s ease-out;
 

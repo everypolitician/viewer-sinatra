@@ -171,6 +171,10 @@ textarea {
     -webkit-appearance: none;
 }
 
+select {
+    max-width: 100%;
+}
+
 fieldset {
     padding: 0;
     border: 0;
