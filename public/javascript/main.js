@@ -379,7 +379,7 @@ $(function(){
 
 // Google Analytics event tracking
 $('[data-ga-track-select]').on('focus',function(event){
-    ga('send', 'event', 'focus', eventDescription, document.title);
+    ga('send', 'event', 'focus', $(this).attr('data-ga-tack-click'), document.title);
 })
 
 $('[data-ga-track-click]').on('click', function(event){
@@ -387,7 +387,7 @@ $('[data-ga-track-click]').on('click', function(event){
     event.stopPropagation();
     var href = $(this).attr('href') || false;
 
-    eventDescription = eventDescription || 'Undescribed event';
+    eventDescription = $(this).attr('data-ga-track-click') || 'Undescribed event';
 
     var deferred = analytics.trackEvent({
         hitType: 'event',
