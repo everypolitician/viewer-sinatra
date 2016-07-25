@@ -387,7 +387,7 @@ $(function(){
       }
   });
 
-  $("a.download-with-term").on("click", function(e){
+  $(".js-download-with-term").on("click", function(e){
     var term = $(e.target).data("term");
     var house = $(e.target).data("house");
     if (term && house) {
