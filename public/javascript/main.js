@@ -490,7 +490,7 @@ $(function(){
 
   }
 
-  if (typeof page_init_function === 'function') {
-      page_init_function();
+  if (typeof pageInitFunction === 'function') {
+      pageInitFunction();
   }
 });
