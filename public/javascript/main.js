@@ -382,6 +382,31 @@ $('[data-ga-track-select]').on('focus',function(event){
     ga('send', 'event', 'focus', $(this).attr('data-ga-tack-select'), document.title);
 })
 
+// Tracks interaction with filter field
+// http://stackoverflow.com/questions/4220126/run-javascript-function-when-user-finishes-typing-instead-of-on-key-up
+// Run javascript function when user finishes typing instead of on key up?
+//setup before functions
+//
+var typingTimer;                //timer identifier
+var doneTypingInterval = 2000;  //time in ms, 2 seconds
+var $input = $('[data-ga-track-change]');
+
+//on keyup, start the countdown
+$input.on('keyup', function () {
+  clearTimeout(typingTimer);
+  if (this.value.length > 0)
+    typingTimer = setTimeout(doneTyping, doneTypingInterval);
+});
+
+//on keydown, clear the countdown 
+$input.on('keydown', function () {
+  clearTimeout(typingTimer);
+});
+
+function doneTyping () {
+  ga('send', 'event', 'user input in filter field', $(this).attr('data-ga-tack-change'), document.title);
+}
+
 $('[data-ga-track-click]').on('click', function(event){
     event.preventDefault();
     var href = $(this).attr('href') || false;
