@@ -82,7 +82,7 @@ get '/:country/:house/wikidata' do |country, house|
   last_sha = @house[:sha]
   popolo_file = EveryPolitician::GithubFile.new(@house[:popolo], last_sha)
   @popolo = JSON.parse(popolo_file.raw, symbolize_names: true)
-  @page_title = "EveryPolitician: #{@country[:name]} — #{@house}"
+  @page_title = "EveryPolitician: #{@country[:name]} — #{@house[:name]}"
   erb :wikidata_match
 end
 
