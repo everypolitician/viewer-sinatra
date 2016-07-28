@@ -278,9 +278,7 @@ $(function(){
 
   $('.js-sortable').sortable();
 
-  $('.js-navigation-menu').on('change', function(){
-    window.location.href = $(this).val();
-  });
+  $('.js-navigation-menu').on('change', deferredTracking);
 
   $('html').removeClass('no-js');
 
@@ -377,11 +375,6 @@ $(function(){
       }
   })
 
-// Google Analytics event tracking
-$('[data-ga-track-select]').on('focus',function(event){
-    ga('send', 'event', 'focus', $(this).attr('data-ga-tack-select'), document.title);
-})
-
 // Tracks interaction with filter field
 // http://stackoverflow.com/questions/4220126/run-javascript-function-when-user-finishes-typing-instead-of-on-key-up
 // Run javascript function when user finishes typing instead of on key up?
@@ -404,10 +397,12 @@ $input.on('keydown', function () {
 });
 
 function doneTyping () {
-  ga('send', 'event', 'user input in filter field', $(this).attr('data-ga-tack-change'), document.title);
+  ga('send', 'event', 'user input', $(this).attr('data-ga-tack-change'), document.title);
 }
 
-$('[data-ga-track-click]').on('click', function(event){
+$('[data-ga-track-click]').on('click', deferredTracking)
+
+function deferredTracking(event){
     event.preventDefault();
     var href = $(this).attr('href') || false;
 
@@ -421,11 +416,9 @@ $('[data-ga-track-click]').on('click', function(event){
     })
 
     deferred.done(function(){
-        if (href) {
-            window.location.href = href;
-        }
+      if (href) window.location.href = href;
     })
-})
+}
 
 analytics = {
 
@@ -471,7 +464,6 @@ analytics = {
         setTimeout(function(){
             dfd.resolve();
         }, 2000);
-
         return dfd.promise();
     }
 
