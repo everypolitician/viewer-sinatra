@@ -3,8 +3,7 @@
         <ul class="house-tabs">
           <% @country[:legislatures].each do |house| %>
             <li>
-                <% latest_term = house[:legislative_periods].sort_by{ |term| term[:start_date] }.last %>
-                <a class="house-tab <% if @house == house %>house-tab--active<% end %>" href="<%= term_table_url(@country, house, latest_term) %>">
+                <a class="house-tab <% if @house == house %>house-tab--active<% end %>" href="<%= term_table_url(@country, house, house[:legislative_periods].first) %>">
                     <%= house[:name] %>
                 </a>
             </li>
