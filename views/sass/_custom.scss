@@ -144,19 +144,33 @@
 .term-membership-table__title {
     position: relative;
     padding: 1em 0;
+    text-align: center;
+
+    .download-options,
+    .person-card-filter {
+        margin-top: 1em;
+    }
 
     @media (min-width: $medium_screen) {
-        text-align: center;
+        .download-options,
+        .person-card-filter {
+            position: absolute;
+            margin-top: 0;
+        }
+
+        .download-options {
+            right: 0;
+            top: 0.5em;
+        }
+
+        .person-card-filter {
+            left: 0;
+            top: 1em;
+        }
     }
 
     h2 {
         margin-bottom: 0;
-    }
-
-    .download-options {
-        position: absolute;
-        right: 0;
-        top: 0.5em;
     }
 
     .download-options__dropdown a {
@@ -198,14 +212,21 @@
 
 .country__legislature__header {
     @include clearfix();
+    text-align: center;
+    margin-bottom: 1em;
 
-    h3 {
-        float: left;
-    }
+    @media (min-width: $medium_screen) {
+        text-align: left;
+        margin-bottom: 0;
 
-    .button {
-        float: right;
-        margin-top: -0.3em; // visually align with heading
+        h3 {
+            float: left;
+        }
+
+        .button {
+            float: right;
+            margin-top: -0.3em; // visually align with heading
+        }
     }
 }
 
