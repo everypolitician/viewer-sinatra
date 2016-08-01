@@ -67,6 +67,4 @@ describe 'Viewer' do
       last_response.status.must_equal 404
     end
   end
-
-
 end

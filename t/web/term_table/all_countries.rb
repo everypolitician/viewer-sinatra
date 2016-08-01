@@ -16,8 +16,8 @@ describe 'Basic loads' do
     # Get the list of countries on the homepage
     get '/countries.html'
     countries = Nokogiri::HTML(last_response.body)
-                .css('#countries ul.grid-list li a/@href')
-                .map(&:text)
+                        .css('#countries ul.grid-list li a/@href')
+                        .map(&:text)
 
     countries.wont_be :empty?
 
@@ -35,7 +35,7 @@ describe 'Basic loads' do
       last_response.status.must_equal 200
       noko = Nokogiri::HTML(last_response.body)
 
-      # Make sure we have at least 5 cards 
+      # Make sure we have at least 5 cards
       noko.css('.person-card').count.must_be :>=, 5
     end
   end
