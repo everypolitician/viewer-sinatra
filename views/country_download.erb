@@ -161,9 +161,9 @@ var pageInitFunction = function(){
       // we need to hide some of these terms:
       // find the one we want:
       // want a slice around wanted_house_index of reduced_visible_terms items
-      var max_upper_bound = $term_list_items.length - 1;
+      var max_upper_bound = $term_list_items.length;
       var lower_bound = wanted_house_index - Math.floor(reduced_visible_terms/2);
-      var upper_bound = wanted_house_index + Math.floor(reduced_visible_terms/2);
+      var upper_bound = wanted_house_index + Math.floor(reduced_visible_terms/2) + 1;
       var delta = upper_bound - max_upper_bound;
       if (delta > 0) {
         upper_bound = max_upper_bound;
@@ -173,13 +173,7 @@ var pageInitFunction = function(){
         upper_bound = Math.min(upper_bound + Math.abs(lower_bound), max_upper_bound);
         lower_bound = 0;
       }
-      // would do this with jQuery's slice but it's not behaving as I expected
-      $term_list_items.each(function(i){
-        if (i >= lower_bound && i <= upper_bound) {
-          $(this).removeClass("hidden-term");
-        }
-      });
-      // add button to toggle view
+      $term_list_items.slice(lower_bound, upper_bound).removeClass("hidden-term");
       $term_list_items.first().parent().before('<a href="#" class="button toggle-term-display" data-house="'
       + house_slug + '">Show all ' + $term_list_items.length + ' terms</a>');
     }
