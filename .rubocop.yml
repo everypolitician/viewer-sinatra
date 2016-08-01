@@ -1,3 +1,7 @@
+AllCops:
+  Exclude: 
+    - 'Vagrantfile'
+
 Style/AlignHash:
   EnforcedHashRocketStyle: table
   EnforcedColonStyle: table
