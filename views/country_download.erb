@@ -151,9 +151,7 @@ var pageInitFunction = function(){
     var $term_list_items = $('#terms-' + house_slug + ' li');
     var wanted_house_index = 0;
     var wanted_id = "term-" + house_slug + '-' + wanted_term;
-    if (wanted_house && wanted_term &&
-      wanted_house == house_slug
-    ) {
+    if (wanted_house == house_slug && wanted_term) {
       var $wanted_term_element = $('#' + wanted_id);
       $wanted_term_element.addClass("download-terms__highlighted");
       wanted_house_index = $term_list_items.index($wanted_term_element);
