@@ -151,17 +151,12 @@ var pageInitFunction = function(){
     var $term_list_items = $('#terms-' + house_slug + ' li');
     var wanted_house_index = 0;
     var wanted_id = "term-" + house_slug + '-' + wanted_term;
-    // want to use jQuery's .index() but it's not behaving as I expected
     if (wanted_house && wanted_term &&
       wanted_house == house_slug
     ) {
-      $term_list_items.each(function(i){
-        if ($(this).attr('id') == wanted_id) {
-          wanted_house_index = i;
-          $(this).addClass("download-terms__highlighted");
-          return false; // break
-        }
-      });
+      var $wanted_term_element = $('#' + wanted_id);
+      $wanted_term_element.addClass("download-terms__highlighted");
+      wanted_house_index = $term_list_items.index($wanted_term_element);
     }
     if ($term_list_items.size() > max_visible_terms) {
       $term_list_items.addClass("hidden-term");
