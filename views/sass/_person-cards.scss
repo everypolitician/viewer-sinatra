@@ -111,9 +111,7 @@ $person_card_sections: (
 }
 
 .person-card-filter {
-  position: absolute;
-  top: 1em;
-  left: 0;
+  display: block;
 
   .no-js & {
     display: none;
