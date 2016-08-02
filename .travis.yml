@@ -1,10 +1,11 @@
 language: ruby
 cache: bundler
 script:
-- bundle exec rake test
-- scripts/release.sh
+  - bundle exec rake test
+  - bundle exec rake rubocop
+  - scripts/release.sh
 rvm:
-- 2.0.0
+  - 2.0.0
 notifications:
   slack:
     secure: GVD9d+kwR5hzab5ZnWugbCkp9QSYyheSrABWkD+LmpMcWcx7jijajSn4LLvDi/zHYn1MdOBcPe08hSygmpm7ViUApp0EJcSzE4BLU/5oAs+ANV0Qq6jsssMlyo3v8eRAqHNiLxAiAsz+lc0EZWfQnSW8kHzzbO3NeYq1NRL5CgQ=
