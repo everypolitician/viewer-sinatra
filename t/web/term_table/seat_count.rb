@@ -40,5 +40,4 @@ describe 'Seat Count' do
       seatcount.css('span.seatcount').map(&:text).map(&:to_i).reduce(&:+).must_equal 200
     end
   end
-
 end

@@ -15,25 +15,25 @@ Dotenv.load
 helpers Popolo::Helper
 
 cjson = File.read('DATASOURCE').chomp
-ALL_COUNTRIES = JSON.parse(open(cjson).read, symbolize_names: true ).each do |c|
+ALL_COUNTRIES = JSON.parse(open(cjson).read, symbolize_names: true).each do |c|
   c[:url] = c[:slug].downcase
 end
 
 wjson = File.read('world.json')
 WORLD = JSON.parse(wjson, symbolize_names: true)
 
-DOCS_URL = 'http://docs.everypolitician.org'
+DOCS_URL = 'http://docs.everypolitician.org'.freeze
 
-# Can't do server-side redirection on a GitHub Pages-hosted static site, so the 
+# Can't do server-side redirection on a GitHub Pages-hosted static site, so the
 # kindest next-best-thing is to have a placeholder with meta HTTP-refresh.
 # This works for humans (i.e., browsers parse and follow the redirect) but,
-# because wget simply fetches the HTML document, this lets us continue to 
+# because wget simply fetches the HTML document, this lets us continue to
 # spider the site to generate the contents of everypolitician/viewer-static.
 # See scripts/release.sh (update_viewer_static).
 def soft_redirect(url, page_title)
   @head_tags = [
     %(<meta http-equiv="refresh" content="0; url=#{url}">),
-    %(<link rel="canonical" href="#{url}"/>)
+    %(<link rel="canonical" href="#{url}"/>),
   ].join("\n\t")
   @page_title = page_title
   erb :redirect
@@ -43,13 +43,13 @@ set :erb, trim: '-'
 
 get '/' do
   @countries = ALL_COUNTRIES.to_a
-  @person_count = @countries.map { |c| c[:legislatures].map { |l| l[:person_count].to_i  } }.flatten.inject(:+)
+  @person_count = @countries.map { |c| c[:legislatures].map { |l| l[:person_count].to_i } }.flatten.inject(:+)
   @world = WORLD.to_a
 
-  @world.each { |slug, country|
-    cjdata = @countries.find(->{{}}) { |c| c[:url] == slug.to_s }
+  @world.each do |slug, country|
+    cjdata = @countries.find(-> { {} }) { |c| c[:url] == slug.to_s }
     country[:totalPeople] = (cjdata[:legislatures] || []).map { |l| l[:person_count].to_i }.inject(0, :+)
-  }
+  end
 
   @total_statements = ALL_COUNTRIES.map do |c|
     c[:legislatures].map { |l| l[:statement_count] }
@@ -92,8 +92,8 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
 
   @terms = @house[:legislative_periods]
   (@next_term, @term, @prev_term) = [nil, @terms, nil]
-    .flatten.each_cons(3)
-    .find { |_p, e, _n| e[:slug] == termid }
+                                    .flatten.each_cons(3)
+                                    .find { |_p, e, _n| e[:slug] == termid }
   @page_title = "EveryPolitician: #{@country[:name]} — #{@house[:name]} - #{@term[:name]}"
 
   last_sha = @house[:sha]
@@ -102,11 +102,11 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
   popolo = EveryPolitician::Popolo.parse(popolo_file.raw)
 
   # We only want memberships that are in the requested term.
-  term_memberships = popolo.memberships.find_all { |m| m.legislative_period_id.split('/').last == termid }
+  term_memberships = popolo.memberships.select { |m| m.legislative_period_id.split('/').last == termid }
 
   # Pull all the people who held a membership in this term out of the Popolo.
   wanted_people = Set.new(term_memberships.map(&:person_id))
-  people = popolo.persons.find_all { |p| wanted_people.include?(p.id) }
+  people = popolo.persons.select { |p| wanted_people.include?(p.id) }
 
   # Create a few hashes so that looking up memberships and their related orgs and areas is faster.
   membership_lookup = term_memberships.group_by(&:person_id)
@@ -116,39 +116,39 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
   # Groups, ordered by size, with name and count of how many members
   # they had at the end of the term. Don't include this section if
   # there is only a single group.
-  @group_data = term_memberships.find_all { |mem| mem.end_date.to_s.empty? || mem.end_date == @term[:end_date] }
-                .group_by(&:on_behalf_of_id)
-                .map { |group_id, mems| [org_lookup[group_id], mems] }
-                .sort_by { |group, mems| [-mems.count, group.name] }
-                .map { |group, mems| { group_id: group.id.split('/').last, name: group.name, member_count: mems.count } }
-  @group_data = [] if @group_data.length == 1 
+  @group_data = term_memberships.select { |mem| mem.end_date.to_s.empty? || mem.end_date == @term[:end_date] }
+                                .group_by(&:on_behalf_of_id)
+                                .map { |group_id, mems| [org_lookup[group_id], mems] }
+                                .sort_by { |group, mems| [-mems.count, group.name] }
+                                .map { |group, mems| { group_id: group.id.split('/').last, name: group.name, member_count: mems.count } }
+  @group_data = [] if @group_data.length == 1
 
   identifiers = people.map(&:identifiers).compact.flatten
   top_identifiers = identifiers.reject { |i| i[:scheme] == 'everypolitician_legacy' }
                                .group_by { |i| i[:scheme] }
-                               .sort_by { |s, ids| -ids.size }
-                               .map { |s, ids| s }
+                               .sort_by { |_s, ids| -ids.size }
+                               .map { |s, _ids| s }
                                .take(3)
 
   @people = people.sort_by(&:sort_name).map do |person|
     p = {
-      id: person.id,
-      name: person.name,
-      image: person.image,
+      id:          person.id,
+      name:        person.name,
+      image:       person.image,
       proxy_image: image_proxy_url(person.id),
       memberships: membership_lookup[person.id].map do |mem|
         membership = {
           start_date: mem.start_date,
-          end_date: mem.end_date
+          end_date:   mem.end_date,
         }
         membership[:group] = org_lookup[mem.on_behalf_of_id].name if mem.on_behalf_of_id
         membership[:area] = area_lookup[mem.area_id].name if mem.area_id
         membership
       end,
-      social: [],
-      bio: [],
-      contacts: [],
-      identifiers: []
+      social:      [],
+      bio:         [],
+      contacts:    [],
+      identifiers: [],
     }
 
     if person.twitter
@@ -181,14 +181,14 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
   end
 
   @percentages = {
-    social: ((@people.count { |p| p[:social].any? } / @people.count.to_f) * 100).floor,
-    bio: ((@people.count { |p| p[:bio].any? } / @people.count.to_f) * 100).floor,
-    contacts: ((@people.count { |p| p[:contacts].any? } / @people.count.to_f) * 100).floor,
-    identifiers: ((@people.count { |p| p[:identifiers].any? } / @people.count.to_f) * 100).floor
+    social:      ((@people.count { |p| p[:social].any? } / @people.count.to_f) * 100).floor,
+    bio:         ((@people.count { |p| p[:bio].any? } / @people.count.to_f) * 100).floor,
+    contacts:    ((@people.count { |p| p[:contacts].any? } / @people.count.to_f) * 100).floor,
+    identifiers: ((@people.count { |p| p[:identifiers].any? } / @people.count.to_f) * 100).floor,
   }
 
   @urls = {
-    csv: @term[:csv_url],
+    csv:  @term[:csv_url],
     json: popolo_file.url,
   }
 
@@ -210,16 +210,16 @@ end
 
 get '/needed.html' do
   if (token = ENV['GITHUB_ACCESS_TOKEN']).to_s.empty?
-    warn "No GITHUB_ACCESS_TOKEN found"
+    warn 'No GITHUB_ACCESS_TOKEN found'
     client = Octokit::Client.new
   else
     client = Octokit::Client.new(access_token: token)
   end
   client.auto_paginate = true
 
-  @to_find   = client.issues 'everypolitician/everypolitician-data', labels: "New Country,To Find"
-  @to_scrape = client.issues 'everypolitician/everypolitician-data', labels: "New Country,To Scrape"
-  @to_finish = client.issues 'everypolitician/everypolitician-data', labels: "New Country,3 - WIP"
+  @to_find   = client.issues 'everypolitician/everypolitician-data', labels: 'New Country,To Find'
+  @to_scrape = client.issues 'everypolitician/everypolitician-data', labels: 'New Country,To Scrape'
+  @to_finish = client.issues 'everypolitician/everypolitician-data', labels: 'New Country,3 - WIP'
 
   erb :needed
 end
@@ -239,43 +239,42 @@ end
 # Old doc pages are now at docs.everypolitician.org: redirect to them
 get '/about.html' do
   # note: about.html -> docs subdomain root (/)
-  soft_redirect(DOCS_URL + "/", "About")
+  soft_redirect(DOCS_URL + '/', 'About')
 end
 
 get '/contribute.html' do
-  soft_redirect(DOCS_URL + request.path_info, "How to contribute")
+  soft_redirect(DOCS_URL + request.path_info, 'How to contribute')
 end
 
 get '/data_structure.html' do
-  soft_redirect(DOCS_URL + request.path_info, "About EveryPolitician’s data")
+  soft_redirect(DOCS_URL + request.path_info, 'About EveryPolitician’s data')
 end
 
 get '/data_summary.html' do
-  soft_redirect(DOCS_URL + request.path_info, "What’s in EveryPolitician’s data?")
+  soft_redirect(DOCS_URL + request.path_info, 'What’s in EveryPolitician’s data?')
 end
 
 get '/repo_structure.html' do
-  soft_redirect(DOCS_URL + request.path_info, "Getting the most recent data")
+  soft_redirect(DOCS_URL + request.path_info, 'Getting the most recent data')
 end
 
 get '/scrapers.html' do
-  soft_redirect(DOCS_URL + request.path_info, "About writing scrapers")
+  soft_redirect(DOCS_URL + request.path_info, 'About writing scrapers')
 end
 
 get '/submitting.html' do
-  soft_redirect(DOCS_URL + request.path_info, "How we import data")
+  soft_redirect(DOCS_URL + request.path_info, 'How we import data')
 end
 
 get '/technical.html' do
-  soft_redirect(DOCS_URL + request.path_info, "Technical overview")
+  soft_redirect(DOCS_URL + request.path_info, 'Technical overview')
 end
 
 get '/use_the_data.html' do
-  soft_redirect(DOCS_URL + request.path_info, "Use EveryPolitician data")
+  soft_redirect(DOCS_URL + request.path_info, 'Use EveryPolitician data')
 end
 
 not_found do
   status 404
   erb :fourohfour
 end
-

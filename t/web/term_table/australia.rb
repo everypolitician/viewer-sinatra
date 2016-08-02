@@ -69,5 +69,4 @@ describe 'Per Country Tests: Australia' do
       subject.css('.source-credits').text.must_include 'openaustralia'
     end
   end
-
 end

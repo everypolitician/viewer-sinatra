@@ -8,15 +8,15 @@ describe Popolo::Helper do
 
   describe '#number_to_millions' do
     it 'formats numbers as millions to one decimal place' do
-      number_to_millions(2700000).to_s.must_equal('2.7')
+      number_to_millions(2_700_000).to_s.must_equal('2.7')
     end
 
     it 'rounds down rather than up' do
-      number_to_millions(2680000).to_s.must_equal('2.6')
+      number_to_millions(2_680_000).to_s.must_equal('2.6')
     end
 
     it 'removes the zero for whole numbers' do
-      number_to_millions(3000000).to_s.must_equal('3')
+      number_to_millions(3_000_000).to_s.must_equal('3')
     end
   end
 end
