@@ -141,11 +141,11 @@ var pageInitFunction = function(){
   $(".country__legislature").each(function(){
     var houseSlug = $(this).data('house');
     var $termListItems = $('#terms-' + houseSlug + ' li');
-    var $wantedTermElement;
+    var $wantedTermItem;
 
     if (wantedHouse == houseSlug && wantedTerm) {
-      $wantedTermElement = $('#' + "term-" + houseSlug + '-' + wantedTerm);
-      $wantedTermElement.addClass("download-terms__highlighted");
+      $wantedTermItem = $('#' + "term-" + houseSlug + '-' + wantedTerm);
+      $wantedTermItem.addClass("download-terms__highlighted");
     }
 
     var $buttonForReveal = $(
@@ -154,7 +154,7 @@ var pageInitFunction = function(){
 
     collapseDisplayedItems(
       $termListItems,
-      $wantedTermElement, // note: may be undefined
+      $wantedTermItem, // note: may be undefined
       'hidden-term',
       maxVisibleTerms,
       reducedVisibleTerms,

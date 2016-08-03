@@ -504,21 +504,21 @@ $(function(){
 // may be more than one such list (e.g., one for each legislature).
 
 function collapseDisplayedItems(
-    $listOfElements,   // list of elements that need to be collapsed
-    $targetElement,     // item within that which needs to be highlighted
-                         // ...if none (which is OK) take the first
+    $listOfItems,      // list of items that need to be collapsed
+    $targetItem,       // item within that which needs to be highlighted
+                       // ...if none (which is OK) take the first
     hiddenClassName,   // CSS class used to distinguish collapsed elements
     minThresholdItems, // only collapse if more elements than this
     maxDisplayItems,   // number of elements to show when collapsed
     $buttonForReveal   // button that is added to reveal
   ) {
-  if ($listOfElements.length > minThresholdItems) {
-    $listOfElements.addClass("hidden-term");
+  if ($listOfItems.length > minThresholdItems) {
+    $listOfItems.addClass("hidden-term");
     // we need to hide some of these terms:
     // find the one we want:
     // want a slice around wanted_house_index of reduced_visible_terms items
-    var targetIndex = $listOfElements.index($targetElement);
-    var maxUpperBound = $listOfElements.length;
+    var targetIndex = $listOfItems.index($targetItem);
+    var maxUpperBound = $listOfItems.length;
     var lowerBound = targetIndex - Math.floor(maxDisplayItems/2);
     var upperBound = targetIndex + Math.floor(maxDisplayItems/2) + 1;
     var delta = upperBound - maxUpperBound;
@@ -530,8 +530,8 @@ function collapseDisplayedItems(
       upperBound = Math.min(upperBound + Math.abs(lowerBound), maxUpperBound);
       lowerBound = 0;
     }
-    $listOfElements.slice(lowerBound, upperBound).removeClass("hidden-term");
+    $listOfItems.slice(lowerBound, upperBound).removeClass("hidden-term");
     // hmm, this .parent is assuming list of elements is within a parent (ul)
-    $listOfElements.first().parent().before($buttonForReveal);
+    $listOfItems.first().parent().before($buttonForReveal);
   }
 }
