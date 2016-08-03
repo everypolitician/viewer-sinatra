@@ -123,15 +123,15 @@
 </div>
 <script>
 
-function get_q_param(key) {
+function getQueryParam(key) {
   var match = location.search.match(new RegExp("[?&]" + key + "=([^&]+)(&|$)"));
   return match && decodeURIComponent(match[1].replace(/\+/g, " "));
 }
 
-var max_visible_terms = 6;
-var reduced_visible_terms = 3; // best odd, so wanted term is in middle?
-var wanted_house = get_q_param('house');
-var wanted_term = get_q_param('term');
+var maxVisibleTerms = 6;
+var reducedVisibleTerms = 3; // best odd, so wanted term is in middle?
+var wantedHouse = getQueryParam('house');
+var wantedTerm = getQueryParam('term');
 var pageInitFunction = function(){
 
   // for each house...
@@ -143,8 +143,8 @@ var pageInitFunction = function(){
     var $term_list_items = $('#terms-' + house_slug + ' li');
     var $wanted_term_element;
 
-    if (wanted_house == house_slug && wanted_term) {
-      $wanted_term_element = $('#' + "term-" + house_slug + '-' + wanted_term);
+    if (wantedHouse == house_slug && wantedTerm) {
+      $wanted_term_element = $('#' + "term-" + house_slug + '-' + wantedTerm);
       $wanted_term_element.addClass("download-terms__highlighted");
     }
 
@@ -156,8 +156,8 @@ var pageInitFunction = function(){
       $term_list_items,
       $wanted_term_element, // note: may be undefined
       'hidden-term',
-      max_visible_terms,
-      reduced_visible_terms,
+      maxVisibleTerms,
+      reducedVisibleTerms,
       $button_for_reveal
     );
   });
