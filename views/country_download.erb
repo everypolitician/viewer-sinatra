@@ -163,7 +163,7 @@ var pageInitFunction = function(){
   });
 
   $('.hidden-term').hide();
-  $('.button.toggle-term-display').on("click", function(e){
+  $('.toggle-term-display').on("click", function(e){
     e.preventDefault();
     var house = $(e.target).data("house");
     $('#terms-' + house + " li.hidden-term").slideToggle();
