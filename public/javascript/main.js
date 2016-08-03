@@ -504,34 +504,34 @@ $(function(){
 // may be more than one such list (e.g., one for each legislature).
 
 function collapseDisplayedItems(
-    $list_of_elements,   // list of elements that need to be collapsed
-    $target_element,     // item within that which needs to be highlighted
+    $listOfElements,   // list of elements that need to be collapsed
+    $targetElement,     // item within that which needs to be highlighted
                          // ...if none (which is OK) take the first
-    hidden_class_name,   // CSS class used to distinguish collapsed elements
-    min_threshold_items, // only collapse if more elements than this
-    max_display_items,   // number of elements to show when collapsed
-    $button_for_reveal   // button that is added to reveal
+    hiddenClassName,   // CSS class used to distinguish collapsed elements
+    minThresholdItems, // only collapse if more elements than this
+    maxDisplayItems,   // number of elements to show when collapsed
+    $buttonForReveal   // button that is added to reveal
   ) {
-  if ($list_of_elements.size() > min_threshold_items) {
-    $list_of_elements.addClass("hidden-term");
+  if ($listOfElements.size() > minThresholdItems) {
+    $listOfElements.addClass("hidden-term");
     // we need to hide some of these terms:
     // find the one we want:
     // want a slice around wanted_house_index of reduced_visible_terms items
-    var target_index = $list_of_elements.index($target_element);
-    var max_upper_bound = $list_of_elements.length;
-    var lower_bound = target_index - Math.floor(max_display_items/2);
-    var upper_bound = target_index + Math.floor(max_display_items/2) + 1;
-    var delta = upper_bound - max_upper_bound;
+    var targetIndex = $listOfElements.index($targetElement);
+    var maxUpperBound = $listOfElements.length;
+    var lowerBound = targetIndex - Math.floor(maxDisplayItems/2);
+    var upperBound = targetIndex + Math.floor(maxDisplayItems/2) + 1;
+    var delta = upperBound - maxUpperBound;
     if (delta > 0) {
-      upper_bound = max_upper_bound;
-      lower_bound = lower_bound - delta;
+      upperBound = maxUpperBound;
+      lowerBound = lowerBound - delta;
     }
-    if (lower_bound < 0) {
-      upper_bound = Math.min(upper_bound + Math.abs(lower_bound), max_upper_bound);
-      lower_bound = 0;
+    if (lowerBound < 0) {
+      upperBound = Math.min(upperBound + Math.abs(lowerBound), maxUpperBound);
+      lowerBound = 0;
     }
-    $list_of_elements.slice(lower_bound, upper_bound).removeClass("hidden-term");
+    $listOfElements.slice(lowerBound, upperBound).removeClass("hidden-term");
     // hmm, this .parent is assuming list of elements is within a parent (ul)
-    $list_of_elements.first().parent().before($button_for_reveal);
+    $listOfElements.first().parent().before($buttonForReveal);
   }
 }
