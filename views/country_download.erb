@@ -140,7 +140,7 @@ var pageInitFunction = function(){
 
   $(".country__legislature").each(function(){
     var houseSlug = $(this).data('house');
-    var $termListItems = $('#terms-' + houseSlug + ' li');
+    var $termsUl = $('#terms-' + houseSlug);
     var $wantedTermItem;
 
     if (wantedHouse == houseSlug && wantedTerm) {
@@ -150,10 +150,10 @@ var pageInitFunction = function(){
 
     var $buttonForReveal = $(
        '<a href="#" class="button toggle-term-display" data-house="'
-       + houseSlug + '">Show all ' + $termListItems.length + ' terms</a>');
+       + houseSlug + '">Show all ' + $termsUl.find('li').length + ' terms</a>');
 
     collapseDisplayedItems(
-      $termListItems,
+      $termsUl,
       $wantedTermItem, // note: may be undefined
       'hidden-term',
       maxVisibleTerms,
@@ -165,7 +165,7 @@ var pageInitFunction = function(){
   $('.hidden-term').hide();
   $('.toggle-term-display').on("click", function(e){
     e.preventDefault();
-    var house = $(e.target).data("house");
+    var house = $(this).data("house");
     $('#terms-' + house + " .hidden-term").slideToggle();
   })
 }

@@ -504,7 +504,7 @@ $(function(){
 // may be more than one such list (e.g., one for each legislature).
 
 function collapseDisplayedItems(
-    $listOfItems,      // list of items that need to be collapsed
+    $ul,               // unordered list elementthat needs to be collapsed
     $targetItem,       // item within that which needs to be highlighted
                        // ...if none (which is OK) take the first
     hiddenClassName,   // CSS class used to distinguish collapsed elements
@@ -512,13 +512,14 @@ function collapseDisplayedItems(
     maxDisplayItems,   // number of elements to show when collapsed
     $buttonForReveal   // button that is added to reveal
   ) {
-  if ($listOfItems.length > minThresholdItems) {
-    $listOfItems.addClass("hidden-term");
+  var $listItems = $ul.find('li');
+  if ($listItems.length > minThresholdItems) {
+    $listItems.addClass("hidden-term");
     // we need to hide some of these terms:
     // find the one we want:
     // want a slice around wanted_house_index of reduced_visible_terms items
-    var targetIndex = $listOfItems.index($targetItem);
-    var maxUpperBound = $listOfItems.length;
+    var targetIndex = $listItems.index($targetItem);
+    var maxUpperBound = $listItems.length;
     var lowerBound = targetIndex - Math.floor(maxDisplayItems/2);
     var upperBound = targetIndex + Math.floor(maxDisplayItems/2) + 1;
     var delta = upperBound - maxUpperBound;
@@ -530,8 +531,8 @@ function collapseDisplayedItems(
       upperBound = Math.min(upperBound + Math.abs(lowerBound), maxUpperBound);
       lowerBound = 0;
     }
-    $listOfItems.slice(lowerBound, upperBound).removeClass("hidden-term");
+    $listItems.slice(lowerBound, upperBound).removeClass("hidden-term");
     // hmm, this .parent is assuming list of elements is within a parent (ul)
-    $listOfItems.first().parent().before($buttonForReveal);
+    $ul.before($buttonForReveal);
   }
 }
