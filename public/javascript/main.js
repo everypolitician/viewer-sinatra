@@ -505,19 +505,18 @@ $(function(){
 
 function collapseDisplayedItems(
     $ul,               // unordered list elementthat needs to be collapsed
+                       // note: <ul> must have an id
     $targetItem,       // item within that which needs to be highlighted
                        // ...if none (which is OK) take the first
     hiddenClassName,   // CSS class used to distinguish collapsed elements
     minThresholdItems, // only collapse if more elements than this
     maxDisplayItems,   // number of elements to show when collapsed
-    $buttonForReveal   // button that is added to reveal
+    buttonText         // message on reveal button
   ) {
   var $listItems = $ul.find('li');
   if ($listItems.length > minThresholdItems) {
-    $listItems.addClass("hidden-term");
-    // we need to hide some of these terms:
-    // find the one we want:
-    // want a slice around wanted_house_index of reduced_visible_terms items
+    $listItems.addClass(hiddenClassName);
+    // want a slice around targetIndex of maxDisplayItems
     var targetIndex = $listItems.index($targetItem);
     var maxUpperBound = $listItems.length;
     var lowerBound = targetIndex - Math.floor(maxDisplayItems/2);
@@ -531,8 +530,15 @@ function collapseDisplayedItems(
       upperBound = Math.min(upperBound + Math.abs(lowerBound), maxUpperBound);
       lowerBound = 0;
     }
-    $listItems.slice(lowerBound, upperBound).removeClass("hidden-term");
-    // hmm, this .parent is assuming list of elements is within a parent (ul)
-    $ul.before($buttonForReveal);
+    $listItems.slice(lowerBound, upperBound).removeClass(hiddenClassName);
+
+    $('.' + hiddenClassName).hide();
+
+    $('<button class="button">' + buttonText + '</button>')
+    .on("click", function(e){
+      e.preventDefault();
+      $('#' + $ul.attr('id') + " ." + hiddenClassName).slideToggle();
+    })
+    .insertBefore($ul);
   }
 }

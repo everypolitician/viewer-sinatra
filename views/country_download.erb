@@ -148,26 +148,16 @@ var pageInitFunction = function(){
       $wantedTermItem.addClass("download-terms__highlighted");
     }
 
-    var $buttonForReveal = $(
-       '<a href="#" class="button toggle-term-display" data-house="'
-       + houseSlug + '">Show all ' + $termsUl.find('li').length + ' terms</a>');
-
     collapseDisplayedItems(
       $termsUl,
       $wantedTermItem, // note: may be undefined
       'hidden-term',
       maxVisibleTerms,
       reducedVisibleTerms,
-      $buttonForReveal
+      "Show all " + $termsUl.find('li').length + " terms"
     );
   });
 
-  $('.hidden-term').hide();
-  $('.toggle-term-display').on("click", function(e){
-    e.preventDefault();
-    var house = $(this).data("house");
-    $('#terms-' + house + " .hidden-term").slideToggle();
-  })
 }
 </script>
 
