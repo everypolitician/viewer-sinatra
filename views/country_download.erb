@@ -139,26 +139,26 @@ var pageInitFunction = function(){
   // collapse terms if there are many
 
   $(".country__legislature").each(function(){
-    var house_slug = $(this).data('house');
-    var $term_list_items = $('#terms-' + house_slug + ' li');
-    var $wanted_term_element;
+    var houseSlug = $(this).data('house');
+    var $termListItems = $('#terms-' + houseSlug + ' li');
+    var $wantedTermElement;
 
-    if (wantedHouse == house_slug && wantedTerm) {
-      $wanted_term_element = $('#' + "term-" + house_slug + '-' + wantedTerm);
-      $wanted_term_element.addClass("download-terms__highlighted");
+    if (wantedHouse == houseSlug && wantedTerm) {
+      $wantedTermElement = $('#' + "term-" + houseSlug + '-' + wantedTerm);
+      $wantedTermElement.addClass("download-terms__highlighted");
     }
 
-    var $button_for_reveal = $(
+    var $buttonForReveal = $(
        '<a href="#" class="button toggle-term-display" data-house="'
-       + house_slug + '">Show all ' + $term_list_items.length + ' terms</a>');
+       + houseSlug + '">Show all ' + $termListItems.length + ' terms</a>');
 
     collapseDisplayedItems(
-      $term_list_items,
-      $wanted_term_element, // note: may be undefined
+      $termListItems,
+      $wantedTermElement, // note: may be undefined
       'hidden-term',
       maxVisibleTerms,
       reducedVisibleTerms,
-      $button_for_reveal
+      $buttonForReveal
     );
   });
 
