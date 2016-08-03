@@ -495,7 +495,7 @@ $(function(){
   }
 });
 
-// collapse_displayed_items:
+// collapseDisplayedItems:
 // If there are too many items being displayed in the list, hide
 // all but a few, making sure the target element (if there is one)
 // is included in those that are not hidden. Add a button for
@@ -503,7 +503,7 @@ $(function(){
 // Note this is used on the download page, where (currently) there
 // may be more than one such list (e.g., one for each legislature).
 
-function collapse_displayed_items(
+function collapseDisplayedItems(
     $list_of_elements,   // list of elements that need to be collapsed
     $target_element,     // item within that which needs to be highlighted
                          // ...if none (which is OK) take the first
