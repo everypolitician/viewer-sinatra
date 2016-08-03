@@ -166,7 +166,7 @@ var pageInitFunction = function(){
   $('.toggle-term-display').on("click", function(e){
     e.preventDefault();
     var house = $(e.target).data("house");
-    $('#terms-' + house + " li.hidden-term").slideToggle();
+    $('#terms-' + house + " .hidden-term").slideToggle();
   })
 }
 </script>
