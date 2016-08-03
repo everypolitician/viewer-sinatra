@@ -512,7 +512,7 @@ function collapseDisplayedItems(
     maxDisplayItems,   // number of elements to show when collapsed
     $buttonForReveal   // button that is added to reveal
   ) {
-  if ($listOfElements.size() > minThresholdItems) {
+  if ($listOfElements.length > minThresholdItems) {
     $listOfElements.addClass("hidden-term");
     // we need to hide some of these terms:
     // find the one we want:
