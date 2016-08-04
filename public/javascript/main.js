@@ -286,8 +286,7 @@ $(function(){
         hitType: 'event',
         eventCategory: eventDescription,
         eventDescription: $(this).attr('data-ga-track-change'),
-        eventAction: event.type,
-        eventLabel: document.title
+        eventAction: event.type
     })
     .done(function(){
         var link = $(that).val();
@@ -424,8 +423,7 @@ $('[data-ga-track-click]').on('click', function(event){
         hitType: 'event',
         eventCategory: eventDescription,
         eventDescription: $(this).attr('data-ga-track-click'),
-        eventAction: event.type,
-        eventLabel: document.title
+        eventAction: event.type
     })
     .done(function(){
         var link = $(that).attr('href');
@@ -459,6 +457,7 @@ analytics = {
         // The deferred object is resolved when the GA call
         // completes or fails to respond within 2 seconds.
         var dfd = $.Deferred();
+        params.eventLabel = params.eventLabel || document.title;
 
         if(!ga.loaded){
             // GA has not loaded (blocked by adblock?)
