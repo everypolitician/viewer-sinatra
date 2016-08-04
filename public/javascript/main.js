@@ -402,7 +402,7 @@ $input.on('keydown', function () {
 });
 
 function doneTyping () {
-  ga('send', 'event', 'user input', $(this).attr('data-ga-track-change'), document.title);
+  ga('send', 'event', $(this).attr('data-ga-track-change'), 'user input', document.title);
 }
 
 $('[data-ga-track-click]').on('click', deferredTracking)
@@ -415,8 +415,8 @@ function deferredTracking(event, callback){
 
     var deferred = analytics.trackEvent({
         hitType: 'event',
-        eventCategory: event.type,
-        eventAction: eventDescription,
+        eventCategory: eventDescription,
+        eventAction: event.type,
         eventLabel: document.title
     })
 
