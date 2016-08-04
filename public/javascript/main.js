@@ -408,7 +408,14 @@ function doneTyping () {
   ga('send', 'event', $(this).attr('data-ga-track-change'), 'user input', document.title);
 }
 
-$('[data-ga-track-click]').on('click', deferredTracking)
+// Track clicks
+$('[data-ga-track-click]').on('click', function(event){
+  var that = this;
+  deferredTracking(event, function(){
+    var link = $(that).attr('href');
+    if (link) window.location.href = link;
+  })
+})
 
 function deferredTracking(event, callback){
     event.preventDefault();
@@ -424,8 +431,7 @@ function deferredTracking(event, callback){
     })
 
     deferred.done(function(){
-      if (href) window.location.href = href;
-      if (callback) callback();
+        callback();
     })
 }
 
