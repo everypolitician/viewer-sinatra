@@ -430,9 +430,7 @@ function deferredTracking(event, callback){
         eventLabel: document.title
     })
 
-    deferred.done(function(){
-        callback();
-    })
+    return deferred;
 }
 
 analytics = {
