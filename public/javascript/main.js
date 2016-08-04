@@ -283,8 +283,7 @@ $(function(){
     var that = this;
     event.preventDefault();
     analytics.trackEvent({
-        eventCategory: eventDescription,
-        eventDescription: $(this).attr('data-ga-track-change'),
+        eventCategory: $(this).attr('data-ga-track-change'),
         eventAction: event.type
     })
     .done(function(){
@@ -419,8 +418,7 @@ $('[data-ga-track-click]').on('click', function(event){
     var that = this;
     event.preventDefault();
     analytics.trackEvent({
-        eventCategory: eventDescription,
-        eventDescription: $(this).attr('data-ga-track-click'),
+        eventCategory: $(this).attr('data-ga-track-click'),
         eventAction: event.type
     })
     .done(function(){
