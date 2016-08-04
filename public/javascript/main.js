@@ -278,7 +278,12 @@ $(function(){
 
   $('.js-sortable').sortable();
 
-  $('.js-navigation-menu').on('change', deferredTracking);
+  $('.js-navigation-menu').on('change', function(event){
+    var that = this;
+    deferredTracking(event, function(){
+      window.location.href = $(that).val();
+    })
+  });
 
   $('html').removeClass('no-js');
 
@@ -397,12 +402,12 @@ $input.on('keydown', function () {
 });
 
 function doneTyping () {
-  ga('send', 'event', 'user input', $(this).attr('data-ga-tack-change'), document.title);
+  ga('send', 'event', 'user input', $(this).attr('data-ga-track-change'), document.title);
 }
 
 $('[data-ga-track-click]').on('click', deferredTracking)
 
-function deferredTracking(event){
+function deferredTracking(event, callback){
     event.preventDefault();
     var href = $(this).attr('href') || false;
 
@@ -417,6 +422,7 @@ function deferredTracking(event){
 
     deferred.done(function(){
       if (href) window.location.href = href;
+      if (callback) callback();
     })
 }
 
