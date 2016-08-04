@@ -281,10 +281,19 @@ $(function(){
 
   $('.js-navigation-menu').on('change', function(event){
     var that = this;
-    deferredTracking(event, function(){
-      window.location.href = $(that).val();
+    event.preventDefault();
+    analytics.trackEvent({
+        hitType: 'event',
+        eventCategory: eventDescription,
+        eventDescription: $(this).attr('data-ga-track-change'),
+        eventAction: event.type,
+        eventLabel: document.title
     })
-  });
+    .done(function(){
+        var link = $(that).val();
+        if (link) window.location.href = link;
+    })
+  })
 
   $('html').removeClass('no-js');
 
@@ -393,45 +402,36 @@ var doneTypingInterval = 2000;  //time in ms, 2 seconds
 var $input = $('[data-ga-track-change]');
 
 //on keyup, start the countdown
-$input.on('keyup', function () {
+$input.on('keyup', function() {
   clearTimeout(typingTimer);
   if (this.value.length > 0)
     typingTimer = setTimeout(doneTyping, doneTypingInterval);
 });
 
 //on keydown, clear the countdown
-$input.on('keydown', function () {
+$input.on('keydown', function() {
   clearTimeout(typingTimer);
 });
 
-function doneTyping () {
+function doneTyping() {
   ga('send', 'event', $(this).attr('data-ga-track-change'), 'user input', document.title);
 }
 
-// Track clicks
 $('[data-ga-track-click]').on('click', function(event){
-  var that = this;
-  deferredTracking(event, function(){
-    var link = $(that).attr('href');
-    if (link) window.location.href = link;
-  })
-})
-
-function deferredTracking(event, callback){
+    var that = this;
     event.preventDefault();
-    var href = $(this).attr('href') || false;
-
-    eventDescription = $(this).attr('data-ga-track-click') || 'Undescribed event';
-
-    var deferred = analytics.trackEvent({
+    analytics.trackEvent({
         hitType: 'event',
         eventCategory: eventDescription,
+        eventDescription: $(this).attr('data-ga-track-click'),
         eventAction: event.type,
         eventLabel: document.title
     })
-
-    return deferred;
-}
+    .done(function(){
+        var link = $(that).attr('href');
+        if (link) window.location.href = link;
+    });
+})
 
 analytics = {
 
