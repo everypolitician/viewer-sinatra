@@ -283,7 +283,6 @@ $(function(){
     var that = this;
     event.preventDefault();
     analytics.trackEvent({
-        hitType: 'event',
         eventCategory: eventDescription,
         eventDescription: $(this).attr('data-ga-track-change'),
         eventAction: event.type
@@ -420,7 +419,6 @@ $('[data-ga-track-click]').on('click', function(event){
     var that = this;
     event.preventDefault();
     analytics.trackEvent({
-        hitType: 'event',
         eventCategory: eventDescription,
         eventDescription: $(this).attr('data-ga-track-click'),
         eventAction: event.type
@@ -458,6 +456,7 @@ analytics = {
         // completes or fails to respond within 2 seconds.
         var dfd = $.Deferred();
         params.eventLabel = params.eventLabel || document.title;
+        params.hitType = params.hitType || 'event';
 
         if(!ga.loaded){
             // GA has not loaded (blocked by adblock?)
