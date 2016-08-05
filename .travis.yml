@@ -4,6 +4,7 @@ script:
   - bundle exec rake test
   - bundle exec rake rubocop
   - scripts/release.sh
+sudo: false
 rvm:
   - 2.0.0
 notifications:
