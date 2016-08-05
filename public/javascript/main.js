@@ -454,9 +454,9 @@ analytics = {
         // completes or fails to respond within 2 seconds.
         var dfd = $.Deferred();
 
-        if(!ga.loaded){
-            // GA has not loaded (blocked by adblock?)
-            return dfd.resolve();
+        if(typeof ga === 'undefined' || !ga.loaded){
+          // GA has not loaded (blocked by adblock?)
+          return dfd.resolve();
         }
 
         var defaults = {
@@ -466,12 +466,14 @@ analytics = {
                 dfd.resolve();
             }
         }
+
         ga('send', $.extend(defaults, params));
 
         // Wait a maximum of 2 seconds for GA response.
         setTimeout(function(){
             dfd.resolve();
         }, 2000);
+
         return dfd.promise();
     }
 
