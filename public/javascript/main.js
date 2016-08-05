@@ -453,8 +453,6 @@ analytics = {
         // The deferred object is resolved when the GA call
         // completes or fails to respond within 2 seconds.
         var dfd = $.Deferred();
-        params.eventLabel = params.eventLabel || document.title;
-        params.hitType = params.hitType || 'event';
 
         if(!ga.loaded){
             // GA has not loaded (blocked by adblock?)
@@ -463,6 +461,7 @@ analytics = {
 
         var defaults = {
             hitType: 'event',
+            eventLabel: document.title,
             hitCallback: function(){
                 dfd.resolve();
             }
