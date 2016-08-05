@@ -279,9 +279,18 @@ $(function(){
 
   $('.js-sortable').sortable();
 
-  $('.js-navigation-menu').on('change', function(){
-    window.location.href = $(this).val();
-  });
+  $('.js-navigation-menu').on('change', function(event){
+    var that = this;
+    event.preventDefault();
+    analytics.trackEvent({
+        eventCategory: $(this).attr('data-ga-track-change'),
+        eventAction: event.type
+    })
+    .done(function(){
+        var link = $(that).val();
+        if (link) window.location.href = link;
+    })
+  })
 
   $('html').removeClass('no-js');
 
@@ -377,4 +386,96 @@ $(function(){
           $(this).data('chart', chart);
       }
   })
+
+// Google Events Tracking
+
+// Tracks interaction with filter field
+// http://stackoverflow.com/questions/4220126/run-javascript-function-when-user-finishes-typing-instead-of-on-key-up
+// Run javascript function when user finishes typing instead of on key up?
+// setup before functions
+//
+var typingTimer;                //timer identifier
+var doneTypingInterval = 2000;  //time in ms, 2 seconds
+var $input = $('[data-ga-track-change]');
+
+//on keyup, start the countdown
+$input.on('keyup', function() {
+  clearTimeout(typingTimer);
+  if (this.value.length > 0)
+    typingTimer = setTimeout(doneTyping, doneTypingInterval);
+});
+
+//on keydown, clear the countdown
+$input.on('keydown', function() {
+  clearTimeout(typingTimer);
+});
+
+function doneTyping() {
+  ga('send', 'event', $(this).attr('data-ga-track-change'), 'user input', document.title);
+}
+
+$('[data-ga-track-click]').on('click', function(event){
+    var that = this;
+    event.preventDefault();
+    analytics.trackEvent({
+        eventCategory: $(this).attr('data-ga-track-click'),
+        eventAction: event.type
+    })
+    .done(function(){
+        var link = $(that).attr('href');
+        if (link) window.location.href = link;
+    });
+})
+
+analytics = {
+
+    trackEvents: function(listOfEvents){
+        // Takes a list of arguments suitable for trackEvent.
+        // Returns a jQuery Deferred object.
+        // The deferred object is resolved when
+        // all of the trackEvent calls are resolved.
+        var dfd = $.Deferred();
+        var deferreds = [];
+        var _this = this;
+        $.each(listOfEvents, function(i, params){
+            deferreds.push(_this.trackEvent(params));
+        });
+        $.when.apply($, deferreds).done(function(){
+            dfd.resolve();
+        });
+        return dfd.promise();
+    },
+
+    trackEvent: function(params){
+        // Takes an object of event parameters, eg:
+        // { eventCategory: 'foo', eventAction: 'bar' }
+        // Returns a jQuery Deferred object.
+        // The deferred object is resolved when the GA call
+        // completes or fails to respond within 2 seconds.
+        var dfd = $.Deferred();
+
+        if(typeof ga === 'undefined' || !ga.loaded){
+          // GA has not loaded (blocked by adblock?)
+          return dfd.resolve();
+        }
+
+        var defaults = {
+            hitType: 'event',
+            eventLabel: document.title,
+            hitCallback: function(){
+                dfd.resolve();
+            }
+        }
+
+        ga('send', $.extend(defaults, params));
+
+        // Wait a maximum of 2 seconds for GA response.
+        setTimeout(function(){
+            dfd.resolve();
+        }, 2000);
+
+        return dfd.promise();
+    }
+
+  }
 });
