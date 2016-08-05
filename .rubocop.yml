@@ -1,6 +1,7 @@
 AllCops:
   Exclude: 
     - 'Vagrantfile'
+    - 'vendor/**/*'
 
 Style/AlignHash:
   EnforcedHashRocketStyle: table
