@@ -1,4 +1,17 @@
 GIT
+  remote: git://github.com/everypolitician/everypolitician-popolo.git
+  revision: 25b8a284b556b60dbe05ba11843b8743aca00975
+  specs:
+    everypolitician-popolo (0.5.0)
+
+GIT
+  remote: git://github.com/everypolitician/everypolitician-ruby.git
+  revision: 63d04059421bf239849a0b77a30d623a4ec98b59
+  specs:
+    everypolitician (0.11.0)
+      everypolitician-popolo
+
+GIT
   remote: git://github.com/sinatra/sinatra.git
   revision: 29c51d12fdd91ee254e51d4ce099535fcb6ea1a9
   specs:
@@ -6,13 +19,6 @@ GIT
       rack (~> 1.4)
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
-
-GIT
-  remote: https://github.com/everypolitician/everypolitician-popolo
-  revision: 2d52e945f2bc1a57731f24d1abaa3cbec29c26d1
-  branch: master
-  specs:
-    everypolitician-popolo (0.4.0)
 
 GEM
   remote: https://rubygems.org/
@@ -71,6 +77,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
+  everypolitician (~> 0.11.0)!
   everypolitician-popolo!
   iso_country_codes
   json
@@ -85,6 +92,9 @@ DEPENDENCIES
   sass
   sinatra!
   yajl-ruby
+
+RUBY VERSION
+   ruby 2.0.0p481
 
 BUNDLED WITH
    1.12.5
