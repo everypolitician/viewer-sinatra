@@ -7,6 +7,7 @@ require 'sass'
 require 'set'
 require 'sinatra'
 require 'yajl/json_gem'
+require 'everypolitician'
 require 'everypolitician/popolo'
 
 require_relative './lib/popolo_helper'
@@ -15,6 +16,8 @@ Dotenv.load
 helpers Popolo::Helper
 
 cjson = File.read('DATASOURCE').chomp
+EveryPolitician.countries_json = cjson
+
 ALL_COUNTRIES = JSON.parse(open(cjson).read, symbolize_names: true).each do |c|
   c[:url] = c[:slug].downcase
 end
@@ -43,17 +46,13 @@ set :erb, trim: '-'
 
 get '/' do
   @countries = ALL_COUNTRIES.to_a
-  @person_count = @countries.map { |c| c[:legislatures].map { |l| l[:person_count].to_i } }.flatten.inject(:+)
+  @person_count = EveryPolitician.countries.flat_map(&:legislatures).map(&:person_count).inject(:+)
+  @total_statements = EveryPolitician.countries.flat_map(&:legislatures).map(&:statement_count).inject(:+)
   @world = WORLD.to_a
 
   @world.each do |slug, country|
-    cjdata = @countries.find(-> { {} }) { |c| c[:url] == slug.to_s }
-    country[:totalPeople] = (cjdata[:legislatures] || []).map { |l| l[:person_count].to_i }.inject(0, :+)
+    country[:totalPeople] = EveryPolitician.country(slug.to_s).legislatures.map(&:person_count).inject(:+) rescue 0
   end
-
-  @total_statements = ALL_COUNTRIES.map do |c|
-    c[:legislatures].map { |l| l[:statement_count] }
-  end.flatten.reduce(&:+)
 
   erb :homepage
 end
