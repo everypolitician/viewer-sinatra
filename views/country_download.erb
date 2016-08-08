@@ -129,14 +129,10 @@ function getQueryParam(key) {
 }
 
 var maxVisibleTerms = 6;
-var reducedVisibleTerms = 3; // best odd, so wanted term is in middle?
+var reducedVisibleTerms = 3; // best odd, so the "wanted term" is in middle
 var wantedHouse = getQueryParam('house');
 var wantedTerm = getQueryParam('term');
 var pageInitFunction = function(){
-
-  // for each house...
-  // highlight the specific term (if there is one)
-  // collapse terms if there are many
 
   $(".country__legislature").each(function(){
     var houseSlug = $(this).data('house');
