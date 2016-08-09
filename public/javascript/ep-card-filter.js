@@ -99,10 +99,16 @@ var CardFilter = function(){
     $('[data-active-section]').attr('data-active-section', state.facet);
     $('.js-show-facet').val(state.facet);
 
-    if( typeof state.search === 'undefined' ){
+    if( state.facet === defaultState.facet ){
+      $('.js-show-facet').removeClass('js-filter-trigger--changed');
+    } else {
+      $('.js-show-facet').addClass('js-filter-trigger--changed');
+    }
+
+    if( state.search === defaultState.search ){
       $('.js-filter-target--hidden').removeClass('js-filter-target--hidden');
       $('.js-person-card__section--visible').removeClass('js-person-card__section--visible');
-      $('.js-filter-input').val('');
+      $('.js-filter-input').val('').removeClass('js-filter-trigger--changed');
 
     } else {
       $('.js-filter-target').each(function(){
@@ -126,7 +132,7 @@ var CardFilter = function(){
         });
       });
 
-      $('.js-filter-input').val(state.search);
+      $('.js-filter-input').val(state.search).addClass('js-filter-trigger--changed');
     }
 
     // Other scripts might want to do something special once they know
