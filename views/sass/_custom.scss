@@ -115,69 +115,6 @@
   }
 }
 
-.homepage-data-example__toggles {
-  margin-top: 1em;
-
-  .section-toggle {
-    color: $colour_links;
-    margin: 0 1em;
-    cursor: pointer;
-    padding-bottom: 0.2em;
-
-    &:hover,
-    &:active,
-    &:focus {
-      color:darken($colour_links, 10%);
-    }
-  }
-
-  .section-toggle:hover {
-    border-bottom: 2px solid transparentize($colour_links, 0.5);
-  }
-
-  .section-toggle--selected {
-    border-bottom: 2px solid transparentize($colour_links, 0.5);
-    cursor: default;
-  }
-}
-
-.term-membership-table__title {
-    position: relative;
-    padding: 1em 0;
-    text-align: center;
-
-    .download-options,
-    .person-card-filter {
-        margin-top: 1em;
-    }
-
-    @media (min-width: $medium_screen) {
-        .download-options,
-        .person-card-filter {
-            position: absolute;
-            margin-top: 0;
-        }
-
-        .download-options {
-            right: 0;
-            top: 0.5em;
-        }
-
-        .person-card-filter {
-            left: 0;
-            top: 1em;
-        }
-    }
-
-    h2 {
-        margin-bottom: 0;
-    }
-
-    .download-options__dropdown a {
-        width: 16em;
-    }
-}
-
 .party-groupings__title {
     font-size: 0.875em;
     margin-bottom: 1.5em;
@@ -430,25 +367,3 @@ table.definition {
   font-weight: bold;
   margin-right: 0.2em;
 }
-
-// Technically this should probably live in _person-cards.scss,
-// but right now the section-toggles are only displayed inside
-// the data-completeness component, so that’s why it’s here.
-.section-toggle {
-  cursor: pointer;
-  padding-bottom: 0.2em;
-}
-
-// Ideally we’d use inheritance to signal the active toggle(s)
-// but we can’t be sure that the person-cards and all their
-// associated toggles will be within the same `data-active-state`
-// element, so we just add a --selected class to toggles instead.
-.section-toggle:hover {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-}
-
-.section-toggle--selected {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-  cursor: default;
-}
-

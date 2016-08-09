@@ -70,28 +70,20 @@
             <div class="container">
                 <div class="grid-list grid-list--vertically-center grid-list--narrow-columns">
                     <div class="data-completeness">
-                        <span class="section-toggle section-toggle--selected" data-section-toggle="bio" data-ga-track-click="Section toggle: bio">
-                            <span class="data-completeness__label">Biographical</span>
-                            <span class="data-completeness__percentage"><%= @page.percentages.bio %>%</span>
-                        </span>
+                        <span class="data-completeness__label">Biographical</span>
+                        <span class="data-completeness__percentage"><%= @page.percentages.bio %>%</span>
                     </div>
                     <div class="data-completeness">
-                        <span class="section-toggle" data-section-toggle="social" data-ga-track-click="Section toggle: social">
-                            <span class="data-completeness__label">Social links</span>
-                            <span class="data-completeness__percentage"><%= @page.percentages.social %>%</span>
-                        </span>
+                        <span class="data-completeness__label">Social links</span>
+                        <span class="data-completeness__percentage"><%= @page.percentages.social %>%</span>
                     </div>
                     <div class="data-completeness">
-                        <span class="section-toggle" data-section-toggle="contacts" data-ga-track-click="Section toggle: contacts">
-                            <span class="data-completeness__label">Contact details</span>
-                            <span class="data-completeness__percentage"><%= @page.percentages.contacts %>%</span>
-                        </span>
+                        <span class="data-completeness__label">Contact details</span>
+                        <span class="data-completeness__percentage"><%= @page.percentages.contacts %>%</span>
                     </div>
                     <div class="data-completeness">
-                        <span class="section-toggle" data-section-toggle="identifiers" data-ga-track-click="Section toggle: identifiers">
-                            <span class="data-completeness__label">Identifiers</span>
-                            <span class="data-completeness__percentage"><%= @page.percentages.identifiers %>%</span>
-                        </span>
+                        <span class="data-completeness__label">Identifiers</span>
+                        <span class="data-completeness__percentage"><%= @page.percentages.identifiers %>%</span>
                     </div>
                 </div>
             </div>
@@ -110,11 +102,6 @@
             <div class="term-membership-table__title">
                 <h2>Members</h2>
 
-                <span class="person-card-filter">
-                    <label for="filter-input" class="fa fa-search"></label>
-                    <input type="text" class="js-filter-input" id="filter-input" placeholder="Search by name, place, etc…" data-ga-track-change="Filter field">
-                </span>
-
                 <div class="download-options">
                   <!-- download link as button? -->
                   <a class="button button--quarternary" href="/<%= @page.country.slug.downcase %>/<%= @page.house.slug.downcase %>/download.html" data-ga-track-click="Download term data">
@@ -122,6 +109,22 @@
                     Download <span class="large-screen-only">data</span>
                   </a>
                 </div>
+            </div>
+
+            <div class="card-filters">
+                <p class="card-filters__filter">
+                    <label for="filter-input">Search for:</label>
+                    <input type="text" class="js-filter-input" id="filter-input" placeholder="Name, place, etc…" data-ga-track-change="Filter field">
+                </p>
+                <p class="card-filters__filter">
+                    <label for="show-facet">Show details:</label>
+                    <select class="js-show-facet" id="show-facet">
+                        <option value="bio">Biographical</option>
+                        <option value="social">Social links</option>
+                        <option value="contacts">Contact details</option>
+                        <option value="identifiers">Identifiers</option>
+                    </select>
+                </p>
             </div>
 
             <div class="grid-list" data-active-section="bio">

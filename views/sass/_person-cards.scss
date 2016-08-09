@@ -110,25 +110,6 @@ $person_card_sections: (
   display: block !important;
 }
 
-.person-card-filter {
-  display: block;
-
-  .no-js & {
-    display: none;
-  }
-
-  label {
-    color: $colour_mid_grey;
-    margin-right: 0.5em;
-  }
-
-  @media (min-width: $large_screen) {
-    input {
-      width: 16em;
-    }
-  }
-}
-
 .js-filter-target--hidden {
   display: none;
 }

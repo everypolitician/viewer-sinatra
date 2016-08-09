@@ -97,8 +97,7 @@ var CardFilter = function(){
   this._updateUI = function(){
 
     $('[data-active-section]').attr('data-active-section', state.facet);
-    $('[data-section-toggle]').removeClass('section-toggle--selected');
-    $('[data-section-toggle="' + state.facet + '"]').addClass('section-toggle--selected');
+    $('.js-show-facet').val(state.facet);
 
     if( typeof state.search === 'undefined' ){
       $('.js-filter-target--hidden').removeClass('js-filter-target--hidden');
@@ -194,8 +193,8 @@ $(document).ready(function(){
       window.cards.saveState();
     });
 
-    $('[data-section-toggle]').on('click', function(){
-      var section = $(this).attr('data-section-toggle');
+    $('.js-show-facet').on('change', function(){
+      var section = $(this).val();
       window.cards.setFacet(section);
     });
   }
