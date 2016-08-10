@@ -372,4 +372,9 @@ table.definition {
 .download-members {
     font-size: 0.5em;
     margin-left: 1em;
+
+    @media (max-width: 28em) {
+        display: block;
+        margin-left: 0;
+    }
 }
