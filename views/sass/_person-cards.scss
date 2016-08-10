@@ -122,6 +122,15 @@ $person_card_sections: (
         padding: 1em 0;
         text-align: center;
     }
+
+    .js-fixed-child--fixed & {
+        background-color: transparentize($colour_off_white, 0.1);
+        border-top-color: transparentize($colour_off_white, 0.1);;
+        margin: 0 -1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        box-shadow: 0 1em 1em -1em rgba(0,0,0,0.2);
+    }
 }
 
 .card-filters__filter {
@@ -136,10 +145,18 @@ $person_card_sections: (
         font-size: 0.8em;
         margin-bottom: 0.3em;
 
+        // Don't grow, don't shrink
+        @include flex(0 0 auto);
+
         // These styles should still look ok, even without flexbox support
         // so no need for body.flexwrap check.
         padding-right: 1em;
         white-space: nowrap;
+    }
+
+    label + * {
+        // Grow but don't shrink
+        @include flex(1 0 auto);
     }
 
     .js-filter-trigger--changed,
@@ -158,13 +175,21 @@ $person_card_sections: (
             margin-left: 1.5em;
         }
 
-        label, .form-control, input[type].form-control {
+        label,
+        label + * {
+            @include flex(none);
+        }
+
+        label,
+        .form-control,
+        input[type].form-control {
             display: inline;
             display: inline-block;
             width: auto;
         }
 
-        .form-control, input[type].form-control {
+        .form-control,
+        input[type].form-control {
             min-width: 11em; // Enough space for some text, but not too wide
         }
 

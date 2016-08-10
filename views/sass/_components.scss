@@ -428,6 +428,11 @@ input[type].form-control {
   background-color: #fff;
 }
 
+.js-fixed-child--fixed {
+  position: fixed;
+  top: 0;
+}
+
 .js-sortable {
   th {
     cursor: pointer;

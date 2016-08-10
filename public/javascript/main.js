@@ -85,10 +85,6 @@
 
   };
 
-}(jQuery));
-
-(function ($) {
-
   $.fn.sortable = function() {
 
     // Call this on a <table> and it'll make all the columns sortable.
@@ -272,12 +268,82 @@
 
   };
 
+  $.fn.fixedChild = function() {
+
+    // Call this on an element and it'll stay attached
+    // to the top of the window when you scroll down.
+
+    var calculateSpacerDimensions = function calculateSpacerDimensions($el, $spacer){
+      $spacer.css({
+        width: '100%',
+        height: $el.outerHeight(true)
+      });
+    }
+
+    var updateChildPosition = function updateChildPosition($parent, $child, $spacer){
+      var bounds = $parent[0].getBoundingClientRect();
+
+      // First we detect whether *any* of the parent is visible,
+      // then, if it is, we position the child element so that it
+      // never extends outside of the parent bounds even when the
+      // visible portion of the parent is shorter than the child.
+
+      if(bounds.top <= 0 && bounds.bottom >= 0){
+        $spacer.show();
+        $child.addClass('js-fixed-child--fixed').css({
+          width: $spacer.outerWidth()
+        });
+
+        var childHeight = $child.outerHeight(true);
+        if(bounds.bottom < childHeight){
+          $child.css({
+            top: (childHeight - bounds.bottom) * -1
+          });
+        } else {
+          $child.css({
+            top: 0
+          });
+        }
+
+      } else {
+        $spacer.hide();
+        $child.removeClass('js-fixed-child--fixed').css({
+          width: ''
+        });
+      }
+    }
+
+    return this.each(function() {
+      var $el = $(this);
+      var $parent = $el.parent('.js-fixed-parent');
+      var $spacer = $('<div>').addClass('js-fixed-spacer');
+
+      $spacer.insertAfter($el);
+      $spacer.hide();
+
+      calculateSpacerDimensions($el, $spacer);
+      updateChildPosition($parent, $el, $spacer);
+
+      $(window).resize(function(){
+        calculateSpacerDimensions($el, $spacer);
+        updateChildPosition($parent, $el, $spacer);
+      });
+
+      $(window).scroll(function(){
+        updateChildPosition($parent, $el, $spacer);
+      });
+    });
+
+  };
+
 }(jQuery));
 
 $(function(){
   $('.js-fixed-thead').fixedThead();
 
   $('.js-sortable').sortable();
+
+  $('.js-fixed-child').fixedChild();
 
   $('.js-navigation-menu').on('change', function(event){
     var that = this;

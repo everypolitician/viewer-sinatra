@@ -70,20 +70,28 @@
             <div class="container">
                 <div class="grid-list grid-list--vertically-center grid-list--narrow-columns">
                     <div class="data-completeness">
-                        <span class="data-completeness__label">Biographical</span>
-                        <span class="data-completeness__percentage"><%= @page.percentages.bio %>%</span>
+                        <span class="section-toggle section-toggle--selected" data-section-toggle="bio" data-ga-track-click="Section toggle: bio">
+                            <span class="data-completeness__label">Biographical</span>
+                            <span class="data-completeness__percentage"><%= @page.percentages.bio %>%</span>
+                        </span>
                     </div>
                     <div class="data-completeness">
-                        <span class="data-completeness__label">Social links</span>
-                        <span class="data-completeness__percentage"><%= @page.percentages.social %>%</span>
+                        <span class="section-toggle" data-section-toggle="social" data-ga-track-click="Section toggle: social">
+                            <span class="data-completeness__label">Social links</span>
+                            <span class="data-completeness__percentage"><%= @page.percentages.social %>%</span>
+                        </span>
                     </div>
                     <div class="data-completeness">
-                        <span class="data-completeness__label">Contact details</span>
-                        <span class="data-completeness__percentage"><%= @page.percentages.contacts %>%</span>
+                        <span class="section-toggle" data-section-toggle="contacts" data-ga-track-click="Section toggle: contacts">
+                            <span class="data-completeness__label">Contact details</span>
+                            <span class="data-completeness__percentage"><%= @page.percentages.contacts %>%</span>
+                        </span>
                     </div>
                     <div class="data-completeness">
-                        <span class="data-completeness__label">Identifiers</span>
-                        <span class="data-completeness__percentage"><%= @page.percentages.identifiers %>%</span>
+                        <span class="section-toggle" data-section-toggle="identifiers" data-ga-track-click="Section toggle: identifiers">
+                            <span class="data-completeness__label">Identifiers</span>
+                            <span class="data-completeness__percentage"><%= @page.percentages.identifiers %>%</span>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -106,84 +114,94 @@
                 </a>
             </h2>
 
-            <div class="card-filters">
-                <p class="card-filters__filter">
-                    <label for="filter-input">Search for:</label>
-                    <input type="text" class="form-control js-filter-input" id="filter-input" placeholder="Name, place, etc…" data-ga-track-change="Filter field">
-                </p>
-                <p class="card-filters__filter">
-                    <label for="show-facet">Show details:</label>
-                    <select class="js-show-facet form-control" id="show-facet">
-                        <option value="bio">Biographical</option>
-                        <option value="social">Social links</option>
-                        <option value="contacts">Contact details</option>
-                        <option value="identifiers">Identifiers</option>
-                    </select>
-                </p>
-            </div>
+            <div class="js-fixed-parent">
 
-            <div class="grid-list" data-active-section="bio">
-
-              <% @page.people.each do |person| %>
-                <div class="js-filter-target">
-                    <div class="person-card" id="mem-<%= person.id %>">
-
-                        <div class="person-card__primary">
-
-                          <%# If person has an image, prepare a lazy-loaded version
-                              (which is display:none until JavaScript unhides it)
-                              and a fallback for non-javascript users, otherwise
-                              just show a generic placeholder image.  %>
-                          <% if person.image %>
-                            <img src="/images/person-placeholder-108px.png"
-                                 data-src="<%= person.proxy_image %>"
-                                 style="display: none"
-                                 class="person-card__image">
-                            <noscript><img src="<%= person.proxy_image %>" class="person-card__image"></noscript>
-                          <% else %>
-                            <img src="/images/person-placeholder-108px.png" class="person-card__image">
-                          <% end %>
-
-                            <h3 class="person-card__name"><%= person.name %></h3>
-
-                          <% person.memberships.each do |mem| %>
-                            <p class="person-card__politics">
-
-                              <%= [mem.group, mem.area].reject(&:nil?).map(&:name).join(" — ") %>
-
-                              <% if mem.start_date && mem.end_date %>
-                                <span class="person-card__politics__date">(<%= mem.start_date.to_s %> to <%= mem.end_date.to_s %>)</span>
-                              <% elsif mem.start_date %>
-                                <span class="person-card__politics__date">(from <%= mem.start_date.to_s %>)</span>
-                              <% elsif mem.end_date %>
-                                <span class="person-card__politics__date">(until <%= mem.end_date.to_s %>)</span>
-                              <% end %>
-                            </p>
-                          <% end %>
-                        </div>
-
-                        <% %i(bio social contacts identifiers).select { |s| person.send(s).any? }.each do |section| %>
-                          <div class="person-card__section person-card__section--<%= section %>">
-                            <table>
-                              <% person.send(section).each do |entry| %>
-                                <tr title="<%= entry.value %>">
-                                    <th><%= entry.type %></th>
-                                    <td>
-                                      <% if entry.link %>
-                                        <a href="<%= entry.link %>"><%= entry.value %></a>
-                                      <% else %>
-                                        <%= entry.value %>
-                                      <% end %>
-                                    </td>
-                                </tr>
-                              <% end %>
-                            </table>
-                          </div>
-                        <% end %>
-
+                <div class="js-fixed-child">
+                    <div class="card-filters">
+                        <p class="card-filters__filter">
+                            <label for="filter-input">Search for:</label>
+                            <span>
+                                <input type="text" class="form-control js-filter-input" id="filter-input" placeholder="Name, place, etc…" data-ga-track-change="Filter field">
+                            </span>
+                        </p>
+                        <p class="card-filters__filter">
+                            <label for="show-facet">Show details:</label>
+                            <span>
+                                <select class="js-show-facet form-control" id="show-facet">
+                                    <option value="bio">Biographical</option>
+                                    <option value="social">Social links</option>
+                                    <option value="contacts">Contact details</option>
+                                    <option value="identifiers">Identifiers</option>
+                                </select>
+                            </span>
+                        </p>
                     </div>
                 </div>
-              <% end %>
+
+                <div class="grid-list" data-active-section="bio">
+
+                  <% @page.people.each do |person| %>
+                    <div class="js-filter-target">
+                        <div class="person-card" id="mem-<%= person.id %>">
+
+                            <div class="person-card__primary">
+
+                              <%# If person has an image, prepare a lazy-loaded version
+                                  (which is display:none until JavaScript unhides it)
+                                  and a fallback for non-javascript users, otherwise
+                                  just show a generic placeholder image.  %>
+                              <% if person.image %>
+                                <img src="/images/person-placeholder-108px.png"
+                                     data-src="<%= person.proxy_image %>"
+                                     style="display: none"
+                                     class="person-card__image">
+                                <noscript><img src="<%= person.proxy_image %>" class="person-card__image"></noscript>
+                              <% else %>
+                                <img src="/images/person-placeholder-108px.png" class="person-card__image">
+                              <% end %>
+
+                                <h3 class="person-card__name"><%= person.name %></h3>
+
+                              <% person.memberships.each do |mem| %>
+                                <p class="person-card__politics">
+
+                                  <%= [mem.group, mem.area].reject(&:nil?).map(&:name).join(" — ") %>
+
+                                  <% if mem.start_date && mem.end_date %>
+                                    <span class="person-card__politics__date">(<%= mem.start_date.to_s %> to <%= mem.end_date.to_s %>)</span>
+                                  <% elsif mem.start_date %>
+                                    <span class="person-card__politics__date">(from <%= mem.start_date.to_s %>)</span>
+                                  <% elsif mem.end_date %>
+                                    <span class="person-card__politics__date">(until <%= mem.end_date.to_s %>)</span>
+                                  <% end %>
+                                </p>
+                              <% end %>
+                            </div>
+
+                            <% %i(bio social contacts identifiers).select { |s| person.send(s).any? }.each do |section| %>
+                              <div class="person-card__section person-card__section--<%= section %>">
+                                <table>
+                                  <% person.send(section).each do |entry| %>
+                                    <tr title="<%= entry.value %>">
+                                        <th><%= entry.type %></th>
+                                        <td>
+                                          <% if entry.link %>
+                                            <a href="<%= entry.link %>"><%= entry.value %></a>
+                                          <% else %>
+                                            <%= entry.value %>
+                                          <% end %>
+                                        </td>
+                                    </tr>
+                                  <% end %>
+                                </table>
+                              </div>
+                            <% end %>
+
+                        </div>
+                    </div>
+                  <% end %>
+
+                </div>
 
             </div>
 
