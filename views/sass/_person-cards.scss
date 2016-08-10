@@ -113,3 +113,59 @@ $person_card_sections: (
 .js-filter-target--hidden {
   display: none;
 }
+
+.card-filters {
+    border-top: 1px solid $colour_light_grey;
+    border-bottom: 1px solid $colour_light_grey;
+
+    @media (min-width: $medium_screen) {
+        padding: 1em 0;
+        text-align: center;
+    }
+}
+
+.card-filters__filter {
+    margin: 1em 0;
+
+    // Optional flexbox layout to wrap label and input onto same line
+    @include flexbox();
+    @include flex-align(baseline);
+
+    label {
+        display: block;
+        font-size: 0.8em;
+        margin-bottom: 0.3em;
+
+        // These styles should still look ok, even without flexbox support
+        // so no need for body.flexwrap check.
+        padding-right: 1em;
+        white-space: nowrap;
+    }
+
+    @media (min-width: $medium_screen) {
+        // Flexbox begone. Arrange the filters on single, centred line.
+        display: inline;
+        display: inline-block;
+        margin: 0;
+
+        & + & {
+            margin-left: 1.5em;
+        }
+
+        label, .form-control, input[type].form-control {
+            display: inline;
+            display: inline-block;
+            width: auto;
+        }
+
+        .form-control, input[type].form-control {
+            min-width: 11em; // Enough space for some text, but not too wide
+        }
+
+        label {
+            font-size: 0.9em;
+            margin-bottom: 0;
+            padding-right: 0.5em;
+        }
+    }
+}
