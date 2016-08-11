@@ -200,8 +200,36 @@ $(document).ready(function(){
     });
 
     $('.js-show-facet').on('change', function(){
+      // Changing the facet has the potential to resize every card on the
+      // page. If cards above the current viewport are resized, you can easily
+      // lose your place in the list. So we're going to do some devious maths
+      // to pick a "reference card" (usually the top left visible card) and
+      // make sure that the viewport scrolls to maintain that reference card's
+      // position on screen, even if all the preceding cards change size.
+      var pixelsAboveViewport = $(window).scrollTop();
+      var referenceCardPixelsIntoViewport;
+      var $referenceCard;
+
+      // Find the reference card.
+      $('.person-card').each(function(){
+        var thisCardOffset = $(this).offset().top;
+        if ( thisCardOffset > pixelsAboveViewport ) {
+          $referenceCard = $(this);
+          referenceCardPixelsIntoViewport = thisCardOffset - pixelsAboveViewport;
+          return false; // break out of .each loop
+        }
+      });
+
+      // Actually set the visible facet on all the cards.
       var section = $(this).val();
       window.cards.setFacet(section);
+
+      // Now the facet has changed, adjust the window's scroll position so the
+      // reference card is back in the same visual location it was before.
+      $(window).scrollTop(
+        $referenceCard.offset().top - referenceCardPixelsIntoViewport
+      );
+
     });
   }
 
