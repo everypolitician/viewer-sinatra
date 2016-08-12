@@ -117,7 +117,9 @@
 
                 <div class="download-options">
                   <!-- download link as button? -->
-                  <a class="button button--quarternary" href="../../download.html" data-ga-track-click="Download term data"
+                  <a class="button button--quarternary js-download-with-term"
+                      href="../../download.html"
+                      data-ga-track-click="Download term data"
                       data-house="<%= @house[:slug].downcase %>"
                       data-term="<%= @term[:slug].downcase %>">
                     <i class="fa fa-download"></i>
