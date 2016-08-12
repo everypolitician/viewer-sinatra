@@ -281,14 +281,20 @@
     }
 
     var updateChildPosition = function updateChildPosition($parent, $child, $spacer){
+      // Is this $child being (temporarily) absolutely positioned?
+      // (eg: to avoid the iOS8 scroll to fixed focussed element bug)
+      if($child.is('.js-fixed-child--absolute')){
+        return updateChildPositionAbsolute($parent, $child, $spacer);
+      }
+
+      // First we detect whether the top of the $parent is above the
+      // viewport, then, if it is, we position the $child element so
+      // that it never extends outside of the $parent bounds even when
+      // the visible portion of the $parent is shorter than the $child.
       var bounds = $parent[0].getBoundingClientRect();
 
-      // First we detect whether *any* of the parent is visible,
-      // then, if it is, we position the child element so that it
-      // never extends outside of the parent bounds even when the
-      // visible portion of the parent is shorter than the child.
-
       if(bounds.top <= 0 && bounds.bottom >= 0){
+        // $parent is in view. Fix the $child.
         $spacer.show();
         $child.addClass('js-fixed-child--fixed').css({
           width: $spacer.outerWidth()
@@ -296,18 +302,56 @@
 
         var childHeight = $child.outerHeight(true);
         if(bounds.bottom < childHeight){
+          // Visible portion of the $parent is shorter than the
+          // total height of the $child. So position the $child
+          // slightly off screen, to appear "inside" the $parent.
           $child.css({
             top: (childHeight - bounds.bottom) * -1
           });
         } else {
+          // Visible portion of the $parent is taller than the
+          // $child, so just position it at the top of the viewport.
           $child.css({
             top: 0
           });
         }
 
       } else {
+        // $parent is not in view. Unfix the child.
         $spacer.hide();
         $child.removeClass('js-fixed-child--fixed').css({
+          width: ''
+        });
+      }
+    }
+
+    updateChildPositionAbsolute = function updateChildPositionAbsolute($parent, $child, $spacer){
+      // Even though $child is positioned absolutely (relative to $parent)
+      // we still need to detect whether the top of the $parent is above
+      // the viewport.
+      var bounds = $parent[0].getBoundingClientRect();
+
+      if(bounds.top <= 0 && bounds.bottom >= 0){
+        // $parent is in view. Position the $child.
+        $spacer.show();
+        $child.addClass('js-fixed-child--absolute').css({
+          width: $spacer.outerWidth()
+        });
+
+        var childHeight = $child.outerHeight(true);
+        // Child position from top edge of parent should be either
+        // the full height of the hidden portion of the $parent, or
+        // the height of the $parent minus the height of the $child,
+        // whichever is smaller. (This ensures the $child always
+        // appears to be *inside* the parent.)
+        $child.css({
+          top: Math.min(bounds.top * -1, bounds.height - childHeight)
+        });
+
+      } else {
+        // $parent is not in view. Unposition and unfix the child.
+        $spacer.hide();
+        $child.removeClass('js-fixed-child--fixed js-fixed-child--absolute').css({
           width: ''
         });
       }
@@ -331,6 +375,45 @@
 
       $(window).scroll(function(){
         updateChildPosition($parent, $el, $spacer);
+      });
+
+      // Temporarily set the fixed child to be absolutely positioned,
+      // to avoid the iOS8/9 bug where Safari attempts to scroll up to
+      // a focussed input even when it's (fixed) positioned relative
+      // to the viewport.
+      //
+      // We have to bind to touchstart, rather than focus, because by
+      // the time the focus event fires, Safari has already scrolled up.
+      //
+      // We could user-agent sniff this, to avoid performing the fix on
+      // devices that don't require it, but touchstart already excludes
+      // most desktop users, and even if people see it, there aren't any
+      // negative effects, aside from slightly janky scrolling.
+      $el.on('touchstart', function(e){
+        $el.addClass('js-fixed-child--absolute');
+        updateChildPosition($parent, $el, $spacer);
+
+        var undoPositioning = function undoPositioning(){
+          $el.removeClass('js-fixed-child--absolute');
+          updateChildPosition($parent, $el, $spacer);
+        }
+
+        // Undo the temporary position once the input has lost focus.
+        //
+        // `blur` event does not propagate, but jQuery polyfills with a
+        // `focusout` event that *does*, so we use that instead.
+        $el.one('focusout', undoPositioning);
+
+        // It's possible the touchstart was not part of a focus event.
+        // So we wait a little bit, then check for a focussed input,
+        // and if none is found, we undo the positioning.
+        // If we didn't do this, the element would remain absolutely
+        // positioned until the next `blur` event, which might never come!
+        setTimeout(function(){
+          if($el.find('input:focus, textarea:focus, select:focus').length === 0){
+            undoPositioning();
+          }
+        }, 500);
       });
     });
 

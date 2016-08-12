@@ -230,6 +230,14 @@ $(document).ready(function(){
         $referenceCard.offset().top - referenceCardPixelsIntoViewport
       );
 
+      // Some mobile browsers (eg: iOS Safari) make it really difficult to
+      // unfocus a `select` element. This is a pain for us, because it means
+      // our "temporary" absolute positioning fix (.js-fixed-child--absolute)
+      // could remain in place much longer than required. Manually blurring
+      // the input once a selection has been made avoids this problem, and
+      // most users won't even noticed it's happened.
+      $(this).trigger('blur');
+
     });
   }
 

@@ -433,6 +433,14 @@ input[type].form-control {
   top: 0;
 }
 
+.js-fixed-child--absolute {
+  position: absolute;
+}
+
+.js-fixed-parent {
+  position: relative;
+}
+
 .js-sortable {
   th {
     cursor: pointer;
