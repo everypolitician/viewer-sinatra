@@ -325,7 +325,7 @@
       }
     }
 
-    updateChildPositionAbsolute = function updateChildPositionAbsolute($parent, $child, $spacer){
+    var updateChildPositionAbsolute = function updateChildPositionAbsolute($parent, $child, $spacer){
       // Even though $child is positioned absolutely (relative to $parent)
       // we still need to detect whether the top of the $parent is above
       // the viewport.
