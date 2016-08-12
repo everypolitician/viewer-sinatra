@@ -283,12 +283,12 @@ $(function(){
     var that = this;
     event.preventDefault();
     analytics.trackEvent({
-        eventCategory: $(this).attr('data-ga-track-change'),
-        eventAction: event.type
+      eventCategory: $(this).attr('data-ga-track-change'),
+      eventAction: event.type
     })
     .done(function(){
-        var link = $(that).val();
-        if (link) window.location.href = link;
+      var link = $(that).val();
+      if (link) window.location.href = link;
     })
   })
 
@@ -308,8 +308,8 @@ $(function(){
   $('.js-select-to-autocomplete').selectToAutocomplete().on('change', function(){
     var v = $(this).val();
     if (v) {
-        // Assumes the <option>'s `value` attribute is a URL slug for the country
-        window.location.href = '/' + v + '/';
+      // Assumes the <option>'s `value` attribute is a URL slug for the country
+      window.location.href = '/' + v + '/';
     }
   }).on('focus', function(){
     $(this).next().trigger("focus");
@@ -343,48 +343,48 @@ $(function(){
   });
 
   $('.data-completeness__percentage').each(function(){
-      var percent = parseFloat( $(this).text() );
-      var label = $(this).prev().text();
-      var $parent = $(this).parents('.data-completeness');
+    var percent = parseFloat( $(this).text() );
+    var label = $(this).prev().text();
+    var $parent = $(this).parents('.data-completeness');
 
-      if(percent == 100){
-          // Display a full circle with a tick, instead of a pie chart
-          $parent.prepend('<div class="chart-full"><i class="fa fa-check"></i></div>');
+    if(percent == 100){
+      // Display a full circle with a tick, instead of a pie chart
+      $parent.prepend('<div class="chart-full"><i class="fa fa-check"></i></div>');
+    } else {
+      // Display a pie chart (empty if percent==0)
+      if (percent == 0) {
+        var data = [{
+          value: 100,
+          label: "No data",
+          color: "rgba(255, 255, 255, 0.3)"
+        }];
       } else {
-          // Display a pie chart (empty if percent==0)
-          if (percent == 0) {
-              var data = [{
-                  value: 100,
-                  label: "No data",
-                  color: "rgba(255, 255, 255, 0.3)"
-              }];
-          } else {
-              var data = [{
-                  value: percent,
-                  label: label,
-                  color: "rgba(255, 255, 255, 1)"
-              }, {
-                  value: 100 - percent,
-                  label: "No data",
-                  color: "rgba(255, 255, 255, 0.3)"
-              }];
-          }
-
-          var $canvas = $('<canvas width="100" height="100"></canvas>');
-          var $wrapped = $canvas.wrap('<div class="canvas-wrapper"></div>').parent();
-          $parent.prepend($wrapped);
-
-          var context = $canvas[0].getContext('2d');
-          var chart = new Chart(context).Doughnut(data, {
-              segmentShowStroke: false,
-              animation: false,
-              showTooltips: false,
-              responsive: true,
-              percentageInnerCutout: 66
-          });
-
-          $(this).data('chart', chart);
+        var data = [{
+          value: percent,
+          label: label,
+          color: "rgba(255, 255, 255, 1)"
+        }, {
+          value: 100 - percent,
+          label: "No data",
+          color: "rgba(255, 255, 255, 0.3)"
+        }];
       }
+
+      var $canvas = $('<canvas width="100" height="100"></canvas>');
+      var $wrapped = $canvas.wrap('<div class="canvas-wrapper"></div>').parent();
+      $parent.prepend($wrapped);
+
+      var context = $canvas[0].getContext('2d');
+      var chart = new Chart(context).Doughnut(data, {
+        segmentShowStroke: false,
+        animation: false,
+        showTooltips: false,
+        responsive: true,
+        percentageInnerCutout: 66
+      });
+
+      $(this).data('chart', chart);
+    }
   })
 
   // Google Events Tracking
@@ -415,66 +415,66 @@ $(function(){
   }
 
   $('[data-ga-track-click]').on('click', function(event){
-      var that = this;
-      event.preventDefault();
-      analytics.trackEvent({
-          eventCategory: $(this).attr('data-ga-track-click'),
-          eventAction: event.type
-      })
-      .done(function(){
-          var link = $(that).attr('href');
-          if (link) window.location.href = link;
-      });
+    var that = this;
+    event.preventDefault();
+    analytics.trackEvent({
+      eventCategory: $(this).attr('data-ga-track-click'),
+      eventAction: event.type
+    })
+    .done(function(){
+      var link = $(that).attr('href');
+      if (link) window.location.href = link;
+    });
   })
 
   analytics = {
 
     trackEvents: function(listOfEvents){
-        // Takes a list of arguments suitable for trackEvent.
-        // Returns a jQuery Deferred object.
-        // The deferred object is resolved when
-        // all of the trackEvent calls are resolved.
-        var dfd = $.Deferred();
-        var deferreds = [];
-        var _this = this;
-        $.each(listOfEvents, function(i, params){
-            deferreds.push(_this.trackEvent(params));
-        });
-        $.when.apply($, deferreds).done(function(){
-            dfd.resolve();
-        });
-        return dfd.promise();
+      // Takes a list of arguments suitable for trackEvent.
+      // Returns a jQuery Deferred object.
+      // The deferred object is resolved when
+      // all of the trackEvent calls are resolved.
+      var dfd = $.Deferred();
+      var deferreds = [];
+      var _this = this;
+      $.each(listOfEvents, function(i, params){
+          deferreds.push(_this.trackEvent(params));
+      });
+      $.when.apply($, deferreds).done(function(){
+          dfd.resolve();
+      });
+      return dfd.promise();
     },
 
     trackEvent: function(params){
-        // Takes an object of event parameters, eg:
-        // { eventCategory: 'foo', eventAction: 'bar' }
-        // Returns a jQuery Deferred object.
-        // The deferred object is resolved when the GA call
-        // completes or fails to respond within 2 seconds.
-        var dfd = $.Deferred();
+      // Takes an object of event parameters, eg:
+      // { eventCategory: 'foo', eventAction: 'bar' }
+      // Returns a jQuery Deferred object.
+      // The deferred object is resolved when the GA call
+      // completes or fails to respond within 2 seconds.
+      var dfd = $.Deferred();
 
-        if(typeof ga === 'undefined' || !ga.loaded){
-          // GA has not loaded (blocked by adblock?)
-          return dfd.resolve();
+      if(typeof ga === 'undefined' || !ga.loaded){
+        // GA has not loaded (blocked by adblock?)
+        return dfd.resolve();
+      }
+
+      var defaults = {
+        hitType: 'event',
+        eventLabel: document.title,
+        hitCallback: function(){
+          dfd.resolve();
         }
+      }
 
-        var defaults = {
-            hitType: 'event',
-            eventLabel: document.title,
-            hitCallback: function(){
-                dfd.resolve();
-            }
-        }
+      ga('send', $.extend(defaults, params));
 
-        ga('send', $.extend(defaults, params));
+      // Wait a maximum of 2 seconds for GA response.
+      setTimeout(function(){
+        dfd.resolve();
+      }, 2000);
 
-        // Wait a maximum of 2 seconds for GA response.
-        setTimeout(function(){
-            dfd.resolve();
-        }, 2000);
-
-        return dfd.promise();
+      return dfd.promise();
     }
 
   }
