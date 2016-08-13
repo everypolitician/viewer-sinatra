@@ -121,3 +121,34 @@
     </div>
   </div>
 </div>
+<script>
+
+  var maxVisibleTerms = 6;
+  var reducedVisibleTerms = 3; // best odd, so the "wanted term" is in middle
+  var wantedHouse = getQueryParam('house');
+  var wantedTerm = getQueryParam('term');
+  var pageInitFunction = function(){
+
+    $(".country__legislature").each(function(){
+      var houseSlug = $(this).data('house');
+      var $termsUl = $('#terms-' + houseSlug);
+      var $wantedTermItem;
+
+      if (wantedHouse == houseSlug && wantedTerm) {
+        $wantedTermItem = $('#' + "term-" + houseSlug + '-' + wantedTerm);
+        $wantedTermItem.addClass("download-terms__highlighted");
+      }
+
+      collapseDisplayedItems(
+        $termsUl,
+        $wantedTermItem, // note: may be undefined
+        'hidden-term',
+        maxVisibleTerms,
+        reducedVisibleTerms,
+        "Show all " + $termsUl.find('li').length + " terms"
+      );
+    });
+
+  }
+
+</script>

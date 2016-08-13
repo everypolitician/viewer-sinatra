@@ -385,7 +385,21 @@ $(function(){
 
       $(this).data('chart', chart);
     }
-  })
+  });
+
+  $(".js-download-with-term").on("click", function(e){
+    var term = $(e.target).data("term");
+    var house = $(e.target).data("house");
+    if (term && house) {
+      // inject query vars into URL before the target anchor
+      e.preventDefault();
+      var href = $(e.target).attr('href');
+      if (href.indexOf('#') == -1) {
+        href = href + "#"; // add anchor tag at end of URL
+      }
+      location = href.replace('#', "?" + $.param({term: term, house: house}) + "#");
+    }
+  });
 
   // Google Events Tracking
 
@@ -478,9 +492,61 @@ $(function(){
     }
 
   }
+
+  if (typeof pageInitFunction === 'function') {
+    pageInitFunction();
+  }
 });
 
 function getQueryParam(key) {
   var match = location.search.match(new RegExp("[?&]" + key + "=([^&]+)(&|$)"));
   return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+}
+
+// collapseDisplayedItems:
+// If there are too many items being displayed in the list, hide
+// all but a few, making sure the target element (if there is one)
+// is included in those that are not hidden. Add a button for
+// revealing the hidden items.
+// Note this is used on the download page, where (currently) there
+// may be more than one such list (e.g., one for each legislature).
+
+function collapseDisplayedItems(
+    $ul,               // unordered list elementthat needs to be collapsed
+                       // note: <ul> must have an id
+    $targetItem,       // item within that which needs to be highlighted
+                       // ...if none (which is OK) take the first
+    hiddenClassName,   // CSS class used to distinguish collapsed elements
+    minThresholdItems, // only collapse if more elements than this
+    maxDisplayItems,   // number of elements to show when collapsed
+    buttonText         // message on reveal button
+  ) {
+  var $listItems = $ul.find('li');
+  if ($listItems.length > minThresholdItems) {
+    $listItems.addClass(hiddenClassName);
+    // want a slice around targetIndex of maxDisplayItems
+    var targetIndex = $listItems.index($targetItem);
+    var maxUpperBound = $listItems.length;
+    var lowerBound = targetIndex - Math.floor(maxDisplayItems/2);
+    var upperBound = targetIndex + Math.floor(maxDisplayItems/2) + 1;
+    var delta = upperBound - maxUpperBound;
+    if (delta > 0) {
+      upperBound = maxUpperBound;
+      lowerBound = lowerBound - delta;
+    }
+    if (lowerBound < 0) {
+      upperBound = Math.min(upperBound + Math.abs(lowerBound), maxUpperBound);
+      lowerBound = 0;
+    }
+    $listItems.slice(lowerBound, upperBound).removeClass(hiddenClassName);
+
+    $('.' + hiddenClassName).hide();
+
+    $('<button class="button">' + buttonText + '</button>')
+    .on("click", function(e){
+      e.preventDefault();
+      $('#' + $ul.attr('id') + " ." + hiddenClassName).slideToggle();
+    })
+    .insertBefore($ul);
+  }
 }
