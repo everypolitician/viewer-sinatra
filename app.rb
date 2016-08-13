@@ -134,7 +134,6 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
       id:          person.id,
       name:        person.name,
       image:       person.image,
-      proxy_image: image_proxy_url(person.id),
       memberships: membership_lookup[person.id].map do |mem|
         membership = {
           start_date: mem.start_date,
