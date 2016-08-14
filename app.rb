@@ -11,6 +11,7 @@ require 'everypolitician'
 require 'everypolitician/popolo'
 
 require_relative './lib/popolo_helper'
+require_relative './lib/page/home'
 
 Dotenv.load
 helpers Popolo::Helper
@@ -45,15 +46,7 @@ end
 set :erb, trim: '-'
 
 get '/' do
-  @countries = ALL_COUNTRIES.to_a
-  @person_count = EveryPolitician.countries.flat_map(&:legislatures).map(&:person_count).inject(:+)
-  @total_statements = EveryPolitician.countries.flat_map(&:legislatures).map(&:statement_count).inject(:+)
-  @world = WORLD.to_a
-
-  @world.each do |slug, country|
-    country[:totalPeople] = EveryPolitician.country(slug.to_s).legislatures.map(&:person_count).inject(:+) rescue 0
-  end
-
+  @page = Page::Home.new
   erb :homepage
 end
 
