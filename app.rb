@@ -12,6 +12,7 @@ require 'everypolitician/popolo'
 
 require_relative './lib/popolo_helper'
 require_relative './lib/page/home'
+require_relative './lib/page/download'
 
 Dotenv.load
 helpers Popolo::Helper
@@ -190,8 +191,9 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
 end
 
 get '/:country/download.html' do |country|
-  @country = ALL_COUNTRIES.find { |c| c[:url] == country } || halt(404)
-  @cjson = cjson
+  @page = Page::Download.new(country, cjson)
+  # TODO: perhaps have a `valid?` method?
+  halt(404) unless @page.country
   erb :country_download
 end
 
