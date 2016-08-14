@@ -3,6 +3,7 @@ require 'dotenv'
 require 'octokit'
 require 'open-uri'
 require 'pry'
+require 'require_all'
 require 'sass'
 require 'set'
 require 'sinatra'
@@ -11,8 +12,7 @@ require 'everypolitician'
 require 'everypolitician/popolo'
 
 require_relative './lib/popolo_helper'
-require_relative './lib/page/home'
-require_relative './lib/page/download'
+require_rel './lib/page'
 
 Dotenv.load
 helpers Popolo::Helper
