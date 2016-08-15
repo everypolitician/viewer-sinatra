@@ -485,8 +485,8 @@ $(function(){
 });
 
 // given a list, return a list of maxLength items around
-// the targetItem (where possible)
-function innerList($list, maxLength, $targetItem) {
+// the targetItem; top of list if targetItem is not found
+function getInnerList($list, maxLength, $targetItem) {
   var maxUpperBound = $list.length;
   var targetIndex = $list.index($targetItem);
   var lowerBound = targetIndex - Math.floor(maxLength/2);
@@ -522,9 +522,9 @@ function collapseDisplayedItems(
   ) {
   var $listItems = $ul.find('li');
   if ($listItems.length > minThresholdItems) {
-    $listItems.addClass(hiddenClassName);    
-    $listItems = innerList($listItems, maxDisplayItems, $targetItem);
-    $listItems.removeClass(hiddenClassName);
+    $listItems.addClass(hiddenClassName);
+    alert("FIXME");
+    getInnerList($listItems, maxDisplayItems, $targetItem).removeClass(hiddenClassName);
     $ul.find('.' + hiddenClassName).hide();
 
     $('<button class="button">' + buttonText + '</button>')
