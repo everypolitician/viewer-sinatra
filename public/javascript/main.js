@@ -391,13 +391,15 @@ $(function(){
     var term = $(e.target).data("term");
     var house = $(e.target).data("house");
     if (term && house) {
-      // inject query vars into URL before the target anchor
       e.preventDefault();
+      var queryVars = '?' + $.param({term: term, house: house});
       var href = $(e.target).attr('href');
-      if (href.indexOf('#') == -1) {
-        href = href + "#"; // add anchor tag at end of URL
+      if (href.indexOf('#') != -1) {
+        href = href.replace('#', queryVars + "#");
+      } else {
+        href = href + queryVars;
       }
-      location = href.replace('#', "?" + $.param({term: term, house: house}) + "#");
+      location = href;
     }
   });
 
