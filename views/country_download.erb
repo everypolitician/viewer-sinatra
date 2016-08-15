@@ -125,9 +125,17 @@
 
   var maxVisibleTerms = 6;
   var reducedVisibleTerms = 3; // best odd, so the "wanted term" is in middle
-  var wantedHouse = getQueryParam('house');
-  var wantedTerm = getQueryParam('term');
   var pageInitFunction = function(){
+
+    var wantedHouse;
+    var wantedTerm;
+
+    // URL of the form: url#house-slug:term-slug if a specific term is wanted
+    var hashFragmentParts = window.location.hash.split(':');
+    if (hashFragmentParts.length == 2) {
+      wantedHouse = hashFragmentParts[0].replace('#','');
+      wantedTerm = hashFragmentParts[1];
+    }
 
     $(".country__legislature").each(function(){
       var houseSlug = $(this).data('house');
