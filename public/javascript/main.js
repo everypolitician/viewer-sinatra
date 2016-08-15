@@ -387,22 +387,6 @@ $(function(){
     }
   });
 
-  $(".js-download-with-term").on("click", function(e){
-    var term = $(e.target).data("term");
-    var house = $(e.target).data("house");
-    if (term && house) {
-      e.preventDefault();
-      var queryVars = '?' + $.param({term: term, house: house});
-      var href = $(e.target).attr('href');
-      if (href.indexOf('#') != -1) {
-        href = href.replace('#', queryVars + "#");
-      } else {
-        href = href + queryVars;
-      }
-      location = href;
-    }
-  });
-
   // Google Events Tracking
 
   // Tracks interaction with filter field
@@ -500,10 +484,6 @@ $(function(){
   }
 });
 
-function getQueryParam(key) {
-  var match = location.search.match(new RegExp("[?&]" + key + "=([^&]+)(&|$)"));
-  return match && decodeURIComponent(match[1].replace(/\+/g, " "));
-}
 
 // collapseDisplayedItems:
 // If there are too many items being displayed in the list, hide
