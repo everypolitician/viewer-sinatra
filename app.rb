@@ -203,18 +203,7 @@ get '/status/all_countries.html' do
 end
 
 get '/needed.html' do
-  if (token = ENV['GITHUB_ACCESS_TOKEN']).to_s.empty?
-    warn 'No GITHUB_ACCESS_TOKEN found'
-    client = Octokit::Client.new
-  else
-    client = Octokit::Client.new(access_token: token)
-  end
-  client.auto_paginate = true
-
-  @to_find   = client.issues 'everypolitician/everypolitician-data', labels: 'New Country,To Find'
-  @to_scrape = client.issues 'everypolitician/everypolitician-data', labels: 'New Country,To Scrape'
-  @to_finish = client.issues 'everypolitician/everypolitician-data', labels: 'New Country,3 - WIP'
-
+  @page = Page::Needed.new
   erb :needed
 end
 
