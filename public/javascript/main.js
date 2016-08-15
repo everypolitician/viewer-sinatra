@@ -495,7 +495,6 @@ $(function(){
 
 function collapseDisplayedItems(
     $ul,               // unordered list elementthat needs to be collapsed
-                       // note: <ul> must have an id
     $targetItem,       // item within that which needs to be highlighted
                        // ...if none (which is OK) take the first
     hiddenClassName,   // CSS class used to distinguish collapsed elements
@@ -527,7 +526,7 @@ function collapseDisplayedItems(
     $('<button class="button">' + buttonText + '</button>')
     .on("click", function(e){
       e.preventDefault();
-      $('#' + $ul.attr('id') + " ." + hiddenClassName).slideToggle();
+      $(e.target).next().find("." + hiddenClassName).slideToggle();
     })
     .insertBefore($ul);
   }
