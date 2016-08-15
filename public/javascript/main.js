@@ -521,7 +521,7 @@ function collapseDisplayedItems(
     }
     $listItems.slice(lowerBound, upperBound).removeClass(hiddenClassName);
 
-    $('.' + hiddenClassName).hide();
+    $ul.find('.' + hiddenClassName).hide();
 
     $('<button class="button">' + buttonText + '</button>')
     .on("click", function(e){
