@@ -25,7 +25,7 @@
 
         <div class="container">
             <ul class="grid-list grid-list--vertically-center source-needed">
-              <% @to_find.sort_by { |i| i[:title] }.each do |i| %>
+              <% @page.to_find.sort_by { |i| i[:title] }.each do |i| %>
                 <li>
                     <a class="avatar-unit" href="<%= i[:html_url] %>/">
                         <span class="avatar"><i class="fa fa-users"></i></span>
@@ -47,7 +47,7 @@
 
         <div class="container">
             <ul class="grid-list grid-list--vertically-center scraper-needed">
-              <% @to_scrape.sort_by { |i| i[:title] }.each do |i| %>
+              <% @page.to_scrape.sort_by { |i| i[:title] }.each do |i| %>
                 <li>
                     <a class="avatar-unit" href="<%= i[:html_url] %>/">
                         <span class="avatar"><i class="fa fa-users"></i></span>
@@ -62,7 +62,7 @@
 
         <div class="container">
             <ul class="grid-list grid-list--vertically-center scraper-progress">
-              <% @to_finish.sort_by { |i| i[:title] }.each do |i| %>
+              <% @page.to_finish.sort_by { |i| i[:title] }.each do |i| %>
                 <li>
                     <a class="avatar-unit" href="<%= i[:html_url] %>/">
                         <span class="avatar"><i class="fa fa-users"></i></span>
