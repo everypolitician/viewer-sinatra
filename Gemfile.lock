@@ -56,6 +56,7 @@ GEM
     rainbow (2.1.0)
     rake (10.4.2)
     redcarpet (3.2.2)
+    require_all (1.3.3)
     rubocop (0.42.0)
       parser (>= 2.3.1.1, < 3.0)
       powerpack (~> 0.1)
@@ -88,6 +89,7 @@ DEPENDENCIES
   rack-test
   rake
   redcarpet
+  require_all
   rubocop
   sass
   sinatra!

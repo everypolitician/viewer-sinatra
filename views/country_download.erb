@@ -1,9 +1,9 @@
 <div class="page-section page-section--grey text-center">
   <div class="container">
-    <h3>Download data for politicians in <%= @country[:name] %>.</h3>
+    <h3>Download data for politicians in <%= @page.country[:name] %>.</h3>
   </div>
 </div>
-<% @country[:legislatures].each do |house| %>
+<% @page.country[:legislatures].each do |house| %>
   <div class="page-section">
     <div class="container">
       <div class="country__legislature" id="legislature-<%= house[:slug].downcase %>" data-house="<%= house[:slug].downcase %>">
@@ -67,7 +67,7 @@
           <li id="term-<%= house[:slug].downcase %>-<%= t[:slug].downcase %>" style="margin-bottom:1.5em">
             <div class="avatar-unit">
               <span class="avatar"><i class="fa fa-university"></i></span>
-              <a href="<%= term_table_url(@country, house, t) %>"><h3><%= t[:name] %></h3></a>
+              <a href="<%= term_table_url(@page.country, house, t) %>"><h3><%= t[:name] %></h3></a>
               <p>
                 <% unless t[:start_date].to_s.empty? and t[:end_date].to_s.empty? %>
                   <%= t[:start_date] %> - <%= t[:end_date] %>
@@ -93,7 +93,7 @@
     <div class="layout-equal-columns">
       <div class="first-column">
         <p>
-          Want politicians who aren’t from <%= @country[:name] %>?
+          Want politicians who aren’t from <%= @page.country[:name] %>?
           No problem: we’ve got the world covered.
         </p>
         <p>
@@ -112,7 +112,7 @@
           <a href="http://docs.everypolitician.org/repo_structure.html">read our data</a>.
         </p>
         <p>
-          <a href="<%= @cjson %>" class="button button--download">
+          <a href="<%= @page.download_url %>" class="button button--download">
             <i class="fa fa-download"></i>
             <span class="large-screen-only">Download</span> countries.json
           </a>

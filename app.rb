@@ -3,6 +3,7 @@ require 'dotenv'
 require 'octokit'
 require 'open-uri'
 require 'pry'
+require 'require_all'
 require 'sass'
 require 'set'
 require 'sinatra'
@@ -11,6 +12,7 @@ require 'everypolitician'
 require 'everypolitician/popolo'
 
 require_relative './lib/popolo_helper'
+require_rel './lib/page'
 
 Dotenv.load
 helpers Popolo::Helper
@@ -45,15 +47,7 @@ end
 set :erb, trim: '-'
 
 get '/' do
-  @countries = ALL_COUNTRIES.to_a
-  @person_count = EveryPolitician.countries.flat_map(&:legislatures).map(&:person_count).inject(:+)
-  @total_statements = EveryPolitician.countries.flat_map(&:legislatures).map(&:statement_count).inject(:+)
-  @world = WORLD.to_a
-
-  @world.each do |slug, country|
-    country[:totalPeople] = EveryPolitician.country(slug.to_s).legislatures.map(&:person_count).inject(:+) rescue 0
-  end
-
+  @page = Page::Home.new
   erb :homepage
 end
 
@@ -197,8 +191,9 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
 end
 
 get '/:country/download.html' do |country|
-  @country = ALL_COUNTRIES.find { |c| c[:url] == country } || halt(404)
-  @cjson = cjson
+  @page = Page::Download.new(country, cjson)
+  # TODO: perhaps have a `valid?` method?
+  halt(404) unless @page.country
   erb :country_download
 end
 
