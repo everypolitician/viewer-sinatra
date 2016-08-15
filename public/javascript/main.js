@@ -484,6 +484,24 @@ $(function(){
   }
 });
 
+// given a list, return a list of maxLength items around
+// the targetItem (where possible)
+function innerList($list, maxLength, $targetItem) {
+  var maxUpperBound = $list.length;
+  var targetIndex = $list.index($targetItem);
+  var lowerBound = targetIndex - Math.floor(maxLength/2);
+  var upperBound = targetIndex + Math.floor(maxLength/2) + 1;
+  var delta = upperBound - maxUpperBound;
+  if (delta > 0) {
+    upperBound = maxUpperBound;
+    lowerBound = lowerBound - delta;
+  }
+  if (lowerBound < 0) {
+    upperBound = Math.min(upperBound + Math.abs(lowerBound), maxUpperBound);
+    lowerBound = 0;
+  }
+  return $list.slice(lowerBound, upperBound);
+}
 
 // collapseDisplayedItems:
 // If there are too many items being displayed in the list, hide
@@ -504,23 +522,9 @@ function collapseDisplayedItems(
   ) {
   var $listItems = $ul.find('li');
   if ($listItems.length > minThresholdItems) {
-    $listItems.addClass(hiddenClassName);
-    // want a slice around targetIndex of maxDisplayItems
-    var targetIndex = $listItems.index($targetItem);
-    var maxUpperBound = $listItems.length;
-    var lowerBound = targetIndex - Math.floor(maxDisplayItems/2);
-    var upperBound = targetIndex + Math.floor(maxDisplayItems/2) + 1;
-    var delta = upperBound - maxUpperBound;
-    if (delta > 0) {
-      upperBound = maxUpperBound;
-      lowerBound = lowerBound - delta;
-    }
-    if (lowerBound < 0) {
-      upperBound = Math.min(upperBound + Math.abs(lowerBound), maxUpperBound);
-      lowerBound = 0;
-    }
-    $listItems.slice(lowerBound, upperBound).removeClass(hiddenClassName);
-
+    $listItems.addClass(hiddenClassName);    
+    $listItems = innerList($listItems, maxDisplayItems, $targetItem);
+    $listItems.removeClass(hiddenClassName);
     $ul.find('.' + hiddenClassName).hide();
 
     $('<button class="button">' + buttonText + '</button>')
