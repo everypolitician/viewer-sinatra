@@ -494,7 +494,7 @@ $(function(){
 // may be more than one such list (e.g., one for each legislature).
 
 function collapseDisplayedItems(
-    $ul,               // unordered list elementthat needs to be collapsed
+    $ul,               // unordered list element that needs to be collapsed
     $targetItem,       // item within that which needs to be highlighted
                        // ...if none (which is OK) take the first
     hiddenClassName,   // CSS class used to distinguish collapsed elements
