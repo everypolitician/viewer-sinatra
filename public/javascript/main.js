@@ -523,7 +523,6 @@ function collapseDisplayedItems(
   var $listItems = $ul.find('li');
   if ($listItems.length > minThresholdItems) {
     $listItems.addClass(hiddenClassName);
-    alert("FIXME");
     getInnerList($listItems, maxDisplayItems, $targetItem).removeClass(hiddenClassName);
     $ul.find('.' + hiddenClassName).hide();
 
