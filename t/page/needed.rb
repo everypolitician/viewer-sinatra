@@ -4,15 +4,15 @@ require 'octokit'
 require 'pry'
 require 'vcr'
 
-describe 'Needed' do
-  VCR.configure do |config|
-    config.cassette_library_dir = 't/fixtures/vcr_cassettes'
-    config.hook_into :webmock
-    config.ignore_request do |req|
-      req[:uri].include? 'https://cdn.rawgit.com/everypolitician/everypolitician-data'
-    end
+VCR.configure do |config|
+  config.cassette_library_dir = 't/fixtures/vcr_cassettes'
+  config.hook_into :webmock
+  config.ignore_request do |req|
+    req[:uri].include? 'https://cdn.rawgit.com/everypolitician/everypolitician-data'
   end
+end
 
+describe 'Needed' do
   subject do
     Page::Needed.new
   end
