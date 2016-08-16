@@ -59,14 +59,14 @@ get '/countries.html' do
 end
 
 get '/:country/' do |country|
-  if @country = ALL_COUNTRIES.find { |c| c[:url] == country }
-    @page_title = "EveryPolitician: #{@country[:name]}"
-    erb :country
-  elsif @missing = WORLD[country.to_sym]
-    erb :country_missing
-  else
-    halt(404)
-  end
+  @country = ALL_COUNTRIES.find { |c| c[:url] == country } || pass
+  @page_title = "EveryPolitician: #{@country[:name]}"
+  erb :country
+end
+
+get '/:country/' do |country|
+  @missing = WORLD[country.to_sym] || halt(404)
+  erb :country_missing
 end
 
 get '/:country/:house/wikidata' do |country, house|
