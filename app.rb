@@ -59,10 +59,10 @@ get '/countries.html' do
 end
 
 get '/:country/' do |country|
-  if @country = ALL_COUNTRIES.find { |c| c[:url] == country }
-    @page_title = "EveryPolitician: #{@country[:name]}"
+  @page = Page::Country.new(country, ALL_COUNTRIES, WORLD)
+  if @page.country
     erb :country
-  elsif @missing = WORLD[country.to_sym]
+  elsif @page.missing
     erb :country_missing
   else
     halt(404)

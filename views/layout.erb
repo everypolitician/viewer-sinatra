@@ -1,3 +1,6 @@
+<% @page_title = @page.title   if (@page and @page.respond_to? :title) %>
+<% @country    = @page.country if (@page and @page.respond_to? :country) %>
+
 <!DOCTYPE html>
 <html class="no-js">
 <head>
