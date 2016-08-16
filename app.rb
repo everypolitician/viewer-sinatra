@@ -66,7 +66,8 @@ get '/:country/' do |country|
 end
 
 get '/:country/' do |country|
-  @missing = WORLD[country.to_sym] || halt(404)
+  @page = Page::MissingCountry.new(country)
+  pass unless @page.country
   erb :country_missing
 end
 
