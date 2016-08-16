@@ -200,7 +200,7 @@ get '/status/all_countries.html' do
 end
 
 get '/needed.html' do
-  @page = Page::Needed.new
+  @page = Page::Needed.new(ENV['GITHUB_ACCESS_TOKEN'])
   erb :needed
 end
 
