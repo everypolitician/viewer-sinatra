@@ -58,8 +58,8 @@ get '/countries.html' do
 end
 
 get '/:country/' do |country|
-  @country = ALL_COUNTRIES.find { |c| c[:url] == country } || pass
-  @page_title = "EveryPolitician: #{@country[:name]}"
+  @page = Page::Country.new(country, ALL_COUNTRIES)
+  pass unless @page.country
   erb :country
 end
 
