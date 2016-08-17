@@ -12,7 +12,7 @@ describe 'Needed' do
   end
 
   subject do
-    Page::Needed.new(ENV['GITHUB_ACCESS_TOKEN'])
+    Page::Needed.new(access_token: ENV['GITHUB_ACCESS_TOKEN'])
   end
 
   it 'should return a list of countries to find' do

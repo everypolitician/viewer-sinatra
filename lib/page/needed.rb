@@ -1,8 +1,10 @@
+require 'octokit'
+
 module Page
   class Needed
-    def initialize(access_token = '')
+    def initialize(access_token: required)
+      token_error if access_token.to_s.strip.empty?
       @access_token = access_token
-      warn 'No GITHUB_ACCESS_TOKEN found' if @access_token.to_s.empty?
     end
 
     def to_find
@@ -18,6 +20,10 @@ module Page
     end
 
     private
+
+    def required
+      raise ArgumentError, 'No GITHUB_ACCESS_TOKEN provided'
+    end
 
     def client
       client = Octokit::Client.new(access_token: @access_token)
