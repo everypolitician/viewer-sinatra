@@ -23,14 +23,14 @@ describe 'Homepage' do
   describe 'total_people' do
     it 'should know the person count ' do
       Everypolitician.countries_json = cjson_src
-      subject.total_people.must_equal 70_943
+      subject.total_people.must_equal 71_258
     end
   end
 
   describe 'total_statements' do
     it 'should know the statement count' do
       Everypolitician.countries_json = cjson_src
-      subject.total_statements.must_equal 3_218_179
+      subject.total_statements.must_equal 3_264_842
     end
   end
 end
