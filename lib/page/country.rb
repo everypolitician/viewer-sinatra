@@ -7,11 +7,15 @@ module Page
     end
 
     def country
-      EveryPolitician.country(@slug)
+      @country ||= EveryPolitician.country(slug)
     end
 
     def title
       "EveryPolitician: #{country[:name]}" if country
     end
+
+    private
+
+    attr_reader :slug
   end
 end
