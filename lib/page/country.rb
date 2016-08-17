@@ -2,10 +2,14 @@ require 'everypolitician'
 
 module Page
   class Country
-    attr_reader :country, :title
-    def initialize(country)
-      @country = EveryPolitician.country(country)
-      @title   = "EveryPolitician: #{@country[:name]}" if @country
+    attr_reader :title
+    def initialize(slug)
+      @slug    = slug
+      @title   = "EveryPolitician: #{country[:name]}" if country
+    end
+
+    def country
+      EveryPolitician.country(@slug)
     end
   end
 end
