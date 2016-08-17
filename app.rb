@@ -71,12 +71,8 @@ get '/:country/' do |country|
 end
 
 get '/:country/:house/wikidata' do |country, house|
-  @country = ALL_COUNTRIES.find { |c| c[:url] == country } || halt(404)
-  @house = @country[:legislatures].find { |h| h[:slug].downcase == house } || halt(404)
-  last_sha = @house[:sha]
-  popolo_file = EveryPolitician::GithubFile.new(@house[:popolo], last_sha)
-  @popolo = JSON.parse(popolo_file.raw, symbolize_names: true)
-  @page_title = "EveryPolitician: #{@country[:name]} — #{@house[:name]}"
+  @page = Page::HouseWikidata.new(country, house)
+  halt(404) unless @page.house
   erb :wikidata_match
 end
 
