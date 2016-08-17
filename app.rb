@@ -53,9 +53,7 @@ get '/' do
 end
 
 get '/countries.html' do
-  @countries = ALL_COUNTRIES.to_a
-  @world = WORLD.to_a
-  @cjson = cjson
+  @page = Page::Countries.new
   erb :countries
 end
 

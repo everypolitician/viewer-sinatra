@@ -2,23 +2,23 @@
     <div class="container">
 
         <div class="text-center">
-            <h2>Data from <%= @countries.length %> countries</h2>
-            <p>But we’re still missing <%= @world.length - @countries.length %>.
+            <h2>Data from <%= @page.countries.length %> countries</h2>
+            <p>But we’re still missing <%= @page.world.length - @page.countries.length %>.
               <a href="/needed.html">Can you help?</a>
         </div>
 
         <div id="vmap" style="width: 100%; height: 400px; margin: 3em auto; max-width: 840px;"></div>
 
-        <% countries_sorted = @countries.sort_by { |c| c[:name] } %>
-        <% current_letter = countries_sorted[0][:name].upcase[0,1] %>
+        <% countries_sorted = @page.countries.sort_by { |c| c.name } %>
+        <% current_letter = countries_sorted[0].name.upcase[0,1] %>
 
         <h3 class="country-list__section-header"><%= current_letter %></h3>
 
         <ul class="grid-list grid-list--vertically-center">
           <% countries_sorted.each do |c| %>
 
-          <% if c[:name].upcase[0,1] != current_letter %>
-          <% current_letter = c[:name].upcase[0,1] %>
+          <% if c.name.upcase[0,1] != current_letter %>
+          <% current_letter = c.name.upcase[0,1] %>
         </ul>
 
         <h3 class="country-list__section-header"><%= current_letter %></h3>
@@ -29,7 +29,7 @@
             <li>
                 <a class="avatar-unit" href="/<%= c[:url] %>/">
                     <span class="avatar"><i class="fa fa-users"></i></span>
-                    <h3><%= c[:name] %></h3>
+                    <h3><%= c.name %></h3>
                 </a>
             </li>
           <% end %>
@@ -38,12 +38,12 @@
 </div>
 
 <div class="text-center">
-    <a href="<%= @cjson %>"><i class="fa fa-download"></i> Download <span class="large-screen-only">country metadata</span> as JSON</a>
+    <a href="<%= @page.download_url %>"><i class="fa fa-download"></i> Download <span class="large-screen-only">country metadata</span> as JSON</a>
 </div>
 
 <script type="text/javascript">
   var ep_countries = {};
-  <% @countries.each do |country| %>
+  <% @page.countries.each do |country| %>
     ep_countries['<%= country[:code].upcase %>'] = '<%= country[:slug].downcase %>';
   <% end -%>
     ep_countries['_0'] = 'kosovo';
@@ -79,4 +79,3 @@
   };
   jQuery(document).ready(draw_map());
 </script>
-
