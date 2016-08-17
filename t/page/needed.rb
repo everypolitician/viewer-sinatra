@@ -15,6 +15,10 @@ describe 'Needed' do
     Page::Needed.new(access_token: ENV['GITHUB_ACCESS_TOKEN'])
   end
 
+  it 'should raise an error if no access token is passed' do
+    proc { Page::Needed.new }.must_raise ArgumentError
+  end
+
   it 'should return a list of countries to find' do
     VCR.use_cassette('octokit - test to_find') do
       list = subject.to_find
