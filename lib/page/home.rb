@@ -1,5 +1,6 @@
 require 'everypolitician'
 require 'json'
+require 'world'
 
 module Page
   class Home
@@ -28,7 +29,7 @@ module Page
     end
 
     def world_json
-      @_wjson ||= JSON.parse(File.read('world.json'), symbolize_names: true)
+      World.new.as_json
     end
   end
 end
