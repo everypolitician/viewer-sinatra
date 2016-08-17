@@ -1,6 +1,6 @@
 require 'everypolitician'
 require 'json'
-require 'world'
+require_relative '../world'
 
 module Page
   class Home
