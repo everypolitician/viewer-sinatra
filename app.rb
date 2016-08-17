@@ -58,7 +58,7 @@ get '/countries.html' do
 end
 
 get '/:country/' do |country|
-  @page = Page::Country.new(country, ALL_COUNTRIES)
+  @page = Page::Country.new(country)
   pass unless @page.country
   erb :country
 end
