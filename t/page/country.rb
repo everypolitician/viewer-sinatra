@@ -3,9 +3,9 @@ require_relative '../../lib/page/country'
 require 'pry'
 
 describe 'Country' do
-  it 'detects that a country is not missing' do
+  it 'an existing country has a name' do
     page = Page::Country.new('abkhazia')
-    refute_nil page.country
+    assert_equal page.country[:name], 'Abkhazia'
   end
 
   it 'sets the title of the page if the country exists' do
