@@ -4,7 +4,6 @@ require_relative '../world'
 
 module Page
   class Home
-    attr_reader :index
     attr_reader :countries
 
     def initialize(index: Everypolitician::Index.new)
@@ -27,6 +26,8 @@ module Page
     end
 
     private
+
+    attr_reader :index
 
     def legislatures
       @_legislatures ||= countries.flat_map(&:legislatures)
