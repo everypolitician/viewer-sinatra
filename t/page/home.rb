@@ -1,15 +1,8 @@
-require 'minitest/autorun'
+require_relative '../test_helper'
 require_relative '../../lib/page/home'
 
-CJSON = 'https://cdn.rawgit.com/everypolitician/everypolitician-data/%s/countries.json'.freeze
-SHA   = 'd8a4682f'.freeze
-
 describe 'Homepage' do
-  subject do
-    # TODO: encapsulate + record this
-    Everypolitician.countries_json = CJSON % SHA
-    Page::Home.new
-  end
+  subject { Page::Home.new(index: index_at_known_sha) }
 
   describe 'countries' do
     it 'should include Colombian Senate' do

@@ -4,8 +4,11 @@ require_relative '../world'
 
 module Page
   class Home
-    def countries
-      @_countries ||= EveryPolitician.countries
+    attr_reader :countries
+
+    def initialize(index: Everypolitician::Index.new)
+      @index = index
+      @countries = index.countries
     end
 
     def total_people
@@ -18,11 +21,13 @@ module Page
 
     def world
       world_json.each do |slug, country|
-        country[:totalPeople] = EveryPolitician.country(slug.to_s).legislatures.map(&:person_count).inject(:+) rescue 0
+        country[:totalPeople] = index.country(slug.to_s).legislatures.map(&:person_count).inject(:+) rescue 0
       end
     end
 
     private
+
+    attr_reader :index
 
     def legislatures
       @_legislatures ||= countries.flat_map(&:legislatures)

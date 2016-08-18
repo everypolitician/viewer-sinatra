@@ -47,7 +47,7 @@ end
 set :erb, trim: '-'
 
 get '/' do
-  @page = Page::Home.new
+  @page = Page::Home.new(index: EveryPolitician::Index.new(index_url: cjson))
   erb :homepage
 end
 
@@ -191,7 +191,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
 end
 
 get '/:country/download.html' do |country|
-  @page = Page::Download.new(country, cjson)
+  @page = Page::Download.new(country, index: EveryPolitician::Index.new(index_url: cjson))
   # TODO: perhaps have a `valid?` method?
   halt(404) unless @page.country
   erb :country_download
