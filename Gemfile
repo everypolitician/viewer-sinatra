@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 gem 'dotenv'
-gem 'everypolitician', '~> 0.12.0', github: 'everypolitician/everypolitician-ruby', branch: 'fixes-for-index-class'
+gem 'everypolitician', '~> 0.13.0', github: 'everypolitician/everypolitician-ruby'
 gem 'everypolitician-popolo', github: 'everypolitician/everypolitician-popolo'
 gem 'iso_country_codes'
 gem 'json'
