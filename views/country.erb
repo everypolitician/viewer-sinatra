@@ -1,6 +1,6 @@
 <div class="page-section page-section--grey text-center">
   <div class="container">
-    <h3>We’re cataloguing every politician in <%= @page.country[:name] %>.</h3>
+    <h3>We’re cataloguing every politician in <%= @page.country.name %>.</h3>
     <p>We currently have information for…</p>
   </div>
 </div>
@@ -8,7 +8,7 @@
 <div class="page-section">
   <div class="container">
 
-    <% @page.country[:legislatures].each do |house| %>
+    <% @page.country.legislatures.each do |house| %>
       <div class="country__legislature">
         <div class="country__legislature__header">
           <h3><%= house[:name] %></h3>
@@ -45,7 +45,7 @@
   <div class="container">
 
     <div class="gender-balance-promo">
-      <h3>Help us collect gender information for <%= @page.country[:name] %> by playing our fiendishly addictive online game, Gender Balance!</h3>
+      <h3>Help us collect gender information for <%= @page.country.name %> by playing our fiendishly addictive online game, Gender Balance!</h3>
       <p>Swipe your way through politicians in a flash, and work your way up our leaderboard.</p>
       <p><a href="http://gender-balance.org" class="button button--primary">Play Gender Balance now</a></p>
 

@@ -58,7 +58,8 @@ get '/countries.html' do
 end
 
 get '/:country/' do |country|
-  @page = Page::Country.new(country)
+  SHA   = cjson.split('/')[-2]
+  @page = Page::Country.new(country, SHA)
   pass unless @page.country
   erb :country
 end
