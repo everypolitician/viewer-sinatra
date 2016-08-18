@@ -10,7 +10,7 @@ sudo apt-get update
 
 # Install required packages
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
-  ruby2.0 ruby2.0-dev git build-essential libxslt1-dev
+  ruby2.0 ruby2.0-dev git build-essential libxslt1-dev zlib1g-dev
 
 # Add cd /vagrant to ~/.bashrc
 grep -qG "cd /vagrant" "$HOME/.bashrc" || echo "cd /vagrant" >> "$HOME/.bashrc"
