@@ -15,10 +15,6 @@ module Page
       country[:legislatures].find { |h| h[:slug].downcase == house_slug.downcase }
     end
 
-    def last_sha
-      house[:sha]
-    end
-
     def popolo
       popolo_file = EveryPolitician::GithubFile.new(house[:popolo], last_sha)
       JSON.parse(popolo_file.raw, symbolize_names: true)
@@ -31,5 +27,8 @@ module Page
     private
 
     attr_reader :house_slug, :country_slug
+    def last_sha
+      house[:sha]
+    end
   end
 end
