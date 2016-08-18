@@ -2,15 +2,9 @@ require 'minitest/autorun'
 require_relative '../../lib/page/download'
 require 'pry'
 
-CJSON = 'https://cdn.rawgit.com/everypolitician/everypolitician-data/%s/countries.json'.freeze
-SHA   = 'd8a4682f'.freeze
-
 describe 'Download' do
   describe 'Colombia' do
     subject do
-      # TODO: encapsulate + record this
-      cjson_src = CJSON % SHA
-      Everypolitician.countries_json = cjson_src
       Page::Download.new('colombia', cjson_src)
     end
 
@@ -33,7 +27,7 @@ describe 'Download' do
 
   describe 'Narnia' do
     it 'should have no country' do
-      Page::Download.new('narnia', CJSON % SHA).country.must_be_nil
+      Page::Download.new('narnia', cjson_src).country.must_be_nil
     end
   end
 end
