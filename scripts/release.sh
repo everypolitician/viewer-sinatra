@@ -11,11 +11,14 @@ add_ssh_key() {
   ssh-add deploy_key.pem
 }
 
-update_viewer_static() {
+build_viewer_static() {
   bundle exec ruby app.rb &
   while ! nc -z localhost 4567; do sleep 1; done
   cd /tmp
   wget -nv -m localhost:4567/status/all_countries.html || (echo "wget exited with non-zero exit code: $?" >&2 && exit 1)
+}
+
+deploy_viewer_static() {
   git clone "git@github.com:everypolitician/viewer-static.git"
   cd viewer-static
   git checkout gh-pages
@@ -38,10 +41,11 @@ update_politician_image_proxy() {
 }
 
 main() {
+  build_viewer_static
   if [[ "$TRAVIS_PULL_REQUEST" == "false" ]]; then
     add_ssh_key
     if [[ "$TRAVIS_BRANCH" == "master" ]]; then
-      update_viewer_static
+      deploy_viewer_static
     fi
     # update_politician_image_proxy
   fi
