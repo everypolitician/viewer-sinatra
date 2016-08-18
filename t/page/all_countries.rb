@@ -11,10 +11,10 @@ describe 'AllCountries' do
   end
 
   it 'should return a list of countries' do
-    countries = subject.world.flatten
-    a = countries.each.include? :argentina
-    b = countries.each.include? :belgium
-    c = countries.each.include? :china
-    (a & b & c).must_equal true
+    countries = subject.world
+    bahamas = [:bahamas, { displayName: 'Bahamas', allNames: 'Bahamas バハマ Bahama’s' }]
+    paraguay = [:paraguay, { displayName: 'Paraguay', allNames: 'Paraguay パラグアイ' }]
+    countries.must_include bahamas
+    countries.must_include paraguay
   end
 end
