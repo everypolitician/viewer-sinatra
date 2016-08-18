@@ -4,14 +4,16 @@ require 'json'
 module Page
   class Download
     attr_reader :download_url
+    attr_reader :index
 
-    def initialize(slug, cjson)
+    def initialize(slug, index: EveryPolitician::Index.new)
       @slug = slug
-      @download_url = cjson
+      @download_url = index.index_url
+      @index = index
     end
 
     def country
-      EveryPolitician.country(slug)
+      index.country(slug)
     end
 
     private
