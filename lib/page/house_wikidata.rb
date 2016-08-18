@@ -2,17 +2,17 @@ require_relative '../../lib/popolo_helper.rb'
 
 module Page
   class HouseWikidata
-    def initialize(slug, house)
-      @house = house
-      @slug = slug
+    def initialize(country_slug, house_slug)
+      @house_slug = house_slug
+      @country_slug = country_slug
     end
 
     def country
-      EveryPolitician.country(@slug)
+      EveryPolitician.country(country_slug)
     end
 
     def house
-      country[:legislatures].find { |h| h[:slug].downcase == @house.downcase }
+      country[:legislatures].find { |h| h[:slug].downcase == house_slug.downcase }
     end
 
     def last_sha
@@ -27,5 +27,9 @@ module Page
     def page_title
       "EveryPolitician: #{country[:name]} — #{house[:name]}"
     end
+
+    private
+
+    attr_reader :house_slug, :country_slug
   end
 end
