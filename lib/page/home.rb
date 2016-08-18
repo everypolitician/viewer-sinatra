@@ -4,8 +4,10 @@ require_relative '../world'
 
 module Page
   class Home
-    def countries
-      @_countries ||= EveryPolitician.countries
+    attr_reader :countries
+
+    def initialize(index: Everypolitician::Index.new)
+      @countries = index.countries
     end
 
     def total_people
