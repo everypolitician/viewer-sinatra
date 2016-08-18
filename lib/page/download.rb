@@ -4,7 +4,6 @@ require 'json'
 module Page
   class Download
     attr_reader :download_url
-    attr_reader :index
 
     def initialize(slug, index: EveryPolitician::Index.new)
       @slug = slug
@@ -19,5 +18,6 @@ module Page
     private
 
     attr_reader :slug
+    attr_reader :index
   end
 end
