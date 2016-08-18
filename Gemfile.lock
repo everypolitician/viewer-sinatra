@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: git://github.com/everypolitician/everypolitician-ruby.git
-  revision: 2d3ac22b87e8eda22b758a13508376209db2b14c
+  revision: 05b5ac9bdd48c3aec6c4b3bf7db0f392b5e26258
   branch: fixes-for-index-class
   specs:
     everypolitician (0.12.0)
