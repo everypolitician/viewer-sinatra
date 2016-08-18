@@ -16,7 +16,7 @@ describe 'HouseWikidata' do
 
   it 'should return the country popolo' do
     popolo = subject.popolo
-    keys = %i(posts persons organizations meta memberships events areas)
-    (popolo.keys & keys).must_equal keys
+    popolo[:events].first[:name].must_equal 'Austrian Constitutional Assembly election, 1919'
+    popolo[:events].first[:classification].must_equal 'general election'
   end
 end
