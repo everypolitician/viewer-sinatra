@@ -1,12 +1,13 @@
 GIT
   remote: git://github.com/everypolitician/everypolitician-popolo.git
-  revision: 25b8a284b556b60dbe05ba11843b8743aca00975
+  revision: 4e6e75ddfece32889243595e7305ba9007e3c8b4
   specs:
     everypolitician-popolo (0.5.0)
 
 GIT
   remote: git://github.com/everypolitician/everypolitician-ruby.git
-  revision: 82dae6c9ef330cc3dadab549140854cd0d0f3f22
+  revision: 2d3ac22b87e8eda22b758a13508376209db2b14c
+  branch: fixes-for-index-class
   specs:
     everypolitician (0.12.0)
       everypolitician-popolo
