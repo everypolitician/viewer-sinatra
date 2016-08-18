@@ -6,15 +6,15 @@ describe 'AllCountries' do
     Page::AllCountries.new
   end
 
-  it 'should return an array' do
-    subject.world.must_be_instance_of Array
+  it 'should return an hash' do
+    subject.world.must_be_instance_of Hash
   end
 
   it 'should return a list of countries' do
     countries = subject.world
-    bahamas = [:bahamas, { displayName: 'Bahamas', allNames: 'Bahamas バハマ Bahama’s' }]
-    paraguay = [:paraguay, { displayName: 'Paraguay', allNames: 'Paraguay パラグアイ' }]
-    countries.must_include bahamas
-    countries.must_include paraguay
+    bahamas = { displayName: 'Bahamas', allNames: 'Bahamas バハマ Bahama’s' }
+    paraguay = { displayName: 'Paraguay', allNames: 'Paraguay パラグアイ' }
+    countries[:bahamas].must_equal bahamas
+    countries[:paraguay].must_equal paraguay
   end
 end
