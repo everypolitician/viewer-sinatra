@@ -41,9 +41,9 @@ update_politician_image_proxy() {
 }
 
 main() {
+  add_ssh_key
   build_viewer_static
   if [[ "$TRAVIS_PULL_REQUEST" == "false" ]]; then
-    add_ssh_key
     if [[ "$TRAVIS_BRANCH" == "master" ]]; then
       deploy_viewer_static
     fi
