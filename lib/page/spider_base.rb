@@ -1,7 +1,7 @@
 require_relative '../world.rb'
 
 module Page
-  class AllCountries
+  class SpiderBase
     def world
       World.new.as_json
     end

@@ -203,7 +203,7 @@ get '/:country/download.html' do |country|
 end
 
 get '/status/all_countries.html' do
-  @page = Page::AllCountries.new
+  @page = Page::SpiderBase.new
   erb :all_countries
 end
 

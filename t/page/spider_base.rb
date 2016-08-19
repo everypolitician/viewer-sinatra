@@ -1,8 +1,8 @@
 require 'minitest/autorun'
-require_relative '../../lib/page/all_countries'
+require_relative '../../lib/page/spider_base'
 
-describe 'AllCountries' do
-  subject { Page::AllCountries.new }
+describe 'SpiderBase' do
+  subject { Page::SpiderBase.new }
 
   it 'should have a World hash' do
     subject.world[:bahamas][:displayName].must_equal 'Bahamas'
