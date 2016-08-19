@@ -27,7 +27,7 @@
           <% end %>
 
             <li>
-                <a class="avatar-unit" href="/<%= c[:url] %>/">
+                <a class="avatar-unit" href="/<%= c.slug.downcase %>/">
                     <span class="avatar"><i class="fa fa-users"></i></span>
                     <h3><%= c.name %></h3>
                 </a>
