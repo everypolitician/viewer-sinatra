@@ -2,14 +2,7 @@
 require 'everypolitician'
 require 'json'
 require_relative '../world'
-
-module Everypolitician
-  class Country
-    def person_count
-      legislatures.map(&:person_count).inject(:+)
-    end
-  end
-end
+require_relative '../everypolitician_extensions'
 
 module Page
   class Home
