@@ -22,10 +22,6 @@ cjson = File.read('DATASOURCE').chomp
 EveryPolitician.countries_json = cjson
 LIVE_INDEX = EveryPolitician::Index.new(index_url: cjson)
 
-ALL_COUNTRIES = JSON.parse(open(cjson).read, symbolize_names: true).each do |c|
-  c[:url] = c[:slug].downcase
-end
-
 DOCS_URL = 'http://docs.everypolitician.org'
 
 # Can't do server-side redirection on a GitHub Pages-hosted static site, so the
@@ -78,7 +74,10 @@ get '/:country/:house/wikidata' do |country, house|
 end
 
 get '/:country/:house/term-table/:id.html' do |country, house, termid|
-  @country = ALL_COUNTRIES.find { |c| c[:url] == country } || halt(404)
+  all_countries = JSON.parse(open(cjson).read, symbolize_names: true).each do |c|
+    c[:url] = c[:slug].downcase
+  end
+  @country = all_countries.find { |c| c[:url] == country } || halt(404)
   @house = @country[:legislatures].find { |h| h[:slug].downcase == house } || halt(404)
 
   @terms = @house[:legislative_periods]
