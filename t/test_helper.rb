@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 require 'minitest/autorun'
 require 'webmock/minitest'
+WebMock.allow_net_connect!
 
 module Minitest
   class Spec
