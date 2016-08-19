@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0'
+ruby '2.3.1'
 
 gem 'dotenv'
 gem 'everypolitician', '~> 0.13.0', github: 'everypolitician/everypolitician-ruby'
