@@ -12,7 +12,6 @@ VCR.configure do |config|
   config.filter_sensitive_data('<GITHUB_ACCESS_TOKEN>') { ENV['GITHUB_ACCESS_TOKEN'] }
 end
 
-
 module Minitest
   class Spec
     include Rack::Test::Methods
@@ -23,7 +22,7 @@ module Minitest
 
     before do
       WebMock.stub_request(:get, %r{https://cdn.rawgit.com/everypolitician/everypolitician-data/\w+?/countries.json})
-        .to_return(body: File.read('t/fixtures/d8a4682f-countries.json'))
+             .to_return(body: File.read('t/fixtures/d8a4682f-countries.json'))
       VCR.insert_cassette(name)
     end
 
