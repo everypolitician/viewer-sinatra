@@ -13,7 +13,7 @@ Rake::TestTask.new do |t|
   t.warning = false
   t.verbose = true
   t.description = 'Run "Web" tests (slow)'
-  t.test_files = FileList['t/web/*.rb']
+  t.test_files = FileList['t/web/**/*.rb']
 end
 
 Rake::TestTask.new do |t|
