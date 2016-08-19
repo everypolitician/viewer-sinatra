@@ -12,10 +12,6 @@ VCR.configure do |config|
   config.filter_sensitive_data('<GITHUB_ACCESS_TOKEN>') { ENV['GITHUB_ACCESS_TOKEN'] }
 end
 
-# FIXME: This should be within a test class, but it needs to be here because
-# countries.json is fetched and parsed at boot time in app.rb.
-WebMock.stub_request(:get, %r{https://cdn.rawgit.com/everypolitician/everypolitician-data/\w+?/countries.json})
-       .to_return(body: File.read('t/fixtures/d8a4682f-countries.json'))
 
 module Minitest
   class Spec
@@ -26,6 +22,8 @@ module Minitest
     end
 
     before do
+      WebMock.stub_request(:get, %r{https://cdn.rawgit.com/everypolitician/everypolitician-data/\w+?/countries.json})
+        .to_return(body: File.read('t/fixtures/d8a4682f-countries.json'))
       VCR.insert_cassette(name)
     end
 
