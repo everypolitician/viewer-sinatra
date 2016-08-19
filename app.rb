@@ -58,8 +58,10 @@ get '/countries.html' do
 end
 
 get '/:country/' do |country|
-  SHA   = cjson.split('/')[-2]
-  @page = Page::Country.new(country, SHA)
+  @page = Page::Country.new(
+    country: country,
+    index:   EveryPolitician::Index.new(index_url: cjson)
+  )
   pass unless @page.country
   erb :country
 end

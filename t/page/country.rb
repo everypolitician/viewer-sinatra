@@ -1,22 +1,22 @@
+# frozen_string_literal: true
 require 'minitest/autorun'
 require_relative '../../lib/page/country'
-require 'pry'
-
-SHA = 'd8a4682f'.freeze
 
 describe 'Country' do
-  it 'an existing country has a name' do
-    page = Page::Country.new('Abkhazia', SHA)
-    page.country.name.must_equal 'Abkhazia'
+  subject { Page::Country.new(country: 'abkhazia', index: index_at_known_sha) }
+
+  it 'has the country' do
+    subject.country.name.must_equal 'Abkhazia'
   end
 
-  it 'sets the title of the page if the country exists' do
-    page = Page::Country.new('Abkhazia', SHA)
-    page.title.must_include 'Abkhazia'
+  it 'sets the title of the page' do
+    subject.title.must_include 'Abkhazia'
   end
 
   it 'detects that a country is missing' do
-    page = Page::Country.new('narnia', SHA)
-    assert_nil page.country
+    Page::Country.new(
+      country: 'narnia',
+      index:   index_at_known_sha
+    ).country.must_be_nil
   end
 end

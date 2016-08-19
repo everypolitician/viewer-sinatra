@@ -1,22 +1,23 @@
+# frozen_string_literal: true
 require 'everypolitician'
 
 module Page
   class Country
-    def initialize(slug, ref = 'master')
-      @slug = slug
-      @ref  = ref
+    def initialize(country:, index:)
+      @slug  = country
+      @index = index
     end
 
     def country
-      @country ||= EveryPolitician::Index.new(ref).country(slug)
+      index.country(slug)
     end
 
     def title
-      "EveryPolitician: #{country.name}" if country
+      "EveryPolitician: #{country.name}"
     end
 
     private
 
-    attr_reader :slug, :ref
+    attr_reader :slug, :index
   end
 end
