@@ -1,7 +1,6 @@
 # frozen_string_literal: true
-require 'minitest/autorun'
+require 'test_helper'
 require_relative '../../lib/page/missing_country'
-require 'pry'
 
 describe 'MissingCountry' do
   it 'has a display name' do

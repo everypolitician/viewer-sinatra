@@ -24,4 +24,5 @@ gem 'yajl-ruby', require: 'yajl'
 group :test do
   gem 'minitest'
   gem 'webmock'
+  gem 'vcr'
 end
