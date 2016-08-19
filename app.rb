@@ -20,6 +20,7 @@ helpers Popolo::Helper
 
 cjson = File.read('DATASOURCE').chomp
 EveryPolitician.countries_json = cjson
+LIVE_INDEX = EveryPolitician::Index.new(index_url: cjson)
 
 ALL_COUNTRIES = JSON.parse(open(cjson).read, symbolize_names: true).each do |c|
   c[:url] = c[:slug].downcase
@@ -48,20 +49,17 @@ end
 set :erb, trim: '-'
 
 get '/' do
-  @page = Page::Home.new(index: EveryPolitician::Index.new(index_url: cjson))
+  @page = Page::Home.new(index: LIVE_INDEX)
   erb :homepage
 end
 
 get '/countries.html' do
-  @page = Page::Countries.new(index: EveryPolitician::Index.new(index_url: cjson))
+  @page = Page::Countries.new(index: LIVE_INDEX)
   erb :countries
 end
 
 get '/:country/' do |country|
-  @page = Page::Country.new(
-    country: country,
-    index:   EveryPolitician::Index.new(index_url: cjson)
-  )
+  @page = Page::Country.new(country: country, index: LIVE_INDEX)
   pass unless @page.country
   erb :country
 end
@@ -76,7 +74,7 @@ get '/:country/:house/wikidata' do |country, house|
   @page = Page::HouseWikidata.new(
     country: country,
     house:   house,
-    index:   EveryPolitician::Index.new(index_url: cjson)
+    index:   LIVE_INDEX
   )
   halt(404) unless @page.house
   erb :wikidata_match
@@ -194,10 +192,7 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
 end
 
 get '/:country/download.html' do |country|
-  @page = Page::Download.new(
-    country: country,
-    index:   EveryPolitician::Index.new(index_url: cjson)
-  )
+  @page = Page::Download.new(country: country, index: LIVE_INDEX)
   # TODO: perhaps have a `valid?` method?
   halt(404) unless @page.country
   erb :country_download
