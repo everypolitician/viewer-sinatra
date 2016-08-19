@@ -3,16 +3,24 @@ require_relative '../world'
 
 module Page
   class Countries
+    def initialize(index:)
+      @index = index
+    end
+
     def countries
-      @countries ||= EveryPolitician.countries
+      index.countries
     end
 
     def download_url
-      @download_url ||= EveryPolitician.countries_json
+      index.index_url
     end
 
     def world
       @world ||= World.new.as_json
     end
+
+    private
+
+    attr_reader :index
   end
 end

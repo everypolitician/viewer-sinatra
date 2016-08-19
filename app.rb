@@ -53,7 +53,7 @@ get '/' do
 end
 
 get '/countries.html' do
-  @page = Page::Countries.new
+  @page = Page::Countries.new(index: EveryPolitician::Index.new(index_url: cjson))
   erb :countries
 end
 
