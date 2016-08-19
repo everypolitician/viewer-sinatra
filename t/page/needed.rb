@@ -4,13 +4,6 @@ require 'pry'
 require 'vcr'
 
 describe 'Needed' do
-  VCR.configure do |config|
-    config.allow_http_connections_when_no_cassette = true
-    config.cassette_library_dir = 't/fixtures/vcr_cassettes'
-    config.filter_sensitive_data('<GITHUB_ACCESS_TOKEN>') { ENV['GITHUB_ACCESS_TOKEN'] }
-    config.hook_into :webmock
-  end
-
   subject do
     Page::Needed.new(access_token: ENV['GITHUB_ACCESS_TOKEN'])
   end
