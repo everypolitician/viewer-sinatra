@@ -3,6 +3,14 @@ require 'everypolitician'
 require 'json'
 require_relative '../world'
 
+module Everypolitician
+  class Country
+    def person_count
+      legislatures.map(&:person_count).inject(:+)
+    end
+  end
+end
+
 module Page
   class Home
     attr_reader :countries
@@ -22,7 +30,7 @@ module Page
 
     def world
       world_json.each do |slug, country|
-        country[:totalPeople] = index.country(slug.to_s).legislatures.map(&:person_count).inject(:+) rescue 0
+        country[:totalPeople] = index.country(slug.to_s).person_count rescue 0
       end
     end
 
