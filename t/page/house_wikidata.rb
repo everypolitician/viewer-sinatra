@@ -16,6 +16,8 @@ describe 'HouseWikidata' do
   end
 
   it 'should have popolo with wikidata' do
+    stub_request(:get, 'https://cdn.rawgit.com/everypolitician/everypolitician-data/3df153b/data/Austria/Nationalrat/ep-popolo-v1.0.json')
+      .to_return(body: File.read('t/fixtures/3df153b-Austria-Nationalrat-ep-popolo-v1.0.json'))
     andrea = '0eedf2c9-01ea-44f4-bc6e-e5e4bf6d2add'
     subject.popolo.persons.find_by(id: andrea).wikidata.must_equal 'Q493950'
   end
