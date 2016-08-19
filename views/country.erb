@@ -1,6 +1,6 @@
 <div class="page-section page-section--grey text-center">
   <div class="container">
-    <h3>We’re cataloguing every politician in <%= @country[:name] %>.</h3>
+    <h3>We’re cataloguing every politician in <%= @page.country.name %>.</h3>
     <p>We currently have information for…</p>
   </div>
 </div>
@@ -8,7 +8,7 @@
 <div class="page-section">
   <div class="container">
 
-    <% @country[:legislatures].each do |house| %>
+    <% @page.country.legislatures.map(&:raw_data).each do |house| %>
       <div class="country__legislature">
         <div class="country__legislature__header">
           <h3><%= house[:name] %></h3>
@@ -21,7 +21,7 @@
         <ul class="grid-list grid-list--vertically-center" id="terms-<%= house[:slug].downcase %>">
           <% house[:legislative_periods].each do |t| %>
             <li>
-              <a class="avatar-unit" href="<%= term_table_url(@country, house, t) %>">
+              <a class="avatar-unit" href="<%= term_table_url(@page.country, house, t) %>">
                 <span class="avatar"><i class="fa fa-university"></i></span>
                 <h3><%= t[:name] %></h3>
                 <% unless t[:start_date].to_s.empty? and t[:end_date].to_s.empty? %>
@@ -45,7 +45,7 @@
   <div class="container">
 
     <div class="gender-balance-promo">
-      <h3>Help us collect gender information for <%= @country[:name] %> by playing our fiendishly addictive online game, Gender Balance!</h3>
+      <h3>Help us collect gender information for <%= @page.country.name %> by playing our fiendishly addictive online game, Gender Balance!</h3>
       <p>Swipe your way through politicians in a flash, and work your way up our leaderboard.</p>
       <p><a href="http://gender-balance.org" class="button button--primary">Play Gender Balance now</a></p>
 
