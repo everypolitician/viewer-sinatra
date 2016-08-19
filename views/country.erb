@@ -8,7 +8,7 @@
 <div class="page-section">
   <div class="container">
 
-    <% @page.country.legislatures.each do |house| %>
+    <% @page.country.legislatures.map(&:raw_data).each do |house| %>
       <div class="country__legislature">
         <div class="country__legislature__header">
           <h3><%= house[:name] %></h3>
