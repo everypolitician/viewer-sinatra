@@ -71,7 +71,11 @@ get '/:country/' do |country|
 end
 
 get '/:country/:house/wikidata' do |country, house|
-  @page = Page::HouseWikidata.new(country, house)
+  @page = Page::HouseWikidata.new(
+    country: country,
+    house:   house,
+    index:   EveryPolitician::Index.new(index_url: cjson)
+  )
   halt(404) unless @page.house
   erb :wikidata_match
 end
