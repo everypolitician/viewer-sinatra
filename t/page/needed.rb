@@ -8,23 +8,17 @@ describe 'Needed' do
     Page::Needed.new(access_token: ENV['GITHUB_ACCESS_TOKEN'])
   end
 
-  it 'should raise an error if no access token is passed' do
-    proc { Page::Needed.new }.must_raise ArgumentError
+  it 'should know that Eritrea is missing' do
+    subject.to_find.map(&:title).include? 'Eritrea'
   end
 
-  it 'should return a list of countries to find' do
-    list = subject.to_find
-    a = list.map(&:title).include? 'Eritrea'
-    b = list.map(&:title).include? 'Cuba'
-    c = list.map(&:title).include? 'Qatar'
-    (a & b & c).must_equal true
-  end
-
-  it 'should return an empty list if there is nothing to scrape' do
+  # Might be good to have a version of these tests against a different
+  # cassette, when we have something in these, but Good Enough For Now
+  it 'should currently have nothing to scrape' do
     subject.to_scrape.size.must_equal 0
   end
 
-  it 'should return an empty list if there is nothing to finish' do
+  it 'should currently have nothing to finish' do
     subject.to_finish.size.must_equal 0
   end
 end
