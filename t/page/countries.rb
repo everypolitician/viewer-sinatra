@@ -14,15 +14,11 @@ describe 'Countries' do
     subject.download_url.must_include 'd8a4682f'
   end
 
-  it 'has a list of all countries in the world' do
-    subject.world.length.must_equal 245
+  it 'knows how many countries are missing' do
+    subject.missing_countries.must_equal 12
   end
 
   it 'doesn’t have Eritrea in countries' do
     subject.countries.map(&:name).wont_include 'Eritrea'
-  end
-
-  it 'does have Eritrea in world' do
-    subject.world[:eritrea][:displayName].must_equal 'Eritrea'
   end
 end

@@ -16,12 +16,16 @@ module Page
       index.index_url
     end
 
-    def world
-      @world ||= World.new.as_json
+    def missing_countries
+      world.count - countries.count
     end
 
     private
 
     attr_reader :index
+
+    def world
+      @world ||= World.new.as_json
+    end
   end
 end
