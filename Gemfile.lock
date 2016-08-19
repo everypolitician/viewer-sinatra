@@ -76,6 +76,7 @@ GEM
     slop (3.6.0)
     tilt (1.4.1)
     unicode-display_width (1.1.0)
+    vcr (3.0.3)
     webmock (2.0.3)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
@@ -103,6 +104,7 @@ DEPENDENCIES
   rubocop
   sass
   sinatra!
+  vcr
   webmock
   yajl-ruby
 
