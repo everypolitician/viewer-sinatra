@@ -1,10 +1,10 @@
 <div class="page-section" id="term">
   <div class="container text-center">
-    <h1><span class="avatar"><i class="fa fa-university"></i></span> <%= @page.house[:name] %></h1>
+    <h1><span class="avatar"><i class="fa fa-university"></i></span> <%= @page.house.name %></h1>
   </div>
 
   <div class="container">
-    <% @page.popolo[:persons].partition { |p| wikidata_link(p) }.each_with_index do |l, i| %>
+    <% @page.popolo.persons.partition(&:wikidata).each_with_index do |l, i| %>
       <h2><%= %w(With Without)[i] %></h2>
       <ol>
         <% l.each do |p| %><li><%= p[:name] %> <%= wikidata_link(p) %></li><% end %>

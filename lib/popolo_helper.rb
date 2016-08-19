@@ -36,9 +36,8 @@ module Popolo
     end
 
     def wikidata_link(p)
-      return if p[:identifiers].nil? || p[:identifiers].empty?
-      (wd = p[:identifiers].find { |i| i[:scheme] == 'wikidata' }) || return
-      '<a href="https://www.wikidata.org/wiki/%s">%s</a>' % [wd[:identifier], wd[:identifier]]
+      return unless wdid = p.wikidata
+      '<a href="https://www.wikidata.org/wiki/%s">%s</a>' % [wdid, wdid]
     end
 
     def image_proxy_url(id)
