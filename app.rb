@@ -202,7 +202,7 @@ end
 
 get '/needed.html' do
   if (token = ENV['GITHUB_ACCESS_TOKEN']).to_s.empty?
-    warn 'No GITHUB_ACCESS_TOKEN found'
+    logger.warn 'No GITHUB_ACCESS_TOKEN found'
     client = Octokit::Client.new
   else
     client = Octokit::Client.new(access_token: token)
