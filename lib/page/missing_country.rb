@@ -2,8 +2,8 @@ require_relative '../world'
 
 module Page
   class MissingCountry
-    def initialize(slug)
-      @slug = slug
+    def initialize(country:)
+      @slug = country
     end
 
     def country

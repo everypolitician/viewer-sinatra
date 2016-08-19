@@ -66,7 +66,7 @@ get '/:country/' do |country|
 end
 
 get '/:country/' do |country|
-  @page = Page::MissingCountry.new(country)
+  @page = Page::MissingCountry.new(country: country)
   pass unless @page.country
   erb :country_missing
 end
