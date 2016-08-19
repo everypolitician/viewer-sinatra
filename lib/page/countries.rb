@@ -16,6 +16,10 @@ module Page
       index.index_url
     end
 
+    def missing_countries
+      world.count - countries.count
+    end
+
     def world
       @world ||= World.new.as_json
     end

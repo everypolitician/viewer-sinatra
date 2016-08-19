@@ -18,6 +18,10 @@ describe 'Countries' do
     subject.world.length.must_equal 245
   end
 
+  it 'knows how many countries are missing' do
+    subject.missing_countries.must_equal 12
+  end
+
   it 'doesn’t have Eritrea in countries' do
     subject.countries.map(&:name).wont_include 'Eritrea'
   end
