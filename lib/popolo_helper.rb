@@ -1,9 +1,10 @@
+# frozen_string_literal: true
 require 'open-uri'
 require 'fileutils'
 
 module EveryPolitician
   class GithubFile
-    GH_PATH = 'https://cdn.rawgit.com/everypolitician/everypolitician-data/%s/%s'.freeze
+    GH_PATH = 'https://cdn.rawgit.com/everypolitician/everypolitician-data/%s/%s'
 
     def initialize(file, sha, cache_dir = '_cached_data')
       @url = GH_PATH % [sha, file]
