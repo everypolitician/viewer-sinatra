@@ -4,21 +4,21 @@ require 'json'
 
 module Page
   class Download
-    attr_reader :download_url
-
-    def initialize(slug, index: EveryPolitician::Index.new)
-      @slug = slug
-      @download_url = index.index_url
+    def initialize(country:, index:)
+      @country_slug = country
       @index = index
     end
 
+    def download_url
+      index.index_url
+    end
+
     def country
-      index.country(slug)
+      index.country(country_slug)
     end
 
     private
 
-    attr_reader :slug
-    attr_reader :index
+    attr_reader :country_slug, :index
   end
 end

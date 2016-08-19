@@ -7,8 +7,8 @@ describe 'Download' do
   describe 'Colombia' do
     subject do
       Page::Download.new(
-        'colombia',
-        index: index_at_known_sha
+        country: 'colombia',
+        index:   index_at_known_sha
       )
     end
 
@@ -31,7 +31,10 @@ describe 'Download' do
 
   describe 'Narnia' do
     it 'should have no country' do
-      Page::Download.new('narnia', index: index_at_known_sha).country.must_be_nil
+      Page::Download.new(
+        country: 'narnia',
+        index:   index_at_known_sha
+      ).country.must_be_nil
     end
   end
 end
