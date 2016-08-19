@@ -1,6 +1,10 @@
 # frozen_string_literal: true
+ENV['RACK_ENV'] = 'test'
+
 require 'minitest/autorun'
 require 'vcr'
+require 'rack/test'
+require 'nokogiri'
 
 VCR.configure do |config|
   config.cassette_library_dir = 't/fixtures/vcr_cassettes'
@@ -15,6 +19,12 @@ WebMock.stub_request(:get, %r{https://cdn.rawgit.com/everypolitician/everypoliti
 
 module Minitest
   class Spec
+    include Rack::Test::Methods
+
+    def app
+      Sinatra::Application
+    end
+
     before do
       VCR.insert_cassette(name)
     end

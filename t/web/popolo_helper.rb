@@ -1,8 +1,6 @@
 # frozen_string_literal: true
-ENV['RACK_ENV'] = 'test'
-
+require 'test_helper'
 require_relative '../../app'
-require 'minitest/autorun'
 
 describe Popolo::Helper do
   include Popolo::Helper

@@ -1,16 +1,6 @@
 # frozen_string_literal: true
-ENV['RACK_ENV'] = 'test'
-
+require 'test_helper'
 require_relative '../../../app'
-require 'minitest/autorun'
-require 'rack/test'
-require 'nokogiri'
-
-include Rack::Test::Methods
-
-def app
-  Sinatra::Application
-end
 
 describe 'Northern Ireland' do
   subject { Nokogiri::HTML(last_response.body) }

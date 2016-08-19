@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require 'minitest/autorun'
+require 'test_helper'
 require_relative '../../lib/page/house_wikidata'
 
 describe 'HouseWikidata' do

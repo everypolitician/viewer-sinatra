@@ -1,7 +1,6 @@
 # frozen_string_literal: true
-require 'minitest/autorun'
+require 'test_helper'
 require_relative '../../lib/page/countries'
-require 'pry'
 
 describe 'Countries' do
   subject { Page::Countries.new(index: index_at_known_sha) }
