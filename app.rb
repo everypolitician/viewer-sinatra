@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'cgi'
 require 'dotenv'
 require 'octokit'
@@ -27,7 +28,7 @@ end
 wjson = File.read('world.json')
 WORLD = JSON.parse(wjson, symbolize_names: true)
 
-DOCS_URL = 'http://docs.everypolitician.org'.freeze
+DOCS_URL = 'http://docs.everypolitician.org'
 
 # Can't do server-side redirection on a GitHub Pages-hosted static site, so the
 # kindest next-best-thing is to have a placeholder with meta HTTP-refresh.
