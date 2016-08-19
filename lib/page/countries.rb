@@ -20,12 +20,12 @@ module Page
       world.count - countries.count
     end
 
-    def world
-      @world ||= World.new.as_json
-    end
-
     private
 
     attr_reader :index
+
+    def world
+      @world ||= World.new.as_json
+    end
   end
 end
