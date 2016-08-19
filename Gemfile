@@ -20,4 +20,8 @@ gem 'rubocop'
 gem 'sass'
 gem 'sinatra', github: 'sinatra/sinatra'
 gem 'yajl-ruby', require: 'yajl'
-gem 'minitest'
+
+group :test do
+  gem 'minitest'
+  gem 'webmock'
+end
