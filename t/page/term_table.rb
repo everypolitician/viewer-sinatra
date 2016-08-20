@@ -66,8 +66,9 @@ describe 'TermTable' do
     end
 
     describe 'when getting the people for the current term' do
-      it 'sends the right people' do
-        subject.people.first.must_equal person
+      it 'constructs the cards correctly' do
+        af = subject.people.find { |p| p[:name] == 'Angela Fichtinger' }
+        af.must_equal fichtinger_card
       end
     end
 
@@ -75,17 +76,17 @@ describe 'TermTable' do
       subject.percentages.must_equal percentages
     end
 
-    def person
+    def fichtinger_card
       {
-        id:          '0eedf2c9-01ea-44f4-bc6e-e5e4bf6d2add',
-        name:        'Andrea Gessl-Ranftl',
-        image:       'http://www.parlament.gv.at/WWER/PAD_51527/4385218_180.jpg',
-        proxy_image: 'https://mysociety.github.io/politician-image-proxy/Austria/Nationalrat/0eedf2c9-01ea-44f4-bc6e-e5e4bf6d2add/140x140.jpeg',
-        memberships: [{ start_date: nil, end_date: nil, group: 'SPÖ', area: 'Wahlkreis: 6D – Obersteiermark' }],
-        social:      [],
-        bio:         [{ type: 'Gender', value: 'female' }, { type: 'Born', value: '1964-11-16' }],
-        contacts:    [{ type: 'Email', value: 'andrea.gessl-ranftl@aon.at', link: 'mailto:andrea.gessl-ranftl@aon.at' }],
-        identifiers: [{ type: 'wikidata', value: 'Q493950', link: 'https://www.wikidata.org/wiki/Q493950' }, { type: 'parlaments_at', value: '51527' }],
+        id:          '2e8b774e-ae66-4137-a984-aac74917df87',
+        name:        'Angela Fichtinger',
+        image:       'http://www.parlament.gv.at/WWER/PAD_83146/4386378_180.jpg',
+        proxy_image: 'https://mysociety.github.io/politician-image-proxy/Austria/Nationalrat/2e8b774e-ae66-4137-a984-aac74917df87/140x140.jpeg',
+        memberships: [{ start_date: '2013-10-29', end_date: nil, group: 'ÖVP', area: 'Wahlkreis: 3B – Waldviertel' }],
+        social:      [{ type: 'Facebook', value: 'angela.fichtinger', link: 'https://facebook.com/angela.fichtinger' }],
+        bio:         [{ type: 'Gender', value: 'female' }, { type: 'Born', value: '1956-12-29' }],
+        contacts:    [{ type: 'Email', value: 'angela.fichtinger@parlament.gv.at', link: 'mailto:angela.fichtinger@parlament.gv.at' }],
+        identifiers: [{ type: 'wikidata', value: 'Q15783437', link: 'https://www.wikidata.org/wiki/Q15783437' }, { type: 'parlaments_at', value: '83146' }],
       }
     end
 
