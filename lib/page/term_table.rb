@@ -13,37 +13,37 @@ module Page
     end
 
     def data_sources
-      @data_sources ||= popolo.popolo[:meta][:sources].map { |s| CGI.unescape(s) }
+      popolo.popolo[:meta][:sources].map { |s| CGI.unescape(s) }
     end
 
     def country
-      @country ||= index.country(country_slug)
+      country ||= index.country(country_slug)
     end
 
     def house
-      @house ||= country[:legislatures].find do |h|
+      country[:legislatures].find do |h|
         h[:slug].downcase == house_slug.downcase
       end
     end
 
     def terms
-      @terms ||= house[:legislative_periods]
+      house[:legislative_periods]
     end
 
     def next_term
-      @next_term ||= hashed_adjacent_terms[:prev_term]
+      hashed_adjacent_terms[:prev_term]
     end
 
     def prev_term
-      @prev_term ||= hashed_adjacent_terms[:next_term]
+      hashed_adjacent_terms[:next_term]
     end
 
     def current_term
-      @current_term ||= hashed_adjacent_terms[:current_term]
+      hashed_adjacent_terms[:current_term]
     end
 
     def title
-      @page_title ||= "EveryPolitician: #{country.name} — #{house[:name]} - #{current_term[:name]}"
+      "EveryPolitician: #{country.name} — #{house[:name]} - #{current_term[:name]}"
     end
 
     def csv_url
@@ -154,30 +154,14 @@ module Page
         .find { |_before, current, _after| current[:slug] == term_id }
     end
 
-    def current_term_memberships
-      @current_term_memberships ||= popolo.memberships.select do |mem|
-        mem.legislative_period_id.split('/').last == term_id
-      end
-    end
-
     def memberships_at_end_of_current_term
       @memberships_at_end_of_current_term ||= current_term_memberships.select do |mem|
         mem.end_date.to_s.empty? || mem.end_date == current_term[:end_date]
       end
     end
 
-    def org_lookup
-      @org_lookup ||= Hash[popolo.organizations.map { |org| [org.id, org] }]
-    end
-
     def wanted
       @wanted ||= Set.new(current_term_memberships.map(&:person_id))
-    end
-
-    def people_for_current_term
-      @people_for_current_term ||= popolo.persons.select do |p|
-        wanted.include?(p.id)
-      end
     end
 
     def top_identifiers
@@ -190,14 +174,6 @@ module Page
                            .sort_by { |_s, ids| -ids.size }
                            .map { |s, _ids| s }
                            .take(3)
-    end
-
-    def membership_lookup
-      @membership_lookup ||= current_term_memberships.group_by(&:person_id)
-    end
-
-    def area_lookup
-      @area_lookup ||= Hash[popolo.areas.map { |a| [a.id, a] }]
     end
 
     def person_memberships(person)
@@ -215,6 +191,31 @@ module Page
     def image_proxy_url(id)
       'https://mysociety.github.io/politician-image-proxy' \
       "/#{country[:slug]}/#{house[:slug]}/#{id}/140x140.jpeg"
+    end
+
+    # Caches for faster lookup
+    def membership_lookup
+      @membership_lookup ||= current_term_memberships.group_by(&:person_id)
+    end
+
+    def area_lookup
+      @area_lookup ||= Hash[popolo.areas.map { |a| [a.id, a] }]
+    end
+
+    def org_lookup
+      @org_lookup ||= Hash[popolo.organizations.map { |org| [org.id, org] }]
+    end
+
+    def current_term_memberships
+      @current_term_memberships ||= popolo.memberships.select do |mem|
+        mem.legislative_period_id.split('/').last == term_id
+      end
+    end
+
+    def people_for_current_term
+      @people_for_current_term ||= popolo.persons.select do |p|
+        wanted.include?(p.id)
+      end
     end
   end
 end
