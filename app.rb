@@ -18,25 +18,22 @@ require_rel './lib/page'
 Dotenv.load
 helpers Popolo::Helper
 
-cjson = File.read('DATASOURCE').chomp
-EveryPolitician.countries_json = cjson
-LIVE_INDEX = EveryPolitician::Index.new(index_url: cjson)
-
 set :erb, trim: '-'
 set :docs_url, 'http://docs.everypolitician.org'
+set :index, EveryPolitician::Index.new(index_url: File.read('DATASOURCE').chomp)
 
 get '/' do
-  @page = Page::Home.new(index: LIVE_INDEX)
+  @page = Page::Home.new(index: settings.index)
   erb :homepage
 end
 
 get '/countries.html' do
-  @page = Page::Countries.new(index: LIVE_INDEX)
+  @page = Page::Countries.new(index: settings.index)
   erb :countries
 end
 
 get '/:country/' do |country|
-  @page = Page::Country.new(country: country, index: LIVE_INDEX)
+  @page = Page::Country.new(country: country, index: settings.index)
   pass unless @page.country
   erb :country
 end
@@ -51,7 +48,7 @@ get '/:country/:house/wikidata' do |country, house|
   @page = Page::HouseWikidata.new(
     country: country,
     house:   house,
-    index:   LIVE_INDEX
+    index:   settings.index
   )
   halt(404) unless @page.house
   erb :wikidata_match
@@ -62,13 +59,13 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
     country_slug: country,
     house_slug:   house,
     term_id:      termid,
-    index:        EveryPolitician::Index.new(index_url: cjson)
+    index:        settings.index
   )
   erb :term_table
 end
 
 get '/:country/download.html' do |country|
-  @page = Page::Download.new(country: country, index: LIVE_INDEX)
+  @page = Page::Download.new(country: country, index: settings.index)
   # TODO: perhaps have a `valid?` method?
   halt(404) unless @page.country
   erb :country_download
