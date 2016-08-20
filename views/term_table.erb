@@ -1,18 +1,18 @@
 <div class="page-section" id="term">
     <div class="container text-center">
-        <h1><span class="avatar"><i class="fa fa-university"></i></span> <%= @term[:name] %></h1>
-      <% unless @term[:start_date].to_s.empty? and @term[:end_date].to_s.empty? %>
-        <p><%= @term[:start_date] %> – <%= @term[:end_date] or 'current' %></p>
+        <h1><span class="avatar"><i class="fa fa-university"></i></span> <%= @page.current_term[:name] %></h1>
+      <% unless @page.current_term[:start_date].to_s.empty? and @page.current_term[:end_date].to_s.empty? %>
+        <p><%= @page.current_term[:start_date] %> – <%= @page.current_term[:end_date] or 'current' %></p>
       <% end %>
     </div>
 </div>
 
-<% if @prev_term or @next_term %>
+<% if @page.prev_term or @page.next_term %>
     <div class="page-section page-section--no-padding page-section--border-top">
         <div class="container">
             <div class="term-navigation">
-              <% if @prev_term %>
-                <a href="<%= term_table_url(@country, @house, @prev_term) %>" class="term-navigation__prev" data-ga-track-click="Show previous term">
+              <% if @page.prev_term %>
+                <a href="<%= term_table_url(@page.country, @page.house, @page.prev_term) %>" class="term-navigation__prev" data-ga-track-click="Show previous term">
                     <i class="fa fa-arrow-left"></i>
                     Earlier
                 </a>
@@ -20,8 +20,8 @@
 
               <span class="term-navigation__jump">Jump to:
                   <select class="js-navigation-menu" data-ga-track-select="Jump to term by date">
-                    <% @terms.each do |t| %>
-                      <option value="<%= term_table_url(@country, @house, t) %>" <% if t[:name] == @term[:name] %>selected<% end %>>
+                    <% @page.terms.each do |t| %>
+                      <option value="<%= term_table_url(@page.country, @page.house, t) %>" <% if t[:name] == @page.current_term[:name] %>selected<% end %>>
                         <%= t[:name] %>
                         <% unless t[:start_date].to_s.empty? and t[:end_date].to_s.empty? %>
                           (<%= t[:start_date] %>–<%= t[:end_date] or 'current' %>)
@@ -31,8 +31,8 @@
                   </select>
               </span>
 
-              <% if @next_term %>
-                <a href="<%= term_table_url(@country, @house, @next_term) %>" class="term-navigation__next" data-ga-track-click="Show next term">
+              <% if @page.next_term %>
+                <a href="<%= term_table_url(@page.country, @page.house, @page.next_term) %>" class="term-navigation__next" data-ga-track-click="Show next term">
                     Later
                     <i class="fa fa-arrow-right"></i>
                 </a>
@@ -42,14 +42,14 @@
     </div>
 <% end %>
 
-<% if @group_data.any? %>
+<% if @page.group_data.any? %>
     <div class="page-section page-section--grey" id="seat-count">
         <div class="container">
             <div class="party-groupings__title">
                 <h2>Party Groupings</h2>
             </div>
             <ul class="grid-list grid-list--vertically-center">
-              <% @group_data.each do |party| %>
+              <% @page.group_data.each do |party| %>
                 <li id="party-<%= party[:group_id] %>"><div class="avatar-unit">
                     <span class="avatar"><i class="fa fa-users"></i></span>
                     <h3><%= party[:name].to_s.empty? ? 'Independent' : party[:name] %></h3>
@@ -72,25 +72,25 @@
                     <div class="data-completeness">
                         <span class="section-toggle section-toggle--selected" data-section-toggle="bio" data-ga-track-click="Section toggle: bio">
                             <span class="data-completeness__label">Biographical</span>
-                            <span class="data-completeness__percentage"><%= @percentages[:bio] %>%</span>
+                            <span class="data-completeness__percentage"><%= @page.percentages[:bio] %>%</span>
                         </span>
                     </div>
                     <div class="data-completeness">
                         <span class="section-toggle" data-section-toggle="social" data-ga-track-click="Section toggle: social">
                             <span class="data-completeness__label">Social links</span>
-                            <span class="data-completeness__percentage"><%= @percentages[:social] %>%</span>
+                            <span class="data-completeness__percentage"><%= @page.percentages[:social] %>%</span>
                         </span>
                     </div>
                     <div class="data-completeness">
                         <span class="section-toggle" data-section-toggle="contacts" data-ga-track-click="Section toggle: contacts">
                             <span class="data-completeness__label">Contact details</span>
-                            <span class="data-completeness__percentage"><%= @percentages[:contacts] %>%</span>
+                            <span class="data-completeness__percentage"><%= @page.percentages[:contacts] %>%</span>
                         </span>
                     </div>
                     <div class="data-completeness">
                         <span class="section-toggle" data-section-toggle="identifiers" data-ga-track-click="Section toggle: identifiers">
                             <span class="data-completeness__label">Identifiers</span>
-                            <span class="data-completeness__percentage"><%= @percentages[:identifiers] %>%</span>
+                            <span class="data-completeness__percentage"><%= @page.percentages[:identifiers] %>%</span>
                         </span>
                     </div>
                 </div>
@@ -126,7 +126,7 @@
 
             <div class="grid-list" data-active-section="bio">
 
-              <% @people.each do |person| %>
+              <% @page.people.each do |person| %>
                 <div class="js-filter-target">
                     <div class="person-card" id="mem-<%= person[:id] %>">
 
@@ -239,8 +239,8 @@
 
       <div class="page-section page-section--grey source-credits">
         <div class="container">
-          <% if @data_sources %>
-            <p>Main Source<% if @data_sources.size > 1 %>s<% end %>: <%= @data_sources.map { |url| %Q(<a href="#{url}">#{url}</a>) }.join(", ") %></p>
+          <% if @page.data_sources %>
+            <p>Main Source<% if @page.data_sources.size > 1 %>s<% end %>: <%= @page.data_sources.map { |url| %Q(<a href="#{url}">#{url}</a>) }.join(", ") %></p>
           <% end %>
           <p><b>Anything wrong?</b> If you've spotted an error, or the data is incomplete,
             here's <a href="http://docs.everypolitician.org/contribute.html">how to get that fixed</a>.</p>
