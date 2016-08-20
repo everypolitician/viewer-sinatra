@@ -73,7 +73,8 @@ describe 'TermTable' do
     end
 
     it 'knows percentage of people that have special data' do
-      subject.percentages.must_equal percentages
+      expected = { social: 20, bio: 100, contacts: 100, identifiers: 93 }
+      subject.percentages.must_equal expected
     end
 
     def fichtinger_card
@@ -91,12 +92,6 @@ describe 'TermTable' do
     end
 
     def percentages
-      {
-        social:      20,
-        bio:         100,
-        contacts:    100,
-        identifiers: 93,
-      }
     end
   end
 
