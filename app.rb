@@ -22,24 +22,8 @@ cjson = File.read('DATASOURCE').chomp
 EveryPolitician.countries_json = cjson
 LIVE_INDEX = EveryPolitician::Index.new(index_url: cjson)
 
-DOCS_URL = 'http://docs.everypolitician.org'
-
-# Can't do server-side redirection on a GitHub Pages-hosted static site, so the
-# kindest next-best-thing is to have a placeholder with meta HTTP-refresh.
-# This works for humans (i.e., browsers parse and follow the redirect) but,
-# because wget simply fetches the HTML document, this lets us continue to
-# spider the site to generate the contents of everypolitician/viewer-static.
-# See scripts/release.sh (update_viewer_static).
-def soft_redirect(url, page_title)
-  @head_tags = [
-    %(<meta http-equiv="refresh" content="0; url=#{url}">),
-    %(<link rel="canonical" href="#{url}"/>),
-  ].join("\n\t")
-  @page_title = page_title
-  erb :redirect
-end
-
 set :erb, trim: '-'
+set :docs_url, 'http://docs.everypolitician.org'
 
 get '/' do
   @page = Page::Home.new(index: LIVE_INDEX)
@@ -114,43 +98,42 @@ end
 
 # Old doc pages are now at docs.everypolitician.org: redirect to them
 get '/about.html' do
-  # note: about.html -> docs subdomain root (/)
-  soft_redirect(DOCS_URL + '/', 'About')
+  docs_redirect('/', 'About')
 end
 
-get '/contribute.html' do
-  soft_redirect(DOCS_URL + request.path_info, 'How to contribute')
-end
+set :docs_map, contribute:     'How to contribute',
+               data_structure: 'About EveryPolitician’s data',
+               data_summary:   'What’s in EveryPolitician’s data?',
+               repo_structure: 'Getting the most recent data',
+               scrapers:       'About writing scrapers',
+               submitting:     'How we import data',
+               technical:      'Technical overview',
+               use_the_data:   'Use EveryPolitician data'
 
-get '/data_structure.html' do
-  soft_redirect(DOCS_URL + request.path_info, 'About EveryPolitician’s data')
-end
-
-get '/data_summary.html' do
-  soft_redirect(DOCS_URL + request.path_info, 'What’s in EveryPolitician’s data?')
-end
-
-get '/repo_structure.html' do
-  soft_redirect(DOCS_URL + request.path_info, 'Getting the most recent data')
-end
-
-get '/scrapers.html' do
-  soft_redirect(DOCS_URL + request.path_info, 'About writing scrapers')
-end
-
-get '/submitting.html' do
-  soft_redirect(DOCS_URL + request.path_info, 'How we import data')
-end
-
-get '/technical.html' do
-  soft_redirect(DOCS_URL + request.path_info, 'Technical overview')
-end
-
-get '/use_the_data.html' do
-  soft_redirect(DOCS_URL + request.path_info, 'Use EveryPolitician data')
+settings.docs_map.each do |page, text|
+  path = '/%s.html' % page
+  get path do
+    docs_redirect(path, text)
+  end
 end
 
 not_found do
   status 404
   erb :fourohfour
+end
+
+# Can't do server-side redirection on a GitHub Pages-hosted static site, so the
+# kindest next-best-thing is to have a placeholder with meta HTTP-refresh.
+# This works for humans (i.e., browsers parse and follow the redirect) but,
+# because wget simply fetches the HTML document, this lets us continue to
+# spider the site to generate the contents of everypolitician/viewer-static.
+# See scripts/release.sh (update_viewer_static).
+def docs_redirect(path, page_title)
+  url = URI.join(settings.docs_url, path)
+  @head_tags = [
+    %(<meta http-equiv="refresh" content="0; url=#{url}">),
+    %(<link rel="canonical" href="#{url}"/>),
+  ].join("\n\t")
+  @page_title = page_title
+  erb :redirect
 end
