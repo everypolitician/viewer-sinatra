@@ -15,8 +15,8 @@ describe 'HouseWikidata' do
     subject.house.name.must_equal 'Nationalrat'
   end
 
-  it 'should return a page_title' do
-    subject.page_title.must_equal 'EveryPolitician: Austria — Nationalrat'
+  it 'should return a title' do
+    subject.title.must_equal 'EveryPolitician: Austria — Nationalrat'
   end
 
   it 'should have popolo with wikidata' do
