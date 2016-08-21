@@ -8,6 +8,10 @@ module Page
       @index = index
     end
 
+    def title
+      "EveryPolitician: Political data for #{countries.count} countries"
+    end
+
     def countries
       index.countries
     end
