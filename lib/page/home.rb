@@ -1,16 +1,15 @@
 # frozen_string_literal: true
-require 'everypolitician'
-require 'json'
 require_relative '../world'
 require_relative '../everypolitician_extensions'
 
 module Page
   class Home
-    attr_reader :countries
-
-    def initialize(index: Everypolitician::Index.new)
+    def initialize(index:)
       @index = index
-      @countries = index.countries
+    end
+
+    def countries
+      index.countries
     end
 
     def total_people
