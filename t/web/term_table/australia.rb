@@ -6,14 +6,16 @@ describe 'Per Country Tests: Australia' do
   subject { Nokogiri::HTML(last_response.body) }
 
   describe 'Country page' do
-    before { get '/australia/' }
+    before       { get '/australia/' }
+    let(:house)  { subject.css('#terms-representatives') }
+    let(:senate) { subject.css('#terms-senate') }
 
     it 'should link to the House of Representatives' do
-      subject.css('#terms-representatives a[href*="/44.html"]').count.must_equal 1
+      house.css('a[href*="44.html"]').count.must_equal 1
     end
 
     it 'should link to the Senate' do
-      subject.css('#terms-senate a[href*="/44.html"]').count.must_equal 1
+      senate.css('a[href*="/44.html"]').count.must_equal 1
     end
   end
 
@@ -29,7 +31,9 @@ describe 'Per Country Tests: Australia' do
     end
 
     it 'should have the correct page title' do
-      subject.css('title').text.must_equal 'EveryPolitician: Australia — House of Representatives - 44th Parliament'
+      subject.css('title').text.must_include 'Australia'
+      subject.css('title').text.must_include 'House of Representatives'
+      subject.css('title').text.must_include '44th Parliament'
     end
 
     it 'should list the correct source' do
@@ -37,7 +41,8 @@ describe 'Per Country Tests: Australia' do
     end
 
     it 'should list honorific prefix in Tony Abbot bio card' do
-      subject.css('div.person-card[id=mem-93e2e4cc-f5ce-4bea-be68-2fc86c38a9bc]').text.must_include 'The Honourable'
+      tony = 'mem-93e2e4cc-f5ce-4bea-be68-2fc86c38a9bc'
+      subject.css("div.person-card[id=#{tony}]").text.must_include 'Honourable'
     end
   end
 
@@ -53,7 +58,9 @@ describe 'Per Country Tests: Australia' do
     end
 
     it 'should have the correct page title' do
-      subject.css('title').text.must_equal 'EveryPolitician: Australia — Senate - 44th Parliament'
+      subject.css('title').text.must_include 'Australia'
+      subject.css('title').text.must_include 'Senate'
+      subject.css('title').text.must_include '44th Parliament'
     end
 
     it 'should list the correct source' do
