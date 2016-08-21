@@ -7,6 +7,10 @@ module Page
       @slug = country
     end
 
+    def title
+      "EveryPolitician: #{country.name}"
+    end
+
     def country
       @country ||= World.new.country(slug)
     end

@@ -7,12 +7,12 @@ module Page
       @index = index
     end
 
-    def country
-      index.country(slug)
-    end
-
     def title
       "EveryPolitician: #{country.name}"
+    end
+
+    def country
+      index.country(slug)
     end
 
     private

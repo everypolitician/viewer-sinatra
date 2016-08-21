@@ -12,6 +12,12 @@ describe 'Homepage' do
     end
   end
 
+  describe 'title' do
+    it 'should give the country count in the title' do
+      subject.title.must_include '233 countries'
+    end
+  end
+
   describe 'world' do
     it 'should sum people in Colombia' do
       subject.world[:colombia][:totalPeople].must_equal 269

@@ -8,6 +8,10 @@ module Page
       @index = index
     end
 
+    def title
+      "EveryPolitician: #{country.name} — #{house.name}"
+    end
+
     def country
       index.country(country_slug)
     end
@@ -19,10 +23,6 @@ module Page
     # TODO: we shouldn't be passing raw Popolo, only what's needed
     def popolo
       house.popolo
-    end
-
-    def page_title
-      "EveryPolitician: #{country.name} — #{house.name}"
     end
 
     private

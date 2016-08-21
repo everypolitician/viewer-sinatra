@@ -7,6 +7,10 @@ module Page
       @index = index
     end
 
+    def title
+      'EveryPolitician'
+    end
+
     def countries
       index.countries
     end

@@ -7,6 +7,10 @@ module Page
       @access_token = access_token
     end
 
+    def title
+      'EveryPolitician: Countries needed'
+    end
+
     def to_find
       issues 'New Country,To Find'
     end
