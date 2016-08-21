@@ -17,7 +17,7 @@ module Page
     end
 
     def country
-      country ||= index.country(country_slug)
+      index.country(country_slug)
     end
 
     def house
@@ -43,7 +43,8 @@ module Page
     end
 
     def title
-      "EveryPolitician: #{country.name} — #{house[:name]} - #{current_term[:name]}"
+      parts = [country.name, house[:name], current_term[:name]]
+      "EveryPolitician: #{parts.join(' - ')}"
     end
 
     def csv_url
@@ -155,7 +156,7 @@ module Page
     end
 
     def memberships_at_end_of_current_term
-      @memberships_at_end_of_current_term ||= current_term_memberships.select do |mem|
+      @maeoct ||= current_term_memberships.select do |mem|
         mem.end_date.to_s.empty? || mem.end_date == current_term[:end_date]
       end
     end
@@ -165,15 +166,15 @@ module Page
     end
 
     def top_identifiers
-      @top_identifiers ||= people_for_current_term
-                           .map(&:identifiers)
-                           .compact
-                           .flatten
-                           .reject { |i| i[:scheme] == 'everypolitician_legacy' }
-                           .group_by { |i| i[:scheme] }
-                           .sort_by { |_s, ids| -ids.size }
-                           .map { |s, _ids| s }
-                           .take(3)
+      @tidx ||= people_for_current_term
+                .map(&:identifiers)
+                .compact
+                .flatten
+                .reject { |i| i[:scheme] == 'everypolitician_legacy' }
+                .group_by { |i| i[:scheme] }
+                .sort_by { |_s, ids| -ids.size }
+                .map { |s, _ids| s }
+                .take(3)
     end
 
     def person_memberships(person)
@@ -213,9 +214,7 @@ module Page
     end
 
     def people_for_current_term
-      @people_for_current_term ||= popolo.persons.select do |p|
-        wanted.include?(p.id)
-      end
+      @pct ||= popolo.persons.select { |p| wanted.include?(p.id) }
     end
   end
 end
