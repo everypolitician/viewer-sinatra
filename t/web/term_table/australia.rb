@@ -41,7 +41,7 @@ describe 'Per Country Tests: Australia' do
     end
 
     it 'should list honorific prefix in Tony Abbot bio card' do
-      tony = '93e2e4cc-f5ce-4bea-be68-2fc86c38a9bc'
+      tony = 'mem-93e2e4cc-f5ce-4bea-be68-2fc86c38a9bc'
       subject.css("div.person-card[id=#{tony}]").text.must_include 'Honourable'
     end
   end
