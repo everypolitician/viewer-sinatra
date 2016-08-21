@@ -4,7 +4,11 @@ require_relative '../../lib/page/house_wikidata'
 
 describe 'HouseWikidata' do
   subject do
-    Page::HouseWikidata.new(country: 'austria', house: 'nationalrat', index: index_at_known_sha)
+    Page::HouseWikidata.new(
+      country: 'austria',
+      house:   'nationalrat',
+      index:   index_at_known_sha
+    )
   end
 
   it 'should return a house' do
