@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 require 'everypolitician'
-require_relative '../../lib/popolo_helper.rb'
+require_relative '../everypolitician_extensions'
 
 module Page
   class TermTable
