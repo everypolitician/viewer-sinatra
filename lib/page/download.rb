@@ -7,6 +7,10 @@ module Page
       @index = index
     end
 
+    def title
+      "EveryPolitician: #{country.name}"
+    end
+
     def download_url
       index.index_url
     end

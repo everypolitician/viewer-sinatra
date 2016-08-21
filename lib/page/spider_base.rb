@@ -6,5 +6,9 @@ module Page
     def world
       World.new.as_json
     end
+
+    def title
+      'EveryPolitician: Robots Start Here'
+    end
   end
 end

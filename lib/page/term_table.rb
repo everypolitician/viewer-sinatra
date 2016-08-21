@@ -11,6 +11,11 @@ module Page
       @index        = index
     end
 
+    def title
+      parts = [country.name, house[:name], current_term[:name]]
+      "EveryPolitician: #{parts.join(' - ')}"
+    end
+
     def data_sources
       popolo.popolo[:meta][:sources].map { |s| CGI.unescape(s) }
     end
@@ -39,11 +44,6 @@ module Page
 
     def current_term
       hashed_adjacent_terms[:current_term]
-    end
-
-    def title
-      parts = [country.name, house[:name], current_term[:name]]
-      "EveryPolitician: #{parts.join(' - ')}"
     end
 
     def csv_url
