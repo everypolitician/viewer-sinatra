@@ -51,7 +51,7 @@ get '/:country/:house/wikidata' do |country, house|
     index:   settings.index
   )
   halt(404) unless @page.house
-  erb :wikidata_match
+  erb :house_wikidata
 end
 
 get '/:country/:house/term-table/:id.html' do |country, house, termid|
@@ -73,7 +73,7 @@ end
 
 get '/status/all_countries.html' do
   @page = Page::SpiderBase.new
-  erb :all_countries
+  erb :spider_base
 end
 
 get '/needed.html' do
