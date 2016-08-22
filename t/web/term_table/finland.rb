@@ -13,6 +13,10 @@ describe 'Per Country Tests' do
   describe 'Finland' do
     before { get '/finland/eduskunta/term-table/35.html' }
 
+    it 'should link to the country page' do
+      subject.css('.site-header h2 a/@href').text.must_equal '/finland/'
+    end
+
     it 'should have have its name' do
       subject.css('#term h1').text.must_include 'Eduskunta 35'
     end

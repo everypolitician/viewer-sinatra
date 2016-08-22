@@ -59,7 +59,7 @@
                 <div class="site-header__logo">
                     <h2>
                       <% if @country %>
-                        <a href="/<%= @country[:url] %>/"><%= @country[:name] %></a>
+                        <a href="/<%= @country[:slug].downcase %>/"><%= @country[:name] %></a>
                       <% else %>
                         <a href="/"><span class="header-logo">EveryPolitician</span></a>
                       <% end %>
