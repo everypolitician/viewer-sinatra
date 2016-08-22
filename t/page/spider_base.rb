@@ -5,7 +5,11 @@ require_relative '../../lib/page/spider_base'
 describe 'SpiderBase' do
   subject { Page::SpiderBase.new }
 
-  it 'should have a World hash' do
-    subject.world[:bahamas][:displayName].must_equal 'Bahamas'
+  it 'has a title' do
+    subject.title.must_include 'Robots'
+  end
+
+  it 'has the list of all countries' do
+    subject.countries.count.must_equal 245
   end
 end
