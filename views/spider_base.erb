@@ -1,11 +1,11 @@
 <div class="page-section" id="home">
     <div class="container">
         <ul class="grid-list grid-list--vertically-center">
-          <% @page.world.sort_by { |k, _| k }.each do |k, v| %>
+          <% @page.countries.each do |country| %>
             <li>
-                <a class="avatar-unit" href="/<%= k %>/">
+                <a class="avatar-unit" href="/<%= country.slug.downcase %>/">
                     <span class="avatar"><i class="fa fa-users"></i></span>
-                    <h3><%= v[:displayName] %></h3>
+                    <h3><%= country.name %></h3>
                 </a>
             </li>
           <% end %>
