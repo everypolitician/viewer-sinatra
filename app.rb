@@ -51,7 +51,7 @@ get '/:country/:house/wikidata' do |country, house|
     index:   settings.index
   )
   halt(404) unless @page.house
-  erb :wikidata_match
+  erb :house_wikidata
 end
 
 get '/:country/:house/term-table/:id.html' do |country, house, termid|
