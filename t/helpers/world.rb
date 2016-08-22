@@ -11,7 +11,7 @@ describe 'World' do
 
   it 'should give us countries as objects' do
     subject.country('american-samoa').name.must_equal 'American Samoa'
-    subject.country('american-samoa').url.must_equal 'american-samoa'
+    subject.country('american-samoa').slug.must_equal 'american-samoa'
   end
 
   it 'should have no match for non-country' do
