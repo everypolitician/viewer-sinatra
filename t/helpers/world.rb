@@ -17,4 +17,9 @@ describe 'World' do
   it 'should have no match for non-country' do
     subject.country('narnia').must_be_nil
   end
+
+  it 'has a list of countries sorted alphabetically by name' do
+    subject.countries.first.name.must_equal 'Abkhazia'
+    subject.countries.last.name.must_equal  'Åland Islands'
+  end
 end
