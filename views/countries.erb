@@ -32,7 +32,7 @@
 <script type="text/javascript">
   var ep_countries = {};
   <% @page.countries.each do |country| %>
-    ep_countries['<%= country[:code].upcase %>'] = '<%= country[:slug].downcase %>';
+    ep_countries['<%= country.code.upcase %>'] = '<%= country.slug.downcase %>';
   <% end -%>
     ep_countries['_0'] = 'kosovo';
     ep_countries['-99'] = 'northern-cyprus';
