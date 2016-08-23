@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 require_relative '../../lib/page/needed'
 require 'minitest/autorun'
-require 'pry'
 require 'vcr'
 
 describe 'Needed' do
