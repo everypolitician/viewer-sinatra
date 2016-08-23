@@ -12,15 +12,15 @@ module Page
     end
 
     def to_find
-      (issues 'New Country,To Find').sort_by(&:title)
+      issues 'New Country,To Find'
     end
 
     def to_scrape
-      (issues 'New Country,To Scrape').sort_by(&:title)
+      issues 'New Country,To Scrape'
     end
 
     def to_finish
-      (issues 'New Country,3 - WIP').sort_by(&:title)
+      issues 'New Country,3 - WIP'
     end
 
     private
@@ -28,7 +28,7 @@ module Page
     attr_reader :access_token
 
     def issues(labels)
-      client.issues 'everypolitician/everypolitician-data', labels: labels
+      (client.issues 'everypolitician/everypolitician-data', labels: labels).sort_by(&:title)
     end
 
     def client
