@@ -25,11 +25,11 @@
 
         <div class="container">
             <ul class="grid-list grid-list--vertically-center source-needed">
-              <% @page.to_find.sort_by { |i| i[:title] }.each do |i| %>
+              <% @page.to_find.sort_by { |i| i.title }.each do |i| %>
                 <li>
-                    <a class="avatar-unit" href="<%= i[:html_url] %>/">
+                    <a class="avatar-unit" href="<%= i.html_url %>/">
                         <span class="avatar"><i class="fa fa-users"></i></span>
-                        <h3><%= i[:title] %></h3>
+                        <h3><%= i.title %></h3>
                     </a>
                 </li>
               <% end %>
@@ -47,11 +47,11 @@
 
         <div class="container">
             <ul class="grid-list grid-list--vertically-center scraper-needed">
-              <% @page.to_scrape.sort_by { |i| i[:title] }.each do |i| %>
+              <% @page.to_scrape.sort_by { |i| i.title }.each do |i| %>
                 <li>
-                    <a class="avatar-unit" href="<%= i[:html_url] %>/">
+                    <a class="avatar-unit" href="<%= i.html_url %>/">
                         <span class="avatar"><i class="fa fa-users"></i></span>
-                        <h3><%= i[:title] %></h3>
+                        <h3><%= i.title %></h3>
                     </a>
                 </li>
               <% end %>
@@ -62,11 +62,11 @@
 
         <div class="container">
             <ul class="grid-list grid-list--vertically-center scraper-progress">
-              <% @page.to_finish.sort_by { |i| i[:title] }.each do |i| %>
+              <% @page.to_finish.sort_by { |i| i.title }.each do |i| %>
                 <li>
-                    <a class="avatar-unit" href="<%= i[:html_url] %>/">
+                    <a class="avatar-unit" href="<%= i.html_url %>/">
                         <span class="avatar"><i class="fa fa-users"></i></span>
-                        <h3><%= i[:title] %></h3>
+                        <h3><%= i.title %></h3>
                     </a>
                 </li>
               <% end %>
