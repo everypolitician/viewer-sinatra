@@ -9,7 +9,7 @@ describe 'Needed' do
   end
 
   it 'should know that Eritrea is missing' do
-    subject.to_find.map(&:title).include? 'Eritrea'
+    assert subject.to_find.map(&:title).include? 'Eritrea'
   end
 
   # Might be good to have a version of these tests against a different
