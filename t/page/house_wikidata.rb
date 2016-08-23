@@ -4,9 +4,7 @@ require_relative '../../lib/page/house_wikidata'
 
 def page_for(country, house)
   Page::HouseWikidata.new(
-    country: country,
-    house:   house,
-    index:   index_at_known_sha
+    house: index_at_known_sha.country(country).legislature(house)
   )
 end
 

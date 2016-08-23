@@ -2,10 +2,10 @@
 
 module Page
   class HouseWikidata
-    def initialize(country:, house:, index:)
-      @country_slug = country
-      @house_slug = house
-      @index = index
+    attr_reader :house
+
+    def initialize(house:)
+      @house = house
     end
 
     def title
@@ -13,11 +13,7 @@ module Page
     end
 
     def country
-      index.country(country_slug)
-    end
-
-    def house
-      country.legislature(house_slug)
+      house.country
     end
 
     def people_with_wikidata
@@ -29,8 +25,6 @@ module Page
     end
 
     private
-
-    attr_reader :house_slug, :country_slug, :index
 
     def popolo
       house.popolo
