@@ -13,8 +13,8 @@ describe 'Needed' do
   end
 
   it 'should order the list of countries to find by name' do
-    order = subject.to_find.map(&:title).first <=> subject.to_find.map(&:title).last
-    assert order <= 0
+    wanted = subject.to_find.map(&:title)
+    assert wanted == wanted.sort
   end
 
   # Might be good to have a version of these tests against a different
