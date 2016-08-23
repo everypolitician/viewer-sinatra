@@ -44,12 +44,9 @@ get '/:country/' do |country|
 end
 
 get '/:country/:house/wikidata' do |country, house|
-  @page = Page::HouseWikidata.new(
-    country: country,
-    house:   house,
-    index:   settings.index
-  )
-  halt(404) unless @page.house
+  pass unless country = settings.index.country(country)
+  pass unless house   = country.legislature(house)
+  @page = Page::HouseWikidata.new(house: house)
   erb :house_wikidata
 end
 
