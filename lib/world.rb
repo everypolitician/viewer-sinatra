@@ -19,7 +19,7 @@ class World
   # want to tidy the interface up a little so that this is substitutable
   # for an `everypolitician-ruby` Country in a few well-defined places.
 
-  Country = Struct.new(:slug, :name, :names)
+  Country = Struct.new(:slug, :name, :names, :total_people)
   def country(slug)
     return unless found = as_json[slug.to_sym]
     Country.new(slug, found[:displayName], found[:allNames])
