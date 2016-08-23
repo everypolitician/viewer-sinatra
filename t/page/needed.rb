@@ -12,6 +12,11 @@ describe 'Needed' do
     assert subject.to_find.map(&:title).include? 'Eritrea'
   end
 
+  it 'should order the list of countries to find by name' do
+    order = subject.to_find.map(&:title).first <=> subject.to_find.map(&:title).last
+    assert order <= 0
+  end
+
   # Might be good to have a version of these tests against a different
   # cassette, when we have something in these, but Good Enough For Now
   it 'should currently have nothing to scrape' do

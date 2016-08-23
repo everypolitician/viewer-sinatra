@@ -12,15 +12,15 @@ module Page
     end
 
     def to_find
-      issues 'New Country,To Find'
+      (issues 'New Country,To Find').sort_by(&:title)
     end
 
     def to_scrape
-      issues 'New Country,To Scrape'
+      (issues 'New Country,To Scrape').sort_by(&:title)
     end
 
     def to_finish
-      issues 'New Country,3 - WIP'
+      (issues 'New Country,3 - WIP').sort_by(&:title)
     end
 
     private
