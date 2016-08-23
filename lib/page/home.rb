@@ -25,8 +25,8 @@ module Page
     end
 
     def world
-      world_json.each do |slug, country|
-        country[:totalPeople] = index.country(slug.to_s).person_count rescue 0
+      world_countries.each do |country|
+        country.total_people = index.country(country.slug.to_s).person_count rescue 0
       end
     end
 
@@ -38,8 +38,8 @@ module Page
       @_legislatures ||= countries.flat_map(&:legislatures)
     end
 
-    def world_json
-      World.new.as_json
+    def world_countries
+      World.new.countries
     end
   end
 end

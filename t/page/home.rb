@@ -20,7 +20,8 @@ describe 'Homepage' do
 
   describe 'world' do
     it 'should sum people in Colombia' do
-      subject.world[:colombia][:totalPeople].must_equal 269
+      colombia = subject.world.find { |c| c.name == 'Colombia' }
+      colombia.total_people.must_equal 269
     end
   end
 
