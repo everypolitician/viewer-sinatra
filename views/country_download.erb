@@ -69,8 +69,8 @@
               <span class="avatar"><i class="fa fa-university"></i></span>
               <a href="<%= term_table_url(@page.country, house, t) %>"><h3><%= t.name %></h3></a>
               <p>
-                <% unless t.start_date.to_s.empty? and t.end_date.to_s.empty? %>
-                 <%= t.start_date %> - <%=  t.end_date rescue '' %>
+                <% if t.start_date || t.end_date %>
+                 <%= t.start_date %> - <%=  t.end_date %>
                 <% end %>
               </p>
             </div>
