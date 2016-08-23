@@ -6,6 +6,7 @@ require 'nokogiri'
 require 'pathname'
 require 'rack/test'
 require 'vcr'
+require 'pry'
 
 VCR.configure do |config|
   config.cassette_library_dir = 't/fixtures/vcr_cassettes'
