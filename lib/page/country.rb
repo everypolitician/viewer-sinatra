@@ -2,21 +2,14 @@
 
 module Page
   class Country
-    def initialize(country:, index:)
-      @slug  = country
-      @index = index
+    attr_reader :country
+
+    def initialize(country:)
+      @country = country
     end
 
     def title
       "EveryPolitician: #{country.name}"
     end
-
-    def country
-      index.country(slug)
-    end
-
-    private
-
-    attr_reader :slug, :index
   end
 end
