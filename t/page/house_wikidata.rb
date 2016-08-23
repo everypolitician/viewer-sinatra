@@ -19,8 +19,29 @@ describe 'HouseWikidata' do
     subject.title.must_equal 'EveryPolitician: Austria — Nationalrat'
   end
 
-  it 'should have popolo with wikidata' do
-    andrea = '0eedf2c9-01ea-44f4-bc6e-e5e4bf6d2add'
-    subject.popolo.persons.find_by(id: andrea).wikidata.must_equal 'Q493950'
+  it 'should pass a list of people with wikidata' do
+    subject.people_with_wikidata.map(&:name).must_include 'Cornelia Ecker'
+  end
+
+  it 'should pass an empty array when there are no people with wikidata' do
+    test_page = Page::HouseWikidata.new(
+      country: 'alderney',
+      house:   'states',
+      index:   index_at_known_sha
+    )
+    test_page.people_with_wikidata.must_be_empty
+  end
+
+  it 'should pass an empty array when there are no people without wikidata' do
+    subject.people_without_wikidata.must_be_empty
+  end
+
+  it 'should pass a list of people without wikidata' do
+    test_page = Page::HouseWikidata.new(
+      country: 'uganda',
+      house:   'parliament',
+      index:   index_at_known_sha
+    )
+    test_page.people_without_wikidata.map(&:name).must_include 'Boaz Kafuda'
   end
 end

@@ -4,11 +4,17 @@
   </div>
 
   <div class="container">
-    <% @page.popolo.persons.partition(&:wikidata).each_with_index do |l, i| %>
-      <h2><%= %w(With Without)[i] %></h2>
+    <h2>With</h2>
       <ol>
-        <% l.each do |p| %><li><%= p[:name] %> <%= wikidata_link(p) %></li><% end %>
+        <% @page.people_with_wikidata.each do |p| %>
+          <li><%= p.name %> <%= wikidata_link(p) %></li>
+        <% end %>
       </ol>
-    <% end %>
+    <h2>Without</h2>
+      <ol>
+        <% @page.people_without_wikidata.each do |p| %>
+          <li><%= p.name %></li>
+        <% end %>
+      </ol>
   </div>
 </div>
