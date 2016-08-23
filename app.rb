@@ -32,9 +32,9 @@ get '/countries.html' do
   erb :countries
 end
 
-get '/:country/' do |country|
-  @page = Page::Country.new(country: country, index: settings.index)
-  pass unless @page.country
+get '/:country/' do |slug|
+  pass unless country = settings.index.country(slug)
+  @page = Page::Country.new(country: country)
   erb :country
 end
 
@@ -66,7 +66,7 @@ end
 
 get '/:country/download.html' do |country|
   @page = Page::Download.new(country: country, index: settings.index)
-  # TODO: perhaps have a `valid?` method?
+  # TODO: move this (and others like it) to a pre-check instead
   halt(404) unless @page.country
   erb :country_download
 end
