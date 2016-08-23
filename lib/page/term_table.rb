@@ -12,7 +12,7 @@ module Page
     end
 
     def title
-      parts = [country.name, house[:name], current_term[:name]]
+      parts = [country.name, house.name, current_term.name]
       "EveryPolitician: #{parts.join(' - ')}"
     end
 
@@ -25,13 +25,13 @@ module Page
     end
 
     def house
-      country[:legislatures].find do |h|
-        h[:slug].downcase == house_slug.downcase
+      country.legislatures.find do |house|
+        house.slug.downcase == house_slug.downcase
       end
     end
 
     def terms
-      house[:legislative_periods]
+      house.legislative_periods
     end
 
     def next_term
@@ -59,7 +59,7 @@ module Page
                       .group_by(&:on_behalf_of_id)
                       .map     { |group_id, mems| [org_lookup[group_id], mems] }
                       .sort_by { |group, mems| [-mems.count, group.name] }
-                      .map     do |group, mems|
+                      .map do    |group, mems|
         {
           group_id:     group.id.split('/').last,
           name:         group.name,
@@ -139,7 +139,7 @@ module Page
     end
 
     def popolo_file
-      @popolo_file ||= EveryPolitician::GithubFile.new(house[:popolo], house[:sha])
+      @popolo_file ||= EveryPolitician::GithubFile.new(house[:popolo], house.sha)
     end
 
     def hashed_adjacent_terms
@@ -151,7 +151,7 @@ module Page
       [nil, terms, nil]
         .flatten
         .each_cons(3)
-        .find { |_before, current, _after| current[:slug] == term_id }
+        .find { |_before, current, _after| current.slug == term_id }
     end
 
     def memberships_at_end_of_current_term
@@ -190,7 +190,7 @@ module Page
 
     def image_proxy_url(id)
       'https://mysociety.github.io/politician-image-proxy' \
-      "/#{country[:slug]}/#{house[:slug]}/#{id}/140x140.jpeg"
+      "/#{country.slug}/#{house.slug}/#{id}/140x140.jpeg"
     end
 
     # Caches for faster lookup

@@ -22,11 +22,11 @@ describe 'TermTable' do
     end
 
     it 'finds nationalrat as a legislature' do
-      subject.house[:name].must_equal 'Nationalrat'
+      subject.house.name.must_equal 'Nationalrat'
     end
 
     it 'has a list of terms for Austria' do
-      subject.terms.first[:start_date].must_equal '2013-09-29'
+      subject.terms.first.start_date.to_s.must_equal '2013-09-29'
     end
 
     it 'shows the name in the title' do
@@ -106,15 +106,15 @@ describe 'TermTable' do
     end
 
     it 'knows about the current term' do
-      subject.current_term[:slug].must_equal '55'
+      subject.current_term.slug.must_equal '55'
     end
 
     it 'knows about the previous term' do
-      subject.prev_term[:slug].must_equal '54'
+      subject.prev_term.slug.must_equal '54'
     end
 
     it 'knows about the next term' do
-      subject.next_term[:slug].must_equal '56'
+      subject.next_term.slug.must_equal '56'
     end
   end
 end
