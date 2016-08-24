@@ -41,10 +41,6 @@ describe 'TermTable' do
       subject.title.must_include '25'
     end
 
-    it 'has a url pointing to the csv file' do
-      subject.csv_url.must_equal 'https://cdn.rawgit.com/everypolitician/everypolitician-data/3df153b/data/Austria/Nationalrat/term-25.csv'
-    end
-
     it 'has a url pointing to the popolo file' do
       subject.popolo_url.must_equal 'https://cdn.rawgit.com/everypolitician/everypolitician-data/3df153b/data/Austria/Nationalrat/ep-popolo-v1.0.json'
     end
