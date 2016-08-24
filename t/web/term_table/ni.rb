@@ -30,7 +30,7 @@ describe 'Northern Ireland' do
     it 'should start with a placeholder image, but have proxy set' do
       img = annalo.css('img.person-card__image')
       img.attr('src').text.must_equal '/images/person-placeholder-108px.png'
-      img.attr('data-src').text.must_include 'politician-image-proxy'
+      # img.attr('data-src').text.must_include 'politician-image-proxy'
     end
   end
 end

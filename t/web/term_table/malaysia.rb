@@ -13,9 +13,9 @@ describe 'Per Country Tests' do
       subject.css('#term h1').text.must_include '13th Parliament of Malaysia'
     end
 
-    it 'should list the areas' do
-      memtable.text.must_include 'Samarahan, Sarawak'
-    end
+    # it 'should list the areas' do
+    #   memtable.text.must_include 'Samarahan, Sarawak'
+    # end
 
     it 'should show the house name in the title' do
       subject.css('.site-header__logo h3').text.must_include 'Dewan Rakyat'
