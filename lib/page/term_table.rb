@@ -125,11 +125,7 @@ module Page
     attr_reader :country_slug, :house_slug, :term_id, :index
 
     def popolo
-      @popolo ||= EveryPolitician::Popolo.parse(popolo_file.raw)
-    end
-
-    def popolo_file
-      @popolo_file ||= EveryPolitician::GithubFile.new(house[:popolo], house.sha)
+      @popolo ||= house.popolo
     end
 
     def hashed_adjacent_terms
