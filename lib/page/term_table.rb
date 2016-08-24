@@ -47,7 +47,7 @@ module Page
     end
 
     def csv_url
-      current_term[:csv_url]
+      current_term.csv_url
     end
 
     def popolo_url
