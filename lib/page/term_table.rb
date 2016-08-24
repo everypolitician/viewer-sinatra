@@ -25,9 +25,7 @@ module Page
     end
 
     def house
-      country.legislatures.find do |house|
-        house.slug.downcase == house_slug.downcase
-      end
+      country.legislature(house_slug)
     end
 
     def terms
