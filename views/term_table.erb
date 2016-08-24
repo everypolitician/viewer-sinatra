@@ -128,7 +128,7 @@
 
               <% @page.people.each do |person| %>
                 <div class="js-filter-target">
-                    <div class="person-card" id="mem-<%= person[:id] %>">
+                    <div class="person-card" id="mem-<%= person.id %>">
 
                         <div class="person-card__primary">
 
@@ -136,19 +136,19 @@
                               (which is display:none until JavaScript unhides it)
                               and a fallback for non-javascript users, otherwise
                               just show a generic placeholder image.  %>
-                          <% if person[:image] %>
+                          <% if person.image %>
                             <img src="/images/person-placeholder-108px.png"
-                                 data-src="<%= person[:proxy_image] %>"
+                                 data-src="<%# person.image %>"
                                  style="display: none"
                                  class="person-card__image">
-                            <noscript><img src="<%= person[:proxy_image] %>" class="person-card__image"></noscript>
+                            <noscript><img src="<%# person.image %>" class="person-card__image"></noscript>
                           <% else %>
                             <img src="/images/person-placeholder-108px.png" class="person-card__image">
                           <% end %>
 
-                            <h3 class="person-card__name"><%= person[:name] %></h3>
+                            <h3 class="person-card__name"><%= person.name %></h3>
 
-                          <% person[:memberships].each do |mem| %>
+                          <% person.memberships.each do |mem| %>
                             <p class="person-card__politics">
 
                               <%= [mem[:group].to_s, mem[:area].to_s].reject { |s| s.empty? || s.downcase == 'unknown' }.join(" — ") %>
@@ -164,10 +164,10 @@
                           <% end %>
                         </div>
 
-                        <% if person[:bio].any? %>
+                        <% if person.bio.any? %>
                           <div class="person-card__section person-card__section--bio">
                               <table>
-                                <% person[:bio].each do |bio| %>
+                                <% person.bio.each do |bio| %>
                                   <tr>
                                       <th><%= bio[:type] %></th>
                                       <td><%= bio[:value] %></td>
@@ -177,10 +177,10 @@
                           </div>
                         <% end %>
 
-                      <% if person[:social].any? %>
+                      <% if person.social.any? %>
                         <div class="person-card__section person-card__section--social">
                             <table>
-                              <% person[:social].each do |social| %>
+                              <% person.social.each do |social| %>
                                 <tr>
                                     <th><%= social[:type] %></th>
                                     <td><a href="<%= social[:link] %>"><%= social[:value] %></a></td>
@@ -190,10 +190,10 @@
                         </div>
                       <% end %>
 
-                      <% if person[:contacts].any? %>
+                      <% if person.contacts.any? %>
                         <div class="person-card__section person-card__section--contacts">
                             <table>
-                              <% person[:contacts].each do |contact| %>
+                              <% person.contacts.each do |contact| %>
                                 <tr>
                                     <th><%= contact[:type] %></th>
                                     <td>
@@ -209,10 +209,10 @@
                         </div>
                       <% end %>
 
-                      <% if person[:identifiers].any? %>
+                      <% if person.person_identifiers(@page.people).any? %>
                         <div class="person-card__section person-card__section--identifiers">
                             <table>
-                              <% person[:identifiers].each do |identifier| %>
+                              <% person.person_identifiers(@page.people).each do |identifier| %>
                                 <tr title="<%= identifier[:value] %>">
                                     <th><%= identifier[:type] %></th>
                                     <td>
