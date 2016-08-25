@@ -1,6 +1,6 @@
 <div class="hero hero--jazzy text-center homepage-hero">
     <div class="container">
-        <h1><%= commify(@page.total_people) %> politicians from <a href="/countries.html"><%= @page.countries.length %> countries</a> (so far)</h1>
+        <h1><%= commify(@page.total_people) %> politicians from <a href="/countries.html"><%= @page.countries_with_data.count %> countries</a> (so far)</h1>
         <p><label for="country-selector">Find representatives from your country:</label></p>
         <%= erb :country_selector %>
     </div>
@@ -32,7 +32,7 @@
 <script type="text/javascript">
 $(function(){
   var countryCodes = {}
-  <% @page.countries.each do |country| %>
+  <% @page.countries_with_data.each do |country| %>
     countryCodes['<%= country.code.upcase %>'] = 'rgba(255,255,255,0.5)'
   <% end %>
 
