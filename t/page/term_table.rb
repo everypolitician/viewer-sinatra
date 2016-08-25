@@ -58,32 +58,42 @@ describe 'TermTable' do
     end
 
     describe 'when getting the people for the current term' do
-      it 'constructs the cards correctly' do
-        af = subject.people.find { |p| p[:name] == 'Angela Fichtinger' }
-        af.must_equal fichtinger_card
+      def angela
+        @angela ||= subject.people.find { |p| p.name == 'Angela Fichtinger' }
+      end
+
+      it 'finds Angela Fichtinger as a person' do
+        angela.id.must_equal '2e8b774e-ae66-4137-a984-aac74917df87'
+      end
+
+      it 'adds a collection of contact information to people' do
+        contacts = [{ type: 'Email', value: 'angela.fichtinger@parlament.gv.at', link: 'mailto:angela.fichtinger@parlament.gv.at' }]
+        angela.contacts.must_equal contacts
+      end
+
+      it 'adds a collection of identifiers to people' do
+        identifiers = [{ type: 'wikidata', value: 'Q15783437', link: 'https://www.wikidata.org/wiki/Q15783437' }, { type: 'parlaments_at', value: '83146' }]
+        angela.person_identifiers(subject.people).must_equal identifiers
+      end
+
+      it 'adds a collection of social media data to people' do
+        heinz = subject.people.find { |p| p.name == 'Heinz-Christian Strache' }
+        twitter = { type: 'Twitter', value: '@HCStracheFP', link: 'https://twitter.com/HCStracheFP' }
+        facebook = { type: 'Facebook', value: 'HCStrache', link: 'https://facebook.com/HCStrache' }
+        social = [twitter, facebook]
+        heinz.social.must_equal social
+      end
+
+      it 'adds a bio to people' do
+        erwin = subject.people.find { |p| p.name == 'Dr. Erwin Rasinger' }
+        bio = [{ type: 'Gender', value: 'male' }, { type: 'Born', value: '1952-07-30' }, { type: 'Prefix', value: 'Dr.' }]
+        erwin.bio.must_equal bio
       end
     end
 
     it 'knows percentage of people that have special data' do
       expected = { social: 20, bio: 100, contacts: 100, identifiers: 93 }
       subject.percentages.must_equal expected
-    end
-
-    def fichtinger_card
-      {
-        id:          '2e8b774e-ae66-4137-a984-aac74917df87',
-        name:        'Angela Fichtinger',
-        image:       'http://www.parlament.gv.at/WWER/PAD_83146/4386378_180.jpg',
-        proxy_image: 'https://mysociety.github.io/politician-image-proxy/Austria/Nationalrat/2e8b774e-ae66-4137-a984-aac74917df87/140x140.jpeg',
-        memberships: [{ start_date: '2013-10-29', end_date: nil, group: 'ÖVP', area: 'Wahlkreis: 3B – Waldviertel' }],
-        social:      [{ type: 'Facebook', value: 'angela.fichtinger', link: 'https://facebook.com/angela.fichtinger' }],
-        bio:         [{ type: 'Gender', value: 'female' }, { type: 'Born', value: '1956-12-29' }],
-        contacts:    [{ type: 'Email', value: 'angela.fichtinger@parlament.gv.at', link: 'mailto:angela.fichtinger@parlament.gv.at' }],
-        identifiers: [{ type: 'wikidata', value: 'Q15783437', link: 'https://www.wikidata.org/wiki/Q15783437' }, { type: 'parlaments_at', value: '83146' }],
-      }
-    end
-
-    def percentages
     end
   end
 

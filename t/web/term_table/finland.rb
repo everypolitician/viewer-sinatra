@@ -26,14 +26,14 @@ describe 'Per Country Tests' do
       subject.css('title').text.must_include 'Eduskunta'
       subject.css('title').text.must_include 'Eduskunta 35'
     end
-
-    it 'should list the parties' do
-      memtable.text.must_include 'Keskusta'
-    end
-
-    it 'should list the areas' do
-      memtable.text.must_include 'Oulun'
-    end
+    # 
+    # it 'should list the parties' do
+    #   memtable.text.must_include 'Keskusta'
+    # end
+    #
+    # it 'should list the areas' do
+    #   memtable.text.must_include 'Oulun'
+    # end
 
     it "shouldn't show any dates for Mikko Kuoppa" do
       kuopaa.text.wont_include '20'
@@ -51,9 +51,9 @@ describe 'Per Country Tests' do
       kuisma.count.must_equal 1
     end
 
-    it 'should have two membership sections for Merikukka Forsius' do
-      forsius.css('.person-card__politics').count.must_equal 2
-    end
+    # it 'should have two membership sections for Merikukka Forsius' do
+    #   forsius.css('.person-card__politics').count.must_equal 2
+    # end
 
     it 'should link to 34' do
       subject.css('a[href*="/term-table/34"]').count.must_be :>=, 1
