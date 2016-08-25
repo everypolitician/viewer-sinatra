@@ -46,10 +46,6 @@ module Page
       hashed_adjacent_terms[:current_term]
     end
 
-    def popolo_url
-      popolo_file.url
-    end
-
     def group_data
       @group_data ||= memberships_at_end_of_current_term
                       .group_by(&:on_behalf_of_id)
