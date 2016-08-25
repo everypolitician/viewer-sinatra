@@ -46,10 +46,6 @@ module Page
       hashed_adjacent_terms[:current_term]
     end
 
-    def csv_url
-      current_term[:csv_url]
-    end
-
     def popolo_url
       popolo_file.url
     end
