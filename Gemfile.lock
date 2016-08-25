@@ -6,9 +6,9 @@ GIT
 
 GIT
   remote: git://github.com/everypolitician/everypolitician-ruby.git
-  revision: 6ed485846e1624fd9441f777e190d3ea31efed7e
+  revision: 2c6655515da7fe3c2238692314cd58eb05df6c02
   specs:
-    everypolitician (0.17.0)
+    everypolitician (0.18.0)
       everypolitician-popolo
 
 GIT
@@ -88,7 +88,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
-  everypolitician (~> 0.17.0)!
+  everypolitician (~> 0.18.0)!
   everypolitician-popolo!
   iso_country_codes
   json
