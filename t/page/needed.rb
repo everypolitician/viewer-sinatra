@@ -9,7 +9,12 @@ describe 'Needed' do
   end
 
   it 'should know that Eritrea is missing' do
-    subject.to_find.map(&:title).include? 'Eritrea'
+    assert subject.to_find.map(&:title).include? 'Eritrea'
+  end
+
+  it 'should order the list of countries to find by name' do
+    wanted = subject.to_find.map(&:title)
+    assert wanted == wanted.sort
   end
 
   # Might be good to have a version of these tests against a different

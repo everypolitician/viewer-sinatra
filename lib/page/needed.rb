@@ -28,7 +28,7 @@ module Page
     attr_reader :access_token
 
     def issues(labels)
-      client.issues 'everypolitician/everypolitician-data', labels: labels
+      (client.issues 'everypolitician/everypolitician-data', labels: labels).sort_by(&:title)
     end
 
     def client
