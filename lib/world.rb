@@ -2,8 +2,9 @@
 require 'json'
 
 class World
-  def initialize(file: 'world.json')
+  def initialize(file: 'world.json', index: nil)
     @file = file
+    @index = index
   end
 
   def as_json
@@ -11,7 +12,7 @@ class World
   end
 
   def countries
-    as_json.keys.map { |slug| country(slug) }.sort_by(&:name)
+    @_countries ||= as_json.keys.map { |slug| country(slug) }.sort_by(&:name)
   end
 
   # super-simplistic adapter for the inner data. Over time it might make
@@ -19,13 +20,15 @@ class World
   # want to tidy the interface up a little so that this is substitutable
   # for an `everypolitician-ruby` Country in a few well-defined places.
 
-  Country = Struct.new(:slug, :name, :names)
+  Country = Struct.new(:slug, :name, :names, :epcountry, :total_people)
   def country(slug)
     return unless found = as_json[slug.to_sym]
-    Country.new(slug, found[:displayName], found[:allNames])
+    ep_country = index && index.country(slug)
+    Country.new(slug, found[:displayName], found[:allNames], ep_country,
+                ep_country ? ep_country.person_count : 0)
   end
 
   private
 
-  attr_reader :file
+  attr_reader :file, :index
 end
