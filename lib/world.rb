@@ -2,7 +2,7 @@
 require 'json'
 
 class World
-  def initialize(file = 'world.json')
+  def initialize(file: 'world.json')
     @file = file
   end
 
