@@ -60,10 +60,9 @@ get '/:country/:house/term-table/:id.html' do |country, house, termid|
   erb :term_table
 end
 
-get '/:country/download.html' do |country|
+get '/:country/download.html' do |slug|
+  pass unless country = settings.index.country(slug)
   @page = Page::Download.new(country: country, index: settings.index)
-  # TODO: move this (and others like it) to a pre-check instead
-  halt(404) unless @page.country
   erb :country_download
 end
 

@@ -2,8 +2,10 @@
 
 module Page
   class Download
+    attr_reader :country
+
     def initialize(country:, index:)
-      @country_slug = country
+      @country = country
       @index = index
     end
 
@@ -15,12 +17,8 @@ module Page
       index.index_url
     end
 
-    def country
-      index.country(country_slug)
-    end
-
     private
 
-    attr_reader :country_slug, :index
+    attr_reader :index
   end
 end

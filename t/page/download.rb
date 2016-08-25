@@ -6,7 +6,7 @@ describe 'Download' do
   describe 'Colombia' do
     subject do
       Page::Download.new(
-        country: 'colombia',
+        country: index_at_known_sha.country('colombia'),
         index:   index_at_known_sha
       )
     end
@@ -25,15 +25,6 @@ describe 'Download' do
       it 'should be at rawgit' do
         subject.download_url.must_include 'cdn.rawgit.com'
       end
-    end
-  end
-
-  describe 'Narnia' do
-    it 'should have no country' do
-      Page::Download.new(
-        country: 'narnia',
-        index:   index_at_known_sha
-      ).country.must_be_nil
     end
   end
 end
