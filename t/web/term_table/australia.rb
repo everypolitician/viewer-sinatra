@@ -5,6 +5,11 @@ require_relative '../../../app'
 describe 'Per Country Tests: Australia' do
   subject { Nokogiri::HTML(last_response.body) }
 
+  before do
+    stub_everypolitician_data_request('6139efe/data/Australia/Representatives/ep-popolo-v1.0.json')
+    stub_everypolitician_data_request('f8dcbd9/data/Australia/Senate/ep-popolo-v1.0.json')
+  end
+
   describe 'Country page' do
     before       { get '/australia/' }
     let(:house)  { subject.css('#terms-representatives') }

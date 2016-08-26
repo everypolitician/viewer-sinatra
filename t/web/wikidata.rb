@@ -8,7 +8,10 @@ describe 'Wikidata' do
   let(:nays) { subject.xpath('//h2[.="Without"]/following-sibling::ol[1]/li') }
 
   describe 'Croatia' do
-    before { get '/croatia/sabor/wikidata' }
+    before do
+      stub_everypolitician_data_request('6e39048/data/Croatia/Sabor/ep-popolo-v1.0.json')
+      get '/croatia/sabor/wikidata'
+    end
 
     it 'should have people with Wikidata' do
       yays.count.must_equal 51

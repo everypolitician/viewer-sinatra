@@ -11,7 +11,10 @@ describe 'Northern Ireland' do
   let(:simpson)   { subject.css('#mem-62479dcd-b981-4a57-8a11-b8f8b17249fb') }
 
   describe 'membership dates' do
-    before { get '/northern-ireland/assembly/term-table/3.html' }
+    before do
+      stub_everypolitician_data_request('1a17862/data/Northern_Ireland/Assembly/ep-popolo-v1.0.json')
+      get '/northern-ireland/assembly/term-table/3.html'
+    end
 
     it 'should have no dates for Adrian McQuillan' do
       mcquillan.last.text.wont_include '20'
