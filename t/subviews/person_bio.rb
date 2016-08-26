@@ -49,7 +49,7 @@ describe 'Bio Subview: honorific prefix' do
     .select { |p| p.name == 'Margaret Beckett' }.first)
   end
 
-  it 'should list the honorific suffix of a member' do
+  it 'should list the honorific prefix of a member' do
     prefix = { label: 'Prefix', value: 'The Right Honourable' }
     subject.entries.must_include prefix
   end
