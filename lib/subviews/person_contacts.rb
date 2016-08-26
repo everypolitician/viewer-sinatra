@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 class PersonContacts < PersonCard
   def entries
-    [email, phone, fax].flatten
+    [email, phone, fax].compact
   end
 
   private
