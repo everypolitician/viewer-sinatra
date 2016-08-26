@@ -10,6 +10,14 @@ Rake::TestTask.new do |t|
 end
 
 Rake::TestTask.new do |t|
+  t.name = 'test:subviews'
+  t.warning = true
+  t.description = 'Run "Subview" tests'
+  t.test_files = FileList['t/subviews/*.rb', 't/helpers/*.rb']
+  t.libs << 't'
+end
+
+Rake::TestTask.new do |t|
   t.name = 'test:web'
   t.warning = false
   t.verbose = true
