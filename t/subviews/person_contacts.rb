@@ -12,17 +12,17 @@ describe 'Social Subview' do
   end
 
   it 'should list an email address' do
-    email = { label: 'Email', value: 'andersonda@parliament.uk'}
+    email = { label: 'Email', value: 'andersonda@parliament.uk' }
     subject.entries.must_include email
   end
 
   it 'should list a phone number' do
-    phone = { label: 'Phone', value: '020 7219 4348'}
+    phone = { label: 'Phone', value: '020 7219 4348' }
     subject.entries.must_include phone
   end
 
   it 'should list a fax number' do
-    fax = { label: 'Fax', value: '020 7219 8276'}
+    fax = { label: 'Fax', value: '020 7219 8276' }
     subject.entries.must_include fax
   end
 end
