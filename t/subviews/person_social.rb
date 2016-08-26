@@ -4,20 +4,17 @@ require_relative '../../lib/subviews/person_social'
 require 'everypolitician'
 
 describe 'Social Subview' do
-  it 'should give a list of twitter and facebook details for a given member' do
-    persons = index_at_known_sha.country('uk').legislature('commons').popolo.persons
-    harriett = persons.select { |p| p.name == 'Harriett Baldwin' }.first
-    card = PersonSocial.new(person: harriett)
-    harriett_twitter = { label: 'Twitter', value: 'HBaldwinMP', url: 'http://twitter.com/HBaldwinMP' }
-    harriett_facebook = { label: 'Facebook', value: 'https://facebook.com/harriettbaldwin', url: 'https://facebook.com/harriettbaldwin' }
-    card.entries.must_include harriett_twitter
-    card.entries.must_include harriett_facebook
+  subject do
+    PersonSocial.new(person: index_at_known_sha.country('uk').legislature('commons')
+    .popolo
+    .persons
+    .select { |p| p.name == 'Harriett Baldwin' }.first)
   end
 
-  it 'should give an empty list if a member has no twitter or facebook details' do
-    persons = index_at_known_sha.country('uk').legislature('commons').popolo.persons
-    john = persons.select { |p| p.name == 'John Baron' }.first
-    card = PersonSocial.new(person: john)
-    card.entries.count.must_equal 0
+  it 'should give a list of twitter and facebook details for a given member' do
+    twitter = { label: 'Twitter', value: 'HBaldwinMP', url: 'http://twitter.com/HBaldwinMP' }
+    facebook = { label: 'Facebook', value: 'https://facebook.com/harriettbaldwin', url: 'https://facebook.com/harriettbaldwin' }
+    subject.entries.must_include twitter
+    subject.entries.must_include facebook
   end
 end
