@@ -4,6 +4,10 @@ require_relative '../../lib/page/term_table'
 
 describe 'TermTable' do
   describe 'Austria' do
+    before do
+      stub_everypolitician_data_request('3df153b/data/Austria/Nationalrat/ep-popolo-v1.0.json')
+    end
+
     subject do
       Page::TermTable.new(
         country_slug: 'austria',

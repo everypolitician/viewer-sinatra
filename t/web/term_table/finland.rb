@@ -11,7 +11,10 @@ describe 'Per Country Tests' do
   let(:vanhanen) { memtable.css('#mem-5276efaf-c4e5-424b-ac69-571b74d80f8c') }
 
   describe 'Finland' do
-    before { get '/finland/eduskunta/term-table/35.html' }
+    before do
+      stub_everypolitician_data_request('ba4fa22/data/Finland/Eduskunta/ep-popolo-v1.0.json')
+      get '/finland/eduskunta/term-table/35.html'
+    end
 
     it 'should link to the country page' do
       subject.css('.site-header h2 a/@href').text.must_equal '/finland/'

@@ -1,0 +1,966 @@
+{
+  "posts": [
+
+  ],
+  "persons": [
+    {
+      "gender": "male",
+      "id": "6baacce2-655a-493f-883a-29feea8a799d",
+      "identifiers": [
+        {
+          "identifier": "106003",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.alderney.gov.gg/media/image/9/i/140913_Alderney-868.jpg",
+      "images": [
+        {
+          "url": "http://www.alderney.gov.gg/media/image/9/i/140913_Alderney-868.jpg"
+        }
+      ],
+      "name": "Chris Rowley",
+      "sources": [
+        {
+          "url": "http://www.alderney.gov.gg/article/106003/Chris-Rowley"
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "id": "4703e873-67fd-4322-9659-39f6d47b8eab",
+      "identifiers": [
+        {
+          "identifier": "106004",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.alderney.gov.gg/media/image/a/i/140913_Alderney-982.jpg",
+      "images": [
+        {
+          "url": "http://www.alderney.gov.gg/media/image/a/i/140913_Alderney-982.jpg"
+        }
+      ],
+      "name": "Francis Simonet",
+      "sources": [
+        {
+          "url": "http://www.alderney.gov.gg/article/106004/Francis-Simonet"
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "id": "b9a6c59e-a3cf-406e-88b8-9bba70ffbb30",
+      "identifiers": [
+        {
+          "identifier": "4387",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "name": "Graham McKinley",
+      "sources": [
+        {
+          "url": "http://www.alderney.gov.gg/article/4387/Graham-McKinley"
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "id": "48723cfe-9970-4ce7-92da-ff6b91dfa2b5",
+      "identifiers": [
+        {
+          "identifier": "4081",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.alderney.gov.gg/media/image/6/o/140913_Alderney-801.jpg",
+      "images": [
+        {
+          "url": "http://www.alderney.gov.gg/media/image/6/o/140913_Alderney-801.jpg"
+        }
+      ],
+      "name": "Ian Tugby",
+      "sources": [
+        {
+          "url": "http://www.alderney.gov.gg/article/4081/Ian-Tugby"
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "id": "a3833a8a-61b0-415a-a459-b6726d916f7b",
+      "identifiers": [
+        {
+          "identifier": "106001",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.alderney.gov.gg/media/image/7/2/140913_Alderney-731.jpg",
+      "images": [
+        {
+          "url": "http://www.alderney.gov.gg/media/image/7/2/140913_Alderney-731.jpg"
+        }
+      ],
+      "name": "Louis Jean",
+      "sources": [
+        {
+          "url": "http://www.alderney.gov.gg/article/106001/Louis-Jean"
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "id": "77f036f7-c8ca-4388-be74-74aea27b7652",
+      "identifiers": [
+        {
+          "identifier": "4389",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.alderney.gov.gg/media/image/9/c/140913_Alderney-913.jpg",
+      "images": [
+        {
+          "url": "http://www.alderney.gov.gg/media/image/9/c/140913_Alderney-913.jpg"
+        }
+      ],
+      "name": "Matthew Birmingham",
+      "sources": [
+        {
+          "url": "http://www.alderney.gov.gg/article/4389/Matthew-Birmingham"
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "id": "66d1f769-3e52-40cb-9ddb-1e5ffbec8456",
+      "identifiers": [
+        {
+          "identifier": "106000",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.alderney.gov.gg/media/image/7/g/140913_Alderney-673.jpg",
+      "images": [
+        {
+          "url": "http://www.alderney.gov.gg/media/image/7/g/140913_Alderney-673.jpg"
+        }
+      ],
+      "name": "Neil Harvey",
+      "sources": [
+        {
+          "url": "http://www.alderney.gov.gg/article/106000/Neil-Harvey"
+        }
+      ]
+    },
+    {
+      "gender": "female",
+      "id": "70b26d38-ae65-4e90-9a99-15b948b9784b",
+      "identifiers": [
+        {
+          "identifier": "112088",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "name": "Norma Paris",
+      "sources": [
+        {
+          "url": "http://www.alderney.gov.gg/article/112088/Norma-Paris"
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "id": "061ae887-8e7f-45be-9ef2-84a18fd4dd45",
+      "identifiers": [
+        {
+          "identifier": "106002",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.alderney.gov.gg/media/image/8/9/140913_Alderney-822.jpg",
+      "images": [
+        {
+          "url": "http://www.alderney.gov.gg/media/image/8/9/140913_Alderney-822.jpg"
+        }
+      ],
+      "name": "Robert McDowall",
+      "sources": [
+        {
+          "url": "http://www.alderney.gov.gg/article/106002/Robert-McDowall"
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "id": "a11887ce-2c42-4555-bfd9-0843f3a9ced0",
+      "identifiers": [
+        {
+          "identifier": "4386",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.alderney.gov.gg/media/image/8/e/140913_Alderney-779.jpg",
+      "images": [
+        {
+          "url": "http://www.alderney.gov.gg/media/image/8/e/140913_Alderney-779.jpg"
+        }
+      ],
+      "name": "Steve Roberts",
+      "sources": [
+        {
+          "url": "http://www.alderney.gov.gg/article/4386/Steve-Roberts"
+        }
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "classification": "party",
+      "id": "party/independent",
+      "identifiers": [
+        {
+          "identifier": "Q327591",
+          "scheme": "wikidata"
+        }
+      ],
+      "name": "Independent",
+      "other_names": [
+        {
+          "lang": "zh-hans",
+          "name": "无党籍人士",
+          "note": "multilingual"
+        },
+        {
+          "lang": "zh-hant",
+          "name": "無黨籍人士",
+          "note": "multilingual"
+        },
+        {
+          "lang": "zh-hk",
+          "name": "無黨籍人士",
+          "note": "multilingual"
+        },
+        {
+          "lang": "zh-cn",
+          "name": "无党籍人士",
+          "note": "multilingual"
+        },
+        {
+          "lang": "zh-sg",
+          "name": "无党籍人士",
+          "note": "multilingual"
+        },
+        {
+          "lang": "zh-tw",
+          "name": "無黨籍人士",
+          "note": "multilingual"
+        },
+        {
+          "lang": "fr",
+          "name": "Sans étiquette",
+          "note": "multilingual"
+        },
+        {
+          "lang": "ko",
+          "name": "무소속",
+          "note": "multilingual"
+        },
+        {
+          "lang": "arz",
+          "name": "سياسى مستقل",
+          "note": "multilingual"
+        },
+        {
+          "lang": "es",
+          "name": "Candidato independiente",
+          "note": "multilingual"
+        },
+        {
+          "lang": "ta",
+          "name": "சுயேட்சை",
+          "note": "multilingual"
+        },
+        {
+          "lang": "de",
+          "name": "Parteiloser",
+          "note": "multilingual"
+        },
+        {
+          "lang": "id",
+          "name": "Independen",
+          "note": "multilingual"
+        },
+        {
+          "lang": "ja",
+          "name": "無所属",
+          "note": "multilingual"
+        },
+        {
+          "lang": "el",
+          "name": "ανεξάρτητος",
+          "note": "multilingual"
+        },
+        {
+          "lang": "en",
+          "name": "independent politician",
+          "note": "multilingual"
+        },
+        {
+          "lang": "yue",
+          "name": "獨立人士",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nl",
+          "name": "onafhankelijk politicus",
+          "note": "multilingual"
+        },
+        {
+          "lang": "sv",
+          "name": "Partilös",
+          "note": "multilingual"
+        },
+        {
+          "lang": "ar",
+          "name": "سياسي مستقل",
+          "note": "multilingual"
+        },
+        {
+          "lang": "pt",
+          "name": "político sem partido",
+          "note": "multilingual"
+        },
+        {
+          "lang": "ru",
+          "name": "беспартийный",
+          "note": "multilingual"
+        },
+        {
+          "lang": "mn",
+          "name": "Бие даагч",
+          "note": "multilingual"
+        },
+        {
+          "lang": "sr-ec",
+          "name": "независни политичар",
+          "note": "multilingual"
+        },
+        {
+          "lang": "tr",
+          "name": "Bağımsız siyasetçi",
+          "note": "multilingual"
+        },
+        {
+          "lang": "ro",
+          "name": "politician independent",
+          "note": "multilingual"
+        },
+        {
+          "lang": "ca",
+          "name": "Independent",
+          "note": "multilingual"
+        },
+        {
+          "lang": "fi",
+          "name": "Sitoutumaton",
+          "note": "multilingual"
+        },
+        {
+          "lang": "cy",
+          "name": "Annibynnwr",
+          "note": "multilingual"
+        },
+        {
+          "lang": "ur",
+          "name": "آزاد",
+          "note": "multilingual"
+        },
+        {
+          "lang": "az",
+          "name": "Partiyasız",
+          "note": "multilingual"
+        },
+        {
+          "lang": "da",
+          "name": "løsgænger",
+          "note": "multilingual"
+        },
+        {
+          "lang": "zh",
+          "name": "無黨籍人士",
+          "note": "multilingual"
+        },
+        {
+          "lang": "sr",
+          "name": "независни политичар",
+          "note": "multilingual"
+        },
+        {
+          "lang": "fa",
+          "name": "کنشگر سیاسی مستقل",
+          "note": "multilingual"
+        },
+        {
+          "lang": "war",
+          "name": "Independente",
+          "note": "multilingual"
+        },
+        {
+          "lang": "oc",
+          "name": "Independent",
+          "note": "multilingual"
+        },
+        {
+          "lang": "sr-el",
+          "name": "nezavisni političar",
+          "note": "multilingual"
+        },
+        {
+          "lang": "it",
+          "name": "indipendente",
+          "note": "multilingual"
+        },
+        {
+          "lang": "be",
+          "name": "Беспартыйны",
+          "note": "multilingual"
+        },
+        {
+          "lang": "pl",
+          "name": "polityk niezrzeszony",
+          "note": "multilingual"
+        },
+        {
+          "lang": "mr",
+          "name": "अपक्ष",
+          "note": "multilingual"
+        },
+        {
+          "lang": "be-tarask",
+          "name": "Беспартыйны",
+          "note": "multilingual"
+        },
+        {
+          "lang": "he",
+          "name": "פוליטיקאי עצמאי",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nb",
+          "name": "partiløs",
+          "note": "multilingual"
+        },
+        {
+          "lang": "cs",
+          "name": "nezávislý",
+          "note": "multilingual"
+        },
+        {
+          "lang": "hu",
+          "name": "független politikus",
+          "note": "multilingual"
+        },
+        {
+          "lang": "eo",
+          "name": "Sendependa",
+          "note": "multilingual"
+        },
+        {
+          "lang": "hi",
+          "name": "निर्दलीय",
+          "note": "multilingual"
+        },
+        {
+          "lang": "sh",
+          "name": "Nezavisni",
+          "note": "multilingual"
+        },
+        {
+          "lang": "sco",
+          "name": "independent politeecian",
+          "note": "multilingual"
+        },
+        {
+          "lang": "sk",
+          "name": "Nezávislý politik",
+          "note": "multilingual"
+        },
+        {
+          "lang": "hak",
+          "name": "Mò-tóng-sit",
+          "note": "multilingual"
+        },
+        {
+          "lang": "th",
+          "name": "นักการเมืองอิสระ",
+          "note": "multilingual"
+        },
+        {
+          "lang": "uk",
+          "name": "Незалежний політик",
+          "note": "multilingual"
+        },
+        {
+          "lang": "sd",
+          "name": "آزاد",
+          "note": "multilingual"
+        },
+        {
+          "lang": "la",
+          "name": "Politicus nullius factionis",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nan",
+          "name": "Bû-tóng-che̍k",
+          "note": "multilingual"
+        },
+        {
+          "lang": "zh",
+          "name": "無黨派",
+          "note": "multilingual"
+        },
+        {
+          "lang": "zh",
+          "name": "无党派人士",
+          "note": "multilingual"
+        },
+        {
+          "lang": "zh",
+          "name": "獨立人士",
+          "note": "multilingual"
+        },
+        {
+          "lang": "zh",
+          "name": "獨立候選人",
+          "note": "multilingual"
+        },
+        {
+          "lang": "fr",
+          "name": "Sans etiquette",
+          "note": "multilingual"
+        },
+        {
+          "lang": "fr",
+          "name": "Indépendant",
+          "note": "multilingual"
+        },
+        {
+          "lang": "fr",
+          "name": "Non-inscrits",
+          "note": "multilingual"
+        },
+        {
+          "lang": "fr",
+          "name": "Non-inscrit",
+          "note": "multilingual"
+        },
+        {
+          "lang": "arz",
+          "name": "Independent",
+          "note": "multilingual"
+        },
+        {
+          "lang": "es",
+          "name": "Candidato civico",
+          "note": "multilingual"
+        },
+        {
+          "lang": "es",
+          "name": "Movimientos cívicos",
+          "note": "multilingual"
+        },
+        {
+          "lang": "es",
+          "name": "Independientes",
+          "note": "multilingual"
+        },
+        {
+          "lang": "es",
+          "name": "Candidatos cívicos",
+          "note": "multilingual"
+        },
+        {
+          "lang": "es",
+          "name": "Candidato Cívico",
+          "note": "multilingual"
+        },
+        {
+          "lang": "es",
+          "name": "Candidatura independiente",
+          "note": "multilingual"
+        },
+        {
+          "lang": "es",
+          "name": "Movimiento Cívico",
+          "note": "multilingual"
+        },
+        {
+          "lang": "es",
+          "name": "Candidatura cívica",
+          "note": "multilingual"
+        },
+        {
+          "lang": "es",
+          "name": "Candidata cívica",
+          "note": "multilingual"
+        },
+        {
+          "lang": "ta",
+          "name": "சுயேச்சை",
+          "note": "multilingual"
+        },
+        {
+          "lang": "de",
+          "name": "Unabhängiger",
+          "note": "multilingual"
+        },
+        {
+          "lang": "de",
+          "name": "freier Abgeordneter",
+          "note": "multilingual"
+        },
+        {
+          "lang": "id",
+          "name": "Politikus independen",
+          "note": "multilingual"
+        },
+        {
+          "lang": "ja",
+          "name": "無所属議員",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nl",
+          "name": "onafhankelijke",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nl",
+          "name": "partijloos",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nl",
+          "name": "partijloze",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nl",
+          "name": "partijlozen",
+          "note": "multilingual"
+        },
+        {
+          "lang": "sv",
+          "name": "Vänstervilde",
+          "note": "multilingual"
+        },
+        {
+          "lang": "sv",
+          "name": "Liberal vilde",
+          "note": "multilingual"
+        },
+        {
+          "lang": "sv",
+          "name": "Moderat vilde",
+          "note": "multilingual"
+        },
+        {
+          "lang": "sv",
+          "name": "Politiska vildar",
+          "note": "multilingual"
+        },
+        {
+          "lang": "sv",
+          "name": "Obunden",
+          "note": "multilingual"
+        },
+        {
+          "lang": "sv",
+          "name": "Politisk vilde",
+          "note": "multilingual"
+        },
+        {
+          "lang": "sv",
+          "name": "Frisinnad vilde",
+          "note": "multilingual"
+        },
+        {
+          "lang": "sv",
+          "name": "Högervilde",
+          "note": "multilingual"
+        },
+        {
+          "lang": "ar",
+          "name": "سياسيون مستقلون",
+          "note": "multilingual"
+        },
+        {
+          "lang": "pt",
+          "name": "Sem partido",
+          "note": "multilingual"
+        },
+        {
+          "lang": "pt",
+          "name": "Político independente",
+          "note": "multilingual"
+        },
+        {
+          "lang": "pt",
+          "name": "Candidato independente",
+          "note": "multilingual"
+        },
+        {
+          "lang": "tr",
+          "name": "Bağımsız Politikacı",
+          "note": "multilingual"
+        },
+        {
+          "lang": "tr",
+          "name": "Serbest siyasetçi",
+          "note": "multilingual"
+        },
+        {
+          "lang": "ro",
+          "name": "Politicieni independenţi",
+          "note": "multilingual"
+        },
+        {
+          "lang": "ro",
+          "name": "Independent",
+          "note": "multilingual"
+        },
+        {
+          "lang": "ro",
+          "name": "Politicieni independenți",
+          "note": "multilingual"
+        },
+        {
+          "lang": "cy",
+          "name": "Gwleidydd annibynnol",
+          "note": "multilingual"
+        },
+        {
+          "lang": "cy",
+          "name": "Annibynnol",
+          "note": "multilingual"
+        },
+        {
+          "lang": "cy",
+          "name": "Annibynol",
+          "note": "multilingual"
+        },
+        {
+          "lang": "da",
+          "name": "Uden for partierne",
+          "note": "multilingual"
+        },
+        {
+          "lang": "da",
+          "name": "Frigænger",
+          "note": "multilingual"
+        },
+        {
+          "lang": "da",
+          "name": "Udenfor partierne",
+          "note": "multilingual"
+        },
+        {
+          "lang": "da",
+          "name": "Uafhængig",
+          "note": "multilingual"
+        },
+        {
+          "lang": "da",
+          "name": "Partiløs",
+          "note": "multilingual"
+        },
+        {
+          "lang": "en",
+          "name": "nonpartisan politician",
+          "note": "multilingual"
+        },
+        {
+          "lang": "it",
+          "name": "candidato indipendente",
+          "note": "multilingual"
+        },
+        {
+          "lang": "it",
+          "name": "politico indipendente",
+          "note": "multilingual"
+        },
+        {
+          "lang": "be-tarask",
+          "name": "Беспартыйны палітык",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nb",
+          "name": "uavhengig",
+          "note": "multilingual"
+        },
+        {
+          "lang": "cs",
+          "name": "bezpartajní",
+          "note": "multilingual"
+        },
+        {
+          "lang": "cs",
+          "name": "bez stranické příslušnosti",
+          "note": "multilingual"
+        }
+      ]
+    },
+    {
+      "classification": "legislature",
+      "id": "legislature",
+      "identifiers": [
+        {
+          "identifier": "Q7604031",
+          "scheme": "wikidata"
+        }
+      ],
+      "name": "States",
+      "seats": 10
+    }
+  ],
+  "meta": {
+    "sources": [
+      "http://www.alderney.gov.gg"
+    ]
+  },
+  "memberships": [
+    {
+      "area_id": "area/alderney",
+      "legislative_period_id": "term/2014",
+      "on_behalf_of_id": "party/independent",
+      "organization_id": "legislature",
+      "person_id": "061ae887-8e7f-45be-9ef2-84a18fd4dd45",
+      "role": "member"
+    },
+    {
+      "area_id": "area/alderney",
+      "legislative_period_id": "term/2014",
+      "on_behalf_of_id": "party/independent",
+      "organization_id": "legislature",
+      "person_id": "4703e873-67fd-4322-9659-39f6d47b8eab",
+      "role": "member"
+    },
+    {
+      "area_id": "area/alderney",
+      "legislative_period_id": "term/2014",
+      "on_behalf_of_id": "party/independent",
+      "organization_id": "legislature",
+      "person_id": "48723cfe-9970-4ce7-92da-ff6b91dfa2b5",
+      "role": "member"
+    },
+    {
+      "area_id": "area/alderney",
+      "legislative_period_id": "term/2014",
+      "on_behalf_of_id": "party/independent",
+      "organization_id": "legislature",
+      "person_id": "66d1f769-3e52-40cb-9ddb-1e5ffbec8456",
+      "role": "member"
+    },
+    {
+      "area_id": "area/alderney",
+      "legislative_period_id": "term/2014",
+      "on_behalf_of_id": "party/independent",
+      "organization_id": "legislature",
+      "person_id": "6baacce2-655a-493f-883a-29feea8a799d",
+      "role": "member"
+    },
+    {
+      "area_id": "area/alderney",
+      "legislative_period_id": "term/2014",
+      "on_behalf_of_id": "party/independent",
+      "organization_id": "legislature",
+      "person_id": "70b26d38-ae65-4e90-9a99-15b948b9784b",
+      "role": "member"
+    },
+    {
+      "area_id": "area/alderney",
+      "legislative_period_id": "term/2014",
+      "on_behalf_of_id": "party/independent",
+      "organization_id": "legislature",
+      "person_id": "77f036f7-c8ca-4388-be74-74aea27b7652",
+      "role": "member"
+    },
+    {
+      "area_id": "area/alderney",
+      "legislative_period_id": "term/2014",
+      "on_behalf_of_id": "party/independent",
+      "organization_id": "legislature",
+      "person_id": "a11887ce-2c42-4555-bfd9-0843f3a9ced0",
+      "role": "member"
+    },
+    {
+      "area_id": "area/alderney",
+      "legislative_period_id": "term/2014",
+      "on_behalf_of_id": "party/independent",
+      "organization_id": "legislature",
+      "person_id": "a3833a8a-61b0-415a-a459-b6726d916f7b",
+      "role": "member"
+    },
+    {
+      "area_id": "area/alderney",
+      "legislative_period_id": "term/2014",
+      "on_behalf_of_id": "party/independent",
+      "organization_id": "legislature",
+      "person_id": "b9a6c59e-a3cf-406e-88b8-9bba70ffbb30",
+      "role": "member"
+    }
+  ],
+  "events": [
+    {
+      "classification": "general election",
+      "end_date": "2006",
+      "id": "Q4713714",
+      "name": "Alderney election, 2006",
+      "start_date": "2006"
+    },
+    {
+      "classification": "general election",
+      "end_date": "2008",
+      "id": "Q4713715",
+      "name": "Alderney election, 2008",
+      "start_date": "2008"
+    },
+    {
+      "classification": "general election",
+      "end_date": "2010",
+      "id": "Q23585756",
+      "name": "Alderney general election, 2010",
+      "start_date": "2010"
+    },
+    {
+      "classification": "general election",
+      "end_date": "2012",
+      "id": "Q23585765",
+      "name": "Alderney general election, 2012",
+      "start_date": "2012"
+    },
+    {
+      "classification": "general election",
+      "end_date": "2014-11-22",
+      "id": "Q19587066",
+      "name": "Alderney general election, 2014",
+      "start_date": "2014-11-22"
+    },
+    {
+      "classification": "legislative period",
+      "end_date": "2016-11",
+      "id": "term/2014",
+      "name": "2014–2016",
+      "organization_id": "legislature",
+      "start_date": "2014-11-22"
+    }
+  ],
+  "areas": [
+    {
+      "id": "area/alderney",
+      "name": "Alderney",
+      "type": "constituency"
+    }
+  ]
+}

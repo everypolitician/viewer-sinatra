@@ -8,7 +8,10 @@ describe 'Seat Count' do
   let(:total) { seats.css('.seatcount').map(&:text).map(&:to_i).reduce(&:+) }
 
   describe 'Estonia' do
-    before { get '/estonia/riigikogu/term-table/13.html' }
+    before do
+      stub_everypolitician_data_request('f88ce37/data/Estonia/Riigikogu/ep-popolo-v1.0.json')
+      get '/estonia/riigikogu/term-table/13.html'
+    end
 
     it 'should have have a seat count table' do
       seats.text.must_include 'Party Groupings'
@@ -25,7 +28,10 @@ describe 'Seat Count' do
   end
 
   describe 'Historic Finland' do
-    before { get '/finland/eduskunta/term-table/35.html' }
+    before do
+      stub_everypolitician_data_request('ba4fa22/data/Finland/Eduskunta/ep-popolo-v1.0.json')
+      get '/finland/eduskunta/term-table/35.html'
+    end
 
     it 'should have 200 seats' do
       total.must_equal 200

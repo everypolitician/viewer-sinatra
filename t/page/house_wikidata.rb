@@ -13,6 +13,12 @@ describe 'HouseWikidata' do
   let(:alderney_page) { page_for('alderney', 'states')      }
   let(:uganda_page)   { page_for('uganda',   'parliament')  }
 
+  before do
+    stub_everypolitician_data_request('3df153b/data/Austria/Nationalrat/ep-popolo-v1.0.json')
+    stub_everypolitician_data_request('beb21e5/data/Alderney/States/ep-popolo-v1.0.json')
+    stub_everypolitician_data_request('0cef4ab/data/Uganda/Parliament/ep-popolo-v1.0.json')
+  end
+
   it 'should return a house' do
     austria_page.house.name.must_equal 'Nationalrat'
   end

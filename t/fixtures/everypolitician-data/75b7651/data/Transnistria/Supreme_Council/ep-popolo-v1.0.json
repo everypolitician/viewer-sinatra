@@ -1,0 +1,2189 @@
+{
+  "posts": [
+
+  ],
+  "persons": [
+    {
+      "id": "983865bf-c4fe-4058-9b5c-431d2ac87575",
+      "identifiers": [
+        {
+          "identifier": "antyufeeva-galina-mihaylovna",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049049057052124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049049057052124049048048124049051051.jpg"
+        }
+      ],
+      "name": "АНТЮФЕЕВА Галина Михайловна",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/antyufeeva-galina-mihaylovna/"
+        }
+      ]
+    },
+    {
+      "id": "ddd48861-e374-47fd-891a-ca9dd44ea1ae",
+      "identifiers": [
+        {
+          "identifier": "babchinetskiy-valeriy-grigorjevich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050048048124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050048048124049048048124049051051.jpg"
+        }
+      ],
+      "name": "БАБЧИНЕЦКИЙ Валерий Григорьевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/babchinetskiy-valeriy-grigorjevich/"
+        }
+      ]
+    },
+    {
+      "id": "8631b65d-5634-4d84-87a5-c385018dfcd4",
+      "identifiers": [
+        {
+          "identifier": "baev-oleg-markovich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050048050124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050048050124049048048124049051051.jpg"
+        }
+      ],
+      "name": "БАЕВ Олег Маркович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/baev-oleg-markovich/"
+        }
+      ]
+    },
+    {
+      "id": "fc9758c8-d2b0-40e5-9e52-b4a25fb4f002",
+      "identifiers": [
+        {
+          "identifier": "belitchenko-anatoliy-konstantinovich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050048052124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050048052124049048048124049051051.jpg"
+        }
+      ],
+      "name": "БЕЛИТЧЕНКО Анатолий Константинович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/belitchenko-anatoliy-konstantinovich/"
+        }
+      ]
+    },
+    {
+      "id": "382934ba-e8d5-44dc-8b82-db7e4471e03c",
+      "image": "http://vspmr.org/im.xp/049054052048053124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049054052048053124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "БЕЛЯКОВ Олег Леонидович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/belyakov-oleg-leonidovich/"
+        }
+      ]
+    },
+    {
+      "id": "487744ad-c5a6-49b6-aea2-8c4412a8fcf1",
+      "identifiers": [
+        {
+          "identifier": "bodnar-vladimir-lukich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/054057048124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/054057048124049048048124049051051.jpg"
+        }
+      ],
+      "name": "БОДНАР Владимир Лукич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/bodnar-vladimir-lukich/"
+        }
+      ]
+    },
+    {
+      "id": "deab20dc-034d-4c29-b077-9c9a0cbfd39a",
+      "image": "http://vspmr.org/im.xp/049054048057057124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049054048057057124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "БУГА Игорь Семенович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/buga-igorj-semenovich/"
+        }
+      ]
+    },
+    {
+      "id": "67e1d968-aa6a-4f40-8ca5-f517c3de1cc2",
+      "identifiers": [
+        {
+          "identifier": "burla-mihail-porfirovich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/054057049124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/054057049124049048048124049051051.jpg"
+        }
+      ],
+      "name": "БУРЛА Михаил Порфирович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/burla-mihail-porfirovich/"
+        }
+      ]
+    },
+    {
+      "id": "b9ed0084-b433-4df7-8c62-b27a5f2bbada",
+      "identifiers": [
+        {
+          "identifier": "bichkov-vladimir-vladimirovich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050048056124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050048056124049048048124049051051.jpg"
+        }
+      ],
+      "name": "БЫЧКОВ Владимир Владимирович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/bichkov-vladimir-vladimirovich/"
+        }
+      ]
+    },
+    {
+      "id": "6457e72a-2821-4461-bd05-f1f1f4d8525d",
+      "identifiers": [
+        {
+          "identifier": "vasilatiy-oleg-valerjevich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/054057050124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/054057050124049048048124049051051.jpg"
+        }
+      ],
+      "name": "ВАСИЛАТИЙ Олег Валерьевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/vasilatiy-oleg-valerjevich/"
+        }
+      ]
+    },
+    {
+      "id": "1813125b-a557-4310-b1e1-6623f829136a",
+      "image": "http://vspmr.org/im.xp/049054050053057124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049054050053057124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "ВАСИЛЬЕВ Илья Иванович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/vasiljev-iljya-ivanovich/"
+        }
+      ]
+    },
+    {
+      "id": "40984009-db40-4166-90ad-908e2b4c5555",
+      "image": "http://vspmr.org/im.xp/049054056053052124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049054056053052124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "ВЛАСОВ Василий Иванович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/vlasov-vasiliy-ivanovich/"
+        }
+      ]
+    },
+    {
+      "id": "a643afb0-f65c-4ade-be4a-ab12d454e53e",
+      "image": "http://vspmr.org/im.xp/049054052052057124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049054052052057124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "ГАЛАК Яков Ефимович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/galak-yakov-efimovich/"
+        }
+      ]
+    },
+    {
+      "id": "36ecbf9b-bd89-4c33-986f-d70e5439d5f2",
+      "identifiers": [
+        {
+          "identifier": "guzun-viktor-mihaylovich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/054057051124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/054057051124049048048124049051051.jpg"
+        }
+      ],
+      "name": "ГУЗУН Виктор Михайлович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/guzun-viktor-mihaylovich/"
+        }
+      ]
+    },
+    {
+      "id": "8bd39fd9-ea12-4d66-a96b-e2333f0194ea",
+      "identifiers": [
+        {
+          "identifier": "guljchak-evgeniy-grigorjevich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050049049124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050049049124049048048124049051051.jpg"
+        }
+      ],
+      "name": "ГУЛЬЧАК Евгений Григорьевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/guljchak-evgeniy-grigorjevich/"
+        }
+      ]
+    },
+    {
+      "id": "58a2138b-6f2b-4cc1-a802-09a3a090fd25",
+      "image": "http://vspmr.org/im.xp/049054052055052124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049054052055052124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "ГУШАН Евгений Викторович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/gushan-evgeniy-viktorovich/"
+        }
+      ]
+    },
+    {
+      "id": "427a31ab-a969-4368-a29a-58361d5ee7f9",
+      "identifiers": [
+        {
+          "identifier": "dirun-anatoliy-viktorovich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050049052124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050049052124049048048124049051051.jpg"
+        }
+      ],
+      "name": "ДИРУН Анатолий Викторович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/dirun-anatoliy-viktorovich/"
+        }
+      ]
+    },
+    {
+      "id": "7998c12b-0042-4223-a898-45f332e30cc9",
+      "image": "http://vspmr.org/im.xp/049054051056053124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049054051056053124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "ДОНИ Вадим Михайлович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/doni-vadim-mihaylovich/"
+        }
+      ]
+    },
+    {
+      "id": "d3537749-c4f4-4816-a407-a21036a402de",
+      "identifiers": [
+        {
+          "identifier": "djyachenko-grigoriy-ivanovich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050049055124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050049055124049048048124049051051.jpg"
+        }
+      ],
+      "name": "ДЬЯЧЕНКО Григорий Иванович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/djyachenko-grigoriy-ivanovich/"
+        }
+      ]
+    },
+    {
+      "id": "ae48f40c-0ce6-4c40-b8cd-92bcc539e8c1",
+      "identifiers": [
+        {
+          "identifier": "zinovenko-vitaliy-nikolaevich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050050048124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050050048124049048048124049051051.jpg"
+        }
+      ],
+      "name": "ЗИНОВЕНКО Виталий Николаевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/zinovenko-vitaliy-nikolaevich/"
+        }
+      ]
+    },
+    {
+      "id": "8e9f53c2-b536-459a-8a93-26bcf2b95091",
+      "image": "http://vspmr.org/im.xp/049054051057057124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049054051057057124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "КАЛИН Виталий Иванович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/kalin-vitaliy-ivanovich/"
+        }
+      ]
+    },
+    {
+      "id": "60b0d654-86a9-4722-b66d-216f6cee88fa",
+      "identifiers": [
+        {
+          "identifier": "kaminskiy-anatoliy-vladimirovich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050050051124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050050051124049048048124049051051.jpg"
+        }
+      ],
+      "name": "КАМИНСКИЙ Анатолий Владимирович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/kaminskiy-anatoliy-vladimirovich/"
+        }
+      ]
+    },
+    {
+      "id": "83ddd530-6b10-4e5a-bd72-cac4f7aa4d5a",
+      "identifiers": [
+        {
+          "identifier": "kovalj-efimiy-mihaylovich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/054057052124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/054057052124049048048124049051051.jpg"
+        }
+      ],
+      "name": "КОВАЛЬ Ефимий Михайлович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/kovalj-efimiy-mihaylovich/"
+        }
+      ]
+    },
+    {
+      "id": "0f2bce4d-e970-4eac-b7dc-bedcd7e201e2",
+      "identifiers": [
+        {
+          "identifier": "korshunov-aleksandr-viktorovich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050050056124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050050056124049048048124049051051.jpg"
+        }
+      ],
+      "name": "КОРШУНОВ Александр Викторович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/korshunov-aleksandr-viktorovich/"
+        }
+      ]
+    },
+    {
+      "id": "22d92ef3-0557-4ab1-adc9-e136bd198112",
+      "identifiers": [
+        {
+          "identifier": "kotsyubenko-andrey-borisovich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050051049124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050051049124049048048124049051051.jpg"
+        }
+      ],
+      "name": "КОЦЮБЕНКО Андрей Борисович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/kotsyubenko-andrey-borisovich/"
+        }
+      ]
+    },
+    {
+      "id": "b0e7a5b5-b6ef-43ff-897d-7332c385cd2c",
+      "image": "http://vspmr.org/im.xp/049054052050050124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049054052050050124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "КРАВЧУК Вадим Викторович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/kravchuk-vadim-viktorovich/"
+        }
+      ]
+    },
+    {
+      "id": "2047967d-7641-4cea-b9be-d107a352c96b",
+      "image": "http://vspmr.org/im.xp/050049057055057124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/050049057055057124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "КРАСНОСЕЛЬСКИЙ Вадим Николаевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/krasnoseljskiy-vadim-nikolaevich/"
+        }
+      ]
+    },
+    {
+      "id": "11452851-c3d1-47c6-8fa4-882beb9d383f",
+      "identifiers": [
+        {
+          "identifier": "kulakli-valeriy-dmitrievich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050051051124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050051051124049048048124049051051.jpg"
+        }
+      ],
+      "name": "КУЛАКЛИ Валерий Дмитриевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/kulakli-valeriy-dmitrievich/"
+        }
+      ]
+    },
+    {
+      "id": "4403beb6-3cf0-4523-98f2-af2e37bf81c9",
+      "identifiers": [
+        {
+          "identifier": "levitskiy-vadim-fedorovich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050051055124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050051055124049048048124049051051.jpg"
+        }
+      ],
+      "name": "ЛЕВИЦКИЙ Вадим Федорович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/levitskiy-vadim-fedorovich/"
+        }
+      ]
+    },
+    {
+      "id": "26368d8d-958d-4179-83c5-1a63b2d801c8",
+      "identifiers": [
+        {
+          "identifier": "leontjev-oleg-sergeevich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050051057124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050051057124049048048124049051051.jpg"
+        }
+      ],
+      "name": "ЛЕОНТЬЕВ Олег Сергеевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/leontjev-oleg-sergeevich/"
+        }
+      ]
+    },
+    {
+      "id": "b93f3e32-84ce-4430-9e26-af3a88d0ee32",
+      "identifiers": [
+        {
+          "identifier": "lipskiy-vadim-georgievich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050052051124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050052051124049048048124049051051.jpg"
+        }
+      ],
+      "name": "ЛИПСКИЙ Вадим Георгиевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/lipskiy-vadim-georgievich/"
+        }
+      ]
+    },
+    {
+      "id": "1d6d4963-a5ee-4d46-bb28-ed3d3cb6142f",
+      "image": "http://vspmr.org/im.xp/049054053048056124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049054053048056124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "МАРТЫНОВ Александр Владимирович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/martinov-aleksandr-vladimirovich/"
+        }
+      ]
+    },
+    {
+      "id": "ca569cbb-f630-4443-8539-ee2e3886b62b",
+      "image": "http://vspmr.org/im.xp/049054052052056124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049054052052056124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "МАТВЕЙЧУК Валентин Николаевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/matveychuk-valentin-nikolaevich/"
+        }
+      ]
+    },
+    {
+      "id": "68e20945-9df1-4f3b-8199-02de65ea9d4c",
+      "image": "http://vspmr.org/im.xp/049056049055052124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049056049055052124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "МЕЖИНСКИЙ Андрей Викторович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/mejinskiy-andrey-viktorovich/"
+        }
+      ]
+    },
+    {
+      "id": "102f99e4-1277-4d67-b544-a2c00b02d2c4",
+      "identifiers": [
+        {
+          "identifier": "moraru-vasiliy-nikolaevich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050052056124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050052056124049048048124049051051.jpg"
+        }
+      ],
+      "name": "МОРАРУ Василий Николаевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/moraru-vasiliy-nikolaevich/"
+        }
+      ]
+    },
+    {
+      "id": "a33ba119-56e9-43a2-871d-bc7fbf882af1",
+      "identifiers": [
+        {
+          "identifier": "namashko-nikolay-petrovich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050053050124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050053050124049048048124049051051.jpg"
+        }
+      ],
+      "name": "НАМАШКО Николай Петрович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/namashko-nikolay-petrovich/"
+        }
+      ]
+    },
+    {
+      "id": "c6d2870c-c401-4e30-901f-04a46fa5b7f5",
+      "identifiers": [
+        {
+          "identifier": "narubay-aleksey-mihaylovich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050053053124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050053053124049048048124049051051.jpg"
+        }
+      ],
+      "name": "НАРУБАЙ Алексей Михайлович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/narubay-aleksey-mihaylovich/"
+        }
+      ]
+    },
+    {
+      "id": "4d1eef96-11fc-4f5b-941d-c5994aec8102",
+      "identifiers": [
+        {
+          "identifier": "ogirchuk-dmitriy-vasiljevich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "name": "ОГИРЧУК Дмитрий Васильевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/ogirchuk-dmitriy-vasiljevich/"
+        }
+      ]
+    },
+    {
+      "id": "f9b08611-c778-4ce8-975d-e87dacc3d385",
+      "image": "http://vspmr.org/im.xp/049055057048052124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049055057048052124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "ОНУФРИЕНКО Антон Николаевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/onufrienko-anton-nikolaevich/"
+        }
+      ]
+    },
+    {
+      "id": "5734f52a-d10b-4e09-89a5-9e3353525d62",
+      "identifiers": [
+        {
+          "identifier": "pagu-sergey-nikolaevich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/050057050051124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/050057050051124049048048124049051051.jpg"
+        }
+      ],
+      "name": "ПАГУ Сергей Николаевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/pagu-sergey-nikolaevich/"
+        }
+      ]
+    },
+    {
+      "id": "08b1ed88-e8ed-4a2b-9200-f373468a7388",
+      "identifiers": [
+        {
+          "identifier": "pasat-petr-semenovich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050054052124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050054052124049048048124049051051.jpg"
+        }
+      ],
+      "name": "ПАСАТ Петр Семенович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/pasat-petr-semenovich/"
+        }
+      ]
+    },
+    {
+      "id": "b2145a66-2e60-457e-a272-167e6e8ee811",
+      "identifiers": [
+        {
+          "identifier": "pasyutin-vladimir-evgenjevich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050054055124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050054055124049048048124049051051.jpg"
+        }
+      ],
+      "name": "ПАСЮТИН Владимир Евгеньевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/pasyutin-vladimir-evgenjevich/"
+        }
+      ]
+    },
+    {
+      "id": "9f3ff15d-8927-4f28-99cd-37239db04522",
+      "image": "http://vspmr.org/im.xp/049054052050053124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049054052050053124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "ПЕЛИН Владимир Дмитриевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/pelin-vladimir-dmitrievich/"
+        }
+      ]
+    },
+    {
+      "id": "c4148f71-3001-4ccf-bfc6-a3b7f2e0f1e3",
+      "image": "http://vspmr.org/im.xp/049054051057049124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049054051057049124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "ПЕТРИК Олег Анатольевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/petrik-oleg-anatoljevich/"
+        }
+      ]
+    },
+    {
+      "id": "5df27c1b-8cca-4961-a9d5-c28f8cfca65c",
+      "identifiers": [
+        {
+          "identifier": "pisarenko-sergey-andreevich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050055048124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050055048124049048048124049051051.jpg"
+        }
+      ],
+      "name": "ПИСАРЕНКО Сергей Андреевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/pisarenko-sergey-andreevich/"
+        }
+      ]
+    },
+    {
+      "id": "d82b1829-f8b6-45ad-9313-ef7cd4e59cd7",
+      "identifiers": [
+        {
+          "identifier": "ponomarenko-valeriy-evgenjevich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050055051124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050055051124049048048124049051051.jpg"
+        }
+      ],
+      "name": "ПОНОМАРЕНКО Валерий Евгеньевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/ponomarenko-valeriy-evgenjevich/"
+        }
+      ]
+    },
+    {
+      "id": "b5b2d23c-3fbd-4c83-ba65-e8596babebf6",
+      "image": "http://vspmr.org/im.xp/049054050054048124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049054050054048124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "САФОНОВ Андрей Михайлович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/safonov-andrey-mihaylovich/"
+        }
+      ]
+    },
+    {
+      "id": "d3d2b905-2691-4a1d-bc36-c0cf2dacf872",
+      "identifiers": [
+        {
+          "identifier": "semenov-sergey-nikolaevich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049052051056124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049052051056124049048048124049051051.jpg"
+        }
+      ],
+      "name": "СЕМЕНОВ Сергей Николаевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/semenov-sergey-nikolaevich/"
+        }
+      ]
+    },
+    {
+      "id": "61e32ac1-6593-4889-892b-f74934f00bdb",
+      "identifiers": [
+        {
+          "identifier": "sipchenko-andrey-viktorovich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050055054124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050055054124049048048124049051051.jpg"
+        }
+      ],
+      "name": "СИПЧЕНКО Андрей Викторович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/sipchenko-andrey-viktorovich/"
+        }
+      ]
+    },
+    {
+      "id": "ecb5e21a-c89a-40d0-9c2c-cf99635a793b",
+      "identifiers": [
+        {
+          "identifier": "soin-dmitriy-yurjevich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050055056124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050055056124049048048124049051051.jpg"
+        }
+      ],
+      "name": "СОИН Дмитрий Юрьевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/soin-dmitriy-yurjevich/"
+        }
+      ]
+    },
+    {
+      "id": "ca6f9c38-8b8e-4f82-abd7-508d1db1a3ce",
+      "identifiers": [
+        {
+          "identifier": "sporish-yuriy-grigorjevich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050056049124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050056049124049048048124049051051.jpg"
+        }
+      ],
+      "name": "СПОРИШ Юрий Григорьевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/sporish-yuriy-grigorjevich/"
+        }
+      ]
+    },
+    {
+      "id": "b5427ae9-53dd-4d67-a42d-853ccaf2fa1d",
+      "image": "http://vspmr.org/im.xp/049055057048049124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049055057048049124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "ТИДВА Владислав Сергеевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/tidva-vladislav-sergeevich/"
+        }
+      ]
+    },
+    {
+      "id": "d71d0a5c-88f4-4357-91ff-15c6af13c538",
+      "identifiers": [
+        {
+          "identifier": "tobuh-vyacheslav-vasiljevich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050057049124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050057049124049048048124049051051.jpg"
+        }
+      ],
+      "name": "ТОБУХ Вячеслав Васильевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/tobuh-vyacheslav-vasiljevich/"
+        }
+      ]
+    },
+    {
+      "id": "d51910c6-6139-429c-a462-983825cbaed6",
+      "identifiers": [
+        {
+          "identifier": "treskova-klavdiya-mihaylovna",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050057052124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050057052124049048048124049051051.jpg"
+        }
+      ],
+      "name": "ТРЕСКОВА Клавдия Михайловна",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/treskova-klavdiya-mihaylovna/"
+        }
+      ]
+    },
+    {
+      "id": "95fd39b0-5b18-42e5-b3c5-44a7b892fd5f",
+      "image": "http://vspmr.org/im.xp/049054052053053124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049054052053053124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "ТУРАНСКАЯ Татьяна Михайловна",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/turanskaya-tatjyana-mihaylovna/"
+        }
+      ]
+    },
+    {
+      "id": "f8403a2d-fbb7-4e18-9fae-6da34ec7238b",
+      "identifiers": [
+        {
+          "identifier": "tyuryaeva-ilona-petrovna",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049050057055124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049050057055124049048048124049051051.jpg"
+        }
+      ],
+      "name": "ТЮРЯЕВА Илона Петровна",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/tyuryaeva-ilona-petrovna/"
+        }
+      ]
+    },
+    {
+      "id": "0e781c8a-d70e-4335-af6c-933645a68a3f",
+      "image": "http://vspmr.org/im.xp/049054056053057124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049054056053057124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "ХАНКЕВИЧ Сергей Павлович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/hankevich-sergey-pavlovich/"
+        }
+      ]
+    },
+    {
+      "id": "a2e8bf28-962d-4b8a-8ff2-55ccf2faa14b",
+      "identifiers": [
+        {
+          "identifier": "horjan-oleg-olegovich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049051048048124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049051048048124049048048124049051051.jpg"
+        }
+      ],
+      "name": "ХОРЖАН Олег Олегович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/horjan-oleg-olegovich/"
+        }
+      ]
+    },
+    {
+      "id": "a158734a-91ea-41f9-a525-bf7f7ffcd22c",
+      "identifiers": [
+        {
+          "identifier": "horin-yuriy-pavlovich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049051054057124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049051054057124049048048124049051051.jpg"
+        }
+      ],
+      "name": "ХОРИН Юрий Павлович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/horin-yuriy-pavlovich/"
+        }
+      ]
+    },
+    {
+      "id": "f7ecb9a4-770c-4358-b47a-7ac1af87f3dd",
+      "identifiers": [
+        {
+          "identifier": "cheban-sergey-fedorovich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/054057053124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/054057053124049048048124049051051.jpg"
+        }
+      ],
+      "name": "ЧЕБАН Сергей Федорович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/cheban-sergey-fedorovich/"
+        }
+      ]
+    },
+    {
+      "id": "1e4e8ec5-9250-4eb3-b124-8e2078865a34",
+      "identifiers": [
+        {
+          "identifier": "chervonookiy-valeriy-vladimirovich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049051055053124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049051055053124049048048124049051051.jpg"
+        }
+      ],
+      "name": "ЧЕРВОНООКИЙ Валерий Владимирович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/chervonookiy-valeriy-vladimirovich/"
+        }
+      ]
+    },
+    {
+      "id": "201cbcab-13be-46f0-af18-a84536562dba",
+      "image": "http://vspmr.org/im.xp/049054051053054124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049054051053054124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "ШИНКАРЮК Павел Викторович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/shinkaryuk-pavel-viktorovich/"
+        }
+      ]
+    },
+    {
+      "id": "5e653627-d4c6-46ee-ace3-64171b00b425",
+      "image": "http://vspmr.org/im.xp/049054052048052124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049054052048052124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "ШКИЛЬНЮК Порфирий Владимирович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/shkiljnyuk-porfiriy-vladimirovich/"
+        }
+      ]
+    },
+    {
+      "id": "a78fb2d6-f2db-41a1-90ad-be3d0a36b075",
+      "image": "http://vspmr.org/im.xp/049054050056052124049048048124049053048124049.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049054050056052124049048048124049053048124049.jpg"
+        }
+      ],
+      "name": "ЩЕРБА Александр Сергеевич",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/scherba-aleksandr-sergeevich/"
+        }
+      ]
+    },
+    {
+      "id": "c9f27834-9b34-486f-a8c0-8bacb83294fb",
+      "identifiers": [
+        {
+          "identifier": "yarich-igorj-teodorovich",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://vspmr.org/im.xp/049051055055124049048048124049051051.jpg",
+      "images": [
+        {
+          "url": "http://vspmr.org/im.xp/049051055055124049048048124049051051.jpg"
+        }
+      ],
+      "name": "ЯРЫЧ Игорь Теодорович",
+      "sources": [
+        {
+          "url": "http://vspmr.org/structure/deputies/yarich-igorj-teodorovich/"
+        }
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "classification": "legislature",
+      "id": "legislature",
+      "identifiers": [
+        {
+          "identifier": "Q2656777",
+          "scheme": "wikidata"
+        }
+      ],
+      "name": "Supreme Council",
+      "seats": 43
+    },
+    {
+      "classification": "party",
+      "id": "party/unknown",
+      "name": "unknown"
+    }
+  ],
+  "meta": {
+    "sources": [
+      "http://vspmr.org/structure/deputies/"
+    ]
+  },
+  "memberships": [
+    {
+      "area_id": "area/13",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "08b1ed88-e8ed-4a2b-9200-f373468a7388",
+      "role": "member"
+    },
+    {
+      "area_id": "area/13",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "08b1ed88-e8ed-4a2b-9200-f373468a7388",
+      "role": "member"
+    },
+    {
+      "area_id": "area/4",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "0e781c8a-d70e-4335-af6c-933645a68a3f",
+      "role": "member"
+    },
+    {
+      "area_id": "area/1",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "0f2bce4d-e970-4eac-b7dc-bedcd7e201e2",
+      "role": "member"
+    },
+    {
+      "area_id": "area/1",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "0f2bce4d-e970-4eac-b7dc-bedcd7e201e2",
+      "role": "member"
+    },
+    {
+      "area_id": "area/28",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "102f99e4-1277-4d67-b544-a2c00b02d2c4",
+      "role": "member"
+    },
+    {
+      "area_id": "area/4",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "11452851-c3d1-47c6-8fa4-882beb9d383f",
+      "role": "member"
+    },
+    {
+      "area_id": "area/38",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "1813125b-a557-4310-b1e1-6623f829136a",
+      "role": "member"
+    },
+    {
+      "area_id": "area/24",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "1d6d4963-a5ee-4d46-bb28-ed3d3cb6142f",
+      "role": "member"
+    },
+    {
+      "area_id": "area/7",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "1e4e8ec5-9250-4eb3-b124-8e2078865a34",
+      "role": "member"
+    },
+    {
+      "area_id": "area/28",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "201cbcab-13be-46f0-af18-a84536562dba",
+      "role": "member"
+    },
+    {
+      "area_id": "area/7",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "2047967d-7641-4cea-b9be-d107a352c96b",
+      "role": "member"
+    },
+    {
+      "area_id": "area/25",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "22d92ef3-0557-4ab1-adc9-e136bd198112",
+      "role": "member"
+    },
+    {
+      "area_id": "area/9",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "26368d8d-958d-4179-83c5-1a63b2d801c8",
+      "role": "member"
+    },
+    {
+      "area_id": "area/9",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "26368d8d-958d-4179-83c5-1a63b2d801c8",
+      "role": "member"
+    },
+    {
+      "area_id": "area/43",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "36ecbf9b-bd89-4c33-986f-d70e5439d5f2",
+      "role": "member"
+    },
+    {
+      "area_id": "area/43",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "36ecbf9b-bd89-4c33-986f-d70e5439d5f2",
+      "role": "member"
+    },
+    {
+      "area_id": "area/5",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "382934ba-e8d5-44dc-8b82-db7e4471e03c",
+      "role": "member"
+    },
+    {
+      "area_id": "area/17",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "40984009-db40-4166-90ad-908e2b4c5555",
+      "role": "member"
+    },
+    {
+      "area_id": "area/35",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "427a31ab-a969-4368-a29a-58361d5ee7f9",
+      "role": "member"
+    },
+    {
+      "area_id": "area/41",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "4403beb6-3cf0-4523-98f2-af2e37bf81c9",
+      "role": "member"
+    },
+    {
+      "area_id": "area/41",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "4403beb6-3cf0-4523-98f2-af2e37bf81c9",
+      "role": "member"
+    },
+    {
+      "area_id": "area/37",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "487744ad-c5a6-49b6-aea2-8c4412a8fcf1",
+      "role": "member"
+    },
+    {
+      "area_id": "area/11",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "4d1eef96-11fc-4f5b-941d-c5994aec8102",
+      "role": "member"
+    },
+    {
+      "area_id": "area/11",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "4d1eef96-11fc-4f5b-941d-c5994aec8102",
+      "role": "member"
+    },
+    {
+      "area_id": "area/22",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "5734f52a-d10b-4e09-89a5-9e3353525d62",
+      "role": "member"
+    },
+    {
+      "area_id": "area/35",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "58a2138b-6f2b-4cc1-a802-09a3a090fd25",
+      "role": "member"
+    },
+    {
+      "area_id": "area/23",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "5df27c1b-8cca-4961-a9d5-c28f8cfca65c",
+      "role": "member"
+    },
+    {
+      "area_id": "area/6",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "5df27c1b-8cca-4961-a9d5-c28f8cfca65c",
+      "role": "member"
+    },
+    {
+      "area_id": "area/16",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "5e653627-d4c6-46ee-ace3-64171b00b425",
+      "role": "member"
+    },
+    {
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "60b0d654-86a9-4722-b66d-216f6cee88fa",
+      "role": "member"
+    },
+    {
+      "area_id": "area/14",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "61e32ac1-6593-4889-892b-f74934f00bdb",
+      "role": "member"
+    },
+    {
+      "area_id": "area/14",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "61e32ac1-6593-4889-892b-f74934f00bdb",
+      "role": "member"
+    },
+    {
+      "area_id": "area/27",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "6457e72a-2821-4461-bd05-f1f1f4d8525d",
+      "role": "member"
+    },
+    {
+      "area_id": "area/27",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "6457e72a-2821-4461-bd05-f1f1f4d8525d",
+      "role": "member"
+    },
+    {
+      "area_id": "area/34",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "67e1d968-aa6a-4f40-8ca5-f517c3de1cc2",
+      "role": "member"
+    },
+    {
+      "area_id": "area/34",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "67e1d968-aa6a-4f40-8ca5-f517c3de1cc2",
+      "role": "member"
+    },
+    {
+      "area_id": "area/42",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "68e20945-9df1-4f3b-8199-02de65ea9d4c",
+      "role": "member"
+    },
+    {
+      "area_id": "area/25",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "7998c12b-0042-4223-a898-45f332e30cc9",
+      "role": "member"
+    },
+    {
+      "area_id": "area/31",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "83ddd530-6b10-4e5a-bd72-cac4f7aa4d5a",
+      "role": "member"
+    },
+    {
+      "area_id": "area/31",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "83ddd530-6b10-4e5a-bd72-cac4f7aa4d5a",
+      "role": "member"
+    },
+    {
+      "area_id": "area/12",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "8631b65d-5634-4d84-87a5-c385018dfcd4",
+      "role": "member"
+    },
+    {
+      "area_id": "area/12",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "8631b65d-5634-4d84-87a5-c385018dfcd4",
+      "role": "member"
+    },
+    {
+      "area_id": "area/5",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "8bd39fd9-ea12-4d66-a96b-e2333f0194ea",
+      "role": "member"
+    },
+    {
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "8e9f53c2-b536-459a-8a93-26bcf2b95091",
+      "role": "member"
+    },
+    {
+      "area_id": "area/22",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "95fd39b0-5b18-42e5-b3c5-44a7b892fd5f",
+      "role": "member"
+    },
+    {
+      "area_id": "area/32",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "983865bf-c4fe-4058-9b5c-431d2ac87575",
+      "role": "member"
+    },
+    {
+      "area_id": "area/32",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "983865bf-c4fe-4058-9b5c-431d2ac87575",
+      "role": "member"
+    },
+    {
+      "area_id": "area/10",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "9f3ff15d-8927-4f28-99cd-37239db04522",
+      "role": "member"
+    },
+    {
+      "area_id": "area/29",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "a158734a-91ea-41f9-a525-bf7f7ffcd22c",
+      "role": "member"
+    },
+    {
+      "area_id": "area/40",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "a2e8bf28-962d-4b8a-8ff2-55ccf2faa14b",
+      "role": "member"
+    },
+    {
+      "area_id": "area/40",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "a2e8bf28-962d-4b8a-8ff2-55ccf2faa14b",
+      "role": "member"
+    },
+    {
+      "area_id": "area/10",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "a33ba119-56e9-43a2-871d-bc7fbf882af1",
+      "role": "member"
+    },
+    {
+      "area_id": "area/21",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "a643afb0-f65c-4ade-be4a-ab12d454e53e",
+      "role": "member"
+    },
+    {
+      "area_id": "area/29",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "a78fb2d6-f2db-41a1-90ad-be3d0a36b075",
+      "role": "member"
+    },
+    {
+      "area_id": "area/6",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "ae48f40c-0ce6-4c40-b8cd-92bcc539e8c1",
+      "role": "member"
+    },
+    {
+      "area_id": "area/18",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "b0e7a5b5-b6ef-43ff-897d-7332c385cd2c",
+      "role": "member"
+    },
+    {
+      "area_id": "area/3",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "b2145a66-2e60-457e-a272-167e6e8ee811",
+      "role": "member"
+    },
+    {
+      "area_id": "area/2",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "b5427ae9-53dd-4d67-a42d-853ccaf2fa1d",
+      "role": "member"
+    },
+    {
+      "area_id": "area/20",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "b5b2d23c-3fbd-4c83-ba65-e8596babebf6",
+      "role": "member"
+    },
+    {
+      "area_id": "area/33",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "b93f3e32-84ce-4430-9e26-af3a88d0ee32",
+      "role": "member"
+    },
+    {
+      "area_id": "area/33",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "b93f3e32-84ce-4430-9e26-af3a88d0ee32",
+      "role": "member"
+    },
+    {
+      "area_id": "area/16",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "b9ed0084-b433-4df7-8c62-b27a5f2bbada",
+      "role": "member"
+    },
+    {
+      "area_id": "area/3",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "c4148f71-3001-4ccf-bfc6-a3b7f2e0f1e3",
+      "role": "member"
+    },
+    {
+      "area_id": "area/20",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "c6d2870c-c401-4e30-901f-04a46fa5b7f5",
+      "role": "member"
+    },
+    {
+      "area_id": "area/30",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "c9f27834-9b34-486f-a8c0-8bacb83294fb",
+      "role": "member"
+    },
+    {
+      "area_id": "area/30",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "c9f27834-9b34-486f-a8c0-8bacb83294fb",
+      "role": "member"
+    },
+    {
+      "area_id": "area/23",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "ca569cbb-f630-4443-8539-ee2e3886b62b",
+      "role": "member"
+    },
+    {
+      "area_id": "area/2",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "ca6f9c38-8b8e-4f82-abd7-508d1db1a3ce",
+      "role": "member"
+    },
+    {
+      "area_id": "area/39",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "d3537749-c4f4-4816-a407-a21036a402de",
+      "role": "member"
+    },
+    {
+      "area_id": "area/39",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "d3537749-c4f4-4816-a407-a21036a402de",
+      "role": "member"
+    },
+    {
+      "area_id": "area/8",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "d3d2b905-2691-4a1d-bc36-c0cf2dacf872",
+      "role": "member"
+    },
+    {
+      "area_id": "area/18",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "d51910c6-6139-429c-a462-983825cbaed6",
+      "role": "member"
+    },
+    {
+      "area_id": "area/42",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "d71d0a5c-88f4-4357-91ff-15c6af13c538",
+      "role": "member"
+    },
+    {
+      "area_id": "area/24",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "d82b1829-f8b6-45ad-9313-ef7cd4e59cd7",
+      "role": "member"
+    },
+    {
+      "area_id": "area/15",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "ddd48861-e374-47fd-891a-ca9dd44ea1ae",
+      "role": "member"
+    },
+    {
+      "area_id": "area/15",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "ddd48861-e374-47fd-891a-ca9dd44ea1ae",
+      "role": "member"
+    },
+    {
+      "area_id": "area/37",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "deab20dc-034d-4c29-b077-9c9a0cbfd39a",
+      "role": "member"
+    },
+    {
+      "area_id": "area/38",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "ecb5e21a-c89a-40d0-9c2c-cf99635a793b",
+      "role": "member"
+    },
+    {
+      "area_id": "area/26",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "f7ecb9a4-770c-4358-b47a-7ac1af87f3dd",
+      "role": "member"
+    },
+    {
+      "area_id": "area/26",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "f7ecb9a4-770c-4358-b47a-7ac1af87f3dd",
+      "role": "member"
+    },
+    {
+      "area_id": "area/36",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "f8403a2d-fbb7-4e18-9fae-6da34ec7238b",
+      "role": "member"
+    },
+    {
+      "area_id": "area/36",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "f8403a2d-fbb7-4e18-9fae-6da34ec7238b",
+      "role": "member"
+    },
+    {
+      "area_id": "area/8",
+      "legislative_period_id": "term/6",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "f9b08611-c778-4ce8-975d-e87dacc3d385",
+      "role": "member"
+    },
+    {
+      "area_id": "area/17",
+      "legislative_period_id": "term/5",
+      "on_behalf_of_id": "party/unknown",
+      "organization_id": "legislature",
+      "person_id": "fc9758c8-d2b0-40e5-9e52-b4a25fb4f002",
+      "role": "member"
+    }
+  ],
+  "events": [
+    {
+      "classification": "general election",
+      "end_date": "2000",
+      "id": "Q4128595",
+      "name": "Transnistrian legislative election, 2000",
+      "start_date": "2000"
+    },
+    {
+      "classification": "general election",
+      "end_date": "2005",
+      "id": "Q4128596",
+      "name": "Transnistrian legislative election, 2005",
+      "start_date": "2005"
+    },
+    {
+      "classification": "general election",
+      "end_date": "2010",
+      "id": "Q4128597",
+      "name": "Transnistrian legislative election, 2010",
+      "start_date": "2010"
+    },
+    {
+      "classification": "legislative period",
+      "end_date": "2015",
+      "id": "term/5",
+      "name": "5th Convocation",
+      "organization_id": "legislature",
+      "start_date": "2010"
+    },
+    {
+      "classification": "general election",
+      "end_date": "2015-11-29",
+      "id": "Q21187812",
+      "name": "Transnistrian legislative election, 2015",
+      "start_date": "2015-11-29"
+    },
+    {
+      "classification": "legislative period",
+      "id": "term/6",
+      "name": "6th Convocation",
+      "organization_id": "legislature",
+      "start_date": "2015-12-23"
+    }
+  ],
+  "areas": [
+    {
+      "id": "area/1",
+      "name": "1",
+      "type": "constituency"
+    },
+    {
+      "id": "area/10",
+      "name": "10",
+      "type": "constituency"
+    },
+    {
+      "id": "area/11",
+      "name": "11",
+      "type": "constituency"
+    },
+    {
+      "id": "area/12",
+      "name": "12",
+      "type": "constituency"
+    },
+    {
+      "id": "area/13",
+      "name": "13",
+      "type": "constituency"
+    },
+    {
+      "id": "area/14",
+      "name": "14",
+      "type": "constituency"
+    },
+    {
+      "id": "area/15",
+      "name": "15",
+      "type": "constituency"
+    },
+    {
+      "id": "area/16",
+      "name": "16",
+      "type": "constituency"
+    },
+    {
+      "id": "area/17",
+      "name": "17",
+      "type": "constituency"
+    },
+    {
+      "id": "area/18",
+      "name": "18",
+      "type": "constituency"
+    },
+    {
+      "id": "area/2",
+      "name": "2",
+      "type": "constituency"
+    },
+    {
+      "id": "area/20",
+      "name": "20",
+      "type": "constituency"
+    },
+    {
+      "id": "area/21",
+      "name": "21",
+      "type": "constituency"
+    },
+    {
+      "id": "area/22",
+      "name": "22",
+      "type": "constituency"
+    },
+    {
+      "id": "area/23",
+      "name": "23",
+      "type": "constituency"
+    },
+    {
+      "id": "area/24",
+      "name": "24",
+      "type": "constituency"
+    },
+    {
+      "id": "area/25",
+      "name": "25",
+      "type": "constituency"
+    },
+    {
+      "id": "area/26",
+      "name": "26",
+      "type": "constituency"
+    },
+    {
+      "id": "area/27",
+      "name": "27",
+      "type": "constituency"
+    },
+    {
+      "id": "area/28",
+      "name": "28",
+      "type": "constituency"
+    },
+    {
+      "id": "area/29",
+      "name": "29",
+      "type": "constituency"
+    },
+    {
+      "id": "area/3",
+      "name": "3",
+      "type": "constituency"
+    },
+    {
+      "id": "area/30",
+      "name": "30",
+      "type": "constituency"
+    },
+    {
+      "id": "area/31",
+      "name": "31",
+      "type": "constituency"
+    },
+    {
+      "id": "area/32",
+      "name": "32",
+      "type": "constituency"
+    },
+    {
+      "id": "area/33",
+      "name": "33",
+      "type": "constituency"
+    },
+    {
+      "id": "area/34",
+      "name": "34",
+      "type": "constituency"
+    },
+    {
+      "id": "area/35",
+      "name": "35",
+      "type": "constituency"
+    },
+    {
+      "id": "area/36",
+      "name": "36",
+      "type": "constituency"
+    },
+    {
+      "id": "area/37",
+      "name": "37",
+      "type": "constituency"
+    },
+    {
+      "id": "area/38",
+      "name": "38",
+      "type": "constituency"
+    },
+    {
+      "id": "area/39",
+      "name": "39",
+      "type": "constituency"
+    },
+    {
+      "id": "area/4",
+      "name": "4",
+      "type": "constituency"
+    },
+    {
+      "id": "area/40",
+      "name": "40",
+      "type": "constituency"
+    },
+    {
+      "id": "area/41",
+      "name": "41",
+      "type": "constituency"
+    },
+    {
+      "id": "area/42",
+      "name": "42",
+      "type": "constituency"
+    },
+    {
+      "id": "area/43",
+      "name": "43",
+      "type": "constituency"
+    },
+    {
+      "id": "area/5",
+      "name": "5",
+      "type": "constituency"
+    },
+    {
+      "id": "area/6",
+      "name": "6",
+      "type": "constituency"
+    },
+    {
+      "id": "area/7",
+      "name": "7",
+      "type": "constituency"
+    },
+    {
+      "id": "area/8",
+      "name": "8",
+      "type": "constituency"
+    },
+    {
+      "id": "area/9",
+      "name": "9",
+      "type": "constituency"
+    }
+  ]
+}

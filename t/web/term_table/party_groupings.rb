@@ -3,6 +3,12 @@ require 'test_helper'
 require_relative '../../../app'
 
 describe 'Party Groupings section' do
+  before do
+    stub_everypolitician_data_request('beb21e5/data/Alderney/States/ep-popolo-v1.0.json')
+    stub_everypolitician_data_request('f88ce37/data/Estonia/Riigikogu/ep-popolo-v1.0.json')
+    stub_everypolitician_data_request('75b7651/data/Transnistria/Supreme_Council/ep-popolo-v1.0.json')
+  end
+
   subject { Nokogiri::HTML(last_response.body) }
   let(:heading) { subject.css('.party-groupings__title h2').text }
 
