@@ -1,8 +1,8 @@
 <div class="page-section" id="term">
     <div class="container text-center">
         <h1><span class="avatar"><i class="fa fa-university"></i></span> <%= @page.current_term[:name] %></h1>
-      <% unless @page.current_term[:start_date].to_s.empty? and @page.current_term[:end_date].to_s.empty? %>
-        <p><%= @page.current_term[:start_date] %> – <%= @page.current_term[:end_date] or 'current' %></p>
+      <% if @page.current_term.start_date || @page.current_term.end_date %>
+        <p><%= @page.current_term.start_date %> – <%= @page.current_term.end_date || 'current' %></p>
       <% end %>
     </div>
 </div>
