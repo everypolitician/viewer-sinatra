@@ -6,16 +6,24 @@ class PersonIdentifiers < PersonCard
   end
 
   def entries
-    arr = person.identifiers.map do |i|
+    identifiers.map do |i|
+      identifier = person.identifiers.find { |p| p[:scheme] == i }[:identifier]
       {
-        label: i[:scheme],
-        value: i[:identifier],
-      } if identifiers.include? i[:scheme]
+        label: i,
+        value: identifier,
+        url:   identifier_url(i, identifier),
+      }.reject { |_k, v| v.nil? }
     end
-    arr.compact
   end
 
   private
 
   attr_reader :identifiers
+
+  def identifier_url(type, identifier)
+    {
+      'wikidata': "https://www.wikidata.org/wiki/#{identifier}",
+      'viaf':     "https://viaf.org/viaf/#{identifier}/",
+    }[type.to_sym]
+  end
 end
