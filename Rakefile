@@ -27,3 +27,9 @@ Rake::TestTask.new do |t|
 end
 
 RuboCop::RakeTask.new
+
+task 'everypolitician-data', [:path] do |_, args|
+  fixture_path = Pathname.new(File.join('t/fixtures/everypolitician-data', args[:path]))
+  mkdir_p(fixture_path.dirname)
+  fixture_path.write(open("https://cdn.rawgit.com/everypolitician/everypolitician-data/#{args[:path]}").read)
+end
