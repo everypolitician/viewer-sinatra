@@ -13,7 +13,7 @@ describe 'Social Subview' do
 
   it 'should give a list of twitter and facebook details for a given member' do
     twitter = { label: 'Twitter', value: 'HBaldwinMP', url: 'http://twitter.com/HBaldwinMP' }
-    facebook = { label: 'Facebook', value: 'https://facebook.com/harriettbaldwin', url: 'https://facebook.com/harriettbaldwin' }
+    facebook = { label: 'Facebook', value: 'harriettbaldwin', url: 'https://facebook.com/harriettbaldwin' }
     subject.entries.must_include twitter
     subject.entries.must_include facebook
   end

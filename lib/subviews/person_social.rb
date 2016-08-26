@@ -18,8 +18,12 @@ class PersonSocial < PersonCard
   def facebook
     {
       label: 'Facebook',
-      value: person.facebook,
+      value: facebook_username,
       url:   person.facebook,
     } if person.facebook
+  end
+
+  def facebook_username
+    URI.decode_www_form_component(person.facebook.split('/').last)
   end
 end
