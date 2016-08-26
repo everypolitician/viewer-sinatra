@@ -3,6 +3,16 @@ require_relative '../../lib/page/needed'
 require 'test_helper'
 
 describe 'Needed' do
+  before do
+    stub_request(:get, 'https://api.github.com/repos/everypolitician/everypolitician-data/issues?labels=New%20Country,To%20Find&per_page=100')
+      .to_return(body: File.read('t/fixtures/github-issues-to-find.json'), headers: { 'Content-Type' => 'application/json' })
+
+    stub_request(:get, 'https://api.github.com/repos/everypolitician/everypolitician-data/issues?labels=New%20Country,To%20Scrape&per_page=100')
+      .to_return(body: '{}', headers: { 'Content-Type' => 'application/json' })
+    stub_request(:get, 'https://api.github.com/repos/everypolitician/everypolitician-data/issues?labels=New%20Country,3%20-%20WIP&per_page=100')
+      .to_return(body: '{}', headers: { 'Content-Type' => 'application/json' })
+  end
+
   subject do
     Page::Needed.new(access_token: ENV['GITHUB_ACCESS_TOKEN'])
   end
