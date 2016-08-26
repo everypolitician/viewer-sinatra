@@ -1,8 +1,8 @@
 <div class="page-section" id="term">
     <div class="container text-center">
-        <h1><span class="avatar"><i class="fa fa-university"></i></span> <%= @page.current_term[:name] %></h1>
-      <% unless @page.current_term[:start_date].to_s.empty? and @page.current_term[:end_date].to_s.empty? %>
-        <p><%= @page.current_term[:start_date] %> – <%= @page.current_term[:end_date] or 'current' %></p>
+        <h1><span class="avatar"><i class="fa fa-university"></i></span> <%= @page.current_term.name %></h1>
+      <% if @page.current_term.start_date || @page.current_term.end_date %>
+        <p><%= @page.current_term.start_date %> – <%= @page.current_term.end_date || 'current' %></p>
       <% end %>
     </div>
 </div>
@@ -21,10 +21,10 @@
               <span class="term-navigation__jump">Jump to:
                   <select class="js-navigation-menu" data-ga-track-select="Jump to term by date">
                     <% @page.terms.each do |t| %>
-                      <option value="<%= term_table_url(@page.country, @page.house, t) %>" <% if t[:name] == @page.current_term[:name] %>selected<% end %>>
-                        <%= t[:name] %>
-                        <% unless t[:start_date].to_s.empty? and t[:end_date].to_s.empty? %>
-                          (<%= t[:start_date] %>–<%= t[:end_date] or 'current' %>)
+                      <option value="<%= term_table_url(@page.country, @page.house, t) %>" <% if t.name == @page.current_term.name %>selected<% end %>>
+                        <%= t.name %>
+                        <% if t.start_date || t.end_date %>
+                          (<%= t.start_date %>–<%= t.end_date || 'current' %>)
                         <% end %>
                       </option>
                     <% end %>
