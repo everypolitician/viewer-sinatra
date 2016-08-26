@@ -2,7 +2,9 @@
 require_relative './person_card'
 class PersonSocial < PersonCard
   def entries
-    [twitter, facebook].compact
+    remove_entries_with_nil_values(
+      [twitter, facebook]
+    ).compact
   end
 
   private
@@ -12,7 +14,7 @@ class PersonSocial < PersonCard
       label: 'Twitter',
       value: person.twitter,
       url:   twitter_url,
-    } if person.twitter
+    }
   end
 
   def facebook
@@ -20,7 +22,7 @@ class PersonSocial < PersonCard
       label: 'Facebook',
       value: facebook_username,
       url:   person.facebook,
-    } if person.facebook
+    }
   end
 
   def facebook_username

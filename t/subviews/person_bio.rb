@@ -25,6 +25,11 @@ describe 'Bio Subview: gender, birth and death date' do
     gender = { label: 'Gender', value: 'male' }
     subject.entries.must_include gender
   end
+
+  it 'should not contain a nil value' do
+    suffix = { label: 'Suffix', value: nil }
+    subject.entries.wont_include suffix
+  end
 end
 
 describe 'Bio Subview: honorific suffix' do
