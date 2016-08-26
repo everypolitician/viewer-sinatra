@@ -4,12 +4,6 @@ class PersonSocial
     @person = person
   end
 
-  def view
-    pat = '../../views/subviews/person_card.erb'
-    content = File.read(File.expand_path(path), __FILE__)
-    ERB.new(content).result(binding)
-  end
-
   def entries
     [twitter, facebook].compact
   end
