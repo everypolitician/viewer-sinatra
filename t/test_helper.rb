@@ -6,6 +6,8 @@ require 'nokogiri'
 require 'pathname'
 require 'rack/test'
 require 'pry'
+require 'webmock/minitest'
+require 'everypolitician'
 
 module Minitest
   class Spec
@@ -23,6 +25,11 @@ module Minitest
 
     def index_at_known_sha
       @shaidx ||= EveryPolitician::Index.new(index_url: countries_json_url)
+    end
+
+    def stub_everypolitician_data_request(path)
+      stub_request(:get, "https://cdn.rawgit.com/everypolitician/everypolitician-data/#{path}")
+        .to_return(body: File.read("t/fixtures/everypolitician-data/#{path}"))
     end
 
     private
