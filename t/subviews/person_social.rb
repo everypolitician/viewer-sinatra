@@ -8,8 +8,8 @@ describe 'Social Subview' do
     persons = index_at_known_sha.country('uk').legislature('commons').popolo.persons
     harriett = persons.select { |p| p.name == 'Harriett Baldwin' }.first
     card = PersonSocial.new(person: harriett)
-    harriett_twitter = { name: 'Twitter', value: 'HBaldwinMP', url: 'http://twitter.com/HBaldwinMP' }
-    harriett_facebook = { name: 'Facebook', value: 'https://facebook.com/harriettbaldwin', url: 'https://facebook.com/harriettbaldwin' }
+    harriett_twitter = { label: 'Twitter', value: 'HBaldwinMP', url: 'http://twitter.com/HBaldwinMP' }
+    harriett_facebook = { label: 'Facebook', value: 'https://facebook.com/harriettbaldwin', url: 'https://facebook.com/harriettbaldwin' }
     card.entries.must_include harriett_twitter
     card.entries.must_include harriett_facebook
   end

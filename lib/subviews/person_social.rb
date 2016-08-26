@@ -1,20 +1,15 @@
 # frozen_string_literal: true
-class PersonSocial
-  def initialize(person:)
-    @person = person
-  end
-
+require_relative './person_card'
+class PersonSocial < PersonCard
   def entries
     [twitter, facebook].compact
   end
 
   private
 
-  attr_reader :person
-
   def twitter
     {
-      name:  'Twitter',
+      label: 'Twitter',
       value: person.twitter,
       url:   "http://twitter.com/#{person.twitter}",
     } if person.twitter
@@ -22,7 +17,7 @@ class PersonSocial
 
   def facebook
     {
-      name:  'Facebook',
+      label: 'Facebook',
       value: person.facebook,
       url:   person.facebook,
     } if person.facebook
