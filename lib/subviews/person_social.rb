@@ -11,7 +11,7 @@ class PersonSocial < PersonCard
     {
       label: 'Twitter',
       value: person.twitter,
-      url:   "http://twitter.com/#{person.twitter}",
+      url:   twitter_url,
     } if person.twitter
   end
 
@@ -25,5 +25,9 @@ class PersonSocial < PersonCard
 
   def facebook_username
     URI.decode_www_form_component(person.facebook.split('/').last)
+  end
+
+  def twitter_url
+    "http://twitter.com/#{person.twitter}"
   end
 end
