@@ -40,14 +40,19 @@ describe 'TermTable' do
     end
 
     describe 'when calculating the group data' do
-      it 'sends the right memberships' do
-        group_data = subject.group_data
-        group_data.count.must_equal 7
+      let(:group_data) { subject.group_data }
 
+      it 'has an entry for each group' do
+        group_data.count.must_equal 7
+      end
+
+      it 'has spÖ first' do
         group_data.first.group_id.must_equal 'spÖ'
         group_data.first.name.must_equal 'SPÖ'
         group_data.first.member_count.must_equal 51
+      end
 
+      it 'has ohne last' do
         group_data.last.group_id.must_equal 'ohne_(none)'
         group_data.last.name.must_equal 'ohne (none)'
         group_data.last.member_count.must_equal 3
