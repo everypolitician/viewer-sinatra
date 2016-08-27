@@ -66,7 +66,7 @@ describe 'TermTable' do
     end
 
     it 'knows percentage of people that have special data' do
-      expected = { social: 20, bio: 100, contacts: 100, identifiers: 93 }
+      expected = { social: 20, bio: 100, contacts: 93, identifiers: 100 }
       subject.percentages.must_equal expected
     end
 
@@ -82,9 +82,6 @@ describe 'TermTable' do
         contacts:    [{ type: 'Email', value: 'angela.fichtinger@parlament.gv.at', link: 'mailto:angela.fichtinger@parlament.gv.at' }],
         identifiers: [{ type: 'wikidata', value: 'Q15783437', link: 'https://www.wikidata.org/wiki/Q15783437' }, { type: 'parlaments_at', value: '83146' }],
       }
-    end
-
-    def percentages
     end
   end
 
