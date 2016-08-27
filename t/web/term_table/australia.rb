@@ -5,11 +5,6 @@ require_relative '../../../app'
 describe 'Per Country Tests: Australia' do
   subject { Nokogiri::HTML(last_response.body) }
 
-  before do
-    stub_everypolitician_data_request('6139efe/data/Australia/Representatives/ep-popolo-v1.0.json')
-    stub_everypolitician_data_request('f8dcbd9/data/Australia/Senate/ep-popolo-v1.0.json')
-  end
-
   describe 'Country page' do
     before       { get '/australia/' }
     let(:house)  { subject.css('#terms-representatives') }
@@ -25,7 +20,10 @@ describe 'Per Country Tests: Australia' do
   end
 
   describe 'Representatives' do
-    before { get '/australia/representatives/term-table/44.html' }
+    before do
+      stub_everypolitician_data_request('6139efe/data/Australia/Representatives/ep-popolo-v1.0.json')
+      get '/australia/representatives/term-table/44.html'
+    end
 
     it 'should include a Representative' do
       subject.css('div.grid-list').text.must_include 'Tony Abbott'
@@ -52,7 +50,10 @@ describe 'Per Country Tests: Australia' do
   end
 
   describe 'Senate' do
-    before { get '/australia/senate/term-table/44.html' }
+    before do
+      stub_everypolitician_data_request('f8dcbd9/data/Australia/Senate/ep-popolo-v1.0.json')
+      get '/australia/senate/term-table/44.html'
+    end
 
     it 'should include a Senator' do
       subject.css('div.grid-list').text.must_include 'Alan Eggleston'
