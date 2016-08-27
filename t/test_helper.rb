@@ -42,6 +42,10 @@ module Minitest
       raise "#{error.message}\n\nTo download this fixture run the following\n\n\tbundle exec rake 'everypolitician-data[#{path}]'\n"
     end
 
+    def stub_popolo(sha, legislature)
+      stub_everypolitician_data_request("#{sha}/data/#{legislature}/ep-popolo-v1.0.json")
+    end
+
     def stub_github_api
       stub_json(
         'https://api.github.com/repos/everypolitician/everypolitician-data/issues?labels=New%20Country,To%20Find&per_page=100',

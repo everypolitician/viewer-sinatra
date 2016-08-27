@@ -10,17 +10,17 @@ end
 
 describe 'HouseWikidata' do
   let(:austria_page) do
-    stub_everypolitician_data_request('3df153b/data/Austria/Nationalrat/ep-popolo-v1.0.json')
+    stub_popolo('3df153b', 'Austria/Nationalrat')
     page_for('austria', 'nationalrat')
   end
 
   let(:alderney_page) do
-    stub_everypolitician_data_request('beb21e5/data/Alderney/States/ep-popolo-v1.0.json')
+    stub_popolo('beb21e5', 'Alderney/States')
     page_for('alderney', 'states')
   end
 
   let(:uganda_page) do
-    stub_everypolitician_data_request('0cef4ab/data/Uganda/Parliament/ep-popolo-v1.0.json')
+    stub_popolo('0cef4ab', 'Uganda/Parliament')
     page_for('uganda', 'parliament')
   end
 

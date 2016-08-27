@@ -9,7 +9,7 @@ describe 'Wikidata' do
 
   describe 'Croatia' do
     before do
-      stub_everypolitician_data_request('6e39048/data/Croatia/Sabor/ep-popolo-v1.0.json')
+      stub_popolo('6e39048', 'Croatia/Sabor')
       get '/croatia/sabor/wikidata'
     end
 
