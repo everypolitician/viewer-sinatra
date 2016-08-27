@@ -87,24 +87,23 @@ module Page
         p[:bio] << { type: 'Died', value: person.death_date } if person.death_date
         p[:bio] << { type: 'Prefix', value: person.honorific_prefix } if person.honorific_prefix
         p[:bio] << { type: 'Suffix', value: person.honorific_suffix } if person.honorific_suffix
-        p[:contacts] << { type: 'Email', value: person.email, link: "mailto:#{person.email}" }
 
-        if person.email
-          p[:contacts] << { type: 'Phone', value: person.phone } if person.phone
-          p[:contacts] << { type: 'Fax', value: person.fax } if person.fax
+        p[:contacts] << { type: 'Email', value: person.email, link: "mailto:#{person.email}" } if person.email
+        p[:contacts] << { type: 'Phone', value: person.phone } if person.phone
+        p[:contacts] << { type: 'Fax', value: person.fax } if person.fax
 
-          top_identifiers.each do |scheme|
-            id = person.identifiers.find { |i| i[:scheme] == scheme }
-            next if id.nil?
-            identifier = { type: id[:scheme], value: id[:identifier] }
-            if identifier[:type] == 'wikidata'
-              identifier[:link] = "https://www.wikidata.org/wiki/#{id[:identifier]}"
-            elsif identifier[:type] == 'viaf'
-              identifier[:link] = "https://viaf.org/viaf/#{id[:identifier]}/"
-            end
-            p[:identifiers] << identifier
+        top_identifiers.each do |scheme|
+          id = person.identifiers.find { |i| i[:scheme] == scheme }
+          next if id.nil?
+          identifier = { type: id[:scheme], value: id[:identifier] }
+          if identifier[:type] == 'wikidata'
+            identifier[:link] = "https://www.wikidata.org/wiki/#{id[:identifier]}"
+          elsif identifier[:type] == 'viaf'
+            identifier[:link] = "https://viaf.org/viaf/#{id[:identifier]}/"
           end
+          p[:identifiers] << identifier
         end
+
         p
       end
     end
