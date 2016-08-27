@@ -4,11 +4,8 @@ require_relative '../everypolitician_extensions'
 
 module Page
   class TermTable
-    def initialize(country_slug:, house_slug:, term_id:, index:)
-      @country_slug = country_slug
-      @house_slug   = house_slug
-      @term_id      = term_id
-      @index        = index
+    def initialize(term:)
+      @term = term
     end
 
     def title
@@ -21,11 +18,11 @@ module Page
     end
 
     def country
-      index.country(country_slug)
+      house.country
     end
 
     def house
-      country.legislature(house_slug)
+      term.legislature
     end
 
     def terms
@@ -122,7 +119,11 @@ module Page
 
     private
 
-    attr_reader :country_slug, :house_slug, :term_id, :index
+    attr_reader :term
+
+    def term_id
+      term.id.split('/').last
+    end
 
     def popolo
       @popolo ||= house.popolo

@@ -10,10 +10,7 @@ describe 'TermTable' do
 
     subject do
       Page::TermTable.new(
-        country_slug: 'austria',
-        house_slug:   'nationalrat',
-        term_id:      '25',
-        index:        index_at_known_sha
+        term: index_at_known_sha.country('austria').legislature('nationalrat').term('25')
       )
     end
 
@@ -94,10 +91,7 @@ describe 'TermTable' do
   describe 'when the country has several terms' do
     subject do
       Page::TermTable.new(
-        country_slug: 'uk',
-        house_slug:   'commons',
-        term_id:      '55',
-        index:        index_at_known_sha
+        term: index_at_known_sha.country('uk').legislature('commons').term('55')
       )
     end
 
