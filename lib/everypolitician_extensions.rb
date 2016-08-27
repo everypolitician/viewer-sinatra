@@ -13,9 +13,15 @@ module EveryPolitician
   module LegislatureExtension
     # UK.legislature('Commons').term(65)
     def term(termid)
-      legislative_periods.find do |t|
-        t.id.split('/').last == termid.to_s
+      after, current, before = [nil, legislative_periods, nil]
+                               .flatten
+                               .each_cons(3)
+                               .find do |_, term, _|
+        term.id.split('/').last == termid.to_s
       end
+      current.define_singleton_method(:prev) { before }
+      current.define_singleton_method(:next) { after }
+      current
     end
   end
 end
