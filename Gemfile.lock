@@ -11,15 +11,6 @@ GIT
     everypolitician (0.18.0)
       everypolitician-popolo
 
-GIT
-  remote: git://github.com/sinatra/sinatra.git
-  revision: 29c51d12fdd91ee254e51d4ce099535fcb6ea1a9
-  specs:
-    sinatra (1.4.6)
-      rack (~> 1.4)
-      rack-protection (~> 1.4)
-      tilt (>= 1.3, < 3)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -100,10 +91,14 @@ GEM
       addressable (~> 2.3.5)
       faraday (~> 0.8, < 0.10)
     sexp_processor (4.7.0)
+    sinatra (1.4.7)
+      rack (~> 1.5)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
     slop (3.6.0)
     thor (0.19.1)
     thread_safe (0.3.5)
-    tilt (1.4.1)
+    tilt (2.0.5)
     unicode-display_width (1.1.0)
     virtus (1.0.5)
       axiom-types (~> 0.1)
@@ -140,7 +135,7 @@ DEPENDENCIES
   require_all
   rubocop
   sass
-  sinatra!
+  sinatra
   webmock
   yajl-ruby
 

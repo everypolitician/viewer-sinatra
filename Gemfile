@@ -16,7 +16,7 @@ gem 'rake'
 gem 'redcarpet', '~> 3.2.3'
 gem 'require_all'
 gem 'sass'
-gem 'sinatra', github: 'sinatra/sinatra'
+gem 'sinatra'
 gem 'yajl-ruby', require: 'yajl'
 
 group :test do
