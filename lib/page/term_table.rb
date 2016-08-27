@@ -30,15 +30,15 @@ module Page
     end
 
     def next_term
-      hashed_adjacent_terms[:prev_term]
+      term.next
     end
 
     def prev_term
-      hashed_adjacent_terms[:next_term]
+      term.prev
     end
 
     def current_term
-      hashed_adjacent_terms[:current_term]
+      term
     end
 
     def group_data
@@ -127,18 +127,6 @@ module Page
 
     def popolo
       @popolo ||= house.popolo
-    end
-
-    def hashed_adjacent_terms
-      (@prev_term, @current_term, @next_term) = adjacent_terms
-      { next_term: @next_term, current_term: @current_term, prev_term: @prev_term }
-    end
-
-    def adjacent_terms
-      [nil, terms, nil]
-        .flatten
-        .each_cons(3)
-        .find { |_before, current, _after| current.slug == term_id }
     end
 
     def memberships_at_end_of_current_term
