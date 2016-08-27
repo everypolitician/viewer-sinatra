@@ -69,13 +69,10 @@ module Page
           memberships: person_memberships(person),
           social:      social_card(person),
           bio:         bio_card(person),
-          contacts:    [],
+          contacts:    contacts_card(person),
           identifiers: [],
         }
 
-        p[:contacts] << { type: 'Email', value: person.email, link: "mailto:#{person.email}" } if person.email
-        p[:contacts] << { type: 'Phone', value: person.phone } if person.phone
-        p[:contacts] << { type: 'Fax', value: person.fax } if person.fax
 
         top_identifiers.each do |scheme|
           id = person.identifiers.find { |i| i[:scheme] == scheme }
@@ -189,6 +186,14 @@ module Page
       bio << { type: 'Prefix', value: person.honorific_prefix } if person.honorific_prefix
       bio << { type: 'Suffix', value: person.honorific_suffix } if person.honorific_suffix
       bio
+    end
+
+    def contacts_card(person)
+      contacts = []
+      contacts << { type: 'Email', value: person.email, link: "mailto:#{person.email}" } if person.email
+      contacts << { type: 'Phone', value: person.phone } if person.phone
+      contacts << { type: 'Fax', value: person.fax } if person.fax
+      contacts
     end
   end
 end
