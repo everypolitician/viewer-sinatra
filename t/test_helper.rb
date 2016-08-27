@@ -17,10 +17,18 @@ module Minitest
       Sinatra::Application
     end
 
+    def stub_json(url, file = nil)
+      stub_request(:get, url)
+        .to_return(
+          body:    file ? File.read("t/fixtures/#{file}.json") : '{}',
+          headers: { 'Content-Type' => 'application/json' }
+        )
+    end
+
     before do
       cj_file = %r{#{cdn}/#{ep_repo}/\w+/countries.json}
       fixture = Pathname.new('t/fixtures/d8a4682f-countries.json')
-      WebMock.stub_request(:get, cj_file) .to_return(body: fixture.read)
+      stub_request(:get, cj_file).to_return(body: fixture.read)
     end
 
     def index_at_known_sha
@@ -32,6 +40,15 @@ module Minitest
         .to_return(body: File.read("t/fixtures/everypolitician-data/#{path}"))
     rescue Errno::ENOENT => error
       raise "#{error.message}\n\nTo download this fixture run the following\n\n\tbundle exec rake 'everypolitician-data[#{path}]'\n"
+    end
+
+    def stub_github_api
+      stub_json(
+        'https://api.github.com/repos/everypolitician/everypolitician-data/issues?labels=New%20Country,To%20Find&per_page=100',
+        'github-issues-to-find'
+      )
+      stub_json('https://api.github.com/repos/everypolitician/everypolitician-data/issues?labels=New%20Country,To%20Scrape&per_page=100')
+      stub_json('https://api.github.com/repos/everypolitician/everypolitician-data/issues?labels=New%20Country,3%20-%20WIP&per_page=100')
     end
 
     private
