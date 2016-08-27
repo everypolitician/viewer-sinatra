@@ -1,0 +1,68 @@
+---
+DuplicateMethodCall:
+  exclude:
+  - EveryPolitician::LegislativePeriodExtension#memberships_at_end
+  - Page::TermTable#group_data
+  - Page::TermTable#people
+  - Page::TermTable#percentages
+  - Page::TermTable#person_memberships
+  - Page::TermTable#top_identifiers
+FeatureEnvy:
+  exclude:
+  - EveryPolitician::LegislatureExtension#term
+  - Page::TermTable#people
+  - Page::TermTable#person_memberships
+IrresponsibleModule:
+  exclude:
+  - EveryPolitician::CountryExtension
+  - EveryPolitician::LegislativePeriodExtension
+  - EveryPolitician::LegislatureExtension
+  - Page::Countries
+  - Page::Country
+  - Page::Download
+  - Page::Home
+  - Page::HouseWikidata
+  - Page::MissingCountry
+  - Page::Needed
+  - Page::SpiderBase
+  - Page::TermTable
+  - Popolo::Helper
+  - World
+  - Minitest::Spec
+TooManyStatements:
+  exclude:
+  - initialize
+  - EveryPolitician::LegislatureExtension#term
+  - Page::TermTable#group_data
+  - Page::TermTable#people
+UtilityFunction:
+  exclude:
+  - Page::SpiderBase#countries
+  - Popolo::Helper#commify
+  - Popolo::Helper#number_to_millions
+  - Popolo::Helper#term_table_url
+  - Popolo::Helper#wikidata_link
+InstanceVariableAssumption:
+  exclude:
+  - Page::TermTable
+NestedIterators:
+  exclude:
+  - Page::TermTable#people
+NilCheck:
+  exclude:
+  - Page::TermTable#people
+TooManyMethods:
+  exclude:
+  - Page::TermTable
+UncommunicativeVariableName:
+  exclude:
+  - Page::TermTable#area_lookup
+  - Page::TermTable#data_sources
+  - Page::TermTable#people
+  - Page::TermTable#people_for_current_term
+  - Page::TermTable#percentages
+  - Page::TermTable#top_identifiers
+UncommunicativeParameterName:
+  exclude:
+  - Popolo::Helper#term_table_url
+  - Popolo::Helper#wikidata_link

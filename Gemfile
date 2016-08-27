@@ -10,18 +10,23 @@ gem 'iso_country_codes'
 gem 'json'
 gem 'nokogiri', '>= 1.6.7'
 gem 'octokit'
-gem 'pry'
 gem 'puma'
-gem 'rack-test'
 gem 'rake'
 gem 'redcarpet'
 gem 'require_all'
-gem 'rubocop'
 gem 'sass'
 gem 'sinatra', github: 'sinatra/sinatra'
 gem 'yajl-ruby', require: 'yajl'
 
 group :test do
   gem 'minitest'
+  gem 'pry'
+  gem 'rack-test'
   gem 'webmock'
+end
+
+group :quality do
+  gem 'flog'
+  gem 'reek'
+  gem 'rubocop'
 end

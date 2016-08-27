@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 require 'rake/testtask'
 require 'rubocop/rake_task'
+require 'reek/rake/task'
 
 Rake::TestTask.new do |t|
   t.warning = true
@@ -27,6 +28,12 @@ Rake::TestTask.new do |t|
 end
 
 RuboCop::RakeTask.new
+
+Reek::Rake::Task.new do |t|
+  t.source_files = FileList['**/*.rb']
+  t.verbose = false
+  t.fail_on_error = true
+end
 
 task 'everypolitician-data', [:path] do |_, args|
   fixture_path = Pathname.new(File.join('t/fixtures/everypolitician-data', args[:path]))
