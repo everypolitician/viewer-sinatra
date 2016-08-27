@@ -78,11 +78,12 @@ module Page
     end
 
     def percentages
+      pc = ->(card) { ((people.count { |p| p[card].any? } / people.count.to_f) * 100).floor }
       {
-        social:      ((people.count { |p| p[:social].any? } / people.count.to_f) * 100).floor,
-        bio:         ((people.count { |p| p[:bio].any? } / people.count.to_f) * 100).floor,
-        contacts:    ((people.count { |p| p[:contacts].any? } / people.count.to_f) * 100).floor,
-        identifiers: ((people.count { |p| p[:identifiers].any? } / people.count.to_f) * 100).floor,
+        social:      pc.call(:social),
+        bio:         pc.call(:bio),
+        contacts:    pc.call(:contacts),
+        identifiers: pc.call(:identifiers),
       }
     end
 
