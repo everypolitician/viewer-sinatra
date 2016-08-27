@@ -67,20 +67,11 @@ module Page
           image:       person.image,
           proxy_image: image_proxy_url(person.id),
           memberships: person_memberships(person),
-          social:      [],
+          social:      social_card(person),
           bio:         [],
           contacts:    [],
           identifiers: [],
         }
-
-        if person.twitter
-          p[:social] << { type: 'Twitter', value: "@#{person.twitter}", link: "https://twitter.com/#{person.twitter}" }
-        end
-
-        if person.facebook
-          fb_username = URI.decode_www_form_component(person.facebook.split('/').last)
-          p[:social] << { type: 'Facebook', value: fb_username, link: "https://facebook.com/#{fb_username}" }
-        end
 
         p[:bio] << { type: 'Gender', value: person.gender } if person.gender
         p[:bio] << { type: 'Born', value: person.birth_date } if person.birth_date
@@ -177,6 +168,23 @@ module Page
 
     def people_for_current_term
       @pct ||= popolo.persons.select { |p| wanted.include?(p.id) }
+    end
+
+    # Cards for display. WIP: will be factored out elsewhere
+
+    def social_card(person)
+      social_data = []
+
+      if person.twitter
+        social_data << { type: 'Twitter', value: "@#{person.twitter}", link: "https://twitter.com/#{person.twitter}" }
+      end
+
+      if person.facebook
+        fb_username = URI.decode_www_form_component(person.facebook.split('/').last)
+        social_data << { type: 'Facebook', value: fb_username, link: "https://facebook.com/#{fb_username}" }
+      end
+
+      social_data
     end
   end
 end
