@@ -22,6 +22,11 @@ group :test do
   gem 'minitest'
   gem 'pry'
   gem 'rack-test'
-  gem 'rubocop'
   gem 'webmock'
+end
+
+group :quality do
+  gem 'flog'
+  gem 'reek'
+  gem 'rubocop'
 end
