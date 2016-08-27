@@ -68,16 +68,10 @@ module Page
           proxy_image: image_proxy_url(person.id),
           memberships: person_memberships(person),
           social:      social_card(person),
-          bio:         [],
+          bio:         bio_card(person),
           contacts:    [],
           identifiers: [],
         }
-
-        p[:bio] << { type: 'Gender', value: person.gender } if person.gender
-        p[:bio] << { type: 'Born', value: person.birth_date } if person.birth_date
-        p[:bio] << { type: 'Died', value: person.death_date } if person.death_date
-        p[:bio] << { type: 'Prefix', value: person.honorific_prefix } if person.honorific_prefix
-        p[:bio] << { type: 'Suffix', value: person.honorific_suffix } if person.honorific_suffix
 
         p[:contacts] << { type: 'Email', value: person.email, link: "mailto:#{person.email}" } if person.email
         p[:contacts] << { type: 'Phone', value: person.phone } if person.phone
@@ -185,6 +179,16 @@ module Page
       end
 
       social_data
+    end
+
+    def bio_card(person)
+      bio = []
+      bio << { type: 'Gender', value: person.gender } if person.gender
+      bio << { type: 'Born', value: person.birth_date } if person.birth_date
+      bio << { type: 'Died', value: person.death_date } if person.death_date
+      bio << { type: 'Prefix', value: person.honorific_prefix } if person.honorific_prefix
+      bio << { type: 'Suffix', value: person.honorific_suffix } if person.honorific_suffix
+      bio
     end
   end
 end
