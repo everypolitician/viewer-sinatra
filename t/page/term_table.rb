@@ -44,15 +44,16 @@ describe 'TermTable' do
 
     describe 'when calculating the group data' do
       it 'sends the right memberships' do
-        subject.group_data.must_equal [
-          { group_id: 'spÖ', name: 'SPÖ', member_count: 51 },
-          { group_id: 'Övp', name: 'ÖVP', member_count: 51 },
-          { group_id: 'fpÖ', name: 'FPÖ', member_count: 38 },
-          { group_id: 'grüne', name: 'Grüne', member_count: 24 },
-          { group_id: 'neos', name: 'NEOS', member_count: 9 },
-          { group_id: 'team_stronach', name: 'Team Stronach', member_count: 6 },
-          { group_id: 'ohne_(none)', name: 'ohne (none)', member_count: 3 },
-        ]
+        group_data = subject.group_data
+        group_data.count.must_equal 7
+
+        group_data.first.group_id.must_equal 'spÖ'
+        group_data.first.name.must_equal 'SPÖ'
+        group_data.first.member_count.must_equal 51
+
+        group_data.last.group_id.must_equal 'ohne_(none)'
+        group_data.last.name.must_equal 'ohne (none)'
+        group_data.last.member_count.must_equal 3
       end
 
       # TODO: it 'does not include group data if there is only a single group'

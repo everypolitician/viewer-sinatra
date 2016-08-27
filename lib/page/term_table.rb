@@ -41,19 +41,14 @@ module Page
       term
     end
 
+    SeatCount = Struct.new(:group_id, :name, :member_count)
     def group_data
       @group_data ||= term
                       .memberships_at_end
                       .group_by(&:on_behalf_of_id)
-                      .map     { |group_id, mems| [org_lookup[group_id], mems] }
+                      .map     { |group_id, mems| [org_lookup[group_id].first, mems] }
                       .sort_by { |group, mems| [-mems.count, group.name] }
-                      .map do    |group, mems|
-        {
-          group_id:     group.id.split('/').last,
-          name:         group.name,
-          member_count: mems.count,
-        }
-      end
+                      .map     { |group, mems| SeatCount.new(group.id.split('/').last, group.name, mems.count) }
 
       @group_data = [] if @group_data.length == 1
       @group_data
