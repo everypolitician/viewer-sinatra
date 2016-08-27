@@ -41,19 +41,14 @@ module Page
       term
     end
 
+    SeatCount = Struct.new(:group_id, :name, :member_count)
     def group_data
       @group_data ||= term
                       .memberships_at_end
                       .group_by(&:on_behalf_of_id)
-                      .map     { |group_id, mems| [org_lookup[group_id], mems] }
+                      .map     { |group_id, mems| [org_lookup[group_id].first, mems] }
                       .sort_by { |group, mems| [-mems.count, group.name] }
-                      .map do    |group, mems|
-        {
-          group_id:     group.id.split('/').last,
-          name:         group.name,
-          member_count: mems.count,
-        }
-      end
+                      .map     { |group, mems| SeatCount.new(group.id.split('/').last, group.name, mems.count) }
 
       @group_data = [] if @group_data.length == 1
       @group_data
@@ -95,10 +90,6 @@ module Page
       @popolo ||= house.popolo
     end
 
-    def wanted
-      @wanted ||= Set.new(current_term_memberships.map(&:person_id))
-    end
-
     def top_identifiers
       @tidx ||= people_for_current_term
                 .map(&:identifiers)
@@ -117,8 +108,8 @@ module Page
           start_date: mem.start_date,
           end_date:   mem.end_date,
         }
-        membership[:group] = org_lookup[mem.on_behalf_of_id].name if mem.on_behalf_of_id
-        membership[:area]  = area_lookup[mem.area_id].name if mem.area_id
+        membership[:group] = org_lookup[mem.on_behalf_of_id].first.name if mem.on_behalf_of_id
+        membership[:area]  = area_lookup[mem.area_id].first.name if mem.area_id
         membership
       end
     end
@@ -134,19 +125,23 @@ module Page
     end
 
     def area_lookup
-      @area_lookup ||= Hash[popolo.areas.map { |a| [a.id, a] }]
+      @area_lookup ||= popolo.areas.group_by(&:id)
     end
 
     def org_lookup
-      @org_lookup ||= Hash[popolo.organizations.map { |org| [org.id, org] }]
+      @org_lookup ||= popolo.organizations.group_by(&:id)
     end
 
     def current_term_memberships
       @ctm ||= term.memberships
     end
 
+    def current_term_people_ids
+      @ctpids ||= Set.new(current_term_memberships.map(&:person_id))
+    end
+
     def people_for_current_term
-      @pct ||= popolo.persons.select { |p| wanted.include?(p.id) }
+      @pct ||= popolo.persons.select { |p| current_term_people_ids.include?(p.id) }
     end
 
     # Cards for display. WIP: will be factored out elsewhere

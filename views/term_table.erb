@@ -50,10 +50,10 @@
             </div>
             <ul class="grid-list grid-list--vertically-center">
               <% @page.group_data.each do |party| %>
-                <li id="party-<%= party[:group_id] %>"><div class="avatar-unit">
+                <li id="party-<%= party.group_id %>"><div class="avatar-unit">
                     <span class="avatar"><i class="fa fa-users"></i></span>
-                    <h3><%= party[:name].to_s.empty? ? 'Independent' : party[:name] %></h3>
-                    <p><span class="seatcount"><%= party[:member_count] %></span> seat<% if party[:member_count] > 1 %>s<% end %></p>
+                    <h3><%= party.name.to_s.empty? ? 'Independent' : party.name %></h3>
+                    <p><span class="seatcount"><%= party.member_count %></span> seat<% if party.member_count > 1 %>s<% end %></p>
                 </div></li>
               <% end %>
             </ul>
