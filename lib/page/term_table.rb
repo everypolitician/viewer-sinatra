@@ -30,19 +30,20 @@ module Page
     end
 
     def next_term
-      hashed_adjacent_terms[:prev_term]
+      term.next
     end
 
     def prev_term
-      hashed_adjacent_terms[:next_term]
+      term.prev
     end
 
     def current_term
-      hashed_adjacent_terms[:current_term]
+      term
     end
 
     def group_data
-      @group_data ||= memberships_at_end_of_current_term
+      @group_data ||= term
+                      .memberships_at_end
                       .group_by(&:on_behalf_of_id)
                       .map     { |group_id, mems| [org_lookup[group_id], mems] }
                       .sort_by { |group, mems| [-mems.count, group.name] }
@@ -121,30 +122,8 @@ module Page
 
     attr_reader :term
 
-    def term_id
-      term.id.split('/').last
-    end
-
     def popolo
       @popolo ||= house.popolo
-    end
-
-    def hashed_adjacent_terms
-      (@prev_term, @current_term, @next_term) = adjacent_terms
-      { next_term: @next_term, current_term: @current_term, prev_term: @prev_term }
-    end
-
-    def adjacent_terms
-      [nil, terms, nil]
-        .flatten
-        .each_cons(3)
-        .find { |_before, current, _after| current.slug == term_id }
-    end
-
-    def memberships_at_end_of_current_term
-      @maeoct ||= current_term_memberships.select do |mem|
-        mem.end_date.to_s.empty? || mem.end_date == current_term[:end_date]
-      end
     end
 
     def wanted
@@ -194,9 +173,7 @@ module Page
     end
 
     def current_term_memberships
-      @current_term_memberships ||= popolo.memberships.select do |mem|
-        mem.legislative_period_id.split('/').last == term_id
-      end
+      @ctm ||= term.memberships
     end
 
     def people_for_current_term

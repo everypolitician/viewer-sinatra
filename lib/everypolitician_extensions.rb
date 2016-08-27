@@ -13,8 +13,26 @@ module EveryPolitician
   module LegislatureExtension
     # UK.legislature('Commons').term(65)
     def term(termid)
-      legislative_periods.find do |t|
-        t.id.split('/').last == termid.to_s
+      after, current, before = [nil, legislative_periods, nil]
+                               .flatten
+                               .each_cons(3)
+                               .find do |_, term, _|
+        term.id.split('/').last == termid.to_s
+      end
+      current.define_singleton_method(:prev) { before }
+      current.define_singleton_method(:next) { after }
+      current
+    end
+  end
+
+  module LegislativePeriodExtension
+    def memberships
+      @m ||= legislature.popolo.memberships.select { |m| m.legislative_period_id == id }
+    end
+
+    def memberships_at_end
+      memberships.select do |mem|
+        mem.end_date.to_s.empty? || mem.end_date == end_date
       end
     end
   end
@@ -22,3 +40,4 @@ end
 
 EveryPolitician::Country.include EveryPolitician::CountryExtension
 EveryPolitician::Legislature.include EveryPolitician::LegislatureExtension
+EveryPolitician::LegislativePeriod.include EveryPolitician::LegislativePeriodExtension
