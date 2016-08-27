@@ -42,7 +42,8 @@ module Page
     end
 
     def group_data
-      @group_data ||= memberships_at_end_of_current_term
+      @group_data ||= term
+                      .memberships_at_end
                       .group_by(&:on_behalf_of_id)
                       .map     { |group_id, mems| [org_lookup[group_id], mems] }
                       .sort_by { |group, mems| [-mems.count, group.name] }
@@ -123,12 +124,6 @@ module Page
 
     def popolo
       @popolo ||= house.popolo
-    end
-
-    def memberships_at_end_of_current_term
-      @maeoct ||= current_term_memberships.select do |mem|
-        mem.end_date.to_s.empty? || mem.end_date == current_term[:end_date]
-      end
     end
 
     def wanted
