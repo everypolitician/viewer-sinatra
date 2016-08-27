@@ -8,13 +8,7 @@ module Page
     end
 
     def countries
-      world.countries
-    end
-
-    private
-
-    def world
-      World.new
+      World.new.countries
     end
   end
 end
