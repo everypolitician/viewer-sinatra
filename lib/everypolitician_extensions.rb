@@ -24,7 +24,14 @@ module EveryPolitician
       current
     end
   end
+
+  module LegislativePeriodExtension
+    def memberships
+      legislature.popolo.memberships.select { |m| m.legislative_period_id == id }
+    end
+  end
 end
 
 EveryPolitician::Country.include EveryPolitician::CountryExtension
 EveryPolitician::Legislature.include EveryPolitician::LegislatureExtension
+EveryPolitician::LegislativePeriod.include EveryPolitician::LegislativePeriodExtension
