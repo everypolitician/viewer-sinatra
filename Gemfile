@@ -23,6 +23,7 @@ group :test do
   gem 'pry'
   gem 'rack-test'
   gem 'webmock'
+  gem 'bundler-audit'
 end
 
 group :quality do
