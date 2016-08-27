@@ -121,10 +121,6 @@ module Page
 
     attr_reader :term
 
-    def term_id
-      term.id.split('/').last
-    end
-
     def popolo
       @popolo ||= house.popolo
     end
@@ -182,9 +178,7 @@ module Page
     end
 
     def current_term_memberships
-      @current_term_memberships ||= popolo.memberships.select do |mem|
-        mem.legislative_period_id.split('/').last == term_id
-      end
+      @ctm ||= term.memberships
     end
 
     def people_for_current_term
