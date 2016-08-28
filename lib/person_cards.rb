@@ -7,13 +7,17 @@ module PersonCard
       @extras = extras
     end
 
+    def data
+      info
+    end
+
     private
 
     attr_reader :person, :extras
   end
 
   class Social < Base
-    def data
+    def info
       social_data = []
 
       if person.twitter
@@ -30,7 +34,7 @@ module PersonCard
   end
 
   class Contacts < Base
-    def data
+    def info
       contacts = []
       contacts << { type: 'Email', value: person.email, link: "mailto:#{person.email}" } if person.email
       contacts << { type: 'Phone', value: person.phone } if person.phone
@@ -40,7 +44,7 @@ module PersonCard
   end
 
   class Bio < Base
-    def data
+    def info
       bio = []
       bio << { type: 'Gender', value: person.gender } if person.gender
       bio << { type: 'Born', value: person.birth_date } if person.birth_date
@@ -52,7 +56,7 @@ module PersonCard
   end
 
   class Identifiers < Base
-    def data
+    def info
       identifiers = []
       extras[:top_identifiers].each do |scheme|
         id = person.identifiers.find { |i| i[:scheme] == scheme }
