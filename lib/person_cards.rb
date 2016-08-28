@@ -23,18 +23,10 @@ module PersonCard
 
   class Social < Base
     def info
-      social_data = []
-
-      if person.twitter
-        social_data << { type: 'Twitter', value: "@#{person.twitter}", link: "https://twitter.com/#{person.twitter}" }
-      end
-
-      if person.facebook
-        fb_username = URI.decode_www_form_component(person.facebook.split('/').last)
-        social_data << { type: 'Facebook', value: fb_username, link: "https://facebook.com/#{fb_username}" }
-      end
-
-      social_data
+      [
+        { type: 'Twitter', value: person.twitter, display: "@#{person.twitter}", link: "https://twitter.com/#{person.twitter}" },
+        { type: 'Facebook', value: person.facebook, display: person.facebook.to_s.split('/').last, link: person.facebook },
+      ]
     end
   end
 
