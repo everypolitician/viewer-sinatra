@@ -151,14 +151,14 @@
                           <% person.memberships.each do |mem| %>
                             <p class="person-card__politics">
 
-                              <%= [mem[:group].to_s, mem[:area].to_s].reject { |s| s.empty? || s.downcase == 'unknown' }.join(" — ") %>
+                              <%= [mem.group, mem.area].reject(&:empty?).join(" — ") %>
 
-                              <% if !mem[:start_date].to_s.empty? and !mem[:end_date].to_s.empty? %>
-                                <span class="person-card__politics__date">(<%= mem[:start_date].to_s %> to <%= mem[:end_date].to_s %>)</span>
-                              <% elsif !mem[:start_date].to_s.empty? %>
-                                <span class="person-card__politics__date">(from <%= mem[:start_date].to_s %>)</span>
-                              <% elsif !mem[:end_date].to_s.empty? %>
-                                <span class="person-card__politics__date">(until <%= mem[:end_date].to_s %>)</span>
+                              <% if mem.start_date && mem.end_date %>
+                                <span class="person-card__politics__date">(<%= mem.start_date.to_s %> to <%= mem.end_date.to_s %>)</span>
+                              <% elsif mem.start_date %>
+                                <span class="person-card__politics__date">(from <%= mem.start_date.to_s %>)</span>
+                              <% elsif mem.end_date %>
+                                <span class="person-card__politics__date">(until <%= mem.end_date.to_s %>)</span>
                               <% end %>
                             </p>
                           <% end %>

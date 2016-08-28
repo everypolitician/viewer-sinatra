@@ -78,10 +78,10 @@ describe 'TermTable' do
 
       it 'has a single membership' do
         af.memberships.count.must_equal 1
-        af.memberships.first[:start_date].must_equal '2013-10-29'
-        af.memberships.first[:end_date].must_equal nil
-        af.memberships.first[:group].must_equal 'ÖVP'
-        af.memberships.first[:area].must_equal 'Wahlkreis: 3B – Waldviertel'
+        af.memberships.first.start_date.must_equal '2013-10-29'
+        af.memberships.first.end_date.must_equal nil
+        af.memberships.first.group.must_equal 'ÖVP'
+        af.memberships.first.area.must_equal 'Wahlkreis: 3B – Waldviertel'
       end
 
       it 'has two entries on bio card' do
