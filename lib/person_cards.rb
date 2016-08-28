@@ -12,8 +12,6 @@ module PersonCard
     def data
       info.reject { |i| i[:value].to_s.empty? }.map do |i|
         CardLine.new(i[:type], i[:display] || i[:value], i[:link])
-                .to_h
-                .reject { |_, v| v.to_s.empty? }
       end
     end
 
