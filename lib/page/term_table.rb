@@ -159,19 +159,7 @@ module Page
     end
 
     def identifiers_card(person)
-      identifiers = []
-      top_identifiers.each do |scheme|
-        id = person.identifiers.find { |i| i[:scheme] == scheme }
-        next if id.nil?
-        identifier = { type: id[:scheme], value: id[:identifier] }
-        if identifier[:type] == 'wikidata'
-          identifier[:link] = "https://www.wikidata.org/wiki/#{id[:identifier]}"
-        elsif identifier[:type] == 'viaf'
-          identifier[:link] = "https://viaf.org/viaf/#{id[:identifier]}/"
-        end
-        identifiers << identifier
-      end
-      identifiers
+      IdentifiersCard.new(person).data(top_identifiers)
     end
   end
 end
@@ -224,3 +212,22 @@ class BioCard < PersonCard
     bio
   end
 end
+
+class IdentifiersCard < PersonCard
+  def data(top_identifiers)
+    identifiers = []
+    top_identifiers.each do |scheme|
+      id = person.identifiers.find { |i| i[:scheme] == scheme }
+      next if id.nil?
+      identifier = { type: id[:scheme], value: id[:identifier] }
+      if identifier[:type] == 'wikidata'
+        identifier[:link] = "https://www.wikidata.org/wiki/#{id[:identifier]}"
+      elsif identifier[:type] == 'viaf'
+        identifier[:link] = "https://viaf.org/viaf/#{id[:identifier]}/"
+      end
+      identifiers << identifier
+    end
+    identifiers
+  end
+end
+
