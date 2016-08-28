@@ -35,11 +35,11 @@ module PersonCard
 
   class Contacts < Base
     def info
-      contacts = []
-      contacts << { type: 'Email', value: person.email, link: "mailto:#{person.email}" } if person.email
-      contacts << { type: 'Phone', value: person.phone } if person.phone
-      contacts << { type: 'Fax', value: person.fax } if person.fax
-      contacts
+      [
+        { type: 'Email', value: person.email, link: "mailto:#{person.email}" },
+        { type: 'Phone', value: person.phone },
+        { type: 'Fax', value: person.fax },
+      ].reject { |i| i[:value].to_s.empty? }
     end
   end
 
