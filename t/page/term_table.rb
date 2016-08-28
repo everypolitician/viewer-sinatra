@@ -72,9 +72,8 @@ describe 'TermTable' do
       end
 
       it 'has the correct proxy image' do
-        af[:proxy_image].must_equal
-        'https://mysociety.github.io/politician-image-proxy/' \
-        'Austria/Nationalrat/2e8b774e-ae66-4137-a984-aac74917df87/140x140.jpeg'
+        af[:proxy_image].must_equal 'https://mysociety.github.io/politician-image-proxy/' \
+          'Austria/Nationalrat/2e8b774e-ae66-4137-a984-aac74917df87/140x140.jpeg'
       end
 
       it 'has a single membership' do
