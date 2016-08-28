@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 module PersonCard
+
+  CardLine = Struct.new(:type, :value, :link)
+
   class Base
     def initialize(person, extras={})
       @person = person
@@ -8,7 +11,9 @@ module PersonCard
     end
 
     def data
-      info.reject { |i| i[:value].to_s.empty? }
+      info.reject { |i| i[:value].to_s.empty? }.map do |i|
+        CardLine.new(i[:type], i[:value], i[:link]).to_h.reject { |_, v| v.to_s.empty? }
+      end
     end
 
     private
@@ -73,7 +78,7 @@ module PersonCard
           type: scheme,
           value: id,
           link: link_for(scheme, id),
-        }.reject { |_, v| v.to_s.empty? }
+        }
       end
     end
   end
