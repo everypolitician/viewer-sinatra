@@ -56,15 +56,18 @@ module PersonCard
   end
 
   class Identifiers < Base
+    ID_MAP = {
+      wikidata: 'https://www.wikidata.org/wiki/%s',
+      viaf:     'https://viaf.org/viaf/%s',
+    }
+
     def info
       identifiers = []
       extras[:top_identifiers].each do |scheme|
         next unless id = person.identifier(scheme)
         identifier = { type: scheme, value: id }
-        if identifier[:type] == 'wikidata'
-          identifier[:link] = "https://www.wikidata.org/wiki/#{id}"
-        elsif identifier[:type] == 'viaf'
-          identifier[:link] = "https://viaf.org/viaf/#{id}/"
+        if template = ID_MAP[scheme.to_sym]
+          identifier[:link] = template % id
         end
         identifiers << identifier
       end
