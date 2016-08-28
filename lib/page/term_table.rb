@@ -57,7 +57,7 @@ module Page
 
     def people
       @people ||= people_for_current_term.sort_by(&:sort_name).map do |person|
-        PersonCard::Person.new(
+        PersonCard.new(
           person:          person,
           proxy_image:     image_proxy_url(person.id),
           memberships:     person_memberships(person),
