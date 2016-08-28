@@ -162,13 +162,7 @@ module Page
     end
 
     def bio_card(person)
-      bio = []
-      bio << { type: 'Gender', value: person.gender } if person.gender
-      bio << { type: 'Born', value: person.birth_date } if person.birth_date
-      bio << { type: 'Died', value: person.death_date } if person.death_date
-      bio << { type: 'Prefix', value: person.honorific_prefix } if person.honorific_prefix
-      bio << { type: 'Suffix', value: person.honorific_suffix } if person.honorific_suffix
-      bio
+      BioCard.new(person).data
     end
 
     def contacts_card(person)
@@ -204,6 +198,26 @@ class ContactsCard
     contacts << { type: 'Phone', value: person.phone } if person.phone
     contacts << { type: 'Fax', value: person.fax } if person.fax
     contacts
+  end
+
+  private
+
+  attr_reader :person
+end
+
+class BioCard
+  def initialize(person)
+    @person = person
+  end
+
+  def data
+    bio = []
+    bio << { type: 'Gender', value: person.gender } if person.gender
+    bio << { type: 'Born', value: person.birth_date } if person.birth_date
+    bio << { type: 'Died', value: person.death_date } if person.death_date
+    bio << { type: 'Prefix', value: person.honorific_prefix } if person.honorific_prefix
+    bio << { type: 'Suffix', value: person.honorific_suffix } if person.honorific_suffix
+    bio
   end
 
   private
