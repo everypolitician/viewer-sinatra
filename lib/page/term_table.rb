@@ -73,14 +73,11 @@ module Page
       end
     end
 
+    CARDS = %i(social bio contacts identifiers).freeze
+    Percentages = Struct.new(*CARDS)
     def percentages
       pc = ->(card) { ((people.count { |p| p[card].any? } / people.count.to_f) * 100).floor }
-      {
-        social:      pc.call(:social),
-        bio:         pc.call(:bio),
-        contacts:    pc.call(:contacts),
-        identifiers: pc.call(:identifiers),
-      }
+      Percentages.new(*CARDS.map { |card| pc.call(card) })
     end
 
     private
