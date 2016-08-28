@@ -2,13 +2,14 @@
 
 module PersonCard
   class Base
-    def initialize(person)
+    def initialize(person, extras={})
       @person = person
+      @extras = extras
     end
 
     private
 
-    attr_reader :person
+    attr_reader :person, :extras
   end
 
   class Social < Base
@@ -51,9 +52,9 @@ module PersonCard
   end
 
   class Identifiers < Base
-    def data(top_identifiers)
+    def data
       identifiers = []
-      top_identifiers.each do |scheme|
+      extras[:top_identifiers].each do |scheme|
         id = person.identifiers.find { |i| i[:scheme] == scheme }
         next if id.nil?
         identifier = { type: id[:scheme], value: id[:identifier] }

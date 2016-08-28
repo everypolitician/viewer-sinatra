@@ -66,7 +66,7 @@ module Page
           social:      PersonCard::Social.new(person).data,
           bio:         PersonCard::Bio.new(person).data,
           contacts:    PersonCard::Contacts.new(person).data,
-          identifiers: PersonCard::Identifiers.new(person).data(top_identifiers),
+          identifiers: PersonCard::Identifiers.new(person, top_identifiers: top_identifiers).data,
         }
 
         p
