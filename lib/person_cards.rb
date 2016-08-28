@@ -59,13 +59,12 @@ module PersonCard
     def info
       identifiers = []
       extras[:top_identifiers].each do |scheme|
-        id = person.identifiers.find { |i| i[:scheme] == scheme }
-        next if id.nil?
-        identifier = { type: id[:scheme], value: id[:identifier] }
+        next unless id = person.identifier(scheme)
+        identifier = { type: scheme, value: id }
         if identifier[:type] == 'wikidata'
-          identifier[:link] = "https://www.wikidata.org/wiki/#{id[:identifier]}"
+          identifier[:link] = "https://www.wikidata.org/wiki/#{id}"
         elsif identifier[:type] == 'viaf'
-          identifier[:link] = "https://viaf.org/viaf/#{id[:identifier]}/"
+          identifier[:link] = "https://viaf.org/viaf/#{id}/"
         end
         identifiers << identifier
       end
