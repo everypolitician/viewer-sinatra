@@ -147,18 +147,7 @@ module Page
     # Cards for display. WIP: will be factored out elsewhere
 
     def social_card(person)
-      social_data = []
-
-      if person.twitter
-        social_data << { type: 'Twitter', value: "@#{person.twitter}", link: "https://twitter.com/#{person.twitter}" }
-      end
-
-      if person.facebook
-        fb_username = URI.decode_www_form_component(person.facebook.split('/').last)
-        social_data << { type: 'Facebook', value: fb_username, link: "https://facebook.com/#{fb_username}" }
-      end
-
-      social_data
+      SocialCard.new(person).data
     end
 
     def bio_card(person)
@@ -195,6 +184,23 @@ class PersonCard
   private
 
   attr_reader :person
+end
+
+class SocialCard < PersonCard
+  def data
+    social_data = []
+
+    if person.twitter
+      social_data << { type: 'Twitter', value: "@#{person.twitter}", link: "https://twitter.com/#{person.twitter}" }
+    end
+
+    if person.facebook
+      fb_username = URI.decode_www_form_component(person.facebook.split('/').last)
+      social_data << { type: 'Facebook', value: fb_username, link: "https://facebook.com/#{fb_username}" }
+    end
+
+    social_data
+  end
 end
 
 class ContactsCard < PersonCard
