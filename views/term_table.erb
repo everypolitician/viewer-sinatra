@@ -164,69 +164,24 @@
                           <% end %>
                         </div>
 
-                        <% if person[:bio].any? %>
-                          <div class="person-card__section person-card__section--bio">
-                              <table>
-                                <% person[:bio].each do |bio| %>
-                                  <tr>
-                                      <th><%= bio[:type] %></th>
-                                      <td><%= bio[:value] %></td>
-                                  </tr>
-                                <% end %>
-                              </table>
+                        <% %i(bio social contacts identifiers).select { |s| person[s].any? }.each do |section| %>
+                          <div class="person-card__section person-card__section--<%= section %>">
+                            <table>
+                              <% person[section].each do |entry| %>
+                                <tr title="<%= entry[:value] %>">
+                                    <th><%= entry[:type] %></th>
+                                    <td>
+                                      <% if entry[:link] %>
+                                        <a href="<%= entry[:link] %>"><%= entry[:value] %></a>
+                                      <% else %>
+                                        <%= entry[:value] %>
+                                      <% end %>
+                                    </td>
+                                </tr>
+                              <% end %>
+                            </table>
                           </div>
                         <% end %>
-
-                      <% if person[:social].any? %>
-                        <div class="person-card__section person-card__section--social">
-                            <table>
-                              <% person[:social].each do |social| %>
-                                <tr>
-                                    <th><%= social[:type] %></th>
-                                    <td><a href="<%= social[:link] %>"><%= social[:value] %></a></td>
-                                </tr>
-                              <% end %>
-                            </table>
-                        </div>
-                      <% end %>
-
-                      <% if person[:contacts].any? %>
-                        <div class="person-card__section person-card__section--contacts">
-                            <table>
-                              <% person[:contacts].each do |contact| %>
-                                <tr>
-                                    <th><%= contact[:type] %></th>
-                                    <td>
-                                      <% if contact[:link] %>
-                                        <a href="<%= contact[:link] %>"><%= contact[:value] %></a>
-                                      <% else %>
-                                        <%= contact[:value] %>
-                                      <% end %>
-                                    </td>
-                                </tr>
-                              <% end %>
-                            </table>
-                        </div>
-                      <% end %>
-
-                      <% if person[:identifiers].any? %>
-                        <div class="person-card__section person-card__section--identifiers">
-                            <table>
-                              <% person[:identifiers].each do |identifier| %>
-                                <tr title="<%= identifier[:value] %>">
-                                    <th><%= identifier[:type] %></th>
-                                    <td>
-                                      <% if identifier[:link] %>
-                                        <a href="<%= identifier[:link] %>"><%= identifier[:value] %></a>
-                                      <% else %>
-                                        <%= identifier[:value] %>
-                                      <% end %>
-                                    </td>
-                                </tr>
-                              <% end %>
-                            </table>
-                        </div>
-                      <% end %>
 
                     </div>
                 </div>
