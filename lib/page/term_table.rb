@@ -172,11 +172,7 @@ module Page
     end
 
     def contacts_card(person)
-      contacts = []
-      contacts << { type: 'Email', value: person.email, link: "mailto:#{person.email}" } if person.email
-      contacts << { type: 'Phone', value: person.phone } if person.phone
-      contacts << { type: 'Fax', value: person.fax } if person.fax
-      contacts
+      ContactsCard.new(person).data
     end
 
     def identifiers_card(person)
@@ -196,3 +192,22 @@ module Page
     end
   end
 end
+
+class ContactsCard
+  def initialize(person)
+    @person = person
+  end
+
+  def data
+    contacts = []
+    contacts << { type: 'Email', value: person.email, link: "mailto:#{person.email}" } if person.email
+    contacts << { type: 'Phone', value: person.phone } if person.phone
+    contacts << { type: 'Fax', value: person.fax } if person.fax
+    contacts
+  end
+
+  private
+
+  attr_reader :person
+end
+
