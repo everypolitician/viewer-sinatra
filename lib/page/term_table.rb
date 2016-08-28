@@ -62,10 +62,10 @@ module Page
           image:       person.image,
           proxy_image: image_proxy_url(person.id),
           memberships: person_memberships(person),
-          social:      social_card(person),
-          bio:         bio_card(person),
-          contacts:    contacts_card(person),
-          identifiers: identifiers_card(person),
+          social:      SocialCard.new(person).data,
+          bio:         BioCard.new(person).data,
+          contacts:    ContactsCard.new(person).data,
+          identifiers: IdentifiersCard.new(person).data(top_identifiers),
         }
 
         p
@@ -143,24 +143,6 @@ module Page
     def people_for_current_term
       @pct ||= popolo.persons.select { |p| current_term_people_ids.include?(p.id) }
     end
-
-    # Cards for display. WIP: will be factored out elsewhere
-
-    def social_card(person)
-      SocialCard.new(person).data
-    end
-
-    def bio_card(person)
-      BioCard.new(person).data
-    end
-
-    def contacts_card(person)
-      ContactsCard.new(person).data
-    end
-
-    def identifiers_card(person)
-      IdentifiersCard.new(person).data(top_identifiers)
-    end
   end
 end
 
@@ -230,4 +212,3 @@ class IdentifiersCard < PersonCard
     identifiers
   end
 end
-
