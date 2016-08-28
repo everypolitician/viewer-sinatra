@@ -8,7 +8,7 @@ module PersonCard
     end
 
     def data
-      info
+      info.reject { |i| i[:value].to_s.empty? }
     end
 
     private
@@ -39,7 +39,7 @@ module PersonCard
         { type: 'Email', value: person.email, link: "mailto:#{person.email}" },
         { type: 'Phone', value: person.phone },
         { type: 'Fax', value: person.fax },
-      ].reject { |i| i[:value].to_s.empty? }
+      ]
     end
   end
 
@@ -51,8 +51,8 @@ module PersonCard
         { type: 'Died', value: person.death_date },
         { type: 'Prefix', value: person.honorific_prefix },
         { type: 'Suffix', value: person.honorific_suffix },
-      ].reject { |i| i[:value].to_s.empty? }
-     end
+      ]
+    end
   end
 
   class Identifiers < Base
