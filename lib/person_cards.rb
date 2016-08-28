@@ -45,14 +45,14 @@ module PersonCard
 
   class Bio < Base
     def info
-      bio = []
-      bio << { type: 'Gender', value: person.gender } if person.gender
-      bio << { type: 'Born', value: person.birth_date } if person.birth_date
-      bio << { type: 'Died', value: person.death_date } if person.death_date
-      bio << { type: 'Prefix', value: person.honorific_prefix } if person.honorific_prefix
-      bio << { type: 'Suffix', value: person.honorific_suffix } if person.honorific_suffix
-      bio
-    end
+      [
+        { type: 'Gender', value: person.gender },
+        { type: 'Born', value: person.birth_date },
+        { type: 'Died', value: person.death_date },
+        { type: 'Prefix', value: person.honorific_prefix },
+        { type: 'Suffix', value: person.honorific_suffix },
+      ].reject { |i| i[:value].to_s.empty? }
+     end
   end
 
   class Identifiers < Base
