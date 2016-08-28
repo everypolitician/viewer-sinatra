@@ -94,14 +94,12 @@ module Page
     end
 
     def person_memberships(person)
-      membership_lookup[person.id].map do |mem|
-        membership = {
-          start_date: mem.start_date,
-          end_date:   mem.end_date,
-        }
-        membership[:group] = org_lookup[mem.on_behalf_of_id].first.name if mem.on_behalf_of_id
-        membership[:area]  = area_lookup[mem.area_id].first.name if mem.area_id
-        membership
+      membership_lookup[person.id].each do |mem|
+        group = org_lookup[mem.on_behalf_of_id].first.name if mem.on_behalf_of_id
+        group = '' if group.to_s.downcase == 'unknown'
+        area = area_lookup[mem.area_id].first.name if mem.area_id
+        mem.define_singleton_method(:group) { group || '' }
+        mem.define_singleton_method(:area)  { area  || '' }
       end
     end
 
