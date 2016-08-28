@@ -57,26 +57,19 @@ module Page
 
     def people
       @people ||= people_for_current_term.sort_by(&:sort_name).map do |person|
-        p = {
-          id:          person.id,
-          name:        person.name,
-          image:       person.image,
-          proxy_image: image_proxy_url(person.id),
-          memberships: person_memberships(person),
-          social:      PersonCard::Social.new(person).data,
-          bio:         PersonCard::Bio.new(person).data,
-          contacts:    PersonCard::Contacts.new(person).data,
-          identifiers: PersonCard::Identifiers.new(person, top_identifiers: top_identifiers).data,
-        }
-
-        p
+        PersonCard::Person.new(
+          person:          person,
+          proxy_image:     image_proxy_url(person.id),
+          memberships:     person_memberships(person),
+          top_identifiers: top_identifiers
+        )
       end
     end
 
     CARDS = %i(social bio contacts identifiers).freeze
     Percentages = Struct.new(*CARDS)
     def percentages
-      pc = ->(card) { ((people.count { |p| p[card].any? } / people.count.to_f) * 100).floor }
+      pc = ->(card) { ((people.count { |p| p.send(card.to_s).any? } / people.count.to_f) * 100).floor }
       Percentages.new(*CARDS.map { |card| pc.call(card) })
     end
 

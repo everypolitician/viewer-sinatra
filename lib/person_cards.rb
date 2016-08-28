@@ -1,6 +1,50 @@
 # frozen_string_literal: true
 
 module PersonCard
+  class Person
+    attr_reader :proxy_image, :memberships
+
+    # TODO: pass fewer arguments!
+    def initialize(person:, proxy_image:, memberships:, top_identifiers:)
+      @person          = person
+      @memberships     = memberships # should be able to get from Person
+      @proxy_image     = proxy_image # get from Legislature
+      @top_identifiers = top_identifiers # get from Legislature
+    end
+
+    def id
+      person.id
+    end
+
+    def name
+      person.name
+    end
+
+    def image
+      person.image
+    end
+
+    def social
+      Social.new(person).data
+    end
+
+    def bio
+      Bio.new(person).data
+    end
+
+    def contacts
+      Contacts.new(person).data
+    end
+
+    def identifiers
+      Identifiers.new(person, top_identifiers: top_identifiers).data
+    end
+
+    private
+
+    attr_reader :person, :top_identifiers
+  end
+
   CardLine = Struct.new(:type, :value, :link)
 
   class Base
