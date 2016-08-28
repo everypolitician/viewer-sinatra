@@ -187,17 +187,9 @@ module Page
   end
 end
 
-class ContactsCard
+class PersonCard
   def initialize(person)
     @person = person
-  end
-
-  def data
-    contacts = []
-    contacts << { type: 'Email', value: person.email, link: "mailto:#{person.email}" } if person.email
-    contacts << { type: 'Phone', value: person.phone } if person.phone
-    contacts << { type: 'Fax', value: person.fax } if person.fax
-    contacts
   end
 
   private
@@ -205,11 +197,17 @@ class ContactsCard
   attr_reader :person
 end
 
-class BioCard
-  def initialize(person)
-    @person = person
+class ContactsCard < PersonCard
+  def data
+    contacts = []
+    contacts << { type: 'Email', value: person.email, link: "mailto:#{person.email}" } if person.email
+    contacts << { type: 'Phone', value: person.phone } if person.phone
+    contacts << { type: 'Fax', value: person.fax } if person.fax
+    contacts
   end
+end
 
+class BioCard < PersonCard
   def data
     bio = []
     bio << { type: 'Gender', value: person.gender } if person.gender
@@ -219,9 +217,4 @@ class BioCard
     bio << { type: 'Suffix', value: person.honorific_suffix } if person.honorific_suffix
     bio
   end
-
-  private
-
-  attr_reader :person
 end
-
