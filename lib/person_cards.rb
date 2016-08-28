@@ -1,18 +1,19 @@
 # frozen_string_literal: true
 
 module PersonCard
-
   CardLine = Struct.new(:type, :value, :link)
 
   class Base
-    def initialize(person, extras={})
+    def initialize(person, extras = {})
       @person = person
       @extras = extras
     end
 
     def data
       info.reject { |i| i[:value].to_s.empty? }.map do |i|
-        CardLine.new(i[:type], i[:display] || i[:value], i[:link]).to_h.reject { |_, v| v.to_s.empty? }
+        CardLine.new(i[:type], i[:display] || i[:value], i[:link])
+                .to_h
+                .reject { |_, v| v.to_s.empty? }
       end
     end
 
@@ -56,7 +57,7 @@ module PersonCard
     ID_MAP = {
       wikidata: 'https://www.wikidata.org/wiki/%s',
       viaf:     'https://viaf.org/viaf/%s',
-    }
+    }.freeze
 
     def link_for(scheme, id)
       return unless template = ID_MAP[scheme.to_sym]
@@ -67,9 +68,9 @@ module PersonCard
       extras[:top_identifiers].select { |s| person.identifier(s) }.map do |scheme|
         id = person.identifier(scheme)
         {
-          type: scheme,
+          type:  scheme,
           value: id,
-          link: link_for(scheme, id),
+          link:  link_for(scheme, id),
         }
       end
     end
