@@ -56,30 +56,84 @@ describe 'TermTable' do
       # TODO: it 'does not include group data if there is only a single group'
     end
 
-    describe 'when getting the people for the current term' do
-      it 'constructs the cards correctly' do
-        af = subject.people.find { |p| p[:name] == 'Angela Fichtinger' }
-        af.must_equal fichtinger_card
+    describe 'when constructing cards' do
+      let(:af) { subject.people.find { |p| p[:name] == 'Angela Fichtinger' } }
+
+      it 'has the correct id' do
+        af[:id].must_equal '2e8b774e-ae66-4137-a984-aac74917df87'
+      end
+
+      it 'has the correct name' do
+        af[:name].must_equal 'Angela Fichtinger'
+      end
+
+      it 'has the correct image' do
+        af[:image].must_equal 'http://www.parlament.gv.at/WWER/PAD_83146/4386378_180.jpg'
+      end
+
+      it 'has the correct proxy image' do
+        af[:proxy_image].must_equal 'https://mysociety.github.io/politician-image-proxy/' \
+          'Austria/Nationalrat/2e8b774e-ae66-4137-a984-aac74917df87/140x140.jpeg'
+      end
+
+      it 'has a single membership' do
+        af[:memberships].count.must_equal 1
+        af[:memberships].first[:start_date].must_equal '2013-10-29'
+        af[:memberships].first[:end_date].must_equal nil
+        af[:memberships].first[:group].must_equal 'ÖVP'
+        af[:memberships].first[:area].must_equal 'Wahlkreis: 3B – Waldviertel'
+      end
+
+      it 'has two entries on bio card' do
+        af[:bio].count.must_equal 2
+      end
+
+      it 'has gender data' do
+        af[:bio].first[:type].must_equal 'Gender'
+        af[:bio].first[:value].must_equal 'female'
+        af[:bio].first[:link].must_equal nil
+      end
+
+      it 'has birth data' do
+        af[:bio].last[:type].must_equal 'Born'
+        af[:bio].last[:value].must_equal '1956-12-29'
+        af[:bio].last[:link].must_equal nil
+      end
+
+      it 'has a social card' do
+        af[:social].count.must_equal 1
+        af[:social].first[:type].must_equal 'Facebook'
+        af[:social].first[:value].must_equal 'angela.fichtinger'
+        af[:social].first[:link].must_equal 'https://facebook.com/angela.fichtinger'
+      end
+
+      it 'has a contacts card' do
+        af[:contacts].count.must_equal 1
+        af[:contacts].first[:type].must_equal 'Email'
+        af[:contacts].first[:value].must_equal 'angela.fichtinger@parlament.gv.at'
+        af[:contacts].first[:link].must_equal 'mailto:angela.fichtinger@parlament.gv.at'
+      end
+
+      it 'has two identifiers' do
+        af[:identifiers].count.must_equal 2
+      end
+
+      it 'has Wikidata' do
+        af[:identifiers].first[:type].must_equal 'wikidata'
+        af[:identifiers].first[:value].must_equal 'Q15783437'
+        af[:identifiers].first[:link].must_equal 'https://www.wikidata.org/wiki/Q15783437'
+      end
+
+      it 'has a parliament identifier' do
+        af[:identifiers].last[:type].must_equal 'parlaments_at'
+        af[:identifiers].last[:value].must_equal '83146'
+        af[:identifiers].last[:link].must_equal nil
       end
     end
 
     it 'knows percentage of people that have special data' do
       expected = { social: 20, bio: 100, contacts: 93, identifiers: 100 }
       subject.percentages.must_equal expected
-    end
-
-    def fichtinger_card
-      {
-        id:          '2e8b774e-ae66-4137-a984-aac74917df87',
-        name:        'Angela Fichtinger',
-        image:       'http://www.parlament.gv.at/WWER/PAD_83146/4386378_180.jpg',
-        proxy_image: 'https://mysociety.github.io/politician-image-proxy/Austria/Nationalrat/2e8b774e-ae66-4137-a984-aac74917df87/140x140.jpeg',
-        memberships: [{ start_date: '2013-10-29', end_date: nil, group: 'ÖVP', area: 'Wahlkreis: 3B – Waldviertel' }],
-        social:      [{ type: 'Facebook', value: 'angela.fichtinger', link: 'https://facebook.com/angela.fichtinger' }],
-        bio:         [{ type: 'Gender', value: 'female' }, { type: 'Born', value: '1956-12-29' }],
-        contacts:    [{ type: 'Email', value: 'angela.fichtinger@parlament.gv.at', link: 'mailto:angela.fichtinger@parlament.gv.at' }],
-        identifiers: [{ type: 'wikidata', value: 'Q15783437', link: 'https://www.wikidata.org/wiki/Q15783437' }, { type: 'parlaments_at', value: '83146' }],
-      }
     end
   end
 
