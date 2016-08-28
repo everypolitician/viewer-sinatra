@@ -132,8 +132,10 @@ describe 'TermTable' do
     end
 
     it 'knows percentage of people that have special data' do
-      expected = { social: 20, bio: 100, contacts: 93, identifiers: 100 }
-      subject.percentages.must_equal expected
+      subject.percentages[:social].must_equal 20
+      subject.percentages[:bio].must_equal 100
+      subject.percentages[:contacts].must_equal 93
+      subject.percentages[:identifiers].must_equal 100
     end
   end
 
