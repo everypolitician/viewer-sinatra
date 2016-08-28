@@ -168,13 +168,13 @@
                           <div class="person-card__section person-card__section--<%= section %>">
                             <table>
                               <% person[section].each do |entry| %>
-                                <tr title="<%= entry[:value] %>">
-                                    <th><%= entry[:type] %></th>
+                                <tr title="<%= entry.value %>">
+                                    <th><%= entry.type %></th>
                                     <td>
-                                      <% if entry[:link] %>
-                                        <a href="<%= entry[:link] %>"><%= entry[:value] %></a>
+                                      <% if entry.link %>
+                                        <a href="<%= entry.link %>"><%= entry.value %></a>
                                       <% else %>
-                                        <%= entry[:value] %>
+                                        <%= entry.value %>
                                       <% end %>
                                     </td>
                                 </tr>
