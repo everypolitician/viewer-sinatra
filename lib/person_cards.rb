@@ -61,17 +61,20 @@ module PersonCard
       viaf:     'https://viaf.org/viaf/%s',
     }
 
+    def link_for(scheme, id)
+      return unless template = ID_MAP[scheme.to_sym]
+      template % id
+    end
+
     def info
-      identifiers = []
-      extras[:top_identifiers].each do |scheme|
-        next unless id = person.identifier(scheme)
-        identifier = { type: scheme, value: id }
-        if template = ID_MAP[scheme.to_sym]
-          identifier[:link] = template % id
-        end
-        identifiers << identifier
+      extras[:top_identifiers].select { |s| person.identifier(s) }.map do |scheme|
+        id = person.identifier(scheme)
+        {
+          type: scheme,
+          value: id,
+          link: link_for(scheme, id),
+        }.reject { |_, v| v.to_s.empty? }
       end
-      identifiers
     end
   end
 end
