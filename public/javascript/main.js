@@ -385,7 +385,7 @@ $(function(){
 
       $(this).data('chart', chart);
     }
-  })
+  });
 
   // Google Events Tracking
 
@@ -478,4 +478,59 @@ $(function(){
     }
 
   }
+
+  if (typeof pageInitFunction === 'function') {
+    pageInitFunction();
+  }
 });
+
+// given a list, return a list of maxLength items around
+// the targetItem; top of list if targetItem is not found
+function getInnerList($list, maxLength, $targetItem) {
+  var maxUpperBound = $list.length;
+  var targetIndex = $list.index($targetItem);
+  var lowerBound = targetIndex - Math.floor(maxLength/2);
+  var upperBound = targetIndex + Math.floor(maxLength/2) + 1;
+  var delta = upperBound - maxUpperBound;
+  if (delta > 0) {
+    upperBound = maxUpperBound;
+    lowerBound = lowerBound - delta;
+  }
+  if (lowerBound < 0) {
+    upperBound = Math.min(upperBound + Math.abs(lowerBound), maxUpperBound);
+    lowerBound = 0;
+  }
+  return $list.slice(lowerBound, upperBound);
+}
+
+// collapseDisplayedItems:
+// If there are too many items being displayed in the list, hide
+// all but a few, making sure the target element (if there is one)
+// is included in those that are not hidden. Add a button for
+// revealing the hidden items.
+// Note this is used on the download page, where (currently) there
+// may be more than one such list (e.g., one for each legislature).
+
+function collapseDisplayedItems(
+    $ul,               // unordered list element that needs to be collapsed
+    $targetItem,       // item within that which needs to be highlighted
+                       // ...if none (which is OK) take the first
+    hiddenClassName,   // CSS class used to distinguish collapsed elements
+    minThresholdItems, // only collapse if more elements than this
+    maxDisplayItems,   // number of elements to show when collapsed
+    buttonText         // message on reveal button
+  ) {
+  var $listItems = $ul.find('li');
+  if ($listItems.length > minThresholdItems) {
+    $listItems.addClass(hiddenClassName);
+    getInnerList($listItems, maxDisplayItems, $targetItem).removeClass(hiddenClassName);
+    $ul.find('.' + hiddenClassName).hide();
+
+    $('<button class="button">' + buttonText + '</button>')
+    .on("click", function(e){
+      e.preventDefault();
+      $(e.target).next().find("." + hiddenClassName).slideToggle();
+    })
+    .insertBefore($ul);
+  }
+}

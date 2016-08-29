@@ -117,7 +117,9 @@
 
                 <div class="download-options">
                   <!-- download link as button? -->
-                  <a class="button button--quarternary" href="../../download.html" data-ga-track-click="Download term data">
+                  <a class="button button--quarternary js-download-with-term"
+                      href="../../download.html"
+                      data-ga-track-click="Download term data">
                     <i class="fa fa-download"></i>
                     Download <span class="large-screen-only">data</span>
                   </a>
@@ -201,3 +203,13 @@
             here's <a href="http://docs.everypolitician.org/contribute.html">how to get that fixed</a>.</p>
         </div>
       </div>
+
+    <script>
+      var pageInitFunction = function(){
+        $(".js-download-with-term").each(function(){
+          $(this).attr("href", $(this).attr("href")
+            + "#<%= @house[:slug].downcase %>:<%= @term[:slug].downcase %>"
+          );
+        })
+      }
+    </script>
