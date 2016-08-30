@@ -45,13 +45,17 @@ describe 'house download template' do
     end
   end
 
-  describe 'term information' do
-    it 'shows the right name' do
+  describe 'terms information' do
+    it 'shows all the terms' do
+      subject.css('li[id*=term-]').count.must_equal 18
+    end
+
+    it 'shows the right name of a term' do
       subject.css('#term-senate-114 h3').text.must_include '114th Congress'
     end
 
-    it 'shows the right dates' do
-      subject.css('#term-senate-114 p').text.must_include '2015-01-06'
+    it 'shows the right dates of a term' do
+      subject.css('#term-senate-113 p').text.strip.must_include '2013-01-06 - 2015-01-03'
     end
   end
 end
