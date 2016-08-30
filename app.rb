@@ -50,9 +50,9 @@ get '/:country/:house/wikidata' do |country_slug, house_slug|
   erb :house_wikidata
 end
 
-get '/:country/:house/term-table/:id.html' do |cslug, hslug, termid|
-  pass unless country = settings.index.country(cslug)
-  pass unless house   = country.legislature(hslug)
+get '/:country/:house/term-table/:id.html' do |country_slug, house_slug, termid|
+  pass unless country = settings.index.country(country_slug)
+  pass unless house   = country.legislature(house_slug)
   pass unless term    = house.term(termid)
   @page = Page::TermTable.new(term: term)
   erb :term_table
