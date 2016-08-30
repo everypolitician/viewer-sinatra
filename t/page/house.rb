@@ -23,8 +23,8 @@ describe 'House' do
       subject.legislative_periods.count.must_equal 18
     end
 
-    it 'is a list of terms' do
-      subject.legislative_periods.first.slug.must_equal '114'
+    it 'is a list containing terms' do
+      subject.legislative_periods.first.name.must_equal '114th Congress'
     end
   end
 
