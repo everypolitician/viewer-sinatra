@@ -43,9 +43,9 @@ get '/:country/' do |country_slug|
   erb :country_missing
 end
 
-get '/:country/:house/wikidata' do |country, house|
-  pass unless country = settings.index.country(country)
-  pass unless house   = country.legislature(house)
+get '/:country/:house/wikidata' do |country_slug, house_slug|
+  pass unless country = settings.index.country(country_slug)
+  pass unless house   = country.legislature(house_slug)
   @page = Page::HouseWikidata.new(house: house)
   erb :house_wikidata
 end
