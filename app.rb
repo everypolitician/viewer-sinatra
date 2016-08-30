@@ -31,35 +31,35 @@ get '/countries.html' do
   erb :countries
 end
 
-get '/:country/' do |slug|
-  pass unless country = settings.index.country(slug)
+get '/:country/' do |country_slug|
+  pass unless country = settings.index.country(country_slug)
   @page = Page::Country.new(country: country)
   erb :country
 end
 
-get '/:country/' do |country|
-  @page = Page::MissingCountry.new(country: country)
+get '/:country/' do |country_slug|
+  @page = Page::MissingCountry.new(country: country_slug)
   pass unless @page.country
   erb :country_missing
 end
 
-get '/:country/:house/wikidata' do |country, house|
-  pass unless country = settings.index.country(country)
-  pass unless house   = country.legislature(house)
+get '/:country/:house/wikidata' do |country_slug, house_slug|
+  pass unless country = settings.index.country(country_slug)
+  pass unless house   = country.legislature(house_slug)
   @page = Page::HouseWikidata.new(house: house)
   erb :house_wikidata
 end
 
-get '/:country/:house/term-table/:id.html' do |cslug, hslug, termid|
-  pass unless country = settings.index.country(cslug)
-  pass unless house   = country.legislature(hslug)
+get '/:country/:house/term-table/:id.html' do |country_slug, house_slug, termid|
+  pass unless country = settings.index.country(country_slug)
+  pass unless house   = country.legislature(house_slug)
   pass unless term    = house.term(termid)
   @page = Page::TermTable.new(term: term)
   erb :term_table
 end
 
-get '/:country/download.html' do |slug|
-  pass unless country = settings.index.country(slug)
+get '/:country/download.html' do |country_slug|
+  pass unless country = settings.index.country(country_slug)
   @page = Page::Download.new(country: country, index: settings.index)
   erb :country_download
 end
