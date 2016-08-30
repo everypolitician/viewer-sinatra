@@ -31,8 +31,8 @@ get '/countries.html' do
   erb :countries
 end
 
-get '/:country/' do |slug|
-  pass unless country = settings.index.country(slug)
+get '/:country/' do |country_slug|
+  pass unless country = settings.index.country(country_slug)
   @page = Page::Country.new(country: country)
   erb :country
 end
