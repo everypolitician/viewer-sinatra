@@ -16,11 +16,6 @@ module Popolo
       '<a href="https://www.wikidata.org/wiki/%s">%s</a>' % [wdid, wdid]
     end
 
-    def image_proxy_url(id)
-      'https://mysociety.github.io/politician-image-proxy' \
-        "/#{@country[:slug]}/#{@house[:slug]}/#{id}/140x140.jpeg"
-    end
-
     def number_to_millions(num)
       result = (num.to_f / 100_000).floor.to_f / 10
       result.modulo(1) < 0.1 ? result.to_i : result
