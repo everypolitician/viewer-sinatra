@@ -6,12 +6,6 @@ describe 'House Page' do
   subject { Nokogiri::HTML(last_response.body) }
   before { get '/united-states-of-america/senate/' }
 
-  describe 'headings' do
-    it 'shows the legislature name in the header' do
-      subject.css('.country__legislature__header h3').text.must_equal 'Senate'
-    end
-  end
-
   describe 'list of terms' do
     it 'displays all terms' do
       subject.css('.avatar-unit').count.must_equal 18
