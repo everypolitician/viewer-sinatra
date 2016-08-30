@@ -37,8 +37,8 @@ get '/:country/' do |country_slug|
   erb :country
 end
 
-get '/:country/' do |country|
-  @page = Page::MissingCountry.new(country: country)
+get '/:country/' do |country_slug|
+  @page = Page::MissingCountry.new(country: country_slug)
   pass unless @page.country
   erb :country_missing
 end
