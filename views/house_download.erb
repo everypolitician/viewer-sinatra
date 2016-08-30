@@ -1,0 +1,198 @@
+<div class="page-section page-section--grey text-center">
+  <div class="container">
+    <h3>Download data for politicians in <%= @page.house.name %>, <%= @page.country.name %>.</h3>
+  </div>
+</div>
+
+  <div class="page-section">
+    <div class="container">
+      <div class="country__legislature" id="legislature-<%= @page.house.slug.downcase %>" data-house="<%= @page.house.slug.downcase %>">
+        <div class="country__legislature__header">
+          <h2><%= @page.house.name %></h2>
+        </div>
+        <p>
+          Read more about
+          <a href="http://docs.everypolitician.org/data_summary.html">what’s in the data</a>
+          and how we use
+          <a href="http://docs.everypolitician.org/technical.html">CSV and JSON formats</a>.
+          If you’re a programmer, see our notes on
+          <a href="http://docs.everypolitician.org/use_the_data.html">how to use the data</a>.
+        </p>
+        <div class="layout-equal-columns">
+          <div class="first-column">
+            <h4>Data for the whole legislature</h4>
+            <p>
+              <em>All</em> the data we have for this legislature is available
+              in a single JSON file (using the Popolo open standard).
+              This includes all the terms <!-- FIXME: if there are multiple terms -->
+              and rich data — for example, multilingual versions of names,
+              start and end dates of memberships, and related links.
+            </p>
+            <p>
+              <a class="button button--download"
+                href="<%= @page.house.popolo_url %>">
+                <i class="fa fa-download"></i>
+                <span class="large-screen-only">Download as</span> JSON
+              </a>
+            </p>
+          </div>
+          <div class="second-column">
+            <h4>Just politicians’ names</h4>
+            <p>
+              We’ve also separated just the names into a CSV file. Note there
+              may be multiple names for a single politician (for example, this
+              data includes transliterations). We include the identifier too so
+              you can identify duplicates if you need to. For more control over
+              the data, use the JSON instead.
+            </p>
+            <p>
+              <a class="button button--download"
+                href="<%= @page.house.names_url %>">
+                <i class="fa fa-download"></i>
+                <span class="large-screen-only">Download</span> names.csv
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <h4>Data for specific terms</h4>
+      <p>
+        CSV files for individual terms have <em>simplified</em> data for each
+        member. This might be all you need if you’re looking for the core
+        data on these politicians; great for spreadsheets, perfect for
+        quick analysis.
+      </p>
+      <ul class="grid-list grid-list--vertically-center" id="terms-<%= @page.house.slug.downcase %>">
+        <% @page.legislative_periods.each do |t| %>
+          <li id="term-<%= @page.house.slug.downcase %>-<%= t.slug.downcase %>" style="margin-bottom:1.5em">
+            <div class="avatar-unit">
+              <span class="avatar"><i class="fa fa-university"></i></span>
+              <a href="<%= term_table_url(@page.country, @page.house, t) %>"><h3><%= t.name %></h3></a>
+              <p>
+                <% if t.start_date || t.end_date %>
+                 <%= t.start_date %> - <%=  t.end_date %>
+                <% end %>
+              </p>
+            </div>
+            <div class="avatar-unit">
+              <a class="button button--small button--download" style="margin:0.5em 0"
+                href="<%= t.csv_url %>">
+                <i class="fa fa-download"></i>
+                <span class="large-screen-only">Download</span> CSV
+              </a>
+            </div>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+
+<div class="page-section">
+  <div class="container">
+    <h3>Other countries</h3>
+    <div class="layout-equal-columns">
+      <div class="first-column">
+        <p>
+          Want politicians who aren’t from <%= @page.country.name %>?
+          No problem: we’ve got the world covered.
+        </p>
+        <p>
+          <a class="button button--quarternary" href="/countries.html">
+            <i class="fa fa-globe"></i>
+            <span class="large-screen-only">View</span> all countries
+          </a>
+        </p>
+      </div>
+      <div class="second-column">
+        <p>
+          The file <code>countries.json</code> is the machine-readable index of
+          all the countries (and their legislatures) we’ve got data for. This
+          is especially useful if you’re interested in coding a way to
+          automatically
+          <a href="http://docs.everypolitician.org/repo_structure.html">read our data</a>.
+        </p>
+        <p>
+          <a href="<%= @page.download_url %>" class="button button--download">
+            <i class="fa fa-download"></i>
+            <span class="large-screen-only">Download</span> countries.json
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+
+function get_q_param(key) {
+  var match = location.search.match(new RegExp("[?&]" + key + "=([^&]+)(&|$)"));
+  return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+}
+
+var max_visible_terms = 6;
+var reduced_visible_terms = 3; // best odd, so wanted term is in middle?
+var wanted_house = get_q_param('house');
+var wanted_term = get_q_param('term');
+
+// for each house...
+
+// if there are more than `max_visible_terms` terms, hide them:
+// display `reduced_visible_terms`
+//   * selected term in the middle if possible
+//   * otherwise the most recent
+
+  // do this by giving all the terms we don't want to display
+  // class = "hidden-term" and then hiding them,
+  // display JS control for toggling them
+
+$(".country__legislature").each(function(){
+  var house_slug = $(this).data('house');
+  var $term_list_items = $('#terms-' + house_slug + ' li');
+  if ($term_list_items.size() > max_visible_terms) {
+    $term_list_items.addClass("hidden-term");
+    var wanted_house_index = 0;
+    // we need to hide some of these terms:
+    // find the one we want:
+    var wanted_id = "term-" + house_slug + '-' + wanted_term;
+    // want to use jQuery's .index() but it's not behaving as I expected
+    if (wanted_house && wanted_term &&
+      wanted_house == house_slug
+    ) {
+      $term_list_items.each(function(i){
+        if ($(this).attr('id') == wanted_id) {
+          wanted_house_index = i;
+          $(this).css("background-color", "#fffadd"); // highlight (FIXME?)
+          return false; // break
+        }
+      });
+    }
+    // want a slice around wanted_house_index of reduced_visible_terms items
+    var max_upper_bound = $term_list_items.length - 1;
+    var lower_bound = wanted_house_index - Math.floor(reduced_visible_terms/2);
+    var upper_bound = wanted_house_index + Math.floor(reduced_visible_terms/2);
+    var delta = upper_bound - max_upper_bound;
+    if (delta > 0) {
+      upper_bound = max_upper_bound;
+      lower_bound = lower_bound - delta;
+    }
+    if (lower_bound < 0) {
+      upper_bound = Math.min(upper_bound + Math.abs(lower_bound), max_upper_bound);
+      lower_bound = 0;
+    }
+    // would do this with jQuery's slice but it's not behaving as I expected
+    $term_list_items.each(function(i){
+      if (i >= lower_bound && i <= upper_bound) {
+        $(this).removeClass("hidden-term");
+      }
+    });
+    // add button to toggle view
+    $term_list_items.first().parent().before('<a href="#" class="button toggle-term-display" data-house="'
+    + house_slug + '">Show all ' + $term_list_items.length + ' terms</a>');
+  }
+});
+$('.hidden-term').hide();
+$('.button.toggle-term-display').on("click", function(e){
+  e.preventDefault();
+  var house = $(e.target).data("house");
+  $('#terms-' + house + " li.hidden-term").slideToggle();
+})
+</script>
