@@ -46,7 +46,7 @@ end
 get '/:country/:house/' do |country_slug, house_slug|
   pass unless country = settings.index.country(country_slug)
   pass unless house   = country.legislature(house_slug)
-  @page = Page::House.new(country: country, house: house)
+  @page = Page::House.new(house: house)
   erb :house
 end
 

@@ -4,9 +4,10 @@ require_relative '../../lib/page/house'
 
 describe 'House' do
   subject do
-    country = index_at_known_sha.country('united-states-of-america')
-    house   = country.legislature('senate')
-    Page::House.new(country: country, house: house)
+    house = index_at_known_sha
+            .country('united-states-of-america')
+            .legislature('senate')
+    Page::House.new(house: house)
   end
 
   it 'has the country' do
