@@ -58,8 +58,8 @@ get '/:country/:house/term-table/:id.html' do |country_slug, house_slug, termid|
   erb :term_table
 end
 
-get '/:country/download.html' do |slug|
-  pass unless country = settings.index.country(slug)
+get '/:country/download.html' do |country_slug|
+  pass unless country = settings.index.country(country_slug)
   @page = Page::Download.new(country: country, index: settings.index)
   erb :country_download
 end
