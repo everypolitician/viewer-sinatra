@@ -24,8 +24,9 @@ describe 'house download template' do
   end
 
   describe 'download links' do
-    let(:all_data)  { subject.css('.country__legislature a.button--download/@href') }
-    let(:last_term) { subject.css('.avatar-unit a.button--download/@href').first }
+    let(:all_data)   { subject.css('.country__legislature a.button--download/@href') }
+    let(:last_term)  { subject.css('.avatar-unit a.button--download/@href').first }
+    let(:first_term) { subject.css('.avatar-unit a.button--download/@href').last }
 
     it 'links to popolo file' do
       all_data.first.text.must_include '/United_States_of_America/Senate/ep-popolo-v1.0.json'
@@ -35,8 +36,12 @@ describe 'house download template' do
       all_data[1].text.must_include '/United_States_of_America/Senate/names.csv'
     end
 
-    it 'links to the term file' do
+    it 'links to the last-term file' do
       last_term.text.must_include '/United_States_of_America/Senate/term-114.csv'
+    end
+
+    it 'links to the first-term file' do
+      first_term.text.must_include '/United_States_of_America/Senate/term-97.csv'
     end
   end
 
