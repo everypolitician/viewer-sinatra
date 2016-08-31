@@ -53,7 +53,13 @@ describe 'TermTable' do
         group_data.last.member_count.must_equal 3
       end
 
-      # TODO: it 'does not include group data if there is only a single group'
+      it 'returns an empty array when there is only a single group' do
+        stub_popolo('bd08b5e', 'North_Korea/National_Assembly')
+        north_korea = Page::TermTable.new(
+          term: index_at_known_sha.country('north-korea').legislature('national-assembly').term('13')
+        )
+        north_korea.group_data.size.must_equal 0
+      end
     end
 
     describe 'when constructing cards' do
