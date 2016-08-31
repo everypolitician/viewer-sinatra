@@ -7,16 +7,7 @@ describe 'house download template' do
   before { get '/united-states-of-america/senate/download.html' }
 
   describe 'headings' do
-    let(:banner)       { subject.css('.page-section--grey h3').text }
     let(:house_header) { subject.css('.country__legislature__header h2').text }
-
-    it 'shows the house name in the banner' do
-      banner.must_include 'Senate'
-    end
-
-    it 'shows the country name in the banner' do
-      banner.must_include 'United States of America'
-    end
 
     it 'shows the house name in the legislature header' do
       house_header.must_include 'Senate'
