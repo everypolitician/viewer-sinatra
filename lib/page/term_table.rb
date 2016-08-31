@@ -55,8 +55,8 @@ module Page
     end
 
     SeatCount = Struct.new(:group_id, :name, :member_count)
-    def party_seat_counts(memberships_grouped_by_party)
-      memberships_grouped_by_party
+    def party_seat_counts(grouped_memberships)
+      grouped_memberships
         .map { |group_id, mems| [org_lookup[group_id].first, mems] }
         .sort_by { |group, mems| [-mems.count, group.name] }
         .map     { |group, mems| SeatCount.new(group.id.split('/').last, group.name, mems.count) }
