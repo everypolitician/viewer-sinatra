@@ -117,7 +117,7 @@ set :docs_map, contribute:     'How to contribute',
 settings.docs_map.each do |page, text|
   path = '/%s.html' % page
   get path do
-    docs_redirect(path, text)
+    docs_redirect(settings.docs_url, path, text)
   end
 end
 
@@ -132,8 +132,8 @@ end
 # because wget simply fetches the HTML document, this lets us continue to
 # spider the site to generate the contents of everypolitician/viewer-static.
 # See scripts/release.sh (update_viewer_static).
-def docs_redirect(path, page_title)
-  @url = URI.join(settings.docs_url, path)
+def docs_redirect(host, path, page_title)
+  @url = URI.join(host, path)
   @head_tags = [
     %(<meta http-equiv="refresh" content="0; url=#{@url}">),
     %(<link rel="canonical" href="#{@url}"/>),
