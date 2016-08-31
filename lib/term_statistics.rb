@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 class TermStatistics
-  def initialize(term:, org_lookup:)
+  def initialize(term:, org_lookup:, people:)
     @term = term
     @org_lookup = org_lookup
+    @people = people
   end
 
   SeatCount = Struct.new(:group_id, :name, :member_count)
@@ -18,7 +19,14 @@ class TermStatistics
     @group_data
   end
 
+  CARDS = %i(social bio contacts identifiers).freeze
+  Percentages = Struct.new(*CARDS)
+  def percentages
+    pc = ->(card) { ((people.count { |p| p.send(card.to_s).any? } / people.count.to_f) * 100).floor }
+    Percentages.new(*CARDS.map { |card| pc.call(card) })
+  end
+
   private
 
-  attr_reader :term, :org_lookup
+  attr_reader :term, :org_lookup, :people
 end

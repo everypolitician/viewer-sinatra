@@ -58,11 +58,8 @@ module Page
       end
     end
 
-    CARDS = %i(social bio contacts identifiers).freeze
-    Percentages = Struct.new(*CARDS)
     def percentages
-      pc = ->(card) { ((people.count { |p| p.send(card.to_s).any? } / people.count.to_f) * 100).floor }
-      Percentages.new(*CARDS.map { |card| pc.call(card) })
+      term_statistics.percentages
     end
 
     private
@@ -126,7 +123,7 @@ module Page
     end
 
     def term_statistics
-      @term_statistics ||= TermStatistics.new(term: term, org_lookup: org_lookup)
+      @term_statistics ||= TermStatistics.new(term: term, org_lookup: org_lookup, people: people)
     end
   end
 end
