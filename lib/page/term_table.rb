@@ -95,12 +95,17 @@ module Page
 
     def person_memberships(person)
       membership_lookup[person.id].each do |mem|
-        group = org_lookup[mem.on_behalf_of_id].first.name if mem.on_behalf_of_id
-        group = '' if group.to_s.downcase == 'unknown'
         area = area_lookup[mem.area_id].first.name if mem.area_id
+        group = member_group(mem)
         mem.define_singleton_method(:group) { group || '' }
         mem.define_singleton_method(:area)  { area  || '' }
       end
+    end
+
+    def member_group(member)
+      group = org_lookup[member.on_behalf_of_id].first.name if member.on_behalf_of_id
+      group = '' if group.to_s.downcase == 'unknown'
+      group
     end
 
     def image_proxy_url(id)
