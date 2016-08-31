@@ -2,12 +2,15 @@
 
 module Page
   class HouseDownload
-    attr_reader :country, :house
+    attr_reader :house
 
-    def initialize(country:, house:, index:)
-      @country = country
-      @house   = house
-      @index   = index
+    def initialize(house:, index:)
+      @house = house
+      @index = index
+    end
+
+    def country
+      house.country
     end
 
     def title

@@ -7,9 +7,8 @@ describe 'HouseDownload' do
     country = index_at_known_sha.country('united-states-of-america')
     house   = country.legislature('senate')
     Page::HouseDownload.new(
-      country: country,
-      house:   house,
-      index:   index_at_known_sha
+      house: house,
+      index: index_at_known_sha
     )
   end
 
