@@ -6,11 +6,11 @@
 
 <div class="page-section">
     <div class="container centered">
-        <p class="lead">Redirecting to <a href="http://docs.everypolitician.org/<%= @filename %>">docs.everypolitician.org</a></p>
+        <p class="lead">Redirecting to <a href="<%= @url %>"><%= @url %></a></p>
         <p class="fourohfour-suggestions">
             <a href="/" class="button button--primary">Go home</a>
             <span class="fourohfour-suggestions__or">or</span>
-            <a href="http://docs.everypolitician.org/<%= @filename %>" class="button button--secondary">Load page</a>
+            <a href="<%= @url %>" class="button button--secondary">Load page</a>
         </p>
     </div>
 </div>
