@@ -69,8 +69,11 @@ module Page
     CARDS = %i(social bio contacts identifiers).freeze
     Percentages = Struct.new(*CARDS)
     def percentages
-      pc = ->(card) { ((people.count { |p| p.send(card.to_s).any? } / people.count.to_f) * 100).floor }
-      Percentages.new(*CARDS.map { |card| pc.call(card) })
+      Percentages.new(*CARDS.map { |card| people_cards.call(card) })
+    end
+
+    def people_cards
+      ->(card) { ((people.count { |p| p.send(card.to_s).any? } / people.count.to_f) * 100).floor }
     end
 
     private
