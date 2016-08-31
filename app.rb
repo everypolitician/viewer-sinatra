@@ -102,7 +102,7 @@ end
 
 # Old doc pages are now at docs.everypolitician.org: redirect to them
 get '/about.html' do
-  docs_redirect('/', 'About')
+  docs_redirect(settings.docs_url, '/', 'About')
 end
 
 set :docs_map, contribute:     'How to contribute',
