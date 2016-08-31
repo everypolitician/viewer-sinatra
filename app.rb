@@ -18,6 +18,7 @@ Dotenv.load
 helpers Popolo::Helper
 
 set :erb, trim: '-'
+set :main_url, 'http://everypolitician.org'
 set :docs_url, 'http://docs.everypolitician.org'
 set :index, EveryPolitician::Index.new(index_url: File.read('DATASOURCE').chomp)
 
@@ -67,8 +68,8 @@ end
 
 get '/:country/download.html' do |country_slug|
   pass unless country = settings.index.country(country_slug)
-  @page = Page::Download.new(country: country, index: settings.index)
-  erb :country_download
+  @page = Page::Country.new(country: country)
+  docs_redirect(settings.main_url, "/#{country_slug}/", @page.title)
 end
 
 get '/:country/:house/download.html' do |country_slug, house_slug|
