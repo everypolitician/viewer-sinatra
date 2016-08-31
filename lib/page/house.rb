@@ -2,11 +2,14 @@
 
 module Page
   class House
-    attr_reader :country, :house
+    attr_reader :house
 
     def initialize(house:)
-      @house   = house
-      @country = house.country
+      @house = house
+    end
+
+    def country
+      house.country
     end
 
     def legislative_periods
