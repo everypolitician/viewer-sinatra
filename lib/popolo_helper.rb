@@ -6,7 +6,7 @@ module Popolo
       '/%s/%s/term-table/%s.html' % [
         term.country.slug.downcase,
         term.legislature.slug.downcase,
-        term.csv_url[/term-(.*?).csv/, 1],
+        term.slug,
       ]
     end
 
