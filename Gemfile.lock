@@ -111,6 +111,7 @@ GEM
       crack (>= 0.3.2)
       hashdiff
     yajl-ruby (1.2.1)
+    yard (0.9.5)
 
 PLATFORMS
   ruby
@@ -137,6 +138,7 @@ DEPENDENCIES
   sinatra!
   webmock
   yajl-ruby
+  yard
 
 RUBY VERSION
    ruby 2.0.0p481

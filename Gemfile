@@ -29,4 +29,5 @@ group :quality do
   gem 'flog'
   gem 'reek'
   gem 'rubocop'
+  gem 'yard'
 end
