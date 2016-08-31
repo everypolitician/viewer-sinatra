@@ -4,10 +4,10 @@ require_relative '../../app'
 
 describe 'Country Page' do
   subject { Nokogiri::HTML(last_response.body) }
-  let(:terms) { subject.css('#terms-riigikogu li') }
 
   describe 'when viewing a country home page' do
-    before { get '/estonia/' }
+    let(:terms) { subject.css('#terms-riigikogu li') }
+    before      { get '/estonia/' }
 
     it 'should know its country' do
       subject.css('.site-header__logo h2').text.strip.must_equal 'Estonia'
