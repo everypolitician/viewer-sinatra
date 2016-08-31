@@ -42,17 +42,24 @@ module Page
       term
     end
 
-    SeatCount = Struct.new(:group_id, :name, :member_count)
     def group_data
-      @group_data ||= term
-                      .memberships_at_end
-                      .group_by(&:on_behalf_of_id)
-                      .map     { |group_id, mems| [org_lookup[group_id].first, mems] }
-                      .sort_by { |group, mems| [-mems.count, group.name] }
-                      .map     { |group, mems| SeatCount.new(group.id.split('/').last, group.name, mems.count) }
-
+      @group_data ||= party_seat_counts(memberships_grouped_by_party)
       @group_data = [] if @group_data.length == 1
       @group_data
+    end
+
+    def memberships_grouped_by_party
+      term
+        .memberships_at_end
+        .group_by(&:on_behalf_of_id)
+    end
+
+    SeatCount = Struct.new(:group_id, :name, :member_count)
+    def party_seat_counts(memberships_grouped_by_party)
+      memberships_grouped_by_party
+        .map { |group_id, mems| [org_lookup[group_id].first, mems] }
+        .sort_by { |group, mems| [-mems.count, group.name] }
+        .map     { |group, mems| SeatCount.new(group.id.split('/').last, group.name, mems.count) }
     end
 
     def people
