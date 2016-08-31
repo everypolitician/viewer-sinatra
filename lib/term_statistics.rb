@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 class TermStatistics
+  # TODO: reduce number of arguments
   def initialize(term:, org_lookup:, people:)
     @term = term
     @org_lookup = org_lookup
