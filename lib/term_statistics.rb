@@ -6,17 +6,25 @@ class TermStatistics
     @people = people
   end
 
-  SeatCount = Struct.new(:group_id, :name, :member_count)
   def group_data
-    @group_data ||= term
-                    .memberships_at_end
-                    .group_by(&:on_behalf_of_id)
-                    .map     { |group_id, mems| [org_lookup[group_id].first, mems] }
-                    .sort_by { |group, mems| [-mems.count, group.name] }
-                    .map     { |group, mems| SeatCount.new(group.id.split('/').last, group.name, mems.count) }
+    @group_data ||= seat_counts.count == 1 ? [] : seat_counts
+  end
 
-    @group_data = [] if @group_data.length == 1
-    @group_data
+  def members_by_group
+    term
+      .memberships_at_end
+      .group_by(&:on_behalf_of_id)
+      .map { |group_id, mems| [org_lookup[group_id].first, mems] }
+  end
+
+  def sorted_members_by_group
+    members_by_group.sort_by { |group, mems| [-mems.count, group.name] }
+  end
+
+  SeatCount = Struct.new(:group_id, :name, :member_count)
+  def seat_counts
+    sorted_members_by_group
+      .map { |group, mems| SeatCount.new(group.id.split('/').last, group.name, mems.count) }
   end
 
   CARDS = %i(social bio contacts identifiers).freeze
