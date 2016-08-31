@@ -29,4 +29,17 @@ describe 'Country Page' do
       terms.css('p').last.text.must_equal '2011-03-27 - 2015-03-23'
     end
   end
+
+  describe 'when displaying download links' do
+    let(:links) { subject.css('.button--quarternary/@href') }
+    before      { get '/united-states-of-america/' }
+
+    it 'links to the House of Representatives' do
+      links.first.text.must_equal '/united-states-of-america/house/download.html'
+    end
+
+    it 'links to the Senate' do
+      links.last.text.must_equal '/united-states-of-america/senate/download.html'
+    end
+  end
 end
