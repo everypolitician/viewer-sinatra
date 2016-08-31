@@ -22,8 +22,11 @@ class TermStatistics
   CARDS = %i(social bio contacts identifiers).freeze
   Percentages = Struct.new(*CARDS)
   def percentages
-    pc = ->(card) { ((people.count { |p| p.send(card.to_s).any? } / people.count.to_f) * 100).floor }
-    Percentages.new(*CARDS.map { |card| pc.call(card) })
+    Percentages.new(*CARDS.map { |card| percentage_for_card(card) })
+  end
+
+  def percentage_for_card(card)
+    ((people.count { |p| p.send(card.to_s).any? } / people.count.to_f) * 100).floor
   end
 
   private
