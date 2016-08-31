@@ -3,12 +3,13 @@ require 'test_helper'
 require_relative '../../app'
 
 describe 'when hitting a docs page' do
-  subject { Nokogiri::HTML(last_response.body) }
-  before { get '/contribute.html' }
+  let(:url) { 'http://docs.everypolitician.org/contribute.html' }
+  subject   { Nokogiri::HTML(last_response.body) }
+  before    { get '/contribute.html' }
 
   it 'should redirect to the right url' do
-    subject.css('meta/@content').first.text.must_equal '0; url=http://docs.everypolitician.org/contribute.html'
-    subject.css('link/@href').first.text.must_equal 'http://docs.everypolitician.org/contribute.html'
+    subject.css('meta/@content').first.text.must_equal "0; url=#{url}"
+    subject.css('link/@href').first.text.must_equal url
   end
 
   it 'should show the page title' do
@@ -16,7 +17,7 @@ describe 'when hitting a docs page' do
   end
 
   it 'should link to the right page' do
-    subject.css('.lead a/@href').text.must_equal 'http://docs.everypolitician.org/contribute.html'
-    subject.css('.button--secondary/@href').text.must_equal 'http://docs.everypolitician.org/contribute.html'
+    subject.css('.lead a/@href').text.must_equal url
+    subject.css('.button--secondary/@href').text.must_equal url
   end
 end
