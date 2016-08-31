@@ -151,7 +151,7 @@
                           <% person.memberships.each do |mem| %>
                             <p class="person-card__politics">
 
-                              <%= [mem.group, mem.area].reject(&:empty?).join(" — ") %>
+                              <%= [mem.group_name, mem.area_name].reject(&:empty?).join(" — ") %>
 
                               <% if mem.start_date && mem.end_date %>
                                 <span class="person-card__politics__date">(<%= mem.start_date.to_s %> to <%= mem.end_date.to_s %>)</span>
