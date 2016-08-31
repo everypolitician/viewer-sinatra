@@ -3,6 +3,7 @@
 .env
 .vagrant
 .sass-cache
+.yardoc/
 
 *.swo
 
