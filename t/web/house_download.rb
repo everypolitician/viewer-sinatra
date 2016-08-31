@@ -6,14 +6,6 @@ describe 'house download template' do
   subject { Nokogiri::HTML(last_response.body) }
   before { get '/united-states-of-america/senate/download.html' }
 
-  describe 'headings' do
-    let(:house_header) { subject.css('.country__legislature__header h2').text }
-
-    it 'shows the house name in the legislature header' do
-      house_header.must_include 'Senate'
-    end
-  end
-
   describe 'download links' do
     let(:all_data)   { subject.css('.country__legislature a.button--download/@href') }
     let(:last_term)  { subject.css('.avatar-unit a.button--download/@href').first }
