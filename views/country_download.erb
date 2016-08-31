@@ -67,7 +67,7 @@
           <li id="term-<%= house.slug.downcase %>-<%= t.slug.downcase %>" style="margin-bottom:1.5em">
             <div class="avatar-unit">
               <span class="avatar"><i class="fa fa-university"></i></span>
-              <a href="<%= term_table_url(@page.country, house, t) %>"><h3><%= t.name %></h3></a>
+              <a href="<%= term_table_url(t) %>"><h3><%= t.name %></h3></a>
               <p>
                 <% if t.start_date || t.end_date %>
                  <%= t.start_date %> - <%=  t.end_date %>
@@ -196,4 +196,3 @@ $('.button.toggle-term-display').on("click", function(e){
   $('#terms-' + house + " li.hidden-term").slideToggle();
 })
 </script>
-
