@@ -2,8 +2,12 @@
 
 module Popolo
   module Helper
-    def term_table_url(c, h, t)
-      '/%s/%s/term-table/%s.html' % [c[:slug].downcase, h[:slug].downcase, t[:csv][/term-(.*?).csv/, 1]]
+    def term_table_url(term)
+      '/%s/%s/term-table/%s.html' % [
+        term.country.slug.downcase,
+        term.legislature.slug.downcase,
+        term.slug,
+      ]
     end
 
     # http://stackoverflow.com/questions/1078347/is-there-a-rails-trick-to-adding-commas-to-large-numbers

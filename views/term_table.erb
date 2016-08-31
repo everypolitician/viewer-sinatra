@@ -12,7 +12,7 @@
         <div class="container">
             <div class="term-navigation">
               <% if @page.prev_term %>
-                <a href="<%= term_table_url(@page.country, @page.house, @page.prev_term) %>" class="term-navigation__prev" data-ga-track-click="Show previous term">
+                <a href="<%= term_table_url(@page.prev_term) %>" class="term-navigation__prev" data-ga-track-click="Show previous term">
                     <i class="fa fa-arrow-left"></i>
                     Earlier
                 </a>
@@ -21,7 +21,7 @@
               <span class="term-navigation__jump">Jump to:
                   <select class="js-navigation-menu" data-ga-track-select="Jump to term by date">
                     <% @page.terms.each do |t| %>
-                      <option value="<%= term_table_url(@page.country, @page.house, t) %>" <% if t.name == @page.current_term.name %>selected<% end %>>
+                      <option value="<%= term_table_url(t) %>" <% if t.name == @page.current_term.name %>selected<% end %>>
                         <%= t.name %>
                         <% if t.start_date || t.end_date %>
                           (<%= t.start_date %>–<%= t.end_date || 'current' %>)
@@ -32,7 +32,7 @@
               </span>
 
               <% if @page.next_term %>
-                <a href="<%= term_table_url(@page.country, @page.house, @page.next_term) %>" class="term-navigation__next" data-ga-track-click="Show next term">
+                <a href="<%= term_table_url(@page.next_term) %>" class="term-navigation__next" data-ga-track-click="Show next term">
                     Later
                     <i class="fa fa-arrow-right"></i>
                 </a>

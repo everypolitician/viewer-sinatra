@@ -21,7 +21,7 @@
         <ul class="grid-list grid-list--vertically-center" id="terms-<%= house.slug.downcase %>">
           <% house.legislative_periods.each do |term| %>
             <li>
-              <a class="avatar-unit" href="<%= term_table_url(@page.country, house, term) %>">
+              <a class="avatar-unit" href="<%= term_table_url(term) %>">
                 <span class="avatar"><i class="fa fa-university"></i></span>
                 <h3><%= term.name %></h3>
                 <% if term.start_date || term.end_date %>
