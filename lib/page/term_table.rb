@@ -2,6 +2,7 @@
 require 'everypolitician'
 require_relative '../everypolitician_extensions'
 require_relative '../person_cards'
+require_relative '../term_statistics'
 
 module Page
   class TermTable
@@ -42,17 +43,8 @@ module Page
       term
     end
 
-    SeatCount = Struct.new(:group_id, :name, :member_count)
     def group_data
-      @group_data ||= term
-                      .memberships_at_end
-                      .group_by(&:on_behalf_of_id)
-                      .map     { |group_id, mems| [org_lookup[group_id].first, mems] }
-                      .sort_by { |group, mems| [-mems.count, group.name] }
-                      .map     { |group, mems| SeatCount.new(group.id.split('/').last, group.name, mems.count) }
-
-      @group_data = [] if @group_data.length == 1
-      @group_data
+      term_statistics.group_data
     end
 
     def people
@@ -131,6 +123,10 @@ module Page
 
     def people_for_current_term
       @pct ||= popolo.persons.select { |p| current_term_people_ids.include?(p.id) }
+    end
+
+    def term_statistics
+      @term_statistics ||= TermStatistics.new(term: term, org_lookup: org_lookup)
     end
   end
 end
