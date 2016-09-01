@@ -71,6 +71,13 @@ get '/:country/download.html' do |country_slug|
   erb :country_download
 end
 
+get '/:country/:house/download.html' do |country_slug, house_slug|
+  pass unless country = settings.index.country(country_slug)
+  pass unless house   = country.legislature(house_slug)
+  @page = Page::HouseDownload.new(house: house, index: settings.index)
+  erb :house_download
+end
+
 get '/status/all_countries.html' do
   @page = Page::SpiderBase.new
   erb :spider_base
