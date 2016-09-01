@@ -25,6 +25,14 @@ describe 'Viewer' do
     end
   end
 
+  describe 'when viewing a house/download page' do
+    before { get '/finland/eduskunta/download.html' }
+
+    it 'should link back to the house' do
+      subject.css('.site-header__logo h3 a/@href').text.must_equal '/finland/eduskunta/'
+    end
+  end
+
   describe 'unknown house of known country' do
     before { get '/finland/upper' }
 
