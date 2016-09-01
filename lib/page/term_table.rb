@@ -47,7 +47,7 @@ module Page
       @group_data ||= term
                       .memberships_at_end
                       .group_by(&:on_behalf_of_id)
-                      .map     { |group_id, mems| [org_lookup[group_id].first, mems] }
+                      .map     { |_, mems| [mems.first.group, mems] }
                       .sort_by { |group, mems| [-mems.count, group.name] }
                       .map     { |group, mems| SeatCount.new(group.id.split('/').last, group.name, mems.count) }
 
@@ -114,14 +114,6 @@ module Page
     # Caches for faster lookup
     def membership_lookup
       @membership_lookup ||= current_term_memberships.group_by(&:person_id)
-    end
-
-    def area_lookup
-      @area_lookup ||= popolo.areas.group_by(&:id)
-    end
-
-    def org_lookup
-      @org_lookup ||= popolo.organizations.group_by(&:id)
     end
 
     def current_term_memberships
