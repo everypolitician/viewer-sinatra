@@ -44,19 +44,22 @@ module Page
 
     SeatCount = Struct.new(:group_id, :name, :member_count)
     def group_data
-      @group_data ||= term
-                      .memberships_at_end
-                      .group_by(&:on_behalf_of_id)
-                      .map     { |group_id, mems| [org_lookup[group_id].first, mems] }
-                      .sort_by { |group, mems| [-mems.count, group.name] }
-                      .map     { |group, mems| SeatCount.new(group.id.split('/').last, group.name, mems.count) }
-
+      @group_data ||= groups_and_members
+                      .map { |group, mems| SeatCount.new(group.id.split('/').last, group.name, mems.count) }
       @group_data = [] if @group_data.length == 1
       @group_data
     end
 
+    def groups_and_members
+      term
+        .memberships_at_end
+        .group_by(&:on_behalf_of_id)
+        .map     { |_, mems| [mems.first.group, mems] }
+        .sort_by { |group, mems| [-mems.count, group.name] }
+    end
+
     def people
-      @people ||= people_for_current_term.sort_by(&:sort_name).map do |person|
+      @people ||= people_for_current_term.map do |person|
         PersonCard.new(
           person:          person,
           proxy_image:     image_proxy_url(person.id),
@@ -69,8 +72,11 @@ module Page
     CARDS = %i(social bio contacts identifiers).freeze
     Percentages = Struct.new(*CARDS)
     def percentages
-      pc = ->(card) { ((people.count { |p| p.send(card.to_s).any? } / people.count.to_f) * 100).floor }
-      Percentages.new(*CARDS.map { |card| pc.call(card) })
+      Percentages.new(*CARDS.map { |card| person_card(card) })
+    end
+
+    def person_card(card)
+      ((people.count { |p| p.send(card.to_s).any? } / people.count.to_f) * 100).floor
     end
 
     private
@@ -95,9 +101,9 @@ module Page
 
     def person_memberships(person)
       membership_lookup[person.id].each do |mem|
-        group = org_lookup[mem.on_behalf_of_id].first.name if mem.on_behalf_of_id
+        group = mem.group.name
         group = '' if group.to_s.downcase == 'unknown'
-        area = area_lookup[mem.area_id].first.name if mem.area_id
+        area = mem.area.name if mem.area_id
         mem.define_singleton_method(:group) { group || '' }
         mem.define_singleton_method(:area)  { area  || '' }
       end
@@ -113,14 +119,6 @@ module Page
       @membership_lookup ||= current_term_memberships.group_by(&:person_id)
     end
 
-    def area_lookup
-      @area_lookup ||= popolo.areas.group_by(&:id)
-    end
-
-    def org_lookup
-      @org_lookup ||= popolo.organizations.group_by(&:id)
-    end
-
     def current_term_memberships
       @ctm ||= term.memberships
     end
@@ -130,7 +128,7 @@ module Page
     end
 
     def people_for_current_term
-      @pct ||= popolo.persons.select { |p| current_term_people_ids.include?(p.id) }
+      @pct ||= popolo.persons.select { |p| current_term_people_ids.include?(p.id) }.sort_by(&:sort_name)
     end
   end
 end
