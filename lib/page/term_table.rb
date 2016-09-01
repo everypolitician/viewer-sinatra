@@ -56,7 +56,7 @@ module Page
     end
 
     def people
-      @people ||= people_for_current_term.sort_by(&:sort_name).map do |person|
+      @people ||= people_for_current_term.map do |person|
         PersonCard.new(
           person:          person,
           proxy_image:     image_proxy_url(person.id),
@@ -130,7 +130,7 @@ module Page
     end
 
     def people_for_current_term
-      @pct ||= popolo.persons.select { |p| current_term_people_ids.include?(p.id) }
+      @pct ||= popolo.persons.select { |p| current_term_people_ids.include?(p.id) }.sort_by(&:sort_name)
     end
   end
 end
