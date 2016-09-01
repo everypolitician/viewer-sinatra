@@ -38,8 +38,19 @@ module EveryPolitician
       end
     end
   end
+
+  module MembershipExtension
+    def group
+      popolo.organizations.find_by(id: on_behalf_of_id)
+    end
+
+    def area
+      popolo.areas.find_by(id: area_id)
+    end
+  end
 end
 
 EveryPolitician::Country.include EveryPolitician::CountryExtension
 EveryPolitician::Legislature.include EveryPolitician::LegislatureExtension
 EveryPolitician::LegislativePeriod.include EveryPolitician::LegislativePeriodExtension
+EveryPolitician::Popolo::Membership.include Everypolitician::MembershipExtension
