@@ -40,3 +40,8 @@ task 'everypolitician-data', [:path] do |_, args|
   mkdir_p(fixture_path.dirname)
   fixture_path.write(open("https://cdn.rawgit.com/everypolitician/everypolitician-data/#{args[:path]}").read)
 end
+
+# Check for known vulnerabilities in Gemfile.lock
+
+require 'bundler/audit/task'
+Bundler::Audit::Task.new

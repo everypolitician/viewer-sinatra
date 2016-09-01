@@ -3,6 +3,7 @@ cache: bundler
 script:
   - bundle exec rake test:all
   - bundle exec rake rubocop
+  - bundle exec rake bundle:audit
   - scripts/release.sh
 sudo: false
 rvm:
