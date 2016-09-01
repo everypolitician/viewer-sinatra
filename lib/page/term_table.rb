@@ -44,15 +44,18 @@ module Page
 
     SeatCount = Struct.new(:group_id, :name, :member_count)
     def group_data
-      @group_data ||= term
-                      .memberships_at_end
-                      .group_by(&:on_behalf_of_id)
-                      .map     { |_, mems| [mems.first.group, mems] }
-                      .sort_by { |group, mems| [-mems.count, group.name] }
-                      .map     { |group, mems| SeatCount.new(group.id.split('/').last, group.name, mems.count) }
-
+      @group_data ||= groups_and_members
+                      .map { |group, mems| SeatCount.new(group.id.split('/').last, group.name, mems.count) }
       @group_data = [] if @group_data.length == 1
       @group_data
+    end
+
+    def groups_and_members
+      term
+        .memberships_at_end
+        .group_by(&:on_behalf_of_id)
+        .map     { |_, mems| [mems.first.group, mems] }
+        .sort_by { |group, mems| [-mems.count, group.name] }
     end
 
     def people
