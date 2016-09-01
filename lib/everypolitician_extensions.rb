@@ -40,10 +40,14 @@ module EveryPolitician
   end
 
   module MembershipExtension
+    # The political group (party / faction) this membership is held on behalf of
+    # @return [Everypolitician::Popolo::Organization]
     def group
       popolo.organizations.find_by(id: on_behalf_of_id)
     end
 
+    # The area that this membership belongs to
+    # @return [Everypolitician::Popolo::Area]
     def area
       popolo.areas.find_by(id: area_id)
     end
