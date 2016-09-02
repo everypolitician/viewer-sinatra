@@ -39,11 +39,11 @@ describe 'MembershipExtensions -- memberships with no known groups or area names
                       .first
   end
 
-  it 'should return nil if a membership has no group data' do
+  it 'should return nil if a membership has no area data' do
     subject.area.must_be_nil
   end
 
-  it 'should return "unkown" if membership’s area name is unknown' do
+  it 'should return "unkown" if membership’s group name is unknown' do
     subject.group.name.must_equal 'unknown'
   end
 end
