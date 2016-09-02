@@ -85,6 +85,22 @@
   </div>
 
 <div class="page-section">
+
+  <% if @page.more_houses? %>
+  <div class="container">
+    <h3>Other legislatures</h3>
+    <p>We have more data available for this country:</p>
+    <% @page.other_houses.each do |house| %>
+    <p>
+      <a class="button button--quarternary" href="/<%= @page.country.slug.downcase %>/<%= house.slug.downcase %>/">
+        <i class="fa fa-globe"></i>
+        <span class="large-screen-only">View</span> <%= house.name %>
+      </a>
+    </p>
+    <% end %>
+  </div>
+  <% end %>
+
   <div class="container">
     <h3>Other countries</h3>
     <div class="layout-equal-columns">
