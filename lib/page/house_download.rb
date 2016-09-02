@@ -25,6 +25,14 @@ module Page
       index.index_url
     end
 
+    def more_houses?
+      country.legislatures.count > 1
+    end
+
+    def other_houses
+      country.legislatures.reject { |legislature| legislature.slug == house.slug }
+    end
+
     private
 
     attr_reader :index
