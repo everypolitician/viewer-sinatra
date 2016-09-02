@@ -28,3 +28,22 @@ describe 'MembershipExtensions' do
     subject.area.class.must_equal Everypolitician::Popolo::Area
   end
 end
+
+describe 'MembershipExtensions -- memberships with no known groups or area names' do
+  subject do
+    stub_popolo('2b38667', 'Afghanistan/Wolesi_Jirga')
+    index_at_known_sha.country('afghanistan')
+                      .legislature('wolesi-jirga')
+                      .popolo
+                      .memberships
+                      .first
+  end
+
+  it 'should return nil if a membership has no group data' do
+    subject.area.must_be_nil
+  end
+
+  it 'should return "unkown" if membership’s area name is unknown' do
+    subject.group.name.must_equal 'unknown'
+  end
+end
