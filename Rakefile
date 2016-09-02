@@ -20,6 +20,15 @@ Rake::TestTask.new do |t|
 end
 
 Rake::TestTask.new do |t|
+  t.name = 'test:extensions'
+  t.warning = false
+  t.verbose = true
+  t.description = 'Run "Everypolitician extensions" tests'
+  t.test_files = FileList['t/everypolitician_extensions/**/*.rb']
+  t.libs << 't'
+end
+
+Rake::TestTask.new do |t|
   t.name = 'test:all'
   t.verbose = true
   t.description = 'Run all tests (slow)'
