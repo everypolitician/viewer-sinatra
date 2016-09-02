@@ -72,10 +72,6 @@ module Page
       Percentages.new(*CARDS.map { |card| person_card(card) })
     end
 
-    def person_card(card)
-      ((people.count { |p| p.send(card.to_s).any? } / people.count.to_f) * 100).floor
-    end
-
     private
 
     attr_reader :term
@@ -109,6 +105,10 @@ module Page
     def image_proxy_url(id)
       'https://mysociety.github.io/politician-image-proxy' \
       "/#{country.slug}/#{house.slug}/#{id}/140x140.jpeg"
+    end
+
+    def person_card(card)
+      ((people.count { |p| p.send(card.to_s).any? } / people.count.to_f) * 100).floor
     end
 
     # Caches for faster lookup
