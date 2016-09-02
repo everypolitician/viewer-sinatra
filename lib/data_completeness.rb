@@ -9,7 +9,7 @@ class DataCompleteness
   CARDS = %i(social bio contacts identifiers).freeze
   Percentages = Struct.new(*CARDS)
   # The percentage of data completeness for categories defined in CARDS
-  # @return [<struct DataCompleteness::Percentages>]
+  # @return [struct DataCompleteness::Percentages]
   def percentages
     Percentages.new(*CARDS.map { |card| completeness(card) })
   end
