@@ -11,14 +11,14 @@ class DataCompleteness
   # The percentage of data completeness for categories defined in CARDS
   # @return [<struct DataCompleteness::Percentages>]
   def percentages
-    Percentages.new(*CARDS.map { |card| calculate_completeness(card) })
+    Percentages.new(*CARDS.map { |card| completeness(card) })
   end
 
   private
 
   attr_reader :person_cards
 
-  def calculate_completeness(card)
+  def completeness(card)
     ((person_cards.count { |p| p.send(card.to_s).any? } / person_cards.count.to_f) * 100).floor
   end
 end
