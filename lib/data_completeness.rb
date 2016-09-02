@@ -2,8 +2,8 @@
 # The completeness of each type of member data as a percentage
 class DataCompleteness
   # @param [Array<PersonCard>]
-  def initialize(people:)
-    @people = people
+  def initialize(person_cards:)
+    @person_cards = person_cards
   end
 
   CARDS = %i(social bio contacts identifiers).freeze
@@ -16,9 +16,9 @@ class DataCompleteness
 
   private
 
-  attr_reader :people
+  attr_reader :person_cards
 
   def calculate_completeness(card)
-    ((people.count { |p| p.send(card.to_s).any? } / people.count.to_f) * 100).floor
+    ((person_cards.count { |p| p.send(card.to_s).any? } / person_cards.count.to_f) * 100).floor
   end
 end
