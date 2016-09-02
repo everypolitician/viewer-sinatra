@@ -68,7 +68,7 @@ module Page
     end
 
     def percentages
-      @pc ||= DataCompleteness.new(people: people).percentages
+      @pc ||= DataCompleteness.new(person_cards: people).percentages
     end
 
     private
