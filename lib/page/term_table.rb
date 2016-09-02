@@ -69,8 +69,7 @@ module Page
     CARDS = %i(social bio contacts identifiers).freeze
     Percentages = Struct.new(*CARDS)
     def percentages
-      pc = ->(card) { ((people.count { |p| p.send(card.to_s).any? } / people.count.to_f) * 100).floor }
-      Percentages.new(*CARDS.map { |card| pc.call(card) })
+      Percentages.new(*CARDS.map { |card| calculate_data_completeness(card) })
     end
 
     private
@@ -106,6 +105,10 @@ module Page
     def image_proxy_url(id)
       'https://mysociety.github.io/politician-image-proxy' \
       "/#{country.slug}/#{house.slug}/#{id}/140x140.jpeg"
+    end
+
+    def calculate_data_completeness(card)
+      ((people.count { |p| p.send(card.to_s).any? } / people.count.to_f) * 100).floor
     end
 
     # Caches for faster lookup
