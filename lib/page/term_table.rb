@@ -69,7 +69,7 @@ module Page
     CARDS = %i(social bio contacts identifiers).freeze
     Percentages = Struct.new(*CARDS)
     def percentages
-      Percentages.new(*CARDS.map { |card| person_card(card) })
+      Percentages.new(*CARDS.map { |card| calculate_data_completeness(card) })
     end
 
     private
@@ -107,7 +107,7 @@ module Page
       "/#{country.slug}/#{house.slug}/#{id}/140x140.jpeg"
     end
 
-    def person_card(card)
+    def calculate_data_completeness(card)
       ((people.count { |p| p.send(card.to_s).any? } / people.count.to_f) * 100).floor
     end
 
