@@ -2,6 +2,7 @@
 require 'everypolitician'
 require_relative '../everypolitician_extensions'
 require_relative '../person_cards'
+require_relative '../data_completeness.rb'
 
 module Page
   class TermTable
@@ -66,11 +67,8 @@ module Page
       end
     end
 
-    CARDS = %i(social bio contacts identifiers).freeze
-    Percentages = Struct.new(*CARDS)
     def percentages
-      pc = ->(card) { ((people.count { |p| p.send(card.to_s).any? } / people.count.to_f) * 100).floor }
-      Percentages.new(*CARDS.map { |card| pc.call(card) })
+      @pc ||= DataCompleteness.new(people: people).percentages
     end
 
     private
