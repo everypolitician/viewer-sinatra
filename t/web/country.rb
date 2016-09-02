@@ -4,10 +4,10 @@ require_relative '../../app'
 
 describe 'Country Page' do
   subject { Nokogiri::HTML(last_response.body) }
-  let(:terms) { subject.css('#terms-riigikogu li') }
 
   describe 'when viewing a country home page' do
-    before { get '/estonia/' }
+    let(:terms) { subject.css('#terms-riigikogu li') }
+    before      { get '/estonia/' }
 
     it 'should know its country' do
       subject.css('.site-header__logo h2').text.strip.must_equal 'Estonia'
@@ -27,6 +27,19 @@ describe 'Country Page' do
 
     it 'should have no end date for the most recent term' do
       terms.css('p').last.text.must_equal '2011-03-27 - 2015-03-23'
+    end
+  end
+
+  describe 'when displaying download links' do
+    let(:links) { subject.css('.button--quarternary/@href') }
+    before      { get '/united-states-of-america/' }
+
+    it 'links to the House of Representatives' do
+      links.first.text.must_equal '/united-states-of-america/house/download.html'
+    end
+
+    it 'links to the Senate' do
+      links.last.text.must_equal '/united-states-of-america/senate/download.html'
     end
   end
 end
