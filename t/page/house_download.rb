@@ -45,4 +45,14 @@ describe 'HouseDownload' do
       subject.download_url.must_include 'd8a4682f'
     end
   end
+
+  describe 'other houses' do
+    it 'knows that there is more than one house' do
+      subject.more_houses?.must_equal true
+    end
+
+    it 'knows of House of Representatives from Senate' do
+      subject.other_houses.first.name.must_equal 'House of Representatives'
+    end
+  end
 end
