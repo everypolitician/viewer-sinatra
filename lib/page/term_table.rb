@@ -2,7 +2,7 @@
 require 'everypolitician'
 require_relative '../everypolitician_extensions'
 require_relative '../person_cards'
-require_relative '../data_completeness.rb'
+require_relative '../data_completeness'
 
 module Page
   class TermTable
