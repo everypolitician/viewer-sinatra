@@ -63,7 +63,7 @@ module Page
         PersonCard.new(
           person:          person,
           proxy_image:     image_proxy_url(person.id),
-          memberships:     person_memberships(person),
+          memberships:     membership_lookup[person.id],
           top_identifiers: top_identifiers
         )
       end
@@ -97,16 +97,6 @@ module Page
                 .sort_by { |_s, ids| -ids.size }
                 .map { |s, _ids| s }
                 .take(3)
-    end
-
-    def person_memberships(person)
-      membership_lookup[person.id].each do |mem|
-        group = mem.group.name
-        group = '' if group.to_s.downcase == 'unknown'
-        area = mem.area.name if mem.area_id
-        mem.define_singleton_method(:group) { group || '' }
-        mem.define_singleton_method(:area)  { area  || '' }
-      end
     end
 
     def image_proxy_url(id)
