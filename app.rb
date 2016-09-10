@@ -18,6 +18,7 @@ Dotenv.load
 helpers Popolo::Helper
 
 set :erb, trim: '-'
+set :main_url, 'http://everypolitician.org'
 set :docs_url, 'http://docs.everypolitician.org'
 set :index, EveryPolitician::Index.new(index_url: File.read('DATASOURCE').chomp)
 
@@ -67,8 +68,8 @@ end
 
 get '/:country/download.html' do |country_slug|
   pass unless country = settings.index.country(country_slug)
-  @page = Page::Download.new(country: country, index: settings.index)
-  erb :country_download
+  @page = Page::Country.new(country: country)
+  redirect(settings.main_url, "/#{country_slug}/", @page.title)
 end
 
 get '/:country/:house/download.html' do |country_slug, house_slug|
@@ -102,7 +103,7 @@ end
 
 # Old doc pages are now at docs.everypolitician.org: redirect to them
 get '/about.html' do
-  docs_redirect('/', 'About')
+  redirect(settings.docs_url, '/', 'About')
 end
 
 set :docs_map, contribute:     'How to contribute',
@@ -117,7 +118,7 @@ set :docs_map, contribute:     'How to contribute',
 settings.docs_map.each do |page, text|
   path = '/%s.html' % page
   get path do
-    docs_redirect(path, text)
+    redirect(settings.docs_url, path, text)
   end
 end
 
@@ -132,8 +133,8 @@ end
 # because wget simply fetches the HTML document, this lets us continue to
 # spider the site to generate the contents of everypolitician/viewer-static.
 # See scripts/release.sh (update_viewer_static).
-def docs_redirect(path, page_title)
-  @url = URI.join(settings.docs_url, path)
+def redirect(host, path, page_title)
+  @url = URI.join(host, path)
   @head_tags = [
     %(<meta http-equiv="refresh" content="0; url=#{@url}">),
     %(<link rel="canonical" href="#{@url}"/>),
