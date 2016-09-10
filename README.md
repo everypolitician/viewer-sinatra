@@ -3,7 +3,7 @@
 This `viewer-sinatra` app dynamically generates the data pages of
 the [EveryPolitician website](http://everypolitician.org).
 
-It's a small Sinatra app that loads data on a per-request basis
+It’s a small Sinatra app that loads data on a per-request basis
 using a `countries.json` file specified by the URL in the `DATASOURCE` file.
 
 Typically, we use this with `DATASOURCE` pointing at a specific version
@@ -20,7 +20,7 @@ linked to a specific commit, then `viewer-sinatra` will generate web pages popul
 with data specific to the time of that commit.
 
 We use it to [generate the (static) HTML pages for the live site](https://medium.com/@everypolitician/how-i-build-the-everypolitician-website-6fd581867d10)
-as well as [spinning up previews for data that hasn't been merged yet](https://medium.com/@everypolitician/i-let-humans-peek-into-the-future-f4fe09eba59c)
+as well as [spinning up previews for data that hasn’t been merged yet](https://medium.com/@everypolitician/i-let-humans-peek-into-the-future-f4fe09eba59c)
 on Heroku.
 
 This is a lightweight app for generating the site. It is **not for use in production**.
