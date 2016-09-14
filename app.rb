@@ -19,7 +19,8 @@ helpers Popolo::Helper
 
 set :erb, trim: '-'
 set :docs_url, 'http://docs.everypolitician.org'
-set :index, EveryPolitician::Index.new(index_url: File.read('DATASOURCE').chomp)
+set :datasource, ENV.fetch('DATASOURCE', 'https://github.com/everypolitician/everypolitician-data/raw/master/countries.json')
+set :index, EveryPolitician::Index.new(index_url: settings.datasource)
 
 get '/' do
   @page = Page::Home.new(index: settings.index)
