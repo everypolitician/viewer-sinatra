@@ -46,7 +46,7 @@ describe 'HouseDownload' do
     end
 
     it 'should be at rawgit' do
-      subject.download_url.must_include 'cdn.rawgit.com'
+      subject.download_url.must_equal index_at_known_sha.index_url
     end
   end
 end
