@@ -4,13 +4,6 @@ set -eo pipefail
 
 [[ "$TRACE" ]] && set -x
 
-add_ssh_key() {
-  openssl aes-256-cbc -K $encrypted_ab0690a1b9d7_key -iv $encrypted_ab0690a1b9d7_iv -in deploy_key.pem.enc -out deploy_key.pem -d
-  chmod 600 deploy_key.pem
-  eval "$(ssh-agent)"
-  ssh-add deploy_key.pem
-}
-
 build_viewer_static() {
   bundle exec ruby app.rb &
   while ! nc -z localhost 4567; do sleep 1; done
@@ -29,7 +22,6 @@ deploy_viewer_static() {
 }
 
 main() {
-  add_ssh_key
   build_viewer_static
   if [[ "$TRAVIS_PULL_REQUEST" == "false" ]]; then
     if [[ "$TRAVIS_BRANCH" == "master" ]]; then
