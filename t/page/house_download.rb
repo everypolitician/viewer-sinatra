@@ -44,9 +44,5 @@ describe 'HouseDownload' do
     it 'should be at the correct SHA' do
       subject.download_url.must_include 'd8a4682f'
     end
-
-    it 'should be at rawgit' do
-      subject.download_url.must_equal index_at_known_sha.index_url
-    end
   end
 end
