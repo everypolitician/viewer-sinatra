@@ -28,18 +28,6 @@ deploy_viewer_static() {
   git push origin gh-pages
 }
 
-update_politician_image_proxy() {
-  cd /tmp
-  git clone "git@github.com:mysociety/politician-image-proxy.git"
-  cd politician-image-proxy
-  bundle install --gemfile=Gemfile
-  echo "Updating politician-image-proxy"
-  QUIET=1 ruby scraper.rb
-  git add .
-  git -c "user.name=everypoliticianbot" -c "user.email=everypoliticianbot@users.noreply.github.com" commit -m "Update images" || true
-  git push origin gh-pages
-}
-
 main() {
   add_ssh_key
   build_viewer_static
@@ -47,7 +35,6 @@ main() {
     if [[ "$TRAVIS_BRANCH" == "master" ]]; then
       deploy_viewer_static
     fi
-    # update_politician_image_proxy
   fi
 }
 
