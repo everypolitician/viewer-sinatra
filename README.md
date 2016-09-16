@@ -4,7 +4,8 @@ This `viewer-sinatra` app dynamically generates the data pages of
 the [EveryPolitician website](http://everypolitician.org).
 
 It's a small Sinatra app that loads data on a per-request basis
-using a `countries.json` file specified by the URL in the `DATASOURCE` file.
+using a `countries.json` file specified by the URL in the `DATASOURCE`
+environment variable.
 
 Typically, we use this with `DATASOURCE` pointing at a specific version
 (often the *most recent version*) of `countries.json`, which is the
