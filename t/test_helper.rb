@@ -26,7 +26,7 @@ module Minitest
     end
 
     before do
-      cj_file = %r{#{cdn}/#{ep_repo}/raw/\w+/countries.json}
+      cj_file = %r{#{ep_repo}/raw/\w+/countries.json}
       fixture = Pathname.new('t/fixtures/d8a4682f-countries.json')
       stub_request(:get, cj_file).to_return(body: fixture.read)
     end
@@ -57,16 +57,12 @@ module Minitest
 
     private
 
-    def cdn
-      'https://github.com'
-    end
-
     def ep_repo
-      'everypolitician/everypolitician-data'
+      'https://github.com/everypolitician/everypolitician-data'
     end
 
     def countries_json_url
-      URI.join(cdn, ep_repo + '/', 'raw/d8a4682f/countries.json').to_s
+      URI.join(ep_repo + '/', 'raw/d8a4682f/countries.json').to_s
     end
   end
 end
