@@ -53,19 +53,19 @@ Sass files are currently generated on each pageload, just like any other templat
 You can also run it locally without using Vagrant. First [install Foreman globally](https://github.com/ddollar/foreman#installation):
 
 ```bash
-$ gem install foreman
+gem install foreman
 ```
 
 Then install the project's gems:
 
 ```bash
-$ bundle install
+bundle install
 ```
 
 and launch the site:
 
 ```bash
-$ foreman start
+foreman start
 ```
 
 It will be available at [http://localhost:5000/](http://localhost:5000/)
@@ -77,25 +77,25 @@ To run the tests you have some options:
 ### Run just the page tests
 
 ```bash
-$ bundle exec rake test
+bundle exec rake test
 ```
 
 ### Run just the web tests (slow)
 
 ```bash
-$ bundle exec rake test:web
+bundle exec rake test:web
 ```
 
 ### Run just the extensions tests
 
 ```bash
-$ bundle exec rake test:extensions
+bundle exec rake test:extensions
 ```
 
 ### Run absolutely all the tests (slow, as you guessed)
 
 ```bash
-$ bundle exec rake test:all
+bundle exec rake test:all
 ```
 
 It is recommended to run the last command at least once right before pushing.
