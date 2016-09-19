@@ -56,19 +56,21 @@ You can also run it locally without using Vagrant. First [install Foreman global
 gem install foreman
 ```
 
-Then install the project's gems:
+Then clone the project and install the project's gems:
 
 ```bash
+git clone git@github.com:everypolitician/viewer-sinatra.git
+cd viewer-sinatra
 bundle install
 ```
 
-and launch the site:
+Finally, launch the site:
 
 ```bash
 foreman start
 ```
 
-It will be available at [http://localhost:5000/](http://localhost:5000/)
+It will be available at <http://localhost:5000/>
 
 ## Run the tests
 
