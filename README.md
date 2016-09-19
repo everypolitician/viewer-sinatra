@@ -48,6 +48,28 @@ Then follow the instructions displayed by the virtual machine.
 
 Sass files are currently generated on each pageload, just like any other template. You do not need to manually compile the Sass.
 
+## Run without Vagrant
+
+You can also run it locally without using Vagrant. First [install Foreman globally](https://github.com/ddollar/foreman#installation):
+
+```bash
+$ gem install foreman
+```
+
+Then install the project's gems:
+
+```bash
+$ bundle install
+```
+
+and launch the site:
+
+```bash
+$ foreman start
+```
+
+It will be available at [http://localhost:5000/](http://localhost:5000/)
+
 ## Run the tests
 
 To run the tests you have some options:
