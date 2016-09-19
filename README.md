@@ -48,6 +48,36 @@ Then follow the instructions displayed by the virtual machine.
 
 Sass files are currently generated on each pageload, just like any other template. You do not need to manually compile the Sass.
 
+## Run the tests
+
+To run the tests you have some options:
+
+### Run just the page tests
+
+```bash
+$ bundle exec rake test
+```
+
+### Run just the web tests (slow)
+
+```bash
+$ bundle exec rake test:web
+```
+
+### Run just the extensions tests
+
+```bash
+$ bundle exec rake test:extensions
+```
+
+### Run absolutely all the tests (slow, as you guessed)
+
+```bash
+$ bundle exec rake test:all
+```
+
+It is recommended to run the last command at least once right before pushing.
+
 ## Sinatra, SASS, styling
 
 The project uses [Sinatra](http://www.sinatrarb.com), an ultra-minimal Ruby MVC web app framework.
