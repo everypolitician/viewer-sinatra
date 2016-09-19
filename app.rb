@@ -134,7 +134,11 @@ end
 # spider the site to generate the contents of everypolitician/viewer-static.
 # See scripts/release.sh (update_viewer_static).
 def docs_redirect(path, page_title)
-  @url = URI.join(settings.docs_url, path)
+  meta_redirect(URI.join(settings.docs_url, path), page_title)
+end
+
+def meta_redirect(uri, page_title)
+  @url = uri
   @head_tags = [
     %(<meta http-equiv="refresh" content="0; url=#{@url}">),
     %(<link rel="canonical" href="#{@url}"/>),
