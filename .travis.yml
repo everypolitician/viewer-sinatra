@@ -1,5 +1,7 @@
 language: ruby
 cache: bundler
+before_install:
+  - echo -e "machine github.com\n  login $GITHUB_ACCESS_TOKEN" >> ~/.netrc
 script:
   - bundle exec rake test:all
   - bundle exec rake rubocop
@@ -13,4 +15,4 @@ notifications:
     secure: GVD9d+kwR5hzab5ZnWugbCkp9QSYyheSrABWkD+LmpMcWcx7jijajSn4LLvDi/zHYn1MdOBcPe08hSygmpm7ViUApp0EJcSzE4BLU/5oAs+ANV0Qq6jsssMlyo3v8eRAqHNiLxAiAsz+lc0EZWfQnSW8kHzzbO3NeYq1NRL5CgQ=
 env:
   global:
-    secure: WRZV46fZtGllaxAydCCSeAd9UqPPYpajG5xQEOJNlPcbQloldwi0P2k01psoOHvPWL8FToEb+Durr7w0NzyaToGrWQ8aeUHtXN7DsuNs9/IvgsZP6AFz1dfve2EDoAmqFKlZM3+3SB5k0Mf9cuqe7UTB6mn71VXweqFAj+uB/GU=
+    secure: cwq0zTDtALPr4nm29EgvQ6v5oIzYsE+DEP3Vt4unrTuv84JywWu2mry+YiXLCmcermD433BG5Fy/E+MUXAXiGjMtJr6wqkVe8HlDH3xOCJ4LBzR/hrE1x5Ufke6UmHCdpcWlSTNO8eQDP1k/X2Pz6Zng2TlmenLwGwUNZ82O5vM=
