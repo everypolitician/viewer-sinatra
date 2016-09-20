@@ -19,4 +19,11 @@ describe 'House Page' do
       subject.css('.avatar-unit p').last.text.must_equal '1981-01-06 - 1983-01-03'
     end
   end
+
+  describe 'HTML validation' do
+    it 'has no errors in the house page' do
+      skip if `which tidy`.empty?
+      last_response_must_be_valid
+    end
+  end
 end
