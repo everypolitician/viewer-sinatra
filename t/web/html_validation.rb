@@ -9,6 +9,11 @@ describe 'HTML validation' do
     validate(last_response.body).must_be_nil
   end
 
+  it 'has no errors in the countries page' do
+    get '/countries.html'
+    validate(last_response.body).must_be_nil
+  end
+
   it 'has no errors in the country page' do
     get '/finland/'
     validate(last_response.body).must_be_nil
