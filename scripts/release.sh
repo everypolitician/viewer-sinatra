@@ -1,4 +1,10 @@
 #!/bin/bash
+#
+# This script has been copied over to everypolitician-data and modified
+# slightly as `scripts/deploy.sh`. Any changes to this script might also need
+# to be made in that script.
+#
+# @see https://git.io/viSn6
 
 set -eo pipefail
 
