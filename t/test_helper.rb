@@ -8,6 +8,7 @@ require 'rack/test'
 require 'pry'
 require 'webmock/minitest'
 require 'everypolitician'
+require 'html_validation'
 
 module Minitest
   class Spec
@@ -53,6 +54,11 @@ module Minitest
       )
       stub_json('https://api.github.com/repos/everypolitician/everypolitician-data/issues?labels=New%20Country,To%20Scrape&per_page=100')
       stub_json('https://api.github.com/repos/everypolitician/everypolitician-data/issues?labels=New%20Country,3%20-%20WIP&per_page=100')
+    end
+
+    def last_response_must_be_valid
+      validation = PageValidations::HTMLValidation.new.validation(last_response.body, last_request.url)
+      assert validation.valid?, validation.exceptions
     end
 
     private
