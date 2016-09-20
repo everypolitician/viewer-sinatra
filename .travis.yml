@@ -1,7 +1,11 @@
 language: ruby
+jdk:
+  - oraclejdk8
 cache: bundler
 before_install:
   - echo -e "machine github.com\n  login $GITHUB_ACCESS_TOKEN" >> ~/.netrc
+install:
+  - apt-get install openjdk-8-jre-headless
 script:
   - bundle exec rake test:all
   - bundle exec rake rubocop
