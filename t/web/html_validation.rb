@@ -14,6 +14,12 @@ describe 'HTML validation' do
     validate(last_response.body).must_be_nil
   end
 
+  it 'has no errors in the house/term page' do
+    stub_popolo('beb21e5', 'Alderney/States')
+    get '/alderney/states/term-table/2014.html'
+    validate(last_response.body).must_be_nil
+  end
+
   it 'has no errors in the house/download page' do
     get '/finland/eduskunta/download.html'
     validate(last_response.body).must_be_nil
