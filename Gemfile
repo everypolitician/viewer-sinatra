@@ -31,5 +31,6 @@ group :quality do
   gem 'flog'
   gem 'reek'
   gem 'rubocop'
+  gem 'ruby-vnu'
   gem 'yard'
 end
