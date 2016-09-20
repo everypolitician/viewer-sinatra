@@ -42,4 +42,12 @@ describe 'Country Page' do
       links.last.text.must_equal '/united-states-of-america/senate/download.html'
     end
   end
+
+  describe 'HTML validation' do
+    it 'has no errors in the country page' do
+      skip if `which tidy`.empty?
+      get '/estonia/'
+      last_response_must_be_valid
+    end
+  end
 end
