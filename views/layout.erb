@@ -1,5 +1,6 @@
 <% @country = @page.country if (@page and @page.respond_to? :country) %>
 <% @house   = @page.house   if (@page and @page.respond_to? :house) %>
+<% @head_tags = @head_tags ||= "" %>
 
 <!DOCTYPE html>
 <html class="no-js">
