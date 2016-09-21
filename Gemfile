@@ -25,12 +25,12 @@ group :test do
   gem 'rack-test'
   gem 'webmock'
   gem 'bundler-audit'
+  gem 'html_validation'
 end
 
 group :quality do
   gem 'flog'
   gem 'reek'
   gem 'rubocop'
-  gem 'ruby-vnu'
   gem 'yard'
 end
