@@ -35,7 +35,7 @@ when building the live site).
 
 ## Install
 
-You can run this repo using Vagrant (preferred way) or you can run it locally.
+You can run `viewer-sinatra` using Vagrant (preferred way) or you can run it locally.
 
 ### Use Vagrant
 
