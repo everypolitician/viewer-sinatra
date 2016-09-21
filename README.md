@@ -35,18 +35,46 @@ when building the live site).
 
 ## Install
 
-Local development requires [Vagrant](http://docs.vagrantup.com/v2/installation/).
+You can run `viewer-sinatra` using Vagrant (preferred way) or you can run it locally.
+
+### Use Vagrant
+
+First install Vagrant following [the steps in the official documentation](http://docs.vagrantup.com/v2/installation/). Then clone the project and start the Vagrant virtual box:
 
     git clone https://github.com/everypolitician/viewer-sinatra.git
     cd viewer-sinatra
     vagrant up
     vagrant ssh
 
-Then follow the instructions displayed by the virtual machine.
+Finally, follow the instructions displayed by the virtual machine.
 
 **Note:** Changes to `app.rb` will require you to restart the webserver process.
 
 Sass files are currently generated on each pageload, just like any other template. You do not need to manually compile the Sass.
+
+### Run without Vagrant
+
+You can also run this project locally without using Vagrant. First [install Foreman globally](https://github.com/ddollar/foreman#installation):
+
+```bash
+gem install foreman
+```
+
+Then clone the project and install the project's gems:
+
+```bash
+git clone https://github.com/everypolitician/viewer-sinatra.git
+cd viewer-sinatra
+bundle install
+```
+
+Finally, launch the site:
+
+```bash
+foreman start
+```
+
+It will be available at <http://localhost:5000/>
 
 ## Run the tests
 
@@ -55,25 +83,25 @@ To run the tests you have some options:
 ### Run just the page tests
 
 ```bash
-$ bundle exec rake test
+bundle exec rake test
 ```
 
 ### Run just the web tests (slow)
 
 ```bash
-$ bundle exec rake test:web
+bundle exec rake test:web
 ```
 
 ### Run just the extensions tests
 
 ```bash
-$ bundle exec rake test:extensions
+bundle exec rake test:extensions
 ```
 
 ### Run absolutely all the tests (slow, as you guessed)
 
 ```bash
-$ bundle exec rake test:all
+bundle exec rake test:all
 ```
 
 It is recommended to run the last command at least once right before pushing.
