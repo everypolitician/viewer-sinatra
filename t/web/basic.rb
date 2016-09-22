@@ -71,7 +71,6 @@ describe 'Viewer' do
     before { get '/' }
 
     it 'has no errors in the home page' do
-      skip if `which tidy`.empty?
       last_response_must_be_valid
     end
   end

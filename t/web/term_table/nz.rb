@@ -22,7 +22,6 @@ describe 'Per Country Tests' do
     before { get '/new-zealand/house/term-table/51.html' }
 
     it 'has no errors in the term-table page' do
-      skip if `which tidy`.empty?
       last_response_must_be_valid
     end
   end
