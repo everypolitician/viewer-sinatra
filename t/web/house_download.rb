@@ -41,4 +41,11 @@ describe 'house download template' do
       subject.css('#term-senate-113 p').text.strip.must_include '2013-01-06 - 2015-01-03'
     end
   end
+
+  describe 'HTML validation' do
+    it 'has no errors in the house/download page' do
+      skip if `which tidy`.empty?
+      last_response_must_be_valid
+    end
+  end
 end
