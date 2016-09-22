@@ -132,7 +132,7 @@ end
 # This works for humans (i.e., browsers parse and follow the redirect) but,
 # because wget simply fetches the HTML document, this lets us continue to
 # spider the site to generate the contents of everypolitician/viewer-static.
-# See scripts/release.sh (update_viewer_static).
+# See scripts/release.sh (build_viewer_static).
 def docs_redirect(path, page_title)
   @url = URI.join(settings.docs_url, path)
   @head_tags = [
