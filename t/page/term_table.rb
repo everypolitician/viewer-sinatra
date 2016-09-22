@@ -140,6 +140,20 @@ describe 'TermTable' do
         af.identifiers.last.value.must_equal '83146'
         af.identifiers.last.link.must_equal nil
       end
+
+      it 'has up to 5 identifiers' do
+        harald = subject.people.find { |p| p.name == 'Dr. Harald Walser' }
+        harald.identifiers.size.must_equal 5
+      end
+
+      it 'has identifiers ordered by term frequency' do
+        harald = subject.people.find { |p| p.name == 'Dr. Harald Walser' }
+        harald.identifiers[0].type.must_equal 'wikidata'
+        harald.identifiers[1].type.must_equal 'parlaments_at'
+        harald.identifiers[2].type.must_equal 'viaf'
+        harald.identifiers[3].type.must_equal 'gnd'
+        harald.identifiers[4].type.must_equal 'lcauth'
+      end
     end
 
     it 'knows percentage of people that have special data' do
