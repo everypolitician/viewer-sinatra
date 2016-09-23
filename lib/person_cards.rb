@@ -106,7 +106,7 @@ class PersonCard
       end
 
       def info
-        extras[:top_identifiers].select { |s| person.identifier(s) }.map do |scheme|
+        extras[:top_identifiers].select { |s| person.identifier(s) }.take(5).map do |scheme|
           id = person.identifier(scheme)
           {
             type:  scheme,

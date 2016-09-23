@@ -90,7 +90,6 @@ module Page
                 .group_by { |i| i[:scheme] }
                 .sort_by { |_s, ids| -ids.size }
                 .map { |s, _ids| s }
-                .take(3)
     end
 
     def person_memberships(person)

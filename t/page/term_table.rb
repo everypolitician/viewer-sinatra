@@ -142,6 +142,34 @@ describe 'TermTable' do
       end
     end
 
+    describe 'identifiers' do
+      let(:maria) { subject.people.find { |p| p.name == 'Mag. Dr. Maria Theresia Fekter' } }
+
+      it 'shows up to 5' do
+        maria.identifiers.size.must_equal 5
+      end
+
+      it 'shows them ordered by their frequency in the term' do
+        maria.identifiers[0].type.must_equal 'wikidata'
+        maria.identifiers[1].type.must_equal 'parlaments_at'
+        maria.identifiers[2].type.must_equal 'viaf'
+        maria.identifiers[3].type.must_equal 'gnd'
+        maria.identifiers[4].type.must_equal 'munzinger'
+      end
+
+      it 'has Wikidata' do
+        maria.identifiers.first.type.must_equal 'wikidata'
+        maria.identifiers.first.value.must_equal 'Q85362'
+        maria.identifiers.first.link.must_equal 'https://www.wikidata.org/wiki/Q85362'
+      end
+
+      it 'has a munzinger id' do
+        maria.identifiers.last.type.must_equal 'munzinger'
+        maria.identifiers.last.value.must_equal '00000026847'
+        maria.identifiers.last.link.must_equal nil
+      end
+    end
+
     it 'knows percentage of people that have special data' do
       subject.percentages.social.must_equal 20
       subject.percentages.bio.must_equal 100
