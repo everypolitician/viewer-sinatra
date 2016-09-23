@@ -8,8 +8,6 @@
 
 # Screenshots
 
-# Not needed
-
 # Notes to Reviewer
 
 # Notes to Merger
