@@ -125,32 +125,48 @@ describe 'TermTable' do
         af.contacts.first.link.must_equal 'mailto:angela.fichtinger@parlament.gv.at'
       end
 
-      describe 'identifiers' do
-        let(:maria) { subject.people.find { |p| p.name == 'Mag. Dr. Maria Theresia Fekter' } }
+      it 'has two identifiers' do
+        af.identifiers.count.must_equal 2
+      end
 
-        it 'shows up to 5' do
-          maria.identifiers.size.must_equal 5
-        end
+      it 'has Wikidata' do
+        af.identifiers.first.type.must_equal 'wikidata'
+        af.identifiers.first.value.must_equal 'Q15783437'
+        af.identifiers.first.link.must_equal 'https://www.wikidata.org/wiki/Q15783437'
+      end
 
-        it 'shows them ordered by their frequency in the term' do
-          maria.identifiers[0].type.must_equal 'wikidata'
-          maria.identifiers[1].type.must_equal 'parlaments_at'
-          maria.identifiers[2].type.must_equal 'viaf'
-          maria.identifiers[3].type.must_equal 'gnd'
-          maria.identifiers[4].type.must_equal 'munzinger'
-        end
+      it 'has a parliament identifier' do
+        af.identifiers.last.type.must_equal 'parlaments_at'
+        af.identifiers.last.value.must_equal '83146'
+        af.identifiers.last.link.must_equal nil
+      end
+    end
 
-        it 'has Wikidata' do
-          maria.identifiers.first.type.must_equal 'wikidata'
-          maria.identifiers.first.value.must_equal 'Q85362'
-          maria.identifiers.first.link.must_equal 'https://www.wikidata.org/wiki/Q85362'
-        end
+    describe 'identifiers' do
+      let(:maria) { subject.people.find { |p| p.name == 'Mag. Dr. Maria Theresia Fekter' } }
 
-        it 'has a munzinger id' do
-          maria.identifiers.last.type.must_equal 'munzinger'
-          maria.identifiers.last.value.must_equal '00000026847'
-          maria.identifiers.last.link.must_equal nil
-        end
+      it 'shows up to 5' do
+        maria.identifiers.size.must_equal 5
+      end
+
+      it 'shows them ordered by their frequency in the term' do
+        maria.identifiers[0].type.must_equal 'wikidata'
+        maria.identifiers[1].type.must_equal 'parlaments_at'
+        maria.identifiers[2].type.must_equal 'viaf'
+        maria.identifiers[3].type.must_equal 'gnd'
+        maria.identifiers[4].type.must_equal 'munzinger'
+      end
+
+      it 'has Wikidata' do
+        maria.identifiers.first.type.must_equal 'wikidata'
+        maria.identifiers.first.value.must_equal 'Q85362'
+        maria.identifiers.first.link.must_equal 'https://www.wikidata.org/wiki/Q85362'
+      end
+
+      it 'has a munzinger id' do
+        maria.identifiers.last.type.must_equal 'munzinger'
+        maria.identifiers.last.value.must_equal '00000026847'
+        maria.identifiers.last.link.must_equal nil
       end
     end
 
