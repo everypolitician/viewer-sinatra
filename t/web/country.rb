@@ -45,7 +45,6 @@ describe 'Country Page' do
 
   describe 'HTML validation' do
     it 'has no errors in the country page' do
-      skip if `which tidy`.empty?
       get '/estonia/'
       last_response_must_be_valid
     end
