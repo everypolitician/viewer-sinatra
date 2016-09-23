@@ -57,6 +57,7 @@ module Minitest
     end
 
     def last_response_must_be_valid
+      skip if `which tidy`.empty?
       validation = PageValidations::HTMLValidation.new.validation(last_response.body, last_request.url)
       assert validation.valid?, validation.exceptions
     end
