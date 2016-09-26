@@ -1,0 +1,2611 @@
+{
+  "posts": [
+
+  ],
+  "persons": [
+    {
+      "family_name": "Rollins",
+      "given_name": "Andre",
+      "id": "93a0b8d8-4667-4ab7-9768-0402e6579535",
+      "identifiers": [
+        {
+          "identifier": "andre_rollins",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/cc45a72d-2240-4d5f-878b-e4541357083e/Dr.+Andre+Rollins+Ft.+Charlotte.jpg?MOD=AJPERES&CACHEID=cc45a72d-2240-4d5f-878b-e4541357083e",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/cc45a72d-2240-4d5f-878b-e4541357083e/Dr.+Andre+Rollins+Ft.+Charlotte.jpg?MOD=AJPERES&CACHEID=cc45a72d-2240-4d5f-878b-e4541357083e"
+        }
+      ],
+      "name": "Andre Rollins",
+      "sort_name": "Rollins, Andre",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "family_name": "Moss",
+      "gender": "male",
+      "given_name": "Anthony",
+      "id": "d5c68954-2cf6-4a38-b2b5-8c6abbf6e93e",
+      "identifiers": [
+        {
+          "identifier": "anthony_moss",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/7472e7ca-7bec-4bbe-9113-d13dd2c227af/Anthony+Moss-Exuma+%26+Ragged+Island4.jpg?MOD=AJPERES&CACHEID=7472e7ca-7bec-4bbe-9113-d13dd2c227af",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/7472e7ca-7bec-4bbe-9113-d13dd2c227af/Anthony+Moss-Exuma+%26+Ragged+Island4.jpg?MOD=AJPERES&CACHEID=7472e7ca-7bec-4bbe-9113-d13dd2c227af"
+        }
+      ],
+      "name": "Anthony Moss",
+      "sort_name": "Moss, Anthony",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "birth_date": "1964-09-05",
+      "family_name": "Forbes",
+      "gender": "male",
+      "given_name": "Arnold",
+      "id": "ba097ac3-f152-4d1c-8c1d-5ed5f44df1f9",
+      "identifiers": [
+        {
+          "identifier": "arnold_forbes",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/e4dbca38-5634-4203-ace3-0427e919381c/Arnold+Forbes-Mount+Moriah4.jpg?MOD=AJPERES&CACHEID=e4dbca38-5634-4203-ace3-0427e919381c",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/e4dbca38-5634-4203-ace3-0427e919381c/Arnold+Forbes-Mount+Moriah4.jpg?MOD=AJPERES&CACHEID=e4dbca38-5634-4203-ace3-0427e919381c"
+        },
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/2e917237-ca64-4bb5-9da3-af786f7e062c/Arnold+Forbes-Mount+Moriah4.jpg?MOD=AJPERES&CACHEID=2e917237-ca64-4bb5-9da3-af786f7e062c"
+        }
+      ],
+      "name": "Arnold Forbes",
+      "sort_name": "Forbes, Arnold",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "birth_date": "1945-10-23",
+      "family_name": "Nottage",
+      "given_name": "Bernard J.",
+      "id": "2f799303-0158-4c9d-9fd2-b428dfb2f90b",
+      "identifiers": [
+        {
+          "identifier": "bernard_nottage",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/135a88ef-b5b4-479e-8820-aef3f17d6aca/Dr.+Bernard+J.+Nottage2.jpg?MOD=AJPERES&CACHEID=135a88ef-b5b4-479e-8820-aef3f17d6aca",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/135a88ef-b5b4-479e-8820-aef3f17d6aca/Dr.+Bernard+J.+Nottage2.jpg?MOD=AJPERES&CACHEID=135a88ef-b5b4-479e-8820-aef3f17d6aca"
+        }
+      ],
+      "name": "Bernard Nottage",
+      "other_names": [
+        {
+          "name": "Bernard J. Nottage",
+          "note": "alternate"
+        }
+      ],
+      "sort_name": "Nottage, Bernard J.",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "family_name": "Hamilton",
+      "given_name": "Cleola",
+      "id": "80f062aa-b092-4ed0-8aaa-a6cf5d86bfe4",
+      "identifiers": [
+        {
+          "identifier": "cleola_hamilton",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/17c78e03-e03e-479d-bfbe-53623ffe5712/CLEOLA+HAMILTON+South+Beach.jpg?MOD=AJPERES&CACHEID=17c78e03-e03e-479d-bfbe-53623ffe5712",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/17c78e03-e03e-479d-bfbe-53623ffe5712/CLEOLA+HAMILTON+South+Beach.jpg?MOD=AJPERES&CACHEID=17c78e03-e03e-479d-bfbe-53623ffe5712"
+        }
+      ],
+      "name": "Cleola Hamilton",
+      "sort_name": "Hamilton, Cleola",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "id": "58709524-7f66-44fd-8315-9712c4655768",
+      "identifiers": [
+        {
+          "identifier": "damian_gomez",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "name": "Damian Gomez",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "family_name": "Johnson",
+      "gender": "male",
+      "given_name": "Daniel",
+      "id": "60b9e7ff-d787-4ce4-a89f-1dd4bb44335a",
+      "identifiers": [
+        {
+          "identifier": "daniel_johnson",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/999409a5-f974-4cfc-80f2-348b04a251c6/Daniel+Johnson.jpg?MOD=AJPERES&CACHEID=999409a5-f974-4cfc-80f2-348b04a251c6",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/999409a5-f974-4cfc-80f2-348b04a251c6/Daniel+Johnson.jpg?MOD=AJPERES&CACHEID=999409a5-f974-4cfc-80f2-348b04a251c6"
+        }
+      ],
+      "name": "Daniel Johnson",
+      "sort_name": "Johnson, Daniel",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "id": "5bb259fd-864b-4d40-b285-c453f912b72d",
+      "identifiers": [
+        {
+          "identifier": "dion_smith",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "name": "Dion Smith",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "birth_date": "1938-05",
+      "family_name": "Key",
+      "given_name": "Edison M",
+      "id": "4076d906-cedc-468b-b106-1bf1a83afd12",
+      "identifiers": [
+        {
+          "identifier": "edison_key",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/2e8bbf1c-5064-46a4-8196-7d253c13030e/edison.jpg?MOD=AJPERES&CACHEID=2e8bbf1c-5064-46a4-8196-7d253c13030e",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/2e8bbf1c-5064-46a4-8196-7d253c13030e/edison.jpg?MOD=AJPERES&CACHEID=2e8bbf1c-5064-46a4-8196-7d253c13030e"
+        }
+      ],
+      "name": "Edison Key",
+      "other_names": [
+        {
+          "name": "Edison M Key",
+          "note": "alternate"
+        }
+      ],
+      "sort_name": "Key, Edison M",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "birth_date": "1953-10-05",
+      "family_name": "Mitchell",
+      "gender": "male",
+      "given_name": "Frederick",
+      "id": "0bc913f7-434d-4648-a4d6-3ea8837a3b4a",
+      "identifiers": [
+        {
+          "identifier": "Q3086904",
+          "scheme": "everypolitician_legacy"
+        },
+        {
+          "identifier": "Q3086904",
+          "scheme": "wikidata"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/ba579f33-b611-4bab-ac41-218692fb8298/Fred+Mitchell+-+Fox+Hill.jpg?MOD=AJPERES&CACHEID=ba579f33-b611-4bab-ac41-218692fb8298",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/ba579f33-b611-4bab-ac41-218692fb8298/Fred+Mitchell+-+Fox+Hill.jpg?MOD=AJPERES&CACHEID=ba579f33-b611-4bab-ac41-218692fb8298"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Fred_Mitchell_(Bahamas)(cropped).jpg"
+        }
+      ],
+      "links": [
+        {
+          "note": "Wikipedia (en)",
+          "url": "https://en.wikipedia.org/wiki/Fred_Mitchell_(Bahamas)"
+        },
+        {
+          "note": "Wikipedia (fr)",
+          "url": "https://fr.wikipedia.org/wiki/Fred_Mitchell"
+        }
+      ],
+      "name": "Fred Mitchell",
+      "other_names": [
+        {
+          "name": "Frederick Mitchell",
+          "note": "alternate"
+        },
+        {
+          "lang": "de",
+          "name": "Fred Mitchell",
+          "note": "multilingual"
+        },
+        {
+          "lang": "en",
+          "name": "Fred Mitchell",
+          "note": "multilingual"
+        },
+        {
+          "lang": "fr",
+          "name": "Fred Mitchell",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nl",
+          "name": "Fred Mitchell",
+          "note": "multilingual"
+        }
+      ],
+      "sort_name": "Mitchell, Frederick",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "birth_date": "1958-10-27",
+      "family_name": "Hanna Martin",
+      "gender": "female",
+      "given_name": "Glenys",
+      "id": "fd2e318e-64d3-45e5-85ce-4d65223867b3",
+      "identifiers": [
+        {
+          "identifier": "Q19561395",
+          "scheme": "everypolitician_legacy"
+        },
+        {
+          "identifier": "Q19561395",
+          "scheme": "wikidata"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/3f0f95d5-8699-42bf-aefe-81ebcaa883f5/Glenys+Hanna+Martin-Englerston.jpg?MOD=AJPERES&CACHEID=3f0f95d5-8699-42bf-aefe-81ebcaa883f5",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/3f0f95d5-8699-42bf-aefe-81ebcaa883f5/Glenys+Hanna+Martin-Englerston.jpg?MOD=AJPERES&CACHEID=3f0f95d5-8699-42bf-aefe-81ebcaa883f5"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/GlenysHanna-Martin.jpg"
+        }
+      ],
+      "links": [
+        {
+          "note": "Wikipedia (en)",
+          "url": "https://en.wikipedia.org/wiki/Glenys_Hanna_Martin"
+        }
+      ],
+      "name": "Glenys Hanna Martin",
+      "other_names": [
+        {
+          "lang": "en",
+          "name": "Glenys Hanna Martin",
+          "note": "multilingual"
+        }
+      ],
+      "sort_name": "Hanna Martin, Glenys",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "gender": "male",
+      "id": "7c16b927-18ea-4555-b68d-fc087065570f",
+      "identifiers": [
+        {
+          "identifier": "gregory_moss",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "name": "Gregory Moss",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "birth_date": "1960-12-01",
+      "family_name": "Strachan",
+      "gender": "female",
+      "given_name": "Hope",
+      "id": "aedfc1c4-c743-4091-8cfd-a63ad88a843e",
+      "identifiers": [
+        {
+          "identifier": "Q19661243",
+          "scheme": "everypolitician_legacy"
+        },
+        {
+          "identifier": "Q19661243",
+          "scheme": "wikidata"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/fc4e9d67-1b31-466c-9887-3430e8b552e3/Hope+Strachan-Seabreezew.jpg?MOD=AJPERES&CACHEID=fc4e9d67-1b31-466c-9887-3430e8b552e3",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/fc4e9d67-1b31-466c-9887-3430e8b552e3/Hope+Strachan-Seabreezew.jpg?MOD=AJPERES&CACHEID=fc4e9d67-1b31-466c-9887-3430e8b552e3"
+        }
+      ],
+      "links": [
+        {
+          "note": "Wikipedia (en)",
+          "url": "https://en.wikipedia.org/wiki/Hope_Strachan"
+        }
+      ],
+      "name": "Hope Strachan",
+      "other_names": [
+        {
+          "lang": "en",
+          "name": "Hope Strachan",
+          "note": "multilingual"
+        }
+      ],
+      "sort_name": "Strachan, Hope",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "family_name": "Chipman",
+      "gender": "male",
+      "given_name": "Hubert",
+      "id": "4a7bfd46-3b03-46ec-957f-3ef526b04bbe",
+      "identifiers": [
+        {
+          "identifier": "hubert_chipman",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/3a218314-00c3-4172-a27a-3e19b849f21e/Chipman4.png?MOD=AJPERES&CACHEID=3a218314-00c3-4172-a27a-3e19b849f21e",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/3a218314-00c3-4172-a27a-3e19b849f21e/Chipman4.png?MOD=AJPERES&CACHEID=3a218314-00c3-4172-a27a-3e19b849f21e"
+        }
+      ],
+      "name": "Hubert Chipman",
+      "sort_name": "Chipman, Hubert",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "birth_date": "1947-08-04",
+      "gender": "male",
+      "given_name": "Hubert",
+      "id": "bf4d389a-fd1a-4a8e-8edc-d9c178caf78c",
+      "identifiers": [
+        {
+          "identifier": "Q317664",
+          "scheme": "everypolitician_legacy"
+        },
+        {
+          "identifier": "/m/0367n9",
+          "scheme": "freebase"
+        },
+        {
+          "identifier": "Q317664",
+          "scheme": "wikidata"
+        }
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Hubert_Ingraham.jpg",
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Hubert_Ingraham.jpg"
+        }
+      ],
+      "links": [
+        {
+          "note": "Wikipedia (ar)",
+          "url": "https://ar.wikipedia.org/wiki/هوبرت_إنغراهام"
+        },
+        {
+          "note": "Wikipedia (de)",
+          "url": "https://de.wikipedia.org/wiki/Hubert_Ingraham"
+        },
+        {
+          "note": "Wikipedia (el)",
+          "url": "https://el.wikipedia.org/wiki/Χιούμπερτ_Ίνγκραμ"
+        },
+        {
+          "note": "Wikipedia (en)",
+          "url": "https://en.wikipedia.org/wiki/Hubert_Ingraham"
+        },
+        {
+          "note": "Wikipedia (es)",
+          "url": "https://es.wikipedia.org/wiki/Hubert_Ingraham"
+        },
+        {
+          "note": "Wikipedia (et)",
+          "url": "https://et.wikipedia.org/wiki/Hubert_Ingraham"
+        },
+        {
+          "note": "Wikipedia (fi)",
+          "url": "https://fi.wikipedia.org/wiki/Hubert_Ingraham"
+        },
+        {
+          "note": "Wikipedia (fr)",
+          "url": "https://fr.wikipedia.org/wiki/Hubert_Ingraham"
+        },
+        {
+          "note": "Wikipedia (gl)",
+          "url": "https://gl.wikipedia.org/wiki/Hubert_Ingraham"
+        },
+        {
+          "note": "Wikipedia (id)",
+          "url": "https://id.wikipedia.org/wiki/Hubert_Ingraham"
+        },
+        {
+          "note": "Wikipedia (io)",
+          "url": "https://io.wikipedia.org/wiki/Hubert_Ingraham"
+        },
+        {
+          "note": "Wikipedia (it)",
+          "url": "https://it.wikipedia.org/wiki/Hubert_Ingraham"
+        },
+        {
+          "note": "Wikipedia (nl)",
+          "url": "https://nl.wikipedia.org/wiki/Hubert_Ingraham"
+        },
+        {
+          "note": "Wikipedia (no)",
+          "url": "https://no.wikipedia.org/wiki/Hubert_Ingraham"
+        },
+        {
+          "note": "Wikipedia (oc)",
+          "url": "https://oc.wikipedia.org/wiki/Hubert_Ingraham"
+        },
+        {
+          "note": "Wikipedia (pl)",
+          "url": "https://pl.wikipedia.org/wiki/Hubert_Ingraham"
+        },
+        {
+          "note": "Wikipedia (pt)",
+          "url": "https://pt.wikipedia.org/wiki/Hubert_Ingraham"
+        },
+        {
+          "note": "Wikipedia (ru)",
+          "url": "https://ru.wikipedia.org/wiki/Ингрэм,_Хьюберт"
+        },
+        {
+          "note": "Wikipedia (sv)",
+          "url": "https://sv.wikipedia.org/wiki/Hubert_Ingraham"
+        },
+        {
+          "note": "Wikipedia (tr)",
+          "url": "https://tr.wikipedia.org/wiki/Hubert_Ingraham"
+        },
+        {
+          "note": "Wikipedia (uk)",
+          "url": "https://uk.wikipedia.org/wiki/Г'юберт_Інгрем"
+        },
+        {
+          "note": "Wikipedia (yo)",
+          "url": "https://yo.wikipedia.org/wiki/Hubert_Ingraham"
+        }
+      ],
+      "name": "Hubert Ingraham",
+      "other_names": [
+        {
+          "lang": "ar",
+          "name": "هوبرت إنغراهام",
+          "note": "multilingual"
+        },
+        {
+          "lang": "da",
+          "name": "Hubert Ingraham",
+          "note": "multilingual"
+        },
+        {
+          "lang": "de",
+          "name": "Hubert Ingraham",
+          "note": "multilingual"
+        },
+        {
+          "lang": "el",
+          "name": "Χιούμπερτ Ίνγκραχαμ",
+          "note": "multilingual"
+        },
+        {
+          "lang": "en",
+          "name": "Hubert Ingraham",
+          "note": "multilingual"
+        },
+        {
+          "lang": "es",
+          "name": "Hubert Ingraham",
+          "note": "multilingual"
+        },
+        {
+          "lang": "et",
+          "name": "Hubert Ingraham",
+          "note": "multilingual"
+        },
+        {
+          "lang": "fi",
+          "name": "Hubert Ingraham",
+          "note": "multilingual"
+        },
+        {
+          "lang": "fr",
+          "name": "Hubert Ingraham",
+          "note": "multilingual"
+        },
+        {
+          "lang": "gl",
+          "name": "Hubert Ingraham",
+          "note": "multilingual"
+        },
+        {
+          "lang": "hu",
+          "name": "Hubert Ingraham",
+          "note": "multilingual"
+        },
+        {
+          "lang": "id",
+          "name": "Hubert Ingraham",
+          "note": "multilingual"
+        },
+        {
+          "lang": "io",
+          "name": "Hubert Ingraham",
+          "note": "multilingual"
+        },
+        {
+          "lang": "it",
+          "name": "Hubert Ingraham",
+          "note": "multilingual"
+        },
+        {
+          "lang": "ja",
+          "name": "ヒューバート・イングラハム",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nb",
+          "name": "Hubert Ingraham",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nl",
+          "name": "Hubert Ingraham",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nn",
+          "name": "Hubert Ingraham",
+          "note": "multilingual"
+        },
+        {
+          "lang": "oc",
+          "name": "Hubert Ingraham",
+          "note": "multilingual"
+        },
+        {
+          "lang": "pl",
+          "name": "Hubert Ingraham",
+          "note": "multilingual"
+        },
+        {
+          "lang": "pt",
+          "name": "Hubert Ingraham",
+          "note": "multilingual"
+        },
+        {
+          "lang": "ru",
+          "name": "Ингрэм, Хьюберт",
+          "note": "multilingual"
+        },
+        {
+          "lang": "sv",
+          "name": "Hubert Ingraham",
+          "note": "multilingual"
+        },
+        {
+          "lang": "tr",
+          "name": "Hubert Ingraham",
+          "note": "multilingual"
+        },
+        {
+          "lang": "uk",
+          "name": "Г'юберт Інгрем",
+          "note": "multilingual"
+        },
+        {
+          "lang": "yo",
+          "name": "Hubert Ingraham",
+          "note": "multilingual"
+        },
+        {
+          "lang": "zh",
+          "name": "休伯特·英格拉哈姆",
+          "note": "multilingual"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "family_name": "Minnis",
+      "gender": "male",
+      "given_name": "Hubert A.",
+      "id": "d625fce1-47b0-45e4-a412-0b72bb97ced7",
+      "identifiers": [
+        {
+          "identifier": "Q16732648",
+          "scheme": "everypolitician_legacy"
+        },
+        {
+          "identifier": "Q16732648",
+          "scheme": "wikidata"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/bd6be8f4-f899-452d-bce8-8f1650ae8d80/minnis.jpg?MOD=AJPERES&CACHEID=bd6be8f4-f899-452d-bce8-8f1650ae8d80",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/bd6be8f4-f899-452d-bce8-8f1650ae8d80/minnis.jpg?MOD=AJPERES&CACHEID=bd6be8f4-f899-452d-bce8-8f1650ae8d80"
+        }
+      ],
+      "links": [
+        {
+          "note": "Wikipedia (en)",
+          "url": "https://en.wikipedia.org/wiki/Hubert_Minnis"
+        }
+      ],
+      "name": "Hubert Minnis",
+      "other_names": [
+        {
+          "name": "Hubert A. Minnis",
+          "note": "alternate"
+        },
+        {
+          "lang": "de",
+          "name": "Hubert Minnis",
+          "note": "multilingual"
+        },
+        {
+          "lang": "en",
+          "name": "Hubert Minnis",
+          "note": "multilingual"
+        },
+        {
+          "lang": "it",
+          "name": "Hubert Minnis",
+          "note": "multilingual"
+        }
+      ],
+      "sort_name": "Minnis, Hubert A.",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "birth_date": "1966-04-03",
+      "family_name": "Fitzgerald",
+      "gender": "male",
+      "given_name": "Jerome",
+      "id": "2e433662-3be3-449c-85dc-9e3e4e4718b7",
+      "identifiers": [
+        {
+          "identifier": "jerome_fitzgerald",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/5d4f9e02-faf7-4210-8e89-b7b7656fe875/Jerome+Fitzgerald-Marathon.jpg?MOD=AJPERES&CACHEID=5d4f9e02-faf7-4210-8e89-b7b7656fe875",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/5d4f9e02-faf7-4210-8e89-b7b7656fe875/Jerome+Fitzgerald-Marathon.jpg?MOD=AJPERES&CACHEID=5d4f9e02-faf7-4210-8e89-b7b7656fe875"
+        },
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/352d7e24-5fa5-4e57-aacb-951b8720d8a4/Jerome+Fitzgerald-Marathon.jpg?MOD=AJPERES&CACHEID=352d7e24-5fa5-4e57-aacb-951b8720d8a4"
+        }
+      ],
+      "name": "Jerome Fitzgerald",
+      "sort_name": "Fitzgerald, Jerome",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "birth_date": "1961-08-09",
+      "family_name": "Major",
+      "given_name": "Kendal",
+      "id": "fec01322-1e2b-4a32-a06c-2155bf4c36ea",
+      "identifiers": [
+        {
+          "identifier": "kendal_major",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/bf5d731a-b78b-4909-84ee-f0073dcfe2a1/Dr.+Kedal+Major-+Garden+Hills4.jpg?MOD=AJPERES&CACHEID=bf5d731a-b78b-4909-84ee-f0073dcfe2a1",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/bf5d731a-b78b-4909-84ee-f0073dcfe2a1/Dr.+Kedal+Major-+Garden+Hills4.jpg?MOD=AJPERES&CACHEID=bf5d731a-b78b-4909-84ee-f0073dcfe2a1"
+        }
+      ],
+      "name": "Kendal Major",
+      "sort_name": "Major, Kendal",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "birth_date": "1971-02-16",
+      "family_name": "Dorsett",
+      "given_name": "Kenred",
+      "id": "fbfeb38b-0118-4a73-af78-c36eafb104e0",
+      "identifiers": [
+        {
+          "identifier": "kendrick_dorsett",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/c07a0e95-aaa3-4352-b4e7-71e3c70fd55b/Kenred+Michael.jpg?MOD=AJPERES&CACHEID=c07a0e95-aaa3-4352-b4e7-71e3c70fd55b",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/c07a0e95-aaa3-4352-b4e7-71e3c70fd55b/Kenred+Michael.jpg?MOD=AJPERES&CACHEID=c07a0e95-aaa3-4352-b4e7-71e3c70fd55b"
+        }
+      ],
+      "name": "Kendrick Dorsett",
+      "other_names": [
+        {
+          "name": "Kenred Dorsett",
+          "note": "alternate"
+        }
+      ],
+      "sort_name": "Dorsett, Kenred",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "birth_date": "1973-01-09",
+      "family_name": "Rolle",
+      "given_name": "Khaalis",
+      "id": "eb17d7b0-ddd7-4fe6-aaf5-e718779233b5",
+      "identifiers": [
+        {
+          "identifier": "khaalis_rolle",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/bd42ec22-21dc-4ab4-9383-97881612cbd2/KHAALIS+ROLLE-Pinewood4.jpg?MOD=AJPERES&CACHEID=bd42ec22-21dc-4ab4-9383-97881612cbd2",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/bd42ec22-21dc-4ab4-9383-97881612cbd2/KHAALIS+ROLLE-Pinewood4.jpg?MOD=AJPERES&CACHEID=bd42ec22-21dc-4ab4-9383-97881612cbd2"
+        }
+      ],
+      "name": "Khaalis Rolle",
+      "sort_name": "Rolle, Khaalis",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "birth_date": "1948-03-24",
+      "family_name": "Miller",
+      "given_name": "Leslie O.",
+      "id": "a7a8d355-b7f7-4f2c-b077-47def1f3f60d",
+      "identifiers": [
+        {
+          "identifier": "leslie_miller",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/290519cc-a4c0-410a-9aaf-bf9e914b03f9/LMiller4.jpg?MOD=AJPERES&CACHEID=290519cc-a4c0-410a-9aaf-bf9e914b03f9",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/290519cc-a4c0-410a-9aaf-bf9e914b03f9/LMiller4.jpg?MOD=AJPERES&CACHEID=290519cc-a4c0-410a-9aaf-bf9e914b03f9"
+        }
+      ],
+      "name": "Leslie Miller",
+      "other_names": [
+        {
+          "name": "Leslie O. Miller",
+          "note": "alternate"
+        }
+      ],
+      "sort_name": "Miller, Leslie O.",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "family_name": "Turner-Butler",
+      "gender": "female",
+      "given_name": "Loretta",
+      "id": "4932323d-dcc8-4af8-b89c-db1d465af75c",
+      "identifiers": [
+        {
+          "identifier": "loretta_butler-turner",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/8a19d337-e530-4f05-9d51-92c2a03b76ef/loretta+turner.jpg?MOD=AJPERES&CACHEID=8a19d337-e530-4f05-9d51-92c2a03b76ef",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/8a19d337-e530-4f05-9d51-92c2a03b76ef/loretta+turner.jpg?MOD=AJPERES&CACHEID=8a19d337-e530-4f05-9d51-92c2a03b76ef"
+        }
+      ],
+      "name": "Loretta Butler-Turner",
+      "other_names": [
+        {
+          "name": "Loretta Turner-Butler",
+          "note": "alternate"
+        }
+      ],
+      "sort_name": "Turner-Butler, Loretta",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "family_name": "Griffin",
+      "gender": "female",
+      "given_name": "Melanie",
+      "id": "7b94522d-6552-447a-98e6-af2f9140de20",
+      "identifiers": [
+        {
+          "identifier": "Q18921815",
+          "scheme": "everypolitician_legacy"
+        },
+        {
+          "identifier": "Q18921815",
+          "scheme": "wikidata"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/147e14f7-a3ff-47b2-8a8a-8f0109a69f60/Melanie+Griffin-Yamacraw4.jpg?MOD=AJPERES&CACHEID=147e14f7-a3ff-47b2-8a8a-8f0109a69f60",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/147e14f7-a3ff-47b2-8a8a-8f0109a69f60/Melanie+Griffin-Yamacraw4.jpg?MOD=AJPERES&CACHEID=147e14f7-a3ff-47b2-8a8a-8f0109a69f60"
+        }
+      ],
+      "links": [
+        {
+          "note": "Wikipedia (en)",
+          "url": "https://en.wikipedia.org/wiki/Melanie_Griffin"
+        }
+      ],
+      "name": "Melanie Griffin",
+      "other_names": [
+        {
+          "lang": "en",
+          "name": "Melanie Griffin",
+          "note": "multilingual"
+        },
+        {
+          "lang": "it",
+          "name": "Melanie Griffin",
+          "note": "multilingual"
+        }
+      ],
+      "sort_name": "Griffin, Melanie",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "family_name": "Darville",
+      "gender": "male",
+      "given_name": "Michael",
+      "id": "04356028-c77f-4c4f-80c8-278666f6a5c7",
+      "identifiers": [
+        {
+          "identifier": "michael_darville",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/b7ae8878-d2b1-4941-86f2-bad8f0473e15/Dr.+Michael+Darville-+Pineridge.jpg?MOD=AJPERES&CACHEID=b7ae8878-d2b1-4941-86f2-bad8f0473e15",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/b7ae8878-d2b1-4941-86f2-bad8f0473e15/Dr.+Michael+Darville-+Pineridge.jpg?MOD=AJPERES&CACHEID=b7ae8878-d2b1-4941-86f2-bad8f0473e15"
+        }
+      ],
+      "name": "Michael Darville",
+      "sort_name": "Darville, Michael",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "birth_date": "1969-02-01",
+      "family_name": "Halkitis",
+      "gender": "male",
+      "given_name": "Michael",
+      "id": "698eb313-f3a4-4a65-9cd2-b8c84de64d43",
+      "identifiers": [
+        {
+          "identifier": "michael_halkitis",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/2d3f4928-43af-47c6-ae90-caac131cac10/Michael+Halkitis.jpg?MOD=AJPERES&CACHEID=2d3f4928-43af-47c6-ae90-caac131cac10",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/2d3f4928-43af-47c6-ae90-caac131cac10/Michael+Halkitis.jpg?MOD=AJPERES&CACHEID=2d3f4928-43af-47c6-ae90-caac131cac10"
+        }
+      ],
+      "name": "Michael Halkitis",
+      "sort_name": "Halkitis, Michael",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "family_name": "Grant",
+      "given_name": "Neko C.",
+      "id": "1cb6ce39-a635-4ba4-95e4-d5d1a0235993",
+      "identifiers": [
+        {
+          "identifier": "neko_grant",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/64d9d6ee-9b62-4f8e-85af-bcf3c31f4425/neko.jpg?MOD=AJPERES&CACHEID=64d9d6ee-9b62-4f8e-85af-bcf3c31f4425",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/64d9d6ee-9b62-4f8e-85af-bcf3c31f4425/neko.jpg?MOD=AJPERES&CACHEID=64d9d6ee-9b62-4f8e-85af-bcf3c31f4425"
+        }
+      ],
+      "name": "Neko Grant",
+      "other_names": [
+        {
+          "name": "Neko C. Grant",
+          "note": "alternate"
+        }
+      ],
+      "sort_name": "Grant, Neko C.",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "birth_date": "1958-11-04",
+      "family_name": "Wilchcombe",
+      "given_name": "Obediah",
+      "id": "b6aad8fc-4d16-4e10-873e-8b214e388373",
+      "identifiers": [
+        {
+          "identifier": "obediah_wilchcombe",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/34f2393d-58d6-47e5-97ec-1402818119d8/OBIE+WICHCOMBE-West+Grand+Bahama+%26+Bimini+%28contact%29.jpg?MOD=AJPERES&CACHEID=34f2393d-58d6-47e5-97ec-1402818119d8",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/34f2393d-58d6-47e5-97ec-1402818119d8/OBIE+WICHCOMBE-West+Grand+Bahama+%26+Bimini+%28contact%29.jpg?MOD=AJPERES&CACHEID=34f2393d-58d6-47e5-97ec-1402818119d8"
+        }
+      ],
+      "name": "Obediah Wilchcombe",
+      "sort_name": "Wilchcombe, Obediah",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "birth_date": "1943-08-21",
+      "family_name": "Christie",
+      "gender": "male",
+      "given_name": "Perry",
+      "id": "fbc7c142-d11b-499b-8ce3-5b157289fb53",
+      "identifiers": [
+        {
+          "identifier": "Q57705",
+          "scheme": "everypolitician_legacy"
+        },
+        {
+          "identifier": "/m/0230mv",
+          "scheme": "freebase"
+        },
+        {
+          "identifier": "Q57705",
+          "scheme": "wikidata"
+        }
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/2006_0322_rice_600.jpg",
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/2006_0322_rice_600.jpg"
+        }
+      ],
+      "links": [
+        {
+          "note": "Wikipedia (da)",
+          "url": "https://da.wikipedia.org/wiki/Perry_Christie"
+        },
+        {
+          "note": "Wikipedia (de)",
+          "url": "https://de.wikipedia.org/wiki/Perry_Christie"
+        },
+        {
+          "note": "Wikipedia (el)",
+          "url": "https://el.wikipedia.org/wiki/Πέρι_Κρίστι"
+        },
+        {
+          "note": "Wikipedia (en)",
+          "url": "https://en.wikipedia.org/wiki/Perry_Christie"
+        },
+        {
+          "note": "Wikipedia (es)",
+          "url": "https://es.wikipedia.org/wiki/Perry_Christie"
+        },
+        {
+          "note": "Wikipedia (et)",
+          "url": "https://et.wikipedia.org/wiki/Perry_Christie"
+        },
+        {
+          "note": "Wikipedia (fa)",
+          "url": "https://fa.wikipedia.org/wiki/پری_کریستی"
+        },
+        {
+          "note": "Wikipedia (fi)",
+          "url": "https://fi.wikipedia.org/wiki/Perry_Christie"
+        },
+        {
+          "note": "Wikipedia (fr)",
+          "url": "https://fr.wikipedia.org/wiki/Perry_Christie"
+        },
+        {
+          "note": "Wikipedia (gl)",
+          "url": "https://gl.wikipedia.org/wiki/Perry_Christie"
+        },
+        {
+          "note": "Wikipedia (he)",
+          "url": "https://he.wikipedia.org/wiki/פרי_כריסטי"
+        },
+        {
+          "note": "Wikipedia (id)",
+          "url": "https://id.wikipedia.org/wiki/Perry_Christie"
+        },
+        {
+          "note": "Wikipedia (io)",
+          "url": "https://io.wikipedia.org/wiki/Perry_Christie"
+        },
+        {
+          "note": "Wikipedia (it)",
+          "url": "https://it.wikipedia.org/wiki/Perry_Christie"
+        },
+        {
+          "note": "Wikipedia (ja)",
+          "url": "https://ja.wikipedia.org/wiki/ペリー・クリスティー"
+        },
+        {
+          "note": "Wikipedia (ko)",
+          "url": "https://ko.wikipedia.org/wiki/페리_크리스티"
+        },
+        {
+          "note": "Wikipedia (mr)",
+          "url": "https://mr.wikipedia.org/wiki/पेरी_क्रिस्टी"
+        },
+        {
+          "note": "Wikipedia (nl)",
+          "url": "https://nl.wikipedia.org/wiki/Perry_Christie"
+        },
+        {
+          "note": "Wikipedia (no)",
+          "url": "https://no.wikipedia.org/wiki/Perry_Christie"
+        },
+        {
+          "note": "Wikipedia (oc)",
+          "url": "https://oc.wikipedia.org/wiki/Perry_Christie"
+        },
+        {
+          "note": "Wikipedia (pl)",
+          "url": "https://pl.wikipedia.org/wiki/Perry_Christie"
+        },
+        {
+          "note": "Wikipedia (pt)",
+          "url": "https://pt.wikipedia.org/wiki/Perry_Christie"
+        },
+        {
+          "note": "Wikipedia (ru)",
+          "url": "https://ru.wikipedia.org/wiki/Кристи,_Перри"
+        },
+        {
+          "note": "Wikipedia (simple)",
+          "url": "https://simple.wikipedia.org/wiki/Perry_Christie"
+        },
+        {
+          "note": "Wikipedia (sv)",
+          "url": "https://sv.wikipedia.org/wiki/Perry_Christie"
+        },
+        {
+          "note": "Wikipedia (tr)",
+          "url": "https://tr.wikipedia.org/wiki/Perry_Christie"
+        },
+        {
+          "note": "Wikipedia (uk)",
+          "url": "https://uk.wikipedia.org/wiki/Перрі_Крісті"
+        },
+        {
+          "note": "Wikipedia (zh)",
+          "url": "https://zh.wikipedia.org/wiki/佩里·克里斯蒂"
+        }
+      ],
+      "name": "Perry Christie",
+      "other_names": [
+        {
+          "lang": "ca",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "da",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "de",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "de-ch",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "el",
+          "name": "Πέρι Κρίστι",
+          "note": "multilingual"
+        },
+        {
+          "lang": "en",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "en-ca",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "en-gb",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "es",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "et",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "fa",
+          "name": "پری کریستی",
+          "note": "multilingual"
+        },
+        {
+          "lang": "fi",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "fr",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "gl",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "he",
+          "name": "פרי כריסטי",
+          "note": "multilingual"
+        },
+        {
+          "lang": "hu",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "id",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "io",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "it",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "ja",
+          "name": "ペリー・クリスティー",
+          "note": "multilingual"
+        },
+        {
+          "lang": "ko",
+          "name": "페리 크리스티",
+          "note": "multilingual"
+        },
+        {
+          "lang": "mr",
+          "name": "पेरी क्रिस्टी",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nb",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nl",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nn",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "oc",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "pl",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "pt",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "pt-br",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "ru",
+          "name": "Кристи, Перри",
+          "note": "multilingual"
+        },
+        {
+          "lang": "sv",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "tr",
+          "name": "Perry Christie",
+          "note": "multilingual"
+        },
+        {
+          "lang": "uk",
+          "name": "Перрі Крісті",
+          "note": "multilingual"
+        },
+        {
+          "lang": "zh",
+          "name": "佩里·克里斯蒂",
+          "note": "multilingual"
+        },
+        {
+          "lang": "zh-hans",
+          "name": "佩里·克里斯蒂",
+          "note": "multilingual"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "birth_date": "1947-01-18",
+      "family_name": "Gomez",
+      "gender": "male",
+      "given_name": "Perry",
+      "id": "fbca8d53-3f82-445d-8dae-91c70c1753ce",
+      "identifiers": [
+        {
+          "identifier": "Q7169784",
+          "scheme": "everypolitician_legacy"
+        },
+        {
+          "identifier": "Q7169784",
+          "scheme": "wikidata"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/1d6736b0-a6bf-40b9-a781-6cad596cfced/Perry+Gomez+-+North+Andros+%26+The+Berry+Islands3.jpg?MOD=AJPERES&CACHEID=1d6736b0-a6bf-40b9-a781-6cad596cfced",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/1d6736b0-a6bf-40b9-a781-6cad596cfced/Perry+Gomez+-+North+Andros+%26+The+Berry+Islands3.jpg?MOD=AJPERES&CACHEID=1d6736b0-a6bf-40b9-a781-6cad596cfced"
+        }
+      ],
+      "links": [
+        {
+          "note": "Wikipedia (en)",
+          "url": "https://en.wikipedia.org/wiki/Perry_Gomez"
+        }
+      ],
+      "name": "Perry Gomez",
+      "other_names": [
+        {
+          "lang": "de",
+          "name": "Perry Gomez",
+          "note": "multilingual"
+        },
+        {
+          "lang": "en",
+          "name": "Perry Gomez",
+          "note": "multilingual"
+        },
+        {
+          "lang": "fr",
+          "name": "Perry Gomez",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nl",
+          "name": "Perry Gomez",
+          "note": "multilingual"
+        }
+      ],
+      "sort_name": "Gomez, Perry",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "family_name": "Turnquest",
+      "gender": "male",
+      "given_name": "Peter",
+      "id": "c738f48a-b463-45a3-89ea-c4d675c36926",
+      "identifiers": [
+        {
+          "identifier": "peter_turnquest",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/f77a07fa-f208-40d0-bb58-49db72d4d4ed/PTurnquest4.png?MOD=AJPERES&CACHEID=f77a07fa-f208-40d0-bb58-49db72d4d4ed",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/f77a07fa-f208-40d0-bb58-49db72d4d4ed/PTurnquest4.png?MOD=AJPERES&CACHEID=f77a07fa-f208-40d0-bb58-49db72d4d4ed"
+        }
+      ],
+      "name": "Peter Turnquest",
+      "sort_name": "Turnquest, Peter",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "birth_date": "1951-06-07",
+      "family_name": "Davis",
+      "gender": "male",
+      "given_name": "Philip E. Brave",
+      "id": "dcd1a356-a7e6-409b-8028-27fea2691105",
+      "identifiers": [
+        {
+          "identifier": "Q7183082",
+          "scheme": "everypolitician_legacy"
+        },
+        {
+          "identifier": "Q7183082",
+          "scheme": "wikidata"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/38ff4404-b920-4856-a6db-92686895c640/Brave+davis.jpg?MOD=AJPERES&CACHEID=38ff4404-b920-4856-a6db-92686895c640",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/38ff4404-b920-4856-a6db-92686895c640/Brave+davis.jpg?MOD=AJPERES&CACHEID=38ff4404-b920-4856-a6db-92686895c640"
+        }
+      ],
+      "links": [
+        {
+          "note": "Wikipedia (en)",
+          "url": "https://en.wikipedia.org/wiki/Philip_\"Brave\"_Davis"
+        }
+      ],
+      "name": "Philip \"Brave\" Davis",
+      "other_names": [
+        {
+          "name": "Philip E. Brave Davis",
+          "note": "alternate"
+        },
+        {
+          "lang": "da",
+          "name": "Philip \"Brave\" Davis",
+          "note": "multilingual"
+        },
+        {
+          "lang": "en",
+          "name": "Philip \"Brave\" Davis",
+          "note": "multilingual"
+        },
+        {
+          "lang": "es",
+          "name": "Philip \"Brave\" Davis",
+          "note": "multilingual"
+        },
+        {
+          "lang": "fr",
+          "name": "Philip \"Brave\" Davis",
+          "note": "multilingual"
+        },
+        {
+          "lang": "hu",
+          "name": "Philip \"Brave\" Davis",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nb",
+          "name": "Philip \"Brave\" Davis",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nl",
+          "name": "Philip \"Brave\" Davis",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nn",
+          "name": "Philip \"Brave\" Davis",
+          "note": "multilingual"
+        },
+        {
+          "lang": "sv",
+          "name": "Philip \"Brave\" Davis",
+          "note": "multilingual"
+        }
+      ],
+      "sort_name": "Davis, Philip E. Brave",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "birth_date": "1961-08-01",
+      "family_name": "Forbes",
+      "given_name": "Picewell",
+      "id": "2866c1d0-3733-442a-a226-eaef73279d64",
+      "identifiers": [
+        {
+          "identifier": "picewell_forbes",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/7ea047d1-0acc-4fd6-9e62-523738030a16/PICEWELL+FORBES-+Central+%26+South+Andros4.jpg?MOD=AJPERES&CACHEID=7ea047d1-0acc-4fd6-9e62-523738030a16",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/7ea047d1-0acc-4fd6-9e62-523738030a16/PICEWELL+FORBES-+Central+%26+South+Andros4.jpg?MOD=AJPERES&CACHEID=7ea047d1-0acc-4fd6-9e62-523738030a16"
+        }
+      ],
+      "name": "Picewell Forbes",
+      "sort_name": "Forbes, Picewell",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "birth_date": "1970-02-23",
+      "gender": "male",
+      "given_name": "Renward",
+      "id": "f1850a5c-e5bf-4f43-b5e2-bc39ef0cf753",
+      "identifiers": [
+        {
+          "identifier": "Q7313601",
+          "scheme": "everypolitician_legacy"
+        },
+        {
+          "identifier": "9438",
+          "scheme": "iiaf"
+        },
+        {
+          "identifier": "Q7313601",
+          "scheme": "wikidata"
+        }
+      ],
+      "links": [
+        {
+          "note": "Wikipedia (en)",
+          "url": "https://en.wikipedia.org/wiki/Renward_Wells"
+        }
+      ],
+      "name": "Renward Wells",
+      "other_names": [
+        {
+          "lang": "de",
+          "name": "Renward Wells",
+          "note": "multilingual"
+        },
+        {
+          "lang": "en",
+          "name": "Renward Wells",
+          "note": "multilingual"
+        },
+        {
+          "lang": "fr",
+          "name": "Renward Wells",
+          "note": "multilingual"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "family_name": "Lightbourn",
+      "gender": "male",
+      "given_name": "Richard",
+      "id": "bf80cc77-50cf-4026-8953-5126db91ed76",
+      "identifiers": [
+        {
+          "identifier": "richard_lightbourn",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/d68c286e-9a90-4346-80c8-4edcdb72a7c3/Lightbourne4.png?MOD=AJPERES&CACHEID=d68c286e-9a90-4346-80c8-4edcdb72a7c3",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/d68c286e-9a90-4346-80c8-4edcdb72a7c3/Lightbourne4.png?MOD=AJPERES&CACHEID=d68c286e-9a90-4346-80c8-4edcdb72a7c3"
+        }
+      ],
+      "name": "Richard Lightbourn",
+      "sort_name": "Lightbourn, Richard",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "birth_date": "1947-09-13",
+      "gender": "male",
+      "given_name": "Ryan",
+      "id": "ffc68b8c-02e0-4149-9db3-ef498204280a",
+      "identifiers": [
+        {
+          "identifier": "Q7384427",
+          "scheme": "everypolitician_legacy"
+        },
+        {
+          "identifier": "Q7384427",
+          "scheme": "wikidata"
+        }
+      ],
+      "links": [
+        {
+          "note": "Wikipedia (en)",
+          "url": "https://en.wikipedia.org/wiki/Ryan_Pinder"
+        }
+      ],
+      "name": "Ryan Pinder",
+      "other_names": [
+        {
+          "lang": "de",
+          "name": "Ryan Pinder",
+          "note": "multilingual"
+        },
+        {
+          "lang": "en",
+          "name": "Ryan Pinder",
+          "note": "multilingual"
+        },
+        {
+          "lang": "fr",
+          "name": "Ryan Pinder",
+          "note": "multilingual"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "birth_date": "1961-09-07",
+      "family_name": "Gibson",
+      "gender": "male",
+      "given_name": "D. Shane",
+      "id": "a0bd764c-7ca1-4f66-8cb6-6ead9d84c5e8",
+      "identifiers": [
+        {
+          "identifier": "Q7488076",
+          "scheme": "everypolitician_legacy"
+        },
+        {
+          "identifier": "Q7488076",
+          "scheme": "wikidata"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/31e37831-93a3-45de-8497-6d5034ac77bc/Shane+Gibson-Golden+Gates4.jpg?MOD=AJPERES&CACHEID=31e37831-93a3-45de-8497-6d5034ac77bc",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/31e37831-93a3-45de-8497-6d5034ac77bc/Shane+Gibson-Golden+Gates4.jpg?MOD=AJPERES&CACHEID=31e37831-93a3-45de-8497-6d5034ac77bc"
+        }
+      ],
+      "links": [
+        {
+          "note": "Wikipedia (en)",
+          "url": "https://en.wikipedia.org/wiki/Shane_Gibson_(politician)"
+        }
+      ],
+      "name": "Shane Gibson",
+      "other_names": [
+        {
+          "name": "D. Shane Gibson",
+          "note": "alternate"
+        },
+        {
+          "lang": "de",
+          "name": "Shane Gibson",
+          "note": "multilingual"
+        },
+        {
+          "lang": "en",
+          "name": "Shane Gibson",
+          "note": "multilingual"
+        },
+        {
+          "lang": "fr",
+          "name": "Shane Gibson",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nl",
+          "name": "Shane Gibson",
+          "note": "multilingual"
+        }
+      ],
+      "sort_name": "Gibson, D. Shane",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "family_name": "Neilly",
+      "given_name": "Theo",
+      "id": "09d1f26a-f2b7-4d9e-8498-f2d3875c9fb6",
+      "identifiers": [
+        {
+          "identifier": "theo_neilly",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/de7460b4-50b0-45b7-a562-93e371b1afe0/Neilly4.png?MOD=AJPERES&CACHEID=de7460b4-50b0-45b7-a562-93e371b1afe0",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/de7460b4-50b0-45b7-a562-93e371b1afe0/Neilly4.png?MOD=AJPERES&CACHEID=de7460b4-50b0-45b7-a562-93e371b1afe0"
+        }
+      ],
+      "name": "Theo Neilly",
+      "sort_name": "Neilly, Theo",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    },
+    {
+      "birth_date": "1951-08-05",
+      "family_name": "Gray",
+      "given_name": "V. Alfred",
+      "id": "7ad83f81-a544-4771-a358-3dd9e3ecdc99",
+      "identifiers": [
+        {
+          "identifier": "v._alfred_gray",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "image": "http://www.bahamas.gov.bs/wps/wcm/connect/b2440faf-4426-4d84-9274-93541306dbe8/imagesCAP6UP6G%284%29.jpg?MOD=AJPERES&CACHEID=b2440faf-4426-4d84-9274-93541306dbe8",
+      "images": [
+        {
+          "url": "http://www.bahamas.gov.bs/wps/wcm/connect/b2440faf-4426-4d84-9274-93541306dbe8/imagesCAP6UP6G%284%29.jpg?MOD=AJPERES&CACHEID=b2440faf-4426-4d84-9274-93541306dbe8"
+        }
+      ],
+      "name": "V. Alfred Gray",
+      "sort_name": "Gray, V. Alfred",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012"
+        }
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "classification": "party",
+      "id": "party/fnm",
+      "identifiers": [
+        {
+          "identifier": "Q2566343",
+          "scheme": "wikidata"
+        }
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/FNM_Logo.jpg",
+      "links": [
+        {
+          "note": "website",
+          "url": "http://www.freenationalmovement.org/"
+        }
+      ],
+      "name": "FNM",
+      "other_names": [
+        {
+          "lang": "pl",
+          "name": "Wolny Ruch Narodowy",
+          "note": "multilingual"
+        },
+        {
+          "lang": "bg",
+          "name": "Свободно национално движение",
+          "note": "multilingual"
+        },
+        {
+          "lang": "en",
+          "name": "Free National Movement",
+          "note": "multilingual"
+        },
+        {
+          "lang": "uk",
+          "name": "Вільний національний рух",
+          "note": "multilingual"
+        },
+        {
+          "lang": "it",
+          "name": "Movimento Nazionale Libero",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nb",
+          "name": "Free National Movement",
+          "note": "multilingual"
+        },
+        {
+          "lang": "fr",
+          "name": "Mouvement national libre",
+          "note": "multilingual"
+        },
+        {
+          "lang": "ru",
+          "name": "Свободное национальное движение",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nl",
+          "name": "Free National Movement",
+          "note": "multilingual"
+        },
+        {
+          "lang": "zh-hant",
+          "name": "自由民族運動",
+          "note": "multilingual"
+        },
+        {
+          "lang": "zh-cn",
+          "name": "自由民族运动",
+          "note": "multilingual"
+        }
+      ]
+    },
+    {
+      "classification": "legislature",
+      "id": "legislature",
+      "identifiers": [
+        {
+          "identifier": "Q2948139",
+          "scheme": "wikidata"
+        }
+      ],
+      "name": "House of Assembly",
+      "seats": 38
+    },
+    {
+      "classification": "party",
+      "id": "party/plp",
+      "identifiers": [
+        {
+          "identifier": "Q2566823",
+          "scheme": "wikidata"
+        }
+      ],
+      "name": "PLP",
+      "other_names": [
+        {
+          "lang": "id",
+          "name": "Partai Liberal Progresif",
+          "note": "multilingual"
+        },
+        {
+          "lang": "pl",
+          "name": "Postępowa Partia Liberalna",
+          "note": "multilingual"
+        },
+        {
+          "lang": "bg",
+          "name": "Прогресивна либерална партия",
+          "note": "multilingual"
+        },
+        {
+          "lang": "en",
+          "name": "Progressive Liberal Party",
+          "note": "multilingual"
+        },
+        {
+          "lang": "uk",
+          "name": "Прогресивна ліберальна партія",
+          "note": "multilingual"
+        },
+        {
+          "lang": "ar",
+          "name": "الحزب الليبرالي التقدمي",
+          "note": "multilingual"
+        },
+        {
+          "lang": "it",
+          "name": "Partito Liberale Progressista",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nb",
+          "name": "Progressive Liberal Party",
+          "note": "multilingual"
+        },
+        {
+          "lang": "ru",
+          "name": "Прогрессивная либеральная партия",
+          "note": "multilingual"
+        },
+        {
+          "lang": "fr",
+          "name": "parti libéral progressiste",
+          "note": "multilingual"
+        },
+        {
+          "lang": "nl",
+          "name": "Progressive Liberal Party",
+          "note": "multilingual"
+        },
+        {
+          "lang": "zh-hant",
+          "name": "進步自由黨",
+          "note": "multilingual"
+        },
+        {
+          "lang": "zh-cn",
+          "name": "进步自由党",
+          "note": "multilingual"
+        },
+        {
+          "lang": "zh",
+          "name": "進步自由黨",
+          "note": "multilingual"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bahamian_general_election,_2012",
+      "http://www.bahamas.gov.bs/wps/portal/public/?urile=wcm%3apath%3a/MOF_Content/internet/The+Government/Government/The+Government/Legislative/Members+of+Parliament/"
+    ]
+  },
+  "memberships": [
+    {
+      "area_id": "area/pineridge",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "04356028-c77f-4c4f-80c8-278666f6a5c7",
+      "role": "member"
+    },
+    {
+      "area_id": "area/north_eleuthera",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/fnm",
+      "organization_id": "legislature",
+      "person_id": "09d1f26a-f2b7-4d9e-8498-f2d3875c9fb6",
+      "role": "member"
+    },
+    {
+      "area_id": "area/fox_hill",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "0bc913f7-434d-4648-a4d6-3ea8837a3b4a",
+      "role": "member"
+    },
+    {
+      "area_id": "area/central_grand_bahama",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/fnm",
+      "organization_id": "legislature",
+      "person_id": "1cb6ce39-a635-4ba4-95e4-d5d1a0235993",
+      "role": "member"
+    },
+    {
+      "area_id": "area/mangrove_cay_&_south_andros",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "2866c1d0-3733-442a-a226-eaef73279d64",
+      "role": "member"
+    },
+    {
+      "area_id": "area/marathon",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "2e433662-3be3-449c-85dc-9e3e4e4718b7",
+      "role": "member"
+    },
+    {
+      "area_id": "area/bain_&_grants_town",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "2f799303-0158-4c9d-9fd2-b428dfb2f90b",
+      "role": "member"
+    },
+    {
+      "area_id": "area/central_&_south_abaco",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/fnm",
+      "organization_id": "legislature",
+      "person_id": "4076d906-cedc-468b-b106-1bf1a83afd12",
+      "role": "member"
+    },
+    {
+      "area_id": "area/long_island",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/fnm",
+      "organization_id": "legislature",
+      "person_id": "4932323d-dcc8-4af8-b89c-db1d465af75c",
+      "role": "member"
+    },
+    {
+      "area_id": "area/st._anne's",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/fnm",
+      "organization_id": "legislature",
+      "person_id": "4a7bfd46-3b03-46ec-957f-3ef526b04bbe",
+      "role": "member"
+    },
+    {
+      "area_id": "area/central_&_south_eleuthera",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "58709524-7f66-44fd-8315-9712c4655768",
+      "role": "member"
+    },
+    {
+      "area_id": "area/nassau_village",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "5bb259fd-864b-4d40-b285-c453f912b72d",
+      "role": "member"
+    },
+    {
+      "area_id": "area/carmichael",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "60b9e7ff-d787-4ce4-a89f-1dd4bb44335a",
+      "role": "member"
+    },
+    {
+      "area_id": "area/golden_isles",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "698eb313-f3a4-4a65-9cd2-b8c84de64d43",
+      "role": "member"
+    },
+    {
+      "area_id": "area/mayaguana,_inagua,_crooked_island,_acklins_and_long_cay",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "7ad83f81-a544-4771-a358-3dd9e3ecdc99",
+      "role": "member"
+    },
+    {
+      "area_id": "area/yamacraw",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "7b94522d-6552-447a-98e6-af2f9140de20",
+      "role": "member"
+    },
+    {
+      "area_id": "area/marco_city",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "7c16b927-18ea-4555-b68d-fc087065570f",
+      "role": "member"
+    },
+    {
+      "area_id": "area/south_beach",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "80f062aa-b092-4ed0-8aaa-a6cf5d86bfe4",
+      "role": "member"
+    },
+    {
+      "area_id": "area/fort_charlotte",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "93a0b8d8-4667-4ab7-9768-0402e6579535",
+      "role": "member"
+    },
+    {
+      "area_id": "area/golden_gates",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "a0bd764c-7ca1-4f66-8cb6-6ead9d84c5e8",
+      "role": "member"
+    },
+    {
+      "area_id": "area/tall_pines",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "a7a8d355-b7f7-4f2c-b077-47def1f3f60d",
+      "role": "member"
+    },
+    {
+      "area_id": "area/seabreeze",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "aedfc1c4-c743-4091-8cfd-a63ad88a843e",
+      "role": "member"
+    },
+    {
+      "area_id": "area/west_grand_bahama_&_bimini",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "b6aad8fc-4d16-4e10-873e-8b214e388373",
+      "role": "member"
+    },
+    {
+      "area_id": "area/mount_moriah",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "ba097ac3-f152-4d1c-8c1d-5ed5f44df1f9",
+      "role": "member"
+    },
+    {
+      "area_id": "area/north_abaco",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/fnm",
+      "organization_id": "legislature",
+      "person_id": "bf4d389a-fd1a-4a8e-8edc-d9c178caf78c",
+      "role": "member"
+    },
+    {
+      "area_id": "area/montagu",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/fnm",
+      "organization_id": "legislature",
+      "person_id": "bf80cc77-50cf-4026-8953-5126db91ed76",
+      "role": "member"
+    },
+    {
+      "area_id": "area/east_grand_bahama",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/fnm",
+      "organization_id": "legislature",
+      "person_id": "c738f48a-b463-45a3-89ea-c4d675c36926",
+      "role": "member"
+    },
+    {
+      "area_id": "area/exumas_&_ragged_island",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "d5c68954-2cf6-4a38-b2b5-8c6abbf6e93e",
+      "role": "member"
+    },
+    {
+      "area_id": "area/killarney",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/fnm",
+      "organization_id": "legislature",
+      "person_id": "d625fce1-47b0-45e4-a412-0b72bb97ced7",
+      "role": "member"
+    },
+    {
+      "area_id": "area/cat_island,_rum_cay_&_san_salvador",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "dcd1a356-a7e6-409b-8028-27fea2691105",
+      "role": "member"
+    },
+    {
+      "area_id": "area/pinewood",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "eb17d7b0-ddd7-4fe6-aaf5-e718779233b5",
+      "role": "member"
+    },
+    {
+      "area_id": "area/bamboo_town",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "f1850a5c-e5bf-4f43-b5e2-bc39ef0cf753",
+      "role": "member"
+    },
+    {
+      "area_id": "area/centreville",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "fbc7c142-d11b-499b-8ce3-5b157289fb53",
+      "role": "member"
+    },
+    {
+      "area_id": "area/north_andros_&_berry_islands",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "fbca8d53-3f82-445d-8dae-91c70c1753ce",
+      "role": "member"
+    },
+    {
+      "area_id": "area/southern_shores",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "fbfeb38b-0118-4a73-af78-c36eafb104e0",
+      "role": "member"
+    },
+    {
+      "area_id": "area/englerston",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "fd2e318e-64d3-45e5-85ce-4d65223867b3",
+      "role": "member"
+    },
+    {
+      "area_id": "area/garden_hills",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "fec01322-1e2b-4a32-a06c-2155bf4c36ea",
+      "role": "member"
+    },
+    {
+      "area_id": "area/elizabeth",
+      "legislative_period_id": "term/2012",
+      "on_behalf_of_id": "party/plp",
+      "organization_id": "legislature",
+      "person_id": "ffc68b8c-02e0-4149-9db3-ef498204280a",
+      "role": "member"
+    }
+  ],
+  "events": [
+    {
+      "classification": "general election",
+      "end_date": "1729",
+      "id": "Q18385315",
+      "name": "Bahamian general election, 1729",
+      "start_date": "1729"
+    },
+    {
+      "classification": "general election",
+      "end_date": "1833",
+      "id": "Q18390237",
+      "name": "Bahamian general election, 1833",
+      "start_date": "1833"
+    },
+    {
+      "classification": "general election",
+      "end_date": "1949",
+      "id": "Q20312028",
+      "name": "Bahamian general election, 1949",
+      "start_date": "1949"
+    },
+    {
+      "classification": "general election",
+      "end_date": "1956",
+      "id": "Q20312035",
+      "name": "Bahamian general election, 1956",
+      "start_date": "1956"
+    },
+    {
+      "classification": "general election",
+      "end_date": "1962",
+      "id": "Q4842389",
+      "name": "Bahamian general election, 1962",
+      "start_date": "1962"
+    },
+    {
+      "classification": "general election",
+      "end_date": "1967",
+      "id": "Q4842387",
+      "name": "Bahamian general election, 1967",
+      "start_date": "1967"
+    },
+    {
+      "classification": "general election",
+      "end_date": "1968",
+      "id": "Q4842390",
+      "name": "Bahamian general election, 1968",
+      "start_date": "1968"
+    },
+    {
+      "classification": "general election",
+      "end_date": "1972",
+      "id": "Q4842391",
+      "name": "Bahamian general election, 1972",
+      "start_date": "1972"
+    },
+    {
+      "classification": "general election",
+      "end_date": "1977",
+      "id": "Q16950041",
+      "name": "Bahamian general election, 1977",
+      "start_date": "1977"
+    },
+    {
+      "classification": "general election",
+      "end_date": "1982",
+      "id": "Q4842393",
+      "name": "Bahamian general election, 1982",
+      "start_date": "1982"
+    },
+    {
+      "classification": "general election",
+      "end_date": "1987",
+      "id": "Q4842394",
+      "name": "Bahamian general election, 1987",
+      "start_date": "1987"
+    },
+    {
+      "classification": "general election",
+      "end_date": "1992",
+      "id": "Q4842395",
+      "name": "Bahamian general election, 1992",
+      "start_date": "1992"
+    },
+    {
+      "classification": "general election",
+      "end_date": "1997",
+      "id": "Q4842396",
+      "name": "Bahamian general election, 1997",
+      "start_date": "1997"
+    },
+    {
+      "classification": "general election",
+      "end_date": "2002",
+      "id": "Q4842397",
+      "name": "Bahamian general election, 2002",
+      "start_date": "2002"
+    },
+    {
+      "classification": "general election",
+      "end_date": "2007",
+      "id": "Q1132564",
+      "name": "Bahamian general election, 2007",
+      "start_date": "2007"
+    },
+    {
+      "classification": "general election",
+      "end_date": "2012-05-07",
+      "id": "Q4842398",
+      "name": "Bahamian general election, 2012",
+      "start_date": "2012-05-07"
+    },
+    {
+      "classification": "legislative period",
+      "id": "term/2012",
+      "name": "2012–",
+      "organization_id": "legislature",
+      "start_date": "2012-05-08"
+    }
+  ],
+  "areas": [
+    {
+      "id": "area/bain_&_grants_town",
+      "name": "Bain & Grants Town",
+      "type": "constituency"
+    },
+    {
+      "id": "area/bamboo_town",
+      "name": "Bamboo Town",
+      "type": "constituency"
+    },
+    {
+      "id": "area/carmichael",
+      "name": "Carmichael",
+      "type": "constituency"
+    },
+    {
+      "id": "area/cat_island,_rum_cay_&_san_salvador",
+      "name": "Cat Island, Rum Cay & San Salvador",
+      "type": "constituency"
+    },
+    {
+      "id": "area/central_&_south_abaco",
+      "name": "Central & South Abaco",
+      "type": "constituency"
+    },
+    {
+      "id": "area/central_&_south_eleuthera",
+      "name": "Central & South Eleuthera",
+      "type": "constituency"
+    },
+    {
+      "id": "area/central_grand_bahama",
+      "name": "Central Grand Bahama",
+      "type": "constituency"
+    },
+    {
+      "id": "area/centreville",
+      "name": "Centreville",
+      "type": "constituency"
+    },
+    {
+      "id": "area/east_grand_bahama",
+      "name": "East Grand Bahama",
+      "type": "constituency"
+    },
+    {
+      "id": "area/elizabeth",
+      "name": "Elizabeth",
+      "type": "constituency"
+    },
+    {
+      "id": "area/englerston",
+      "name": "Englerston",
+      "type": "constituency"
+    },
+    {
+      "id": "area/exumas_&_ragged_island",
+      "name": "Exumas & Ragged Island",
+      "type": "constituency"
+    },
+    {
+      "id": "area/fort_charlotte",
+      "name": "Fort Charlotte",
+      "type": "constituency"
+    },
+    {
+      "id": "area/fox_hill",
+      "name": "Fox Hill",
+      "type": "constituency"
+    },
+    {
+      "id": "area/garden_hills",
+      "name": "Garden Hills",
+      "type": "constituency"
+    },
+    {
+      "id": "area/golden_gates",
+      "name": "Golden Gates",
+      "type": "constituency"
+    },
+    {
+      "id": "area/golden_isles",
+      "name": "Golden Isles",
+      "type": "constituency"
+    },
+    {
+      "id": "area/killarney",
+      "name": "Killarney",
+      "type": "constituency"
+    },
+    {
+      "id": "area/long_island",
+      "name": "Long Island",
+      "type": "constituency"
+    },
+    {
+      "id": "area/mangrove_cay_&_south_andros",
+      "name": "Mangrove Cay & South Andros",
+      "type": "constituency"
+    },
+    {
+      "id": "area/marathon",
+      "name": "Marathon",
+      "type": "constituency"
+    },
+    {
+      "id": "area/marco_city",
+      "name": "Marco City",
+      "type": "constituency"
+    },
+    {
+      "id": "area/mayaguana,_inagua,_crooked_island,_acklins_and_long_cay",
+      "name": "Mayaguana, Inagua, Crooked Island, Acklins and Long Cay",
+      "type": "constituency"
+    },
+    {
+      "id": "area/montagu",
+      "name": "Montagu",
+      "type": "constituency"
+    },
+    {
+      "id": "area/mount_moriah",
+      "name": "Mount Moriah",
+      "type": "constituency"
+    },
+    {
+      "id": "area/nassau_village",
+      "name": "Nassau Village",
+      "type": "constituency"
+    },
+    {
+      "id": "area/north_abaco",
+      "name": "North Abaco",
+      "type": "constituency"
+    },
+    {
+      "id": "area/north_andros_&_berry_islands",
+      "name": "North Andros & Berry Islands",
+      "type": "constituency"
+    },
+    {
+      "id": "area/north_eleuthera",
+      "name": "North Eleuthera",
+      "type": "constituency"
+    },
+    {
+      "id": "area/pineridge",
+      "name": "Pineridge",
+      "type": "constituency"
+    },
+    {
+      "id": "area/pinewood",
+      "name": "Pinewood",
+      "type": "constituency"
+    },
+    {
+      "id": "area/seabreeze",
+      "name": "Seabreeze",
+      "type": "constituency"
+    },
+    {
+      "id": "area/south_beach",
+      "name": "South Beach",
+      "type": "constituency"
+    },
+    {
+      "id": "area/southern_shores",
+      "name": "Southern Shores",
+      "type": "constituency"
+    },
+    {
+      "id": "area/st._anne's",
+      "name": "St. Anne's",
+      "type": "constituency"
+    },
+    {
+      "id": "area/tall_pines",
+      "name": "Tall Pines",
+      "type": "constituency"
+    },
+    {
+      "id": "area/west_grand_bahama_&_bimini",
+      "name": "West Grand Bahama & Bimini",
+      "type": "constituency"
+    },
+    {
+      "id": "area/yamacraw",
+      "name": "Yamacraw",
+      "type": "constituency"
+    }
+  ]
+}
