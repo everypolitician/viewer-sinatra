@@ -54,3 +54,5 @@ end
 
 require 'bundler/audit/task'
 Bundler::Audit::Task.new
+
+task default: ['test:all', 'rubocop', 'bundle:audit']
