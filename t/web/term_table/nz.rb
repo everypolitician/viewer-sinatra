@@ -17,4 +17,12 @@ describe 'Per Country Tests' do
       subject.css('#term h1').text.must_include '51st Parliament'
     end
   end
+
+  describe 'HTML validation' do
+    before { get '/new-zealand/house/term-table/51.html' }
+
+    it 'has no errors in the term-table page' do
+      last_response_must_be_valid
+    end
+  end
 end
