@@ -35,5 +35,23 @@ describe 'Northern Ireland' do
       img.attr('src').text.must_equal '/images/person-placeholder-108px.png'
       img.attr('data-src').text.must_include 'politician-image-proxy'
     end
+
+    describe 'alt attribute on avatars' do
+      it 'has the person name in a placeholder image' do
+        img = mcquillan.css('img.person-card__image')
+        img.attr('alt').text.must_equal 'Placeholder image for Adrian McQuillan'
+      end
+
+      it 'has the person name in a normal image' do
+        img = annalo.css('img.person-card__image')
+        img.attr('alt').text.must_equal 'Member headshot for Anna Lo'
+      end
+    end
+
+    describe 'HTML validation' do
+      it 'has no errors in the term-table page' do
+        last_response_must_be_valid
+      end
+    end
   end
 end
