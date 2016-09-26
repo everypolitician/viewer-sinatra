@@ -104,7 +104,13 @@ bundle exec rake test:extensions
 bundle exec rake test:all
 ```
 
-It is recommended to run the last command at least once right before pushing.
+### Run absolutely all the tests plus rubocop and bundle audit
+
+```bash
+bundle exec rake
+```
+
+It is recommended to run the last command at least once right before pushing. Also, running this command assures you that what you get locally is the same that you will get in Travis.
 
 ## Sinatra, SASS, styling
 
