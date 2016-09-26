@@ -57,12 +57,19 @@ module Minitest
     end
 
     def last_response_must_be_valid
-      skip if `which tidy`.empty?
+      skip unless supported_html_tidy_version?
       validation = PageValidations::HTMLValidation.new.validation(last_response.body, last_request.url)
       assert validation.valid?, validation.exceptions
     end
 
     private
+
+    # If an old version of html-tidy is installed then this HTML string will
+    # cause `tidy(1)` to exit with a non-zero status, which will cause `system`
+    # to return `false`.
+    def supported_html_tidy_version?
+      system("echo '<!DOCTYPE html><title>Test</title><body><header>Test</header>' | tidy -eq > /dev/null 2>&1")
+    end
 
     def ep_repo
       'https://github.com/everypolitician/everypolitician-data'
