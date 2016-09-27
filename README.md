@@ -110,7 +110,6 @@ bundle exec rake test:all
 bundle exec rake
 ```
 
-It is recommended to run the last command at least once right before pushing. Also, running this command assures you that what you get locally is the same that you will get in Travis.
 
 ## Sinatra, SASS, styling
 
