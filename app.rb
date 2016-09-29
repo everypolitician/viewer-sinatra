@@ -12,10 +12,12 @@ require 'everypolitician'
 require 'everypolitician/popolo'
 
 require_relative './lib/popolo_helper'
+require_relative './lib/html_helper'
 require_rel './lib/page'
 
 Dotenv.load
 helpers Popolo::Helper
+helpers Sinatra::HTMLHelper
 
 set :erb, trim: '-'
 set :main_url, 'http://everypolitician.org'
