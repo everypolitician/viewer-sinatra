@@ -17,7 +17,7 @@ require_rel './lib/page'
 
 Dotenv.load
 helpers Popolo::Helper
-helpers Sinatra::HTMLHelper
+helpers HTMLHelper
 
 set :erb, trim: '-'
 set :main_url, 'http://everypolitician.org'
