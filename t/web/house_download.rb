@@ -50,11 +50,11 @@ describe 'house download template' do
 
   describe 'other houses' do
     it 'shows a link to the other legislature' do
-      subject.css('.page-section .button--quarternary').first.text.strip.must_include 'House of Representatives'
+      subject.css('.page-section--green .button--secondary').first.text.must_include 'House of Representatives'
     end
 
     it 'links to the other legislature' do
-      subject.css('.page-section .button--quarternary/@href').first.text.strip.must_equal '/united-states-of-america/house/'
+      subject.css('.page-section--green .button--secondary/@href').first.text.must_include '/united-states-of-america/house/'
     end
   end
 end
