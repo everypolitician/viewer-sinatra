@@ -1,23 +1,23 @@
 <div class="page-section page-section--grey text-center">
   <div class="container">
-    <h3>Download data for politicians in this legislature.</h3>
+    <h2>Download data for politicians in this legislature.</h2>
+    <p>
+      Read more about
+      <a href="http://docs.everypolitician.org/data_summary.html">what’s in the data</a>
+      and how we use
+      <a href="http://docs.everypolitician.org/technical.html">CSV and JSON formats</a>.
+      If you’re a programmer, see our notes on
+      <a href="http://docs.everypolitician.org/use_the_data.html">how to use the data</a>.
+    </p>
   </div>
 </div>
 
   <div class="page-section">
     <div class="container">
       <div class="country__legislature" id="legislature-<%= @page.house.slug.downcase %>" data-house="<%= @page.house.slug.downcase %>">
-        <p>
-          Read more about
-          <a href="http://docs.everypolitician.org/data_summary.html">what’s in the data</a>
-          and how we use
-          <a href="http://docs.everypolitician.org/technical.html">CSV and JSON formats</a>.
-          If you’re a programmer, see our notes on
-          <a href="http://docs.everypolitician.org/use_the_data.html">how to use the data</a>.
-        </p>
         <div class="layout-equal-columns">
           <div class="first-column">
-            <h4>Data for the whole legislature</h4>
+            <h3>Data for the whole legislature</h3>
             <p>
               <em>All</em> the data we have for this legislature is available
               in a single JSON file (using the Popolo open standard).
@@ -34,7 +34,7 @@
             </p>
           </div>
           <div class="second-column">
-            <h4>Just politicians’ names</h4>
+            <h3>Just politicians’ names</h3>
             <p>
               We’ve also separated just the names into a CSV file. Note there
               may be multiple names for a single politician (for example, this
@@ -52,7 +52,7 @@
           </div>
         </div>
       </div>
-      <h4>Data for specific terms</h4>
+      <h3>Data for specific terms</h3>
       <p>
         CSV files for individual terms have <em>simplified</em> data for each
         member. This might be all you need if you’re looking for the core
@@ -84,37 +84,51 @@
     </div>
   </div>
 
-<div class="page-section">
-  <div class="container">
-    <h3>Other countries</h3>
-    <div class="layout-equal-columns">
-      <div class="first-column">
-        <p>
-          Want politicians who aren’t from <%= @page.country.name %>?
-          No problem: we’ve got the world covered.
-        </p>
-        <p>
-          <a class="button button--quarternary" href="/countries.html">
+
+<% if @page.more_houses? %>
+  <div class="page-section page-section--green text-center">
+    <div class="container">
+      <h2>Other legislatures</h2>
+      <p>We have more data available for this country:</p>
+      <p>
+        <% @page.other_houses.each do |house| %>
+          <a class="button button--secondary" href="/<%= @page.country.slug.downcase %>/<%= house.slug.downcase %>/">
             <i class="fa fa-globe"></i>
-            <span class="large-screen-only">View</span> all countries
+            <span class="large-screen-only">View</span> <%= house.name %>
           </a>
-        </p>
-      </div>
-      <div class="second-column">
-        <p>
-          The file <code>countries.json</code> is the machine-readable index of
-          all the countries (and their legislatures) we’ve got data for. This
-          is especially useful if you’re interested in coding a way to
-          automatically
-          <a href="http://docs.everypolitician.org/repo_structure.html">read our data</a>.
-        </p>
-        <p>
-          <a href="<%= @page.download_url %>" class="button button--download">
-            <i class="fa fa-download"></i>
-            <span class="large-screen-only">Download</span> countries.json
-          </a>
-        </p>
-      </div>
+        <% end %>
+      </p>
+    </div>
+  </div>
+<% end %>
+
+<div class="page-section <% unless @page.more_houses? %>page-section--grey<% end %> text-center">
+
+  <div class="container">
+    <h2>Other countries</h2>
+    <div style="max-width: 26em; margin: 0 auto;">
+      <p>
+        Want politicians who aren’t from <%= @page.country.name %>?
+        No problem: we’ve got the world covered.
+      </p>
+      <p>
+        <a class="button button--secondary" href="/countries.html">
+          <i class="fa fa-globe"></i>
+          <span class="large-screen-only">View</span> all countries
+        </a>
+      </p>
+      <p style="margin-top: 2em;">
+        Looking for a way to automatically
+        <a href="http://docs.everypolitician.org/repo_structure.html">read our data</a>?
+        Download a machine-readable index of all the countries (and
+        their legislatures) we’ve got data for.
+      </p>
+      <p>
+        <a href="<%= @page.download_url %>" class="button button--download">
+          <i class="fa fa-download"></i>
+          <span class="large-screen-only">Download</span> countries.json
+        </a>
+      </p>
     </div>
   </div>
 </div>

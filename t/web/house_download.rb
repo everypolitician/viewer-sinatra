@@ -47,4 +47,14 @@ describe 'house download template' do
       last_response_must_be_valid
     end
   end
+
+  describe 'other houses' do
+    it 'shows a link to the other legislature' do
+      subject.css('.page-section--green .button--secondary').first.text.must_include 'House of Representatives'
+    end
+
+    it 'links to the other legislature' do
+      subject.css('.page-section--green .button--secondary/@href').first.text.must_include '/united-states-of-america/house/'
+    end
+  end
 end
