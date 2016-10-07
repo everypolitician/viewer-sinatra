@@ -188,7 +188,16 @@ $(document).ready(function(){
   if( $('.person-card').length ){
     window.cards = new CardFilter();
 
-    $('.js-filter-input').show().on('keyup', function(e) {
+    // Ideally, we only want to update the search state when the search input
+    // text has been changed, ignoring other keystrokes like Ctrl-A / Ctrl-C.
+    // Modern browsers and IE9+ support the `input` event. But some old
+    // browsers like IE8 don't. So we provide `keyup` as a fallback.
+    var filterInputEvent = 'input';
+    if(jQuery.support && jQuery.support.input === false){
+      filterInputEvent = 'keyup';
+    }
+
+    $('.js-filter-input').show().on(filterInputEvent, function(e) {
       // We pass `false` into setSearch to update the UI and internal state
       // without saving the state to the URL hash (since we don't want a new
       // history state for each letter the user types).
