@@ -202,6 +202,19 @@ $(document).ready(function(){
       // without saving the state to the URL hash (since we don't want a new
       // history state for each letter the user types).
       window.cards.setSearch( $(this).val(), false );
+
+      // If you are searching while the card-filters are attached to the top
+      // of the window, then it feels most natural for your position to be
+      // 'reset' back to the top of the grid of cards when you start searching.
+      // Otherwise, you could be scrolled partway down the page, begin a
+      // search, and before you know it, almost all the cards have disappeared,
+      // and you're stranded at the bottom of the page, with no cards visible.
+      $(window).scrollTop(
+        Math.min(
+          $(window).scrollTop(),
+          $(this).parents('.js-fixed-parent').offset().top
+        )
+      );
     }).on('blur', function(){
       // Now they have finished typing, we manually tell the cardFilter to
       // save its state to the URL hash, creating a new history entry.
