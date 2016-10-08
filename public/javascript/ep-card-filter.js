@@ -97,13 +97,18 @@ var CardFilter = function(){
   this._updateUI = function(){
 
     $('[data-active-section]').attr('data-active-section', state.facet);
-    $('[data-section-toggle]').removeClass('section-toggle--selected');
-    $('[data-section-toggle="' + state.facet + '"]').addClass('section-toggle--selected');
+    $('.js-show-facet').val(state.facet);
 
-    if( typeof state.search === 'undefined' ){
+    if( state.facet === defaultState.facet ){
+      $('.js-show-facet').removeClass('js-filter-trigger--changed');
+    } else {
+      $('.js-show-facet').addClass('js-filter-trigger--changed');
+    }
+
+    if( state.search === defaultState.search ){
       $('.js-filter-target--hidden').removeClass('js-filter-target--hidden');
       $('.js-person-card__section--visible').removeClass('js-person-card__section--visible');
-      $('.js-filter-input').val('');
+      $('.js-filter-input').val('').removeClass('js-filter-trigger--changed');
 
     } else {
       $('.js-filter-target').each(function(){
@@ -127,7 +132,7 @@ var CardFilter = function(){
         });
       });
 
-      $('.js-filter-input').val(state.search);
+      $('.js-filter-input').val(state.search).addClass('js-filter-trigger--changed');
     }
 
     // Other scripts might want to do something special once they know
@@ -183,20 +188,78 @@ $(document).ready(function(){
   if( $('.person-card').length ){
     window.cards = new CardFilter();
 
-    $('.js-filter-input').show().on('keyup', function(e) {
+    // Ideally, we only want to update the search state when the search input
+    // text has been changed, ignoring other keystrokes like Ctrl-A / Ctrl-C.
+    // Modern browsers and IE9+ support the `input` event. But some old
+    // browsers like IE8 don't. So we provide `keyup` as a fallback.
+    var filterInputEvent = 'input';
+    if(jQuery.support && jQuery.support.input === false){
+      filterInputEvent = 'keyup';
+    }
+
+    $('.js-filter-input').show().on(filterInputEvent, function(e) {
       // We pass `false` into setSearch to update the UI and internal state
       // without saving the state to the URL hash (since we don't want a new
       // history state for each letter the user types).
       window.cards.setSearch( $(this).val(), false );
+
+      // If you are searching while the card-filters are attached to the top
+      // of the window, then it feels most natural for your position to be
+      // 'reset' back to the top of the grid of cards when you start searching.
+      // Otherwise, you could be scrolled partway down the page, begin a
+      // search, and before you know it, almost all the cards have disappeared,
+      // and you're stranded at the bottom of the page, with no cards visible.
+      $(window).scrollTop(
+        Math.min(
+          $(window).scrollTop(),
+          $(this).parents('.js-fixed-parent').offset().top
+        )
+      );
     }).on('blur', function(){
       // Now they have finished typing, we manually tell the cardFilter to
       // save its state to the URL hash, creating a new history entry.
       window.cards.saveState();
     });
 
-    $('[data-section-toggle]').on('click', function(){
-      var section = $(this).attr('data-section-toggle');
+    $('.js-show-facet').on('change', function(){
+      // Changing the facet has the potential to resize every card on the
+      // page. If cards above the current viewport are resized, you can easily
+      // lose your place in the list. So we're going to do some devious maths
+      // to pick a "reference card" (usually the top left visible card) and
+      // make sure that the viewport scrolls to maintain that reference card's
+      // position on screen, even if all the preceding cards change size.
+      var pixelsAboveViewport = $(window).scrollTop();
+      var referenceCardPixelsIntoViewport;
+      var $referenceCard;
+
+      // Find the reference card.
+      $('.person-card').each(function(){
+        var thisCardOffset = $(this).offset().top;
+        if ( thisCardOffset > pixelsAboveViewport ) {
+          $referenceCard = $(this);
+          referenceCardPixelsIntoViewport = thisCardOffset - pixelsAboveViewport;
+          return false; // break out of .each loop
+        }
+      });
+
+      // Actually set the visible facet on all the cards.
+      var section = $(this).val();
       window.cards.setFacet(section);
+
+      // Now the facet has changed, adjust the window's scroll position so the
+      // reference card is back in the same visual location it was before.
+      $(window).scrollTop(
+        $referenceCard.offset().top - referenceCardPixelsIntoViewport
+      );
+
+      // Some mobile browsers (eg: iOS Safari) make it really difficult to
+      // unfocus a `select` element. This is a pain for us, because it means
+      // our "temporary" absolute positioning fix (.js-fixed-child--absolute)
+      // could remain in place much longer than required. Manually blurring
+      // the input once a selection has been made avoids this problem, and
+      // most users won't even noticed it's happened.
+      $(this).trigger('blur');
+
     });
   }
 

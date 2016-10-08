@@ -185,6 +185,21 @@ p.lead {
     }
 }
 
+.form-control,
+input[type].form-control {
+    display: block;
+    width: 100%;
+    height: (22px + 6px + 6px);
+    font-size: 16px;
+    line-height: 22px;
+    padding: 6px 10px;
+    background-color: #fff;
+    background-image: none;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
 .page-section {
     padding: 2em 0;
 
@@ -413,6 +428,19 @@ p.lead {
   background-color: #fff;
 }
 
+.js-fixed-child--fixed {
+  position: fixed;
+  top: 0;
+}
+
+.js-fixed-child--absolute {
+  position: absolute;
+}
+
+.js-fixed-parent {
+  position: relative;
+}
+
 .js-sortable {
   th {
     cursor: pointer;
@@ -498,6 +526,7 @@ p.lead {
     select {
         margin-left: 0.3em;
         vertical-align: 0.1em;
+        max-width: 100%;
     }
 }
 

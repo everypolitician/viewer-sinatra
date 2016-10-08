@@ -152,8 +152,7 @@ input[type=search],
 input[type=time],
 input[type=datalist],
 input[type=date],
-textarea,
-.standard-input {
+textarea {
     @include vendor-prefix(border-radius, $border_radius);
     border: 1px solid $colour_borders;
     max-width: 100%;
