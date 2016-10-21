@@ -8,9 +8,7 @@ addons:
     packages:
     - cmake
 script:
-  - bundle exec rake test:all
-  - bundle exec rake rubocop
-  - bundle exec rake bundle:audit
+  - bundle exec rake
   - scripts/release.sh
 sudo: false
 rvm:
