@@ -15,7 +15,7 @@ module Page
     end
 
     def data_sources
-      popolo.popolo[:meta][:sources].map { |s| CGI.unescape(s) }
+      popolo.popolo[:meta][:sources]
     end
 
     def country
