@@ -167,6 +167,19 @@
     }
 }
 
+.page-section--survey {
+    background-color: $colour_pale_yellow;
+    text-align: center;
+    border-bottom: 1px solid $colour_borders;
+
+    h2 {
+        font-size: 2em; // This H2 isn't quite as important as the others
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 22em;
+    }
+}
+
 // My kingdom for a parent selector in CSS!
 // Add some extra margin above the promo section because the screencast
 // sticks out and it feels a bit tight against the previous section.
