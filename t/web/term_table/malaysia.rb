@@ -22,7 +22,7 @@ describe 'Per Country Tests' do
     end
 
     it 'should show the house name in the title' do
-      subject.css('.site-header__logo h3').text.must_include 'Dewan Rakyat'
+      subject.css('.site-header h3').text.must_include 'Dewan Rakyat'
     end
   end
 end

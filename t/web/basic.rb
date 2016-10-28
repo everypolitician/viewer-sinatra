@@ -29,7 +29,7 @@ describe 'Viewer' do
     before { get '/finland/eduskunta/download.html' }
 
     it 'should link back to the house' do
-      subject.css('.site-header__logo h3 a/@href').text.must_equal '/finland/eduskunta/'
+      subject.css('.site-header h3 a/@href').text.must_equal '/finland/eduskunta/'
     end
   end
 

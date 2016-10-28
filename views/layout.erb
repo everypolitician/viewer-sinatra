@@ -54,33 +54,35 @@
 <body>
     <div id="wrapper">
 
+        <nav class="site-nav <% if @country %>site-nav--country<% end %>">
+            <div class="container">
+                <a href="/" class="site-nav__logo">EveryPolitician</a>
+                <ul class="site-nav__menu">
+                    <li><a href="/countries.html">Data</a></li>
+                    <li><a href="http://docs.everypolitician.org/">Documentation</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+      <% if @country %>
         <header class="site-header">
             <div class="container">
-                <div class="site-header__logo">
-                    <h2>
-                      <% if @country %>
-                        <a href="/<%= @country.slug.downcase %>/"><%= @country.name %></a>
-                      <% else %>
-                        <a href="/"><span class="header-logo">EveryPolitician</span></a>
-                      <% end %>
-                    </h2>
-                    <% if @house %><h3><a href="/<%= @country.slug.downcase %>/<%= @house.slug.downcase %>/"><%= @house.name %></a></h3><% end %>
-                </div>
-                <div class="site-header__navigation site-header__navigation--primary">
-                    <nav role="navigation">
-                      <% if @country %>
-                        <a href="/"><span class="nav-logo">EveryPolitician</span></a>
-                      <% end %>
-                    </nav>
-                </div>
-                <div class="site-header__navigation site-header__navigation--secondary">
-                    <nav role="navigation">
-                        <a href="/countries.html">Data</a>
-                        <a href="http://docs.everypolitician.org/">Documentation</a>
-                    </nav>
-                </div>
+                <h2>
+                    <a href="/<%= @country.slug.downcase %>/">
+                        <%= @country.name %>
+                    </a>
+                </h2>
+              <% if @house %>
+                <h3>
+                    <a href="/<%= @country.slug.downcase %>/<%= @house.slug.downcase %>/">
+                        <%= @house.name %>
+                    </a>
+                </h3>
+              <% end %>
             </div>
         </header>
+      <% end %>
 
         <div class="site-content">
             <%= yield %>
