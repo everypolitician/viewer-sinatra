@@ -10,7 +10,7 @@ describe 'Country Page' do
     before      { get '/estonia/' }
 
     it 'should know its country' do
-      subject.css('.site-header__logo h2').text.strip.must_equal 'Estonia'
+      subject.css('.site-header h2').text.strip.must_equal 'Estonia'
     end
 
     it 'should have the country in the title' do

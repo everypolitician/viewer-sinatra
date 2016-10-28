@@ -443,6 +443,13 @@ $(function(){
 
   $('html').removeClass('no-js');
 
+  $('<a>').addClass('site-nav__menu-toggle')
+    .text('Menu')
+    .on('click', function(){
+      $('.site-nav__menu').toggleClass('site-nav__menu--active');
+    })
+    .insertBefore('.site-nav__menu');
+
   $('img[data-src]:hidden').show();
 
   window.blazy = new Blazy({
