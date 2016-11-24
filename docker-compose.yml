@@ -1,0 +1,11 @@
+version: '2'
+services:
+  web:
+    build: .
+    ports:
+    - "5000:5000"
+    volumes:
+    - .:/usr/src/app
+    - bundle_volume:/usr/src/bundle
+volumes:
+  bundle_volume: {}
