@@ -22,12 +22,12 @@ gem 'sinatra'
 gem 'yajl-ruby', require: 'yajl'
 
 group :test do
+  gem 'bundler-audit'
+  gem 'html_validation'
   gem 'minitest'
   gem 'pry'
   gem 'rack-test'
   gem 'webmock'
-  gem 'bundler-audit'
-  gem 'html_validation'
 end
 
 group :quality do
