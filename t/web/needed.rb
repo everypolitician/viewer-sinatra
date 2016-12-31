@@ -14,5 +14,9 @@ describe 'Needed' do
     it 'should need a scraper for Eritrea' do
       last_response.body.must_include 'Eritrea'
     end
+
+    it 'should not show Scraper Needed if no sources' do
+      last_response.body.wont_include 'plausible source'
+    end
   end
 end
