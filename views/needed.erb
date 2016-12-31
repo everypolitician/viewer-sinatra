@@ -36,6 +36,8 @@
             </ul>
         </div>
 
+        <% if @page.to_scrape.any? %>
+
         <h2>Scraper Needed</h2>
 
         <p>For the following countries we already know at least one plausible
@@ -58,6 +60,10 @@
             </ul>
         </div>
 
+      <% end %>
+
+      <% if @page.to_finish.any? %>
+
         <h2>In Progress</h2>
 
         <div class="container">
@@ -72,6 +78,8 @@
               <% end %>
             </ul>
         </div>
+
+      <% end %>
 
     </div>
 
