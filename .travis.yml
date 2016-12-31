@@ -9,7 +9,7 @@ addons:
     - cmake
 script:
   - bundle exec rake
-  - scripts/release.sh
+  - travis_wait 30 scripts/release.sh
 sudo: false
 rvm:
   - 2.3.1
