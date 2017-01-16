@@ -60,7 +60,7 @@ module Page
         PersonCard.new(
           person:          person,
           proxy_image:     image_proxy_url(person.id),
-          memberships:     person_memberships(person),
+          term:            term,
           top_identifiers: top_identifiers
         )
       end
@@ -92,20 +92,12 @@ module Page
                 .map { |s, _ids| s }
     end
 
-    def person_memberships(person)
-      membership_lookup[person.id]
-    end
-
     def image_proxy_url(id)
       'https://mysociety.github.io/politician-image-proxy' \
       "/#{country.slug}/#{house.slug}/#{id}/140x140.jpeg"
     end
 
     # Caches for faster lookup
-    def membership_lookup
-      @membership_lookup ||= current_term_memberships.group_by(&:person_id)
-    end
-
     def area_lookup
       @area_lookup ||= popolo.areas.group_by(&:id)
     end

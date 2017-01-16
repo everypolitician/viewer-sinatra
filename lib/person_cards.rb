@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
 class PersonCard
-  attr_reader :proxy_image, :memberships
+  attr_reader :proxy_image
 
   # TODO: pass fewer arguments!
-  def initialize(person:, proxy_image:, memberships:, top_identifiers:)
+  def initialize(person:, proxy_image:, term:, top_identifiers:)
     @person          = person
-    @memberships     = memberships # should be able to get from Person
     @proxy_image     = proxy_image # get from Legislature
+    @term            = term
     @top_identifiers = top_identifiers # get from Legislature
   end
 
@@ -39,9 +39,17 @@ class PersonCard
     Section::Identifiers.new(person, top_identifiers: top_identifiers).data
   end
 
+  def memberships
+    person.memberships.where(legislative_period_id: term.id)
+  end
+
   private
 
-  attr_reader :person, :top_identifiers
+  attr_reader :person, :term, :top_identifiers
+
+  def legislature
+    term.legislature
+  end
 
   class Section
     CardLine = Struct.new(:type, :value, :link)
