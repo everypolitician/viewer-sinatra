@@ -60,7 +60,6 @@ module Page
         PersonCard.new(
           person:          person,
           term:            term,
-          top_identifiers: top_identifiers
         )
       end
     end

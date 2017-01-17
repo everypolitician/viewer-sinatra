@@ -1,12 +1,9 @@
 # frozen_string_literal: true
 
 class PersonCard
-
-  # TODO: pass fewer arguments!
-  def initialize(person:, term:, top_identifiers:)
+  def initialize(person:, term:)
     @person          = person
     @term            = term
-    @top_identifiers = top_identifiers # get from Legislature
   end
 
   def proxy_image
@@ -48,7 +45,11 @@ class PersonCard
 
   private
 
-  attr_reader :person, :term, :top_identifiers
+  attr_reader :person, :term
+
+  def top_identifiers
+    term.top_identifiers
+  end
 
   def legislature
     term.legislature
