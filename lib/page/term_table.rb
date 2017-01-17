@@ -58,8 +58,8 @@ module Page
     def people
       @people ||= term.people.sort_by { |e| [e.sort_name, e.name] }.map do |person|
         PersonCard.new(
-          person:          person,
-          term:            term,
+          person: person,
+          term:   term
         )
       end
     end
