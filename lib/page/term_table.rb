@@ -56,7 +56,7 @@ module Page
     end
 
     def people
-      @people ||= people_for_current_term.sort_by { |e| [e.sort_name, e.name] }.map do |person|
+      @people ||= term.people.sort_by { |e| [e.sort_name, e.name] }.map do |person|
         PersonCard.new(
           person:          person,
           term:            term,
@@ -80,17 +80,6 @@ module Page
       @popolo ||= house.popolo
     end
 
-    def top_identifiers
-      @tidx ||= people_for_current_term
-                .map(&:identifiers)
-                .compact
-                .flatten
-                .reject { |i| i[:scheme] == 'everypolitician_legacy' }
-                .group_by { |i| i[:scheme] }
-                .sort_by { |s, ids| [-ids.size, s] }
-                .map { |s, _ids| s }
-    end
-
     # Caches for faster lookup
     def area_lookup
       @area_lookup ||= popolo.areas.group_by(&:id)
@@ -98,18 +87,6 @@ module Page
 
     def org_lookup
       @org_lookup ||= popolo.organizations.group_by(&:id)
-    end
-
-    def current_term_memberships
-      @ctm ||= term.memberships
-    end
-
-    def current_term_people_ids
-      @ctpids ||= Set.new(current_term_memberships.map(&:person_id))
-    end
-
-    def people_for_current_term
-      @pct ||= popolo.persons.select { |p| current_term_people_ids.include?(p.id) }
     end
   end
 end
