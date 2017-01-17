@@ -1,14 +1,17 @@
 # frozen_string_literal: true
 
 class PersonCard
-  attr_reader :proxy_image
 
   # TODO: pass fewer arguments!
-  def initialize(person:, proxy_image:, term:, top_identifiers:)
+  def initialize(person:, term:, top_identifiers:)
     @person          = person
-    @proxy_image     = proxy_image # get from Legislature
     @term            = term
     @top_identifiers = top_identifiers # get from Legislature
+  end
+
+  def proxy_image
+    'https://mysociety.github.io/politician-image-proxy' \
+    "/#{legislature.country.slug}/#{legislature.slug}/#{id}/140x140.jpeg"
   end
 
   def id

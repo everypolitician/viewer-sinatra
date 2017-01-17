@@ -59,7 +59,6 @@ module Page
       @people ||= people_for_current_term.sort_by { |e| [e.sort_name, e.name] }.map do |person|
         PersonCard.new(
           person:          person,
-          proxy_image:     image_proxy_url(person.id),
           term:            term,
           top_identifiers: top_identifiers
         )
@@ -90,11 +89,6 @@ module Page
                 .group_by { |i| i[:scheme] }
                 .sort_by { |s, ids| [-ids.size, s] }
                 .map { |s, _ids| s }
-    end
-
-    def image_proxy_url(id)
-      'https://mysociety.github.io/politician-image-proxy' \
-      "/#{country.slug}/#{house.slug}/#{id}/140x140.jpeg"
     end
 
     # Caches for faster lookup
