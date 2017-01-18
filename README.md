@@ -119,6 +119,11 @@ CSS styles are generated with [Sass](http://sass-lang.com).
 
 We don’t use a pre-built CSS framework like Foundation or Bootstrap, but you can visit [localhost:5000/styling](http://localhost:5000/styling) once you have the project up and running, to see a live preview of the basic styles and components available to you.
 
+## Contributing
+
+See the [CONTRIBUTING.md](CONTRIBUTING.md) guide for more information on
+contributing to the project.
+
 ## Acknowledgements
 
 Thanks to [Browserstack](https://www.browserstack.com/) who let us use their web-based cross-browser testing tools for this project.
