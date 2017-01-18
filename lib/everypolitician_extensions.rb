@@ -38,14 +38,8 @@ module EveryPolitician
       end
     end
 
-    def people_ids
-      @people_ids ||= Set.new(memberships.map(&:person_id))
-    end
-
     def people
-      @people ||= legislature.popolo.persons.select do |p|
-        people_ids.include?(p.id)
-      end
+      @people ||= memberships.map(&:person).uniq(&:id)
     end
 
     def top_identifiers
