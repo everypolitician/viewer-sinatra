@@ -59,6 +59,7 @@ module Page
       @people ||= people_for_current_term.sort_by { |e| [e.sort_name, e.name] }.map do |person|
         PersonCard.new(
           person:          person,
+          person_name:     person.name_at(term.end_date),
           proxy_image:     image_proxy_url(person.id),
           memberships:     person_memberships(person),
           top_identifiers: top_identifiers
