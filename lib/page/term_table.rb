@@ -56,7 +56,7 @@ module Page
     end
 
     def people
-      @people ||= people_for_current_term.sort_by(&:sort_name).map do |person|
+      @people ||= people_for_current_term.sort_by { |e| [e.sort_name, e.name] }.map do |person|
         PersonCard.new(
           person:          person,
           proxy_image:     image_proxy_url(person.id),
@@ -88,7 +88,7 @@ module Page
                 .flatten
                 .reject { |i| i[:scheme] == 'everypolitician_legacy' }
                 .group_by { |i| i[:scheme] }
-                .sort_by { |_s, ids| -ids.size }
+                .sort_by { |s, ids| [-ids.size, s] }
                 .map { |s, _ids| s }
     end
 
