@@ -37,6 +37,21 @@ module EveryPolitician
         mem.end_date.to_s.empty? || mem.end_date == end_date
       end
     end
+
+    def people
+      @people ||= memberships.map(&:person).uniq(&:id)
+    end
+
+    def top_identifiers
+      @top_identifiers ||= people
+                           .map(&:identifiers)
+                           .compact
+                           .flatten
+                           .reject { |i| i[:scheme] == 'everypolitician_legacy' }
+                           .group_by { |i| i[:scheme] }
+                           .sort_by { |s, ids| [-ids.size, s] }
+                           .map { |s, _ids| s }
+    end
   end
 
   module MembershipExtension

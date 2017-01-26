@@ -56,12 +56,10 @@ module Page
     end
 
     def people
-      @people ||= people_for_current_term.sort_by { |e| [e.sort_name, e.name] }.map do |person|
+      @people ||= term.people.sort_by { |e| [e.sort_name, e.name] }.map do |person|
         PersonCard.new(
-          person:          person,
-          proxy_image:     image_proxy_url(person.id),
-          memberships:     person_memberships(person),
-          top_identifiers: top_identifiers
+          person: person,
+          term:   term
         )
       end
     end
@@ -81,49 +79,13 @@ module Page
       @popolo ||= house.popolo
     end
 
-    def top_identifiers
-      @tidx ||= people_for_current_term
-                .map(&:identifiers)
-                .compact
-                .flatten
-                .reject { |i| i[:scheme] == 'everypolitician_legacy' }
-                .group_by { |i| i[:scheme] }
-                .sort_by { |s, ids| [-ids.size, s] }
-                .map { |s, _ids| s }
-    end
-
-    def person_memberships(person)
-      membership_lookup[person.id]
-    end
-
-    def image_proxy_url(id)
-      'https://mysociety.github.io/politician-image-proxy' \
-      "/#{country.slug}/#{house.slug}/#{id}/140x140.jpeg"
-    end
-
     # Caches for faster lookup
-    def membership_lookup
-      @membership_lookup ||= current_term_memberships.group_by(&:person_id)
-    end
-
     def area_lookup
       @area_lookup ||= popolo.areas.group_by(&:id)
     end
 
     def org_lookup
       @org_lookup ||= popolo.organizations.group_by(&:id)
-    end
-
-    def current_term_memberships
-      @ctm ||= term.memberships
-    end
-
-    def current_term_people_ids
-      @ctpids ||= Set.new(current_term_memberships.map(&:person_id))
-    end
-
-    def people_for_current_term
-      @pct ||= popolo.persons.select { |p| current_term_people_ids.include?(p.id) }
     end
   end
 end
