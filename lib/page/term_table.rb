@@ -81,7 +81,7 @@ module Page
     end
 
     def positions
-      @positions ||= CSV.parse(open(house.names_url.gsub(/names\.csv$/, 'unstable/positions.csv')).read, converters: nil, headers: true, header_converters: :symbol)
+      @positions ||= CSV.parse(open(house.names_url.gsub(/names\.csv$/, 'unstable/positions.csv')).read, converters: nil, headers: true, header_converters: :symbol).select { |pos| pos[:type] == 'cabinet' }
     end
 
     # Caches for faster lookup
