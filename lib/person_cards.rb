@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class PersonCard
+  attr_reader :positions
+
   def initialize(person:, term:, positions:)
     @person          = person
     @term            = term
@@ -46,7 +48,7 @@ class PersonCard
 
   private
 
-  attr_reader :person, :term, :positions
+  attr_reader :person, :term
 
   def top_identifiers
     term.top_identifiers
