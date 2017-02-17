@@ -1,9 +1,10 @@
 # frozen_string_literal: true
 
 class PersonCard
-  def initialize(person:, term:)
+  def initialize(person:, term:, positions:)
     @person          = person
     @term            = term
+    @positions = positions
   end
 
   def proxy_image
@@ -43,13 +44,9 @@ class PersonCard
     person.memberships.where(legislative_period_id: term.id)
   end
 
-  def positions
-    []
-  end
-
   private
 
-  attr_reader :person, :term
+  attr_reader :person, :term, :positions
 
   def top_identifiers
     term.top_identifiers

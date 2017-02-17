@@ -59,7 +59,8 @@ module Page
       @people ||= term.people.sort_by { |e| [e.sort_name, e.name] }.map do |person|
         PersonCard.new(
           person: person,
-          term:   term
+          term:   term,
+          positions: positions.select { |pos| pos[:id] == person.id }
         )
       end
     end
@@ -77,6 +78,10 @@ module Page
 
     def popolo
       @popolo ||= house.popolo
+    end
+
+    def positions
+      @positions ||= CSV.parse(open(house.names_url.gsub(/names\.csv$/, 'unstable/positions.csv')).read, converters: nil, headers: true, header_converters: :symbol)
     end
 
     # Caches for faster lookup
