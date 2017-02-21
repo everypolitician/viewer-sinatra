@@ -21,7 +21,7 @@ describe 'Per Country Tests: Australia' do
 
   describe 'Representatives' do
     before do
-      stub_everypolitician_data_request('6139efe/data/Australia/Representatives/ep-popolo-v1.0.json')
+      stub_everypolitician_data_request('data/Australia/Representatives/ep-popolo-v1.0.json')
       get '/australia/representatives/term-table/44.html'
     end
 
@@ -51,7 +51,7 @@ describe 'Per Country Tests: Australia' do
 
   describe 'Senate' do
     before do
-      stub_everypolitician_data_request('f8dcbd9/data/Australia/Senate/ep-popolo-v1.0.json')
+      stub_everypolitician_data_request('data/Australia/Senate/ep-popolo-v1.0.json')
       get '/australia/senate/term-table/44.html'
     end
 
