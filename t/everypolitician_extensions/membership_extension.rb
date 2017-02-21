@@ -4,7 +4,7 @@ require_relative '../../lib/everypolitician_extensions.rb'
 
 describe 'MembershipExtensions' do
   subject do
-    stub_popolo('3df153b', 'Austria/Nationalrat')
+    stub_popolo('Austria/Nationalrat')
     index_at_known_sha.country('austria')
                       .legislature('nationalrat')
                       .popolo
@@ -31,7 +31,7 @@ end
 
 describe 'MembershipExtensions -- memberships with no known groups or area names' do
   subject do
-    stub_popolo('2b38667', 'Afghanistan/Wolesi_Jirga')
+    stub_popolo('Afghanistan/Wolesi_Jirga')
     index_at_known_sha.country('afghanistan')
                       .legislature('wolesi-jirga')
                       .popolo
