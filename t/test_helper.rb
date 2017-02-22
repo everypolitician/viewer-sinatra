@@ -28,7 +28,7 @@ module Minitest
 
     before do
       cj_file = %r{#{ep_repo}/raw/\w+/countries.json}
-      fixture = Pathname.new('t/fixtures/d8a4682f-countries.json')
+      fixture = Pathname.new('t/fixtures/everypolitician-data/countries.json')
       stub_request(:get, cj_file).to_return(body: fixture.read)
     end
 
@@ -76,7 +76,7 @@ module Minitest
     end
 
     def countries_json_sha
-      'd8a4682f'
+      'cb204da4'
     end
 
     def countries_json_url

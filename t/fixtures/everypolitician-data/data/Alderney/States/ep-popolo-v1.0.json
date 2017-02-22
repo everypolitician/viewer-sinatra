@@ -5,25 +5,20 @@
   "persons": [
     {
       "gender": "male",
-      "id": "6baacce2-655a-493f-883a-29feea8a799d",
+      "id": "061ae887-8e7f-45be-9ef2-84a18fd4dd45",
       "identifiers": [
         {
-          "identifier": "106003",
+          "identifier": "106002",
           "scheme": "everypolitician_legacy"
         }
       ],
-      "image": "http://www.alderney.gov.gg/media/image/9/i/140913_Alderney-868.jpg",
+      "image": "http://www.alderney.gov.gg/media/image/8/9/140913_Alderney-822.jpg",
       "images": [
         {
-          "url": "http://www.alderney.gov.gg/media/image/9/i/140913_Alderney-868.jpg"
+          "url": "http://www.alderney.gov.gg/media/image/8/9/140913_Alderney-822.jpg"
         }
       ],
-      "name": "Chris Rowley",
-      "sources": [
-        {
-          "url": "http://www.alderney.gov.gg/article/106003/Chris-Rowley"
-        }
-      ]
+      "name": "Robert McDowall"
     },
     {
       "gender": "male",
@@ -40,28 +35,7 @@
           "url": "http://www.alderney.gov.gg/media/image/a/i/140913_Alderney-982.jpg"
         }
       ],
-      "name": "Francis Simonet",
-      "sources": [
-        {
-          "url": "http://www.alderney.gov.gg/article/106004/Francis-Simonet"
-        }
-      ]
-    },
-    {
-      "gender": "male",
-      "id": "b9a6c59e-a3cf-406e-88b8-9bba70ffbb30",
-      "identifiers": [
-        {
-          "identifier": "4387",
-          "scheme": "everypolitician_legacy"
-        }
-      ],
-      "name": "Graham McKinley",
-      "sources": [
-        {
-          "url": "http://www.alderney.gov.gg/article/4387/Graham-McKinley"
-        }
-      ]
+      "name": "Francis Simonet"
     },
     {
       "gender": "male",
@@ -78,56 +52,7 @@
           "url": "http://www.alderney.gov.gg/media/image/6/o/140913_Alderney-801.jpg"
         }
       ],
-      "name": "Ian Tugby",
-      "sources": [
-        {
-          "url": "http://www.alderney.gov.gg/article/4081/Ian-Tugby"
-        }
-      ]
-    },
-    {
-      "gender": "male",
-      "id": "a3833a8a-61b0-415a-a459-b6726d916f7b",
-      "identifiers": [
-        {
-          "identifier": "106001",
-          "scheme": "everypolitician_legacy"
-        }
-      ],
-      "image": "http://www.alderney.gov.gg/media/image/7/2/140913_Alderney-731.jpg",
-      "images": [
-        {
-          "url": "http://www.alderney.gov.gg/media/image/7/2/140913_Alderney-731.jpg"
-        }
-      ],
-      "name": "Louis Jean",
-      "sources": [
-        {
-          "url": "http://www.alderney.gov.gg/article/106001/Louis-Jean"
-        }
-      ]
-    },
-    {
-      "gender": "male",
-      "id": "77f036f7-c8ca-4388-be74-74aea27b7652",
-      "identifiers": [
-        {
-          "identifier": "4389",
-          "scheme": "everypolitician_legacy"
-        }
-      ],
-      "image": "http://www.alderney.gov.gg/media/image/9/c/140913_Alderney-913.jpg",
-      "images": [
-        {
-          "url": "http://www.alderney.gov.gg/media/image/9/c/140913_Alderney-913.jpg"
-        }
-      ],
-      "name": "Matthew Birmingham",
-      "sources": [
-        {
-          "url": "http://www.alderney.gov.gg/article/4389/Matthew-Birmingham"
-        }
-      ]
+      "name": "Ian Tugby"
     },
     {
       "gender": "male",
@@ -144,12 +69,24 @@
           "url": "http://www.alderney.gov.gg/media/image/7/g/140913_Alderney-673.jpg"
         }
       ],
-      "name": "Neil Harvey",
-      "sources": [
+      "name": "Neil Harvey"
+    },
+    {
+      "gender": "male",
+      "id": "6baacce2-655a-493f-883a-29feea8a799d",
+      "identifiers": [
         {
-          "url": "http://www.alderney.gov.gg/article/106000/Neil-Harvey"
+          "identifier": "106003",
+          "scheme": "everypolitician_legacy"
         }
-      ]
+      ],
+      "image": "http://www.alderney.gov.gg/media/image/9/i/140913_Alderney-868.jpg",
+      "images": [
+        {
+          "url": "http://www.alderney.gov.gg/media/image/9/i/140913_Alderney-868.jpg"
+        }
+      ],
+      "name": "Chris Rowley"
     },
     {
       "gender": "female",
@@ -160,34 +97,24 @@
           "scheme": "everypolitician_legacy"
         }
       ],
-      "name": "Norma Paris",
-      "sources": [
-        {
-          "url": "http://www.alderney.gov.gg/article/112088/Norma-Paris"
-        }
-      ]
+      "name": "Norma Paris"
     },
     {
       "gender": "male",
-      "id": "061ae887-8e7f-45be-9ef2-84a18fd4dd45",
+      "id": "77f036f7-c8ca-4388-be74-74aea27b7652",
       "identifiers": [
         {
-          "identifier": "106002",
+          "identifier": "4389",
           "scheme": "everypolitician_legacy"
         }
       ],
-      "image": "http://www.alderney.gov.gg/media/image/8/9/140913_Alderney-822.jpg",
+      "image": "http://www.alderney.gov.gg/media/image/9/c/140913_Alderney-913.jpg",
       "images": [
         {
-          "url": "http://www.alderney.gov.gg/media/image/8/9/140913_Alderney-822.jpg"
+          "url": "http://www.alderney.gov.gg/media/image/9/c/140913_Alderney-913.jpg"
         }
       ],
-      "name": "Robert McDowall",
-      "sources": [
-        {
-          "url": "http://www.alderney.gov.gg/article/106002/Robert-McDowall"
-        }
-      ]
+      "name": "Matthew Birmingham"
     },
     {
       "gender": "male",
@@ -204,12 +131,35 @@
           "url": "http://www.alderney.gov.gg/media/image/8/e/140913_Alderney-779.jpg"
         }
       ],
-      "name": "Steve Roberts",
-      "sources": [
+      "name": "Steve Roberts"
+    },
+    {
+      "gender": "male",
+      "id": "a3833a8a-61b0-415a-a459-b6726d916f7b",
+      "identifiers": [
         {
-          "url": "http://www.alderney.gov.gg/article/4386/Steve-Roberts"
+          "identifier": "106001",
+          "scheme": "everypolitician_legacy"
         }
-      ]
+      ],
+      "image": "http://www.alderney.gov.gg/media/image/7/2/140913_Alderney-731.jpg",
+      "images": [
+        {
+          "url": "http://www.alderney.gov.gg/media/image/7/2/140913_Alderney-731.jpg"
+        }
+      ],
+      "name": "Louis Jean"
+    },
+    {
+      "gender": "male",
+      "id": "b9a6c59e-a3cf-406e-88b8-9bba70ffbb30",
+      "identifiers": [
+        {
+          "identifier": "4387",
+          "scheme": "everypolitician_legacy"
+        }
+      ],
+      "name": "Graham McKinley"
     }
   ],
   "organizations": [
@@ -226,32 +176,32 @@
       "other_names": [
         {
           "lang": "zh-hans",
-          "name": "无党籍人士",
+          "name": "无党籍政治人物",
           "note": "multilingual"
         },
         {
           "lang": "zh-hant",
-          "name": "無黨籍人士",
+          "name": "無黨籍政治人物",
           "note": "multilingual"
         },
         {
           "lang": "zh-hk",
-          "name": "無黨籍人士",
+          "name": "無黨籍政治人物",
           "note": "multilingual"
         },
         {
           "lang": "zh-cn",
-          "name": "无党籍人士",
+          "name": "无党籍政治人物",
           "note": "multilingual"
         },
         {
           "lang": "zh-sg",
-          "name": "无党籍人士",
+          "name": "无党籍政治人物",
           "note": "multilingual"
         },
         {
           "lang": "zh-tw",
-          "name": "無黨籍人士",
+          "name": "無黨籍政治人物",
           "note": "multilingual"
         },
         {
@@ -386,7 +336,7 @@
         },
         {
           "lang": "zh",
-          "name": "無黨籍人士",
+          "name": "無黨籍政治人物",
           "note": "multilingual"
         },
         {
@@ -512,6 +462,21 @@
         {
           "lang": "nan",
           "name": "Bû-tóng-che̍k",
+          "note": "multilingual"
+        },
+        {
+          "lang": "tg",
+          "name": "сиёсатмадори мустақил",
+          "note": "multilingual"
+        },
+        {
+          "lang": "zh-mo",
+          "name": "無黨籍政治人物",
+          "note": "multilingual"
+        },
+        {
+          "lang": "zh-my",
+          "name": "无党籍政治人物",
           "note": "multilingual"
         },
         {
@@ -808,12 +773,22 @@
           "lang": "cs",
           "name": "bez stranické příslušnosti",
           "note": "multilingual"
+        },
+        {
+          "lang": "sr",
+          "name": "нестраначки политичар",
+          "note": "multilingual"
+        },
+        {
+          "lang": "sr",
+          "name": "ванстраначки политичар",
+          "note": "multilingual"
         }
       ]
     },
     {
       "classification": "legislature",
-      "id": "legislature",
+      "id": "a458ad55-58ef-47d7-9f15-4a5558df7006",
       "identifiers": [
         {
           "identifier": "Q7604031",
@@ -821,7 +796,8 @@
         }
       ],
       "name": "States",
-      "seats": 10
+      "seats": 10,
+      "type": "unicameral legislature"
     }
   ],
   "meta": {
@@ -834,81 +810,131 @@
       "area_id": "area/alderney",
       "legislative_period_id": "term/2014",
       "on_behalf_of_id": "party/independent",
-      "organization_id": "legislature",
+      "organization_id": "a458ad55-58ef-47d7-9f15-4a5558df7006",
       "person_id": "061ae887-8e7f-45be-9ef2-84a18fd4dd45",
-      "role": "member"
+      "role": "member",
+      "sources": [
+        {
+          "url": "http://www.alderney.gov.gg/article/106002/Robert-McDowall"
+        }
+      ]
     },
     {
       "area_id": "area/alderney",
       "legislative_period_id": "term/2014",
       "on_behalf_of_id": "party/independent",
-      "organization_id": "legislature",
+      "organization_id": "a458ad55-58ef-47d7-9f15-4a5558df7006",
       "person_id": "4703e873-67fd-4322-9659-39f6d47b8eab",
-      "role": "member"
+      "role": "member",
+      "sources": [
+        {
+          "url": "http://www.alderney.gov.gg/article/106004/Francis-Simonet"
+        }
+      ]
     },
     {
       "area_id": "area/alderney",
       "legislative_period_id": "term/2014",
       "on_behalf_of_id": "party/independent",
-      "organization_id": "legislature",
+      "organization_id": "a458ad55-58ef-47d7-9f15-4a5558df7006",
       "person_id": "48723cfe-9970-4ce7-92da-ff6b91dfa2b5",
-      "role": "member"
+      "role": "member",
+      "sources": [
+        {
+          "url": "http://www.alderney.gov.gg/article/4081/Ian-Tugby"
+        }
+      ]
     },
     {
       "area_id": "area/alderney",
       "legislative_period_id": "term/2014",
       "on_behalf_of_id": "party/independent",
-      "organization_id": "legislature",
+      "organization_id": "a458ad55-58ef-47d7-9f15-4a5558df7006",
       "person_id": "66d1f769-3e52-40cb-9ddb-1e5ffbec8456",
-      "role": "member"
+      "role": "member",
+      "sources": [
+        {
+          "url": "http://www.alderney.gov.gg/article/106000/Neil-Harvey"
+        }
+      ]
     },
     {
       "area_id": "area/alderney",
       "legislative_period_id": "term/2014",
       "on_behalf_of_id": "party/independent",
-      "organization_id": "legislature",
+      "organization_id": "a458ad55-58ef-47d7-9f15-4a5558df7006",
       "person_id": "6baacce2-655a-493f-883a-29feea8a799d",
-      "role": "member"
+      "role": "member",
+      "sources": [
+        {
+          "url": "http://www.alderney.gov.gg/article/106003/Chris-Rowley"
+        }
+      ]
     },
     {
       "area_id": "area/alderney",
       "legislative_period_id": "term/2014",
       "on_behalf_of_id": "party/independent",
-      "organization_id": "legislature",
+      "organization_id": "a458ad55-58ef-47d7-9f15-4a5558df7006",
       "person_id": "70b26d38-ae65-4e90-9a99-15b948b9784b",
-      "role": "member"
+      "role": "member",
+      "sources": [
+        {
+          "url": "http://www.alderney.gov.gg/article/112088/Norma-Paris"
+        }
+      ]
     },
     {
       "area_id": "area/alderney",
       "legislative_period_id": "term/2014",
       "on_behalf_of_id": "party/independent",
-      "organization_id": "legislature",
+      "organization_id": "a458ad55-58ef-47d7-9f15-4a5558df7006",
       "person_id": "77f036f7-c8ca-4388-be74-74aea27b7652",
-      "role": "member"
+      "role": "member",
+      "sources": [
+        {
+          "url": "http://www.alderney.gov.gg/article/4389/Matthew-Birmingham"
+        }
+      ]
     },
     {
       "area_id": "area/alderney",
       "legislative_period_id": "term/2014",
       "on_behalf_of_id": "party/independent",
-      "organization_id": "legislature",
+      "organization_id": "a458ad55-58ef-47d7-9f15-4a5558df7006",
       "person_id": "a11887ce-2c42-4555-bfd9-0843f3a9ced0",
-      "role": "member"
+      "role": "member",
+      "sources": [
+        {
+          "url": "http://www.alderney.gov.gg/article/4386/Steve-Roberts"
+        }
+      ]
     },
     {
       "area_id": "area/alderney",
       "legislative_period_id": "term/2014",
       "on_behalf_of_id": "party/independent",
-      "organization_id": "legislature",
+      "organization_id": "a458ad55-58ef-47d7-9f15-4a5558df7006",
       "person_id": "a3833a8a-61b0-415a-a459-b6726d916f7b",
-      "role": "member"
+      "role": "member",
+      "sources": [
+        {
+          "url": "http://www.alderney.gov.gg/article/106001/Louis-Jean"
+        }
+      ]
     },
     {
       "area_id": "area/alderney",
       "legislative_period_id": "term/2014",
       "on_behalf_of_id": "party/independent",
-      "organization_id": "legislature",
+      "organization_id": "a458ad55-58ef-47d7-9f15-4a5558df7006",
       "person_id": "b9a6c59e-a3cf-406e-88b8-9bba70ffbb30",
-      "role": "member"
+      "role": "member",
+      "sources": [
+        {
+          "url": "http://www.alderney.gov.gg/article/4387/Graham-McKinley"
+        }
+      ]
     }
   ],
   "events": [
@@ -916,6 +942,12 @@
       "classification": "general election",
       "end_date": "2006",
       "id": "Q4713714",
+      "identifiers": [
+        {
+          "identifier": "Q4713714",
+          "scheme": "wikidata"
+        }
+      ],
       "name": "Alderney election, 2006",
       "start_date": "2006"
     },
@@ -923,6 +955,12 @@
       "classification": "general election",
       "end_date": "2008",
       "id": "Q4713715",
+      "identifiers": [
+        {
+          "identifier": "Q4713715",
+          "scheme": "wikidata"
+        }
+      ],
       "name": "Alderney election, 2008",
       "start_date": "2008"
     },
@@ -930,6 +968,12 @@
       "classification": "general election",
       "end_date": "2010",
       "id": "Q23585756",
+      "identifiers": [
+        {
+          "identifier": "Q23585756",
+          "scheme": "wikidata"
+        }
+      ],
       "name": "Alderney general election, 2010",
       "start_date": "2010"
     },
@@ -937,6 +981,12 @@
       "classification": "general election",
       "end_date": "2012",
       "id": "Q23585765",
+      "identifiers": [
+        {
+          "identifier": "Q23585765",
+          "scheme": "wikidata"
+        }
+      ],
       "name": "Alderney general election, 2012",
       "start_date": "2012"
     },
@@ -944,16 +994,35 @@
       "classification": "general election",
       "end_date": "2014-11-22",
       "id": "Q19587066",
+      "identifiers": [
+        {
+          "identifier": "Q19587066",
+          "scheme": "wikidata"
+        }
+      ],
       "name": "Alderney general election, 2014",
       "start_date": "2014-11-22"
     },
     {
       "classification": "legislative period",
-      "end_date": "2016-11",
+      "end_date": "2016-12-31",
       "id": "term/2014",
-      "name": "2014–2016",
-      "organization_id": "legislature",
-      "start_date": "2014-11-22"
+      "name": "2015–2016",
+      "organization_id": "a458ad55-58ef-47d7-9f15-4a5558df7006",
+      "start_date": "2015-01-01"
+    },
+    {
+      "classification": "general election",
+      "end_date": "2016-11-26",
+      "id": "Q28316961",
+      "identifiers": [
+        {
+          "identifier": "Q28316961",
+          "scheme": "wikidata"
+        }
+      ],
+      "name": "Alderney general election, 2016",
+      "start_date": "2016-11-26"
     }
   ],
   "areas": [

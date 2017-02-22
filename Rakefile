@@ -46,7 +46,7 @@ end
 
 task 'everypolitician-data', [:path] do |_, args|
   require 'everypolitician'
-  index = Everypolitician::Index.new(index_url: 't/fixtures/d8a4682f-countries.json')
+  index = Everypolitician::Index.new(index_url: 't/fixtures/everypolitician-data/countries.json')
   legislature = index.countries.flat_map(&:legislatures).find do |l|
     args[:path].start_with?("data/#{l.directory}")
   end
