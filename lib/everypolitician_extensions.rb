@@ -67,9 +67,20 @@ module EveryPolitician
       popolo.areas.find_by(id: area_id)
     end
   end
+
+  module PersonExtension
+    def cabinet_memberships
+      positions
+    end
+
+    def positions
+      @positions ||= CSV.parse(open(house.names_url.gsub(/names\.csv$/, 'unstable/positions.csv')).read, converters: nil, headers: true, header_converters: :symbol).select { |pos| pos[:type] == 'cabinet' }
+    end
+  end
 end
 
 EveryPolitician::Country.include EveryPolitician::CountryExtension
 EveryPolitician::Legislature.include EveryPolitician::LegislatureExtension
 EveryPolitician::LegislativePeriod.include EveryPolitician::LegislativePeriodExtension
 EveryPolitician::Popolo::Membership.include Everypolitician::MembershipExtension
+EveryPolitician::Popolo::Person.include Everypolitician::PersonExtension
