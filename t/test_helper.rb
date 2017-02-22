@@ -75,8 +75,12 @@ module Minitest
       'https://github.com/everypolitician/everypolitician-data'
     end
 
+    def countries_json_sha
+      'd8a4682f'
+    end
+
     def countries_json_url
-      URI.join(ep_repo + '/', 'raw/d8a4682f/countries.json').to_s
+      URI.join(ep_repo + '/', "raw/#{countries_json_sha}/countries.json").to_s
     end
   end
 end

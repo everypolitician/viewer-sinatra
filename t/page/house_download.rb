@@ -42,7 +42,7 @@ describe 'HouseDownload' do
 
   describe 'download_url' do
     it 'should be at the correct SHA' do
-      subject.download_url.must_include 'd8a4682f'
+      subject.download_url.must_include countries_json_sha
     end
   end
 

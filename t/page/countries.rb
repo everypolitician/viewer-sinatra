@@ -10,7 +10,7 @@ describe 'Countries' do
   end
 
   it 'has a url pointing to the correct sha' do
-    subject.download_url.must_include 'd8a4682f'
+    subject.download_url.must_include countries_json_sha
   end
 
   it 'knows how many countries are missing' do
