@@ -209,6 +209,29 @@
 
         </div>
     </div>
+      <div class="page-section page-section--code">
+        <div class="container">
+          <p>
+            Ruby programmer? It’s easy to use this data in your own app! Use the
+            <a href="https://medium.com/@everypolitician/introducing-the-everypolitician-gem-ab39db5b7e49">gem</a>
+            <!-- https://github.com/everypolitician/everypolitician-ruby -->
+            like this:
+          </p>
+          <pre>
+require 'everypolitician'
+country = Everypolitician::Index.new.country('<%= @page.country.slug %>')
+house = country.legislature('<%= @page.house.slug %>')
+house.popolo.terms.find_by(id: '<%= @page.current_term.id %>').memberships.each do |m|
+  puts "#{m.person.name} (#{m.party.name}): @#{m.person.twitter || '?'}"
+end
+          </pre>
+          <p>
+            Libraries also available in
+            <a href="https://github.com/everypolitician/everypolitician-python">Python</a> and 
+            <a href="https://github.com/andylolz/everypolitician-php">PHP</a>.
+          </p>
+        </div>
+      </div>
 
       <div class="page-section page-section--grey source-credits">
         <div class="container">
