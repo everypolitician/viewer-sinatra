@@ -14,11 +14,11 @@ describe 'Wikidata' do
     end
 
     it 'should have people with Wikidata' do
-      yays.count.must_equal 51
+      yays.count.must_equal 70
     end
 
     it 'should have people without Wikidata' do
-      nays.count.must_equal 236
+      nays.count.must_equal 219
     end
 
     it 'should have Tonino Picula with' do

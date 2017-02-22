@@ -20,11 +20,11 @@ describe 'House' do
 
   describe 'legislative periods' do
     it 'has all legislative periods' do
-      subject.legislative_periods.count.must_equal 18
+      subject.legislative_periods.count.must_equal 19
     end
 
     it 'is a list containing terms' do
-      subject.legislative_periods.first.name.must_equal '114th Congress'
+      subject.legislative_periods.first.name.must_equal '115th Congress'
     end
   end
 

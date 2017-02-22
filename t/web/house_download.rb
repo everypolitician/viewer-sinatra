@@ -20,7 +20,7 @@ describe 'house download template' do
     end
 
     it 'links to the last-term file' do
-      last_term.text.must_include '/United_States_of_America/Senate/term-114.csv'
+      last_term.text.must_include '/United_States_of_America/Senate/term-115.csv'
     end
 
     it 'links to the first-term file' do

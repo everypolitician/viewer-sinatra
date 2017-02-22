@@ -154,7 +154,7 @@ describe 'TermTable' do
         maria.identifiers[1].type.must_equal 'parlaments_at'
         maria.identifiers[2].type.must_equal 'viaf'
         maria.identifiers[3].type.must_equal 'gnd'
-        maria.identifiers[4].type.must_equal 'munzinger'
+        maria.identifiers[4].type.must_equal 'freebase'
       end
 
       it 'has Wikidata' do
@@ -163,15 +163,15 @@ describe 'TermTable' do
         maria.identifiers.first.link.must_equal 'https://www.wikidata.org/wiki/Q85362'
       end
 
-      it 'has a munzinger id' do
-        maria.identifiers.last.type.must_equal 'munzinger'
-        maria.identifiers.last.value.must_equal '00000026847'
+      it 'has a freebase id' do
+        maria.identifiers.last.type.must_equal 'freebase'
+        maria.identifiers.last.value.must_equal '/m/04cy694'
         maria.identifiers.last.link.must_equal nil
       end
     end
 
     it 'knows percentage of people that have special data' do
-      subject.percentages.social.must_equal 20
+      subject.percentages.social.must_equal 42
       subject.percentages.bio.must_equal 100
       subject.percentages.contacts.must_equal 93
       subject.percentages.identifiers.must_equal 100

@@ -36,7 +36,7 @@ describe 'HouseDownload' do
 
   describe 'legislative_periods' do
     it 'should contain the 114th congress period' do
-      subject.legislative_periods.first.slug.must_equal '114'
+      subject.legislative_periods.first.slug.must_equal '115'
     end
   end
 

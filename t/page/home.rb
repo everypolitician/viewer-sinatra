@@ -15,7 +15,7 @@ describe 'Homepage' do
     end
 
     it 'should include people count' do
-      subject.all_countries.find { |c| c.name == 'Colombia' }.total_people.must_equal 269
+      subject.all_countries.find { |c| c.name == 'Colombia' }.total_people.must_equal 272
     end
 
     it 'should have zero people if no data' do
@@ -41,13 +41,13 @@ describe 'Homepage' do
 
   describe 'total_people' do
     it 'should know the person count ' do
-      subject.total_people.must_equal 70_943
+      subject.total_people.must_equal 72_776
     end
   end
 
   describe 'total_statements' do
     it 'should know the statement count' do
-      subject.total_statements.must_equal 3_218_179
+      subject.total_statements.must_equal 3_656_078
     end
   end
 end

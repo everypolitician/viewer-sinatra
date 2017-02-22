@@ -15,7 +15,7 @@ describe 'Homepage' do
   end
 
   it 'should have the global data count' do
-    subject.css('.homepage-data-example strong').text.must_include '3.2 million'
+    subject.css('.homepage-data-example strong').text.must_include '3.6 million'
   end
 
   it 'should offer the whole world in the dropdown' do
