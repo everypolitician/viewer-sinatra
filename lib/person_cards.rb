@@ -58,7 +58,7 @@ class PersonCard
     Section::Identifiers.new(person, top_identifiers: top_identifiers).data
   end
 
-  # List of memberships this person holds in the current term
+  # List of memberships this person held in this term
   # @return [Array<EveryPolitician::Popolo::Membership>]
   def memberships
     person.memberships.where(legislative_period_id: term.id)
