@@ -1,44 +1,65 @@
 # frozen_string_literal: true
 
+# A single person card on the term table page
 class PersonCard
+  # @param person [Everypolitician::Popolo::Person] the person this card represents
+  # @param term [Everypolitician::LegislativePeriod] the term the card is for
   def initialize(person:, term:)
     @person          = person
     @term            = term
   end
 
+  # URL for a proxied version of the person's image
+  # @return [String]
   def proxy_image
     'https://mysociety.github.io/politician-image-proxy' \
     "/#{legislature.country.slug}/#{legislature.slug}/#{id}/140x140.jpeg"
   end
 
+  # EveryPolitician UUID for this person
+  # @return [String]
   def id
     person.id
   end
 
+  # Primary display name for this person
+  # @return [String]
   def name
     person.name
   end
 
+  # URL for the unproxied version of the person's image
+  # @return [String]
   def image
     person.image
   end
 
+  # Social media information about this person
+  # @return [Array<PersonCard::Section::CardLine>]
   def social
     Section::Social.new(person).data
   end
 
+  # Biographical information about this person
+  # @return [Array<PersonCard::Section::CardLine>]
   def bio
     Section::Bio.new(person).data
   end
 
+  # Contact details for this person
+  # @return [Array<PersonCard::Section::CardLine>]
   def contacts
     Section::Contacts.new(person).data
   end
 
+  # Identifiers for this person
+  # @return [Array<PersonCard::Section::CardLine>]
   def identifiers
     Section::Identifiers.new(person, top_identifiers: top_identifiers).data
   end
 
+  # List of memberships this person holds in the current term
+  # @return [Array<EveryPolitician::Popolo::Membership>]
   def memberships
     person.memberships.where(legislative_period_id: term.id)
   end
