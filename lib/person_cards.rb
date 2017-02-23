@@ -58,11 +58,25 @@ class PersonCard
     Section::Identifiers.new(person, top_identifiers: top_identifiers).data
   end
 
-  # List of memberships this person held in this term
+  # List of cabinet memberships this person held in this term
+  #
+  # @example Iterating through cabinet memberships for a {PersonCard} instance.
+  #   person_card.cabinet_memberships.each do |membership|
+  #     puts "#{person_card.name} was #{membership.label} #{membership.start_date} - #{membership.end_date}"
+  #   end
+  #
   # @return [Array<EveryPolitician::Popolo::Membership>]
-  def memberships
+  def cabinet_memberships
+    []
+  end
+
+  # List of legislative memberships this person held in this term
+  # @return [Array<EveryPolitician::Popolo::Membership>]
+  def legislative_memberships
     person.memberships.where(legislative_period_id: term.id)
   end
+
+  alias memberships legislative_memberships
 
   private
 
