@@ -110,39 +110,6 @@ bundle exec rake test:all
 bundle exec rake
 ```
 
-## Internal documentation
-
-### Interacting with unstable data
-
-We use data from the `unstable/positions.csv` file in a legislature's
-directory to display cabinet memberships on the website. Because this data
-is unstable there currently aren't methods in [the `everypolitician`
-gem](https://github.com/everypolitician/everypolitician-ruby) for
-interacting with it, so viewer-sinatra has some of its own classes for
-dealing with it. These classes live in the
-`lib/everypolitician_extensions.rb` file and are documented below.
-
-#### Get all cabinet memberships for a person
-
-To print all of the known cabinet memberships for a person, you can do the
-following:
-
-```ruby
-house_of_commons = Everypolitician::Index.new.country('UK').legislature('Commons')
-person = house_of_commons.popolo.persons.find_by(name: 'Gordon Brown')
-
-person.cabinet_memberships.each do |membership|
-  puts "#{person.name} was #{membership.label} #{membership.start_date} - #{membership.end_date}"
-end
-```
-
-Which will output something like this:
-
-```
-Gordon Brown was Prime Minister of the United Kingdom 2007-06-27 - 2010-05-11
-Gordon Brown was Chancellor of the Exchequer 1997-05-02 - 2007-06-27
-```
-
 ## Sinatra, SASS, styling
 
 The project uses [Sinatra](http://www.sinatrarb.com), an ultra-minimal Ruby MVC web app framework.
