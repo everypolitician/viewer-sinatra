@@ -119,8 +119,7 @@ directory to display cabinet memberships on the website. Because this data
 is unstable there currently aren't methods in [the `everypolitician`
 gem](https://github.com/everypolitician/everypolitician-ruby) for
 interacting with it, so viewer-sinatra has some of its own classes for
-dealing with it. These classes live in the
-`lib/everypolitician_extensions.rb` file and are documented below.
+dealing with it.
 
 #### Get all cabinet memberships for a person
 
@@ -128,8 +127,9 @@ To print all of the known cabinet memberships for a person, you can do the
 following:
 
 ```ruby
-house_of_commons = Everypolitician::Index.new.country('UK').legislature('Commons')
-person = house_of_commons.popolo.persons.find_by(name: 'Gordon Brown')
+term = Everypolitician::Index.new.country('UK').legislature('Commons').term('term/54')
+term_table = TermTable.new(term: term)
+person = term_table.people.find { |p| p.name == 'Gordon Brown' }
 
 person.cabinet_memberships.each do |membership|
   puts "#{person.name} was #{membership.label} #{membership.start_date} - #{membership.end_date}"
