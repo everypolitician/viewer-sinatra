@@ -77,7 +77,7 @@ module Page
       @group_data
     end
 
-    # A list of people that held a memberships at some point during this term
+    # A list of people that held a membership at some point during this term
     # @return [Array<PersonCard>]
     def people
       @people ||= term.people.sort_by { |e| [e.sort_name, e.name] }.map do |person|
