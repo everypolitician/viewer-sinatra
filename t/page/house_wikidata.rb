@@ -10,17 +10,17 @@ end
 
 describe 'HouseWikidata' do
   let(:austria_page) do
-    stub_popolo('3df153b', 'Austria/Nationalrat')
+    stub_popolo('Austria/Nationalrat')
     page_for('austria', 'nationalrat')
   end
 
   let(:alderney_page) do
-    stub_popolo('beb21e5', 'Alderney/States')
+    stub_popolo('Alderney/States')
     page_for('alderney', 'states')
   end
 
   let(:uganda_page) do
-    stub_popolo('0cef4ab', 'Uganda/Parliament')
+    stub_popolo('Uganda/Parliament')
     page_for('uganda', 'parliament')
   end
 

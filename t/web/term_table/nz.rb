@@ -4,7 +4,7 @@ require_relative '../../../app'
 
 describe 'Per Country Tests' do
   before do
-    stub_everypolitician_data_request('87859a2/data/New_Zealand/House/ep-popolo-v1.0.json')
+    stub_popolo('New_Zealand/House')
   end
 
   subject { Nokogiri::HTML(last_response.body) }

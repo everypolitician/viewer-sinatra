@@ -8,7 +8,7 @@ describe 'Party Groupings section' do
 
   describe 'only Independent' do
     before do
-      stub_everypolitician_data_request('beb21e5/data/Alderney/States/ep-popolo-v1.0.json')
+      stub_popolo('Alderney/States')
       get '/alderney/states/term-table/2014.html'
     end
 
@@ -19,7 +19,7 @@ describe 'Party Groupings section' do
 
   describe 'only Unknown' do
     before do
-      stub_everypolitician_data_request('75b7651/data/Transnistria/Supreme_Council/ep-popolo-v1.0.json')
+      stub_popolo('Transnistria/Supreme_Council')
       get '/transnistria/supreme-council/term-table/6.html'
     end
 
@@ -30,7 +30,7 @@ describe 'Party Groupings section' do
 
   describe 'regular section' do
     before do
-      stub_everypolitician_data_request('f88ce37/data/Estonia/Riigikogu/ep-popolo-v1.0.json')
+      stub_popolo('Estonia/Riigikogu')
       get '/estonia/riigikogu/term-table/13.html'
     end
     it 'should have party groupings' do

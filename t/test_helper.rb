@@ -37,14 +37,14 @@ module Minitest
     end
 
     def stub_everypolitician_data_request(path)
-      stub_request(:get, "https://cdn.rawgit.com/everypolitician/everypolitician-data/#{path}")
+      stub_request(:get, %r{https://cdn.rawgit.com/everypolitician/everypolitician-data/\w+/#{path}})
         .to_return(body: File.read("t/fixtures/everypolitician-data/#{path}"))
     rescue Errno::ENOENT => error
       raise "#{error.message}\n\nTo download this fixture run the following\n\n\tbundle exec rake 'everypolitician-data[#{path}]'\n"
     end
 
-    def stub_popolo(sha, legislature)
-      stub_everypolitician_data_request("#{sha}/data/#{legislature}/ep-popolo-v1.0.json")
+    def stub_popolo(legislature)
+      stub_everypolitician_data_request("data/#{legislature}/ep-popolo-v1.0.json")
     end
 
     def stub_github_api

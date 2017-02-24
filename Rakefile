@@ -45,9 +45,14 @@ Reek::Rake::Task.new do |t|
 end
 
 task 'everypolitician-data', [:path] do |_, args|
+  require 'everypolitician'
+  index = Everypolitician::Index.new(index_url: 't/fixtures/d8a4682f-countries.json')
+  legislature = index.countries.flat_map(&:legislatures).find do |l|
+    args[:path].start_with?("data/#{l.directory}")
+  end
   fixture_path = Pathname.new(File.join('t/fixtures/everypolitician-data', args[:path]))
   mkdir_p(fixture_path.dirname)
-  fixture_path.write(open("https://cdn.rawgit.com/everypolitician/everypolitician-data/#{args[:path]}").read)
+  fixture_path.write(open("https://cdn.rawgit.com/everypolitician/everypolitician-data/#{legislature.sha}/#{args[:path]}").read)
 end
 
 # Check for known vulnerabilities in Gemfile.lock

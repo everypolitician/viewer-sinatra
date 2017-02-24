@@ -12,7 +12,7 @@ describe 'Per Country Tests' do
 
   describe 'Finland' do
     before do
-      stub_everypolitician_data_request('ba4fa22/data/Finland/Eduskunta/ep-popolo-v1.0.json')
+      stub_popolo('Finland/Eduskunta')
       get '/finland/eduskunta/term-table/35.html'
     end
 
