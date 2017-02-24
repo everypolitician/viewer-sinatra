@@ -58,6 +58,7 @@ module Minitest
 
     def stub_term_table(sha, legislature)
       stub_everypolitician_data_request("#{sha}/data/#{legislature}/ep-popolo-v1.0.json")
+      stub_everypolitician_data_request("#{sha}/data/#{legislature}/unstable/positions.csv")
     end
 
     def last_response_must_be_valid
