@@ -60,6 +60,12 @@ module EveryPolitician
       end
     end
 
+    def cabinet_memberships
+      @cabinet_memberships ||= legislature.cabinet_memberships.select do |m|
+        m.start_date >= start_date.to_s && (m.end_date.nil? || m.end_date <= end_date.to_s)
+      end
+    end
+
     def people
       @people ||= memberships.map(&:person).uniq(&:id)
     end
