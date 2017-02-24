@@ -178,6 +178,22 @@
                                   <% end %>
                                 </p>
                               <% end %>
+
+                              <% person.cabinet_memberships.each do |mem| %>
+                                <p class="person-card__politics">
+
+                                <%= mem.label %>
+
+                                <% if !mem.start_date.to_s.empty? and !mem.end_date.to_s.empty? %>
+                                  <span class="person-card__politics__date">(<%= mem.start_date.to_s %> to <%= mem.end_date.to_s %>)</span>
+                                <% elsif !mem.start_date.to_s.empty? %>
+                                  <span class="person-card__politics__date">(from <%= mem.start_date.to_s %>)</span>
+                                <% elsif !mem.end_date.to_s.empty? %>
+                                  <span class="person-card__politics__date">(until <%= mem.end_date.to_s %>)</span>
+                                <% end %>
+
+                                </p>
+                              <% end %>
                             </div>
 
                             <% %i(bio social contacts identifiers).select { |s| person.send(s).any? }.each do |section| %>
