@@ -65,7 +65,7 @@ class PersonCard
   #     puts "#{person_card.name} was #{membership.label} #{membership.start_date} - #{membership.end_date}"
   #   end
   #
-  # @return [Array<EveryPolitician::Popolo::Membership>]
+  # @return [Array<Everypolitician::LegislatureExtension::CabinetMembership>]
   def cabinet_memberships
     term.cabinet_memberships.select { |membership| membership.person_id == id }
   end
