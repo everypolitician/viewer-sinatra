@@ -23,6 +23,28 @@ module EveryPolitician
       current.define_singleton_method(:next) { after }
       current
     end
+
+    CabinetMembership = Struct.new(:person_id, :label, :start_date, :end_date)
+
+    def cabinet_memberships
+      unstable_positions.reject { |p| p[:start_date].nil? }.map do |p|
+        CabinetMembership.new(p[:id], p[:position], p[:start_date], p[:end_date])
+      end
+    end
+
+    private
+
+    def unstable_positions
+      CSV.parse(unstable_positions_csv, converters: nil, headers: true, header_converters: :symbol)
+    end
+
+    def unstable_positions_csv
+      open(unstable_positions_csv_url).read
+    end
+
+    def unstable_positions_csv_url
+      names_url.gsub(/names\.csv$/, 'unstable/positions.csv')
+    end
   end
 
   module LegislativePeriodExtension
@@ -35,6 +57,12 @@ module EveryPolitician
     def memberships_at_end
       memberships.select do |mem|
         mem.end_date.to_s.empty? || mem.end_date == end_date
+      end
+    end
+
+    def cabinet_memberships
+      @cabinet_memberships ||= legislature.cabinet_memberships.select do |m|
+        m.start_date >= start_date.to_s && (m.end_date.nil? || m.end_date <= end_date.to_s)
       end
     end
 

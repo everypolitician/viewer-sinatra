@@ -12,7 +12,7 @@ describe 'Northern Ireland' do
 
   describe 'membership dates' do
     before do
-      stub_everypolitician_data_request('1a17862/data/Northern_Ireland/Assembly/ep-popolo-v1.0.json')
+      stub_term_table('1a17862', 'Northern_Ireland/Assembly')
       get '/northern-ireland/assembly/term-table/3.html'
     end
 

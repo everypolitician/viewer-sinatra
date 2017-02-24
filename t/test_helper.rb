@@ -56,6 +56,11 @@ module Minitest
       stub_json('https://api.github.com/repos/everypolitician/everypolitician-data/issues?labels=New%20Country,3%20-%20WIP&per_page=100')
     end
 
+    def stub_term_table(sha, legislature)
+      stub_everypolitician_data_request("#{sha}/data/#{legislature}/ep-popolo-v1.0.json")
+      stub_everypolitician_data_request("#{sha}/data/#{legislature}/unstable/positions.csv")
+    end
+
     def last_response_must_be_valid
       skip unless supported_html_tidy_version?
       validation = PageValidations::HTMLValidation.new.validation(last_response.body, last_request.url)
