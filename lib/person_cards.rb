@@ -67,7 +67,7 @@ class PersonCard
   #
   # @return [Array<EveryPolitician::Popolo::Membership>]
   def cabinet_memberships
-    []
+    term.cabinet_memberships.select { |membership| membership.person_id == id }
   end
 
   # List of legislative memberships this person held in this term
