@@ -164,7 +164,7 @@
 
                                 <h3 class="person-card__name"><%= person.name %></h3>
 
-                              <% person.memberships.each do |mem| %>
+                              <% person.legislative_memberships.each do |mem| %>
                                 <p class="person-card__politics">
 
                                   <%= [mem.group, mem.area].reject(&:nil?).map(&:name).join(" — ") %>
