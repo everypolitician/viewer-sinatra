@@ -6,7 +6,7 @@ describe 'Bahamas' do
   subject { Nokogiri::HTML(last_response.body) }
 
   before do
-    stub_popolo('4da60b8', 'Bahamas/House_of_Assembly')
+    stub_term_table('4da60b8', 'Bahamas/House_of_Assembly')
     get '/bahamas/house-of-assembly/term-table/2012.html'
   end
 
