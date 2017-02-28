@@ -58,11 +58,14 @@ class PersonCard
     Section::Identifiers.new(person, top_identifiers: top_identifiers).data
   end
 
-  # List of memberships this person held in this term
+  # List of legislative memberships this person held in this term
   # @return [Array<EveryPolitician::Popolo::Membership>]
-  def memberships
+  def legislative_memberships
     person.memberships.where(legislative_period_id: term.id)
   end
+
+  # TODO: Remove this alias and the associated tests.
+  alias memberships legislative_memberships
 
   private
 
