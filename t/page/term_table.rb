@@ -87,12 +87,12 @@ describe 'TermTable' do
           'Austria/Nationalrat/2e8b774e-ae66-4137-a984-aac74917df87/140x140.jpeg'
       end
 
-      it 'has a single membership' do
-        af.memberships.count.must_equal 1
-        af.memberships.first.start_date.must_equal '2013-10-29'
-        af.memberships.first.end_date.must_equal nil
-        af.memberships.first.group.name.must_equal 'ÖVP'
-        af.memberships.first.area.name.must_equal 'Wahlkreis: 3B – Waldviertel'
+      it 'has a single legislative membership' do
+        af.legislative_memberships.count.must_equal 1
+        af.legislative_memberships.first.start_date.must_equal '2013-10-29'
+        af.legislative_memberships.first.end_date.must_equal nil
+        af.legislative_memberships.first.group.name.must_equal 'ÖVP'
+        af.legislative_memberships.first.area.name.must_equal 'Wahlkreis: 3B – Waldviertel'
       end
 
       it 'has two entries on bio card' do
