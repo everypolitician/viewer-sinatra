@@ -47,6 +47,12 @@ describe 'Per Country Tests: Australia' do
       tony = 'mem-93e2e4cc-f5ce-4bea-be68-2fc86c38a9bc'
       subject.css("div.person-card[id=#{tony}]").text.must_include 'Honourable'
     end
+
+    it 'should contain a correct code example' do
+      subject.css('.page-section--code pre').text.must_include "Index.new.country('Australia')"
+      subject.css('.page-section--code pre').text.must_include "legislature('Representatives')"
+      subject.css('.page-section--code pre').text.must_include "terms.find_by(id: 'term/44')"
+    end
   end
 
   describe 'Senate' do
