@@ -95,6 +95,10 @@ describe 'TermTable' do
         af.legislative_memberships.first.area.name.must_equal 'Wahlkreis: 3B – Waldviertel'
       end
 
+      it 'has a stub implementation of cabinet memberships' do
+        af.cabinet_memberships.must_equal []
+      end
+
       it 'has two entries on bio card' do
         af.bio.count.must_equal 2
       end
