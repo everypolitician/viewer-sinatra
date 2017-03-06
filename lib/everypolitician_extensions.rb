@@ -38,6 +38,12 @@ module EveryPolitician
       end
     end
 
+    CabinetMembership = Struct.new(:person_id, :label, :start_date, :end_date)
+
+    def cabinet_memberships
+      current_cabinet_memberships.sort_by(&:start_date)
+    end
+
     def people
       @people ||= memberships.map(&:person).uniq(&:id)
     end
@@ -51,6 +57,32 @@ module EveryPolitician
                            .group_by { |i| i[:scheme] }
                            .sort_by { |s, ids| [-ids.size, s] }
                            .map { |s, _ids| s }
+    end
+
+    private
+
+    def current_cabinet_memberships
+      all_cabinet_memberships.select do |mem|
+        !mem.start_date.nil? && (mem.end_date.to_s.empty? || mem.end_date >= start_date.to_s)
+      end
+    end
+
+    def all_cabinet_memberships
+      unstable_positions.map do |p|
+        CabinetMembership.new(p[:id], p[:position], p[:start_date], p[:end_date])
+      end
+    end
+
+    def unstable_positions
+      CSV.parse(unstable_positions_csv, converters: nil, headers: true, header_converters: :symbol)
+    end
+
+    def unstable_positions_csv
+      open(unstable_positions_csv_url).read
+    end
+
+    def unstable_positions_csv_url
+      legislature.names_url.gsub(/names\.csv$/, 'unstable/positions.csv')
     end
   end
 
