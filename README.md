@@ -83,7 +83,7 @@ To run the tests you have some options:
 ### Run just the page tests
 
 ```bash
-bundle exec rake test
+bundle exec rake test:page
 ```
 
 ### Run just the web tests (slow)
@@ -101,7 +101,7 @@ bundle exec rake test:extensions
 ### Run absolutely all the tests (slow, as you guessed)
 
 ```bash
-bundle exec rake test:all
+bundle exec rake test
 ```
 
 ### Run absolutely all the tests plus rubocop and bundle audit
