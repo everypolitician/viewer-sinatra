@@ -4,6 +4,7 @@ require 'rubocop/rake_task'
 require 'reek/rake/task'
 
 Rake::TestTask.new do |t|
+  t.name = 'test:page'
   t.warning = true
   t.description = 'Run "Page" tests'
   t.test_files = FileList['t/page/*.rb', 't/helpers/*.rb']
@@ -29,7 +30,6 @@ Rake::TestTask.new do |t|
 end
 
 Rake::TestTask.new do |t|
-  t.name = 'test:all'
   t.verbose = true
   t.description = 'Run all tests (slow)'
   t.test_files = FileList['t/**/*.rb']
@@ -55,4 +55,4 @@ end
 require 'bundler/audit/task'
 Bundler::Audit::Task.new
 
-task default: ['test:all', 'rubocop', 'bundle:audit']
+task default: ['test', 'rubocop', 'bundle:audit']
