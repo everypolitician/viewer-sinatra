@@ -223,8 +223,7 @@ country = Everypolitician::Index.new.country('<%= @page.country.slug %>')
 house = country.legislature('<%= @page.house.slug %>')
 house.popolo.terms.find_by(id: '<%= @page.current_term.id %>').memberships.each do |membership|
   puts "#{membership.person.name} (#{membership.party.name}): #{membership.person.gender}"
-end
-          </pre>
+end</pre>
           <p>
             Libraries also available in
             <a href="https://github.com/everypolitician/everypolitician-python">Python</a> and 
