@@ -221,8 +221,8 @@
 require 'everypolitician'
 country = Everypolitician::Index.new.country('<%= @page.country.slug %>')
 house = country.legislature('<%= @page.house.slug %>')
-house.popolo.terms.find_by(id: '<%= @page.current_term.id %>').memberships.each do |m|
-  puts "#{m.person.name} (#{m.party.name}): #{m.person.gender}"
+house.popolo.terms.find_by(id: '<%= @page.current_term.id %>').memberships.each do |membership|
+  puts "#{membership.person.name} (#{membership.party.name}): #{membership.person.gender}"
 end
           </pre>
           <p>
