@@ -97,7 +97,8 @@ module Page
     # The known percentages for the various types of data we display on the site.
     # @return [Percentages]
     def percentages
-      pc = ->(card) { ((people.count { |p| p.send(card.to_s).any? } / people.count.to_f) * 100).floor }
+      people_count = people.count
+      pc = ->(card) { ((people_count { |p| p.send(card.to_s).any? } / people_count.to_f) * 100).floor }
       Percentages.new(*CARDS.map { |card| pc.call(card) })
     end
 
