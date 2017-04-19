@@ -1,3 +1,19 @@
+<div class="page-section page-section--green page-section--no-padding">
+    <div class="container text-center">
+        <ul class="house-tabs">
+          <% @page.country.legislatures.each do |house| %>
+            <li>
+                <a
+                  class="house-tab <% if @page.house == house %>house-tab--active<% end %>"
+                  href="<%= term_table_url(house.legislative_periods.first) %>">
+                    <%= house.name %>
+                </a>
+            </li>
+          <% end %>
+        </ul>
+    </div>
+</div>
+
 <div class="page-section" id="term">
     <div class="container text-center">
         <h1><span class="avatar"><i class="fa fa-university"></i></span> <%= @page.current_term.name %></h1>
