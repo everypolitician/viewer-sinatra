@@ -91,7 +91,7 @@ describe 'TermTable' do
         af.legislative_memberships.count.must_equal 1
         af.legislative_memberships.first.start_date.must_equal '2013-10-29'
         af.legislative_memberships.first.end_date.must_equal nil
-        af.legislative_memberships.first.group.name.must_equal 'ÖVP'
+        af.legislative_memberships.first.on_behalf_of.name.must_equal 'ÖVP'
         af.legislative_memberships.first.area.name.must_equal 'Wahlkreis: 3B – Waldviertel'
       end
 
