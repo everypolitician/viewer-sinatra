@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/everypolitician/everypolitician-popolo.git
-  revision: 40dc460d8340df9ae78469b755ce73b4fd074ce3
+  revision: 4785fef26da455232240a10f79453fd0524a173c
   specs:
     everypolitician-popolo (0.8.0)
       require_all
@@ -75,7 +75,7 @@ GEM
       codeclimate-engine-rb (~> 0.3.1)
       parser (~> 2.3.1, >= 2.3.1.2)
       rainbow (~> 2.0)
-    require_all (1.3.3)
+    require_all (1.4.0)
     rubocop (0.46.0)
       parser (>= 2.3.1.1, < 3.0)
       powerpack (~> 0.1)
