@@ -6,7 +6,7 @@ ruby '2.3.3'
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
 
 gem 'dotenv'
-gem 'everypolitician', '~> 0.18.0', github: 'everypolitician/everypolitician-ruby'
+gem 'everypolitician', github: 'everypolitician/everypolitician-ruby'
 gem 'everypolitician-popolo', github: 'everypolitician/everypolitician-popolo'
 gem 'iso_country_codes'
 gem 'json'
