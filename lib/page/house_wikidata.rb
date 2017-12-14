@@ -16,6 +16,10 @@ module Page
       house.country
     end
 
+    def seat_count
+      legislature.seats
+    end
+
     def people_with_wikidata
       people_with_and_without_wikidata.first
     end
@@ -28,6 +32,10 @@ module Page
 
     def popolo
       house.popolo
+    end
+
+    def legislature
+      popolo.organizations.find_by(classification: 'legislature')
     end
 
     def people_with_and_without_wikidata
