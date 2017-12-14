@@ -118,7 +118,7 @@ PLATFORMS
 DEPENDENCIES
   bundler-audit
   dotenv
-  everypolitician (~> 0.18.0)!
+  everypolitician!
   everypolitician-popolo!
   flog
   html_validation
