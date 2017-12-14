@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'everypolitician'
 require 'open-uri'
 require 'fileutils'

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'everypolitician'
 require_relative '../everypolitician_extensions'
 require_relative '../person_cards'

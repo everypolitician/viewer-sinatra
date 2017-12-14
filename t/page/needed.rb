@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative '../../lib/page/needed'
 require 'test_helper'
 
