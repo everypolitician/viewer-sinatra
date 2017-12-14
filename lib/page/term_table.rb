@@ -90,7 +90,7 @@ module Page
     end
 
     # A list of symbols representing the cards we show for a person.
-    CARDS = %i(social bio contacts identifiers).freeze
+    CARDS = %i[social bio contacts identifiers].freeze
 
     # Represents the percentages of information we have for each card type.
     Percentages = Struct.new(*CARDS)
