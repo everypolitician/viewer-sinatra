@@ -22,6 +22,10 @@ gem 'sass'
 gem 'sinatra'
 gem 'yajl-ruby', require: 'yajl'
 
+group :development do
+  gem 'sinatra-contrib'
+end
+
 group :test do
   gem 'bundler-audit'
   gem 'html_validation'

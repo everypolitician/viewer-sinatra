@@ -48,8 +48,6 @@ First install Vagrant following [the steps in the official documentation](http:/
 
 Finally, follow the instructions displayed by the virtual machine.
 
-**Note:** Changes to `app.rb` will require you to restart the webserver process.
-
 Sass files are currently generated on each pageload, just like any other template. You do not need to manually compile the Sass.
 
 ### Run without Vagrant

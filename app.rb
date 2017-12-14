@@ -11,6 +11,7 @@ require 'sinatra'
 require 'yajl/json_gem'
 require 'everypolitician'
 require 'everypolitician/popolo'
+require 'sinatra/reloader' if development?
 
 require_relative './lib/popolo_helper'
 require_relative './lib/html_helper'
@@ -25,6 +26,10 @@ set :main_url, 'http://everypolitician.org'
 set :docs_url, 'http://docs.everypolitician.org'
 set :datasource, ENV.fetch('DATASOURCE', 'https://github.com/everypolitician/everypolitician-data/raw/master/countries.json')
 set :index, EveryPolitician::Index.new(index_url: settings.datasource)
+
+configure :development do
+  register Sinatra::Reloader
+end
 
 get '/' do
   @page = Page::Home.new(index: settings.index)
