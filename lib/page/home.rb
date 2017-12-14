@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative '../world'
 require_relative '../everypolitician_extensions'
 
