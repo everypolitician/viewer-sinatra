@@ -8,5 +8,5 @@ unzip 5.2.0.zip
 cd tidy-html5-5.2.0/build/cmake
 cmake ../..
 make
-mkdir ~/bin
+mkdir -p ~/bin
 mv tidy ~/bin/tidy
