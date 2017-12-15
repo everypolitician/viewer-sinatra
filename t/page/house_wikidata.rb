@@ -26,6 +26,7 @@ describe 'HouseWikidata' do
   end
 
   before do
+    stub_wikidata_api
   end
 
   it 'should return a house' do

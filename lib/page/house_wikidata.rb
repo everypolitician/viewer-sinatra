@@ -17,7 +17,7 @@ module Page
     end
 
     def seat_count
-      legislature.seats
+      wikidata_seat_count
     end
 
     def people_with_wikidata
@@ -36,6 +36,23 @@ module Page
 
     def legislature
       popolo.organizations.find_by(classification: 'legislature')
+    end
+
+    def wikidata_seat_count
+      wikidata_json[:claims][:P1342].first[:mainsnak][:datavalue][:value][:amount].to_i
+    end
+
+    def wikidata
+      legislature.wikidata
+    end
+
+    # FIXME: This class should not know about the outside world
+    def wikidata_json
+      raw_json = JSON.parse(
+        open("https://www.wikidata.org/wiki/Special:EntityData/#{wikidata}.json").read,
+        symbolize_names: true
+      )
+      raw_json[:entities][wikidata.to_sym]
     end
 
     def people_with_and_without_wikidata
