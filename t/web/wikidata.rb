@@ -31,5 +31,9 @@ describe 'Wikidata' do
       nays.text.must_include 'Alen Prelec'
       yays.text.wont_include 'Alen Prelec'
     end
+
+    it 'should have the seat count' do
+      subject.text.must_include '151 seats'
+    end
   end
 end
