@@ -29,6 +29,7 @@ set :index, EveryPolitician::Index.new(index_url: settings.datasource)
 
 configure :development do
   register Sinatra::Reloader
+  also_reload "lib/**/*.rb"
 end
 
 get '/' do
