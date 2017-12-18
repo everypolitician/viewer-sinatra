@@ -41,7 +41,7 @@ module Page
     end
 
     def wikidata_seat_count
-      wikidata.property('P1342').amount.to_i
+      wikidata.property('P1342')&.amount&.to_i
     end
 
     def wikidata
