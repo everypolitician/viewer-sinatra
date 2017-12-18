@@ -20,6 +20,7 @@ gem 'redcarpet', '~> 3.2.3'
 gem 'require_all'
 gem 'sass'
 gem 'sinatra'
+gem 'wikidata-client'
 gem 'yajl-ruby', require: 'yajl'
 
 group :development do
