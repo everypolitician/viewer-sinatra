@@ -58,9 +58,9 @@ module Minitest
     end
 
     def stub_wikidata_api
-      stub_json('https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&ids=Q371576&sites=enwiki', 'wikidata_Q371576')
-      stub_json('https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&ids=Q871363&sites=enwiki', 'wikidata_Q871363')
-      stub_json('https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&ids=Q1520966&sites=enwiki', 'wikidata_Q1520966')
+      stub_json('https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&ids=Q371576&sites=enwiki', 'wikidata/Q371576')
+      stub_json('https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&ids=Q871363&sites=enwiki', 'wikidata/Q871363')
+      stub_json('https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&ids=Q1520966&sites=enwiki', 'wikidata/Q1520966')
     end
 
     def stub_term_table(sha, legislature)
