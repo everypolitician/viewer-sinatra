@@ -50,6 +50,8 @@ Finally, follow the instructions displayed by the virtual machine.
 
 Sass files are currently generated on each pageload, just like any other template. You do not need to manually compile the Sass.
 
+In development, changes to `app.rb` and Ruby files in the `lib` directory are automatically reloaded by  [`Sinatra::Reloader`](http://sinatrarb.com/contrib/reloader.html). You do not need to restart the webserver process.
+
 ### Run without Vagrant
 
 You can also run this project locally without using Vagrant. First [install Foreman globally](https://github.com/ddollar/foreman#installation):
