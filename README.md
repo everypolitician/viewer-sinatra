@@ -48,10 +48,6 @@ First install Vagrant following [the steps in the official documentation](http:/
 
 Finally, follow the instructions displayed by the virtual machine.
 
-**Note:** Changes to `app.rb` will require you to restart the webserver process.
-
-Sass files are currently generated on each pageload, just like any other template. You do not need to manually compile the Sass.
-
 ### Run without Vagrant
 
 You can also run this project locally without using Vagrant. First [install Foreman globally](https://github.com/ddollar/foreman#installation):
@@ -114,7 +110,9 @@ bundle exec rake
 
 The project uses [Sinatra](http://www.sinatrarb.com), an ultra-minimal Ruby MVC web app framework.
 
-CSS styles are generated with [Sass](http://sass-lang.com).
+In development, changes to `app.rb` and Ruby files in the `lib` directory are automatically reloaded by  [`Sinatra::Reloader`](http://sinatrarb.com/contrib/reloader.html). You do not need to restart the webserver process.
+
+CSS styles are generated with [Sass](http://sass-lang.com). Sass files are currently generated on each pageload, just like any other template. You do not need to manually compile the Sass.
 
 We don’t use a pre-built CSS framework like Foundation or Bootstrap, but you can visit [localhost:5000/styling](http://localhost:5000/styling) once you have the project up and running, to see a live preview of the basic styles and components available to you.
 
