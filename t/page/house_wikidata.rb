@@ -12,6 +12,7 @@ end
 describe 'HouseWikidata' do
   let(:austria_page) do
     stub_popolo('3df153b', 'Austria/Nationalrat')
+    stub_wikidata_api('Q871363')
     page_for('austria', 'nationalrat')
   end
 
@@ -27,11 +28,8 @@ describe 'HouseWikidata' do
 
   let(:new_zealand_page) do
     stub_popolo('87859a2', 'New_Zealand/House')
+    stub_wikidata_api('Q1520966')
     page_for('new-zealand', 'house')
-  end
-
-  before do
-    stub_wikidata_api
   end
 
   it 'should return a house' do

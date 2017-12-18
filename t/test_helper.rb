@@ -57,10 +57,11 @@ module Minitest
       stub_json('https://api.github.com/repos/everypolitician/everypolitician-data/issues?labels=New%20Country,3%20-%20WIP&per_page=100')
     end
 
-    def stub_wikidata_api
-      stub_json('https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&ids=Q371576&sites=enwiki', 'wikidata/Q371576')
-      stub_json('https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&ids=Q871363&sites=enwiki', 'wikidata/Q871363')
-      stub_json('https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&ids=Q1520966&sites=enwiki', 'wikidata/Q1520966')
+    def stub_wikidata_api(wikidata_id)
+      stub_json(
+        "https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&ids=#{wikidata_id}&sites=enwiki",
+        "wikidata/#{wikidata_id}"
+      )
     end
 
     def stub_term_table(sha, legislature)

@@ -10,7 +10,7 @@ describe 'Wikidata' do
 
   describe 'Croatia' do
     before do
-      stub_wikidata_api
+      stub_wikidata_api('Q371576')
       stub_popolo('6e39048', 'Croatia/Sabor')
       get '/croatia/sabor/wikidata'
     end
