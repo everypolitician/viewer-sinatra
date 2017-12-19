@@ -26,12 +26,6 @@ describe 'HouseWikidata' do
     page_for('uganda', 'parliament')
   end
 
-  let(:new_zealand_page) do
-    stub_popolo('87859a2', 'New_Zealand/House')
-    stub_wikidata_api('Q1520966')
-    page_for('new-zealand', 'house')
-  end
-
   it 'should return a house' do
     austria_page.house.name.must_equal 'Nationalrat'
   end
@@ -42,14 +36,6 @@ describe 'HouseWikidata' do
 
   it 'should know the wikidata ID' do
     austria_page.wikidata_id.must_equal 'Q871363'
-  end
-
-  it 'should know the seat count' do
-    austria_page.seat_count.must_equal 183
-  end
-
-  it 'should handle a missing seat count' do
-    new_zealand_page.seat_count.must_equal nil
   end
 
   it 'should pass a list of people with wikidata' do

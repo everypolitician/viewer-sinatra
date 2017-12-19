@@ -1,14 +1,7 @@
 <div class="page-section" id="term">
   <div class="container text-center">
     <h1><span class="avatar"><i class="fa fa-university"></i></span> <%= @page.house.name %></h1>
-    <p>
-      <% if @page.seat_count %>
-        <span class="seatcount"><%= @page.seat_count %></span> seats
-      <% else %>
-        <!-- TODO: Link to Wikidata item -->
-        Number of seats <span class="seatcount">unknown</span> in Wikidata item
-      <% end %>
-    </p>
+    <p class="seatcount">Loading seat count…</p>
   </div>
 
   <div class="container">
@@ -37,7 +30,10 @@
       // FIXME: Doesn't work if there's no seat count
       var seat_count = Number(wikidata_item.claims.P1342[0].mainsnak.datavalue.value.amount);
 
-      $('.seatcount').html(seat_count);
+      $('p.seatcount').html(`<span class="seatcount">${seat_count}</span> seats`);
+      // TODO: Add this if there's no seat count
+      // TODO: Link to Wikidata item
+      // Number of seats <span class="seatcount">unknown</span> in Wikidata item
     });
   });
 </script>

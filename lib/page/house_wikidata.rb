@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'wikidata'
-
 module Page
   class HouseWikidata
     attr_reader :house
@@ -22,10 +20,6 @@ module Page
       legislature.wikidata
     end
 
-    def seat_count
-      wikidata_seat_count
-    end
-
     def people_with_wikidata
       people_with_and_without_wikidata.first
     end
@@ -42,14 +36,6 @@ module Page
 
     def legislature
       popolo.organizations.find_by(classification: 'legislature')
-    end
-
-    def wikidata_seat_count
-      wikidata.property('P1342')&.amount&.to_i
-    end
-
-    def wikidata
-      Wikidata::Item.find(wikidata_id)
     end
 
     def people_with_and_without_wikidata
