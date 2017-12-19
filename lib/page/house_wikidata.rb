@@ -18,6 +18,10 @@ module Page
       house.country
     end
 
+    def wikidata_id
+      legislature.wikidata
+    end
+
     def seat_count
       wikidata_seat_count
     end
@@ -45,7 +49,7 @@ module Page
     end
 
     def wikidata
-      Wikidata::Item.find(legislature.wikidata)
+      Wikidata::Item.find(wikidata_id)
     end
 
     def people_with_and_without_wikidata

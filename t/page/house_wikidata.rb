@@ -40,6 +40,10 @@ describe 'HouseWikidata' do
     austria_page.title.must_equal 'EveryPolitician: Austria — Nationalrat'
   end
 
+  it 'should know the wikidata ID' do
+    austria_page.wikidata_id.must_equal 'Q871363'
+  end
+
   it 'should know the seat count' do
     austria_page.seat_count.must_equal 183
   end
