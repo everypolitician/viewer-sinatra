@@ -26,3 +26,18 @@
       </ol>
   </div>
 </div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    var wikidata_id = '<%= @page.wikidata_id %>';
+    var wikidata_api_url = `https://www.wikidata.org/wiki/Special:EntityData/${wikidata_id}.json`;
+
+    $.get(wikidata_api_url).done(function(data) {
+      var wikidata_item = data.entities[ Object.keys(data.entities)[0] ];
+      // FIXME: Doesn't work if there's no seat count
+      var seat_count = Number(wikidata_item.claims.P1342[0].mainsnak.datavalue.value.amount);
+
+      $('.seatcount').html(seat_count);
+    });
+  });
+</script>
