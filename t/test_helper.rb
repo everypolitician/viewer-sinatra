@@ -99,14 +99,15 @@ module Minitest
     include Capybara::DSL
     include Capybara::Minitest::Assertions
 
+    Capybara::Webkit.configure do |config|
+      config.allow_url('https://www.wikidata.org/wiki/Special:EntityData/Q371576.json')
+      config.allow_url('https://code.jquery.com/jquery-latest.js')
+      config.block_unknown_urls
+    end
+
     before do
       Capybara.app = Sinatra::Application
       Capybara.current_driver = :webkit
-      Capybara::Webkit.configure do |config|
-        config.allow_url('https://www.wikidata.org/wiki/Special:EntityData/Q371576.json')
-        config.allow_url('https://code.jquery.com/jquery-latest.js')
-        config.block_unknown_urls
-      end
       WebMock.disable_net_connect!(allow_localhost: true)
     end
   end
