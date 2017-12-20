@@ -17,8 +17,6 @@ require 'capybara-webkit'
 module Minitest
   class Spec
     include Rack::Test::Methods
-    include Capybara::DSL
-    include Capybara::Minitest::Assertions
 
     def app
       Sinatra::Application
@@ -94,6 +92,22 @@ module Minitest
 
     def countries_json_url
       URI.join(ep_repo + '/', 'raw/d8a4682f/countries.json').to_s
+    end
+  end
+
+  class CapybaraWebkitSpec < Minitest::Spec
+    include Capybara::DSL
+    include Capybara::Minitest::Assertions
+
+    before do
+      Capybara.app = Sinatra::Application
+      Capybara.current_driver = :webkit
+      Capybara::Webkit.configure do |config|
+        config.allow_url('https://www.wikidata.org/wiki/Special:EntityData/Q371576.json')
+        config.allow_url('https://code.jquery.com/jquery-latest.js')
+        config.block_unknown_urls
+      end
+      WebMock.disable_net_connect!(allow_localhost: true)
     end
   end
 end

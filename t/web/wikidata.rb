@@ -3,7 +3,7 @@
 require 'test_helper'
 require_relative '../../app'
 
-describe 'Wikidata' do
+class WikidataWebTest < Minitest::CapybaraWebkitSpec
   subject { Nokogiri::HTML(last_response.body) }
   let(:yays) { subject.xpath('//h2[.="With"]/following-sibling::ol[1]/li') }
   let(:nays) { subject.xpath('//h2[.="Without"]/following-sibling::ol[1]/li') }
@@ -34,17 +34,6 @@ describe 'Wikidata' do
     end
 
     describe 'with JavaScript enabled' do
-      before do
-        WebMock.disable_net_connect!(allow_localhost: true)
-        Capybara.app = app
-        Capybara.current_driver = :webkit
-        Capybara::Webkit.configure do |config|
-          config.allow_url('https://www.wikidata.org/wiki/Special:EntityData/Q371576.json')
-          config.allow_url('https://code.jquery.com/jquery-latest.js')
-          config.block_unknown_urls
-        end
-      end
-
       it 'should have the seat count' do
         visit '/croatia/sabor/wikidata'
 
