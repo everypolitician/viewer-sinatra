@@ -33,6 +33,10 @@ class WikidataWebTest < Minitest::CapybaraWebkitSpec
     end
 
     describe 'with JavaScript enabled' do
+      before do
+        Capybara.current_driver = Capybara.javascript_driver
+      end
+
       it 'should have the seat count' do
         visit '/croatia/sabor/wikidata'
 
