@@ -102,8 +102,8 @@ module Minitest
     WebMock.disable_net_connect!(allow_localhost: true)
     Capybara.current_driver = :webkit
     Capybara::Webkit.configure do |config|
-      config.allow_url('https://www.wikidata.org/wiki/Special:EntityData/Q371576.json')
-      config.allow_url('https://code.jquery.com/jquery-latest.js')
+      config.allow_url('www.wikidata.org')
+      config.allow_url('code.jquery.com')
       config.block_unknown_urls
     end
 
