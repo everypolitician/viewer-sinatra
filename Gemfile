@@ -28,6 +28,8 @@ end
 
 group :test do
   gem 'bundler-audit'
+  gem 'capybara'
+  gem 'capybara-webkit'
   gem 'html_validation'
   gem 'minitest'
   gem 'pry'

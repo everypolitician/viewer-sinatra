@@ -33,8 +33,23 @@ describe 'Wikidata' do
       yays.text.wont_include 'Alen Prelec'
     end
 
-    it 'should have the seat count' do
-      subject.text.must_include '151 seats'
+    describe 'with JavaScript enabled' do
+      before do
+        WebMock.disable_net_connect!(allow_localhost: true)
+        Capybara.app = app
+        Capybara.current_driver = :webkit
+        Capybara::Webkit.configure do |config|
+          config.allow_url('https://www.wikidata.org/wiki/Special:EntityData/Q371576.json')
+          config.allow_url('https://code.jquery.com/jquery-latest.js')
+          config.block_unknown_urls
+        end
+      end
+
+      it 'should have the seat count' do
+        visit '/croatia/sabor/wikidata'
+
+        page.must_have_content '151 seats'
+      end
     end
   end
 end

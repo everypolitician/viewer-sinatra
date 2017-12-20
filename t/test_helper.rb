@@ -10,10 +10,15 @@ require 'pry'
 require 'webmock/minitest'
 require 'everypolitician'
 require 'html_validation'
+require 'capybara/minitest'
+require 'capybara/minitest/spec'
+require 'capybara-webkit'
 
 module Minitest
   class Spec
     include Rack::Test::Methods
+    include Capybara::DSL
+    include Capybara::Minitest::Assertions
 
     def app
       Sinatra::Application
