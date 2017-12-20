@@ -60,13 +60,6 @@ module Minitest
       stub_json('https://api.github.com/repos/everypolitician/everypolitician-data/issues?labels=New%20Country,3%20-%20WIP&per_page=100')
     end
 
-    def stub_wikidata_api(wikidata_id)
-      stub_json(
-        "https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&ids=#{wikidata_id}&sites=enwiki",
-        "wikidata/#{wikidata_id}"
-      )
-    end
-
     def stub_term_table(sha, legislature)
       stub_everypolitician_data_request("#{sha}/data/#{legislature}/ep-popolo-v1.0.json")
     end

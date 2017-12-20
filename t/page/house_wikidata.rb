@@ -12,7 +12,6 @@ end
 describe 'HouseWikidata' do
   let(:austria_page) do
     stub_popolo('3df153b', 'Austria/Nationalrat')
-    stub_wikidata_api('Q871363')
     page_for('austria', 'nationalrat')
   end
 
