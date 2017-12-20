@@ -88,7 +88,7 @@ module Minitest
     end
   end
 
-  class CapybaraWebkitSpec < Minitest::Spec
+  class CapybaraWebkitSpec < Spec
     include Capybara::DSL
     include Capybara::Minitest::Assertions
 
