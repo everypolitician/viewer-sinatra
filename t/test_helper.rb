@@ -93,7 +93,7 @@ module Minitest
     include Capybara::Minitest::Assertions
 
     WebMock.disable_net_connect!(allow_localhost: true)
-    Capybara.current_driver = :webkit
+    Capybara.javascript_driver = :webkit
     Capybara::Webkit.configure do |config|
       config.allow_url('www.wikidata.org')
       config.allow_url('code.jquery.com')
@@ -105,6 +105,11 @@ module Minitest
       # available in non-web tests. Putting it here means it only gets called
       # before a test runs instead of when reading the class.
       Capybara.app = Sinatra::Application
+    end
+
+    after do
+      Capybara.reset_sessions!
+      Capybara.use_default_driver
     end
   end
 end
