@@ -36,6 +36,10 @@ describe 'HouseWikidata' do
     austria_page.title.must_equal 'EveryPolitician: Austria — Nationalrat'
   end
 
+  it 'should know the wikidata ID' do
+    austria_page.wikidata_id.must_equal 'Q871363'
+  end
+
   it 'should pass a list of people with wikidata' do
     austria_page.people_with_wikidata.map(&:name).must_include 'Cornelia Ecker'
   end
