@@ -1,6 +1,7 @@
 <div class="page-section" id="term">
   <div class="container text-center">
     <h1><span class="avatar"><i class="fa fa-university"></i></span> <%= @page.house.name %></h1>
+    <p class="seatcount">Loading seat count…</p>
   </div>
 
   <div class="container">
@@ -18,3 +19,37 @@
       </ol>
   </div>
 </div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    var wikidata_id = '<%= @page.wikidata_id %>',
+        endpointUrl = 'https://query.wikidata.org/sparql',
+        sparqlQuery = "SELECT ?seat_count\n" +
+                      "WHERE { wd:" + wikidata_id + " wdt:P1342 ?seat_count }",
+        settings = {
+          headers: { Accept: 'application/sparql-results+json' },
+          data: { query: sparqlQuery }
+        };
+
+    $.ajax(endpointUrl, settings).done(function(data) {
+      var html, seat_count, seat_counts;
+
+      if (data.results.bindings.length == 1) {
+        seat_count = data.results.bindings[0][data.head.vars[0]].value;
+        html = '<span class="seatcount">' + seat_count + '</span> seats';
+      } else if (data.results.bindings.length > 1) {
+        seat_counts = data.results.bindings.map(function(b) {
+          return b[data.head.vars[0]].value;
+        });
+        html = data.results.bindings.length +
+               ' seat count values in Wikidata: <span class="seatcount">' +
+               seat_counts.join('</span>, <span class="seatcount">') +
+               '</span>';
+      } else {
+        html = 'Number of seats <span class="seatcount">unknown</span> in Wikidata item';
+      };
+
+      $('p.seatcount').html(html);
+    });
+  });
+</script>
