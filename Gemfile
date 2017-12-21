@@ -28,13 +28,16 @@ end
 
 group :test do
   gem 'bundler-audit'
-  gem 'capybara'
-  gem 'capybara-webkit'
   gem 'html_validation'
   gem 'minitest'
   gem 'pry'
   gem 'rack-test'
   gem 'webmock'
+end
+
+group :test, :development do
+  gem 'capybara'
+  gem 'capybara-webkit'
 end
 
 group :quality do
