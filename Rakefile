@@ -57,4 +57,12 @@ end
 require 'bundler/audit/task'
 Bundler::Audit::Task.new
 
+require_relative 'lib/static_site_generator.rb'
+desc 'Build static site pages that rely on JavaScript'
+task :generate_static_site_javascript_pages, [:base_url] do |_, args|
+  base_url = args.fetch(:base_url, 'http://localhost:4567')
+  javascript_pages_to_scrape = ["#{base_url}/needed.html"]
+  StaticSiteGenerator.new(urls: javascript_pages_to_scrape).build
+end
+
 task default: ['test', 'rubocop', 'bundle:audit']
