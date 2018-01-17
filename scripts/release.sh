@@ -13,8 +13,11 @@ set -eo pipefail
 build_viewer_static() {
   bundle exec ruby app.rb &
   while ! nc -z localhost 4567; do sleep 1; done
+  REPO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../" && pwd )"
   cd /tmp
   wget -nv -m localhost:4567/status/all_countries.html || (echo "wget exited with non-zero exit code: $?" >&2 && exit 1)
+  cd localhost:4567
+  BUNDLE_GEMFILE=$REPO_DIR/Gemfile bundle exec rake -f $REPO_DIR/Rakefile generate_static_site_javascript_pages
 }
 
 deploy_viewer_static() {
