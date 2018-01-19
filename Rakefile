@@ -31,6 +31,7 @@ Rake::TestTask.new do |t|
 end
 
 Rake::TestTask.new do |t|
+  t.warning = false
   t.verbose = true
   t.description = 'Run all tests (slow)'
   t.test_files = FileList['t/**/*.rb']
