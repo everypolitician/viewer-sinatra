@@ -91,7 +91,7 @@ describe 'TermTable' do
       it 'has a single legislative membership' do
         af.legislative_memberships.count.must_equal 1
         af.legislative_memberships.first.start_date.must_equal '2013-10-29'
-        af.legislative_memberships.first.end_date.must_equal nil
+        af.legislative_memberships.first.end_date.must_be_nil
         af.legislative_memberships.first.on_behalf_of.name.must_equal 'ÖVP'
         af.legislative_memberships.first.area.name.must_equal 'Wahlkreis: 3B – Waldviertel'
       end
@@ -107,13 +107,13 @@ describe 'TermTable' do
       it 'has gender data' do
         af.bio.first.type.must_equal 'Gender'
         af.bio.first.value.must_equal 'female'
-        af.bio.first.link.must_equal nil
+        af.bio.first.link.must_be_nil
       end
 
       it 'has birth data' do
         af.bio.last.type.must_equal 'Born'
         af.bio.last.value.must_equal '1956-12-29'
-        af.bio.last.link.must_equal nil
+        af.bio.last.link.must_be_nil
       end
 
       it 'has a social card' do
@@ -143,7 +143,7 @@ describe 'TermTable' do
       it 'has a parliament identifier' do
         af.identifiers.last.type.must_equal 'parlaments_at'
         af.identifiers.last.value.must_equal '83146'
-        af.identifiers.last.link.must_equal nil
+        af.identifiers.last.link.must_be_nil
       end
     end
 
@@ -171,7 +171,7 @@ describe 'TermTable' do
       it 'has a munzinger id' do
         maria.identifiers.last.type.must_equal 'munzinger'
         maria.identifiers.last.value.must_equal '00000026847'
-        maria.identifiers.last.link.must_equal nil
+        maria.identifiers.last.link.must_be_nil
       end
     end
 
