@@ -57,12 +57,21 @@ end
 require 'bundler/audit/task'
 Bundler::Audit::Task.new
 
-require_relative 'lib/static_site_generator.rb'
+require_relative 'lib/static_site/browser.rb'
+require 'uri'
+require 'pathname'
 desc 'Build static site pages that rely on JavaScript'
 task :generate_static_site_javascript_pages, [:base_url] do |_, args|
   base_url = args.fetch(:base_url, 'http://localhost:4567')
-  javascript_pages_to_scrape = ["#{base_url}/needed.html"]
-  StaticSiteGenerator.new(urls: javascript_pages_to_scrape).build
+  pages_to_scrape = ["#{base_url}/needed.html"].map { |u| URI.parse(u) }
+  browser = StaticSite::Browser.new
+
+  pages_to_scrape.each do |url|
+    browser.visit(url)
+    file = Pathname.new(url.path[1..-1]).sub_ext('.html')
+    file.dirname.mkpath
+    file.write(browser.body_after_jquery_ajax)
+  end
 end
 
 task default: ['test', 'rubocop', 'bundle:audit']
