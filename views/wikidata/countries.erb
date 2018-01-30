@@ -24,9 +24,14 @@
                 '}\n' +
                 'ORDER BY ?itemLabel';
 
+    function updateTitles(numberOfCountries) {
+      $('html head title').html('EveryPolitician: Political data for ' + numberOfCountries + ' countries');
+      $('#countries h2').html('Data from ' + numberOfCountries + ' countries');
+    };
+
     api.query(query).done(function() {
       var countries = JSON.parse(api.getResultAsJson());
-      console.log(countries);
+      updateTitles(countries.length);
     });
   });
 </script>
