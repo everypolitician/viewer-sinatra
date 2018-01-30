@@ -10,3 +10,23 @@
       </ul>
   </div>
 </div>
+
+<script src="/javascript/vendor/Sparql.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    var api = new wikibase.queryService.api.Sparql();
+    var query = 'SELECT ?item ?itemLabel WHERE {\n' +
+                '   ?item p:P31 ?statement .\n' +
+                '   ?statement ps:P31 wd:Q160016 .\n' +
+                '   MINUS { ?statement pq:P582 ?end }      # no longer a country\n' +
+                '   MINUS { ?item wdt:P1552 wd:Q47185282 } # not free\n' +
+                '   SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }\n' +
+                '}\n' +
+                'ORDER BY ?itemLabel';
+
+    api.query(query).done(function() {
+      var countries = JSON.parse(api.getResultAsJson());
+      console.log(countries);
+    });
+  });
+</script>
