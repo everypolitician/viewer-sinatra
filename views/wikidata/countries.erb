@@ -29,9 +29,30 @@
       $('#countries h2').html('Data from ' + numberOfCountries + ' countries');
     };
 
+    function entityID(entityURI) {
+      return entityURI.split('/').pop();
+    };
+
+    function populateCountries(countries) {
+      var countriesUL = $('#countries ul')
+      countriesUL.empty();
+
+      $.each(countries, function(_, country) {
+        countriesUL.append(
+          '<li>' +
+          '  <a class="avatar-unit" href="country/' + entityID(country.item) + '">' +
+          '    <span class="avatar"><i class="fa fa-users"></i></span>' +
+          '    <h3>' + country.itemLabel + '</h3>' +
+          '  </a>' +
+          '</li>'
+        );
+      });
+    };
+
     api.query(query).done(function() {
       var countries = JSON.parse(api.getResultAsJson());
       updateTitles(countries.length);
+      populateCountries(countries);
     });
   });
 </script>
