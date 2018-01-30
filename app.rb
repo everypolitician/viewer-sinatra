@@ -99,6 +99,11 @@ get '/needed.html' do
   erb :needed
 end
 
+get '/wikidata/countries.html' do
+  @page = Page::WikidataCountries.new
+  erb :"wikidata/countries"
+end
+
 get '/*.css' do |filename|
   scss :"sass/#{filename}"
 end
