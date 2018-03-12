@@ -50,12 +50,13 @@ describe 'house download template' do
   end
 
   describe 'other houses' do
+    let(:button) { subject.css('.page-section--green .button--secondary').first }
     it 'shows a link to the other legislature' do
-      subject.css('.page-section--green .button--secondary').first.text.must_include 'House of Representatives'
+      button.text.must_include 'House of Representatives'
     end
 
     it 'links to the other legislature' do
-      subject.css('.page-section--green .button--secondary/@href').first.text.must_include '/united-states-of-america/house/'
+      button.attr('href').must_include '/united-states-of-america/house/'
     end
   end
 end
