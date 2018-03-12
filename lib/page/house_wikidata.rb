@@ -39,7 +39,7 @@ module Page
     end
 
     def people_with_and_without_wikidata
-      @with_and_without_array ||= popolo.persons.partition(&:wikidata)
+      popolo.persons.partition(&:wikidata)
     end
   end
 end

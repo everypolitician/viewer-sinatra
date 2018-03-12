@@ -9,11 +9,11 @@ class World
   end
 
   def as_json
-    @_wjson ||= JSON.parse(File.read(file), symbolize_names: true)
+    @as_json ||= JSON.parse(File.read(file), symbolize_names: true)
   end
 
   def countries
-    @_countries ||= as_json.keys.map { |slug| country(slug) }.sort_by(&:name)
+    as_json.keys.map { |slug| country(slug) }.sort_by(&:name)
   end
 
   # super-simplistic adapter for the inner data. Over time it might make

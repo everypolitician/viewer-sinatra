@@ -37,7 +37,7 @@ module Minitest
     end
 
     def index_at_known_sha
-      @shaidx ||= EveryPolitician::Index.new(index_url: countries_json_url)
+      @index_at_known_sha ||= EveryPolitician::Index.new(index_url: countries_json_url)
     end
 
     def stub_everypolitician_data_request(path)
