@@ -15,8 +15,8 @@ module Popolo
       number.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse
     end
 
-    def wikidata_link(p)
-      return unless wdid = p.wikidata
+    def wikidata_link(object)
+      return unless wdid = object.wikidata
       '<a href="https://www.wikidata.org/wiki/%s">%s</a>' % [wdid, wdid]
     end
 
