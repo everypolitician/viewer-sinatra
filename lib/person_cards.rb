@@ -110,10 +110,27 @@ class PersonCard
 
     class Social < Base
       def info
-        [
-          { type: 'Twitter', value: person.twitter, display: "@#{person.twitter}", link: "https://twitter.com/#{person.twitter}" },
-          { type: 'Facebook', value: person.facebook, display: person.facebook.to_s.split('/').last, link: person.facebook },
-        ]
+        [twitter, facebook]
+      end
+
+      private
+
+      def twitter
+        {
+          type:    'Twitter',
+          value:   person.twitter,
+          display: "@#{person.twitter}",
+          link:    "https://twitter.com/#{person.twitter}",
+        }
+      end
+
+      def facebook
+        {
+          type:    'Facebook',
+          value:   person.facebook,
+          display: person.facebook.to_s.split('/').last,
+          link:    person.facebook,
+        }
       end
     end
 
