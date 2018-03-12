@@ -44,7 +44,9 @@ module Minitest
       stub_request(:get, "https://cdn.rawgit.com/everypolitician/everypolitician-data/#{path}")
         .to_return(body: File.read("t/fixtures/everypolitician-data/#{path}"))
     rescue Errno::ENOENT => error
-      raise "#{error.message}\n\nTo download this fixture run the following\n\n\tbundle exec rake 'everypolitician-data[#{path}]'\n"
+      raise "#{error.message}\n\n" \
+            "To download this fixture run the following\n\n" \
+            "\tbundle exec rake 'everypolitician-data[#{path}]'\n"
     end
 
     def stub_popolo(sha, legislature)
