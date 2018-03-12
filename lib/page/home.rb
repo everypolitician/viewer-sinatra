@@ -47,7 +47,7 @@ module Page
     attr_reader :index
 
     def legislatures
-      @_legislatures ||= countries_with_data.flat_map(&:legislatures)
+      @legislatures ||= countries_with_data.flat_map(&:legislatures)
     end
 
     def world

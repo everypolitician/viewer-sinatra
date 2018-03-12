@@ -28,7 +28,7 @@ module EveryPolitician
 
   module LegislativePeriodExtension
     def memberships
-      @mems ||= legislature.popolo.memberships.select do |mem|
+      @memberships ||= legislature.popolo.memberships.select do |mem|
         mem.legislative_period_id == id
       end
     end
