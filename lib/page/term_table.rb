@@ -67,15 +67,8 @@ module Page
     # A list of groups that we know about and their seat/member counts
     # @return [Array<SeatCount>]
     def group_data
-      @group_data ||= term
-                      .memberships_at_end
-                      .group_by(&:on_behalf_of_id)
-                      .map     { |group_id, mems| [org_lookup[group_id].first, mems] }
-                      .sort_by { |group, mems| [-mems.count, group.name] }
-                      .map     { |group, mems| SeatCount.new(group.id.split('/').last, group.name, mems.count) }
-
-      @group_data = [] if @group_data.length == 1
-      @group_data
+      return [] if complete_group_data.length == 1
+      complete_group_data
     end
 
     # A list of people that held a membership at some point during this term
@@ -98,8 +91,7 @@ module Page
     # The known percentages for the various types of data we display on the site.
     # @return [Percentages]
     def percentages
-      pc = ->(card) { ((people.count { |p| p.send(card.to_s).any? } / people.count.to_f) * 100).floor }
-      Percentages.new(*CARDS.map { |card| pc.call(card) })
+      Percentages.new(*CARDS.map { |card| ((people_with(card) / people.count.to_f) * 100).floor })
     end
 
     private
@@ -117,6 +109,22 @@ module Page
 
     def org_lookup
       @org_lookup ||= popolo.organizations.group_by(&:id)
+    end
+
+    def people_with(datatype)
+      people.count { |p| p.send(datatype.to_s).any? }
+    end
+
+    def complete_group_data
+      group_memberships
+        .sort_by { |group, mems| [-mems.count, group.name] }
+        .map     { |group, mems| SeatCount.new(group.id.split('/').last, group.name, mems.count) }
+    end
+
+    def group_memberships
+      term.memberships_at_end
+          .group_by(&:on_behalf_of_id)
+          .map { |group_id, mems| [org_lookup[group_id].first, mems] }
     end
   end
 end
