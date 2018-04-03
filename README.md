@@ -50,7 +50,11 @@ Finally, follow the instructions displayed by the virtual machine.
 
 ### Run without Vagrant
 
-You can also run this project locally without using Vagrant. First [install Foreman globally](https://github.com/ddollar/foreman#installation):
+You can also run this project locally without using Vagrant, but you will need
+to make sure the "required packages" from `script/provision.sh` are available
+locally, before you begin.
+
+Then [install Foreman globally](https://github.com/ddollar/foreman#installation):
 
 ```bash
 gem install foreman
