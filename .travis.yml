@@ -14,7 +14,7 @@ script:
   - bash <(curl -fsSL https://github.com/everypolitician/ensure-regression-tests/raw/master/ensure-regression-tests)
 sudo: false
 rvm:
-  - 2.3.3
+  - 2.3.6
 notifications:
   slack:
     secure: GVD9d+kwR5hzab5ZnWugbCkp9QSYyheSrABWkD+LmpMcWcx7jijajSn4LLvDi/zHYn1MdOBcPe08hSygmpm7ViUApp0EJcSzE4BLU/5oAs+ANV0Qq6jsssMlyo3v8eRAqHNiLxAiAsz+lc0EZWfQnSW8kHzzbO3NeYq1NRL5CgQ=
