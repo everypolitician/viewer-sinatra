@@ -176,6 +176,20 @@
     }
 }
 
+.page-section--demo-commons-promo {
+    @media (min-width: $medium_screen) {
+        padding: 3em 0;
+    }
+}
+
+.demo-commons-promo {
+    //Bare-bones promo for now, there's room for a logo or graphics when they exist
+    max-width: 40em; // avoid silly long lines
+    a {
+        text-decoration: underline;
+    }
+}
+
 // My kingdom for a parent selector in CSS!
 // Add some extra margin above the promo section because the screencast
 // sticks out and it feels a bit tight against the previous section.
@@ -184,6 +198,7 @@
         margin-top: 2em;
         padding: 3em 0;
     }
+
 }
 
 .gender-balance-promo {
