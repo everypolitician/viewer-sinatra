@@ -43,15 +43,15 @@ module EveryPolitician
       @people ||= memberships.map(&:person).uniq(&:id)
     end
 
+    def identifier_map
+      @identifier_map ||= people.select(&:identifiers).map { |p| p.identifiers.map { |i| i.merge(id: p.id) } }.flatten
+    end
+
     def top_identifiers
-      @top_identifiers ||= people
-                           .map(&:identifiers)
-                           .compact
-                           .flatten
-                           .reject { |i| i[:scheme] == 'everypolitician_legacy' }
-                           .group_by { |i| i[:scheme] }
-                           .sort_by { |s, ids| [-ids.size, s] }
-                           .map { |s, _ids| s }
+      @top_identifiers ||= identifier_map.reject { |i| i[:scheme] == 'everypolitician_legacy' }
+                                         .group_by { |i| i[:scheme] }
+                                         .sort_by { |s, ids| [-ids.size, s] }
+                                         .map { |s, _ids| s }
     end
   end
 end
