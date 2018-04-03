@@ -10,7 +10,9 @@ sudo apt-get update
 
 # Install required packages
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
-  ruby2.3 ruby2.3-dev git build-essential libxslt1-dev zlib1g-dev
+  ruby2.3 ruby2.3-dev git build-essential libxslt1-dev zlib1g-dev \
+  qt5-default libqt5webkit5-dev \
+  gstreamer1.0-plugins-base gstreamer1.0-tools gstreamer1.0-x
 
 # Add cd /vagrant to ~/.bashrc
 grep -qG "cd /vagrant" "$HOME/.bashrc" || echo "cd /vagrant" >> "$HOME/.bashrc"
