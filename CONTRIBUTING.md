@@ -71,12 +71,13 @@ the test fails against `master`.)
 
 ### General
 
-We automatically analyse all code using `rubocop`. Please ensure that
-this passes before submitting a PR. We are always open to persuasion
-that we should use different rules, and we are still in the process of
-making all the code comply (in particular we have some classes that are
-still too long and too complex), but our goal is to continue to tighten
-these over time, so adding new exceptions to `.rubocop_todo.yaml` should
+We automatically analyse all code using `rubocop` and `reek`. Please
+ensure that these passes before submitting a PR (though travis will also
+warn if you don't). We are always open to persuasion that we should use
+different rules, and we are still in the process of making all the code
+comply (in particular we have some classes that are still too long and
+too complex), but our goal is to continue to tighten these over time, so
+adding new exceptions to `.rubocop_todo.yaml` or `.config.reek` should
 be treated as a last resort.
 
 ### Page classes
