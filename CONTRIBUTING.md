@@ -63,20 +63,22 @@ into a distinct PR (“make the change easy, then make the easy change”).
 * PRs for refactoring should only ever change the code _or_ the tests,
 never both simultaneously.
 
-* PRs that add functionality should ensure not only that the tests pass,
-but that at least one test is added that exposes that functionlity (i.e.
-the test fails against `master`.)
+* PRs that are not merely refactoring should ensure not only that the
+tests pass, but that at least one test is added that exposes the
+functionlity (i.e. the test fails against `master`). This is enforced by
+a travis check on any branch without the word "refactoring" in its name.
 
 ## Style
 
 ### General
 
-We automatically analyse all code using `rubocop`. Please ensure that
-this passes before submitting a PR. We are always open to persuasion
-that we should use different rules, and we are still in the process of
-making all the code comply (in particular we have some classes that are
-still too long and too complex), but our goal is to continue to tighten
-these over time, so adding new exceptions to `.rubocop_todo.yaml` should
+We automatically analyse all code using `rubocop` and `reek`. Please
+ensure that these passes before submitting a PR (though travis will also
+warn if you don't). We are always open to persuasion that we should use
+different rules, and we are still in the process of making all the code
+comply (in particular we have some classes that are still too long and
+too complex), but our goal is to continue to tighten these over time, so
+adding new exceptions to `.rubocop_todo.yaml` or `.config.reek` should
 be treated as a last resort.
 
 ### Page classes
