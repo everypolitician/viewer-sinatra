@@ -63,9 +63,10 @@ into a distinct PR (“make the change easy, then make the easy change”).
 * PRs for refactoring should only ever change the code _or_ the tests,
 never both simultaneously.
 
-* PRs that add functionality should ensure not only that the tests pass,
-but that at least one test is added that exposes that functionlity (i.e.
-the test fails against `master`.)
+* PRs that are not merely refactoring should ensure not only that the
+tests pass, but that at least one test is added that exposes the
+functionlity (i.e. the test fails against `master`). This is enforced by
+a travis check on any branch without the word "refactoring" in its name.
 
 ## Style
 
