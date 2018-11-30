@@ -24,6 +24,7 @@ class World
   Country = Struct.new(:slug, :name, :names, :epcountry, :total_people)
   def country(slug)
     return unless found = as_json[slug.to_sym]
+
     ep_country = index&.country(slug)
     Country.new(slug, found[:displayName], found[:allNames], ep_country,
                 ep_country ? ep_country.person_count : 0)

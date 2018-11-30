@@ -17,6 +17,7 @@ module Popolo
 
     def wikidata_link(object)
       return unless wdid = object.wikidata
+
       '<a href="https://www.wikidata.org/wiki/%s">%s</a>' % [wdid, wdid]
     end
 
