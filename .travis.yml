@@ -2,12 +2,11 @@ language: ruby
 cache: bundler
 before_install:
   - echo -e "machine github.com\n  login $GITHUB_ACCESS_TOKEN" >> ~/.netrc
+  - scripts/install_tidy.sh
 addons:
   apt:
-    sources:
-      - debian-sid
     packages:
-      - tidy
+    - cmake
 script:
   - xvfb-run bundle exec rake
   - travis_wait 30 scripts/release.sh
