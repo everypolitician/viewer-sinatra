@@ -4,8 +4,6 @@ before_install:
   - echo -e "machine github.com\n  login $GITHUB_ACCESS_TOKEN" >> ~/.netrc
 addons:
   apt:
-    sources:
-      - debian-sid
     packages:
       - tidy
 script:

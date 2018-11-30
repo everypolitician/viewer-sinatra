@@ -164,6 +164,7 @@ class PersonCard
 
       def link_for(scheme, id)
         return unless template = ID_MAP[scheme.to_sym]
+
         template % id
       end
 

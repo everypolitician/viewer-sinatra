@@ -68,6 +68,7 @@ module Page
     # @return [Array<SeatCount>]
     def group_data
       return [] if complete_group_data.length == 1
+
       complete_group_data
     end
 
