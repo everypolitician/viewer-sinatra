@@ -32,31 +32,4 @@ class WikidataWebTest < Minitest::CapybaraWebkitSpec
       yays.text.wont_include 'Alen Prelec'
     end
   end
-
-  describe 'seat count' do
-    before do
-      stub_popolo('6e39048', 'Croatia/Sabor')
-      stub_popolo('87859a2', 'New_Zealand/House')
-      stub_popolo('90decc1', 'India/Lok_Sabha')
-      Capybara.current_driver = Capybara.javascript_driver
-    end
-
-    it 'should be displayed when data is available' do
-      visit '/croatia/sabor/wikidata'
-
-      page.must_have_content '151 seats'
-    end
-
-    it "should display message when there's no data" do
-      visit '/new-zealand/house/wikidata'
-
-      page.must_have_content 'Number of seats unknown in Wikidata item'
-    end
-
-    it 'should display multiple seat count values' do
-      visit '/india/lok-sabha/wikidata'
-
-      page.must_have_content '2 seat count values in Wikidata: 543, 545'
-    end
-  end
 end
