@@ -10,9 +10,6 @@ require 'pry'
 require 'webmock/minitest'
 require 'everypolitician'
 require 'html_validation'
-require 'capybara/minitest'
-require 'capybara/minitest/spec'
-require 'capybara-webkit'
 
 module Minitest
   class Spec
@@ -87,27 +84,6 @@ module Minitest
 
     def countries_json_url
       URI.join(ep_repo + '/', 'raw/d8a4682f/countries.json').to_s
-    end
-  end
-
-  class CapybaraWebkitSpec < Spec
-    include Capybara::DSL
-    include Capybara::Minitest::Assertions
-
-    WebMock.disable_net_connect!(allow_localhost: true)
-    Capybara.javascript_driver = :webkit
-    Capybara::Webkit.configure(&:allow_unknown_urls)
-
-    before do
-      # This configuration is only here because Sinatra::Application isn't
-      # available in non-web tests. Putting it here means it only gets called
-      # before a test runs instead of when reading the class.
-      Capybara.app = Sinatra::Application
-    end
-
-    after do
-      Capybara.reset_sessions!
-      Capybara.use_default_driver
     end
   end
 end
