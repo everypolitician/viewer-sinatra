@@ -3,12 +3,12 @@
 require 'test_helper'
 require_relative '../../app'
 
-class WikidataWebTest < Minitest::CapybaraWebkitSpec
-  describe 'Croatia' do
-    subject { Nokogiri::HTML(last_response.body) }
-    let(:yays) { subject.xpath('//h2[.="With"]/following-sibling::ol[1]/li') }
-    let(:nays) { subject.xpath('//h2[.="Without"]/following-sibling::ol[1]/li') }
+describe 'Wikidata' do
+  subject { Nokogiri::HTML(last_response.body) }
+  let(:yays) { subject.xpath('//h2[.="With"]/following-sibling::ol[1]/li') }
+  let(:nays) { subject.xpath('//h2[.="Without"]/following-sibling::ol[1]/li') }
 
+  describe 'Croatia' do
     before do
       stub_popolo('6e39048', 'Croatia/Sabor')
       get '/croatia/sabor/wikidata'
