@@ -10,7 +10,6 @@ script:
   - bundle exec rake
   - travis_wait 30 scripts/release.sh
   - bash <(curl -fsSL https://github.com/everypolitician/ensure-regression-tests/raw/master/ensure-regression-tests)
-sudo: false
 rvm:
   - 2.3.6
 notifications:

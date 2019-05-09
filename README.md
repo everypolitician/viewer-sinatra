@@ -114,7 +114,7 @@ bundle exec rake
 
 The project uses [Sinatra](http://www.sinatrarb.com), an ultra-minimal Ruby MVC web app framework.
 
-In development, changes to `app.rb` and Ruby files in the `lib` directory are automatically reloaded by  [`Sinatra::Reloader`](http://sinatrarb.com/contrib/reloader.html). You do not need to restart the webserver process.
+In development, changes to `app.rb` and Ruby files in the `lib` directory are automatically reloaded by [`Sinatra::Reloader`](http://sinatrarb.com/contrib/reloader.html). You do not need to restart the webserver process.
 
 CSS styles are generated with [Sass](http://sass-lang.com). Sass files are currently generated on each pageload, just like any other template. You do not need to manually compile the Sass.
 
