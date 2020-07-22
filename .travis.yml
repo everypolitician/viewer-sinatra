@@ -2,7 +2,6 @@ language: ruby
 cache: bundler
 before_install:
   - echo -e "machine github.com\n  login $GITHUB_ACCESS_TOKEN" >> ~/.netrc
-  - gem install bundler -v 2.1.4
 addons:
   apt:
     packages:
@@ -12,7 +11,7 @@ script:
   - travis_wait 30 scripts/release.sh
   - bash <(curl -fsSL https://github.com/everypolitician/ensure-regression-tests/raw/master/ensure-regression-tests)
 rvm:
-  - 2.7.1
+  - 2.4.4
 notifications:
   slack:
     secure: GVD9d+kwR5hzab5ZnWugbCkp9QSYyheSrABWkD+LmpMcWcx7jijajSn4LLvDi/zHYn1MdOBcPe08hSygmpm7ViUApp0EJcSzE4BLU/5oAs+ANV0Qq6jsssMlyo3v8eRAqHNiLxAiAsz+lc0EZWfQnSW8kHzzbO3NeYq1NRL5CgQ=
