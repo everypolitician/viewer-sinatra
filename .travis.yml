@@ -2,6 +2,7 @@ language: ruby
 cache: bundler
 before_install:
   - echo -e "machine github.com\n  login $GITHUB_ACCESS_TOKEN" >> ~/.netrc
+  - gem install bundler -v 2.1.4
 addons:
   apt:
     packages:
